@@ -3502,12 +3502,6 @@
             "size": "small"
           },
           {
-            "id": "商汤",
-            "name": "商汤",
-            "type": "person",
-            "size": "small"
-          },
-          {
             "id": "夏桀暴政",
             "name": "夏桀暴政",
             "type": "event",
@@ -6795,12 +6789,6 @@
           {
             "id": "申侯",
             "name": "申侯",
-            "type": "person",
-            "size": "small"
-          },
-          {
-            "id": "周平王",
-            "name": "周平王",
             "type": "person",
             "size": "small"
           },
