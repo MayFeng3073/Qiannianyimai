@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-08-15T03:52:29.720Z",
+  "dataStructure": {
+    "interfaces": [
+      {
+        "name": "NarrativeRelationNode",
+        "exists": true
+      },
+      {
+        "name": "NarrativeRelationEdge",
+        "exists": true
+      },
+      {
+        "name": "PersonStory",
+        "exists": true
+      },
+      {
+        "name": "Person",
+        "exists": true
+      },
+      {
+        "name": "EventNarrative",
+        "exists": true
+      },
+      {
+        "name": "EventBackground",
+        "exists": true
+      },
+      {
+        "name": "EventImpact",
+        "exists": true
+      },
+      {
+        "name": "EventChain",
+        "exists": true
+      },
+      {
+        "name": "TimelineEntry",
+        "exists": true
+      },
+      {
+        "name": "PersonRelation",
+        "exists": true
+      },
+      {
+        "name": "Event",
+        "exists": true
+      },
+      {
+        "name": "Dynasty",
+        "exists": true
+      }
+    ],
+    "arrays": [
+      {
+        "name": "dynasties",
+        "exists": true
+      },
+      {
+        "name": "persons",
+        "exists": true
+      },
+      {
+        "name": "events",
+        "exists": true
+      }
+    ],
+    "dynastyStatistics": true,
+    "snippetObjects": {
+      "dynasty": 1,
+      "persons": 65,
+      "events": 18
+    }
+  },
+  "idConflict": {
+    "existingIdsCount": 58,
+    "snippetIdsCount": 84,
+    "conflicts": [],
+    "hasConflict": false
+  },
+  "referenceIntegrity": {
+    "totalRefs": 275,
+    "brokenRefs": 0,
+    "hasIssues": false
+  },
+  "canProceed": true,
+  "stats": {
+    "dynastyCount": 1,
+    "personCount": 65,
+    "eventCount": 18,
+    "totalIds": 84
+  }
+}

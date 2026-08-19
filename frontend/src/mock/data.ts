@@ -1,0 +1,4151 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+  id: string
+  name: string
+  type: 'person' | 'event' | 'story'
+  size?: 'large' | 'medium' | 'small'
+}
+
+export interface NarrativeRelationEdge {
+  source: string
+  target: string
+  label: string
+  direction?: 'forward' | 'backward' | 'none'
+}
+
+export interface PersonStory {
+  title: string
+  content: string
+  image_url?: string
+}
+
+export interface Person {
+  id: number
+  name: string
+  dynasty: string
+  summary: string
+  image_url: string
+  birth_year: number | null
+  death_year: number | null
+  category: string
+  level?: 1 | 2
+  courtesy_name?: string
+  art_name?: string
+  birth_place?: string | null
+  occupations?: string[]
+  offices?: string[]
+  works?: { name: string; image?: string; excerpt?: string; description?: string }[]
+  related_people?: { name: string; relation: string; influence?: number }[]
+  life_events?: { year: number; title: string; description?: string; importance?: number }[]
+  related_events?: (string | { name: string, role: string })[]
+  influence?: number
+  dimension_scores?: {
+    historical_influence: number
+    relation_activity: number
+    professional_1: number
+    professional_2: number
+    professional_3: number
+  }
+  story?: PersonStory
+  narrative_relations?: {
+    nodes: NarrativeRelationNode[]
+    edges: NarrativeRelationEdge[]
+  }
+}
+
+export interface EventNarrative {
+  year?: number
+  title: string
+  description: string
+  tag?: string
+}
+
+export interface EventBackground {
+  political?: string
+  economic?: string
+  social?: string
+  cultural?: string
+  geographic?: string
+}
+
+export interface EventImpact {
+  name: string
+  score: number
+  color?: string
+}
+
+export interface EventChain {
+  type: 'cause' | 'event' | 'consequence' | 'later'
+  title: string
+  year: string
+  desc?: string
+  color?: string
+}
+
+export interface TimelineEntry {
+  title: string
+  year: string
+  desc?: string
+  event_id?: number
+}
+
+export interface PersonRelation {
+  source: string
+  target: string
+  type: 'alliance' | 'hostile' | 'lord_vassal' | 'kinship' | 'teacher_student' | 'friend' | 'support'
+  desc?: string
+}
+
+export interface Event {
+  id: number
+  name: string
+  dynasty: string
+  start_year: number
+  end_year: number
+  summary: string
+  event_type: string
+  related_persons?: string[]
+  location?: string
+  significance?: string
+  image_url?: string
+  one_sentence?: string
+  timeline_id?: string
+  person_groups?: {
+    leaders?: { name: string; role?: string }[]
+    participants?: { name: string; role?: string }[]
+    opponents?: { name: string; role?: string }[]
+    affected?: { name: string; role?: string }[]
+  }
+  narratives?: EventNarrative[]
+  background?: EventBackground
+  impacts?: EventImpact[]
+  chain?: EventChain[]
+  related_events?: string[]
+  person_relations?: PersonRelation[]
+}
+
+export interface Dynasty {
+  id: number
+  name: string
+  english_name: string
+  start_year: number
+  end_year: number
+  summary: string
+  capital: string
+  population: string
+  duration: string
+  representative_buildings: string[]
+  characteristics: {
+    politics: number
+    culture: number
+    military: number
+    technology: number
+    openness: number
+  }
+}
+
+export const dynasties: Dynasty[] = [
+  {
+    id: 100,
+    name: '上古',
+    english_name: 'Ancient Period',
+    start_year: -3000,
+    end_year: -2070,
+    summary: '中国历史上的传说时代，是中华文明的起源时期。这一时期孕育了丰富的神话传说和文化遗产，奠定了中华民族的精神根基。',
+    capital: '阳城（传说）',
+    population: '约数百万',
+    duration: '约900年',
+    representative_buildings: ['黄帝陵', '尧帝陵', '舜帝陵', '禹王宫'],
+    characteristics: {
+      politics: 45,
+      culture: 60,
+      military: 50,
+      technology: 35,
+      openness: 30
+    }
+  },
+  {
+    id: 1,
+    name: '唐朝',
+    english_name: 'Tang Dynasty',
+    start_year: 618,
+    end_year: 907,
+    summary: '中国古代文化最繁荣、国际交流最活跃的时期之一，也是制度、经济与文化高度发展的黄金时代。',
+    capital: '长安（今西安）',
+    population: '约8000万',
+    duration: '289年',
+    representative_buildings: ['大明宫', '大雁塔', '小雁塔'],
+    characteristics: {
+      politics: 95,
+      culture: 100,
+      military: 92,
+      technology: 86,
+      openness: 98
+    }
+  },
+  {
+    id: 2,
+    name: '汉朝',
+    english_name: 'Han Dynasty',
+    start_year: -202,
+    end_year: 220,
+    summary: '中国历史上最强大的朝代之一，奠定了汉民族的文化认同和政治制度基础。',
+    capital: '长安、洛阳',
+    population: '约5700万',
+    duration: '422年',
+    representative_buildings: ['未央宫', '建章宫', '长城'],
+    characteristics: {
+      politics: 90,
+      culture: 88,
+      military: 95,
+      technology: 82,
+      openness: 85
+    }
+  },
+  {
+    id: 3,
+    name: '宋朝',
+    english_name: 'Song Dynasty',
+    start_year: 960,
+    end_year: 1279,
+    summary: '中国历史上经济最发达、文化最昌盛的时期，四大发明中的三项在这一时期成熟。',
+    capital: '开封、临安',
+    population: '约1亿',
+    duration: '319年',
+    representative_buildings: ['清明上河园', '灵隐寺', '滕王阁'],
+    characteristics: {
+      politics: 85,
+      culture: 98,
+      military: 65,
+      technology: 95,
+      openness: 75
+    }
+  },
+  {
+    id: 4,
+    name: '明朝',
+    english_name: 'Ming Dynasty',
+    start_year: 1368,
+    end_year: 1644,
+    summary: '中国历史上最后一个由汉族建立的大一统王朝，手工业和商品经济繁荣，出现资本主义萌芽。',
+    capital: '南京、北京',
+    population: '约1.5亿',
+    duration: '276年',
+    representative_buildings: ['紫禁城', '明长城', '天坛'],
+    characteristics: {
+      politics: 88,
+      culture: 92,
+      military: 85,
+      technology: 90,
+      openness: 70
+    }
+  },
+  {
+    id: 5,
+    name: '清朝',
+    english_name: 'Qing Dynasty',
+    start_year: 1644,
+    end_year: 1912,
+    summary: '中国历史上最后一个封建王朝，疆域辽阔，统一多民族国家得到巩固和发展。',
+    capital: '北京',
+    population: '约4亿',
+    duration: '268年',
+    representative_buildings: ['圆明园', '颐和园', '承德避暑山庄'],
+    characteristics: {
+      politics: 82,
+      culture: 85,
+      military: 88,
+      technology: 75,
+      openness: 45
+    }
+  },
+{
+  id: 201,
+  name: '夏商西周',
+  english_name: 'Xia-Shang-Western Zhou',
+  start_year: -2070,
+  end_year: -771,
+  summary: '中国历史上的青铜时代，夏朝建立了中国第一个王朝，商朝创造了灿烂的青铜文明，西周实行分封制和宗法制，奠定了中国古代政治制度的基础。',
+  capital: '阳城/亳/殷/镐京',
+  population: '约数百万',
+  duration: '约1300年',
+  representative_buildings: ["二里头遗址","殷墟","周原遗址","丰镐遗址"],
+  characteristics: {"politics":80,"culture":85,"military":75,"technology":82,"openness":70}
+},
+]
+
+export const persons: Person[] = [
+  {
+    id: 1001,
+    name: '黄帝',
+    dynasty: '上古',
+    summary: '华夏民族共同始祖，相传统一诸部落，奠定中华文明的重要基础。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20emperor%20huangdi%20portrait%20traditional%20chinese%20painting%20style%20noble%20regal%20golden%20crown%20elegant&image_size=square',
+    birth_year: -2717,
+    death_year: -2599,
+    category: '统治者',
+    level: 1,
+    courtesy_name: '轩辕',
+    birth_place: '轩辕丘（传说）',
+    occupations: ['部落首领', '军事家', '发明家'],
+    works: [
+      { name: '黄帝文化（传说）', excerpt: '法于阴阳，和于术数', description: '奠定华夏民族文化根基，倡导顺应自然、和谐共生的哲学思想，影响中华数千年的思维方式与价值取向。' },
+      { name: '衣冠制度（传说）', excerpt: '垂衣裳而天下治', description: '创制礼仪衣冠体系，以服饰区分尊卑等级，建立华夏礼仪文明的基本范式，开礼制之先河。' },
+      { name: '舟车制度（传说）', excerpt: '作舟车以济不通', description: '发明舟车等交通工具，开辟交通网络，促进部落间的交流与融合，为华夏统一奠定物质基础。' }
+    ],
+    influence: 100,
+    dimension_scores: {
+      historical_influence: 98,
+      relation_activity: 85,
+      professional_1: 92,
+      professional_2: 88,
+      professional_3: 95
+    },
+    related_people: [
+      { name: '炎帝', relation: '盟友', influence: 98 },
+      { name: '蚩尤', relation: '对手', influence: 92 },
+      { name: '风后', relation: '君臣', influence: 75 },
+      { name: '力牧', relation: '君臣', influence: 75 },
+      { name: '嫘祖', relation: '亲属', influence: 90 }
+    ],
+    life_events: [
+      { year: -2717, title: '出生于轩辕丘', description: '黄帝诞生于轩辕之丘，天生异象，智慧超群', importance: 8 },
+      { year: -2697, title: '成为部落首领', description: '继承部落首领之位，开始统一华夏各部落', importance: 9 },
+      { year: -2600, title: '阪泉之战', description: '击败炎帝，炎黄部落联盟形成', importance: 10 },
+      { year: -2598, title: '涿鹿之战', description: '联合炎帝击败蚩尤，统一华夏', importance: 10 },
+      { year: -2599, title: '病逝于荆山', description: '乘龙升天，葬于桥山黄帝陵', importance: 8 }
+    ],
+    related_events: [
+      { name: '阪泉之战', role: '胜利方' },
+      { name: '涿鹿之战', role: '胜利方' }
+    ]
+  },
+  {
+    id: 1002,
+    name: '炎帝',
+    dynasty: '上古',
+    summary: '神农氏，相传教民农耕、辨百草、发展医药，是中华农耕文明的重要奠基者。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20emperor%20yan%20di%20shennong%20portrait%20traditional%20chinese%20painting%20with%20medicinal%20herbs%20kind%20wise&image_size=square',
+    birth_year: -2900,
+    death_year: -2800,
+    category: '统治者',
+    level: 1,
+    art_name: '神农氏',
+    birth_place: '姜水流域（传说）',
+    occupations: ['部落首领', '农业家', '医学家'],
+    works: [
+      { name: '农耕技术', excerpt: '教民耕种，播种五谷', description: '传授农业生产技术，教民开垦土地、播种五谷，开启中华农耕文明，使人民安居乐业。' },
+      { name: '神农本草（托名）', excerpt: '上药一百二十种为君', description: '尝百草、辨药性，为中华医药学奠基，其"神农尝百草"的传说体现了先民对医药的探索精神。' },
+      { name: '农具改良（传说）', excerpt: '斫木为耜，揉木为耒', description: '改进农具制作工艺，发明耒耜等耕作工具，大幅提升农业生产效率，推动社会经济发展。' }
+    ],
+    influence: 98,
+    dimension_scores: {
+      historical_influence: 98,
+      relation_activity: 78,
+      professional_1: 95,
+      professional_2: 92,
+      professional_3: 96
+    },
+    related_people: [
+      { name: '黄帝', relation: '盟友', influence: 100 },
+      { name: '蚩尤', relation: '对手', influence: 92 }
+    ],
+    life_events: [
+      { year: -2900, title: '出生于姜水', description: '炎帝诞生于姜水之畔，天生聪慧', importance: 7 },
+      { year: -2850, title: '开始尝百草', description: '遍尝百草，辨识药材，开创中医药', importance: 10 },
+      { year: -2830, title: '教民耕种', description: '发明农具，教授农耕技术', importance: 9 },
+      { year: -2600, title: '阪泉之战', description: '与黄帝激战，后结盟', importance: 9 },
+      { year: -2800, title: '病逝', description: '葬于炎帝陵，后人奉为先农', importance: 8 }
+    ],
+    related_events: ['阪泉之战', '神农尝百草']
+  },
+  {
+    id: 1003,
+    name: '蚩尤',
+    dynasty: '上古',
+    summary: '九黎部落首领，以勇武善战著称，是上古战争文化的重要代表人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20warrior%20chieftain%20chiyou%20portrait%20traditional%20chinese%20painting%20ferocious%20armor%20weapons&image_size=square',
+    birth_year: null,
+    death_year: -2600,
+    category: '军事人物',
+    level: 1,
+    birth_place: '九黎地区（传说）',
+    occupations: ['部落首领', '军事家'],
+    works: [
+      { name: '金属兵器（传说）', excerpt: '以金作兵器', description: '首创金属冶炼技术，以青铜铸造兵器，推动军事技术革命，为华夏统一提供了强大的武力支撑。' },
+      { name: '兵器制造（传说）', excerpt: '造五兵', description: '系统化制造戈、矛、戟、斧、钺等五种兵器，奠定了上古时期中国兵器制造的基本体系。' }
+    ],
+    influence: 92,
+    dimension_scores: {
+      historical_influence: 90,
+      relation_activity: 72,
+      professional_1: 95,
+      professional_2: 88,
+      professional_3: 85
+    },
+    related_people: [
+      { name: '黄帝', relation: '敌对', influence: 100 },
+      { name: '炎帝', relation: '对手', influence: 98 }
+    ],
+    life_events: [
+      { year: -2600, title: '与炎帝冲突', description: '九黎部落与炎帝部落发生冲突', importance: 8 },
+      { year: -2600, title: '涿鹿之战', description: '与黄帝炎帝联军大战，战败被杀', importance: 10 }
+    ],
+    related_events: ['涿鹿之战']
+  },
+  {
+    id: 1004,
+    name: '尧',
+    dynasty: '上古',
+    summary: '五帝之一，以德治闻名，推行禅让制度，被后世奉为圣王。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20sage%20emperor%20yao%20portrait%20traditional%20chinese%20painting%20wise%20benevolent%20simple%20robe&image_size=square',
+    birth_year: -2377,
+    death_year: -2259,
+    category: '统治者',
+    level: 1,
+    courtesy_name: '放勋',
+    birth_place: '陶唐（传说）',
+    occupations: ['部落联盟首领'],
+    influence: 96,
+    related_people: [
+      { name: '舜', relation: '继承', influence: 95 },
+      { name: '丹朱', relation: '亲属', influence: 60 },
+      { name: '娥皇', relation: '亲属', influence: 70 },
+      { name: '女英', relation: '亲属', influence: 70 }
+    ],
+    life_events: [
+      { year: -2377, title: '出生于陶唐', description: '尧帝诞生于陶唐氏部落', importance: 7 },
+      { year: -2357, title: '成为部落联盟首领', description: '被推举为部落联盟首领', importance: 9 },
+      { year: -2300, title: '设立诽谤木', description: '设立华表雏形，广纳民意', importance: 8 },
+      { year: -2280, title: '考察舜', description: '考察舜三年，决定禅让', importance: 10 },
+      { year: -2259, title: '病逝于平阳', description: '禅让于舜后病逝', importance: 8 }
+    ],
+    related_events: ['尧舜禅让']
+  },
+  {
+    id: 1005,
+    name: '舜',
+    dynasty: '上古',
+    summary: '五帝之一，以孝德著称，继承尧推行德政，延续禅让传统。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20sage%20emperor%20shun%20portrait%20traditional%20chinese%20painting%20humble%20virtuous%20kind&image_size=square',
+    birth_year: -2294,
+    death_year: -2184,
+    category: '统治者',
+    level: 1,
+    courtesy_name: '重华',
+    birth_place: '姚墟（传说）',
+    occupations: ['部落联盟首领'],
+    influence: 95,
+    related_people: [
+      { name: '尧', relation: '继承', influence: 96 },
+      { name: '大禹', relation: '继承', influence: 99 },
+      { name: '娥皇', relation: '亲属', influence: 70 },
+      { name: '女英', relation: '亲属', influence: 70 },
+      { name: '商均', relation: '亲属', influence: 60 }
+    ],
+    life_events: [
+      { year: -2294, title: '出生于姚墟', description: '舜诞生于贫寒之家', importance: 7 },
+      { year: -2264, title: '尧嫁二女', description: '尧将娥皇女英嫁与舜考验其德行', importance: 9 },
+      { year: -2259, title: '继承部落联盟首领', description: '尧禅位于舜', importance: 10 },
+      { year: -2200, title: '禅让于禹', description: '舜因治水功绩将天下禅让于禹', importance: 10 },
+      { year: -2184, title: '南巡病逝', description: '南巡途中病逝于苍梧之野', importance: 8 }
+    ],
+    related_events: ['尧舜禅让', '大禹治水']
+  },
+  {
+    id: 1006,
+    name: '大禹',
+    dynasty: '上古',
+    summary: '成功治理洪水，推动早期国家形成，为夏朝建立奠定基础，被尊为中华治水英雄。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20emperor%20yu%20great%20flood%20control%20hero%20portrait%20traditional%20chinese%20painting%20determined%20resolute&image_size=square',
+    birth_year: -2123,
+    death_year: -2025,
+    category: '统治者',
+    level: 1,
+    courtesy_name: '文命',
+    art_name: '大禹',
+    birth_place: '西羌（传说）',
+    occupations: ['治水首领', '部落联盟首领'],
+    works: [
+      { name: '疏导治水', excerpt: '疏川导滞，钟水丰物', description: '采用疏导之法治理洪水，疏通河道、排除积水，造福百姓，成为中华治水史上的典范。' },
+      { name: '九州划分', excerpt: '茫茫禹迹，画为九州', description: '依据山川形势将天下划分为九州，建立了中国最早的行政区划制度，奠定华夏疆域基础。' },
+      { name: '治水体系', excerpt: '三过家门而不入', description: '建立系统化的治水工程体系，在外治水十三年，三过家门而不入，其敬业精神成为千古楷模。' }
+    ],
+    influence: 99,
+    related_people: [
+      { name: '舜', relation: '继承', influence: 95 },
+      { name: '鲧', relation: '亲属', influence: 82 },
+      { name: '伯益', relation: '君臣', influence: 75 },
+      { name: '皋陶', relation: '君臣', influence: 75 },
+      { name: '修己', relation: '母子', influence: 60 }
+    ],
+    life_events: [
+      { year: -2123, title: '出生于西羌', description: '禹诞生于石纽山', importance: 7 },
+      { year: -2100, title: '开始治水', description: '接替父亲鲧继续治水，改堵为疏', importance: 10 },
+      { year: -2070, title: '治水成功', description: '历时十三年，终于平息水患', importance: 10 },
+      { year: -2070, title: '建立夏朝', description: '在阳城建立夏朝，传位于启', importance: 10 },
+      { year: -2025, title: '病逝', description: '病逝于会稽', importance: 8 }
+    ],
+    related_events: ['大禹治水', '建立夏朝']
+  },
+  {
+    id: 1007,
+    name: '鲧',
+    dynasty: '上古',
+    summary: '大禹之父，率先主持治水，虽未成功，但为后续治水积累了重要经验。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20water%20control%20hero%20gun%20portrait%20traditional%20chinese%20painting%20determined%20historical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 1,
+    birth_place: '崇地（传说）',
+    occupations: ['治水首领'],
+    works: [
+      { name: '堵水治洪', excerpt: '障洪水以湮九州', description: '采用筑堤堵水之法治理洪水，虽未成功，但为其子大禹的治水事业提供了宝贵的经验教训。' }
+    ],
+    influence: 82,
+    related_people: [
+      { name: '大禹', relation: '亲属', influence: 99 },
+      { name: '修己', relation: '亲属', influence: 60 }
+    ],
+    life_events: [
+      { year: -2120, title: '开始治水', description: '被推举主持治水工程', importance: 8 },
+      { year: -2100, title: '治水失败', description: '采用堵截方法未能成功', importance: 9 }
+    ],
+    related_events: ['大禹治水']
+  },
+  {
+    id: 1008,
+    name: '仓颉',
+    dynasty: '上古',
+    summary: '相传为史官，创造汉字，是中华文字文明的重要象征人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20scholar%20cangjie%20creator%20of%20chinese%20characters%20portrait%20traditional%20painting%20wise&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '思想人物',
+    level: 1,
+    birth_place: '白水（传说）',
+    occupations: ['史官'],
+    works: [
+      { name: '汉字（传说）', excerpt: '仓颉造字，天雨粟，鬼夜哭', description: '观察鸟兽足迹创造象形文字，开启中华文字记载历史的新时代，使文明得以传承和发展。' }
+    ],
+    influence: 94,
+    related_people: [
+      { name: '黄帝', relation: '君臣', influence: 100 },
+      { name: '岐伯', relation: '同僚', influence: 75 }
+    ],
+    life_events: [
+      { year: -2600, title: '担任黄帝史官', description: '成为黄帝的重要史官', importance: 8 },
+      { year: -2590, title: '创制文字', description: '观察鸟兽足迹，创造汉字', importance: 10 }
+    ],
+    related_events: ['创制文字']
+  },
+  {
+    id: 1009,
+    name: '嫘祖',
+    dynasty: '上古',
+    summary: '相传发明养蚕缫丝，推动中华丝绸文明的发展，是中国农桑文化的重要代表人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20empress%20leizu%20silk%20invention%20portrait%20traditional%20chinese%20painting%20elegant%20graceful&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 1,
+    birth_place: '西陵（传说）',
+    occupations: ['王后'],
+    works: [
+      { name: '养蚕缫丝技术', excerpt: '教民养蚕，治丝茧', description: '首创养蚕缫丝技术，开创丝绸产业，使中国成为世界上最早发明丝绸的国家，丝绸之路由此发端。' },
+      { name: '丝绸制作（传说）', excerpt: '始教民养蚕以丝', description: '改进丝绸制作工艺，从养蚕到缫丝、织造形成完整产业链，为中华服饰文化奠定了物质基础。' }
+    ],
+    influence: 90,
+    related_people: [
+      { name: '黄帝', relation: '亲属', influence: 100 }
+    ],
+    life_events: [
+      { year: -2600, title: '成为黄帝元妃', description: '嫁给黄帝，成为元妃', importance: 8 },
+      { year: -2590, title: '推广养蚕', description: '发明养蚕缫丝技术并推广', importance: 10 }
+    ],
+    related_events: ['推广养蚕']
+  },
+  {
+    id: 1010,
+    name: '后羿',
+    dynasty: '上古',
+    summary: '中国古代神话中的英雄人物，以射日传说广为流传，是中华神话文化的重要象征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20archer%20hero%20houyi%20portrait%20traditional%20chinese%20painting%20bow%20arrow%20mythological&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 1,
+    birth_place: '商丘（传说）',
+    occupations: ['神话英雄'],
+    works: [
+      { name: '神箭技艺（传说）', excerpt: '羿射九日，落为沃焦', description: '精通射箭技艺，传有"后羿射日"的神话，体现了上古先民征服自然的勇气与高超的军事技艺。' }
+    ],
+    influence: 88,
+    related_people: [
+      { name: '嫦娥', relation: '亲属', influence: 70 }
+    ],
+    life_events: [
+      { year: -2100, title: '射日传说', description: '十日同出，后羿射落九日', importance: 10 }
+    ],
+    related_events: ['后羿射日']
+  },
+  {
+    id: 1011,
+    name: '风后',
+    dynasty: '上古',
+    summary: '黄帝的重要辅臣，相传协助制定制度、治理部落，被视为黄帝治国的重要助手。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20strategist%20fenghou%20portrait%20traditional%20chinese%20painting%20wise%20advisor&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['黄帝辅臣'],
+    influence: 75,
+    related_people: [
+      { name: '黄帝', relation: '君臣', influence: 100 },
+      { name: '力牧', relation: '同僚', influence: 75 },
+      { name: '常先', relation: '同僚', influence: 75 },
+      { name: '大鸿', relation: '同僚', influence: 75 }
+    ],
+    life_events: [
+      { year: -2600, title: '辅佐黄帝', description: '成为黄帝重要谋臣，参与治理部落', importance: 8 },
+      { year: -2598, title: '参与涿鹿之战', description: '为黄帝谋划，助其战胜蚩尤', importance: 9 }
+    ],
+    related_events: ['涿鹿之战'],
+    story: {
+      title: '风后辅佐黄帝',
+      content: '风后是黄帝最重要的谋臣之一。据传，黄帝在统一部落的过程中，曾在梦中遇到一位能驱风唤雨的神人，醒来后便四处寻找，最终在海隅找到了风后，拜为宰相。风后精通兵法谋略，在涿鹿之战中为黄帝出谋划策，帮助黄帝在迷雾中辨别方向，最终击败了蚩尤的九黎部落。此外，风后还协助黄帝制定了部落的制度规章，推动了早期华夏社会的治理建设。风后被后世视为智慧与谋略的化身，是黄帝时代最重要的辅佐之臣。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20strategist%20fenghou%20advising%20huangdi%20in%20battle%20traditional%20chinese%20painting%20wise%20advisor%20council&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'fenghou', name: '风后', type: 'person', size: 'large' },
+        { id: 'huangdi', name: '黄帝', type: 'person', size: 'medium' },
+        { id: 'zhuolu', name: '涿鹿之战', type: 'event', size: 'medium' },
+        { id: 'governance', name: '部落治理', type: 'story', size: 'small' }
+      ],
+      edges: [
+        { source: 'huangdi', target: 'fenghou', label: '拜为宰相', direction: 'forward' },
+        { source: 'fenghou', target: 'zhuolu', label: '出谋划策', direction: 'forward' },
+        { source: 'fenghou', target: 'governance', label: '制定制度', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1012,
+    name: '力牧',
+    dynasty: '上古',
+    summary: '黄帝部落的重要将领，相传参与统一部落战争。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20general%20limu%20portrait%20traditional%20chinese%20painting%20warrior%20brave&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['将领'],
+    influence: 75,
+    related_people: [
+      { name: '黄帝', relation: '君臣', influence: 100 },
+      { name: '风后', relation: '同僚', influence: 75 },
+      { name: '常先', relation: '同僚', influence: 75 },
+      { name: '应龙', relation: '盟友', influence: 70 }
+    ],
+    life_events: [
+      { year: -2600, title: '成为黄帝名将', description: '被黄帝任命为重要将领', importance: 8 },
+      { year: -2598, title: '参与涿鹿之战', description: '率领军队参与涿鹿之战', importance: 9 }
+    ],
+    related_events: ['涿鹿之战'],
+    story: {
+      title: '力牧征战涿鹿',
+      content: '力牧是黄帝麾下最重要的将领之一。据传，黄帝在一次梦中见到一人手持千斤之弩，能驱赶万群牛羊，醒来后便派人四处寻找，最终在大泽之中找到了力牧，拜为大将。力牧勇武过人，善于统兵作战。在涿鹿之战中，力牧率领黄帝军队正面迎战蚩尤的九黎大军，与风后一文一武，共同辅佐黄帝取得了决定性的胜利。力牧的传说，体现了上古时期军事将领的勇武形象，也为后世留下了将士忠勇的典范。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20general%20limu%20leading%20army%20in%20battle%20traditional%20chinese%20painting%20warrior%20brave%20commander&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'limu', name: '力牧', type: 'person', size: 'large' },
+        { id: 'huangdi', name: '黄帝', type: 'person', size: 'medium' },
+        { id: 'zhuolu', name: '涿鹿之战', type: 'event', size: 'medium' },
+        { id: 'army', name: '黄帝军队', type: 'story', size: 'small' }
+      ],
+      edges: [
+        { source: 'huangdi', target: 'limu', label: '拜为大将', direction: 'forward' },
+        { source: 'limu', target: 'zhuolu', label: '率军参战', direction: 'forward' },
+        { source: 'limu', target: 'army', label: '统领', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1013,
+    name: '常先',
+    dynasty: '上古',
+    summary: '黄帝麾下名将，相传协助黄帝征战诸部落。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20general%20changxian%20portrait%20traditional%20chinese%20painting%20military%20leader&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['将领'],
+    influence: 75,
+    related_people: [
+      { name: '黄帝', relation: '君臣', influence: 100 },
+      { name: '风后', relation: '同僚', influence: 75 },
+      { name: '力牧', relation: '同僚', influence: 75 }
+    ],
+    life_events: [
+      { year: -2600, title: '辅佐黄帝征战', description: '协助黄帝统一诸部落', importance: 8 }
+    ],
+    related_events: ['涿鹿之战'],
+    story: {
+      title: '常先助战',
+      content: '常先是黄帝麾下的名将，与力牧齐名，共同辅佐黄帝征战四方。在上古部落纷争的时代，常先协助黄帝统一诸部落，为炎黄联盟的形成做出了重要贡献。在涿鹿之战中，常先与力牧、风后等人并肩作战，参与了这场决定华夏命运的关键战役。虽然关于常先的文献记载不多，但作为黄帝最重要的将领之一，他的事迹在传说中被世代传颂，体现了上古英雄的忠诚与勇武。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20general%20changxian%20in%20battle%20traditional%20chinese%20painting%20military%20leader%20brave&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'changxian', name: '常先', type: 'person', size: 'large' },
+        { id: 'huangdi', name: '黄帝', type: 'person', size: 'medium' },
+        { id: 'zhuolu', name: '涿鹿之战', type: 'event', size: 'medium' }
+      ],
+      edges: [
+        { source: 'huangdi', target: 'changxian', label: '任命将领', direction: 'forward' },
+        { source: 'changxian', target: 'zhuolu', label: '参与征战', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1014,
+    name: '大鸿',
+    dynasty: '上古',
+    summary: '黄帝时期重要辅臣，参与部落治理与政务管理。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20official%20dahong%20portrait%20traditional%20chinese%20painting%20scholar%20official&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['辅臣'],
+    influence: 75,
+    related_people: [
+      { name: '黄帝', relation: '君臣', influence: 100 },
+      { name: '风后', relation: '同僚', influence: 75 }
+    ],
+    life_events: [
+      { year: -2600, title: '参与部落治理', description: '协助黄帝处理政务', importance: 8 }
+    ],
+    related_events: [],
+    story: {
+      title: '大鸿辅政',
+      content: '大鸿是黄帝时期的重要辅臣，与风后同朝为臣，参与部落治理与政务管理。在黄帝统一华夏各部落之后，面临如何治理广袤疆域和众多族群的难题。大鸿协助黄帝处理日常政务，管理部落事务，推动了早期华夏社会的制度建设。虽然关于大鸿的史料记载较为简略，但他在黄帝朝廷中的地位不可忽视，是黄帝实现"垂衣裳而天下治"的重要支持力量。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20official%20dahong%20assisting%20governance%20traditional%20chinese%20painting%20scholar%20council%20wise&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'dahong', name: '大鸿', type: 'person', size: 'large' },
+        { id: 'huangdi', name: '黄帝', type: 'person', size: 'medium' },
+        { id: 'governance', name: '部落治理', type: 'story', size: 'medium' }
+      ],
+      edges: [
+        { source: 'huangdi', target: 'dahong', label: '任命辅臣', direction: 'forward' },
+        { source: 'dahong', target: 'governance', label: '参与治理', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1015,
+    name: '岐伯',
+    dynasty: '上古',
+    summary: '相传为黄帝时期最具代表性的医学家，被尊为华夏医学之祖。岐伯精通医理、药性、养生之道，与黄帝以问答形式探讨医学理论，其学术思想构成了中医经典《黄帝内经》的核心内容，后世常以"岐黄"并称来指代中医学。岐伯所倡导的天人合一、阴阳平衡的医学理念，至今仍深刻影响着中医理论与实践。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20doctor%20qibo%20portrait%20traditional%20chinese%20painting%20healer%20wise&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['医学家（传说）'],
+    works: [
+      { name: '黄帝内经', excerpt: '上古之人，其知道者', description: '托名黄帝与岐伯对话，系统论述中医养生与诊疗理论，奠定了中华医学的理论框架，影响至今。' }
+    ],
+    influence: 85,
+    related_people: [
+      { name: '黄帝', relation: '君臣', influence: 100 },
+      { name: '雷公', relation: '师生', influence: 70 },
+      { name: '仓颉', relation: '同僚', influence: 94 }
+    ],
+    life_events: [
+      { year: -2600, title: '担任黄帝医学顾问', description: '为黄帝讲解医学知识', importance: 8 },
+      { year: -2590, title: '论医著述', description: '与黄帝讨论医学，形成《黄帝内经》雏形', importance: 10 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1016,
+    name: '雷公',
+    dynasty: '上古',
+    summary: '古代医学传说人物，与岐伯同为黄帝的医学顾问，共同探讨医理药性。雷公在《黄帝内经》中多次出现，以弟子的身份向岐伯请教医学问题，其所问涉及经脉、针灸、脏腑等核心医学议题。雷公与岐伯的问答，构成了中医理论体系的重要源头，其勤学好问的精神也为后世医者所推崇。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20doctor%20leigong%20portrait%20traditional%20chinese%20painting%20healer%20scholar&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['医者（传说）'],
+    influence: 70,
+    related_people: [
+      { name: '黄帝', relation: '君臣', influence: 100 },
+      { name: '岐伯', relation: '师生', influence: 85 },
+      { name: '仓颉', relation: '同僚', influence: 94 }
+    ],
+    life_events: [
+      { year: -2600, title: '参与黄帝医学活动', description: '与岐伯共同为黄帝论医', importance: 8 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1017,
+    name: '应龙',
+    dynasty: '上古',
+    summary: '神话中协助黄帝战胜蚩尤，并帮助大禹治水。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20dragon%20yinglong%20portrait%20traditional%20chinese%20painting%20mythical%20beast&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神兽'],
+    influence: 70,
+    related_people: [
+      { name: '黄帝', relation: '盟友', influence: 100 },
+      { name: '力牧', relation: '盟友', influence: 75 },
+      { name: '女魃', relation: '盟友', influence: 65 },
+      { name: '大禹', relation: '盟友', influence: 99 }
+    ],
+    life_events: [
+      { year: -2598, title: '助黄帝战蚩尤', description: '神话中帮助黄帝战胜蚩尤', importance: 9 },
+      { year: -2100, title: '助大禹治水', description: '帮助大禹治理洪水', importance: 9 }
+    ],
+    related_events: ['涿鹿之战', '大禹治水'],
+    story: {
+      title: '应龙助战与治水',
+      content: '应龙是中国神话中长有双翼的神龙，拥有呼风唤雨的能力。在黄帝与蚩尤的涿鹿之战中，蚩尤请来风伯雨师降下狂风暴雨，黄帝军队陷入困境。应龙挺身而出，以神力驱散风雨，帮助黄帝锁定胜局。然而，应龙也因神力耗尽，暂时无法返回天界。后来，大禹治水时，应龙再次出现，以其尾画地，引导洪水流向大海，成为大禹治水的重要助力。应龙既是战争中的神兽，也是治水中的功臣，它的故事贯穿了黄帝战争与大禹治水两大神话体系。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20winged%20dragon%20yinglong%20assisting%20huangdi%20battle%20and%20flood%20control%20traditional%20chinese%20painting%20mythical%20epic&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'yinglong', name: '应龙', type: 'person', size: 'large' },
+        { id: 'huangdi', name: '黄帝', type: 'person', size: 'medium' },
+        { id: 'zhuolu', name: '涿鹿之战', type: 'event', size: 'medium' },
+        { id: 'dayu', name: '大禹', type: 'person', size: 'medium' },
+        { id: 'flood', name: '大禹治水', type: 'event', size: 'medium' }
+      ],
+      edges: [
+        { source: 'yinglong', target: 'huangdi', label: '协助', direction: 'forward' },
+        { source: 'huangdi', target: 'zhuolu', label: '决战', direction: 'forward' },
+        { source: 'yinglong', target: 'dayu', label: '协助', direction: 'forward' },
+        { source: 'dayu', target: 'flood', label: '治水', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1018,
+    name: '女魃',
+    dynasty: '上古',
+    summary: '黄帝之女，上古神话中的旱神，相传在涿鹿之战中发挥了关键作用。蚩尤请来风伯雨师降下狂风暴雨，黄帝军队陷入困境，女魃从天而降，以自身神力驱散风雨，使天气转晴，帮助黄帝扭转战局。然而女魃也因此神力耗尽，无法返回天界，留在了人间。女魃的故事体现了上古神话中天界干预人间战争的想象，以及神女为苍生无私奉献的精神。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20goddess%20nuba%20portrait%20traditional%20chinese%20painting%20mythological%20female&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神话人物'],
+    influence: 65,
+    related_people: [
+      { name: '黄帝', relation: '亲属', influence: 100 },
+      { name: '应龙', relation: '盟友', influence: 70 }
+    ],
+    life_events: [
+      { year: -2598, title: '参与涿鹿之战', description: '协助黄帝征战蚩尤', importance: 9 }
+    ],
+    related_events: ['涿鹿之战']
+  },
+  {
+    id: 1019,
+    name: '刑天',
+    dynasty: '上古',
+    summary: '神话中的英雄人物，以不屈精神著称。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20warrior%20xingtian%20portrait%20traditional%20chinese%20painting%20headless%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神话英雄'],
+    influence: 70,
+    related_people: [],
+    life_events: [
+      { year: -2600, title: '与天帝争位', description: '刑天与天帝争神，被砍头后仍以乳为目，脐为口，操干戚以舞', importance: 10 }
+    ],
+    related_events: [],
+    story: {
+      title: '刑天舞干戚',
+      content: '刑天是上古时代的一位巨人勇士，因不满天帝的统治，与天帝争夺神位。天帝与刑天在常羊山上展开激战，天帝最终斩下了刑天的头颅，并将头颅埋入常羊山中。然而，刑天并未因此倒下。他失去了头颅，便以双乳为眼睛，以肚脐为嘴巴，继续挥舞着盾牌（干）和战斧（戚），与天地搏斗不息。刑天舞干戚的故事，成为中华民族不屈不挠、反抗强权精神的最高象征，千百年来激励着无数仁人志士在绝境中勇往直前。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20warrior%20xingtian%20headless%20fighting%20with%20shield%20and%20axe%20traditional%20chinese%20painting%20epic%20mythological&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'xingtian', name: '刑天', type: 'person', size: 'large' },
+        { id: 'tiandi', name: '天帝', type: 'person', size: 'medium' },
+        { id: 'battle', name: '争夺神位', type: 'event', size: 'medium' },
+        { id: 'spirit', name: '不屈精神', type: 'story', size: 'small' }
+      ],
+      edges: [
+        { source: 'xingtian', target: 'tiandi', label: '挑战', direction: 'forward' },
+        { source: 'xingtian', target: 'battle', label: '激战', direction: 'forward' },
+        { source: 'battle', target: 'spirit', label: '死后仍战', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1020,
+    name: '共工',
+    dynasty: '上古',
+    summary: '上古时期著名的部落首领，也是中国古代神话中最重要的水神之一。共工与火神祝融争夺天帝之位，激战之后兵败，愤怒之下以头撞向不周山。不周山乃支撑天地的天柱，共工这一撞，导致天柱折断，天穹向西北倾斜，大地向东南塌陷，洪水泛滥，天火蔓延，人间陷入浩劫。这场天地灾变也成为女娲炼石补天故事的起因，共工怒触不周山的神话深刻影响了中国古代的宇宙观与天地观念。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20water%20god%20gonggong%20portrait%20traditional%20chinese%20painting%20powerful%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    birth_place: null,
+    occupations: ['部落首领'],
+    influence: 75,
+    related_people: [
+      { name: '相柳', relation: '君臣', influence: 65 },
+      { name: '祝融', relation: '敌对', influence: 70 },
+      { name: '河伯', relation: '同僚', influence: 60 }
+    ],
+    life_events: [
+      { year: -2600, title: '与祝融大战', description: '共工与祝融争夺天帝之位', importance: 9 },
+      { year: -2600, title: '怒触不周山', description: '战败后怒触不周山，天柱折，地维绝', importance: 10 }
+    ],
+    related_events: ['大禹治水']
+  },
+  {
+    id: 1021,
+    name: '祝融',
+    dynasty: '上古',
+    summary: '中国古代神话中的火神，也是南方部落的首领，被尊为南方之神和夏季之神。祝融在神话中最著名的事迹，是与水神共工争夺天帝之位的惊天大战。在这场天地变色的大战中，祝融凭借火焰之力击败了共工，导致共工怒触不周山，引发天地崩塌。祝融掌管火的形象，反映了上古先民对火的敬畏与崇拜，火光既带来温暖与光明，也代表着毁灭与重生的力量。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20fire%20god%20zhurong%20portrait%20traditional%20chinese%20painting%20flames%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    birth_place: null,
+    occupations: ['部落首领'],
+    influence: 70,
+    related_people: [
+      { name: '共工', relation: '敌对', influence: 75 }
+    ],
+    life_events: [
+      { year: -2600, title: '与共工大战', description: '祝融与共工争夺天帝之位并获胜', importance: 9 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1022,
+    name: '女娲',
+    dynasty: '上古',
+    summary: '中国神话中的创世女神，相传造人、炼石补天。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20goddess%20nuwa%20portrait%20traditional%20chinese%20painting%20creation%20divine%20female&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['创世神'],
+    influence: 95,
+    related_people: [],
+    life_events: [
+      { year: -3000, title: '抟土造人', description: '女娲抟土造人，创造人类', importance: 10 },
+      { year: -2600, title: '炼石补天', description: '共工触山后天塌地陷，女娲炼石补天', importance: 10 }
+    ],
+    related_events: [],
+    story: {
+      title: '女娲造人与补天',
+      content: '天地初开，世间尚无人类。女娲行走于苍茫大地，感到孤独寂寞，便以黄土抟造人形，吹入灵气，人类由此诞生。后来，水神共工与火神祝融争夺天帝之位，共工战败，怒触不周山，天柱折断，天穹破裂，大地塌陷，洪水与烈火席卷人间。女娲不忍人类受难，采集五色石炼成浆液，将天穹裂缝一一修补。又斩断巨鳌的四足，支撑起四方天地，平息了这场天地浩劫。女娲造人与补天的故事，成为中华文明中关于人类起源和天地秩序重建的最重要神话，女娲也因此被尊为中华民族的创世母神。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20goddess%20nuwa%20creating%20humans%20and%20mending%20sky%20with%20five%20colored%20stones%20mythological%20scene%20traditional%20chinese%20painting%20epic%20dramatic&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'nuwa', name: '女娲', type: 'person', size: 'large' },
+        { id: 'human', name: '人类', type: 'story', size: 'medium' },
+        { id: 'gonggong', name: '共工', type: 'person', size: 'small' },
+        { id: 'disaster', name: '天地灾变', type: 'event', size: 'medium' },
+        { id: 'mend_sky', name: '炼石补天', type: 'story', size: 'medium' },
+        { id: 'order', name: '天地秩序', type: 'story', size: 'small' }
+      ],
+      edges: [
+        { source: 'nuwa', target: 'human', label: '抟土造人', direction: 'forward' },
+        { source: 'gonggong', target: 'disaster', label: '怒触不周山', direction: 'forward' },
+        { source: 'disaster', target: 'nuwa', label: '促使补天', direction: 'forward' },
+        { source: 'nuwa', target: 'mend_sky', label: '炼五色石', direction: 'forward' },
+        { source: 'mend_sky', target: 'order', label: '修复天地', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1023,
+    name: '精卫',
+    dynasty: '上古',
+    summary: '精卫填海故事主人公，象征坚韧不屈精神。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20mythical%20bird%20jingwei%20portrait%20traditional%20chinese%20painting%20sea%20bird%20legendary&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神话人物'],
+    influence: 75,
+    related_people: [],
+    life_events: [
+      { year: -2600, title: '溺亡化鸟', description: '炎帝之女溺亡于东海，化为精卫鸟', importance: 8 },
+      { year: -2600, title: '衔木填海', description: '精卫每日衔西山木石以填东海', importance: 10 }
+    ],
+    related_events: [],
+    story: {
+      title: '精卫填海',
+      content: '炎帝有一个小女儿，名叫女娃。一日，女娃独自驾舟前往东海游玩，不料海上风浪骤起，小船倾覆，女娃不幸溺亡于东海之中。女娃死后，魂魄化为一只小鸟，白喙赤足，名叫精卫。精卫痛恨东海夺去自己的生命，发誓要将东海填平。从此，精卫每日从西山衔来木石，一次次投入东海，日复一日，年复一年，永不停息。精卫填海的故事，成为中华民族不屈不挠、坚韧抗争精神的象征，千百年来激励着无数人面对困难时永不放弃。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20mythical%20bird%20jingwei%20carrying%20twigs%20and%20stones%20to%20fill%20the%20eastern%20sea%20traditional%20chinese%20painting%20dramatic%20ocean&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'jingwei', name: '精卫', type: 'person', size: 'large' },
+        { id: 'yandi', name: '炎帝', type: 'person', size: 'small' },
+        { id: 'nvwa_girl', name: '女娃', type: 'story', size: 'medium' },
+        { id: 'east_sea', name: '东海', type: 'event', size: 'medium' },
+        { id: 'fill_sea', name: '衔木填海', type: 'story', size: 'medium' }
+      ],
+      edges: [
+        { source: 'yandi', target: 'nvwa_girl', label: '女儿', direction: 'forward' },
+        { source: 'nvwa_girl', target: 'east_sea', label: '溺亡', direction: 'forward' },
+        { source: 'east_sea', target: 'jingwei', label: '化为精卫', direction: 'forward' },
+        { source: 'jingwei', target: 'fill_sea', label: '誓填东海', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1024,
+    name: '嫦娥',
+    dynasty: '上古',
+    summary: '中国古代神话人物，奔月故事流传广泛。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20moon%20goddess%20chang%27e%20portrait%20traditional%20chinese%20painting%20elegant%20graceful%20moon&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神话人物'],
+    influence: 80,
+    related_people: [
+      { name: '后羿', relation: '亲属', influence: 88 }
+    ],
+    life_events: [
+      { year: -2100, title: '嫦娥奔月', description: '嫦娥偷食不死药，飞升月宫', importance: 10 }
+    ],
+    related_events: ['后羿射日'],
+    story: {
+      title: '嫦娥奔月',
+      content: '后羿射落九日，拯救苍生，西王母赐予不死之药以示嘉奖。后羿将药交予妻子嫦娥保管，不料弟子逢蒙心怀不轨，趁后羿外出时闯入家中，逼迫嫦娥交出不死药。嫦娥情急之下，将不死药一口吞下。吞药之后，嫦娥身体变轻，飘然升空，最终飞向月宫，成为月宫仙子。从此，嫦娥独居广寒宫中，与玉兔为伴，遥望人间。后羿悲痛欲绝，每逢月圆之夜便设案拜月，寄托思念。嫦娥奔月的故事流传千古，成为中秋节赏月习俗的重要文化源头，寄托了人们对团圆与美好生活的向往。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20moon%20goddess%20chang%27e%20flying%20to%20the%20moon%20palace%20traditional%20chinese%20painting%20ethereal%20elegant%20moonlight&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'change', name: '嫦娥', type: 'person', size: 'large' },
+        { id: 'houyi', name: '后羿', type: 'person', size: 'medium' },
+        { id: 'immortal_medicine', name: '不死药', type: 'story', size: 'small' },
+        { id: 'moon_palace', name: '月宫', type: 'story', size: 'medium' }
+      ],
+      edges: [
+        { source: 'houyi', target: 'change', label: '夫妻', direction: 'none' },
+        { source: 'change', target: 'immortal_medicine', label: '吞下', direction: 'forward' },
+        { source: 'immortal_medicine', target: 'moon_palace', label: '飞升', direction: 'forward' },
+        { source: 'change', target: 'moon_palace', label: '奔月', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1025,
+    name: '吴刚',
+    dynasty: '上古',
+    summary: '月宫伐桂神话人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20moon%20figure%20wugang%20portrait%20traditional%20chinese%20painting%20woodcutter%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神话人物'],
+    influence: 60,
+    related_people: [],
+    life_events: [
+      { year: -2100, title: '月宫伐桂', description: '吴刚因获罪被谪月宫，砍伐桂树', importance: 8 }
+    ],
+    related_events: [],
+    story: {
+      title: '吴刚伐桂',
+      content: '吴刚本是一名凡人，因学仙修道时犯了过错，被天帝贬谪到月宫之中，罚他砍伐一棵巨大的桂树。这棵桂树高达五百丈，枝繁叶茂。然而，天帝给这棵桂树施了法术——吴刚每砍下一斧，树上的伤口便立刻愈合如初。吴刚日复一日地挥斧砍伐，桂树却始终屹立不倒，永远也砍不完。吴刚伐桂的故事，与嫦娥奔月共同构成了中国月宫神话的完整图景，象征着无尽的劳役与永恒的惩罚，也寄托了古人对月亮的丰富想象。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20moon%20woodcutter%20wugang%20cutting%20osmanthus%20tree%20traditional%20chinese%20painting%20moonlight%20palace%20mythical&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'wugang', name: '吴刚', type: 'person', size: 'large' },
+        { id: 'emperor', name: '天帝', type: 'person', size: 'small' },
+        { id: 'osmanthus', name: '月宫桂树', type: 'story', size: 'medium' },
+        { id: 'moon', name: '月宫', type: 'story', size: 'small' }
+      ],
+      edges: [
+        { source: 'emperor', target: 'wugang', label: '贬谪', direction: 'forward' },
+        { source: 'wugang', target: 'osmanthus', label: '永罚伐桂', direction: 'forward' },
+        { source: 'osmanthus', target: 'moon', label: '屹立月宫', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1026,
+    name: '伯益',
+    dynasty: '虞夏时期',
+    summary: '舜、禹时期重要辅臣，协助治水和管理山泽。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20official%20boyi%20portrait%20traditional%20chinese%20painting%20advisor%20scholar&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['大臣'],
+    influence: 75,
+    related_people: [
+      { name: '舜', relation: '君臣', influence: 95 },
+      { name: '大禹', relation: '君臣', influence: 99 },
+      { name: '皋陶', relation: '同僚', influence: 75 },
+      { name: '后稷', relation: '同僚', influence: 70 }
+    ],
+    life_events: [
+      { year: -2200, title: '辅佐舜', description: '协助舜治理山泽', importance: 8 },
+      { year: -2100, title: '协助大禹治水', description: '帮助大禹治理洪水', importance: 9 }
+    ],
+    related_events: ['大禹治水'],
+    story: {
+      title: '伯益辅政与治水',
+      content: '伯益是舜、禹时期的重要辅臣，以善于管理山泽和驯养鸟兽而闻名。在舜帝时期，伯益被任命为虞官，负责管理山林川泽，教导民众渔猎之术。大禹治水之时，伯益成为禹最重要的助手之一，他不仅参与治水工程，还利用自己对草木鸟兽的丰富知识，指导民众在洪水退去后的土地上种植作物、恢复生产。大禹晚年曾有意将天下禅让于伯益，但大禹之子启最终夺取了王位，结束了禅让传统。伯益的故事，反映了上古时期从禅让制向世袭制过渡的关键历史转折。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20official%20boyi%20assisting%20yu%20flood%20control%20mountain%20forest%20management%20traditional%20chinese%20painting%20scholar%20advisor&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'boyi', name: '伯益', type: 'person', size: 'large' },
+        { id: 'shun', name: '舜', type: 'person', size: 'medium' },
+        { id: 'yu', name: '大禹', type: 'person', size: 'medium' },
+        { id: 'flood_control', name: '大禹治水', type: 'event', size: 'medium' },
+        { id: 'shan_ze', name: '管理山泽', type: 'story', size: 'small' }
+      ],
+      edges: [
+        { source: 'shun', target: 'boyi', label: '任命虞官', direction: 'forward' },
+        { source: 'boyi', target: 'shan_ze', label: '掌管山林', direction: 'forward' },
+        { source: 'yu', target: 'flood_control', label: '主持治水', direction: 'forward' },
+        { source: 'boyi', target: 'flood_control', label: '协助治水', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1027,
+    name: '后稷',
+    dynasty: '虞夏时期',
+    summary: '周族的始祖，被尊为农业之神，是中国古代农耕文明的重要象征。后稷的母亲姜嫄因踩巨人脚印而怀孕，生下后稷后认为不祥，三弃之而不死，遂收养成人。后稷自幼喜爱种植，长大后精通农耕之术，被舜帝任命为农官，教民稼穑，推广五谷种植，极大地推动了原始农业的发展。后稷的后代最终建立了周朝，他是周王朝追认的始祖，在中国农业史和宗法文化中具有崇高地位。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20agricultural%20god%20houji%20portrait%20traditional%20chinese%20painting%20farmer%20founder&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['农官'],
+    influence: 70,
+    related_people: [
+      { name: '舜', relation: '君臣', influence: 95 },
+      { name: '伯益', relation: '同僚', influence: 75 },
+      { name: '皋陶', relation: '同僚', influence: 75 }
+    ],
+    life_events: [
+      { year: -2200, title: '推广农业', description: '教民稼穑，推广农业生产', importance: 9 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1028,
+    name: '皋陶',
+    dynasty: '虞夏时期',
+    summary: '舜帝时期掌管司法的重臣，被后世尊为中国司法文化的鼻祖。皋陶以公正严明著称，传说他有一只名为"獬豸"的神兽，能辨曲直，遇有罪之人则以角触之，成为古代司法公正的象征。皋陶为舜帝制定刑律，提出"明刑弼教"的司法理念，主张以法律辅助教化，而非单纯以刑罚惩处。皋陶与舜、禹、伯益等人共同构成了虞舜时代最具代表性的贤臣群体，对后世法制文化产生了深远影响。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20judge%20gaotao%20portrait%20traditional%20chinese%20painting%20justice%20scholar&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['司法官'],
+    influence: 75,
+    related_people: [
+      { name: '舜', relation: '君臣', influence: 95 },
+      { name: '大禹', relation: '君臣', influence: 99 },
+      { name: '伯益', relation: '同僚', influence: 75 },
+      { name: '后稷', relation: '同僚', influence: 70 }
+    ],
+    life_events: [
+      { year: -2200, title: '掌管司法', description: '为舜掌管刑法，开创中国司法文化', importance: 9 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1029,
+    name: '丹朱',
+    dynasty: '上古',
+    summary: '尧帝之子，因德行不足被父亲认为不堪继承帝位。尧帝晚年时，天下洪水泛滥，百姓苦不堪言，尧帝认为丹朱不肖，不足以担当天下重任，遂将帝位禅让给了德才兼备的舜，开创了中国历史上"禅让制"的先河。丹朱作为尧之子，虽出身高贵却未能继承大统，他的故事恰恰反衬了尧帝以天下为公的胸怀，以及禅让制中"选贤与能"的核心原则。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20prince%20danzhu%20portrait%20traditional%20chinese%20painting%20royal%20figure&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    birth_place: null,
+    occupations: ['王子'],
+    influence: 60,
+    related_people: [
+      { name: '尧', relation: '亲属', influence: 96 }
+    ],
+    life_events: [
+      { year: -2300, title: '尧不传位于丹朱', description: '尧认为丹朱不肖，将帝位禅让于舜', importance: 8 }
+    ],
+    related_events: ['尧舜禅让']
+  },
+  {
+    id: 1030,
+    name: '商均',
+    dynasty: '上古',
+    summary: '舜帝之子，与尧之子丹朱相似，因德行不足而未继承帝位。舜帝晚年，效仿尧帝的禅让传统，认为儿子商均不肖，遂将帝位禅让给了治水有功的大禹，延续了天下为公的禅让精神。商均虽贵为帝子，却未能继承大统，他的故事是禅让制度下"天下非一人之天下"理念的生动注脚，也见证了上古时期从禅让制向世袭制过渡的微妙历史节点。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20prince%20shangjun%20portrait%20traditional%20chinese%20painting%20royal%20figure&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    birth_place: null,
+    occupations: ['王子'],
+    influence: 60,
+    related_people: [
+      { name: '舜', relation: '亲属', influence: 95 }
+    ],
+    life_events: [
+      { year: -2200, title: '舜不传位于商均', description: '舜将帝位禅让于禹', importance: 8 }
+    ],
+    related_events: ['尧舜禅让']
+  },
+  {
+    id: 1031,
+    name: '娥皇',
+    dynasty: '上古',
+    summary: '尧帝之女，舜帝之妻，湘妃传说中最为动人的女性形象之一。尧帝赏识舜的德行与才能，将自己的两个女儿娥皇和女英一同嫁给了舜，以考察舜的治家与待人能力。舜登帝位后，娥皇始终以贤德辅佐夫君。舜晚年南巡，病逝于苍梧之野，娥皇与女英闻讯悲痛欲绝，泪洒湘江之畔的竹枝，泪痕斑斑化作斑竹，二人最终投湘水殉情，化为湘水之神。娥皇的故事凝聚了古代女性忠贞、贤惠与深情的多重美德，斑竹也因此成为千古爱情的象征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20princess%20ehuang%20portrait%20traditional%20chinese%20painting%20elegant%20female%20royal&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['王后'],
+    influence: 70,
+    related_people: [
+      { name: '尧', relation: '亲属', influence: 96 },
+      { name: '舜', relation: '亲属', influence: 95 },
+      { name: '女英', relation: '兄弟姐妹', influence: 70 }
+    ],
+    life_events: [
+      { year: -2264, title: '嫁与舜', description: '尧将娥皇女英嫁与舜', importance: 8 },
+      { year: -2184, title: '湘妃传说', description: '舜南巡病逝，娥皇女英泪洒湘竹', importance: 9 }
+    ],
+    related_events: ['尧舜禅让']
+  },
+  {
+    id: 1032,
+    name: '女英',
+    dynasty: '上古',
+    summary: '尧帝之女，舜帝之妻，与姐姐娥皇同为湘妃传说的主人公。尧帝为了考察舜的德行，将娥皇和女英姐妹一同嫁与舜为妻，二女贤德淑良，相敬如宾，共同辅佐舜治理天下。舜帝南巡途中病逝于苍梧，女英与娥皇一路追至湘江之畔，泪洒竹林，竹上留下斑斑泪痕，即为后世所称的"湘妃竹"（斑竹）。姐妹二人最终投江殉情，化作湘水女神，被后人世代祭祀。女英的故事是上古爱情传说中最凄美的篇章之一，也是忠贞不渝的文化象征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20princess%20nuying%20portrait%20traditional%20chinese%20painting%20elegant%20female%20royal&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['王后'],
+    influence: 70,
+    related_people: [
+      { name: '尧', relation: '亲属', influence: 96 },
+      { name: '舜', relation: '亲属', influence: 95 },
+      { name: '娥皇', relation: '兄弟姐妹', influence: 70 }
+    ],
+    life_events: [
+      { year: -2264, title: '嫁与舜', description: '尧将娥皇女英嫁与舜', importance: 8 },
+      { year: -2184, title: '湘妃传说', description: '舜南巡病逝，娥皇女英泪洒湘竹', importance: 9 }
+    ],
+    related_events: ['尧舜禅让']
+  },
+  {
+    id: 1033,
+    name: '相柳',
+    dynasty: '上古',
+    summary: '共工麾下的大将，中国古代神话中著名的九头蛇妖。相柳体型巨大，生有九个头，能同时吞食九座山上的食物，所到之处喷吐毒液，大地化为沼泽，生灵涂炭。大禹治水时，相柳为害一方，大禹凭借神力将相柳斩杀。然而相柳死后，其血液所流之处化为毒沼，五谷不生，大禹不得不三次填平毒沼，方才消除了相柳的遗毒。相柳的神话形象，反映了上古先民对洪水与毒害的恐惧，也是大禹治水英雄史诗中的重要反派角色。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20nine%20headed%20serpent%20xiangliu%20portrait%20traditional%20chinese%20painting%20mythical%20monster&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神话人物'],
+    influence: 65,
+    related_people: [
+      { name: '共工', relation: '君臣', influence: 75 }
+    ],
+    life_events: [
+      { year: -2100, title: '阻碍大禹治水', description: '相柳喷水为灾，阻碍大禹治水', importance: 8 }
+    ],
+    related_events: ['大禹治水']
+  },
+  {
+    id: 1034,
+    name: '河伯',
+    dynasty: '上古',
+    summary: '中国古代神话中的黄河水神，又称冯夷，掌管黄河及其流域的万千水域。河伯的形象在神话中颇为复杂，他既是一位威严的水神，也有任性妄为、引发洪水的一面。最著名的河伯故事，是"河伯娶妇"——战国时期邺城百姓为平息黄河水患，每年被迫将少女献祭河伯，直至西门豹治邺才废除了这一陋习。河伯的传说，反映了上古先民对黄河既敬畏又依赖的复杂情感，以及人类与自然力量的博弈。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20river%20god%20hebo%20portrait%20traditional%20chinese%20painting%20water%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['河神'],
+    influence: 60,
+    related_people: [
+      { name: '共工', relation: '同僚', influence: 75 }
+    ],
+    life_events: [],
+    related_events: []
+  },
+  {
+    id: 1035,
+    name: '白泽',
+    dynasty: '上古',
+    summary: '中国古代神话中的瑞兽，通晓天下万物之情状，是智慧与知识的象征。相传白泽能人言，黄帝东巡至海滨时，白泽现身，向黄帝详细讲述了天地间一万一千五百二十种精怪的来历、习性和驱逐之法。黄帝命人将白泽所言记录下来，绘成图册，这便是后世的《白泽图》。白泽向黄帝传授万物知识的故事，不仅展现了上古时期人们对自然世界的认知探索，也体现了智慧与知识在文明初创中的核心地位。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20mythical%20beast%20baize%20portrait%20traditional%20chinese%20painting%20wise%20creature&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '思想人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神兽'],
+    influence: 65,
+    related_people: [
+      { name: '黄帝', relation: '影响', influence: 100 },
+      { name: '九天玄女', relation: '同僚', influence: 65 }
+    ],
+    life_events: [
+      { year: -2600, title: '授黄帝知识', description: '白泽向黄帝传授万物知识', importance: 8 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1036,
+    name: '九天玄女',
+    dynasty: '上古',
+    summary: '中国古代神话中的重要女神，以传授兵法与战策而闻名，被尊为战神和智慧之神。在黄帝与蚩尤的涿鹿之战中，蚩尤布下大雾，黄帝军队迷失方向，陷入困境。九天玄女从天而降，向黄帝传授了兵法战策、布阵之术，并赐予黄帝符节以调动天兵。黄帝得九天玄女之助，终于扭转战局，击败了蚩尤。九天玄女授兵法的传说，成为后世兵家尊崇的神话源头，也象征着天意与智慧在战争中的决定性作用。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20goddess%20jiutian%20xuan%20nu%20portrait%20traditional%20chinese%20painting%20warrior%20goddess%20divine&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '思想人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['女神'],
+    influence: 65,
+    related_people: [
+      { name: '黄帝', relation: '影响', influence: 100 },
+      { name: '白泽', relation: '同僚', influence: 65 }
+    ],
+    life_events: [
+      { year: -2598, title: '授黄帝兵法', description: '九天玄女传授黄帝兵法', importance: 9 }
+    ],
+    related_events: ['涿鹿之战']
+  },
+  {
+    id: 1037,
+    name: '神荼',
+    dynasty: '上古',
+    summary: '中国民间最著名的门神之一，与郁垒同为最早的门神形象。据《山海经》记载，沧海之中有度朔山，山上有大桃树，神荼与郁垒居于桃树东北的鬼门之上，负责监察出入的万鬼，凡有不善之鬼，便以苇索捆绑，投喂猛虎。黄帝因此命人将神荼与郁垒的形象刻于桃木之上，悬挂于门户，以驱鬼辟邪。神荼与郁垒的门神信仰，成为中国传统年俗文化中贴门神、挂桃符习俗的起源，至今仍广为流传。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20door%20god%20shentu%20portrait%20traditional%20chinese%20painting%20protector%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['门神'],
+    influence: 55,
+    related_people: [
+      { name: '郁垒', relation: '同僚', influence: 55 }
+    ],
+    life_events: [],
+    related_events: []
+  },
+  {
+    id: 1038,
+    name: '郁垒',
+    dynasty: '上古',
+    summary: '中国民间最著名的门神之一，与神荼共同守护门户，是传统年俗文化的重要象征。据《山海经》记载，郁垒与神荼居于度朔山大桃树旁的鬼门之上，负责审核出入的众鬼，将作恶之鬼捆缚喂虎。黄帝下令将神荼郁垒绘于桃木板上悬挂门户，这便是贴门神、挂桃符习俗的起源。郁垒的形象常与神荼并列，一文一武，一左一右，守护着千家万户的平安，是中国民间信仰中最具代表性的守护神祇之一。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20door%20god%20yulei%20portrait%20traditional%20chinese%20painting%20protector%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['门神'],
+    influence: 55,
+    related_people: [
+      { name: '神荼', relation: '同僚', influence: 55 }
+    ],
+    life_events: [],
+    related_events: []
+  },
+  {
+    id: 1039,
+    name: '夸父',
+    dynasty: '上古',
+    summary: '夸父逐日故事主人公。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20giant%20kuafu%20portrait%20traditional%20chinese%20painting%20sun%20chaser%20mythical&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['神话人物'],
+    influence: 75,
+    related_people: [],
+    life_events: [
+      { year: -2600, title: '夸父逐日', description: '夸父追逐太阳，渴死途中，手杖化为邓林', importance: 10 }
+    ],
+    related_events: [],
+    story: {
+      title: '夸父逐日',
+      content: '远古时代，北方大荒之中有一座山，名叫成都载天。山中住着一个巨人，名为夸父。夸父眼见太阳每日东升西落，心中生出追赶太阳的豪情。他迈开大步，朝着太阳奔跑而去，从东海之滨一直追到禺谷，眼看就要追上太阳了，却感到口渴难耐。夸父喝干了黄河与渭河的水，仍然不解渴，最终在前往大泽的路上渴死途中。他临死前抛出的手杖，化为一片桃林，为后人遮阴纳凉。夸父逐日的故事，成为中华民族追求光明、不畏艰难、勇于探索精神的经典象征。',
+      image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20giant%20kuafu%20chasing%20the%20sun%20epic%20mythological%20scene%20traditional%20chinese%20painting%20dramatic%20wilderness&image_size=landscape_16_9'
+    },
+    narrative_relations: {
+      nodes: [
+        { id: 'kuafu', name: '夸父', type: 'person', size: 'large' },
+        { id: 'sun', name: '太阳', type: 'story', size: 'medium' },
+        { id: 'peach_forest', name: '邓林（桃林）', type: 'story', size: 'small' }
+      ],
+      edges: [
+        { source: 'kuafu', target: 'sun', label: '追逐', direction: 'forward' },
+        { source: 'kuafu', target: 'peach_forest', label: '手杖化为', direction: 'forward' }
+      ]
+    }
+  },
+  {
+    id: 1040,
+    name: '修己',
+    dynasty: '虞夏时期',
+    summary: '相传为鲧之妻、大禹之母，是中国治水英雄传说中重要的女性角色。据传修己怀孕三年，最终剖腹生下大禹，大禹出生之时，天降祥瑞，预示了这位治水英雄的非凡人生。修己的丈夫鲧因治水失败被舜帝处死，大禹继父之志，历经十三年艰辛终于治水成功。修己作为大禹之母，见证了从鲧的失败到大禹的成功的完整历程，她的故事是上古治水史诗中不可或缺的母性篇章，也是大禹"三过家门而不入"精神背后令人动容的家庭背景。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20woman%20xiujie%20portrait%20traditional%20chinese%20painting%20mother%20figure&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['人物'],
+    influence: 60,
+    related_people: [
+      { name: '鲧', relation: '亲属', influence: 82 },
+      { name: '大禹', relation: '母子', influence: 99 }
+    ],
+    life_events: [
+      { year: -2123, title: '生大禹', description: '修己怀孕三年生下大禹', importance: 8 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1041,
+    name: '防风氏',
+    dynasty: '虞夏时期',
+    summary: '上古时期一位身材高大的部落首领，涂山氏族的领袖，其事迹与大禹建立夏朝紧密相关。大禹治水成功后，在会稽山召集天下诸侯会盟，商议建立夏朝。防风氏因故迟到，大禹为树立权威、以儆效尤，当众将防风氏处死。传说防风氏死后，其尸骨长达数丈，仅一根骨头就需要一辆大车来运载，足见其体型之巨大。防风氏的故事，既反映了大禹建立夏朝之初确立中央权威的政治手段，也留下了上古巨人部落的传说痕迹。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20giant%20king%20fangfeng%20portrait%20traditional%20chinese%20painting%20legendary%20figure&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    birth_place: null,
+    occupations: ['部落首领'],
+    influence: 65,
+    related_people: [
+      { name: '大禹', relation: '敌对', influence: 99 }
+    ],
+    life_events: [
+      { year: -2070, title: '会盟迟到被杀', description: '防风氏因迟到被禹处死，以儆效尤', importance: 8 }
+    ],
+    related_events: ['建立夏朝']
+  },
+  {
+    id: 1042,
+    name: '羲和',
+    dynasty: '上古',
+    summary: '中国古代神话中的太阳女神，帝俊之妻，被尊为日母之神。据《山海经》记载，羲和生下了十个太阳，每日在甘渊中为太阳沐浴，然后驾着六龙之车，逐个将太阳送上天空，为大地带来光明与温暖。羲和驭日的神话，反映了上古先民对太阳运行规律的朴素观察与神话想象，也体现了古人将天文现象人格化的思维方式。羲和的故事与后羿射日的神话相互呼应，共同构成了中国太阳神话的完整体系，深深影响了后世的天文历法观念。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20sun%20goddess%20xihe%20portrait%20traditional%20chinese%20painting%20sun%20mythical%20goddess&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['太阳神'],
+    influence: 70,
+    related_people: [
+      { name: '常羲', relation: '同僚', influence: 65 }
+    ],
+    life_events: [],
+    related_events: []
+  },
+  {
+    id: 1043,
+    name: '常羲',
+    dynasty: '上古',
+    summary: '中国古代神话中的月亮女神，帝俊之妻，与羲和同为天文神话的重要角色。据《山海经》记载，常羲生下了十二个月亮，负责为月亮沐浴，掌管月亮的运行与月相的变化。常羲与十二个月亮的神话，解释了古人观察到的月相盈亏周期，将天文学观察与神话叙事完美融合。常羲与羲和，一个掌管月亮，一个掌管太阳，共同构成了中国上古神话中的日月双神体系，体现了古人对天体运行规律的敬畏与探索。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20moon%20goddess%20changxi%20portrait%20traditional%20chinese%20painting%20moon%20mythical%20goddess&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['月神'],
+    influence: 65,
+    related_people: [
+      { name: '羲和', relation: '同僚', influence: 70 }
+    ],
+    life_events: [],
+    related_events: []
+  },
+  {
+    id: 1044,
+    name: '燧人氏',
+    dynasty: '上古',
+    summary: '中国上古神话中"三皇"之一，被尊为火祖，以发明钻木取火而闻名于世。在远古时代，人类生食兽肉、饮用生水，疾病丛生，寿命极短。燧人氏观察到啄木鸟啄树时迸出火花，从中获得启发，发明了钻木取火的方法，教人族使用火来烹饪食物、驱寒取暖、驱赶野兽。火的发明彻底改变了人类的生存方式，燧人氏因此被尊为中华文明的开创者之一，他的智慧与贡献开启了人类用火文明的新纪元。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20fire%20inventor%20suiren%20portrait%20traditional%20chinese%20painting%20primitive%20human%20fire&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['部落首领'],
+    influence: 85,
+    related_people: [
+      { name: '有巢氏', relation: '同僚', influence: 80 }
+    ],
+    life_events: [
+      { year: -3000, title: '钻木取火', description: '燧人氏发明钻木取火，教民用火', importance: 10 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1045,
+    name: '有巢氏',
+    dynasty: '上古',
+    summary: '中国上古神话中"三皇"之一，被尊为建筑之祖，以教人筑巢而居而闻名。远古时代，人类穴居野处，常受禽兽虫蛇之害。有巢氏观察鸟类筑巢于树上的行为，从中获得启发，教人族构木为巢，以避禽兽之害，改善居住方式。巢居的发明，使人类从穴居走向了更安全、更舒适的居住方式，是人类文明进步的重要里程碑。有巢氏与燧人氏、伏羲氏、神农氏等并列为上古文明的奠基者，他的贡献标志着人类从被动适应自然到主动改造生活环境的伟大转变。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20architect%20youchao%20portrait%20traditional%20chinese%20painting%20nest%20builder%20primitive&image_size=square',
+    birth_year: null,
+    death_year: null,
+    category: '科技人物',
+    level: 2,
+    birth_place: null,
+    occupations: ['部落首领'],
+    influence: 80,
+    related_people: [
+      { name: '燧人氏', relation: '同僚', influence: 85 }
+    ],
+    life_events: [
+      { year: -3000, title: '教人筑巢', description: '有巢氏教人构木为巢，避禽兽之害', importance: 10 }
+    ],
+    related_events: []
+  },
+  {
+    id: 1,
+    name: '李白',
+    dynasty: '唐朝',
+    summary: '唐代伟大的浪漫主义诗人，被誉为"诗仙"。其诗歌豪放飘逸，想象丰富，语言流转自然，音律和谐多变，代表了盛唐诗歌的最高成就。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20tang%20dynasty%20poet%20li%20bai%20portrait%20traditional%20chinese%20painting%20drinking%20wine%20elegant%20romantic&image_size=square',
+    birth_year: 701,
+    death_year: 762,
+    category: '文学家',
+    level: 1,
+    courtesy_name: '太白',
+    art_name: '青莲居士',
+    birth_place: '碎叶城（今吉尔吉斯斯坦托克马克）',
+    occupations: ['诗人', '文学家', '旅行家'],
+    works: [
+      { name: '静夜思', excerpt: '床前明月光，疑是地上霜', description: '五言绝句，以朴素语言写尽游子思乡之情，是中国最广为流传的唐诗之一。' },
+      { name: '将进酒', excerpt: '君不见黄河之水天上来', description: '七言歌行巅峰之作，气势磅礴，想象奇诡，抒发怀才不遇之愤闷，尽显诗仙豪放本色。' },
+      { name: '望庐山瀑布', excerpt: '飞流直下三千尺', description: '以夸张手法描绘庐山瀑布雄奇壮丽的景象，展现了诗人对自然之美的无限赞叹。' },
+      { name: '蜀道难', excerpt: '蜀道难，难于上青天', description: '以乐府旧题写蜀地山川险峻，想象奇特，气势雄浑，是李白诗歌中最具代表性的长篇巨制。' }
+    ],
+    influence: 96,
+    related_people: [
+      { name: '杜甫', relation: '好友', influence: 95 },
+      { name: '孟浩然', relation: '好友', influence: 88 },
+      { name: '贺知章', relation: '前辈', influence: 85 }
+    ],
+    life_events: [
+      { year: 701, title: '出生于碎叶城', description: '李白诞生于西域碎叶城', importance: 7 },
+      { year: 725, title: '出蜀漫游', description: '仗剑去国，辞亲远游', importance: 8 },
+      { year: 742, title: '供奉翰林', description: '被唐玄宗召入宫中供奉翰林', importance: 9 },
+      { year: 755, title: '安史之乱', description: '战乱爆发，李白避居庐山', importance: 10 },
+      { year: 762, title: '病逝于当涂', description: '在当涂县令李阳冰处病逝', importance: 8 }
+    ],
+    related_events: ['安史之乱']
+  },
+  {
+    id: 2,
+    name: '杜甫',
+    dynasty: '唐朝',
+    summary: '唐代伟大的现实主义诗人，被誉为"诗圣"。其诗歌深刻反映社会现实，记录了安史之乱前后的社会动荡，被称为"诗史"。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20tang%20dynasty%20poet%20du%20fu%20portrait%20traditional%20chinese%20painting%20scholarly%20thoughtful%20serious&image_size=square',
+    birth_year: 712,
+    death_year: 770,
+    category: '文学家',
+    level: 1,
+    courtesy_name: '子美',
+    art_name: '少陵野老',
+    birth_place: '河南巩县',
+    occupations: ['诗人', '文学家', '官员'],
+    works: [
+      { name: '春望', excerpt: '国破山河在，城春草木深', description: '安史之乱中身陷长安所作，以沉郁顿挫之笔写尽国破家亡之痛，被誉为"诗史"典范。' },
+      { name: '登高', excerpt: '无边落木萧萧下', description: '重阳节登高抒怀之作，被誉为"古今七律第一"，写尽漂泊异乡、年老多病之悲。' },
+      { name: '茅屋为秋风所破歌', excerpt: '安得广厦千万间', description: '由个人茅屋被风吹毁，推己及人，心系天下寒士，展现了诗人博大的仁爱胸怀。' },
+      { name: '三吏三别', excerpt: '暮投石壕村', description: '组诗名篇，记述安史之乱中官吏抓丁的惨状，真实反映了战乱给人民带来的深重苦难。' }
+    ],
+    influence: 95,
+    related_people: [
+      { name: '李白', relation: '好友', influence: 96 },
+      { name: '高适', relation: '好友', influence: 85 },
+      { name: '严武', relation: '好友', influence: 78 }
+    ],
+    life_events: [
+      { year: 712, title: '出生于河南巩县', description: '杜甫诞生于官宦世家', importance: 7 },
+      { year: 744, title: '与李白相遇', description: '在洛阳与李白相识，同游梁宋', importance: 9 },
+      { year: 755, title: '安史之乱', description: '战乱爆发，杜甫流离失所', importance: 10 },
+      { year: 760, title: '定居成都草堂', description: '在成都营建草堂，相对安定', importance: 8 },
+      { year: 770, title: '病逝于湘江', description: '在湘江小船上病逝', importance: 8 }
+    ],
+    related_events: ['安史之乱']
+  },
+  {
+    id: 3,
+    name: '武则天',
+    dynasty: '唐朝',
+    summary: '中国历史上唯一的女皇帝，在位期间政治清明，经济发展，开创了殿试和武举制度，打破门阀垄断，任用贤能。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20empress%20wu%20zetian%20portrait%20traditional%20chinese%20painting%20imperial%20regal%20golden%20crown&image_size=square',
+    birth_year: 624,
+    death_year: 705,
+    category: '帝王',
+    level: 1,
+    birth_place: '并州文水',
+    occupations: ['皇帝', '政治家'],
+    offices: ['皇后', '皇太后', '皇帝'],
+    influence: 94,
+    related_people: [
+      { name: '李世民', relation: '丈夫', influence: 93 },
+      { name: '李治', relation: '丈夫', influence: 88 },
+      { name: '太平公主', relation: '女儿', influence: 80 }
+    ],
+    life_events: [
+      { year: 624, title: '出生于并州文水', description: '武则天诞生于名门望族', importance: 7 },
+      { year: 637, title: '入宫为才人', description: '被唐太宗召入宫中为才人', importance: 8 },
+      { year: 655, title: '立为皇后', description: '被唐高宗立为皇后', importance: 10 },
+      { year: 690, title: '称帝建周', description: '改唐为周，自立为帝', importance: 10 },
+      { year: 705, title: '神龙政变', description: '被逼退位，同年病逝', importance: 9 }
+    ],
+    related_events: ['贞观之治', '神龙政变']
+  },
+  {
+    id: 4,
+    name: '李世民',
+    dynasty: '唐朝',
+    summary: '唐太宗，开创贞观之治，是中国历史上最杰出的帝王之一。他虚心纳谏，任用贤能，轻徭薄赋，开创了唐朝的盛世局面。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20emperor%20taizong%20li%20shimin%20portrait%20traditional%20chinese%20painting%20imperial%20wise%20confident&image_size=square',
+    birth_year: 598,
+    death_year: 649,
+    category: '帝王',
+    level: 1,
+    courtesy_name: '世民',
+    birth_place: '武功别馆',
+    occupations: ['皇帝', '军事家', '政治家'],
+    offices: ['秦王', '皇帝'],
+    influence: 93,
+    related_people: [
+      { name: '李渊', relation: '父亲', influence: 85 },
+      { name: '李建成', relation: '兄弟', influence: 75 },
+      { name: '魏征', relation: '大臣', influence: 88 },
+      { name: '武则天', relation: '妃嫔', influence: 94 }
+    ],
+    life_events: [
+      { year: 598, title: '出生于武功别馆', description: '李世民诞生于贵族家庭', importance: 7 },
+      { year: 618, title: '唐朝建立', description: '李渊称帝，建立唐朝', importance: 9 },
+      { year: 626, title: '玄武门之变', description: '发动政变，击杀太子建成', importance: 10 },
+      { year: 627, title: '即位', description: '登基为帝，贞观之治开始', importance: 10 },
+      { year: 649, title: '病逝', description: '病逝于翠微宫', importance: 8 }
+    ],
+    related_events: ['玄武门之变', '贞观之治']
+  },
+  {
+    id: 5,
+    name: '苏轼',
+    dynasty: '宋朝',
+    summary: '北宋著名文学家、书法家、画家，唐宋八大家之一。其词豪放飘逸，开创豪放词派，书法、绘画也有极高造诣。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20song%20dynasty%20scholar%20su%20shi%20portrait%20traditional%20chinese%20painting%20elegant%20literary&image_size=square',
+    birth_year: 1037,
+    death_year: 1101,
+    category: '文学家',
+    level: 1,
+    courtesy_name: '子瞻',
+    art_name: '东坡居士',
+    birth_place: '四川眉山',
+    occupations: ['文学家', '政治家', '书法家', '画家'],
+    offices: ['翰林学士', '礼部尚书', '端明殿学士'],
+    works: [
+      { name: '赤壁赋', excerpt: '清风徐来，水波不兴', description: '贬谪黄州时所作，以主客问答形式展开哲思，融儒释道于一炉，展现了苏轼豁达超然的人生态度。' },
+      { name: '念奴娇·赤壁怀古', excerpt: '大江东去浪淘尽', description: '豪放词巅峰之作，咏赤壁之战，追慕周瑜功业，抒发壮志未酬之感，意境雄浑壮阔。' },
+      { name: '水调歌头', excerpt: '明月几时有', description: '中秋怀弟之作，兼怀人生之思，"但愿人长久，千里共婵娟"成为中秋佳节千古绝唱。' },
+      { name: '江城子', excerpt: '十年生死两茫茫', description: '悼亡妻王弗所作，被誉为中国悼亡词之绝唱，情深意切，感人肺腑。' }
+    ],
+    influence: 94,
+    related_people: [
+      { name: '苏洵', relation: '父亲', influence: 85 },
+      { name: '苏辙', relation: '兄弟', influence: 88 },
+      { name: '王安石', relation: '政敌', influence: 90 },
+      { name: '欧阳修', relation: '老师', influence: 88 }
+    ],
+    life_events: [
+      { year: 1037, title: '出生于四川眉山', description: '苏轼诞生于书香门第', importance: 7 },
+      { year: 1057, title: '进士及第', description: '与弟弟苏辙同中进士', importance: 9 },
+      { year: 1079, title: '乌台诗案', description: '因诗获罪，被贬黄州', importance: 10 },
+      { year: 1080, title: '贬谪黄州', description: '在黄州创作大量名篇', importance: 9 },
+      { year: 1101, title: '病逝于常州', description: '遇赦北归途中病逝', importance: 8 }
+    ],
+    related_events: ['王安石变法', '乌台诗案']
+  },
+  {
+    id: 6,
+    name: '孔子',
+    dynasty: '春秋',
+    summary: '中国古代伟大的思想家、教育家，儒家学派创始人，被誉为"万世师表"。他开创私学，整理六经，其思想影响中国两千多年。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20philosopher%20confucius%20portrait%20traditional%20chinese%20painting%20wise%20scholar%20benevolent&image_size=square',
+    birth_year: -551,
+    death_year: -479,
+    category: '思想家',
+    level: 1,
+    courtesy_name: '仲尼',
+    birth_place: '鲁国陬邑',
+    occupations: ['思想家', '教育家', '政治家'],
+    works: [
+      { name: '论语', excerpt: '学而时习之，不亦说乎', description: '儒家学派奠基之作，记录孔子及其弟子言行，对中国两千多年的政治、文化、教育影响深远。' },
+      { name: '春秋', excerpt: '元年春王正月', description: '鲁国编年体史书，记载鲁国历史，首创"春秋笔法"，以微言大义褒贬历史人物与事件。' }
+    ],
+    influence: 99,
+    related_people: [
+      { name: '颜回', relation: '弟子', influence: 75 },
+      { name: '子路', relation: '弟子', influence: 78 },
+      { name: '孟子', relation: '继承者', influence: 92 }
+    ],
+    life_events: [
+      { year: -551, title: '出生于鲁国陬邑', description: '孔子诞生于鲁国', importance: 7 },
+      { year: -522, title: '开始讲学', description: '开创私学，广收门徒', importance: 10 },
+      { year: -517, title: '周游列国', description: '开始长达十四年的周游', importance: 9 },
+      { year: -484, title: '返回鲁国', description: '返回鲁国，专心著述', importance: 8 },
+      { year: -479, title: '病逝', description: '病逝于鲁国', importance: 8 }
+    ],
+    related_events: ['周游列国']
+  },
+  {
+    id: 7,
+    name: '汉武帝',
+    dynasty: '汉朝',
+    summary: '西汉第七位皇帝，开创了汉武盛世。他罢黜百家独尊儒术，北击匈奴，开辟丝绸之路，是中国历史上最有作为的皇帝之一。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20han%20dynasty%20emperor%20wu%20portrait%20traditional%20chinese%20painting%20imperial%20powerful%20ambitious&image_size=square',
+    birth_year: -156,
+    death_year: -87,
+    category: '帝王',
+    level: 1,
+    courtesy_name: '彻',
+    birth_place: '长安未央宫',
+    occupations: ['皇帝', '政治家', '军事家'],
+    offices: ['皇帝'],
+    influence: 95,
+    related_people: [
+      { name: '刘邦', relation: '曾祖父', influence: 92 },
+      { name: '卫青', relation: '大臣', influence: 88 },
+      { name: '霍去病', relation: '外甥', influence: 90 },
+      { name: '董仲舒', relation: '大臣', influence: 85 }
+    ],
+    life_events: [
+      { year: -156, title: '出生于长安', description: '汉武帝诞生于未央宫', importance: 7 },
+      { year: -141, title: '即位', description: '登基为帝，开始亲政', importance: 9 },
+      { year: -138, title: '张骞出使西域', description: '派遣张骞出使西域', importance: 10 },
+      { year: -127, title: '卫青北击匈奴', description: '卫青收复河套地区', importance: 9 },
+      { year: -87, title: '病逝', description: '病逝于五柞宫', importance: 8 }
+    ],
+    related_events: ['张骞出使西域', '汉匈战争']
+  },
+  {
+    id: 8,
+    name: '诸葛亮',
+    dynasty: '三国',
+    summary: '三国时期蜀汉丞相，杰出的政治家、军事家、发明家，被誉为"卧龙"。他辅佐刘备建立蜀汉，鞠躬尽瘁死而后已。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20three%20kingdoms%20strategist%20zhuge%20liang%20portrait%20traditional%20chinese%20painting%20wise%20scholar%20fan&image_size=square',
+    birth_year: 181,
+    death_year: 234,
+    category: '政治家',
+    level: 1,
+    courtesy_name: '孔明',
+    birth_place: '琅琊阳都',
+    occupations: ['丞相', '军事家', '发明家'],
+    offices: ['丞相', '武乡侯'],
+    works: [
+      { name: '出师表', excerpt: '鞠躬尽瘁，死而后已', description: '第一次北伐前上呈后主刘禅之奏章，表达北伐决心与对先帝的感念，忠贞之情溢于言表，被誉为"忠臣之楷模"。' },
+      { name: '诫子书', excerpt: '静以修身，俭以养德', description: '写给八岁儿子诸葛瞻的家书，短短86字蕴含修身齐家的至理，成为后世家训之典范。' }
+    ],
+    influence: 93,
+    related_people: [
+      { name: '刘备', relation: '主公', influence: 88 },
+      { name: '关羽', relation: '同僚', influence: 90 },
+      { name: '张飞', relation: '同僚', influence: 88 },
+      { name: '司马懿', relation: '对手', influence: 90 }
+    ],
+    life_events: [
+      { year: 181, title: '出生于琅琊阳都', description: '诸葛亮诞生于名门', importance: 7 },
+      { year: 207, title: '隆中对策', description: '刘备三顾茅庐，诸葛亮出山', importance: 10 },
+      { year: 208, title: '赤壁之战', description: '促成孙刘联盟，大败曹操', importance: 10 },
+      { year: 221, title: '蜀汉建立', description: '刘备称帝，任丞相', importance: 9 },
+      { year: 234, title: '病逝五丈原', description: '北伐途中病逝', importance: 10 }
+    ],
+    related_events: ['赤壁之战', '北伐']
+  },
+  {
+    id: 9,
+    name: '赵云',
+    dynasty: '三国',
+    summary: '三国时期蜀汉名将，身长八尺，姿颜雄伟，跟随刘备将近三十年，忠勇无双，长坂坡单骑救主传为佳话。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20three%20kingdoms%20general%20zhao%20yun%20portrait%20traditional%20chinese%20painting%20armor%20spear%20heroic&image_size=square',
+    birth_year: 168,
+    death_year: 229,
+    category: '军事家',
+    level: 1,
+    courtesy_name: '子龙',
+    birth_place: '常山真定',
+    occupations: ['将军', '军事家'],
+    offices: ['翊军将军', '镇军将军'],
+    influence: 88,
+    related_people: [
+      { name: '刘备', relation: '主公', influence: 88 },
+      { name: '关羽', relation: '同僚', influence: 90 },
+      { name: '张飞', relation: '同僚', influence: 88 },
+      { name: '诸葛亮', relation: '同僚', influence: 93 }
+    ],
+    life_events: [
+      { year: 168, title: '出生于常山真定', description: '赵云诞生于常山', importance: 7 },
+      { year: 200, title: '投奔刘备', description: '在邺城投奔刘备', importance: 8 },
+      { year: 208, title: '长坂坡救阿斗', description: '单骑救主，七进七出', importance: 10 },
+      { year: 219, title: '汉水之战', description: '以少胜多，大败曹军', importance: 9 },
+      { year: 229, title: '病逝', description: '病逝于成都', importance: 8 }
+    ],
+    related_events: ['赤壁之战', '长坂坡之战']
+  },
+  {
+    id: 10,
+    name: '王安石',
+    dynasty: '宋朝',
+    summary: '北宋著名政治家、文学家、思想家，主持王安石变法，是"唐宋八大家"之一。其变法对北宋政治经济产生深远影响。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20song%20dynasty%20statesman%20wang%20anshi%20portrait%20traditional%20chinese%20painting%20scholarly%20determined&image_size=square',
+    birth_year: 1021,
+    death_year: 1086,
+    category: '政治家',
+    level: 1,
+    courtesy_name: '介甫',
+    art_name: '临川先生',
+    birth_place: '江西临川',
+    occupations: ['政治家', '文学家', '思想家'],
+    offices: ['参知政事', '宰相'],
+    works: [
+      { name: '泊船瓜洲', excerpt: '春风又绿江南岸', description: '晚年罢相后所作，写京口瓜洲间的春日江景，"春风又绿"成为炼字经典，表达对故乡的深切思念。' },
+      { name: '梅花', excerpt: '墙角数枝梅', description: '借梅花自喻，以"凌寒独自开"表达不屈不挠的政治品格，是咏物诗中的上乘之作。' },
+      { name: '元日', excerpt: '爆竹声中一岁除', description: '描写新年元日的欢乐景象，以"千门万户曈曈日"寄托革新政治的理想，情调积极乐观。' }
+    ],
+    influence: 90,
+    related_people: [
+      { name: '宋神宗', relation: '君主', influence: 85 },
+      { name: '苏轼', relation: '政敌', influence: 94 },
+      { name: '司马光', relation: '政敌', influence: 88 }
+    ],
+    life_events: [
+      { year: 1021, title: '出生于江西临川', description: '王安石诞生于书香门第', importance: 7 },
+      { year: 1042, title: '进士及第', description: '考中进士，开始仕途', importance: 8 },
+      { year: 1069, title: '开始变法', description: '任参知政事，推行新法', importance: 10 },
+      { year: 1076, title: '第一次罢相', description: '新法受阻，第一次罢相', importance: 9 },
+      { year: 1086, title: '病逝', description: '新法被废，忧愤而逝', importance: 8 }
+    ],
+    related_events: ['王安石变法']
+  },
+  {
+    id: 11,
+    name: '岳飞',
+    dynasty: '宋朝',
+    summary: '南宋著名抗金将领，民族英雄。他率领岳家军抗击金兵，收复失地，精忠报国，却被奸臣秦桧所害，千古冤案。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20song%20dynasty%20general%20yue%20fei%20portrait%20traditional%20chinese%20painting%20armor%20sword%20patriotic&image_size=square',
+    birth_year: 1103,
+    death_year: 1142,
+    category: '军事家',
+    level: 1,
+    courtesy_name: '鹏举',
+    birth_place: '相州汤阴',
+    occupations: ['将军', '军事家'],
+    offices: ['少保', '枢密副使'],
+    influence: 92,
+    related_people: [
+      { name: '赵构', relation: '君主', influence: 82 },
+      { name: '秦桧', relation: '政敌', influence: 75 },
+      { name: '岳云', relation: '儿子', influence: 80 }
+    ],
+    life_events: [
+      { year: 1103, title: '出生于相州汤阴', description: '岳飞诞生于农家', importance: 7 },
+      { year: 1126, title: '从军抗金', description: '投军抗金，开始军旅生涯', importance: 8 },
+      { year: 1140, title: '郾城大捷', description: '大败金军主力', importance: 10 },
+      { year: 1141, title: '被解除兵权', description: '被召回临安，解除兵权', importance: 9 },
+      { year: 1142, title: '被害于风波亭', description: '以莫须有罪被害', importance: 10 }
+    ],
+    related_events: ['靖康之变', '宋金战争']
+  },
+  {
+    id: 12,
+    name: '朱元璋',
+    dynasty: '明朝',
+    summary: '明太祖，明朝开国皇帝，从乞丐到皇帝的传奇人物。他推翻元朝统治，建立明朝，开创了洪武之治。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20ming%20dynasty%20emperor%20zhuyuanzhang%20portrait%20traditional%20chinese%20painting%20imperial%20determined%20regal&image_size=square',
+    birth_year: 1328,
+    death_year: 1398,
+    category: '帝王',
+    level: 1,
+    courtesy_name: '国瑞',
+    birth_place: '濠州钟离',
+    occupations: ['皇帝', '军事家', '政治家'],
+    offices: ['吴王', '皇帝'],
+    influence: 92,
+    related_people: [
+      { name: '马皇后', relation: '妻子', influence: 82 },
+      { name: '朱棣', relation: '儿子', influence: 90 },
+      { name: '刘伯温', relation: '大臣', influence: 88 }
+    ],
+    life_events: [
+      { year: 1328, title: '出生于濠州钟离', description: '朱元璋诞生于贫苦农民家庭', importance: 7 },
+      { year: 1344, title: '出家为僧', description: '父母双亡，入皇觉寺为僧', importance: 8 },
+      { year: 1352, title: '参加红巾军', description: '投奔郭子兴，加入红巾军', importance: 9 },
+      { year: 1368, title: '称帝建明', description: '在南京称帝，建立明朝', importance: 10 },
+      { year: 1398, title: '病逝', description: '病逝于应天', importance: 8 }
+    ],
+    related_events: ['元末农民起义', '明朝建立']
+  },
+{
+    id: 201001,
+    name: '启',
+    dynasty: '夏商西周',
+    summary: '大禹之子，继承禹的权力，建立夏朝早期统治秩序，传统上被视为世袭王位的重要转折人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%90%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '阳翟（传说）',
+    occupations: ["夏朝建立者"],
+    related_people: [{"name":"太康","relation":"kinship","influence":75}],
+    influence: 95,
+    dimension_scores: {"historical_influence":95,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201002,
+    name: '太康',
+    dynasty: '夏商西周',
+    summary: '夏启之后的君主，传统史书中的“太康失国”成为夏朝早期政治危机的重要象征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E5%BA%B7%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: -2100,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '夏都地区',
+    occupations: ["夏王"],
+    related_people: [{"name":"启","relation":"kinship","influence":75},{"name":"仲康","relation":"kinship","influence":75},{"name":"后羿","relation":"hostile","influence":75}],
+    related_events: [{"name":"太康失国","role":"失势者"}],
+    influence: 78,
+    dimension_scores: {"historical_influence":78,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201003,
+    name: '仲康',
+    dynasty: '夏商西周',
+    summary: '夏朝君主，处于太康失国之后的王权恢复阶段。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BB%B2%E5%BA%B7%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '夏',
+    occupations: ["夏王"],
+    related_people: [{"name":"太康","relation":"kinship","influence":75}],
+    influence: 72,
+    dimension_scores: {"historical_influence":72,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201004,
+    name: '少康',
+    dynasty: '夏商西周',
+    summary: '夏朝中兴的重要君主，在寒浞势力控制下恢复夏王室，被称为“少康中兴”。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B0%91%E5%BA%B7%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '有仍（传统说法）',
+    occupations: ["夏王"],
+    related_people: [{"name":"寒浞","relation":"hostile","influence":75},{"name":"伯靡","relation":"lord_vassal","influence":75},{"name":"女艾","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"少康中兴","role":"中兴者"}],
+    influence: 90,
+    dimension_scores: {"historical_influence":90,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201005,
+    name: '夏桀',
+    dynasty: '夏商西周',
+    summary: '夏朝末代君主，传统史书将其描绘为暴政代表，最终在商汤攻伐下失去王位。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%8F%E6%A1%80%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '夏',
+    occupations: ["夏朝末代君主"],
+    related_people: [{"name":"关龙逢","relation":"lord_vassal","influence":75},{"name":"妺喜","relation":"support","influence":75},{"name":"商汤","relation":"hostile","influence":75}],
+    related_events: [{"name":"夏桀暴政","role":"统治者"},{"name":"商汤灭夏","role":"失败方"}],
+    influence: 92,
+    dimension_scores: {"historical_influence":92,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201006,
+    name: '商汤',
+    dynasty: '夏商西周',
+    summary: '商族首领，通过征伐夏桀建立商朝，是夏商更替的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%95%86%E6%B1%A4%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '亳',
+    occupations: ["商王朝建立者"],
+    related_people: [{"name":"夏桀","relation":"hostile","influence":75},{"name":"伊尹","relation":"lord_vassal","influence":75},{"name":"仲虺","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"商汤灭夏","role":"胜利方"}],
+    influence: 99,
+    dimension_scores: {"historical_influence":99,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201007,
+    name: '太甲',
+    dynasty: '夏商西周',
+    summary: '商汤之后的重要商王，传统文献记载其曾因失德被伊尹放逐，后重新执政。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E7%94%B2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '亳',
+    occupations: ["商王"],
+    related_people: [{"name":"伊尹","relation":"lord_vassal","influence":75}],
+    influence: 82,
+    dimension_scores: {"historical_influence":82,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201008,
+    name: '太戊',
+    dynasty: '夏商西周',
+    summary: '商朝中期的重要君主，传统上被视为商朝中兴时期代表人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E6%88%8A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '亳',
+    occupations: ["商王"],
+    influence: 88,
+    dimension_scores: {"historical_influence":88,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201009,
+    name: '盘庚',
+    dynasty: '夏商西周',
+    summary: '商朝重要君主，通过迁都于殷稳定商朝统治，由此形成长期稳定的政治中心。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%9B%98%E5%BA%9A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '奄、殷',
+    occupations: ["商王"],
+    related_people: [{"name":"祖甲","relation":"kinship","influence":75}],
+    related_events: [{"name":"盘庚迁殷","role":"主导者"}],
+    influence: 94,
+    dimension_scores: {"historical_influence":94,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201010,
+    name: '武丁',
+    dynasty: '夏商西周',
+    summary: '商朝后期著名君主，任用傅说、妇好等人才，开创“武丁中兴”。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AD%A6%E4%B8%81%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '商',
+    occupations: ["商王"],
+    related_people: [{"name":"妇好","relation":"kinship","influence":75},{"name":"傅说","relation":"lord_vassal","influence":75},{"name":"甘盘","relation":"lord_vassal","influence":75},{"name":"祖己","relation":"support","influence":75}],
+    related_events: [{"name":"武丁中兴","role":"主导者"},{"name":"妇好征伐","role":"统治者"},{"name":"商王对外征伐","role":"统治者"}],
+    influence: 98,
+    dimension_scores: {"historical_influence":98,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201011,
+    name: '妇好',
+    dynasty: '夏商西周',
+    summary: '武丁时期的重要王后，同时承担祭祀与军事职责，甲骨文和妇好墓为研究商代社会提供重要材料。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%87%E5%A5%BD%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 1,
+    birth_place: '商',
+    occupations: ["王后、军事人物"],
+    related_people: [{"name":"武丁","relation":"kinship","influence":75},{"name":"傅说","relation":"friend","influence":75}],
+    related_events: [{"name":"武丁中兴","role":"重要人物"},{"name":"妇好征伐","role":"军事人物"}],
+    influence: 97,
+    dimension_scores: {"historical_influence":97,"relation_activity":82,"professional_1":90,"professional_2":85,"professional_3":80},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201012,
+    name: '祖甲',
+    dynasty: '夏商西周',
+    summary: '商朝后期君主，传统文献对其政治和礼制改革有相关记载。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%A5%96%E7%94%B2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '商',
+    occupations: ["商王"],
+    related_people: [{"name":"盘庚","relation":"kinship","influence":75}],
+    influence: 83,
+    dimension_scores: {"historical_influence":83,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201013,
+    name: '帝乙',
+    dynasty: '夏商西周',
+    summary: '商朝末期君主，处于商王朝逐渐衰落阶段，为帝辛之父。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B8%9D%E4%B9%99%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '商',
+    occupations: ["商王"],
+    related_people: [{"name":"帝辛","relation":"kinship","influence":75}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201014,
+    name: '帝辛',
+    dynasty: '夏商西周',
+    summary: '商朝末代君主，即传统所称纣王，最终在周武王伐纣后失去统治。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B8%9D%E8%BE%9B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '朝歌',
+    occupations: ["商朝末代君主"],
+    related_people: [{"name":"帝乙","relation":"kinship","influence":75},{"name":"比干","relation":"kinship","influence":75},{"name":"箕子","relation":"support","influence":75},{"name":"微子启","relation":"kinship","influence":75}],
+    related_events: [{"name":"商末政治危机","role":"统治者"},{"name":"牧野之战","role":"失败方"}],
+    influence: 98,
+    dimension_scores: {"historical_influence":98,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201015,
+    name: '周太王',
+    dynasty: '夏商西周',
+    summary: '周族早期重要首领，推动周族发展并迁居岐山一带，为周族兴起奠定基础。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E5%A4%AA%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '邠地',
+    occupations: ["周族首领"],
+    related_people: [{"name":"王季","relation":"kinship","influence":75}],
+    influence: 86,
+    dimension_scores: {"historical_influence":86,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201016,
+    name: '王季',
+    dynasty: '夏商西周',
+    summary: '周文王之父，继承周族领导权，为周族后续发展创造条件。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%8E%8B%E5%AD%A3%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '岐山',
+    occupations: ["周族首领"],
+    related_people: [{"name":"周太王","relation":"kinship","influence":75},{"name":"周文王","relation":"kinship","influence":75}],
+    influence: 82,
+    dimension_scores: {"historical_influence":82,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201017,
+    name: '周文王',
+    dynasty: '夏商西周',
+    summary: '周武王之父，周族兴起的重要领导者，推动政治与军事力量发展。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E6%96%87%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '岐山',
+    occupations: ["周族首领"],
+    related_people: [{"name":"王季","relation":"kinship","influence":75},{"name":"周武王","relation":"kinship","influence":75},{"name":"周公旦","relation":"kinship","influence":75},{"name":"姜子牙","relation":"lord_vassal","influence":75}],
+    influence: 99,
+    dimension_scores: {"historical_influence":99,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201018,
+    name: '周武王',
+    dynasty: '夏商西周',
+    summary: '周文王之子，联合诸侯伐商并在牧野之战击败商军，建立周朝。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E6%AD%A6%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '镐京',
+    occupations: ["西周建立者"],
+    related_people: [{"name":"周文王","relation":"kinship","influence":75},{"name":"周公旦","relation":"kinship","influence":75},{"name":"周成王","relation":"kinship","influence":75},{"name":"姜子牙","relation":"lord_vassal","influence":75},{"name":"召公奭","relation":"lord_vassal","influence":75},{"name":"康叔封","relation":"kinship","influence":75}],
+    related_events: [{"name":"牧野之战","role":"胜利方"},{"name":"分封制","role":"制度建立者"}],
+    influence: 100,
+    dimension_scores: {"historical_influence":100,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201019,
+    name: '周成王',
+    dynasty: '夏商西周',
+    summary: '周武王之子，在周公辅政下完成周初政治秩序建设。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E6%88%90%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '镐京',
+    occupations: ["周王"],
+    related_people: [{"name":"周武王","relation":"kinship","influence":75},{"name":"周公旦","relation":"lord_vassal","influence":75},{"name":"伯禽","relation":"support","influence":75},{"name":"周康王","relation":"support","influence":75}],
+    related_events: [{"name":"成康之治","role":"统治者"},{"name":"制礼作乐","role":"统治者"}],
+    influence: 94,
+    dimension_scores: {"historical_influence":94,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201020,
+    name: '周康王',
+    dynasty: '夏商西周',
+    summary: '西周早期君主，与周成王共同构成传统所称“成康之治”的重要阶段。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E5%BA%B7%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '镐京',
+    occupations: ["周王"],
+    related_people: [{"name":"周成王","relation":"support","influence":75}],
+    related_events: [{"name":"成康之治","role":"统治者"}],
+    influence: 92,
+    dimension_scores: {"historical_influence":92,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201021,
+    name: '周穆王',
+    dynasty: '夏商西周',
+    summary: '西周中期重要君主，传统文献记载其曾进行西征，与西方诸族交往。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E7%A9%86%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '镐京',
+    occupations: ["周王"],
+    related_people: [{"name":"周厉王","relation":"support","influence":75}],
+    influence: 90,
+    dimension_scores: {"historical_influence":90,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201022,
+    name: '周厉王',
+    dynasty: '夏商西周',
+    summary: '西周后期君主，因政治矛盾激化导致国人暴动，最终失去王位。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E5%8E%89%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '镐京',
+    occupations: ["周王"],
+    related_people: [{"name":"荣夷公","relation":"lord_vassal","influence":75},{"name":"召穆公","relation":"lord_vassal","influence":75},{"name":"周穆王","relation":"support","influence":75},{"name":"周宣王","relation":"kinship","influence":75}],
+    related_events: [{"name":"国人暴动","role":"被驱逐者"}],
+    influence: 93,
+    dimension_scores: {"historical_influence":93,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201023,
+    name: '周宣王',
+    dynasty: '夏商西周',
+    summary: '西周后期君主，采取一系列军事和政治措施，使周王朝出现短暂复兴。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E5%AE%A3%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '镐京',
+    occupations: ["周王"],
+    related_people: [{"name":"尹吉甫","relation":"lord_vassal","influence":75},{"name":"方叔","relation":"lord_vassal","influence":75},{"name":"召虎","relation":"lord_vassal","influence":75},{"name":"周幽王","relation":"kinship","influence":75},{"name":"周厉王","relation":"kinship","influence":75}],
+    related_events: [{"name":"宣王中兴","role":"主导者"}],
+    influence: 94,
+    dimension_scores: {"historical_influence":94,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201024,
+    name: '周幽王',
+    dynasty: '夏商西周',
+    summary: '西周末代君主，周王室内部矛盾和犬戎入侵最终导致西周灭亡。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E5%B9%BD%E7%8E%8B%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 1,
+    birth_place: '镐京',
+    occupations: ["西周末代君主"],
+    related_people: [{"name":"褒姒","relation":"kinship","influence":75},{"name":"申侯","relation":"hostile","influence":75},{"name":"周宣王","relation":"kinship","influence":75}],
+    related_events: [{"name":"犬戎攻周","role":"失败方"},{"name":"西周灭亡","role":"末代君主"}],
+    influence: 98,
+    dimension_scores: {"historical_influence":98,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 201025,
+    name: '周公旦',
+    dynasty: '夏商西周',
+    summary: '周武王之弟，武王死后辅佐成王，平定三监之乱并参与周初制度建设，是周代政治文化的重要奠基人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%91%A8%E5%85%AC%E6%97%A6%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 1,
+    birth_place: '周',
+    occupations: ["周初政治家"],
+    related_people: [{"name":"周文王","relation":"kinship","influence":75},{"name":"周武王","relation":"kinship","influence":75},{"name":"周成王","relation":"lord_vassal","influence":75},{"name":"管叔鲜","relation":"hostile","influence":75},{"name":"蔡叔度","relation":"hostile","influence":75},{"name":"霍叔处","relation":"hostile","influence":75},{"name":"武庚","relation":"hostile","influence":75},{"name":"伯禽","relation":"kinship","influence":75}],
+    related_events: [{"name":"牧野之战","role":"宗室成员"},{"name":"周公东征","role":"主导者"},{"name":"成康之治","role":"辅政者"},{"name":"制礼作乐","role":"制度建设者"},{"name":"分封制","role":"制度推动者"}],
+    influence: 100,
+    dimension_scores: {"historical_influence":100,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202026,
+    name: '后羿',
+    dynasty: '夏商西周',
+    summary: '夏朝早期政治传说中的重要人物，相传掌握夏政，并在太康失国后形成独立的政治势力。后羿后来被寒浞取代，其故事成为夏初政治动荡的重要传说。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%90%8E%E7%BE%BF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    occupations: ["部落首领、军事人物"],
+    related_people: [{"name":"太康","relation":"hostile","influence":75},{"name":"寒浞","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"太康失国","role":"政权掌握者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":82,"professional_1":90,"professional_2":85,"professional_3":80},
+    story: {"title":"后羿的故事","content":"后羿，是中国历史上重要的历史人物。夏朝早期政治传说中的重要人物，相传掌握夏政，并在太康失国后形成独立的政治势力。后羿后来被寒浞取代，其故事成为夏初政治动荡的重要传说。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%90%8E%E7%BE%BF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202027,
+    name: '寒浞',
+    dynasty: '夏商西周',
+    summary: '相传后羿掌权后，寒浞逐渐取得其势力，最终杀死后羿并掌握夏朝政权。后来少康重新组织力量，使夏王室复兴。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%AF%92%E6%B5%9E%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["部落首领、政治人物"],
+    related_people: [{"name":"后羿","relation":"lord_vassal","influence":75},{"name":"少康","relation":"hostile","influence":75}],
+    related_events: [{"name":"少康中兴","role":"对立者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"寒浞的故事","content":"寒浞，是中国历史上重要的历史人物。相传后羿掌权后，寒浞逐渐取得其势力，最终杀死后羿并掌握夏朝政权。后来少康重新组织力量，使夏王室复兴。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%AF%92%E6%B5%9E%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202028,
+    name: '女艾',
+    dynasty: '夏商西周',
+    summary: '传统记载中的女性人物，相传受到少康派遣，深入寒浞势力内部获取情报，为少康复国创造条件，是中国早期历史传说中少见的女性政治人物形象。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A5%B3%E8%89%BE%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["少康谋臣"],
+    related_people: [{"name":"少康","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"少康中兴","role":"谋臣"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"女艾的故事","content":"女艾，是中国历史上重要的历史人物。传统记载中的女性人物，相传受到少康派遣，深入寒浞势力内部获取情报，为少康复国创造条件，是中国早期历史传说中少见的女性政治人物形象。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A5%B3%E8%89%BE%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202029,
+    name: '伯靡',
+    dynasty: '夏商西周',
+    summary: '夏王室的重要支持者，相传在少康失国后仍坚持支持夏王室，并协助少康积蓄力量、恢复夏朝政权。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%9D%A1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["夏臣"],
+    related_people: [{"name":"少康","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"少康中兴","role":"支持者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"伯靡的故事","content":"伯靡，是中国历史上重要的历史人物。夏王室的重要支持者，相传在少康失国后仍坚持支持夏王室，并协助少康积蓄力量、恢复夏朝政权。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%9D%A1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202030,
+    name: '关龙逢',
+    dynasty: '夏商西周',
+    summary: '传统文献中的忠臣形象，相传因直言劝谏夏桀、反对其暴政而遭杀害，后世常将其视为忠臣直谏的代表。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%85%B3%E9%BE%99%E9%80%A2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["夏朝大臣"],
+    related_people: [{"name":"夏桀","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"夏桀暴政","role":"进谏者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"关龙逢的故事","content":"关龙逢，是中国历史上重要的历史人物。传统文献中的忠臣形象，相传因直言劝谏夏桀、反对其暴政而遭杀害，后世常将其视为忠臣直谏的代表。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%85%B3%E9%BE%99%E9%80%A2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202031,
+    name: '妺喜',
+    dynasty: '夏商西周',
+    summary: '传统历史叙事中的夏末女性人物，与夏桀统治和夏朝灭亡的故事联系在一起。其形象经过后世文学与民间叙事不断加工，具有较强的传说色彩。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%BA%E5%96%9C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    occupations: ["夏桀宠妃"],
+    related_people: [{"name":"夏桀","relation":"support","influence":75}],
+    related_events: [{"name":"夏桀暴政","role":"宫廷人物"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":78,"professional_1":80,"professional_2":92,"professional_3":88},
+    story: {"title":"妺喜的故事","content":"妺喜，是中国历史上重要的历史人物。传统历史叙事中的夏末女性人物，与夏桀统治和夏朝灭亡的故事联系在一起。其形象经过后世文学与民间叙事不断加工，具有较强的传说色彩。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%BA%E5%96%9C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202032,
+    name: '费昌',
+    dynasty: '夏商西周',
+    summary: '传统记载中的夏商之际人物，相传由夏转向商，后来成为商汤一方的重要人物，是观察夏商政治力量转换的一个人物节点。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%B4%B9%E6%98%8C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["夏末商初人物"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"费昌的故事","content":"费昌，是中国历史上重要的历史人物。传统记载中的夏商之际人物，相传由夏转向商，后来成为商汤一方的重要人物，是观察夏商政治力量转换的一个人物节点。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%B4%B9%E6%98%8C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202033,
+    name: '昆吾',
+    dynasty: '夏商西周',
+    summary: '夏末重要方国势力的代表人物，传统记载中与夏桀及商汤灭夏的政治格局有关，可用于展示夏末诸侯势力与王朝更替之间的关系。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%98%86%E5%90%BE%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["诸侯、方国首领"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"昆吾的故事","content":"昆吾，是中国历史上重要的历史人物。夏末重要方国势力的代表人物，传统记载中与夏桀及商汤灭夏的政治格局有关，可用于展示夏末诸侯势力与王朝更替之间的关系。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%98%86%E5%90%BE%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202034,
+    name: '皋陶',
+    dynasty: '夏商西周',
+    summary: '传说中的早期政治人物，与尧、舜、禹时期的政治秩序和司法传统密切相关。其形象常被后世视为中国早期司法制度的重要象征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%9A%8B%E9%99%B6%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["司法官、政治人物"],
+    related_people: [{"name":"伯益","relation":"friend","influence":75}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"皋陶的故事","content":"皋陶，是中国历史上重要的历史人物。传说中的早期政治人物，与尧、舜、禹时期的政治秩序和司法传统密切相关。其形象常被后世视为中国早期司法制度的重要象征。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%9A%8B%E9%99%B6%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202035,
+    name: '伯益',
+    dynasty: '夏商西周',
+    summary: '禹时期的重要辅臣，传统记载中参与治水和山泽管理，并与夏初政治传承有关。其人物形象能够连接上古时代与夏朝早期的政治发展。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%9B%8A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["辅臣"],
+    related_people: [{"name":"皋陶","relation":"friend","influence":75}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"伯益的故事","content":"伯益，是中国历史上重要的历史人物。禹时期的重要辅臣，传统记载中参与治水和山泽管理，并与夏初政治传承有关。其人物形象能够连接上古时代与夏朝早期的政治发展。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%9B%8A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202036,
+    name: '伊尹',
+    dynasty: '夏商西周',
+    summary: '商汤的重要辅臣，传统文献中被认为参与商汤灭夏，并在商朝建立后辅佐政权，是商初政治治理的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%8A%E5%B0%B9%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["商汤辅臣"],
+    related_people: [{"name":"商汤","relation":"lord_vassal","influence":75},{"name":"太甲","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"商汤灭夏","role":"辅政者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"伊尹的故事","content":"伊尹，是中国历史上重要的历史人物。商汤的重要辅臣，传统文献中被认为参与商汤灭夏，并在商朝建立后辅佐政权，是商初政治治理的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%8A%E5%B0%B9%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202037,
+    name: '仲虺',
+    dynasty: '夏商西周',
+    summary: '商汤时期的重要辅臣，传统文献中与商汤灭夏以及商初政治建设有关，是商汤政治集团的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BB%B2%E8%99%BA%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["商汤辅臣"],
+    related_people: [{"name":"商汤","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"商汤灭夏","role":"辅政者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"仲虺的故事","content":"仲虺，是中国历史上重要的历史人物。商汤时期的重要辅臣，传统文献中与商汤灭夏以及商初政治建设有关，是商汤政治集团的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BB%B2%E8%99%BA%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202038,
+    name: '葛伯',
+    dynasty: '夏商西周',
+    summary: '商汤灭夏过程中相关方国的首领，传统记载中因与商汤发生冲突而成为商汤征伐体系中的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%91%9B%E4%BC%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["方国首领"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"葛伯的故事","content":"葛伯，是中国历史上重要的历史人物。商汤灭夏过程中相关方国的首领，传统记载中因与商汤发生冲突而成为商汤征伐体系中的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%91%9B%E4%BC%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202039,
+    name: '巫咸',
+    dynasty: '夏商西周',
+    summary: '商代重要巫者和政治人物，传统文献中与王权、祭祀和占卜活动有关，体现了商代政治与宗教高度结合的社会特征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B7%AB%E5%92%B8%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '思想家',
+    level: 2,
+    occupations: ["巫师、政治人物"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":75,"professional_1":85,"professional_2":90,"professional_3":95},
+    story: {"title":"巫咸的故事","content":"巫咸，是中国历史上重要的历史人物。商代重要巫者和政治人物，传统文献中与王权、祭祀和占卜活动有关，体现了商代政治与宗教高度结合的社会特征。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B7%AB%E5%92%B8%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202040,
+    name: '甘盘',
+    dynasty: '夏商西周',
+    summary: '武丁时期的重要臣僚，传统记载中与武丁早期政治经历有关，是武丁任用贤臣、整顿政治的重要人物之一。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%98%E7%9B%98%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["武丁辅臣"],
+    related_people: [{"name":"武丁","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"武丁中兴","role":"辅政者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"甘盘的故事","content":"甘盘，是中国历史上重要的历史人物。武丁时期的重要臣僚，传统记载中与武丁早期政治经历有关，是武丁任用贤臣、整顿政治的重要人物之一。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%98%E7%9B%98%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202041,
+    name: '傅说',
+    dynasty: '夏商西周',
+    summary: '武丁时期的重要政治家，传统记载中武丁通过梦兆寻找并任用傅说，使其成为辅佐自己的重要大臣，是武丁中兴的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%82%85%E8%AF%B4%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["武丁辅臣"],
+    related_people: [{"name":"武丁","relation":"lord_vassal","influence":75},{"name":"妇好","relation":"friend","influence":75}],
+    related_events: [{"name":"武丁中兴","role":"辅政者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"傅说的故事","content":"傅说，是中国历史上重要的历史人物。武丁时期的重要政治家，传统记载中武丁通过梦兆寻找并任用傅说，使其成为辅佐自己的重要大臣，是武丁中兴的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%82%85%E8%AF%B4%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202042,
+    name: '祖己',
+    dynasty: '夏商西周',
+    summary: '武丁时期的重要王室成员，传统文献中以劝谏武丁等事迹著称，其人物故事体现了商代王室内部政治与祭祀传统。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%A5%96%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["商王室成员、政治人物"],
+    related_people: [{"name":"武丁","relation":"support","influence":75}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"祖己的故事","content":"祖己，是中国历史上重要的历史人物。武丁时期的重要王室成员，传统文献中以劝谏武丁等事迹著称，其人物故事体现了商代王室内部政治与祭祀传统。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%A5%96%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202043,
+    name: '微子启',
+    dynasty: '夏商西周',
+    summary: '帝辛的兄长，商末王室的重要人物。商朝灭亡后被周人封于宋，其经历连接了商亡、周初政治秩序与宋国建立。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BE%AE%E5%AD%90%E5%90%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["商王室成员"],
+    related_people: [{"name":"帝辛","relation":"kinship","influence":75}],
+    related_events: [{"name":"商末政治危机","role":"王室人物"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"微子启的故事","content":"微子启，是中国历史上重要的历史人物。帝辛的兄长，商末王室的重要人物。商朝灭亡后被周人封于宋，其经历连接了商亡、周初政治秩序与宋国建立。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BE%AE%E5%AD%90%E5%90%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202044,
+    name: '比干',
+    dynasty: '夏商西周',
+    summary: '商末重要大臣，传统记载中因忠谏帝辛而遭杀害，后世逐渐形成忠臣典范形象，是商末政治危机叙事的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%94%E5%B9%B2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["商朝大臣"],
+    related_people: [{"name":"帝辛","relation":"kinship","influence":75},{"name":"箕子","relation":"kinship","influence":75}],
+    related_events: [{"name":"商末政治危机","role":"进谏者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"比干的故事","content":"比干，是中国历史上重要的历史人物。商末重要大臣，传统记载中因忠谏帝辛而遭杀害，后世逐渐形成忠臣典范形象，是商末政治危机叙事的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%94%E5%B9%B2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202045,
+    name: '箕子',
+    dynasty: '夏商西周',
+    summary: '商末王室成员，传统记载中曾向帝辛进谏。商亡后，其人物故事又与周初政治秩序以及箕子朝鲜传说联系在一起。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%95%E5%AD%90%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '思想家',
+    level: 2,
+    occupations: ["商王室成员、政治人物"],
+    related_people: [{"name":"帝辛","relation":"support","influence":75},{"name":"比干","relation":"kinship","influence":75}],
+    related_events: [{"name":"商末政治危机","role":"王室人物"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":75,"professional_1":85,"professional_2":90,"professional_3":95},
+    story: {"title":"箕子的故事","content":"箕子，是中国历史上重要的历史人物。商末王室成员，传统记载中曾向帝辛进谏。商亡后，其人物故事又与周初政治秩序以及箕子朝鲜传说联系在一起。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%95%E5%AD%90%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202046,
+    name: '妲己',
+    dynasty: '夏商西周',
+    summary: '商末历史叙事中的重要女性人物，传统文学与民间故事常将她与帝辛统治和商朝灭亡联系起来，但相关故事经过后世不断演绎，传说色彩较强。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%B2%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    occupations: ["帝辛宠妃"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":78,"professional_1":80,"professional_2":92,"professional_3":88},
+    story: {"title":"妲己的故事","content":"妲己，是中国历史上重要的历史人物。商末历史叙事中的重要女性人物，传统文学与民间故事常将她与帝辛统治和商朝灭亡联系起来，但相关故事经过后世不断演绎，传说色彩较强。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%B2%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202047,
+    name: '飞廉',
+    dynasty: '夏商西周',
+    summary: '商末重要人物，传统记载中与帝辛统治及商周战争有关，是商末政治与军事集团中的代表人物之一。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%A3%9E%E5%BB%89%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    occupations: ["商末臣将"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":82,"professional_1":90,"professional_2":85,"professional_3":80},
+    story: {"title":"飞廉的故事","content":"飞廉，是中国历史上重要的历史人物。商末重要人物，传统记载中与帝辛统治及商周战争有关，是商末政治与军事集团中的代表人物之一。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%A3%9E%E5%BB%89%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202048,
+    name: '太姒',
+    dynasty: '夏商西周',
+    summary: '周文王王后，传统文献中以贤德形象著称，是周初王室女性的重要代表。她与周文王、周武王以及周初王室传承之间具有密切关系。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    occupations: ["周文王王后"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":78,"professional_1":80,"professional_2":92,"professional_3":88},
+    story: {"title":"太姒的故事","content":"太姒，是中国历史上重要的历史人物。周文王王后，传统文献中以贤德形象著称，是周初王室女性的重要代表。她与周文王、周武王以及周初王室传承之间具有密切关系。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202049,
+    name: '伯邑考',
+    dynasty: '夏商西周',
+    summary: '周文王长子，传统记载中与周文王、周武王及商纣王之间存在密切关系。其故事成为周初王室历史与传说的重要组成部分。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%82%91%E8%80%83%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["周文王长子"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"伯邑考的故事","content":"伯邑考，是中国历史上重要的历史人物。周文王长子，传统记载中与周文王、周武王及商纣王之间存在密切关系。其故事成为周初王室历史与传说的重要组成部分。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%82%91%E8%80%83%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202050,
+    name: '姜子牙',
+    dynasty: '夏商西周',
+    summary: '周武王的重要辅臣和军事人物，传统上被称为太公望，参与伐商，并在周朝建立后受封齐国，是商周更替过程中最具代表性的辅臣之一。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A7%9C%E5%AD%90%E7%89%99%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    occupations: ["周武王辅臣、军事家"],
+    related_people: [{"name":"周文王","relation":"lord_vassal","influence":75},{"name":"周武王","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"牧野之战","role":"重要将领"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":82,"professional_1":90,"professional_2":85,"professional_3":80},
+    story: {"title":"姜子牙的故事","content":"姜子牙，是中国历史上重要的历史人物。周武王的重要辅臣和军事人物，传统上被称为太公望，参与伐商，并在周朝建立后受封齐国，是商周更替过程中最具代表性的辅臣之一。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A7%9C%E5%AD%90%E7%89%99%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202051,
+    name: '召公奭',
+    dynasty: '夏商西周',
+    summary: '周初重要政治人物，与周公旦共同参与周初政权建设和政治秩序稳定，并与西周分封体系的发展密切相关。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E5%85%AC%E5%A5%AD%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["周初重臣"],
+    related_people: [{"name":"周武王","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"成康之治","role":"辅政者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"召公奭的故事","content":"召公奭，是中国历史上重要的历史人物。周初重要政治人物，与周公旦共同参与周初政权建设和政治秩序稳定，并与西周分封体系的发展密切相关。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E5%85%AC%E5%A5%AD%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202052,
+    name: '毕公高',
+    dynasty: '夏商西周',
+    summary: '周初重要宗室和大臣，参与周王朝早期政治建设，在周初政治秩序形成过程中发挥作用。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%95%E5%85%AC%E9%AB%98%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["周初重臣"],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"毕公高的故事","content":"毕公高，是中国历史上重要的历史人物。周初重要宗室和大臣，参与周王朝早期政治建设，在周初政治秩序形成过程中发挥作用。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%95%E5%85%AC%E9%AB%98%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202053,
+    name: '管叔鲜',
+    dynasty: '夏商西周',
+    summary: '周初重要宗室人物，被封于管。周公旦摄政期间，管叔鲜与蔡叔、霍叔以及武庚共同参与政治反抗，最终形成三监之乱。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%A1%E5%8F%94%E9%B2%9C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["周武王之弟"],
+    related_people: [{"name":"周公旦","relation":"hostile","influence":75},{"name":"蔡叔度","relation":"alliance","influence":75},{"name":"霍叔处","relation":"alliance","influence":75}],
+    related_events: [{"name":"周公东征","role":"叛乱者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"管叔鲜的故事","content":"管叔鲜，是中国历史上重要的历史人物。周初重要宗室人物，被封于管。周公旦摄政期间，管叔鲜与蔡叔、霍叔以及武庚共同参与政治反抗，最终形成三监之乱。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%A1%E5%8F%94%E9%B2%9C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202054,
+    name: '蔡叔度',
+    dynasty: '夏商西周',
+    summary: '周初宗室成员，被封于蔡，与管叔鲜、霍叔处共同参与三监之乱，是周初宗室政治矛盾的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%94%A1%E5%8F%94%E5%BA%A6%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["周武王之弟"],
+    related_people: [{"name":"周公旦","relation":"hostile","influence":75},{"name":"管叔鲜","relation":"alliance","influence":75}],
+    related_events: [{"name":"周公东征","role":"叛乱者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"蔡叔度的故事","content":"蔡叔度，是中国历史上重要的历史人物。周初宗室成员，被封于蔡，与管叔鲜、霍叔处共同参与三监之乱，是周初宗室政治矛盾的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%94%A1%E5%8F%94%E5%BA%A6%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202055,
+    name: '霍叔处',
+    dynasty: '夏商西周',
+    summary: '周初宗室成员，与管叔鲜、蔡叔度共同承担监视商遗民的任务，并卷入三监之乱，体现了周初分封与宗室政治的复杂关系。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%9C%8D%E5%8F%94%E5%A4%84%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["周武王之弟"],
+    related_people: [{"name":"周公旦","relation":"hostile","influence":75},{"name":"管叔鲜","relation":"alliance","influence":75}],
+    related_events: [{"name":"周公东征","role":"参与者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"霍叔处的故事","content":"霍叔处，是中国历史上重要的历史人物。周初宗室成员，与管叔鲜、蔡叔度共同承担监视商遗民的任务，并卷入三监之乱，体现了周初分封与宗室政治的复杂关系。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%9C%8D%E5%8F%94%E5%A4%84%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202056,
+    name: '武庚',
+    dynasty: '夏商西周',
+    summary: '帝辛之子。周灭商后，武庚被留在商地管理商遗民，后来联合三监发动反周行动，是商周政治转换的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AD%A6%E5%BA%9A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["商王室后裔"],
+    related_people: [{"name":"周公旦","relation":"hostile","influence":75}],
+    related_events: [{"name":"周公东征","role":"叛乱者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"武庚的故事","content":"武庚，是中国历史上重要的历史人物。帝辛之子。周灭商后，武庚被留在商地管理商遗民，后来联合三监发动反周行动，是商周政治转换的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AD%A6%E5%BA%9A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202057,
+    name: '康叔封',
+    dynasty: '夏商西周',
+    summary: '周初重要宗室人物，被封于卫，成为卫国始封君，是周初分封制度的重要代表人物之一。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BA%B7%E5%8F%94%E5%B0%81%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["周武王弟、卫国始封君"],
+    related_people: [{"name":"周武王","relation":"kinship","influence":75}],
+    related_events: [{"name":"分封制","role":"受封者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"康叔封的故事","content":"康叔封，是中国历史上重要的历史人物。周初重要宗室人物，被封于卫，成为卫国始封君，是周初分封制度的重要代表人物之一。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BA%B7%E5%8F%94%E5%B0%81%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202058,
+    name: '伯禽',
+    dynasty: '夏商西周',
+    summary: '周公旦之子，被封于鲁，成为鲁国早期统治者。他的人物经历能够体现周公家族与西周分封制度之间的联系。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%A6%BD%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["鲁国始封君"],
+    related_people: [{"name":"周成王","relation":"support","influence":75},{"name":"周公旦","relation":"kinship","influence":75}],
+    related_events: [{"name":"分封制","role":"受封者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"伯禽的故事","content":"伯禽，是中国历史上重要的历史人物。周公旦之子，被封于鲁，成为鲁国早期统治者。他的人物经历能够体现周公家族与西周分封制度之间的联系。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%A6%BD%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202059,
+    name: '尹吉甫',
+    dynasty: '夏商西周',
+    summary: '周宣王时期的重要军事和政治人物，传统文献和《诗经》相关材料中与周王朝北方军事行动有关，是宣王中兴时期的重要人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B0%B9%E5%90%89%E7%94%AB%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    occupations: ["周宣王重臣"],
+    related_people: [{"name":"周宣王","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"宣王中兴","role":"军事将领"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":82,"professional_1":90,"professional_2":85,"professional_3":80},
+    story: {"title":"尹吉甫的故事","content":"尹吉甫，是中国历史上重要的历史人物。周宣王时期的重要军事和政治人物，传统文献和《诗经》相关材料中与周王朝北方军事行动有关，是宣王中兴时期的重要人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B0%B9%E5%90%89%E7%94%AB%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202060,
+    name: '方叔',
+    dynasty: '夏商西周',
+    summary: '周宣王时期的重要将领，参与周王朝对南方地区的军事行动，是宣王时期周王朝军事活动的重要代表人物。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%96%B9%E5%8F%94%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    occupations: ["周宣王将领"],
+    related_people: [{"name":"周宣王","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"宣王中兴","role":"军事将领"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":82,"professional_1":90,"professional_2":85,"professional_3":80},
+    story: {"title":"方叔的故事","content":"方叔，是中国历史上重要的历史人物。周宣王时期的重要将领，参与周王朝对南方地区的军事行动，是宣王时期周王朝军事活动的重要代表人物。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%96%B9%E5%8F%94%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202061,
+    name: '召虎',
+    dynasty: '夏商西周',
+    summary: '周宣王时期的重要军事人物，与周王朝对淮夷等地区的军事行动有关，是宣王中兴时期军事力量的重要代表。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E8%99%8E%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '军事人物',
+    level: 2,
+    occupations: ["周宣王将领"],
+    related_people: [{"name":"周宣王","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"宣王中兴","role":"军事将领"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":82,"professional_1":90,"professional_2":85,"professional_3":80},
+    story: {"title":"召虎的故事","content":"召虎，是中国历史上重要的历史人物。周宣王时期的重要军事人物，与周王朝对淮夷等地区的军事行动有关，是宣王中兴时期军事力量的重要代表。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E8%99%8E%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202062,
+    name: '荣夷公',
+    dynasty: '夏商西周',
+    summary: '周厉王时期的重要政治人物，传统文献中因参与“专利”等政策而受到批评，其人物故事与周厉王时期的政治矛盾密切相关。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%8D%A3%E5%A4%B7%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["周厉王宠臣"],
+    related_people: [{"name":"周厉王","relation":"lord_vassal","influence":75}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"荣夷公的故事","content":"荣夷公，是中国历史上重要的历史人物。周厉王时期的重要政治人物，传统文献中因参与“专利”等政策而受到批评，其人物故事与周厉王时期的政治矛盾密切相关。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%8D%A3%E5%A4%B7%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202063,
+    name: '召穆公',
+    dynasty: '夏商西周',
+    summary: '西周后期重要政治人物，与周厉王时期的政治危机和国人暴动有关，传统记载中体现了周王室内部不同政治力量之间的矛盾。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E7%A9%86%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '政治人物',
+    level: 2,
+    occupations: ["周厉王时期重臣"],
+    related_people: [{"name":"周厉王","relation":"lord_vassal","influence":75}],
+    related_events: [{"name":"国人暴动","role":"政治参与者"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":85,"professional_1":85,"professional_2":90,"professional_3":82},
+    story: {"title":"召穆公的故事","content":"召穆公，是中国历史上重要的历史人物。西周后期重要政治人物，与周厉王时期的政治危机和国人暴动有关，传统记载中体现了周王室内部不同政治力量之间的矛盾。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E7%A9%86%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202064,
+    name: '褒姒',
+    dynasty: '夏商西周',
+    summary: '周幽王时期的重要女性人物，传统叙事中与幽王宠爱、诸侯关系以及西周灭亡联系在一起，其中“烽火戏诸侯”等故事具有较强的后世传说色彩。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%A4%92%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '文化人物',
+    level: 2,
+    occupations: ["周幽王王后"],
+    related_people: [{"name":"周幽王","relation":"kinship","influence":75}],
+    related_events: [{"name":"犬戎攻周","role":"王后"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":78,"professional_1":80,"professional_2":92,"professional_3":88},
+    story: {"title":"褒姒的故事","content":"褒姒，是中国历史上重要的历史人物。周幽王时期的重要女性人物，传统叙事中与幽王宠爱、诸侯关系以及西周灭亡联系在一起，其中“烽火戏诸侯”等故事具有较强的后世传说色彩。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%A4%92%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+{
+    id: 202065,
+    name: '申侯',
+    dynasty: '夏商西周',
+    summary: '西周末期重要诸侯，与周幽王时期的政治冲突以及犬戎攻周密切相关，在西周灭亡的历史转折中具有重要作用。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%B3%E4%BE%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
+    birth_year: null,
+    death_year: null,
+    category: '统治者',
+    level: 2,
+    occupations: ["诸侯"],
+    related_people: [{"name":"周幽王","relation":"hostile","influence":75}],
+    related_events: [{"name":"犬戎攻周","role":"参与者"},{"name":"西周灭亡","role":"相关诸侯"}],
+    influence: 80,
+    dimension_scores: {"historical_influence":80,"relation_activity":88,"professional_1":92,"professional_2":85,"professional_3":90},
+    story: {"title":"申侯的故事","content":"申侯，是中国历史上重要的历史人物。西周末期重要诸侯，与周幽王时期的政治冲突以及犬戎攻周密切相关，在西周灭亡的历史转折中具有重要作用。","image_url":"https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%B3%E4%BE%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4"},
+    narrative_relations: {"nodes":[],"edges":[]}
+  },
+]
+
+export const events: Event[] = [
+  {
+    id: 1001,
+    timeline_id: '上古政治演变',
+    name: '阪泉之战',
+    dynasty: '上古',
+    start_year: -2600,
+    end_year: -2600,
+    summary: '黄帝部落与炎帝部落因争夺部落联盟主导权爆发战争，最终黄帝获胜，炎黄部落逐渐融合，成为华夏民族形成的重要开端。',
+    event_type: '战争军事',
+    related_persons: ['黄帝', '炎帝', '风后', '力牧', '常先', '大鸿'],
+    location: '阪泉（今河北涿鹿东南）',
+    significance: '推动华夏族群融合，为中华文明的发展奠定基础，是中华民族共同起源的重要历史象征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20battle%20banquan%20war%20huangdi%20yandi%20traditional%20ink%20painting%20style%20dramatic%20scene&image_size=landscape_16_9',
+    one_sentence: '华夏两大部落融合的关键转折，中华民族共同起源的重要历史象征。',
+    person_groups: {
+      leaders: [
+        { name: '黄帝', role: '华夏部落联盟首领' },
+        { name: '炎帝', role: '神农氏部落首领' }
+      ],
+      participants: [
+        { name: '风后', role: '黄帝谋臣' },
+        { name: '力牧', role: '黄帝将领' },
+        { name: '常先', role: '黄帝将领' },
+        { name: '大鸿', role: '黄帝辅臣' }
+      ],
+      opponents: [
+        { name: '黄帝', role: '对战方' },
+        { name: '炎帝', role: '对战方' }
+      ],
+      affected: [
+        { name: '炎黄部落民众', role: '受战祸影响' }
+      ]
+    },
+    narratives: [
+      { year: -2600, title: '炎黄部落对峙', description: '黄帝部落与炎帝部落因争夺部落联盟主导权，在阪泉形成对峙局面。', tag: '对峙' },
+      { year: -2600, title: '阪泉之战爆发', description: '双方在阪泉展开激战，战鼓震天，血流成河。', tag: '决战' },
+      { year: -2600, title: '黄帝获得胜利', description: '黄帝在风后、力牧等谋臣将领的辅佐下，击败炎帝部落。', tag: '胜负' },
+      { year: -2600, title: '炎黄部落融合', description: '战后炎黄部落和解融合，形成华夏部落联盟雏形。', tag: '融合' },
+      { year: -2600, title: '共同抵御外敌', description: '炎黄联合后，共同面对蚩尤领导的九黎部落威胁。', tag: '结盟' }
+    ],
+    background: {
+      political: '各部落联盟为争夺中原主导权展开长期博弈，炎帝与黄帝两大部落势力最为强大。',
+      economic: '农耕经济不断发展，生产力提升，部落间争夺土地和资源的矛盾加剧。',
+      social: '部落规模扩大，人口增长，各部落需要通过结盟或征服来维持生存空间。',
+      cultural: '华夏各部落文化交流日益频繁，为融合奠定文化基础。',
+      geographic: '阪泉地处中原腹地，是连接南北的交通要道，战略地位重要。'
+    },
+    impacts: [
+      { name: '民族融合', score: 98 },
+      { name: '政治影响', score: 88 },
+      { name: '文化影响', score: 92 },
+      { name: '历史影响', score: 96 }
+    ],
+    chain: [
+      { type: 'cause', title: '炎帝势力扩张', year: '约前2600年', desc: '神农氏部落壮大', color: '#4A4A3A' },
+      { type: 'event', title: '阪泉之战', year: '约前2600年', desc: '炎黄激战', color: '#C34739' },
+      { type: 'consequence', title: '炎黄融合', year: '约前2600年', desc: '华夏联盟雏形', color: '#355C5A' },
+      { type: 'later', title: '涿鹿之战', year: '约前2598年', desc: '联军战蚩尤', color: '#D8B26A' },
+      { type: 'later', title: '华夏民族形成', year: '约前2500年', desc: '民族共同体', color: '#D4A853' }
+    ],
+    related_events: ['涿鹿之战', '神农尝百草'],
+    person_relations: [
+      { source: '黄帝', target: '炎帝', type: 'hostile', desc: '阪泉之战交战双方' },
+      { source: '黄帝', target: '风后', type: 'lord_vassal', desc: '黄帝的谋臣' },
+      { source: '黄帝', target: '力牧', type: 'lord_vassal', desc: '黄帝的将领' },
+      { source: '炎帝', target: '蚩尤', type: 'hostile', desc: '部落对立' },
+    ]
+  },
+  {
+    id: 1002,
+    timeline_id: '上古政治演变',
+    name: '涿鹿之战',
+    dynasty: '上古',
+    start_year: -2598,
+    end_year: -2598,
+    summary: '黄帝联合炎帝部落与蚩尤率领的九黎部落展开决战，最终黄帝取得胜利，确立了华夏部落联盟的主导地位。',
+    event_type: '战争军事',
+    related_persons: ['黄帝', '炎帝', '蚩尤', '风后', '力牧', '应龙', '女魃'],
+    location: '涿鹿（今河北涿鹿）',
+    significance: '奠定了华夏联盟的发展基础，成为中华民族共同祖先传说的重要组成部分，对中华民族认同具有深远影响。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20battle%20zhuolu%20war%20chiyou%20huangdi%20yandi%20traditional%20ink%20painting%20epic%20mythological&image_size=landscape_16_9',
+    one_sentence: '华夏文明共同体形成的重要象征。',
+    person_groups: {
+      leaders: [
+        { name: '黄帝', role: '华夏部落首领' },
+        { name: '蚩尤', role: '九黎部落首领' }
+      ],
+      participants: [
+        { name: '炎帝', role: '炎部落联盟' },
+        { name: '风后', role: '黄帝谋臣' },
+        { name: '力牧', role: '黄帝将领' }
+      ],
+      opponents: [
+        { name: '应龙', role: '黄帝方神兽' },
+        { name: '女魃', role: '黄帝方神兽' }
+      ],
+      affected: [
+        { name: '九黎部落', role: '战败方' }
+      ]
+    },
+    narratives: [
+      { year: -2600, title: '黄帝联合炎帝', description: '黄帝与炎帝部落结盟，共同对抗九黎部落。', tag: '结盟' },
+      { year: -2598, title: '九黎部落迎战', description: '蚩尤率九黎部落大军迎战，准备迎战华夏联盟。', tag: '备战' },
+      { year: -2598, title: '涿鹿大战爆发', description: '双方在涿鹿展开激战，持续多日。', tag: '决战' },
+      { year: -2598, title: '黄帝取得胜利', description: '黄帝部落借助神兽风后、力牧等的协助，击败蚩尤，统一中原。', tag: '胜利' },
+      { year: -2598, title: '华夏联盟形成', description: '各部落尊黄帝为首领，华夏联盟正式形成。', tag: '格局' }
+    ],
+    background: {
+      political: '部落联盟逐渐形成，各部落首领为争夺中原主导权展开长期博弈。',
+      economic: '农耕经济不断发展，生产力提升，部落之间争夺土地和资源加剧。',
+      social: '部落规模逐渐形成，战争频发，各部落需要通过结盟或征服来维持生存。',
+      cultural: '华夏文化与九黎文化交融，形成多元文化格局。',
+      geographic: '涿鹿地处中原核心位置，成为兵家必争之地。'
+    },
+    impacts: [
+      { name: '民族融合', score: 95 },
+      { name: '政治影响', score: 70 },
+      { name: '文化影响', score: 90 },
+      { name: '历史影响', score: 95 }
+    ],
+    chain: [
+      { type: 'cause', title: '阪泉之战', year: '约前2600年', desc: '炎黄结盟', color: '#4A4A3A' },
+      { type: 'event', title: '涿鹿之战', year: '约前2598年', desc: '决战蚩尤', color: '#C34739' },
+      { type: 'consequence', title: '华夏联盟形成', year: '约前2598年', desc: '统一中原', color: '#355C5A' },
+      { type: 'later', title: '尧舜禅让', year: '约前2284年', desc: '继承联盟', color: '#D8B26A' },
+      { type: 'later', title: '建立夏朝', year: '约前2071年', desc: '王朝开端', color: '#D4A853' }
+    ],
+    related_events: ['阪泉之战', '尧禅让', '建立夏朝'],
+    person_relations: [
+      { source: '黄帝', target: '炎帝', type: 'alliance', desc: '炎黄结盟，共同抗击蚩尤' },
+      { source: '黄帝', target: '蚩尤', type: 'hostile', desc: '涿鹿之战交战双方' },
+      { source: '黄帝', target: '风后', type: 'lord_vassal', desc: '黄帝的重要谋臣' },
+      { source: '黄帝', target: '力牧', type: 'lord_vassal', desc: '黄帝的重要将领' },
+      { source: '应龙', target: '黄帝', type: 'support', desc: '帮助黄帝在涿鹿之战中击败蚩尤' },
+      { source: '女魃', target: '黄帝', type: 'support', desc: '帮助黄帝在涿鹿之战中击败蚩尤' },
+      { source: '炎帝', target: '蚩尤', type: 'hostile', desc: '炎帝部落与蚩尤部落对立' },
+    ]
+  },
+  {
+    id: 1003,
+    timeline_id: '上古科技文化',
+    name: '神农尝百草',
+    dynasty: '上古',
+    start_year: -2850,
+    end_year: -2830,
+    summary: '相传炎帝神农氏遍尝百草，辨识植物的药用与食用价值，逐渐积累早期农业和医药知识，为人们生产生活提供经验。',
+    event_type: '科技发明',
+    related_persons: ['炎帝'],
+    significance: '被视为中国传统医学和农学的重要起源，对中医药文化和农业文明的发展具有重要意义。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20shennong%20tasting%20herbs%20medicine%20traditional%20ink%20painting%20nature%20plants&image_size=landscape_16_9',
+    one_sentence: '中华农耕文明与医药文化的神话起源，神农氏以身犯险换取万民安康。',
+    person_groups: {
+      leaders: [
+        { name: '炎帝', role: '神农氏、部落首领' }
+      ],
+      participants: [
+        { name: '神农氏', role: '尝百草者（传说）' }
+      ],
+      opponents: [],
+      affected: [
+        { name: '上古先民', role: '受益者' }
+      ]
+    },
+    narratives: [
+      { year: -2850, title: '神农发现百草', description: '神农氏发现自然界中各种植物，开始观察和辨识其药用与食用价值。', tag: '发现' },
+      { year: -2845, title: '亲身品尝百草', description: '神农氏亲口品尝百草，体验药性，相传曾一日中七十毒。', tag: '尝百草' },
+      { year: -2840, title: '总结医药理论', description: '神农氏根据品尝经验，总结百草药性，形成早期医药知识体系。', tag: '总结' },
+      { year: -2835, title: '教民耕种医药', description: '神农氏将医药知识传授民众，教导人们使用百草治病救人。', tag: '传授' },
+      { year: -2830, title: '奠定医药农基', description: '神农氏的尝百草实践，为中华医药学和农学奠定了重要基础。', tag: '奠基' }
+    ],
+    background: {
+      political: '上古时代部落联盟初步形成，部落首领同时承担文化启蒙和生产指导的职责。',
+      economic: '原始农业刚刚起步，先民需要辨识可食用植物和药用植物，以保障生存。',
+      social: '部落人口增长，疾病与食物短缺成为部落面临的主要挑战。',
+      cultural: '先民对自然界的认识处于原始阶段，神话传说与科学实践交织在一起。',
+      geographic: '江汉平原土地肥沃，物产丰富，为百草辨识提供了地理条件。'
+    },
+    impacts: [
+      { name: '科技影响', score: 95 },
+      { name: '文化影响', score: 98 },
+      { name: '历史影响', score: 96 },
+      { name: '社会影响', score: 90 }
+    ],
+    chain: [
+      { type: 'cause', title: '先民生存需要', year: '约前2850年', desc: '辨识百草', color: '#4A4A3A' },
+      { type: 'event', title: '神农尝百草', year: '约前2850年', desc: '辨识药性', color: '#5C7A5E' },
+      { type: 'consequence', title: '中医药起源', year: '约前2830年', desc: '医药体系', color: '#355C5A' },
+      { type: 'later', title: '农耕文明发展', year: '约前2800年', desc: '农业推广', color: '#D8B26A' },
+      { type: 'later', title: '《神农本草经》', year: '东汉', desc: '医学典籍', color: '#D4A853' }
+    ],
+    related_events: ['阪泉之战', '涿鹿之战']
+  },
+  {
+    id: 1004,
+    timeline_id: '上古科技文化',
+    name: '创制文字',
+    dynasty: '上古',
+    start_year: -2590,
+    end_year: -2590,
+    summary: '相传仓颉创造汉字，使人们逐步摆脱结绳记事方式，建立早期文字记录体系，为文明传承提供重要工具。',
+    event_type: '科技发明',
+    related_persons: ['仓颉', '黄帝'],
+    significance: '开启中华文字文明，推动历史记录、文化传播和知识积累，是中华文明延续的重要基础。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20cangjie%20creating%20chinese%20characters%20writing%20traditional%20ink%20painting%20scholar&image_size=landscape_16_9',
+    one_sentence: '仓颉造字使中华文明从蒙昧走向秩序，汉字成为华夏文化的基因密码。',
+    person_groups: {
+      leaders: [
+        { name: '仓颉', role: '黄帝史官、文字创造者' }
+      ],
+      participants: [
+        { name: '黄帝', role: '支持者' },
+        { name: '岐伯', role: '见证者' },
+        { name: '雷公', role: '见证者' }
+      ],
+      opponents: [],
+      affected: [
+        { name: '华夏先民', role: '使用者' }
+      ]
+    },
+    narratives: [
+      { year: -2595, title: '结绳记事的局限', description: '先民使用结绳记事，但记事能力有限，难以记录复杂的生产活动和文化知识。', tag: '现状' },
+      { year: -2590, title: '仓颉观察鸟兽足迹', description: '仓颉观察鸟兽足迹和日月星象，获得启发，开始创造文字符号。', tag: '灵感' },
+      { year: -2590, title: '创造汉字系统', description: '仓颉系统地创造了汉字，建立了早期文字记录体系。', tag: '造字' },
+      { year: -2590, title: '天雨粟鬼夜哭', description: '相传仓颉造字成功时，天降粟米以示祥瑞，鬼神夜哭以忧人类智慧开启。', tag: '传说' },
+      { year: -2590, title: '开启文字文明', description: '文字的创立使中华文明得以记录和传承，开启了中华文字文明的新纪元。', tag: '文明' }
+    ],
+    background: {
+      political: '黄帝统一诸部落后，部落联盟需要记录政令和管理事务，对文字产生迫切需求。',
+      economic: '农耕经济发展，生产活动复杂化，需要更好的记录方式管理生产和分配。',
+      social: '部落规模扩大，人口增加，社会管理需要更有效的信息传递工具。',
+      cultural: '华夏各部落文化交流频繁，需要统一的记录工具来保存和传播文化。',
+      geographic: '中原地区成为政治文化中心，为文字的统一和推广提供了地理条件。'
+    },
+    impacts: [
+      { name: '文化影响', score: 100 },
+      { name: '科技影响', score: 92 },
+      { name: '历史影响', score: 98 },
+      { name: '社会影响', score: 88 }
+    ],
+    chain: [
+      { type: 'cause', title: '结绳记事局限', year: '约前2600年', desc: '记录需求', color: '#4A4A3A' },
+      { type: 'event', title: '创制文字', year: '约前2590年', desc: '创造汉字', color: '#355C5A' },
+      { type: 'consequence', title: '文字记录体系', year: '约前2590年', desc: '文明载体', color: '#5C7A5E' },
+      { type: 'later', title: '甲骨文金文', year: '殷商', desc: '文字演变', color: '#D8B26A' },
+      { type: 'later', title: '中华文明延续', year: '至今', desc: '文化传承', color: '#D4A853' }
+    ],
+    related_events: ['涿鹿之战', '阪泉之战']
+  },
+  {
+    id: 1005,
+    timeline_id: '上古政治演变',
+    name: '尧舜禅让',
+    dynasty: '上古',
+    start_year: -2280,
+    end_year: -2259,
+    summary: '尧因舜德才兼备，将部落联盟首领之位禅让于舜，体现了早期以贤能继承首领的政治传统，并延续了禅让制度。',
+    event_type: '政治制度',
+    related_persons: ['尧', '舜', '丹朱', '娥皇', '女英', '皋陶', '伯益'],
+    location: '平阳（今山西临汾）',
+    significance: '成为中国传统政治文化中"禅让""德治""尚贤"思想的重要来源，对后世政治理念影响深远。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20emperor%20yao%20shun%20abdication%20ceremony%20traditional%20ink%20painting%20wise%20sage&image_size=landscape_16_9',
+    one_sentence: '禅让制度体现"选贤与能"的政治理想，是中华德治传统的源头活水。',
+    person_groups: {
+      leaders: [
+        { name: '尧', role: '部落联盟首领（禅让方）' },
+        { name: '舜', role: '德才兼备的继承者' }
+      ],
+      participants: [
+        { name: '娥皇', role: '尧之女、舜之妻' },
+        { name: '女英', role: '尧之女、舜之妻' },
+        { name: '皋陶', role: '司法官、见证人' },
+        { name: '伯益', role: '辅臣、见证人' }
+      ],
+      opponents: [
+        { name: '丹朱', role: '尧之子、无德' },
+        { name: '商均', role: '舜之子、无德' }
+      ],
+      affected: [
+        { name: '部落联盟民众', role: '受益者' }
+      ]
+    },
+    narratives: [
+      { year: -2280, title: '尧考察舜', description: '尧年事已高，开始考察继承人。尧听闻舜德才兼备，将两个女儿娥皇女英嫁与舜以考察其德行。', tag: '考察' },
+      { year: -2270, title: '舜通过考验', description: '舜在各种考验中展现出卓越的品德和能力，尧对舜的考察持续三年。', tag: '考验' },
+      { year: -2265, title: '尧决定禅让', description: '尧认为自己的儿子丹朱不肖，决定将帝位禅让给德才兼备的舜。', tag: '决定' },
+      { year: -2259, title: '尧禅位于舜', description: '尧在平阳正式将部落联盟首领之位禅让于舜，禅让制度正式确立。', tag: '禅让' },
+      { year: -2259, title: '开启德治传统', description: '舜继位后推行德政，禅让制度延续至大禹，为中华政治文化奠定基础。', tag: '德治' }
+    ],
+    background: {
+      political: '部落联盟首领之位的传承需要新的制度安排，传统的世袭制尚不成熟。',
+      economic: '农耕经济发展，社会财富增加，对首领的治理能力提出更高要求。',
+      social: '部落规模扩大，社会关系复杂，需要德高望重的首领来维持秩序。',
+      cultural: '华夏文化崇尚贤能，"尚贤"观念为禅让制度提供了文化支撑。',
+      geographic: '平阳地处中原，四方部落朝会便利，为禅让大典提供了地理条件。'
+    },
+    impacts: [
+      { name: '政治影响', score: 95 },
+      { name: '文化影响', score: 98 },
+      { name: '历史影响', score: 96 },
+      { name: '社会影响', score: 85 }
+    ],
+    chain: [
+      { type: 'cause', title: '尧选继承人', year: '约前2280年', desc: '考察贤者', color: '#4A4A3A' },
+      { type: 'event', title: '尧舜禅让', year: '约前2259年', desc: '禅让大典', color: '#C34739' },
+      { type: 'consequence', title: '舜推行德政', year: '约前2259年', desc: '德治天下', color: '#355C5A' },
+      { type: 'later', title: '舜禅让于禹', year: '约前2200年', desc: '延续禅让', color: '#D8B26A' },
+      { type: 'later', title: '世袭制取代', year: '约前2070年', desc: '启建夏朝', color: '#D4A853' }
+    ],
+    related_events: ['大禹治水', '建立夏朝'],
+    person_relations: [
+      { source: '尧', target: '舜', type: 'alliance', desc: '尧禅让天下于舜' },
+      { source: '舜', target: '禹', type: 'lord_vassal', desc: '舜任命禹治水' },
+    ]
+  },
+  {
+    id: 1006,
+    timeline_id: '上古政治演变',
+    name: '大禹治水',
+    dynasty: '上古',
+    start_year: -2100,
+    end_year: -2070,
+    summary: '大禹继承鲧治水事业，采用疏导河道的方法治理长期洪患，改善了生产生活条件，并为夏朝建立奠定基础。',
+    event_type: '科技发明',
+    related_persons: ['大禹', '鲧', '伯益', '应龙', '共工', '相柳'],
+    location: '黄河流域',
+    significance: '开创中国古代大型水利工程实践，体现早期工程技术水平，成为中华治水精神的重要象征。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20yu%20the%20great%20flood%20control%20water%20river%20traditional%20ink%20painting%20heroic&image_size=landscape_16_9',
+    one_sentence: '疏导河道，三过家门而不入，大禹用十三年时光换来了华夏百姓的安居乐业。',
+    person_groups: {
+      leaders: [
+        { name: '大禹', role: '治水首领' }
+      ],
+      participants: [
+        { name: '鲧', role: '前期治水（堵截法）' },
+        { name: '伯益', role: '治水辅臣' },
+        { name: '应龙', role: '神话神兽、协助治水' },
+        { name: '河伯', role: '河神、协助治水' }
+      ],
+      opponents: [
+        { name: '共工', role: '引发洪水的水神' },
+        { name: '相柳', role: '九头蛇、阻碍治水' }
+      ],
+      affected: [
+        { name: '黄河流域先民', role: '受益民众' }
+      ]
+    },
+    narratives: [
+      { year: -2120, title: '鲧治水失败', description: '尧时期洪水泛滥，鲧采用堵截方法治水，历时九年未能成功。', tag: '失败' },
+      { year: -2100, title: '禹接任治水', description: '舜继位后任命禹为治水首领，禹决心继承父亲遗志，治理洪水。', tag: '接任' },
+      { year: -2095, title: '改堵为疏', description: '禹改变父亲的堵截方法，采用疏导河道的策略，让洪水有处可泄。', tag: '策略' },
+      { year: -2085, title: '三过家门而不入', description: '禹治水期间三过家门而不入，全身心投入治水事业，成为治水精神的典范。', tag: '精神' },
+      { year: -2070, title: '治水大功告成', description: '禹历时十三年，终于疏通九河，平定水患，改善了生产生活条件。', tag: '成功' }
+    ],
+    background: {
+      political: '洪水泛滥威胁部落联盟的生存，治水成为联盟首领的首要任务。',
+      economic: '农耕经济依赖水利，洪水频发严重影响农业生产和粮食供应。',
+      social: '洪患导致部落迁徙和社会动荡，急需治理以稳定社会秩序。',
+      cultural: '华夏先民崇拜自然神，治水需要与河神共工等神话角色"博弈"。',
+      geographic: '黄河流域水患严重，河道淤积，需要系统性的疏导治理。'
+    },
+    impacts: [
+      { name: '科技影响', score: 96 },
+      { name: '政治影响', score: 92 },
+      { name: '历史影响', score: 98 },
+      { name: '社会影响', score: 94 }
+    ],
+    chain: [
+      { type: 'cause', title: '洪患泛滥', year: '约前2120年', desc: '鲧治水失败', color: '#4A4A3A' },
+      { type: 'event', title: '大禹治水', year: '约前2100年', desc: '疏导河道', color: '#355C5A' },
+      { type: 'consequence', title: '水患平定', year: '约前2070年', desc: '百姓安居', color: '#C34739' },
+      { type: 'later', title: '舜禅让于禹', year: '约前2070年', desc: '因功受禅', color: '#D8B26A' },
+      { type: 'later', title: '建立夏朝', year: '约前2070年', desc: '启承父业', color: '#D4A853' }
+    ],
+    related_events: ['尧舜禅让', '建立夏朝'],
+    person_relations: [
+      { source: '大禹', target: '伯益', type: 'lord_vassal', desc: '禹的得力助手' },
+      { source: '大禹', target: '后稷', type: 'lord_vassal', desc: '禹的农官' },
+      { source: '大禹', target: '共工', type: 'hostile', desc: '治水过程中的冲突' },
+    ]
+  },
+  {
+    id: 1007,
+    timeline_id: '上古政治演变',
+    name: '建立夏朝',
+    dynasty: '上古',
+    start_year: -2070,
+    end_year: -2070,
+    summary: '大禹去世后，其子启继承王位，结束禅让传统，建立中国历史上第一个世袭制王朝——夏朝，国家形态进一步形成。',
+    event_type: '政治制度',
+    related_persons: ['大禹', '启', '伯益', '皋陶', '后稷', '防风氏'],
+    location: '阳城（今河南登封）',
+    significance: '标志着中国由部落联盟进入王朝国家阶段，开启世袭王朝制度，对中国古代政治发展具有里程碑意义。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20xia%20dynasty%20founding%20emperor%20qi%20coronation%20traditional%20ink%20painting%20palace&image_size=landscape_16_9',
+    one_sentence: '启承父业终结禅让，世袭制开启中华王朝时代，中国从部落联盟迈入国家文明。',
+    person_groups: {
+      leaders: [
+        { name: '大禹', role: '治水英雄、前任首领' },
+        { name: '启', role: '大禹之子、夏朝开国之君' }
+      ],
+      participants: [
+        { name: '伯益', role: '辅臣、曾被考虑继位' },
+        { name: '皋陶', role: '司法官' },
+        { name: '后稷', role: '农官、周族始祖' }
+      ],
+      opponents: [
+        { name: '防风氏', role: '迟到被诛的部落首领' }
+      ],
+      affected: [
+        { name: '各部落首领', role: '臣服于夏' }
+      ]
+    },
+    narratives: [
+      { year: -2070, title: '大禹去世', description: '大禹在会稽去世，按照禅让制度本应传位于伯益。', tag: '继位' },
+      { year: -2070, title: '启夺取王位', description: '大禹之子启不甘失去权位，击败伯益，自立为王，结束禅让传统。', tag: '夺权' },
+      { year: -2070, title: '建立夏朝', description: '启在阳城建立夏朝，成为中国历史上第一个世袭制王朝。', tag: '开国' },
+      { year: -2070, title: '诛杀防风氏', description: '启在会盟时以迟到为由诛杀防风氏，确立夏朝权威。', tag: '立威' },
+      { year: -2070, title: '开启世袭王朝', description: '夏朝的建立标志着中国由部落联盟进入国家阶段，开启四千年王朝制度。', tag: '纪元' }
+    ],
+    background: {
+      political: '大禹治水威望无双，部落联盟权力向家族集中，为世袭制奠定基础。',
+      economic: '治水成功后农业生产恢复，社会财富积累，支持王朝建立的经济基础形成。',
+      social: '部落规模扩大，社会分化加剧，需要更强的国家机器来维持秩序。',
+      cultural: '禅让制历经尧、舜、禹三代，传统深厚，但世袭制的观念开始萌芽。',
+      geographic: '阳城地处中原，地理位置优越，适合作为王朝都城。'
+    },
+    impacts: [
+      { name: '政治影响', score: 98 },
+      { name: '历史影响', score: 100 },
+      { name: '社会影响', score: 94 },
+      { name: '文化影响', score: 92 }
+    ],
+    chain: [
+      { type: 'cause', title: '大禹治水功成', year: '约前2070年', desc: '威望无双', color: '#4A4A3A' },
+      { type: 'event', title: '建立夏朝', year: '约前2070年', desc: '世袭制开', color: '#C34739' },
+      { type: 'consequence', title: '王朝国家形成', year: '约前2070年', desc: '国家机器', color: '#355C5A' },
+      { type: 'later', title: '商周继承', year: '前1600年', desc: '世袭王朝', color: '#D8B26A' },
+      { type: 'later', title: '秦统一六合', year: '前221年', desc: '中央集权', color: '#D4A853' }
+    ],
+    related_events: ['大禹治水', '尧舜禅让'],
+    person_relations: [
+      { source: '启', target: '大禹', type: 'kinship', desc: '启为禹之子' },
+    ]
+  },
+  {
+    id: 1008,
+    timeline_id: '上古神话',
+    name: '后羿射日',
+    dynasty: '上古',
+    start_year: -2100,
+    end_year: -2100,
+    summary: '相传十日同出，天下大旱，英雄后羿射落九个太阳，拯救万物于灾难之中，成为中国古代最著名的英雄神话之一。',
+    event_type: '文化艺术',
+    related_persons: ['后羿', '嫦娥'],
+    significance: '成为中华神话体系的重要组成部分，体现古人崇尚英雄、探索自然和追求人与自然和谐共生的文化精神。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20mythology%20houyi%20shooting%20suns%20archer%20hero%20traditional%20ink%20painting%20dramatic&image_size=landscape_16_9',
+    one_sentence: '神箭后羿射落九日，英雄主义与天人合一的神话想象塑造了中华民族的精神品格。',
+    person_groups: {
+      leaders: [
+        { name: '后羿', role: '神话英雄、神箭手' }
+      ],
+      participants: [
+        { name: '嫦娥', role: '后羿之妻' }
+      ],
+      opponents: [
+        { name: '十日', role: '旱灾之源' }
+      ],
+      affected: [
+        { name: '天下百姓', role: '受旱灾影响' }
+      ]
+    },
+    narratives: [
+      { year: -2100, title: '十日同出', description: '相传十日同现于天，焦禾稼，杀草木，民无所食，天下大旱。', tag: '灾难' },
+      { year: -2100, title: '后羿受命射日', description: '天帝命后羿下凡射日，拯救万物于水火之中。', tag: '受命' },
+      { year: -2100, title: '后羿射落九日', description: '后羿张弓搭箭，射落九个太阳，只留一个照耀人间。', tag: '射日' },
+      { year: -2100, title: '拯救苍生', description: '旱灾消除，万物复苏，百姓欢呼雀跃，感后羿之德。', tag: '救世' },
+      { year: -2100, title: '嫦娥奔月', description: '后羿之妻嫦娥偷食不死药，飞升月宫，成为月神。', tag: '奔月' }
+    ],
+    background: {
+      political: '上古时代神话与现实交织，天帝统治神界，英雄受天命拯救苍生。',
+      economic: '大旱导致农业生产严重受损，百姓流离失所。',
+      social: '旱灾引发社会恐慌，人们期盼英雄出现拯救危难。',
+      cultural: '中华神话体系崇尚英雄，射日故事体现了人定胜天的精神。',
+      geographic: '中原地区旱灾频发，先民对太阳的崇拜与敬畏交织。'
+    },
+    impacts: [
+      { name: '文化影响', score: 98 },
+      { name: '历史影响', score: 92 },
+      { name: '社会影响', score: 85 },
+      { name: '精神影响', score: 96 }
+    ],
+    chain: [
+      { type: 'cause', title: '十日为灾', year: '神话时期', desc: '天下大旱', color: '#4A4A3A' },
+      { type: 'event', title: '后羿射日', year: '约前2100年', desc: '英雄救世', color: '#C34739' },
+      { type: 'consequence', title: '苍生得救', year: '约前2100年', desc: '万物复苏', color: '#355C5A' },
+      { type: 'later', title: '嫦娥奔月', year: '神话时期', desc: '月宫神话', color: '#D8B26A' },
+      { type: 'later', title: '中秋节起源', year: '后世', desc: '月圆人圆', color: '#D4A853' }
+    ],
+    related_events: ['大禹治水'],
+    person_relations: [
+      { source: '后羿', target: '尧', type: 'support', desc: '后羿为尧射日救世' },
+    ]
+  },
+  {
+    id: 1,
+    name: '贞观之治',
+    dynasty: '唐朝',
+    start_year: 627,
+    end_year: 649,
+    summary: '唐太宗李世民统治时期出现的政治清明、经济繁荣的局面，是中国历史上著名的盛世。',
+    event_type: '政治',
+    related_persons: ['李世民', '魏征', '房玄龄', '杜如晦'],
+    location: '长安',
+    significance: '奠定了唐朝二百多年的基业，成为后世治世的典范。'
+  },
+  {
+    id: 2,
+    name: '安史之乱',
+    dynasty: '唐朝',
+    start_year: 755,
+    end_year: 763,
+    summary: '由安禄山和史思明发动的叛乱，是唐朝由盛转衰的转折点。',
+    event_type: '战争',
+    related_persons: ['安禄山', '史思明', '唐玄宗', '郭子仪', '李白', '杜甫'],
+    location: '范阳、长安、洛阳',
+    significance: '标志着盛唐的结束，开启了藩镇割据的局面。'
+  },
+  {
+    id: 3,
+    name: '玄武门之变',
+    dynasty: '唐朝',
+    start_year: 626,
+    end_year: 626,
+    summary: '李世民在玄武门发动的政变，夺取了皇位继承权。',
+    event_type: '政治',
+    related_persons: ['李世民', '李建成', '李元吉', '李渊'],
+    location: '长安玄武门',
+    significance: '奠定了李世民的统治基础，为贞观之治创造了条件。'
+  },
+  {
+    id: 4,
+    name: '开元盛世',
+    dynasty: '唐朝',
+    start_year: 713,
+    end_year: 741,
+    summary: '唐玄宗李隆基统治前期出现的盛世局面，是唐朝的鼎盛时期。',
+    event_type: '政治',
+    related_persons: ['李隆基', '姚崇', '宋璟'],
+    location: '长安',
+    significance: '唐朝达到全盛，经济文化空前繁荣。'
+  },
+  {
+    id: 5,
+    name: '赤壁之战',
+    dynasty: '三国',
+    start_year: 208,
+    end_year: 208,
+    summary: '孙权、刘备联军在赤壁击败曹操大军的著名战役，奠定了三国鼎立的基础。',
+    event_type: '战争',
+    related_persons: ['曹操', '刘备', '孙权', '诸葛亮', '周瑜', '赵云'],
+    location: '赤壁（今湖北赤壁）',
+    significance: '奠定了三国鼎立的局面。'
+  },
+  {
+    id: 6,
+    name: '王安石变法',
+    dynasty: '宋朝',
+    start_year: 1069,
+    end_year: 1085,
+    summary: '宋神宗时期王安石推行的一系列改革措施，旨在富国强兵。',
+    event_type: '改革',
+    related_persons: ['王安石', '宋神宗', '苏轼', '司马光'],
+    location: '开封',
+    significance: '对北宋政治经济产生深远影响，是中国历史上重要的改革运动。'
+  },
+  {
+    id: 7,
+    name: '张骞出使西域',
+    dynasty: '汉朝',
+    start_year: -138,
+    end_year: -126,
+    summary: '汉武帝派遣张骞出使西域，开辟了丝绸之路。',
+    event_type: '外交',
+    related_persons: ['张骞', '汉武帝'],
+    location: '西域',
+    significance: '开辟了丝绸之路，促进了东西方文化交流。'
+  },
+  {
+    id: 8,
+    name: '汉匈战争',
+    dynasty: '汉朝',
+    start_year: -133,
+    end_year: -36,
+    summary: '汉朝与匈奴之间长达百年的战争，最终汉朝取得胜利。',
+    event_type: '战争',
+    related_persons: ['汉武帝', '卫青', '霍去病'],
+    location: '漠北',
+    significance: '奠定了汉朝在西域的霸权，保障了丝绸之路的畅通。'
+  },
+  {
+    id: 9,
+    name: '靖康之变',
+    dynasty: '宋朝',
+    start_year: 1126,
+    end_year: 1127,
+    summary: '金兵攻破开封，俘虏宋徽宗、宋钦宗，北宋灭亡。',
+    event_type: '战争',
+    related_persons: ['宋徽宗', '宋钦宗', '赵构'],
+    location: '开封',
+    significance: '北宋灭亡，南宋建立。'
+  },
+  {
+    id: 10,
+    name: '明朝建立',
+    dynasty: '明朝',
+    start_year: 1368,
+    end_year: 1368,
+    summary: '朱元璋在南京称帝，建立明朝，推翻元朝统治。',
+    event_type: '政治',
+    related_persons: ['朱元璋', '刘伯温', '徐达'],
+    location: '南京',
+    significance: '结束了元朝的统治，恢复了汉族政权。'
+  },
+{
+    id: 204001,
+    name: '太康失国',
+    dynasty: '夏商西周',
+    start_year: -2000,
+    end_year: -2000,
+    summary: '夏王太康统治时期荒废政事，长期外出狩猎，相传后羿因此逐渐掌握夏朝政治权力，太康失去王位。',
+    event_type: '政治事件',
+    related_persons: ["太康","后羿"],
+    significance: '反映早期夏王朝内部权力不稳以及王室与地方势力之间的矛盾。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%A4%AA%E5%BA%B7%E5%A4%B1%E5%9B%BD%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '夏王太康统治时期荒废政事，长期外出狩猎，相传后羿因此逐渐掌握夏朝政治权力，太康失去王位。',
+    person_groups: {"leaders":[{"name":"后羿","role":"政权掌握者"}],"participants":[],"opponents":[{"name":"太康","role":"失势者"}],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"太康","target":"后羿","type":"hostile","desc":"太康失政后，后羿逐渐掌握夏朝政治权力。"}]
+  },
+{
+    id: 204002,
+    name: '少康中兴',
+    dynasty: '夏商西周',
+    start_year: -1900,
+    end_year: -1900,
+    summary: '少康在夏王室势力衰落后重新积蓄力量，在伯靡等人的支持下击败寒浞势力，恢复夏王朝统治。',
+    event_type: '政治事件',
+    related_persons: ["少康","寒浞","伯靡","女艾"],
+    significance: '夏王朝重新恢复统治，是夏代历史叙事中重要的复兴阶段。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%B0%91%E5%BA%B7%E4%B8%AD%E5%85%B4%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '少康在夏王室势力衰落后重新积蓄力量，在伯靡等人的支持下击败寒浞势力，恢复夏王朝统治。',
+    person_groups: {"leaders":[{"name":"少康","role":"中兴者"}],"participants":[{"name":"伯靡","role":"支持者"},{"name":"女艾","role":"谋臣"}],"opponents":[{"name":"寒浞","role":"对立者"}],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"少康","target":"寒浞","type":"hostile","desc":"少康复国过程中与寒浞势力形成直接对立。"},{"source":"少康","target":"伯靡","type":"lord_vassal","desc":"伯靡传统上被认为支持少康复国。"},{"source":"少康","target":"女艾","type":"lord_vassal","desc":"女艾传统上被认为参与少康复国行动。"}]
+  },
+{
+    id: 204003,
+    name: '夏桀暴政',
+    dynasty: '夏商西周',
+    start_year: -1700,
+    end_year: -1700,
+    summary: '夏桀统治时期，传统文献将其描述为政治腐败、奢侈暴虐，王朝内部矛盾和统治危机不断加深。',
+    event_type: '政治事件',
+    related_persons: ["夏桀","关龙逢","妺喜"],
+    significance: '加剧夏王朝统治危机，为商汤灭夏和夏商王朝更替创造条件。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%A4%8F%E6%A1%80%E6%9A%B4%E6%94%BF%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '夏桀统治时期，传统文献将其描述为政治腐败、奢侈暴虐，王朝内部矛盾和统治危机不断加深。',
+    person_groups: {"leaders":[{"name":"夏桀","role":"统治者"}],"participants":[{"name":"关龙逢","role":"进谏者"}],"opponents":[],"affected":[{"name":"妺喜","role":"宫廷人物"}]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"夏桀","target":"关龙逢","type":"lord_vassal","desc":"关龙逢传统上因直谏夏桀而遭杀害。"},{"source":"夏桀","target":"妺喜","type":"support","desc":"传统叙事中妺喜与夏桀宫廷生活密切相关。"}]
+  },
+{
+    id: 204004,
+    name: '商汤灭夏',
+    dynasty: '夏商西周',
+    start_year: -1600,
+    end_year: -1600,
+    summary: '商汤联合诸侯讨伐夏桀，在鸣条一带击败夏军，结束夏王朝统治并建立商朝。',
+    event_type: '战争军事',
+    related_persons: ["商汤","夏桀","伊尹","仲虺"],
+    significance: '完成夏商王朝更替，是中国早期王朝更替的重要历史节点。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%95%86%E6%B1%A4%E7%81%AD%E5%A4%8F%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '商汤联合诸侯讨伐夏桀，在鸣条一带击败夏军，结束夏王朝统治并建立商朝。',
+    person_groups: {"leaders":[{"name":"商汤","role":"胜利方"}],"participants":[{"name":"伊尹","role":"辅政者"},{"name":"仲虺","role":"辅政者"}],"opponents":[{"name":"夏桀","role":"失败方"}],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"商汤","target":"夏桀","type":"hostile","desc":"商汤灭夏过程中双方成为王朝更替的直接对手。"},{"source":"商汤","target":"伊尹","type":"lord_vassal","desc":"伊尹是商汤灭夏及商初政治建设的重要辅臣。"},{"source":"商汤","target":"仲虺","type":"lord_vassal","desc":"仲虺是商汤时期的重要辅臣。"}]
+  },
+{
+    id: 204005,
+    name: '盘庚迁殷',
+    dynasty: '夏商西周',
+    start_year: -1300,
+    end_year: -1300,
+    summary: '商王盘庚将都城迁至殷，并通过迁都重新整合王权和政治资源。',
+    event_type: '政治事件',
+    related_persons: ["盘庚"],
+    significance: '殷成为商王朝后期长期政治中心，商代因此又被称为殷商。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E7%9B%98%E5%BA%9A%E8%BF%81%E6%AE%B7%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '商王盘庚将都城迁至殷，并通过迁都重新整合王权和政治资源。',
+    person_groups: {"leaders":[{"name":"盘庚","role":"主导者"}],"participants":[],"opponents":[],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: []
+  },
+{
+    id: 204006,
+    name: '武丁中兴',
+    dynasty: '夏商西周',
+    start_year: -1300,
+    end_year: -1300,
+    summary: '武丁时期任用傅说、甘盘等重要臣僚，加强王权并积极开展对外军事行动，商王朝国力得到明显发展。',
+    event_type: '盛世发展',
+    related_persons: ["武丁","妇好","傅说","甘盘"],
+    significance: '推动商王朝政治、军事和社会发展，是商代后期的重要繁荣阶段。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E6%AD%A6%E4%B8%81%E4%B8%AD%E5%85%B4%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '武丁时期任用傅说、甘盘等重要臣僚，加强王权并积极开展对外军事行动，商王朝国力得到明显发展。',
+    person_groups: {"leaders":[{"name":"武丁","role":"主导者"}],"participants":[{"name":"妇好","role":"重要人物"},{"name":"傅说","role":"辅政者"},{"name":"甘盘","role":"辅政者"}],"opponents":[],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"武丁","target":"妇好","type":"kinship","desc":"妇好是武丁的重要王后，同时具有独立的政治军事影响。"},{"source":"武丁","target":"傅说","type":"lord_vassal","desc":"武丁任用傅说为重要辅臣，傅说成为武丁中兴的重要人物。"},{"source":"武丁","target":"甘盘","type":"lord_vassal","desc":"甘盘是武丁时期的重要辅臣。"},{"source":"妇好","target":"傅说","type":"friend","desc":"二人均与武丁时期商王朝政治体系有关。"}]
+  },
+{
+    id: 204007,
+    name: '妇好征伐',
+    dynasty: '夏商西周',
+    start_year: -1300,
+    end_year: -1300,
+    summary: '妇好是武丁时期重要王后和军事人物，甲骨文记录了她参与多次对外战争和祭祀活动。',
+    event_type: '战争军事',
+    related_persons: ["妇好","武丁"],
+    significance: '展现商代王室军事体系以及女性参与政治、军事活动的历史面貌。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%A6%87%E5%A5%BD%E5%BE%81%E4%BC%90%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '妇好是武丁时期重要王后和军事人物，甲骨文记录了她参与多次对外战争和祭祀活动。',
+    person_groups: {"leaders":[{"name":"武丁","role":"统治者"}],"participants":[{"name":"妇好","role":"军事人物"}],"opponents":[],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"武丁","target":"妇好","type":"kinship","desc":"妇好是武丁的重要王后，同时具有独立的政治军事影响。"}]
+  },
+{
+    id: 204008,
+    name: '商王对外征伐',
+    dynasty: '夏商西周',
+    start_year: -1300,
+    end_year: -1300,
+    summary: '商王朝持续对周边方国和部族发动军事行动，以扩大和巩固王朝的政治影响。',
+    event_type: '战争军事',
+    related_persons: ["武丁"],
+    significance: '体现商代王权与方国之间的关系以及以战争、祭祀为重要特征的政治文化。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%95%86%E7%8E%8B%E5%AF%B9%E5%A4%96%E5%BE%81%E4%BC%90%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '商王朝持续对周边方国和部族发动军事行动，以扩大和巩固王朝的政治影响。',
+    person_groups: {"leaders":[{"name":"武丁","role":"统治者"}],"participants":[],"opponents":[],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: []
+  },
+{
+    id: 204009,
+    name: '商末政治危机',
+    dynasty: '夏商西周',
+    start_year: -1100,
+    end_year: -1100,
+    summary: '帝辛时期商王权威受到周边势力挑战，内部政治矛盾逐渐加深，商王朝统治基础不断削弱。',
+    event_type: '政治事件',
+    related_persons: ["帝辛","比干","箕子","微子启"],
+    significance: '为周人崛起以及最终灭商创造了政治条件。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%95%86%E6%9C%AB%E6%94%BF%E6%B2%BB%E5%8D%B1%E6%9C%BA%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '帝辛时期商王权威受到周边势力挑战，内部政治矛盾逐渐加深，商王朝统治基础不断削弱。',
+    person_groups: {"leaders":[{"name":"帝辛","role":"统治者"}],"participants":[{"name":"比干","role":"进谏者"}],"opponents":[],"affected":[{"name":"箕子","role":"王室人物"},{"name":"微子启","role":"王室人物"}]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"帝辛","target":"比干","type":"kinship","desc":"比干属于商王室成员，传统上因劝谏帝辛而死。"},{"source":"帝辛","target":"箕子","type":"support","desc":"箕子属于商王室成员，与帝辛时期政治危机密切相关。"},{"source":"帝辛","target":"微子启","type":"kinship","desc":"微子启与帝辛均属于商王室成员。"},{"source":"箕子","target":"比干","type":"kinship","desc":"二人均属于商王室贵族。"}]
+  },
+{
+    id: 204010,
+    name: '牧野之战',
+    dynasty: '夏商西周',
+    start_year: -1046,
+    end_year: -1046,
+    summary: '周武王率诸侯联军与商军在牧野决战，商军阵营发生动摇，周军取得决定性胜利。',
+    event_type: '战争军事',
+    related_persons: ["周武王","帝辛","姜子牙","周公旦"],
+    significance: '直接导致商王朝覆亡，为西周建立奠定基础。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E7%89%A7%E9%87%8E%E4%B9%8B%E6%88%98%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '周武王率诸侯联军与商军在牧野决战，商军阵营发生动摇，周军取得决定性胜利。',
+    person_groups: {"leaders":[{"name":"周武王","role":"胜利方"}],"participants":[{"name":"姜子牙","role":"重要将领"}],"opponents":[{"name":"帝辛","role":"失败方"}],"affected":[{"name":"周公旦","role":"宗室成员"}]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周武王","target":"周公旦","type":"kinship","desc":"周公旦是周武王的重要弟弟和辅臣。"},{"source":"周武王","target":"姜子牙","type":"lord_vassal","desc":"姜子牙辅佐周武王完成灭商战争。"}]
+  },
+{
+    id: 204011,
+    name: '周公东征',
+    dynasty: '夏商西周',
+    start_year: -1040,
+    end_year: -1040,
+    summary: '周武王去世后，周公旦辅佐周成王，平定武庚及管叔鲜、蔡叔度、霍叔处等势力的叛乱，巩固西周统治。',
+    event_type: '战争军事',
+    related_persons: ["周公旦","武庚","管叔鲜","蔡叔度","霍叔处"],
+    significance: '巩固西周早期政权，加强周王朝对东方地区的控制。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%91%A8%E5%85%AC%E4%B8%9C%E5%BE%81%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '周武王去世后，周公旦辅佐周成王，平定武庚及管叔鲜、蔡叔度、霍叔处等势力的叛乱，巩固西周统治。',
+    person_groups: {"leaders":[{"name":"周公旦","role":"主导者"}],"participants":[{"name":"霍叔处","role":"参与者"}],"opponents":[{"name":"武庚","role":"叛乱者"},{"name":"管叔鲜","role":"叛乱者"},{"name":"蔡叔度","role":"叛乱者"}],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周公旦","target":"管叔鲜","type":"hostile","desc":"管叔鲜参与三监之乱，与周公旦形成政治对立。"},{"source":"周公旦","target":"蔡叔度","type":"hostile","desc":"蔡叔度参与三监之乱，与周公旦形成政治对立。"},{"source":"周公旦","target":"霍叔处","type":"hostile","desc":"霍叔处参与三监相关政治行动，与周公旦形成政治对立。"},{"source":"周公旦","target":"武庚","type":"hostile","desc":"武庚参与反周行动，周公旦率军平定相关叛乱。"},{"source":"管叔鲜","target":"蔡叔度","type":"alliance","desc":"管叔鲜与蔡叔度共同参与三监之乱。"}]
+  },
+{
+    id: 204012,
+    name: '成康之治',
+    dynasty: '夏商西周',
+    start_year: -1100,
+    end_year: -1100,
+    summary: '周成王、周康王时期政治秩序逐渐稳定，周王朝统治得到进一步巩固，后世称为“成康之治”。',
+    event_type: '盛世发展',
+    related_persons: ["周成王","周康王","周公旦","召公奭"],
+    significance: '成为西周早期政治稳定和社会发展的代表时期。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E6%88%90%E5%BA%B7%E4%B9%8B%E6%B2%BB%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '周成王、周康王时期政治秩序逐渐稳定，周王朝统治得到进一步巩固，后世称为“成康之治”。',
+    person_groups: {"leaders":[{"name":"周成王","role":"统治者"},{"name":"周康王","role":"统治者"}],"participants":[{"name":"周公旦","role":"辅政者"},{"name":"召公奭","role":"辅政者"}],"opponents":[],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周成王","target":"周公旦","type":"lord_vassal","desc":"周成王年幼时期由周公旦辅政。"},{"source":"周成王","target":"周康王","type":"support","desc":"周康王继承周成王的王位，延续西周早期政治秩序。"}]
+  },
+{
+    id: 204013,
+    name: '制礼作乐',
+    dynasty: '夏商西周',
+    start_year: -1100,
+    end_year: -1100,
+    summary: '周公旦等人在周初政治建设过程中完善礼乐秩序，将宗法、等级与政治秩序结合起来。',
+    event_type: '制度文化',
+    related_persons: ["周公旦","周成王"],
+    significance: '对中国古代礼制、政治文化和社会秩序产生长期影响。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%88%B6%E7%A4%BC%E4%BD%9C%E4%B9%90%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '周公旦等人在周初政治建设过程中完善礼乐秩序，将宗法、等级与政治秩序结合起来。',
+    person_groups: {"leaders":[{"name":"周成王","role":"统治者"}],"participants":[{"name":"周公旦","role":"制度建设者"}],"opponents":[],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周成王","target":"周公旦","type":"lord_vassal","desc":"周成王年幼时期由周公旦辅政。"}]
+  },
+{
+    id: 204014,
+    name: '分封制',
+    dynasty: '夏商西周',
+    start_year: -1100,
+    end_year: -1100,
+    summary: '西周建立后，周王室将宗室、功臣等分封到各地建立诸侯国，形成周王室与诸侯之间的政治秩序。',
+    event_type: '制度建设',
+    related_persons: ["周武王","周公旦","康叔封","伯禽"],
+    significance: '成为西周政治制度的重要组成部分，对后世政治结构产生深远影响。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%88%86%E5%B0%81%E5%88%B6%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '西周建立后，周王室将宗室、功臣等分封到各地建立诸侯国，形成周王室与诸侯之间的政治秩序。',
+    person_groups: {"leaders":[{"name":"周武王","role":"制度建立者"}],"participants":[{"name":"周公旦","role":"制度推动者"}],"opponents":[],"affected":[{"name":"康叔封","role":"受封者"},{"name":"伯禽","role":"受封者"}]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周武王","target":"周公旦","type":"kinship","desc":"周公旦是周武王的重要弟弟和辅臣。"},{"source":"周公旦","target":"伯禽","type":"kinship","desc":"伯禽为周公旦之子，后来受封于鲁。"},{"source":"周武王","target":"康叔封","type":"kinship","desc":"康叔封为周武王之弟，后被分封于卫。"}]
+  },
+{
+    id: 204015,
+    name: '国人暴动',
+    dynasty: '夏商西周',
+    start_year: -841,
+    end_year: -841,
+    summary: '周厉王统治时期实行严厉的政治和经济政策，引发镐京国人不满并爆发暴动，周厉王被迫出逃。',
+    event_type: '政治事件',
+    related_persons: ["周厉王","召穆公"],
+    significance: '周王室权威受到重大冲击，是西周后期政治危机的重要节点。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%9B%BD%E4%BA%BA%E6%9A%B4%E5%8A%A8%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '周厉王统治时期实行严厉的政治和经济政策，引发镐京国人不满并爆发暴动，周厉王被迫出逃。',
+    person_groups: {"leaders":[],"participants":[],"opponents":[{"name":"周厉王","role":"被驱逐者"}],"affected":[{"name":"召穆公","role":"政治参与者"}]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周厉王","target":"召穆公","type":"lord_vassal","desc":"召穆公属于周厉王时期的重要政治人物。"}]
+  },
+{
+    id: 204016,
+    name: '宣王中兴',
+    dynasty: '夏商西周',
+    start_year: -827,
+    end_year: -827,
+    summary: '周宣王即位后整顿政治与军事，任用尹吉甫、方叔、召虎等人物处理周边局势，使周王室一度恢复统治力量。',
+    event_type: '政治事件',
+    related_persons: ["周宣王","尹吉甫","方叔","召虎"],
+    significance: '西周后期出现短暂复兴，但未能从根本上扭转周王室衰落趋势。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%AE%A3%E7%8E%8B%E4%B8%AD%E5%85%B4%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '周宣王即位后整顿政治与军事，任用尹吉甫、方叔、召虎等人物处理周边局势，使周王室一度恢复统治力量。',
+    person_groups: {"leaders":[{"name":"周宣王","role":"主导者"}],"participants":[{"name":"尹吉甫","role":"军事将领"},{"name":"方叔","role":"军事将领"},{"name":"召虎","role":"军事将领"}],"opponents":[],"affected":[]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周宣王","target":"尹吉甫","type":"lord_vassal","desc":"尹吉甫是周宣王时期的重要军事和政治人物。"},{"source":"周宣王","target":"方叔","type":"lord_vassal","desc":"方叔是周宣王时期重要军事将领。"},{"source":"周宣王","target":"召虎","type":"lord_vassal","desc":"召虎是周宣王时期重要军事人物。"},{"source":"周宣王","target":"尹吉甫","type":"lord_vassal","desc":"尹吉甫参与周宣王时期的军事行动并辅佐周王。"},{"source":"周宣王","target":"方叔","type":"lord_vassal","desc":"方叔参与周宣王时期南方军事行动。"}]
+  },
+{
+    id: 204017,
+    name: '犬戎攻周',
+    dynasty: '夏商西周',
+    start_year: -771,
+    end_year: -771,
+    summary: '西周末年，周幽王时期政治局势恶化，犬戎等势力攻入镐京，周幽王在骊山附近被杀。',
+    event_type: '战争军事',
+    related_persons: ["周幽王","褒姒","申侯"],
+    significance: '周王室失去关中政治中心，西周统治走向终结。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E7%8A%AC%E6%88%8E%E6%94%BB%E5%91%A8%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '西周末年，周幽王时期政治局势恶化，犬戎等势力攻入镐京，周幽王在骊山附近被杀。',
+    person_groups: {"leaders":[],"participants":[{"name":"申侯","role":"参与者"}],"opponents":[{"name":"周幽王","role":"失败方"}],"affected":[{"name":"褒姒","role":"王后"}]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周幽王","target":"褒姒","type":"kinship","desc":"褒姒为周幽王王后。"},{"source":"周幽王","target":"申侯","type":"hostile","desc":"申侯与周幽王之间存在政治冲突，并参与西周末年政局变化。"}]
+  },
+{
+    id: 204018,
+    name: '西周灭亡',
+    dynasty: '夏商西周',
+    start_year: -771,
+    end_year: -771,
+    summary: '犬戎攻破镐京后，周王室失去西部政治中心，周平王随后迁都洛邑，西周结束。',
+    event_type: '王朝灭亡',
+    related_persons: ["周幽王","申侯"],
+    significance: '标志西周结束和东周时代开始，是中国古代历史重要分期节点。',
+    image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E8%A5%BF%E5%91%A8%E7%81%AD%E4%BA%A1%20traditional%20ink%20painting%20style&image_size=landscape_16_9',
+    one_sentence: '犬戎攻破镐京后，周王室失去西部政治中心，周平王随后迁都洛邑，西周结束。',
+    person_groups: {"leaders":[],"participants":[],"opponents":[{"name":"周幽王","role":"末代君主"}],"affected":[{"name":"申侯","role":"相关诸侯"}]},
+    narratives: [],
+    background: {},
+    impacts: [],
+    chain: [],
+    related_events: [],
+    person_relations: [{"source":"周幽王","target":"申侯","type":"hostile","desc":"申侯与周幽王之间存在政治冲突，并参与西周末年政局变化。"}]
+  },
+]
+
+export const eventTimelines: Record<string, TimelineEntry[]> = {
+  '上古政治演变': [
+    { title: '炎帝势力扩张', year: '约前2600年', desc: '部落壮大' },
+    { title: '阪泉之战', year: '约前2600年', desc: '炎黄激战', event_id: 1001 },
+    { title: '炎黄融合', year: '约前2600年', desc: '联盟雏形' },
+    { title: '涿鹿之战', year: '约前2598年', desc: '决战蚩尤', event_id: 1002 },
+    { title: '华夏联盟形成', year: '约前2598年', desc: '统一中原' },
+    { title: '尧舜禅让', year: '约前2259年', desc: '禅让大典', event_id: 1005 },
+    { title: '大禹治水', year: '约前2100年', desc: '疏导河道', event_id: 1006 },
+    { title: '建立夏朝', year: '约前2070年', desc: '世袭制开', event_id: 1007 },
+    { title: '商周继承', year: '前1600年', desc: '世袭王朝' },
+    { title: '秦统一六合', year: '前221年', desc: '中央集权' },
+  ],
+  '上古科技文化': [
+    { title: '先民生存需要', year: '约前2850年', desc: '辨识百草' },
+    { title: '神农尝百草', year: '约前2850年', desc: '辨识药性', event_id: 1003 },
+    { title: '中医药起源', year: '约前2830年', desc: '医药体系' },
+    { title: '农耕文明发展', year: '约前2800年', desc: '农业推广' },
+    { title: '结绳记事局限', year: '约前2600年', desc: '记录需求' },
+    { title: '创制文字', year: '约前2590年', desc: '创造汉字', event_id: 1004 },
+    { title: '文字记录体系', year: '约前2590年', desc: '文明载体' },
+    { title: '甲骨文金文', year: '殷商', desc: '文字演变' },
+    { title: '《神农本草经》', year: '东汉', desc: '医学典籍' },
+  ],
+  '上古神话': [
+    { title: '十日为灾', year: '神话时期', desc: '天下大旱' },
+    { title: '后羿射日', year: '约前2100年', desc: '英雄救世', event_id: 1008 },
+    { title: '苍生得救', year: '约前2100年', desc: '万物复苏' },
+    { title: '嫦娥奔月', year: '神话时期', desc: '月宫神话' },
+    { title: '中秋节起源', year: '后世', desc: '月圆人圆' },
+  ],
+}
+
+export const hotPersons = persons.slice(0, 6)
+
+export const dynastyStatistics = {
+  person_count: 56,
+  event_count: 18,
+  work_count: 56,
+  relation_count: 109,
+  byDynasty: [
+    { name: '夏商西周', value: 100, rate: 100, person_count: 65, event_count: 18, work_count: 0, relation_count: 50 },
+  
+    { name: '唐朝', value: 8, rate: 16, person_count: 8, event_count: 4, work_count: 15, relation_count: 20 },
+    { name: '宋朝', value: 3, rate: 6, person_count: 3, event_count: 2, work_count: 8, relation_count: 10 },
+    { name: '三国', value: 5, rate: 10, person_count: 5, event_count: 1, work_count: 6, relation_count: 15 },
+    { name: '汉朝', value: 3, rate: 6, person_count: 3, event_count: 2, work_count: 4, relation_count: 8 },
+    { name: '明朝', value: 2, rate: 4, person_count: 2, event_count: 1, work_count: 3, relation_count: 6 },
+    { name: '上古', value: 35, rate: 70, person_count: 35, event_count: 8, work_count: 20, relation_count: 50 }
+  ]
+}
+
+export const occupationDistribution = [
+  { name: '统治者', value: 12 },
+  { name: '文学家', value: 5 },
+  { name: '军事家', value: 8 },
+  { name: '思想家', value: 3 },
+  { name: '政治家', value: 8 },
+  { name: '其他', value: 19 }
+]
+
+export const regionDistribution = [
+  { name: '中原地区', value: 30 },
+  { name: '江南地区', value: 8 },
+  { name: '巴蜀地区', value: 3 },
+  { name: '岭南地区', value: 2 },
+  { name: '边疆地区', value: 2 },
+  { name: '其他', value: 13 }
+]
