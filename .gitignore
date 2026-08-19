@@ -1,6 +1,10 @@
 node_modules/
 output/
+dist/
 *.xlsx
 *.docx
 ~$*
 *.txt
+*.log
+.vscode/
+.DS_Store
