@@ -245,8 +245,9 @@ const historicalAssessment = computed(() => {
   const cp = person.value
   const hasJson = !!(cp.historical_position || (cp.impact_list && cp.impact_list.length) || (cp.later_quotes && cp.later_quotes.length))
   if (hasJson) {
-    const influences = (cp.impact_list || []).length
-      ? cp.impact_list.slice(0, 6)
+    const impactList = cp.impact_list || []
+    const influences = impactList.length
+      ? impactList.slice(0, 6)
       : (cp.historical_position ? [cp.historical_position] : [])
     const laterQuotes = cp.later_quotes
       ? cp.later_quotes.map(q => ({
