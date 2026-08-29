@@ -1,8 +1,9 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
   size?: 'large' | 'medium' | 'small'
+  pos?: 'center' | 'top' | 'bottom' | 'left' | 'right'
 }
 
 export interface NarrativeRelationEdge {
@@ -259,7 +260,7 @@ export const dynasties: Dynasty[] = [
     }
   },
 {
-  id: 201,
+    id: 201,
   name: '夏商西周',
   english_name: 'Xia-Shang-Western Zhou',
   start_year: -2070,
@@ -270,6 +271,45 @@ export const dynasties: Dynasty[] = [
   duration: '约1300年',
   representative_buildings: ["二里头遗址","殷墟","周原遗址","丰镐遗址"],
   characteristics: {"politics":80,"culture":85,"military":75,"technology":82,"openness":70}
+},
+{
+    id: 202,
+  name: '春秋',
+  english_name: 'Spring and Autumn Period',
+  start_year: -770,
+  end_year: -476,
+  summary: '春秋时期礼崩乐坏、王权式微，诸侯争霸迭起，齐桓、晋文、楚庄等先后称霸，文化上诸子百家萌发，孔子开儒家之先，是中国古代社会剧烈变革与思想解放的重要时代。',
+  capital: '雒邑（周）',
+  population: '约数千万',
+  duration: '约294年',
+  representative_buildings: ["孔子故里","城濮古战场","吴越故地","郑国车马坑"],
+  characteristics: {"politics":60,"culture":95,"military":90,"technology":70,"openness":75}
+},
+{
+    id: 203,
+  name: '战国',
+  english_name: 'Warring States Period',
+  start_year: -475,
+  end_year: -221,
+  summary: '战国时期诸侯兼并愈演愈烈，秦、楚、齐、燕、赵、魏、韩七雄并立，商鞅变法、合纵连横、长平之战等历史大事件接连上演，诸子百家争鸣达到鼎盛，是中国古代从分裂走向大一统的关键转折时代。',
+  capital: '咸阳（秦）',
+  population: '约两千余万',
+  duration: '约254年',
+  representative_buildings: ["都江堰","郑国渠","战国长城","曾侯乙墓"],
+  characteristics: {"politics":85,"culture":95,"military":95,"technology":88,"openness":80}
+},
+{
+    id: 106,
+  name: '秦',
+  english_name: 'Qin Dynasty',
+  start_year: -221,
+  end_year: -206,
+  summary: '秦灭六国而并天下，首创皇帝制度，废分封行郡县，车同轨、书同文、行同伦，修驰道直道、筑万里长城，却二世而亡，是中国历史上第一个大一统中央集权王朝。',
+  capital: '咸阳',
+  population: '约两千万',
+  duration: '约15年',
+  representative_buildings: ["万里长城","阿房宫","驰道","灵渠"],
+  characteristics: {"politics":96,"culture":82,"military":92,"technology":85,"openness":60}
 },
 ]
 
@@ -566,8 +606,8 @@ export const persons: Person[] = [
     related_events: ['推广养蚕']
   },
   {
-    id: 1010,
-    name: '后羿',
+    id: 201026,
+    name: '    后羿',
     dynasty: '上古',
     summary: '中国古代神话中的英雄人物，以射日传说广为流传，是中华神话文化的重要象征。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20archer%20hero%20houyi%20portrait%20traditional%20chinese%20painting%20bow%20arrow%20mythological&image_size=square',
@@ -977,19 +1017,18 @@ export const persons: Person[] = [
     },
     narrative_relations: {
       nodes: [
-        { id: 'nuwa', name: '女娲', type: 'person', size: 'large' },
-        { id: 'human', name: '人类', type: 'story', size: 'medium' },
-        { id: 'gonggong', name: '共工', type: 'person', size: 'small' },
-        { id: 'disaster', name: '天地灾变', type: 'event', size: 'medium' },
-        { id: 'mend_sky', name: '炼石补天', type: 'story', size: 'medium' },
-        { id: 'order', name: '天地秩序', type: 'story', size: 'small' }
+        { id: 'nuwa', name: '女娲', type: 'person', size: 'large', pos: 'center' },
+        { id: 'fuxi', name: '伏羲', type: 'person', size: 'medium', pos: 'top' },
+        { id: 'gonggong', name: '共工', type: 'person', size: 'medium', pos: 'left' },
+        { id: 'disaster', name: '天地灾变', type: 'event', size: 'medium', pos: 'bottom' },
+        { id: 'human', name: '人类', type: 'story', size: 'medium', pos: 'right' },
+        { id: 'mend_sky', name: '女娲补天', type: 'story', size: 'medium', pos: 'bottom' }
       ],
       edges: [
-        { source: 'nuwa', target: 'human', label: '抟土造人', direction: 'forward' },
-        { source: 'gonggong', target: 'disaster', label: '怒触不周山', direction: 'forward' },
-        { source: 'disaster', target: 'nuwa', label: '促使补天', direction: 'forward' },
-        { source: 'nuwa', target: 'mend_sky', label: '炼五色石', direction: 'forward' },
-        { source: 'mend_sky', target: 'order', label: '修复天地', direction: 'forward' }
+        { source: 'fuxi', target: 'nuwa', label: '配偶', direction: 'forward' },
+        { source: 'gonggong', target: 'disaster', label: '撞断不周山，引发', direction: 'forward' },
+        { source: 'nuwa', target: 'human', label: '用泥土创造', direction: 'forward' },
+        { source: 'nuwa', target: 'mend_sky', label: '炼石补天', direction: 'forward' }
       ]
     }
   },
@@ -1019,17 +1058,15 @@ export const persons: Person[] = [
     },
     narrative_relations: {
       nodes: [
-        { id: 'jingwei', name: '精卫', type: 'person', size: 'large' },
-        { id: 'yandi', name: '炎帝', type: 'person', size: 'small' },
-        { id: 'nvwa_girl', name: '女娃', type: 'story', size: 'medium' },
-        { id: 'east_sea', name: '东海', type: 'event', size: 'medium' },
-        { id: 'fill_sea', name: '衔木填海', type: 'story', size: 'medium' }
+        { id: 'jingwei', name: '精卫', type: 'person', size: 'large', pos: 'center' },
+        { id: 'yandi', name: '炎帝', type: 'person', size: 'medium', pos: 'top' },
+        { id: 'east_sea', name: '东海', type: 'event', size: 'medium', pos: 'left' },
+        { id: 'fill_sea', name: '精卫填海', type: 'story', size: 'medium', pos: 'right' }
       ],
       edges: [
-        { source: 'yandi', target: 'nvwa_girl', label: '女儿', direction: 'forward' },
-        { source: 'nvwa_girl', target: 'east_sea', label: '溺亡', direction: 'forward' },
-        { source: 'east_sea', target: 'jingwei', label: '化为精卫', direction: 'forward' },
-        { source: 'jingwei', target: 'fill_sea', label: '誓填东海', direction: 'forward' }
+        { source: 'yandi', target: 'jingwei', label: '女儿', direction: 'forward' },
+        { source: 'east_sea', target: 'jingwei', label: '游东海、溺亡', direction: 'forward' },
+        { source: 'jingwei', target: 'fill_sea', label: '衔取木石、填海', direction: 'forward' }
       ]
     }
   },
@@ -1111,8 +1148,8 @@ export const persons: Person[] = [
     }
   },
   {
-    id: 1026,
-    name: '伯益',
+    id: 201035,
+    name: '    伯益',
     dynasty: '虞夏时期',
     summary: '舜、禹时期重要辅臣，协助治水和管理山泽。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20official%20boyi%20portrait%20traditional%20chinese%20painting%20advisor%20scholar&image_size=square',
@@ -1179,8 +1216,23 @@ export const persons: Person[] = [
     related_events: []
   },
   {
-    id: 1028,
-    name: '皋陶',
+    id: 201034,
+    narrative_relations: {
+      nodes: [
+        { id: 'gy', name: '皋陶', type: 'person', size: 'large', pos: 'center' },
+        { id: 's', name: '舜', type: 'person', size: 'medium', pos: 'top' },
+        { id: 'dy', name: '大禹', type: 'person', size: 'medium', pos: 'left' },
+        { id: 'sfwm', name: '司法文明', type: 'story', size: 'medium', pos: 'right' },
+        { id: 'xiezhi', name: '獬豸断狱', type: 'story', size: 'medium', pos: 'bottom' },
+      ],
+      edges: [
+        { source: 's', target: 'gy', label: '委以司法', direction: 'forward' },
+        { source: 'gy', target: 'xiezhi', label: '借兽断狱', direction: 'forward' },
+        { source: 'gy', target: 'sfwm', label: '开创', direction: 'forward' },
+        { source: 'gy', target: 'dy', label: '辅佐', direction: 'forward' },
+      ]
+    },
+    name: '    皋陶',
     dynasty: '虞夏时期',
     summary: '舜帝时期掌管司法的重臣，被后世尊为中国司法文化的鼻祖。皋陶以公正严明著称，传说他有一只名为"獬豸"的神兽，能辨曲直，遇有罪之人则以角触之，成为古代司法公正的象征。皋陶为舜帝制定刑律，提出"明刑弼教"的司法理念，主张以法律辅助教化，而非单纯以刑罚惩处。皋陶与舜、禹、伯益等人共同构成了虞舜时代最具代表性的贤臣群体，对后世法制文化产生了深远影响。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20judge%20gaotao%20portrait%20traditional%20chinese%20painting%20justice%20scholar&image_size=square',
@@ -2396,8 +2448,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202026,
-    name: '后羿',
+    id: 201026,
+    name: '    后羿',
     dynasty: '夏商西周',
     summary: '夏朝早期政治传说中的重要人物，相传掌握夏政，并在太康失国后形成独立的政治势力。后羿后来被寒浞取代，其故事成为夏初政治动荡的重要传说。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%90%8E%E7%BE%BF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2414,8 +2466,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202027,
-    name: '寒浞',
+    id: 201027,
+    name: '    寒浞',
     dynasty: '夏商西周',
     summary: '相传后羿掌权后，寒浞逐渐取得其势力，最终杀死后羿并掌握夏朝政权。后来少康重新组织力量，使夏王室复兴。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%AF%92%E6%B5%9E%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2432,8 +2484,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202028,
-    name: '女艾',
+    id: 201028,
+    name: '    女艾',
     dynasty: '夏商西周',
     summary: '传统记载中的女性人物，相传受到少康派遣，深入寒浞势力内部获取情报，为少康复国创造条件，是中国早期历史传说中少见的女性政治人物形象。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A5%B3%E8%89%BE%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2450,8 +2502,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202029,
-    name: '伯靡',
+    id: 201029,
+    name: '    伯靡',
     dynasty: '夏商西周',
     summary: '夏王室的重要支持者，相传在少康失国后仍坚持支持夏王室，并协助少康积蓄力量、恢复夏朝政权。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%9D%A1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2468,8 +2520,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202030,
-    name: '关龙逢',
+    id: 201030,
+    name: '    关龙逢',
     dynasty: '夏商西周',
     summary: '传统文献中的忠臣形象，相传因直言劝谏夏桀、反对其暴政而遭杀害，后世常将其视为忠臣直谏的代表。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%85%B3%E9%BE%99%E9%80%A2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2486,8 +2538,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202031,
-    name: '妺喜',
+    id: 201031,
+    name: '    妺喜',
     dynasty: '夏商西周',
     summary: '传统历史叙事中的夏末女性人物，与夏桀统治和夏朝灭亡的故事联系在一起。其形象经过后世文学与民间叙事不断加工，具有较强的传说色彩。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%BA%E5%96%9C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2504,8 +2556,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202032,
-    name: '费昌',
+    id: 201032,
+    name: '    费昌',
     dynasty: '夏商西周',
     summary: '传统记载中的夏商之际人物，相传由夏转向商，后来成为商汤一方的重要人物，是观察夏商政治力量转换的一个人物节点。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%B4%B9%E6%98%8C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2520,8 +2572,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202033,
-    name: '昆吾',
+    id: 201033,
+    name: '    昆吾',
     dynasty: '夏商西周',
     summary: '夏末重要方国势力的代表人物，传统记载中与夏桀及商汤灭夏的政治格局有关，可用于展示夏末诸侯势力与王朝更替之间的关系。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%98%86%E5%90%BE%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2536,8 +2588,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202034,
-    name: '皋陶',
+    id: 201034,
+    name: '    皋陶',
     dynasty: '夏商西周',
     summary: '传说中的早期政治人物，与尧、舜、禹时期的政治秩序和司法传统密切相关。其形象常被后世视为中国早期司法制度的重要象征。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%9A%8B%E9%99%B6%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2553,8 +2605,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202035,
-    name: '伯益',
+    id: 201035,
+    name: '    伯益',
     dynasty: '夏商西周',
     summary: '禹时期的重要辅臣，传统记载中参与治水和山泽管理，并与夏初政治传承有关。其人物形象能够连接上古时代与夏朝早期的政治发展。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%9B%8A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2570,8 +2622,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202036,
-    name: '伊尹',
+    id: 201036,
+    name: '    伊尹',
     dynasty: '夏商西周',
     summary: '商汤的重要辅臣，传统文献中被认为参与商汤灭夏，并在商朝建立后辅佐政权，是商初政治治理的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%8A%E5%B0%B9%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2588,8 +2640,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202037,
-    name: '仲虺',
+    id: 201037,
+    name: '    仲虺',
     dynasty: '夏商西周',
     summary: '商汤时期的重要辅臣，传统文献中与商汤灭夏以及商初政治建设有关，是商汤政治集团的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BB%B2%E8%99%BA%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2606,8 +2658,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202038,
-    name: '葛伯',
+    id: 201038,
+    name: '    葛伯',
     dynasty: '夏商西周',
     summary: '商汤灭夏过程中相关方国的首领，传统记载中因与商汤发生冲突而成为商汤征伐体系中的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%91%9B%E4%BC%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2622,8 +2674,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202039,
-    name: '巫咸',
+    id: 201101,
+    name: '    巫咸',
     dynasty: '夏商西周',
     summary: '商代重要巫者和政治人物，传统文献中与王权、祭祀和占卜活动有关，体现了商代政治与宗教高度结合的社会特征。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B7%AB%E5%92%B8%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2638,8 +2690,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202040,
-    name: '甘盘',
+    id: 201102,
+    name: '    甘盘',
     dynasty: '夏商西周',
     summary: '武丁时期的重要臣僚，传统记载中与武丁早期政治经历有关，是武丁任用贤臣、整顿政治的重要人物之一。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%98%E7%9B%98%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2656,8 +2708,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202041,
-    name: '傅说',
+    id: 201103,
+    name: '    傅说',
     dynasty: '夏商西周',
     summary: '武丁时期的重要政治家，传统记载中武丁通过梦兆寻找并任用傅说，使其成为辅佐自己的重要大臣，是武丁中兴的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%82%85%E8%AF%B4%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2674,8 +2726,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202042,
-    name: '祖己',
+    id: 201104,
+    name: '    祖己',
     dynasty: '夏商西周',
     summary: '武丁时期的重要王室成员，传统文献中以劝谏武丁等事迹著称，其人物故事体现了商代王室内部政治与祭祀传统。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%A5%96%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2691,8 +2743,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202043,
-    name: '微子启',
+    id: 201105,
+    name: '    微子启',
     dynasty: '夏商西周',
     summary: '帝辛的兄长，商末王室的重要人物。商朝灭亡后被周人封于宋，其经历连接了商亡、周初政治秩序与宋国建立。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BE%AE%E5%AD%90%E5%90%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2709,8 +2761,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202044,
-    name: '比干',
+    id: 201106,
+    name: '    比干',
     dynasty: '夏商西周',
     summary: '商末重要大臣，传统记载中因忠谏帝辛而遭杀害，后世逐渐形成忠臣典范形象，是商末政治危机叙事的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%94%E5%B9%B2%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2727,8 +2779,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202045,
-    name: '箕子',
+    id: 201107,
+    name: '    箕子',
     dynasty: '夏商西周',
     summary: '商末王室成员，传统记载中曾向帝辛进谏。商亡后，其人物故事又与周初政治秩序以及箕子朝鲜传说联系在一起。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%95%E5%AD%90%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2745,8 +2797,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202046,
-    name: '妲己',
+    id: 201108,
+    name: '    妲己',
     dynasty: '夏商西周',
     summary: '商末历史叙事中的重要女性人物，传统文学与民间故事常将她与帝辛统治和商朝灭亡联系起来，但相关故事经过后世不断演绎，传说色彩较强。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%B2%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2761,8 +2813,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202047,
-    name: '飞廉',
+    id: 201109,
+    name: '    飞廉',
     dynasty: '夏商西周',
     summary: '商末重要人物，传统记载中与帝辛统治及商周战争有关，是商末政治与军事集团中的代表人物之一。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%A3%9E%E5%BB%89%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2777,8 +2829,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202048,
-    name: '太姒',
+    id: 201110,
+    name: '    太姒',
     dynasty: '夏商西周',
     summary: '周文王王后，传统文献中以贤德形象著称，是周初王室女性的重要代表。她与周文王、周武王以及周初王室传承之间具有密切关系。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2793,8 +2845,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202049,
-    name: '伯邑考',
+    id: 201111,
+    name: '    伯邑考',
     dynasty: '夏商西周',
     summary: '周文王长子，传统记载中与周文王、周武王及商纣王之间存在密切关系。其故事成为周初王室历史与传说的重要组成部分。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%82%91%E8%80%83%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2809,8 +2861,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202050,
-    name: '姜子牙',
+    id: 201112,
+    name: '    姜子牙',
     dynasty: '夏商西周',
     summary: '周武王的重要辅臣和军事人物，传统上被称为太公望，参与伐商，并在周朝建立后受封齐国，是商周更替过程中最具代表性的辅臣之一。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A7%9C%E5%AD%90%E7%89%99%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2827,8 +2879,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202051,
-    name: '召公奭',
+    id: 201113,
+    name: '    召公奭',
     dynasty: '夏商西周',
     summary: '周初重要政治人物，与周公旦共同参与周初政权建设和政治秩序稳定，并与西周分封体系的发展密切相关。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E5%85%AC%E5%A5%AD%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2845,8 +2897,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202052,
-    name: '毕公高',
+    id: 201114,
+    name: '    毕公高',
     dynasty: '夏商西周',
     summary: '周初重要宗室和大臣，参与周王朝早期政治建设，在周初政治秩序形成过程中发挥作用。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%95%E5%85%AC%E9%AB%98%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2861,8 +2913,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202053,
-    name: '管叔鲜',
+    id: 201115,
+    name: '    管叔鲜',
     dynasty: '夏商西周',
     summary: '周初重要宗室人物，被封于管。周公旦摄政期间，管叔鲜与蔡叔、霍叔以及武庚共同参与政治反抗，最终形成三监之乱。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%A1%E5%8F%94%E9%B2%9C%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2879,8 +2931,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202054,
-    name: '蔡叔度',
+    id: 201116,
+    name: '    蔡叔度',
     dynasty: '夏商西周',
     summary: '周初宗室成员，被封于蔡，与管叔鲜、霍叔处共同参与三监之乱，是周初宗室政治矛盾的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%94%A1%E5%8F%94%E5%BA%A6%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2897,8 +2949,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202055,
-    name: '霍叔处',
+    id: 201117,
+    name: '    霍叔处',
     dynasty: '夏商西周',
     summary: '周初宗室成员，与管叔鲜、蔡叔度共同承担监视商遗民的任务，并卷入三监之乱，体现了周初分封与宗室政治的复杂关系。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%9C%8D%E5%8F%94%E5%A4%84%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2915,8 +2967,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202056,
-    name: '武庚',
+    id: 201118,
+    name: '    武庚',
     dynasty: '夏商西周',
     summary: '帝辛之子。周灭商后，武庚被留在商地管理商遗民，后来联合三监发动反周行动，是商周政治转换的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AD%A6%E5%BA%9A%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2933,8 +2985,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202057,
-    name: '康叔封',
+    id: 201119,
+    name: '    康叔封',
     dynasty: '夏商西周',
     summary: '周初重要宗室人物，被封于卫，成为卫国始封君，是周初分封制度的重要代表人物之一。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BA%B7%E5%8F%94%E5%B0%81%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2951,8 +3003,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202058,
-    name: '伯禽',
+    id: 201120,
+    name: '    伯禽',
     dynasty: '夏商西周',
     summary: '周公旦之子，被封于鲁，成为鲁国早期统治者。他的人物经历能够体现周公家族与西周分封制度之间的联系。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%A6%BD%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2969,8 +3021,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202059,
-    name: '尹吉甫',
+    id: 201121,
+    name: '    尹吉甫',
     dynasty: '夏商西周',
     summary: '周宣王时期的重要军事和政治人物，传统文献和《诗经》相关材料中与周王朝北方军事行动有关，是宣王中兴时期的重要人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B0%B9%E5%90%89%E7%94%AB%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -2987,8 +3039,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202060,
-    name: '方叔',
+    id: 201122,
+    name: '    方叔',
     dynasty: '夏商西周',
     summary: '周宣王时期的重要将领，参与周王朝对南方地区的军事行动，是宣王时期周王朝军事活动的重要代表人物。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%96%B9%E5%8F%94%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -3005,8 +3057,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202061,
-    name: '召虎',
+    id: 201123,
+    name: '    召虎',
     dynasty: '夏商西周',
     summary: '周宣王时期的重要军事人物，与周王朝对淮夷等地区的军事行动有关，是宣王中兴时期军事力量的重要代表。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E8%99%8E%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -3023,8 +3075,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202062,
-    name: '荣夷公',
+    id: 201124,
+    name: '    荣夷公',
     dynasty: '夏商西周',
     summary: '周厉王时期的重要政治人物，传统文献中因参与“专利”等政策而受到批评，其人物故事与周厉王时期的政治矛盾密切相关。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%8D%A3%E5%A4%B7%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -3040,8 +3092,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202063,
-    name: '召穆公',
+    id: 201125,
+    name: '    召穆公',
     dynasty: '夏商西周',
     summary: '西周后期重要政治人物，与周厉王时期的政治危机和国人暴动有关，传统记载中体现了周王室内部不同政治力量之间的矛盾。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E7%A9%86%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -3058,8 +3110,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202064,
-    name: '褒姒',
+    id: 201126,
+    name: '    褒姒',
     dynasty: '夏商西周',
     summary: '周幽王时期的重要女性人物，传统叙事中与幽王宠爱、诸侯关系以及西周灭亡联系在一起，其中“烽火戏诸侯”等故事具有较强的后世传说色彩。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%A4%92%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',
@@ -3076,8 +3128,8 @@ export const persons: Person[] = [
     narrative_relations: {"nodes":[],"edges":[]}
   },
 {
-    id: 202065,
-    name: '申侯',
+    id: 201127,
+    name: '    申侯',
     dynasty: '夏商西周',
     summary: '西周末期重要诸侯，与周幽王时期的政治冲突以及犬戎攻周密切相关，在西周灭亡的历史转折中具有重要作用。',
     image_url: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%B3%E4%BE%AF%20traditional%20ink%20painting%20style%20portrait&image_size=portrait_3_4',

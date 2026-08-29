@@ -44,12 +44,10 @@ const getLifeSpan = (person: typeof persons[0]) => {
 }
 
 onMounted(async () => {
-  // 尝试加载 JSON 数据
-  if (dynastyId !== 100 && dynastyId >= 200) {
-    const data = await loadDynastyData(dynastyId)
-    if (data) {
-      jsonData.value = data
-    }
+  // 尝试加载 JSON 数据（覆盖全部有 JSON 的朝代，含 106 秦；mock 朝代 404 时自动回退）
+  const data = await loadDynastyData(dynastyId)
+  if (data) {
+    jsonData.value = data
   }
 
   setTimeout(() => {

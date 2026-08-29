@@ -8,6 +8,9 @@ import Person from '@/views/Person.vue'
 import PersonStory from '@/views/PersonStory.vue'
 import Event from '@/views/Event.vue'
 import Family from '@/views/Family.vue'
+import FamilyManage from '@/views/FamilyManage.vue'
+import FamilyMemberProfile from '@/views/FamilyMemberProfile.vue'
+import MemberForm from '@/components/family/MemberForm.vue'
 import Profile from '@/views/Profile.vue'
 import { persons } from '@/mock/data'
 
@@ -67,6 +70,26 @@ const router = createRouter({
       path: '/family',
       name: 'Family',
       component: Family
+    },
+    {
+      path: '/family/member/new',
+      name: 'FamilyMemberNew',
+      component: MemberForm
+    },
+    {
+      path: '/family/member/:id/edit',
+      name: 'FamilyMemberEdit',
+      component: MemberForm
+    },
+    {
+      path: '/family/member/:id',
+      name: 'FamilyMemberProfile',
+      component: FamilyMemberProfile
+    },
+    {
+      path: '/family/manage',
+      name: 'FamilyManage',
+      component: FamilyManage
     },
     {
       path: '/profile',

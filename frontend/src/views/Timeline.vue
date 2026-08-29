@@ -21,9 +21,9 @@ interface DynastyNode {
 const DYNASTY_NODES: DynastyNode[] = [
   { id: 100, name: '上古（传说时代）', display: '上古',     start_year: -3000, end_year: -2070, era: '华夏肇始，文明初光', available: true  },
   { id: 201, name: '夏商西周',         display: '夏商西周', start_year: -2070, end_year: -771,  era: '三代之治，礼乐奠基', available: true  },
-  { id: 202, name: '春秋',             display: '春秋',     start_year: -770,  end_year: -476,  era: '五霸迭兴，礼崩乐坏', available: false },
-  { id: 203, name: '战国',             display: '战国',     start_year: -475,  end_year: -221,  era: '七雄争霸，百家争鸣', available: false },
-  { id: 106, name: '秦',               display: '秦',       start_year: -221,  end_year: -206,  era: '六合为一，百代秦制', available: false },
+  { id: 202, name: '春秋',             display: '春秋',     start_year: -770,  end_year: -476,  era: '五霸迭兴，礼崩乐坏', available: true  },
+  { id: 203, name: '战国',             display: '战国',     start_year: -475,  end_year: -221,  era: '七雄争霸，百家争鸣', available: true  },
+  { id: 106, name: '秦',               display: '秦',       start_year: -221,  end_year: -206,  era: '六合为一，百代秦制', available: true  },
   { id: 107, name: '汉',               display: '汉',       start_year: -202,  end_year:  220,  era: '大汉雄风，丝路西通', available: true  },
   { id: 109, name: '三国',             display: '三国',     start_year:  220,  end_year:  280,  era: '群雄逐鹿，三足鼎立', available: false },
   { id: 110, name: '晋南北朝',         display: '晋南北朝', start_year:  265,  end_year:  589,  era: '衣冠南渡，民族融合', available: false },

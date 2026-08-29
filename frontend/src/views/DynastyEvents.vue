@@ -36,11 +36,16 @@ const formattedYear = (year: number) => {
 // Wave timeline layout constants
 const CARD_HEIGHT = 130
 const CARD_GAP = 30
-const WAVE_AMPLITUDE = 200
+// 波浪/圆点在左右卡片之间的留白 gutter 内摆动（卡片内边缘距中心 ±80px），不与卡片重合
+const WAVE_AMPLITUDE = 56
+const FIRST_ROW_OFFSET = 30 // 首行 marginTop，即首行圆点距容器顶部的偏移基准
 
 const totalHeight = computed(() => {
   return dynastyEvents.value.length * (CARD_HEIGHT + CARD_GAP) + 120
 })
+
+// 首行圆点的实际容器 y（行高 = CARD_HEIGHT + CARD_GAP，圆点位于行高 50% 处）
+const firstEventY = FIRST_ROW_OFFSET + (CARD_HEIGHT + CARD_GAP) / 2
 
 // 蛇形 S 曲线路径：事件在左/右极值点交替，形成 S 形
 const wavePath = computed(() => {
@@ -49,7 +54,6 @@ const wavePath = computed(() => {
   const h = totalHeight.value
   const period = CARD_HEIGHT + CARD_GAP
   const freq = Math.PI / period
-  const firstEventY = 60 + CARD_HEIGHT / 2
   let d = ''
   for (let y = 0; y <= h; y += 2) {
     const x = -Math.cos((y - firstEventY) * freq) * WAVE_AMPLITUDE
@@ -60,14 +64,13 @@ const wavePath = computed(() => {
 
 // Get the y-position for each event card's connection dot
 const getEventY = (index: number) => {
-  return 60 + index * (CARD_HEIGHT + CARD_GAP) + CARD_HEIGHT / 2
+  return firstEventY + index * (CARD_HEIGHT + CARD_GAP)
 }
 
 // 蛇形 S 曲线 x 偏移：事件在极值点，两事件之间平滑过渡
 const getWaveX = (y: number) => {
   const period = CARD_HEIGHT + CARD_GAP
   const freq = Math.PI / period
-  const firstEventY = 60 + CARD_HEIGHT / 2
   return -Math.cos((y - firstEventY) * freq) * WAVE_AMPLITUDE
 }
 
@@ -210,11 +213,11 @@ const navigateToEvent = (id: number) => {
             <div class="flex-1 pr-20 flex justify-end">
               <div
                 @click="navigateToEvent(evt.id)"
-                class="glass-card rounded-2xl p-6 hover-card cursor-pointer group w-full max-w-md transition-all duration-300 hover:-translate-y-1"
+                class="glass-card relative rounded-2xl p-6 hover-card cursor-pointer group w-full max-w-md transition-all duration-300 hover:-translate-y-1"
                 style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(248,246,242,0.9)); border: 1px solid rgba(216,178,106,0.25);"
               >
                 <!-- Connector line from card to dot -->
-                <div class="absolute right-0 top-1/2 w-20 h-px bg-gradient-to-l from-[#D8B26A]/40 to-[#D8B26A]/10" style="right: -5rem;"></div>
+                <div class="absolute top-1/2 w-6 h-px -translate-y-1/2 bg-gradient-to-l from-[#D8B26A]/40 to-transparent" style="right: -1.5rem;"></div>
 
                 <div class="flex items-start justify-between mb-3">
                   <div>
@@ -261,9 +264,12 @@ const navigateToEvent = (id: number) => {
             <div class="flex-1 pl-20 flex justify-start">
               <div
                 @click="navigateToEvent(evt.id)"
-                class="glass-card rounded-2xl p-6 hover-card cursor-pointer group w-full max-w-md transition-all duration-300 hover:-translate-y-1"
+                class="glass-card relative rounded-2xl p-6 hover-card cursor-pointer group w-full max-w-md transition-all duration-300 hover:-translate-y-1"
                 style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(248,246,242,0.9)); border: 1px solid rgba(216,178,106,0.25);"
               >
+                <!-- Connector line from card to dot -->
+                <div class="absolute top-1/2 w-6 h-px -translate-y-1/2 bg-gradient-to-r from-[#D8B26A]/40 to-transparent" style="left: -1.5rem;"></div>
+
                 <div class="flex items-start justify-between mb-3">
                   <div>
                     <span class="tag-pill-vermillion text-xs px-2.5 py-0.5 rounded-full bg-[#355C5A]/10 text-[#355C5A] border border-[#355C5A]/20">{{ evt.event_type }}</span>

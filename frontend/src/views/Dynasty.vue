@@ -336,6 +336,85 @@ const dynastyKeywords = computed<DynastyKw[]>(() => {
       { name: '平王东迁', value: 66, category: 'event', desc: '周平王迁都洛邑，东周开始，西周结束' },
       { name: '司母戊鼎', value: 64, category: 'civilization', desc: '商代晚期青铜礼器，中国现存最大最重的青铜器' },
       { name: '封神演义', value: 62, category: 'civilization', desc: '明代小说，以武王伐纣为背景，演绎商周之际神魔故事' }
+    ],
+    // ============= 【春秋】20条 — 核心词：争霸会盟 + 礼崩乐坏 + 思想萌发 =============
+    '春秋': [
+      { name: '春秋争霸', value: 100, category: 'era', desc: '春秋五霸迭起，齐、晋、楚、秦、吴越相继争雄' },
+      { name: '礼崩乐坏', value: 98, category: 'era', desc: '周王室衰微，礼乐制度崩坏，诸侯僭越周礼' },
+      { name: '周王室衰微', value: 96, category: 'era', desc: '平王东迁后王权旁落，诸侯坐大，天下共主名存实亡' },
+      { name: '诸侯争霸', value: 94, category: 'event', desc: '齐桓、晋文、楚庄等霸主以尊王攘夷为旗号逐鹿中原' },
+      { name: '齐桓公', value: 92, category: 'person', desc: '姜小白，任用管仲为相，九合诸侯，春秋首霸' },
+      { name: '管仲改革', value: 90, category: 'civilization', desc: '管仲相齐，变革军政、通货积财，助齐桓公开创霸业' },
+      { name: '晋文公', value: 88, category: 'person', desc: '重耳，退避三舍，城濮之战大败楚军，成为中原霸主' },
+      { name: '城濮之战', value: 86, category: 'event', desc: '晋楚争霸关键一役，晋文公以少胜多确立晋国霸权' },
+      { name: '楚庄王', value: 84, category: 'person', desc: '一鸣惊人，问鼎中原，邲之战败晋成为南方霸主' },
+      { name: '问鼎中原', value: 82, category: 'event', desc: '楚庄王陈兵周疆，问九鼎之轻重，图谋天子的象征' },
+      { name: '晋楚争霸', value: 80, category: 'event', desc: '晋楚长期争雄，后晋国渐衰、六卿分权' },
+      { name: '吴越争霸', value: 78, category: 'event', desc: '吴王夫差与越王勾践争雄，勾践卧薪尝胆终灭吴' },
+      { name: '勾践卧薪尝胆', value: 76, category: 'person', desc: '越王勾践忍辱负重、励精图治，最终复国灭吴' },
+      { name: '孔子', value: 74, category: 'person', desc: '儒家创始人，开私学、存六经，影响中国两千余年' },
+      { name: '儒家思想', value: 72, category: 'civilization', desc: '仁礼为核心，孔子开创，成为中华文化正统' },
+      { name: '百家争鸣', value: 70, category: 'civilization', desc: '儒、道、法、墨等诸子思想并起，思想大解放' },
+      { name: '晋国六卿', value: 68, category: 'era', desc: '晋国被智、赵、韩、魏等六卿把持，公室衰微' },
+      { name: '三家分晋', value: 66, category: 'event', desc: '韩赵魏瓜分晋国，标志春秋之终、战国之始' },
+      { name: '尊王攘夷', value: 64, category: 'civilization', desc: '霸主尊奉周王、抵御外夷的旗号，名实相济' },
+      { name: '弭兵会盟', value: 62, category: 'civilization', desc: '晋楚争霸后期由宋国倡导的停战会盟，暂息干戈' }
+    ],
+    // ============= 【战国】21条 — 核心词：战国争雄 + 百家争鸣 =============
+    '战国': [
+      // L1 核心（70/68）
+      { name: '战国争雄', value: 100, category: 'era', desc: '七雄并立、合纵连横，兼并战争与变法图强贯穿始终的时代' },
+      { name: '百家争鸣', value: 98, category: 'civilization', desc: '儒道法墨名等诸子学说鼎盛交锋，中国思想史的黄金时代' },
+      // L2 ~5 词（56px）
+      { name: '商鞅变法', value: 96, category: 'civilization', desc: '秦孝公任商鞅变法，废井田、奖军功，使秦国由弱变强' },
+      { name: '合纵连横', value: 94, category: 'event', desc: '苏秦合纵抗秦、张仪连横破纵，纵横家主导七国外交格局' },
+      { name: '七雄并立', value: 92, category: 'era', desc: '秦、楚、齐、燕、赵、魏、韩七大国并峙，征伐不休' },
+      { name: '长平之战', value: 90, category: 'event', desc: '秦赵之间最大规模会战，白起坑杀赵卒，秦统一大势已定' },
+      { name: '都江堰', value: 88, category: 'civilization', desc: '李冰父子主持修建，使成都平原成为天府之国' },
+      // L3 ~7 词（46px）
+      { name: '秦始皇', value: 86, category: 'person', desc: '秦王政扫灭六国、统一天下，开创中国第一个大一统王朝' },
+      { name: '屈原', value: 84, category: 'person', desc: '楚国诗人，开创楚辞体，《离骚》千古传诵' },
+      { name: '李斯', value: 82, category: 'person', desc: '秦相李斯，辅佐秦始皇统一六国，主持郡县制与书同文' },
+      { name: '孙膑', value: 80, category: 'person', desc: '孙膑著《孙膑兵法》，桂陵、马陵两战大败魏军' },
+      { name: '信陵君', value: 78, category: 'person', desc: '战国四公子之一，窃符救赵，礼贤下士' },
+      { name: '赵武灵王', value: 76, category: 'person', desc: '推行胡服骑射，赵国军力大振，成为东方强国' },
+      { name: '荆轲刺秦', value: 74, category: 'event', desc: '荆轲图穷匕见刺秦王，慷慨悲歌，壮士一去不复还' },
+      // L4 ~7 词（36/28px）
+      { name: '郑国渠', value: 72, category: 'civilization', desc: '韩国水工郑国主持修建，灌溉关中沃野，秦因之益强' },
+      { name: '孙膑兵法', value: 70, category: 'civilization', desc: '孙膑所著兵书，讲究因势利导、奇正相生' },
+      { name: '曾侯乙编钟', value: 68, category: 'civilization', desc: '战国青铜礼乐重器，全套编钟一钟双音，代表先秦音乐巅峰' },
+      { name: '战国策', value: 66, category: 'civilization', desc: '记录纵横家言行的国别体史书，文学价值极高' },
+      { name: '铁器牛耕', value: 64, category: 'civilization', desc: '铁制农具与牛耕普及，生产力飞跃推动社会变革' },
+      { name: '函谷关', value: 62, category: 'geo', desc: '秦之东门，六国屡次叩关而不得入，军事要冲' },
+      { name: '胡服骑射', value: 60, category: 'event', desc: '赵武灵王改革军制，学习胡人骑射，赵国武备大兴' }
+    ],
+    // ============= 【秦】20条 — 核心词：秦并天下 + 皇帝制度 =============
+    '秦': [
+      // L1 核心（70/68）
+      { name: '秦并天下', value: 100, category: 'era', desc: '秦始皇扫灭六国，实现中国历史上第一次真正的大一统' },
+      { name: '皇帝制度', value: 98, category: 'civilization', desc: '首创皇帝尊号与三公九卿制，奠定两千余年中央集权政体' },
+      // L2 ~5 词（56px）
+      { name: '书同文', value: 96, category: 'civilization', desc: '统一文字为小篆，车同轨、书同文、行同伦' },
+      { name: '焚书坑儒', value: 94, category: 'event', desc: '禁绝私学、焚毁典籍，思想专制与文化的重大浩劫' },
+      { name: '万里长城', value: 92, category: 'geo', desc: '北筑长城以御匈奴，是世界古代最宏大的军事防御工程' },
+      { name: '郡县制', value: 90, category: 'civilization', desc: '废分封、行郡县，官僚政治取代贵族政治' },
+      { name: '沙丘政变', value: 88, category: 'event', desc: '秦始皇病逝沙丘，赵高矫诏拥立胡亥，秦政自此崩坏' },
+      // L3 ~7 词（46px）
+      { name: '秦始皇', value: 86, category: 'person', desc: '嬴政扫六合而定天下，功过并存的千古一帝' },
+      { name: '李斯', value: 84, category: 'person', desc: '秦相李斯，辅佐统一、主持郡县制与书同文，终为赵高所杀' },
+      { name: '蒙恬', value: 82, category: 'person', desc: '北逐匈奴、修长城、掌管重兵的秦朝名将' },
+      { name: '王翦', value: 80, category: 'person', desc: '灭赵灭楚的老将，为秦统一立下不世战功' },
+      { name: '统一度量衡', value: 78, category: 'civilization', desc: '统一衡石丈尺，便利赋税与商贸，强化政令整齐划一' },
+      { name: '阿房宫', value: 76, category: 'geo', desc: '大兴土木营建咸阳宫室，劳役苛重加剧民怨' },
+      { name: '灵渠', value: 74, category: 'geo', desc: '开凿灵渠联通湘漓，为征岭南开辟水运通道' },
+      // L4 ~7 词（36/28px）
+      { name: '赵高', value: 72, category: 'person', desc: '指鹿为马的秦朝权宦，篡改遗诏、弄权误国' },
+      { name: '章邯', value: 70, category: 'person', desc: '秦末名将，镇压起义军却终为项羽所败' },
+      { name: '巨鹿之战', value: 68, category: 'event', desc: '项羽破釜沉舟大败秦军主力，秦亡大势已定' },
+      { name: '大泽乡起义', value: 66, category: 'event', desc: '陈胜吴广首举义旗，点燃秦末农民战争燎原之火' },
+      { name: '指鹿为马', value: 64, category: 'event', desc: '赵高当廷指鹿为马试探群臣，尽显秦廷纲纪废弛' },
+      { name: '驰道', value: 62, category: 'geo', desc: '修建以咸阳为中心辐射全国的驰道，车同轨以通政令' },
+      { name: '陈胜吴广', value: 60, category: 'event', desc: '大泽乡揭竿而起，「王侯将相宁有种乎」' }
     ]
   }
   return M[dynasty.value.name] || M['上古']
@@ -546,22 +625,35 @@ const handleKwClick = (kw: KwLayout) => {
   if (kw.detailRoute) router.push(kw.detailRoute.path)
 }
 
+// 人物-事件关联密度：平均每人关联的事件数（只统计人物↔事件的关联，不混入人物间关系）
 const associationDensity = computed(() => {
-  if (dynastyPersons.value.length === 0) return 0
-  const totalRelations = dynastyPersons.value.reduce((sum, p) => {
-    return sum + (p.related_people?.length || 0) + (p.related_events?.length || 0)
-  }, 0)
-  return (totalRelations / dynastyPersons.value.length).toFixed(1)
+  const persons = dynastyPersons.value
+  if (persons.length === 0) return 0
+  const clicks = new Set<string>() // "人物|事件" 去重，统计人物参与/关联事件的真实对数
+  dynastyEvents.value.forEach(ev => {
+    const names = new Set<string>()
+    ;(ev.person_relations || []).forEach(r => { if (r.source) names.add(r.source); if (r.target) names.add(r.target) })
+    const groups: Array<'leaders' | 'participants' | 'opponents'> = ['leaders', 'participants', 'opponents']
+    groups.forEach((k) =>
+      (ev.person_groups?.[k] || []).forEach((x: any) => { if (x.name) names.add(x.name) }))
+    names.forEach(n => clicks.add(`${n}|${ev.name}`))
+  })
+  // 兜底合并人物自身的 related_events
+  persons.forEach(p => (p.related_events || []).forEach((e: any) => {
+    const en = typeof e === 'string' ? e : e?.name
+    if (en) clicks.add(`${p.name}|${en}`)
+  }))
+  return (clicks.size / persons.length).toFixed(1)
 })
 
+// 关系网络活跃度：参与关系网络的人物占比（0-100 指数）
 const networkActivity = computed(() => {
-  const totalPersons = dynastyPersons.value.length
-  const totalRelations = dynastyPersons.value.reduce((sum, p) => {
-    return sum + (p.related_people?.length || 0)
-  }, 0)
-  if (totalPersons === 0) return '0.00'
-  const density = totalRelations / (totalPersons * (totalPersons - 1) || 1)
-  return density.toFixed(2)
+  const persons = dynastyPersons.value
+  if (persons.length === 0) return '0'
+  const connected = persons.filter(p =>
+    (p.related_people?.length || 0) + (p.related_events?.length || 0) > 0
+  ).length
+  return String(Math.round((connected / persons.length) * 100))
 })
 
 const chinaMapData = computed(() => {
@@ -575,6 +667,18 @@ const chinaMapData = computed(() => {
         { name: '周原', x: 248, y: 155, r: 6 },                          // 岐山（西周发源地）
         { name: '陶寺', x: 275, y: 125, r: 5 },                          // 临汾（尧都遗址）
         { name: '石峁', x: 260, y: 115, r: 5 }                           // 神木（陕北古城）
+      ]
+    },
+    '战国': {
+      regions: [
+        // 战国七雄并立：秦咸阳为最终一统之都，其余六国都城并陈
+        { name: '咸阳', x: 233, y: 151, r: 10, isCapital: true },        // 秦都（陕西咸阳）
+        { name: '临淄', x: 380, y: 142, r: 7 },                          // 齐都（山东淄博）
+        { name: '邯郸', x: 322, y: 127, r: 7 },                          // 赵都（河北邯郸）
+        { name: '大梁', x: 318, y: 140, r: 7 },                          // 魏都（河南开封）
+        { name: '新郑', x: 303, y: 150, r: 7 },                          // 韩都（河南新郑）
+        { name: '郢都', x: 285, y: 238, r: 7 },                          // 楚都（湖北荆州）
+        { name: '蓟城', x: 333, y: 108, r: 7 }                           // 燕都（北京）
       ]
     },
     '汉朝': {
@@ -673,6 +777,8 @@ const chinaMapPath = computed(() => {
   const paths: Record<string, string> = {
     // 上古（传说时代/夏朝核心区）：仅限黄河中下游河洛地区，约33万km²
     '上古': 'M 255 120 L 240 130 L 230 148 L 232 165 L 242 178 L 258 185 L 278 188 L 295 180 L 310 168 L 322 155 L 325 140 L 318 128 L 302 120 L 285 115 L 268 113 Z',
+    // 战国（七雄并立后期，约260年）：约500万km²，西至陇西、北至辽东、东至山东半岛、南至湖南江西
+    '战国': 'M 95 150 L 85 172 L 90 200 L 108 230 L 135 255 L 168 278 L 205 295 L 240 308 L 272 316 L 300 320 L 325 316 L 345 300 L 360 280 L 378 260 L 395 240 L 412 218 L 424 195 L 432 172 L 434 148 L 428 128 L 418 112 L 404 100 L 386 90 L 362 84 L 332 80 L 302 78 L 272 82 L 244 80 L 218 86 L 192 94 L 168 106 L 146 118 L 126 132 L 108 146 Z',
     // 汉朝（西汉极盛）：约610万km²，东至朝鲜、西至巴尔喀什湖/葱岭、北至贝加尔湖、南至越南
     '汉朝': 'M 38 78 L 32 65 L 50 42 L 80 25 L 120 18 L 175 20 L 230 28 L 280 26 L 330 32 L 370 48 L 405 70 L 430 95 L 438 118 L 420 142 L 400 162 L 388 185 L 382 208 L 388 235 L 395 255 L 388 285 L 370 315 L 352 340 L 338 352 L 325 358 L 300 365 L 275 370 L 250 362 L 228 340 L 210 310 L 195 285 L 180 260 L 165 230 L 152 205 L 138 178 L 118 158 L 95 138 L 72 115 L 52 100 Z',
     // 唐朝（高宗极盛）：约1237万km²，西至咸海/波斯边境、北至贝加尔湖、东至朝鲜、南至越南
@@ -790,6 +896,35 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '国人暴动', year: -841, value: 4, tag: '共和行政' },
     { name: '宣王中兴', year: -827, value: 6.5, tag: '短暂复兴' },
     { name: '西周灭亡', year: -771, value: 2, tag: '犬戎破京' }
+  ],
+  '春秋': [
+    { name: '平王东迁', year: -770, value: 6, tag: '东周肇始' },
+    { name: '繻葛之战', year: -707, value: 5.5, tag: '王权衰微' },
+    { name: '管仲改革', year: -685, value: 8, tag: '齐桓变法' },
+    { name: '齐桓践土', year: -654, value: 8.5, tag: '尊王攘夷' },
+    { name: '葵丘会盟', year: -651, value: 9.5, tag: '齐桓称霸' },
+    { name: '城濮之战', year: -632, value: 9, tag: '晋文霸业' },
+    { name: '楚庄问鼎', year: -606, value: 8.5, tag: '问鼎中原' },
+    { name: '邲之战', year: -597, value: 8, tag: '楚庄称霸' },
+    { name: '弭兵会盟', year: -546, value: 7, tag: '晋楚休兵' },
+    { name: '柏举之战', year: -506, value: 7.5, tag: '吴师入郢' },
+    { name: '勾践灭吴', year: -473, value: 7, tag: '越霸中原' },
+    { name: '三家分晋', year: -403, value: 3, tag: '春秋终结' }
+  ],
+  '战国': [
+    { name: '晋阳之战', year: -455, value: 5.5, tag: '智氏覆灭' },
+    { name: '魏文侯变法', year: -445, value: 7.5, tag: '魏国崛起' },
+    { name: '三家分晋', year: -403, value: 6.5, tag: '战国肇始' },
+    { name: '商鞅变法', year: -356, value: 8.5, tag: '秦国强盛' },
+    { name: '桂陵之战', year: -354, value: 8, tag: '孙庞斗智' },
+    { name: '马陵之战', year: -341, value: 6.5, tag: '魏国衰落' },
+    { name: '徐州相王', year: -334, value: 7, tag: '齐魏并王' },
+    { name: '胡服骑射', year: -307, value: 8, tag: '赵武灵王' },
+    { name: '乐毅伐齐', year: -284, value: 6, tag: '燕国复仇' },
+    { name: '长平之战', year: -260, value: 4, tag: '白起坑赵' },
+    { name: '邯郸之战', year: -257, value: 6.5, tag: '合纵救赵' },
+    { name: '荆轲刺秦', year: -227, value: 4.5, tag: '垂死一搏' },
+    { name: '秦灭六国', year: -221, value: 9, tag: '天下归一' }
   ]
 }
 
@@ -895,7 +1030,7 @@ const initOccupationChart = () => {
   occupationChart.setOption({
     tooltip: {
       trigger: 'item',
-      formatter: '{b}: {c}% ({d}%)',
+      formatter: '{b}: {d}% ({c}人)',
       backgroundColor: 'rgba(255,255,255,0.95)',
       borderColor: '#D8B26A',
       borderWidth: 1,
@@ -911,7 +1046,9 @@ const initOccupationChart = () => {
       itemGap: 12,
       formatter: (name: string) => {
         const item = occupationDistribution.find(d => d.name === name)
-        return item ? `${name}  ${item.value}%` : name
+        if (!item) return name
+        const sum = occupationDistribution.reduce((s, d) => s + d.value, 0) || 1
+        return `${name}  ${Math.round((item.value / sum) * 100)}%`
       }
     },
     series: [{
@@ -1514,9 +1651,9 @@ onUnmounted(() => {
                       <span class="font-calligraphy text-3xl text-[#C34739]">{{ networkActivity }}</span>
                       <span class="text-xs text-[#4A4A3A]/50">指数</span>
                     </div>
-                    <p class="text-xs text-[#4A4A3A]/50 mb-2">网络连接密度指数</p>
+                    <p class="text-xs text-[#4A4A3A]/50 mb-2">网络参与活跃指数</p>
                     <div class="w-full h-2 bg-[#D8B26A]/15 rounded-full overflow-hidden">
-                      <div class="h-full bg-gradient-to-r from-[#C34739] via-[#D4756A] to-[#D8B26A] rounded-full transition-all duration-1000" :style="{ width: Math.min(100, Number(networkActivity) * 100) + '%' }"></div>
+                      <div class="h-full bg-gradient-to-r from-[#C34739] via-[#D4756A] to-[#D8B26A] rounded-full transition-all duration-1000" :style="{ width: Math.min(100, Number(networkActivity)) + '%' }"></div>
                     </div>
                   </div>
                 </div>

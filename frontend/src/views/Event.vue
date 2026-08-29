@@ -96,30 +96,48 @@ const background = computed(() => event.value?.background || {})
 const impacts = computed(() => event.value?.impacts || [])
 const chain = computed(() => event.value?.chain || [])
 
+// 一句话导读：与简介去重，避免黑色简介与黄棕色引言重复
+const oneSentence = computed(() => {
+  const g = event.value
+  if (!g) return ''
+  const os = g.one_sentence || ''
+  if (!os || os === g.summary) return ''
+  if (g.summary && os.length < g.summary.length && g.summary.includes(os)) return ''
+  return os
+})
+
 const timeline = computed(() => {
   const g = event.value
   if (!g) return null
+
+  // 最多显示 10 个历史事件节点，并以当前事件为中心取窗口
+  const capWindow = <T extends { isCurrent: boolean }>(arr: T[]): T[] => {
+    if (arr.length <= 10) return arr
+    const idx = arr.findIndex(a => a.isCurrent)
+    const start = Math.max(0, Math.min(idx === -1 ? 0 : idx - 4, arr.length - 10))
+    return arr.slice(start, start + 10)
+  }
 
   // First try dynasty-level timeline from JSON data
   if (jsonData.value?.timelines && g.timeline_id) {
     const dynTls = jsonData.value.timelines
     if (dynTls[g.timeline_id]) {
-      return dynTls[g.timeline_id].map((entry, idx) => ({
+      return capWindow(dynTls[g.timeline_id].map((entry, idx) => ({
         ...entry,
         index: idx,
         isCurrent: entry.event_id === g.id
-      }))
+      })))
     }
   }
 
   // Then try mock data timeline
   if (g.timeline_id && eventTimelines[g.timeline_id]) {
     const tl = eventTimelines[g.timeline_id]
-    return tl.map((entry, idx) => ({
+    return capWindow(tl.map((entry, idx) => ({
       ...entry,
       index: idx,
       isCurrent: entry.event_id === g.id
-    }))
+    })))
   }
 
   // Fallback: use chain data
@@ -151,7 +169,7 @@ const relatedEventsData = computed(() => {
   return event.value.related_events
     .map(name => allEvents.find(e => e.name === name))
     .filter((e): e is NonNullable<typeof e> => e !== undefined && e.id !== event.value!.id)
-    .slice(0, 6)
+    .slice(0, 4)
 })
 
 const relatedDynasty = computed(() => {
@@ -477,10 +495,14 @@ const getImpactSummary = () => {
   if (!event.value) return ''
   const g = event.value
   const imps = impacts.value
-  const topImp = imps.length > 0 ? [...imps].sort((a, b) => b.score - a.score)[0] : null
-  const dynasty = g.dynasty
   const name = g.name
 
+  // 优先展示 Excel 导入的详细历史影响文字
+  const hist = imps.find(i => i.name.includes('历史'))
+  if (hist && hist.description) return hist.description
+
+  const topImp = imps.length > 0 ? [...imps].sort((a, b) => b.score - a.score)[0] : null
+  const dynasty = g.dynasty
   if (topImp) {
     return `${name}作为${dynasty}时期的标志性事件，在${topImp.name}方面影响最为深远（${topImp.score}分），其历史余韵贯穿后世，成为理解${dynasty}兴衰脉络的重要切入点。`
   }
@@ -553,15 +575,13 @@ const handleResize = () => {
 }
 
 onMounted(async () => {
-  // 尝试加载 JSON 数据 - 遍历候选朝代ID
-  if (eventId >= 200000) {
-    const candidates = getCandidateDynastyIds(eventId)
-    for (const dId of candidates) {
-      const data = await loadDynastyData(dId)
-      if (data && data.events.some(e => e.id === eventId)) {
-        jsonData.value = data
-        break
-      }
+  // 尝试加载 JSON 数据 - 遍历候选朝代ID（覆盖全部有 JSON 的朝代，含 106 秦）
+  const candidates = getCandidateDynastyIds(eventId)
+  for (const dId of candidates) {
+    const data = await loadDynastyData(dId)
+    if (data && data.events.some(e => e.id === eventId)) {
+      jsonData.value = data
+      break
     }
   }
 
@@ -653,10 +673,10 @@ watch(impacts, () => {
             </div>
 
             <p class="text-lg text-[#2C2C2C]/90 leading-relaxed max-w-2xl mb-4 font-serif">{{ event!.summary }}</p>
-            <p v-if="event!.one_sentence" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
-              {{ event!.one_sentence }}
+            <p v-if="oneSentence" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
+              {{ oneSentence }}
             </p>
-            <p v-else-if="event!.significance" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
+            <p v-else-if="event!.significance && event!.significance !== event!.summary" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
               {{ event!.significance }}
             </p>
           </div>

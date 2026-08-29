@@ -58,12 +58,12 @@
       "related_people": [
         {
           "name": "太康",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "大禹",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 90
         },
         {
@@ -176,12 +176,12 @@
       "related_people": [
         {
           "name": "启",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "仲康",
-          "relation": "亲属",
+          "relation": "兄弟",
           "influence": 75
         },
         {
@@ -314,7 +314,7 @@
       "related_people": [
         {
           "name": "太康",
-          "relation": "亲属",
+          "relation": "兄弟",
           "influence": 75
         },
         {
@@ -324,7 +324,7 @@
         },
         {
           "name": "少康",
-          "relation": "亲属",
+          "relation": "祖孙",
           "influence": 60
         }
       ],
@@ -410,7 +410,7 @@
         },
         {
           "name": "仲康",
-          "relation": "亲属",
+          "relation": "祖孙",
           "influence": 65
         }
       ],
@@ -538,7 +538,7 @@
         },
         {
           "name": "妺喜",
-          "relation": "支持",
+          "relation": "夫妻",
           "influence": 75
         },
         {
@@ -756,7 +756,7 @@
         },
         {
           "name": "商汤",
-          "relation": "亲属",
+          "relation": "祖孙",
           "influence": 75
         },
         {
@@ -832,7 +832,7 @@
         },
         {
           "name": "盘庚",
-          "relation": "亲属",
+          "relation": "宗亲",
           "influence": 50
         }
       ],
@@ -898,17 +898,17 @@
       "related_people": [
         {
           "name": "祖甲",
-          "relation": "亲属",
+          "relation": "宗亲",
           "influence": 75
         },
         {
           "name": "武丁",
-          "relation": "亲属",
+          "relation": "叔侄",
           "influence": 70
         },
         {
           "name": "傅说",
-          "relation": "支持",
+          "relation": "影响",
           "influence": 50
         }
       ],
@@ -1019,7 +1019,7 @@
       "related_people": [
         {
           "name": "妇好",
-          "relation": "亲属",
+          "relation": "夫妻",
           "influence": 75
         },
         {
@@ -1034,12 +1034,12 @@
         },
         {
           "name": "祖己",
-          "relation": "支持",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "盘庚",
-          "relation": "亲属",
+          "relation": "叔侄",
           "influence": 65
         }
       ],
@@ -1151,22 +1151,22 @@
       "related_people": [
         {
           "name": "武丁",
-          "relation": "亲属",
+          "relation": "夫妻",
           "influence": 75
         },
         {
           "name": "傅说",
-          "relation": "朋友",
+          "relation": "同僚",
           "influence": 75
         },
         {
           "name": "甘盘",
-          "relation": "朋友",
+          "relation": "同僚",
           "influence": 60
         },
         {
           "name": "祖己",
-          "relation": "支持",
+          "relation": "母子",
           "influence": 55
         }
       ],
@@ -1236,17 +1236,17 @@
       "related_people": [
         {
           "name": "盘庚",
-          "relation": "亲属",
+          "relation": "宗亲",
           "influence": 75
         },
         {
           "name": "武丁",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 70
         },
         {
           "name": "帝乙",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 55
         }
       ],
@@ -1307,22 +1307,22 @@
       "related_people": [
         {
           "name": "帝辛",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "微子启",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 70
         },
         {
           "name": "比干",
-          "relation": "亲属",
+          "relation": "兄弟",
           "influence": 65
         },
         {
           "name": "箕子",
-          "relation": "支持",
+          "relation": "兄弟",
           "influence": 60
         }
       ],
@@ -1388,22 +1388,22 @@
       "related_people": [
         {
           "name": "帝乙",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "比干",
-          "relation": "亲属",
+          "relation": "叔侄",
           "influence": 75
         },
         {
           "name": "箕子",
-          "relation": "支持",
+          "relation": "叔侄",
           "influence": 75
         },
         {
           "name": "微子启",
-          "relation": "亲属",
+          "relation": "兄弟",
           "influence": 75
         },
         {
@@ -1557,12 +1557,12 @@
       "related_people": [
         {
           "name": "王季",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "周文王",
-          "relation": "亲属",
+          "relation": "祖孙",
           "influence": 65
         }
       ],
@@ -1623,12 +1623,12 @@
       "related_people": [
         {
           "name": "周太王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "周文王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
@@ -1704,17 +1704,17 @@
       "related_people": [
         {
           "name": "王季",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "周武王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "周公旦",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
@@ -1849,17 +1849,17 @@
       "related_people": [
         {
           "name": "周文王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "周公旦",
-          "relation": "亲属",
+          "relation": "兄弟",
           "influence": 75
         },
         {
           "name": "周成王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
@@ -1874,7 +1874,7 @@
         },
         {
           "name": "康叔封",
-          "relation": "亲属",
+          "relation": "兄弟",
           "influence": 75
         },
         {
@@ -2009,7 +2009,7 @@
       "related_people": [
         {
           "name": "周武王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
@@ -2019,12 +2019,12 @@
         },
         {
           "name": "伯禽",
-          "relation": "支持",
+          "relation": "宗亲",
           "influence": 75
         },
         {
           "name": "周康王",
-          "relation": "支持",
+          "relation": "父子",
           "influence": 75
         },
         {
@@ -2099,7 +2099,7 @@
       "related_people": [
         {
           "name": "周成王",
-          "relation": "支持",
+          "relation": "父子",
           "influence": 75
         },
         {
@@ -2180,12 +2180,12 @@
       "related_people": [
         {
           "name": "周厉王",
-          "relation": "支持",
+          "relation": "宗亲",
           "influence": 75
         },
         {
           "name": "周共王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 60
         },
         {
@@ -2266,12 +2266,12 @@
         },
         {
           "name": "周穆王",
-          "relation": "支持",
+          "relation": "宗亲",
           "influence": 75
         },
         {
           "name": "周宣王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         }
       ],
@@ -2431,12 +2431,12 @@
         },
         {
           "name": "周幽王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "周厉王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         }
       ],
@@ -2598,7 +2598,7 @@
       "related_people": [
         {
           "name": "褒姒",
-          "relation": "亲属",
+          "relation": "夫妻",
           "influence": 75
         },
         {
@@ -2608,7 +2608,7 @@
         },
         {
           "name": "周宣王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
@@ -2777,12 +2777,12 @@
       "related_people": [
         {
           "name": "周文王",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         },
         {
           "name": "周武王",
-          "relation": "亲属",
+          "relation": "兄弟",
           "influence": 75
         },
         {
@@ -2812,7 +2812,7 @@
         },
         {
           "name": "伯禽",
-          "relation": "亲属",
+          "relation": "父子",
           "influence": 75
         }
       ],
@@ -2935,10 +2935,10 @@
       }
     },
     {
-      "id": 202026,
+      "id": 201026,
       "name": "后羿",
       "dynasty": "夏商西周",
-      "summary": "夏朝早期政治传说中的重要人物，相传掌握夏政，并在太康失国后形成独立的政治势力。后羿后来被寒浞取代，其故事成为夏初政治动荡的重要传说。",
+      "summary": "有穷氏首领，以善射著称，其名号与上古射日神话相融，兼具神话与历史色彩。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%90%8E%E7%BE%BF%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3039,10 +3039,10 @@
       }
     },
     {
-      "id": 202027,
+      "id": 201027,
       "name": "寒浞",
       "dynasty": "夏商西周",
-      "summary": "相传后羿掌权后，寒浞逐渐取得其势力，最终杀死后羿并掌握夏朝政权。后来少康重新组织力量，使夏王室复兴。",
+      "summary": "寒国出身、后羿亲信，篡夺夏政，是\"太康失国\"后的乱政者。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%AF%92%E6%B5%9E%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3154,10 +3154,10 @@
       }
     },
     {
-      "id": 202028,
+      "id": 201028,
       "name": "女艾",
       "dynasty": "夏商西周",
-      "summary": "传统记载中的女性人物，相传受到少康派遣，深入寒浞势力内部获取情报，为少康复国创造条件，是中国早期历史传说中少见的女性政治人物形象。",
+      "summary": "少康谋臣，中国早期历史上罕见的女性政治人物，以善谋助少康复国。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A5%B3%E8%89%BE%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3253,10 +3253,10 @@
       }
     },
     {
-      "id": 202029,
+      "id": 201029,
       "name": "伯靡",
       "dynasty": "夏商西周",
-      "summary": "夏王室的重要支持者，相传在少康失国后仍坚持支持夏王室，并协助少康积蓄力量、恢复夏朝政权。",
+      "summary": "夏朝遗臣，忠于夏王室，是少康中兴的重要助力。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%9D%A1%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3352,10 +3352,10 @@
       }
     },
     {
-      "id": 202030,
+      "id": 201030,
       "name": "关龙逢",
       "dynasty": "夏商西周",
-      "summary": "传统文献中的忠臣形象，相传因直言劝谏夏桀、反对其暴政而遭杀害，后世常将其视为忠臣直谏的代表。",
+      "summary": "夏朝末年贤臣，以忠直敢谏著称，终被夏桀所害。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%85%B3%E9%BE%99%E9%80%A2%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3440,10 +3440,10 @@
       }
     },
     {
-      "id": 202031,
+      "id": 201031,
       "name": "妺喜",
       "dynasty": "夏商西周",
-      "summary": "传统历史叙事中的夏末女性人物，与夏桀统治和夏朝灭亡的故事联系在一起。其形象经过后世文学与民间叙事不断加工，具有较强的传说色彩。",
+      "summary": "有施氏之女，夏桀宠妃，后世多以之为夏亡之祸水。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%BA%E5%96%9C%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3528,10 +3528,10 @@
       }
     },
     {
-      "id": 202032,
+      "id": 201032,
       "name": "费昌",
       "dynasty": "夏商西周",
-      "summary": "传统记载中的夏商之际人物，相传由夏转向商，后来成为商汤一方的重要人物，是观察夏商政治力量转换的一个人物节点。",
+      "summary": "夏末商族重要人物，商汤得力助手，在商族崛起中发挥关键作用。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%B4%B9%E6%98%8C%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3605,10 +3605,10 @@
       }
     },
     {
-      "id": 202033,
+      "id": 201033,
       "name": "昆吾",
       "dynasty": "夏商西周",
-      "summary": "夏末重要方国势力的代表人物，传统记载中与夏桀及商汤灭夏的政治格局有关，可用于展示夏末诸侯势力与王朝更替之间的关系。",
+      "summary": "夏朝末年重要诸侯，为己姓部落首领，世代为夏朝重臣，后助夏与商相抗。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%98%86%E5%90%BE%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3682,10 +3682,10 @@
       }
     },
     {
-      "id": 202034,
+      "id": 201034,
       "name": "皋陶",
       "dynasty": "夏商西周",
-      "summary": "传说中的早期政治人物，与尧、舜、禹时期的政治秩序和司法传统密切相关。其形象常被后世视为中国早期司法制度的重要象征。",
+      "summary": "东夷部落首领，\"上古四圣\"之一，以贤德智慧闻名，被视为中国法制与狱讼之祖。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%9A%8B%E9%99%B6%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3765,10 +3765,10 @@
       }
     },
     {
-      "id": 202035,
+      "id": 201035,
       "name": "伯益",
       "dynasty": "夏商西周",
-      "summary": "禹时期的重要辅臣，传统记载中参与治水和山泽管理，并与夏初政治传承有关。其人物形象能够连接上古时代与夏朝早期的政治发展。",
+      "summary": "东夷部落首领，舜禹时期重要人物，才智出众，助大禹治水，是嬴秦的先祖。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%9B%8A%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -3859,10 +3859,10 @@
       }
     },
     {
-      "id": 202036,
+      "id": 201036,
       "name": "伊尹",
       "dynasty": "夏商西周",
-      "summary": "商汤的重要辅臣，传统文献中被认为参与商汤灭夏，并在商朝建立后辅佐政权，是商初政治治理的重要人物。",
+      "summary": "商初重臣，辅佐商汤灭夏建商，功勋卓著，被誉为\"元圣\"，堪称千古贤相第一人。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%8A%E5%B0%B9%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4015,10 +4015,10 @@
       }
     },
     {
-      "id": 202037,
+      "id": 201037,
       "name": "仲虺",
       "dynasty": "夏商西周",
-      "summary": "商汤时期的重要辅臣，传统文献中与商汤灭夏以及商初政治建设有关，是商汤政治集团的重要人物。",
+      "summary": "商汤重臣，奚仲之后，出身名门，才德兼备，为商初辅弼之臣。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BB%B2%E8%99%BA%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4114,10 +4114,10 @@
       }
     },
     {
-      "id": 202038,
+      "id": 201038,
       "name": "葛伯",
       "dynasty": "夏商西周",
-      "summary": "商汤灭夏过程中相关方国的首领，传统记载中因与商汤发生冲突而成为商汤征伐体系中的重要人物。",
+      "summary": "夏末葛国君主，葛国为夏朝东部门户，其失礼与拒商是商汤伐夏的导火索之一。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%91%9B%E4%BC%AF%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4191,10 +4191,10 @@
       }
     },
     {
-      "id": 202039,
+      "id": 201101,
       "name": "巫咸",
       "dynasty": "夏商西周",
-      "summary": "商代重要巫者和政治人物，传统文献中与王权、祭祀和占卜活动有关，体现了商代政治与宗教高度结合的社会特征。",
+      "summary": "商朝太戊时期重臣，精通天文历法与巫术，学识渊博，在商代文化史上占重要地位。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B7%AB%E5%92%B8%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4257,10 +4257,10 @@
       }
     },
     {
-      "id": 202040,
+      "id": 201102,
       "name": "甘盘",
       "dynasty": "夏商西周",
-      "summary": "武丁时期的重要臣僚，传统记载中与武丁早期政治经历有关，是武丁任用贤臣、整顿政治的重要人物之一。",
+      "summary": "商朝武丁时期的老师与重臣，对武丁的成长影响深远。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%98%E7%9B%98%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4345,10 +4345,10 @@
       }
     },
     {
-      "id": 202041,
+      "id": 201103,
       "name": "傅说",
       "dynasty": "夏商西周",
-      "summary": "武丁时期的重要政治家，传统记载中武丁通过梦兆寻找并任用傅说，使其成为辅佐自己的重要大臣，是武丁中兴的重要人物。",
+      "summary": "商朝武丁时期贤相，出身微贱而才能卓越，经武丁梦求而拜相，助武丁实现中兴。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%82%85%E8%AF%B4%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4449,10 +4449,10 @@
       }
     },
     {
-      "id": 202042,
+      "id": 201104,
       "name": "祖己",
       "dynasty": "夏商西周",
-      "summary": "武丁时期的重要王室成员，传统文献中以劝谏武丁等事迹著称，其人物故事体现了商代王室内部政治与祭祀传统。",
+      "summary": "商朝武丁之子，以孝行著称，在商人文化中具有重要地位。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%A5%96%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4532,10 +4532,10 @@
       }
     },
     {
-      "id": 202043,
+      "id": 201105,
       "name": "微子启",
       "dynasty": "夏商西周",
-      "summary": "帝辛的兄长，商末王室的重要人物。商朝灭亡后被周人封于宋，其经历连接了商亡、周初政治秩序与宋国建立。",
+      "summary": "商纣王庶兄，商末重要政治人物，后降周受封于宋，为宋国之祖。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BE%AE%E5%AD%90%E5%90%AF%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4653,10 +4653,10 @@
       }
     },
     {
-      "id": 202044,
+      "id": 201106,
       "name": "比干",
       "dynasty": "夏商西周",
-      "summary": "商末重要大臣，传统记载中因忠谏帝辛而遭杀害，后世逐渐形成忠臣典范形象，是商末政治危机叙事的重要人物。",
+      "summary": "商纣王叔父，以忠直敢谏闻名，因强谏被剖心，是千古忠臣的典范。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%94%E5%B9%B2%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4757,10 +4757,10 @@
       }
     },
     {
-      "id": 202045,
+      "id": 201107,
       "name": "箕子",
       "dynasty": "夏商西周",
-      "summary": "商末王室成员，传统记载中曾向帝辛进谏。商亡后，其人物故事又与周初政治秩序以及箕子朝鲜传说联系在一起。",
+      "summary": "商纣王叔父，博学多才，因谏而佯狂，周灭商后东渡朝鲜，是\"箕子朝鲜\"的传说贤者。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%95%E5%AD%90%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4872,10 +4872,10 @@
       }
     },
     {
-      "id": 202046,
+      "id": 201108,
       "name": "妲己",
       "dynasty": "夏商西周",
-      "summary": "商末历史叙事中的重要女性人物，传统文学与民间故事常将她与帝辛统治和商朝灭亡联系起来，但相关故事经过后世不断演绎，传说色彩较强。",
+      "summary": "有苏氏之女，商纣王宠妃，后世多以其为商亡之祸因。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%B2%E5%B7%B1%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -4949,10 +4949,10 @@
       }
     },
     {
-      "id": 202047,
+      "id": 201109,
       "name": "飞廉",
       "dynasty": "夏商西周",
-      "summary": "商末重要人物，传统记载中与帝辛统治及商周战争有关，是商末政治与军事集团中的代表人物之一。",
+      "summary": "商纣王将领，嬴姓，秦赵之先祖，在商末地位重要。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%A3%9E%E5%BB%89%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5026,10 +5026,10 @@
       }
     },
     {
-      "id": 202048,
+      "id": 201110,
       "name": "太姒",
       "dynasty": "夏商西周",
-      "summary": "周文王王后，传统文献中以贤德形象著称，是周初王室女性的重要代表。她与周文王、周武王以及周初王室传承之间具有密切关系。",
+      "summary": "周文王正妃、周武王之母，以贤德著称、母仪天下，是周室母德的典范。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5114,10 +5114,10 @@
       }
     },
     {
-      "id": 202049,
+      "id": 201111,
       "name": "伯邑考",
       "dynasty": "夏商西周",
-      "summary": "周文王长子，传统记载中与周文王、周武王及商纣王之间存在密切关系。其故事成为周初王室历史与传说的重要组成部分。",
+      "summary": "周文王长子、周武王之兄，为人仁厚孝顺，被商纣王所害。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%82%91%E8%80%83%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5202,10 +5202,10 @@
       }
     },
     {
-      "id": 202050,
+      "id": 201112,
       "name": "姜子牙",
       "dynasty": "夏商西周",
-      "summary": "周武王的重要辅臣和军事人物，传统上被称为太公望，参与伐商，并在周朝建立后受封齐国，是商周更替过程中最具代表性的辅臣之一。",
+      "summary": "姜姓吕氏，名尚，号太公望，中国历史上著名的军事家与政治家，兵家祖师，周室开国第一功臣。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A7%9C%E5%AD%90%E7%89%99%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5358,10 +5358,10 @@
       }
     },
     {
-      "id": 202051,
+      "id": 201113,
       "name": "召公奭",
       "dynasty": "夏商西周",
-      "summary": "周初重要政治人物，与周公旦共同参与周初政权建设和政治秩序稳定，并与西周分封体系的发展密切相关。",
+      "summary": "姬姓，周初重臣、太保，以廉洁公正著称、政绩斐然，留下\"甘棠遗爱\"的美谈。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E5%85%AC%E5%A5%AD%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5468,10 +5468,10 @@
       }
     },
     {
-      "id": 202052,
+      "id": 201114,
       "name": "毕公高",
       "dynasty": "夏商西周",
-      "summary": "周初重要宗室和大臣，参与周王朝早期政治建设，在周初政治秩序形成过程中发挥作用。",
+      "summary": "姬姓，周初重臣，周文王之子，贤德有才，是魏国之祖。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AF%95%E5%85%AC%E9%AB%98%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5556,10 +5556,10 @@
       }
     },
     {
-      "id": 202053,
+      "id": 201115,
       "name": "管叔鲜",
       "dynasty": "夏商西周",
-      "summary": "周初重要宗室人物，被封于管。周公旦摄政期间，管叔鲜与蔡叔、霍叔以及武庚共同参与政治反抗，最终形成三监之乱。",
+      "summary": "姬姓，周文王之子、武王之弟，后参与\"三监之乱\"而被诛。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%A1%E5%8F%94%E9%B2%9C%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5687,10 +5687,10 @@
       }
     },
     {
-      "id": 202054,
+      "id": 201116,
       "name": "蔡叔度",
       "dynasty": "夏商西周",
-      "summary": "周初宗室成员，被封于蔡，与管叔鲜、霍叔处共同参与三监之乱，是周初宗室政治矛盾的重要人物。",
+      "summary": "姬姓，周文王之子、武王之弟，参与\"三监之乱\"而获罪。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%94%A1%E5%8F%94%E5%BA%A6%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5802,10 +5802,10 @@
       }
     },
     {
-      "id": 202055,
+      "id": 201117,
       "name": "霍叔处",
       "dynasty": "夏商西周",
-      "summary": "周初宗室成员，与管叔鲜、蔡叔度共同承担监视商遗民的任务，并卷入三监之乱，体现了周初分封与宗室政治的复杂关系。",
+      "summary": "姬姓，周文王之子、武王之弟，参与\"三监之乱\"。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%9C%8D%E5%8F%94%E5%A4%84%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -5917,10 +5917,10 @@
       }
     },
     {
-      "id": 202056,
+      "id": 201118,
       "name": "武庚",
       "dynasty": "夏商西周",
-      "summary": "帝辛之子。周灭商后，武庚被留在商地管理商遗民，后来联合三监发动反周行动，是商周政治转换的重要人物。",
+      "summary": "纣王之子，商朝末代王族成员，受封于殷后联合三监叛乱，后败亡。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AD%A6%E5%BA%9A%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6049,10 +6049,10 @@
       }
     },
     {
-      "id": 202057,
+      "id": 201119,
       "name": "康叔封",
       "dynasty": "夏商西周",
-      "summary": "周初重要宗室人物，被封于卫，成为卫国始封君，是周初分封制度的重要代表人物之一。",
+      "summary": "姬姓，周武王之弟，周初重臣，深得周公信任，是卫国之祖。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BA%B7%E5%8F%94%E5%B0%81%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6148,10 +6148,10 @@
       }
     },
     {
-      "id": 202058,
+      "id": 201120,
       "name": "伯禽",
       "dynasty": "夏商西周",
-      "summary": "周公旦之子，被封于鲁，成为鲁国早期统治者。他的人物经历能够体现周公家族与西周分封制度之间的联系。",
+      "summary": "姬姓，周公旦长子，鲁国实际上的开国君主，克绍箕裘、励精图治。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%A6%BD%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6252,10 +6252,10 @@
       }
     },
     {
-      "id": 202059,
+      "id": 201121,
       "name": "尹吉甫",
       "dynasty": "夏商西周",
-      "summary": "周宣王时期的重要军事和政治人物，传统文献和《诗经》相关材料中与周王朝北方军事行动有关，是宣王中兴时期的重要人物。",
+      "summary": "西周宣王时期重臣，文武兼备，辅佐宣王中兴，是《诗经》中重要的卿士。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B0%B9%E5%90%89%E7%94%AB%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6351,10 +6351,10 @@
       }
     },
     {
-      "id": 202060,
+      "id": 201122,
       "name": "方叔",
       "dynasty": "夏商西周",
-      "summary": "周宣王时期的重要将领，参与周王朝对南方地区的军事行动，是宣王时期周王朝军事活动的重要代表人物。",
+      "summary": "西周宣王时期重臣，以军事才能著称，参与宣王的征伐，勇冠三军。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%96%B9%E5%8F%94%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6450,10 +6450,10 @@
       }
     },
     {
-      "id": 202061,
+      "id": 201123,
       "name": "召虎",
       "dynasty": "夏商西周",
-      "summary": "周宣王时期的重要军事人物，与周王朝对淮夷等地区的军事行动有关，是宣王中兴时期军事力量的重要代表。",
+      "summary": "即召穆公，西周宣王时期重臣，以忠义著称，曾保育太子、参与\"共和行政\"，是宣王中兴的重要辅臣。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E8%99%8E%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6549,10 +6549,10 @@
       }
     },
     {
-      "id": 202062,
+      "id": 201124,
       "name": "荣夷公",
       "dynasty": "夏商西周",
-      "summary": "周厉王时期的重要政治人物，传统文献中因参与“专利”等政策而受到批评，其人物故事与周厉王时期的政治矛盾密切相关。",
+      "summary": "西周厉王时期宠臣，以善于逢迎著称，助长厉王\"专利\"之弊，激化了周室危机。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%8D%A3%E5%A4%B7%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6632,10 +6632,10 @@
       }
     },
     {
-      "id": 202063,
+      "id": 201125,
       "name": "召穆公",
       "dynasty": "夏商西周",
-      "summary": "西周后期重要政治人物，与周厉王时期的政治危机和国人暴动有关，传统记载中体现了周王室内部不同政治力量之间的矛盾。",
+      "summary": "即召虎，西周宣王时期重臣，以忠义和智慧著称，堪称栋梁之臣。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E7%A9%86%E5%85%AC%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6731,10 +6731,10 @@
       }
     },
     {
-      "id": 202064,
+      "id": 201126,
       "name": "褒姒",
       "dynasty": "夏商西周",
-      "summary": "周幽王时期的重要女性人物，传统叙事中与幽王宠爱、诸侯关系以及西周灭亡联系在一起，其中“烽火戏诸侯”等故事具有较强的后世传说色彩。",
+      "summary": "褒国进献周幽王的美女，以冷艳绝伦著称，被后世视作\"烽火戏诸侯\"与西周灭亡的祸源之一。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%A4%92%E5%A7%92%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -6830,10 +6830,10 @@
       }
     },
     {
-      "id": 202065,
+      "id": 201127,
       "name": "申侯",
       "dynasty": "夏商西周",
-      "summary": "西周末期重要诸侯，与周幽王时期的政治冲突以及犬戎攻周密切相关，在西周灭亡的历史转折中具有重要作用。",
+      "summary": "西周末年申国君主，周幽王原配申后之父，因幽王废后立褒姒而引犬戎攻周，终结了西周。",
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%B3%E4%BE%AF%20traditional%20ink%20painting%20style%20portrait&image_size=square",
       "birth_year": null,
       "death_year": null,
@@ -7069,7 +7069,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "少康中兴",
+        "启建夏朝",
+        "夏桀暴政",
+        "商汤灭夏",
+        "盘庚迁殷",
+        "武丁中兴"
+      ],
       "person_relations": [
         {
           "source": "后羿",
@@ -7257,7 +7264,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "太康失国",
+        "夏桀暴政",
+        "商汤灭夏",
+        "启建夏朝",
+        "盘庚迁殷",
+        "武丁中兴"
+      ],
       "person_relations": [
         {
           "source": "少康",
@@ -7416,7 +7430,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "夏朝自孔甲以来君德渐衰，诸侯离析，夏桀即位后穷奢极欲、暴虐无道，王权威信持续坠落。",
+        "social": "夏桀宠幸妹喜，大兴宫室苑囿，横征暴敛、残害百姓，民众怨声载道，诸侯多有叛离之心。",
+        "cultural": "夏朝正统逐渐丧失，商汤以天命民心为号召，为翦夏积聚德望，形成改朝换代的舆论基础。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -7459,7 +7477,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "商汤灭夏",
+        "太康失国",
+        "少康中兴",
+        "启建夏朝",
+        "盘庚迁殷",
+        "武丁中兴"
+      ],
       "person_relations": [
         {
           "source": "夏桀",
@@ -7594,7 +7619,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "夏桀统治失政，诸侯归附商汤，汤任用伊尹、仲虺辅政，先灭葛伯，再翦除韦、顾、昆吾等夏之属国，逐步孤立夏桀。",
+        "social": "夏朝苛政令百姓苦不堪言，时人发出时日曷丧、予及汝皆亡的悲呼，商汤以吊民伐罪之师赢得民心。",
+        "cultural": "商汤以天命在兹、网开三面等仁德形象收揽人心，将军事征伐与宣示天命的意识形态相结合。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -7637,7 +7666,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "夏桀暴政",
+        "太康失国",
+        "少康中兴",
+        "盘庚迁殷",
+        "启建夏朝",
+        "武丁中兴"
+      ],
       "person_relations": [
         {
           "source": "商汤",
@@ -7844,7 +7880,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "武丁中兴",
+        "商汤灭夏",
+        "妇好征伐",
+        "启建夏朝",
+        "太康失国",
+        "少康中兴"
+      ],
       "person_relations": [
         {
           "source": "盘庚",
@@ -8037,7 +8080,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "妇好征伐",
+        "商王对外征伐",
+        "盘庚迁殷",
+        "商末政治危机",
+        "启建夏朝",
+        "太康失国"
+      ],
       "person_relations": [
         {
           "source": "武丁",
@@ -8191,7 +8241,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "武丁中兴时期商朝国力强盛，王权大幅加强，亟需对外征伐以巩固统治并拓展疆域。",
+        "social": "妇好兼具武丁之妻与军事将领双重身份，多次受命领兵出征，也参与占卜、祭祀等王事活动。",
+        "cultural": "殷人尊神重祀，国之大事在祀与戎，妇好既主祭祀、又掌征伐，正体现了这一政治文化传统。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -8234,7 +8288,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "武丁中兴",
+        "商王对外征伐",
+        "盘庚迁殷",
+        "启建夏朝",
+        "太康失国",
+        "少康中兴"
+      ],
       "person_relations": [
         {
           "source": "妇好",
@@ -8364,7 +8425,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "商代实行内外服制度，周边方国时有叛服反复，商王通过持续征伐维持对各方的宗主权威。",
+        "social": "战争与祭祀被视为商代政治两大要务，邻邦方国需朝贡称臣，征伐遂成为商王巩固统治的重要国策。",
+        "cultural": "大量甲骨卜辞记录了征伐战争，印证了商王朝以战争、祭祀为核心的政治文化面貌。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -8407,7 +8472,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "武丁中兴",
+        "妇好征伐",
+        "启建夏朝",
+        "太康失国",
+        "少康中兴",
+        "夏桀暴政"
+      ],
       "person_relations": [
         {
           "source": "商王",
@@ -8542,7 +8614,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "帝辛（纣王）虽武力强悍、开拓东南，然刚愎自用、残害忠良，导致统治集团内部离心离德。",
+        "social": "纣王穷奢极欲、赋役繁重，社会矛盾不断激化；西伯昌（周文王）积善累德，广纳贤才，获得诸侯拥戴。",
+        "cultural": "周人宣扬天命转移，以纣王失德为依据重建正统叙事，为日后灭商积蓄了舆论与实力。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -8585,7 +8661,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "牧野之战",
+        "武丁中兴",
+        "启建夏朝",
+        "太康失国",
+        "少康中兴",
+        "夏桀暴政"
+      ],
       "person_relations": [
         {
           "source": "商纣王",
@@ -8817,7 +8900,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "商末政治危机",
+        "分封制",
+        "周公东征",
+        "制礼作乐",
+        "成康之治",
+        "国人暴动"
+      ],
       "person_relations": [
         {
           "source": "周武王",
@@ -9022,7 +9112,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "武王伐纣不久后去世，成王年幼，周公旦摄政代行王权；武庚乘机联合管叔鲜、蔡叔度、霍叔处及东夷诸国发动叛乱。",
+        "social": "周朝新建，东方原殷商势力仍怀贰心，叛军与东夷遥相呼应，严重威胁新生的周政权。",
+        "cultural": "周公以皇天无亲、惟德是辅的天命观为依凭，亲率大军东征，以德与礼巩固周室正统。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -9065,7 +9159,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "牧野之战",
+        "成康之治",
+        "制礼作乐",
+        "分封制",
+        "国人暴动",
+        "国人暴动与共和行政"
+      ],
       "person_relations": [
         {
           "source": "周公旦",
@@ -9270,7 +9371,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "制礼作乐",
+        "周公东征",
+        "分封制",
+        "牧野之战",
+        "国人暴动与共和行政",
+        "国人暴动"
+      ],
       "person_relations": [
         {
           "source": "周成王",
@@ -9424,7 +9532,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "武王灭商后，急需建立稳定的统治秩序以代替殷商旧政，周公通过制礼作乐把血缘宗法与政治等级秩序结合起来。",
+        "social": "周初通过分封与宗法建构起天子、诸侯、卿大夫层层隶属的等级结构，礼乐成为维系这一结构的精神纽带。",
+        "cultural": "制礼作乐将礼、乐、刑、政熔于一炉，奠定了中华礼乐文明的基调，影响后世数千年。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -9467,7 +9579,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "成康之治",
+        "牧野之战",
+        "周公东征",
+        "分封制",
+        "国人暴动与共和行政",
+        "国人暴动"
+      ],
       "person_relations": [
         {
           "source": "周公旦",
@@ -9578,7 +9697,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "周灭商后疆域空前辽阔，为有效统治东方各地，周王室将宗室、功臣及先代后裔分封到各处建立诸侯国。",
+        "social": "受封诸侯在封国内拥有土地与人民，承担朝贡、屏藩王室等义务，形成血缘与地缘相结合的政治格局。",
+        "cultural": "分封与宗法制度相济，天子建国、诸侯立家，塑造了中国上古独特的封建政治文化传统。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -9621,7 +9744,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "牧野之战",
+        "周公东征",
+        "成康之治",
+        "制礼作乐",
+        "国人暴动",
+        "国人暴动与共和行政"
+      ],
       "person_relations": [
         {
           "source": "周武王",
@@ -9815,7 +9945,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "国人暴动与共和行政",
+        "周公东征",
+        "牧野之战",
+        "成康之治",
+        "制礼作乐",
+        "分封制"
+      ],
       "person_relations": [
         {
           "source": "周厉王",
@@ -10008,7 +10145,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "国人暴动与共和行政",
+        "烽火戏诸侯",
+        "成康之治",
+        "制礼作乐",
+        "国人暴动",
+        "犬戎攻周"
+      ],
       "person_relations": [
         {
           "source": "周宣王",
@@ -10190,7 +10334,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "周幽王废申后及太子宜臼，改立褒姒之子伯服，申侯乃联合缯国、犬戎等国兴兵讨伐幽王。",
+        "social": "幽王烽火戏诸侯，失信于天下士民；犬戎长期受周朝挤压，遂借此良机大举攻周。",
+        "cultural": "宗周礼乐威信衰微，礼乐征伐自天子出的局面被打破，诸侯不再听命于王室。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -10233,7 +10381,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "西周灭亡",
+        "烽火戏诸侯",
+        "宣王中兴",
+        "启建夏朝",
+        "太康失国",
+        "少康中兴"
+      ],
       "person_relations": [
         {
           "source": "周幽王",
@@ -10373,7 +10528,11 @@
           "tag": "事件"
         }
       ],
-      "background": {},
+      "background": {
+        "political": "犬戎攻破镐京后周幽王被杀，周王室丧失宗周故土与宗族根基，平王无力收复关中。",
+        "social": "关中名城残破、戎狄环伺，王畿已无法安居，王室只得舍弃宗周、东迁洛邑以图苟全。",
+        "cultural": "自宗周镐京迁至成周洛邑，王权与天命象征随之衰替，历史由此翻开春秋诸侯争霸的新篇章。"
+      },
       "impacts": [
         {
           "name": "政治影响",
@@ -10416,7 +10575,14 @@
           "color": "#355C5A"
         }
       ],
-      "related_events": [],
+      "related_events": [
+        "犬戎攻周",
+        "烽火戏诸侯",
+        "宣王中兴",
+        "启建夏朝",
+        "太康失国",
+        "少康中兴"
+      ],
       "person_relations": [
         {
           "source": "周幽王",
@@ -10608,7 +10774,11 @@
       ],
       "related_events": [
         "太康失国",
-        "甘之战"
+        "少康中兴",
+        "夏桀暴政",
+        "商汤灭夏",
+        "盘庚迁殷",
+        "武丁中兴"
       ],
       "person_relations": [
         {
@@ -10799,8 +10969,12 @@
         }
       ],
       "related_events": [
-        "共和行政",
-        "宣王中兴"
+        "国人暴动",
+        "周公东征",
+        "成康之治",
+        "制礼作乐",
+        "宣王中兴",
+        "牧野之战"
       ],
       "person_relations": [
         {
@@ -11022,7 +11196,11 @@
       ],
       "related_events": [
         "犬戎攻周",
-        "西周灭亡"
+        "西周灭亡",
+        "宣王中兴",
+        "成康之治",
+        "制礼作乐",
+        "国人暴动与共和行政"
       ],
       "person_relations": [
         {
@@ -11241,7 +11419,12 @@
       "keywords": 20
     },
     "enriched_at": "2026-08-15T16:28:05.299Z",
-    "enrichment_version": "5.0"
+    "enrichment_version": "5.0",
+    "renumber": {
+      "from": "202039+",
+      "to": "2011xx",
+      "at": "2026-08-26T03:47:48.034Z"
+    }
   },
   "dynasty_timeline": [
     {

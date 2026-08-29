@@ -135,6 +135,14 @@ const famousQuote = computed(() => {
     '蚩尤': '铜头铁额，\n食沙石子，\n造立兵杖刀戟大弩。',
     '大禹': '禹八年于外，\n三过其门而不入。'
   }
+  // 优先展示称号（如"春秋五霸之首"）作为人物带引号的定位语，避免与简介重复
+  const ach = (person.value.achievement || '').trim() || ''
+  // 称号若是名字本身或过短，不能作为定位语，退化为历史地位/简介
+  const validAch = (ach !== person.value.name && ach.length >= 4) ? ach : ''
+  if (validAch) return validAch
+  if (person.value.historical_position && person.value.historical_position.trim().length > 2) {
+    return person.value.historical_position.trim()
+  }
   return quotes[person.value.name] || person.value.summary?.slice(0, 30) || ''
 })
 
@@ -144,16 +152,18 @@ const relatedEventsData = computed(() => {
   // 使用 JSON 数据中的事件或 mock 数据
   const allEvents = jsonData.value?.events || events
   
-  return person.value.related_events.map(re => {
-    const name = typeof re === 'string' ? re : re.name
-    const role = typeof re === 'string' ? '参与者' : re.role
-    const found = allEvents.find(e => e.name === name)
-    return {
-      ...found,
-      role,
-      id: found?.id || 0
-    }
-  }).filter(e => e.id)
+  return person.value.related_events
+    .slice(0, 3)
+    .map(re => {
+      const name = typeof re === 'string' ? re : re.name
+      const role = typeof re === 'string' ? '参与者' : re.role
+      const found = allEvents.find(e => e.name === name)
+      return {
+        ...found,
+        role,
+        id: found?.id || 0
+      }
+    }).filter(e => e.id)
 })
 
 // =============== 人生起伏曲线 ===============
@@ -209,8 +219,48 @@ const achievementsList = computed(() => {
   return []
 })
 
+// ---- 主要贡献图标：根据成果关键词多样化 ----
+function pickIcon(name: string) {
+  const n = name || ''
+  const rules: Array<{ re: RegExp; color: string; path: string }> = [
+    { re: /战|攻|伐|军|兵|征|灭|统|武|讨/, color: '#C34739', path: 'M6 3h12v7a6 6 0 01-12 0V3zM12 16v5M9 21h6' },
+    { re: /王|政|君|侯|权|迁|制度|礼|律|宪|法/, color: '#355C5A', path: 'M3 21h18M3 10h18M5 6h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2zM12 14V4m0 0C10.5 4 9 5 9 6.5v2M12 4c1.5 0 3 1 3 2.5v2' },
+    { re: /学|思|教|文|书|经|诗|儒|道|著|典|传/, color: '#4A6F7A', path: 'M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 016.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z' },
+    { re: /盟|会|和|交|亲|婚|并|合|联/, color: '#8B5A2B', path: 'M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71' },
+    { re: /农|田|粮|民|商|工|医|技|城|水|渠|财|税/, color: '#5C7A5E', path: 'M3 17l6-6 4 4 8-8M15 7h6v6' }
+  ]
+  const hit = rules.find(r => r.re.test(n))
+  if (hit) return hit
+  return { color: '#D8B26A', path: 'M12 6v13a2 2 0 01-2 2H7a2 2 0 01-2-2V7a4 4 0 014-4h3v3zM12 6v13a2 2 0 002 2h3a2 2 0 002-2V7a4 4 0 00-4-4h-3v3z' }
+}
+const workIconHtml = (name: string) => {
+  const { color, path } = pickIcon(name)
+  return `<svg class="w-4 h-4" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="${path}"></path></svg>`
+}
+
 const historicalAssessment = computed(() => {
   if (!person.value) return { title: '', influence: [], quotes: [] }
+
+  // JSON 富字段优先：历史地位、影响力描述、后人评价
+  const cp = person.value
+  const hasJson = !!(cp.historical_position || (cp.impact_list && cp.impact_list.length) || (cp.later_quotes && cp.later_quotes.length))
+  if (hasJson) {
+    const influences = (cp.impact_list || []).length
+      ? cp.impact_list.slice(0, 6)
+      : (cp.historical_position ? [cp.historical_position] : [])
+    const laterQuotes = cp.later_quotes
+      ? cp.later_quotes.map(q => ({
+          text: String(q.text || '').replace(/[”"]/g, ''),
+          author: q.author || ''
+        })).slice(0, 2)
+      : []
+    return {
+      title: cp.historical_position || cp.summary?.slice(0, 30) || '',
+      influence: influences,
+      quotes: laterQuotes
+    }
+  }
+
   const data: Record<string, { title: string, influence: string[], quotes: { text: string, author: string }[] }> = {
     '黄帝': {
       title: '中华民族共同始祖',
@@ -550,18 +600,32 @@ const initRelationChart = () => {
     relationChart = echarts.init(relationChartRef.value)
     
     const colors: Record<string, string> = {
-      '盟友': '#5C7A5E',
-      '君臣': '#D8B26A',
-      '亲属': '#D4756A',
-      '敌对': '#C34739',
-      '对手': '#8B5A2B',
-      '朋友': '#4A4A3A',
-      '师生': '#4A6F7A',
-      '兄弟': '#C34739',
-      '继承': '#355C5A'
+      '盟友': '#5C7A5E', '同盟': '#4A8A9E', '君臣': '#D8B26A', '亲属': '#2E4A48',
+      '敌对': '#C34739', '对手': '#B0563A', '朋友': '#6B8E6A', '师生': '#4A6F9E',
+      '兄弟': '#2E4A48', '同僚': '#5A7A9E', '继承': '#2E4A48', '同朝': '#7A6A9E', '影响': '#8A6AAE',
+      '父子': '#2E4A48', '祖孙': '#2E4A48', '叔侄': '#2E4A48', '舅甥': '#2E4A48', '宗亲': '#2E4A48',
+      '夫妻': '#2E4A48', '母子': '#2E4A48',
+      '交流': '#4A7A8A', '关联': '#8A6A5E', '因缘': '#B06A4A', '参与': '#5A8A7A',
+      '卿族': '#A06A5E', '宗族': '#2E4A48', '大夫': '#6E6A5E', '武将': '#9E5A4A',
+      '越臣': '#5C7A9E', '谋臣': '#5C7A9E', '谏臣': '#5C7A9E', '楚臣': '#5C7A9E',
+      '秦臣': '#5C7A9E', '先君': '#2E6E6C', '后继': '#2E6E6C', '继君': '#2E6E6C',
+      '子嗣': '#2E4A48', '子孙': '#2E4A48', '秦君': '#D8B26A', '晋君': '#D8B26A',
+      '鲁君': '#D8B26A', '吴君': '#D8B26A'
+    }
+    // 亲属类关系：图例统一归为「亲属」，连线标签保留具体关系；统一取黛青冷色，与朱砂红「敌对」拉开辨识度
+    const kinshipRels = new Set(['亲属', '兄弟', '父子', '祖孙', '叔侄', '舅甥', '宗亲', '宗族', '子嗣', '子孙', '继承', '同族', '家族', '夫妻', '母子'])
+    const relPalette = ['#5C7A5E', '#D4756A', '#4A6F9E', '#8A6AAE', '#4A8A9E', '#B06A4A', '#2E6E6C', '#6B8E6A', '#8A6A5E', '#9E5A4A']
+    const relColor = (rel: string): string => {
+      const base = kinshipRels.has(rel) ? '亲属' : rel
+      if (colors[base]) return colors[base]
+      let h = 0
+      for (let i = 0; i < rel.length; i++) h = (h * 31 + rel.charCodeAt(i)) >>> 0
+      return relPalette[h % relPalette.length]
     }
     
-    const directionalRels = ['君臣', '师生', '继承']
+    const directionalRels = ['君臣', '师生', '父子', '继承']
+    // 关系标签归一化：去掉历史遗留的「×·因缘」叠缀，保留干净的关系名称
+    const cleanRel = (r: string): string => (r || '').split('·')[0].trim() || '关联'
     
     const nodes: any[] = [{
       name: person.value.name,
@@ -577,38 +641,41 @@ const initRelationChart = () => {
     let catIdx = 1
     
     person.value.related_people?.forEach(rp => {
-      let ci = catMap.get(rp.relation)
+      const rel = cleanRel(rp.relation)
+      // 图例分组：亲属类统一为一类「亲属」，但连线标签仍保留具体关系
+      const groupRel = kinshipRels.has(rel) ? '亲属' : rel
+      let ci = catMap.get(groupRel)
       if (ci === undefined) {
         ci = catIdx++
-        catMap.set(rp.relation, ci)
-        cats.push({ name: rp.relation, itemStyle: { color: colors[rp.relation] || '#5C7A5E' } })
+        catMap.set(groupRel, ci)
+        cats.push({ name: groupRel, itemStyle: { color: relColor(groupRel) } })
       }
       const inf = rp.influence || 60
       nodes.push({
         name: rp.name,
         symbolSize: Math.max(36, inf * 0.48),
         category: ci,
-        itemStyle: { color: colors[rp.relation] || '#5C7A5E', shadowBlur: 8, shadowColor: (colors[rp.relation] || '#5C7A5E') + '40' },
+        itemStyle: { color: relColor(groupRel), shadowBlur: 8, shadowColor: relColor(groupRel) + '40' },
         label: { show: true, position: 'bottom', distance: 5, fontSize: 12, color: '#4A4A3A', fontWeight: 500 }
       })
       
-      const isDirectional = directionalRels.includes(rp.relation)
+      const isDirectional = directionalRels.includes(rel)
       links.push({
         source: person.value!.name,
         target: rp.name,
-        value: rp.relation,
+        value: rel,
         symbol: isDirectional ? ['none', 'arrow'] : ['none', 'none'],
         symbolSize: isDirectional ? [0, 10] : [0, 0],
         label: {
           show: true,
-          formatter: rp.relation,
+          formatter: rel,
           fontSize: 11,
-          color: colors[rp.relation] || '#5C7A5E',
+          color: relColor(groupRel),
           backgroundColor: 'rgba(255,255,255,0.85)',
           padding: [2, 6],
           borderRadius: 4
         },
-        lineStyle: { color: colors[rp.relation] || '#5C7A5E', width: Math.max(1.5, inf / 30), opacity: 0.55, curveness: 0 }
+        lineStyle: { color: relColor(groupRel), width: Math.max(1.5, inf / 30), opacity: 0.55, curveness: 0 }
       })
     })
     
@@ -757,24 +824,81 @@ const navigateToDynastyPersons = () => {
   if (d) router.push(`/dynasty/${d.id}/persons`)
 }
 
-// 推荐人物：同朝代、排除本人和已关联人物
-const relatedPersonNames = computed(() => new Set(person.value?.related_people?.map(rp => rp.name) || []))
-const recommendedPersons = computed(() => {
-  if (!person.value) return []
-  return persons
-    .filter(p => p.id !== person.value!.id && p.dynasty === person.value!.dynasty && !relatedPersonNames.value.has(p.name))
-    .slice(0, 6)
-})
-
-// 推荐事件：同朝代、排除已关联事件
+// 推荐人物 / 推荐事件：基于身份（职官/类目/共同事件/共同人物）相似度，联动可持续探索
+const personPool = computed<DynastyData['persons']>(() => jsonData.value?.persons || persons)
+const eventPool = computed<DynastyData['events']>(() => jsonData.value?.events || events)
+const relatedPersonNames = computed(() => new Set((person.value?.related_people || []).map(rp => rp.name)))
 const relatedEventNames = computed(() => new Set(
   (person.value?.related_events || []).map(re => typeof re === 'string' ? re : re.name)
 ))
-const recommendedEvents = computed(() => {
-  if (!person.value) return []
-  return events
-    .filter(e => e.dynasty === person.value!.dynasty && !relatedEventNames.value.has(e.name))
+const nameOf = (x: any) => (typeof x === 'string' ? x : x?.name)
+
+const recommendedPersons = computed(() => {
+  const p = person.value
+  if (!p) return []
+  const myCats = new Set<string>()
+  if (p.category) myCats.add(p.category)
+  ;(p.tags || []).forEach((t: string) => myCats.add(t))
+  const myOcc = new Set<string>(p.occupations || [])
+  const myEvents = new Set((p.related_events || []).map(re => nameOf(re)))
+
+  const scored = personPool.value
+    .filter(q => q.id !== p.id && q.dynasty === p.dynasty && !relatedPersonNames.value.has(q.name))
+    .map(q => {
+      let score = 0
+      if (q.category && myCats.has(q.category)) score += 3
+      ;(q.tags || []).forEach((t: string) => { if (myCats.has(t)) score += 2 })
+      ;(q.occupations || []).forEach((o: string) => { if (myOcc.has(o)) score += 2 })
+      ;(q.related_events || []).forEach(re => { if (myEvents.has(nameOf(re))) score += 2 })
+      ;(q.related_people || []).forEach(rp => { if (relatedPersonNames.value.has(rp.name)) score += 1 })
+      return { item: q, score }
+    })
+    .sort((a, b) => b.score - a.score || a.item.id - b.item.id)
+    .map(s => s.item)
+
+  if (scored.length) return scored.slice(0, 6)
+  return personPool.value
+    .filter(q => q.id !== p.id && q.dynasty === p.dynasty)
     .slice(0, 6)
+})
+
+const recommendedEvents = computed(() => {
+  const p = person.value
+  if (!p) return []
+  const myRelNames = relatedPersonNames.value
+  const myEventTypes = new Set<string>()
+  eventPool.value.forEach(e => { if (relatedEventNames.value.has(e.name) && e.event_type) myEventTypes.add(e.event_type) })
+
+  const participate = (e: any) => {
+    if ((e.related_persons || []).some((rp: any) => nameOf(rp) === p.name)) return true
+    for (const k of ['leaders', 'participants', 'opponents', 'affected']) {
+      if ((e.person_groups?.[k] || []).some((x: any) => x.name === p.name)) return true
+    }
+    return false
+  }
+  const groupMembers = (e: any) => {
+    const s = new Set<string>()
+    ;['leaders', 'participants', 'opponents', 'affected'].forEach(k => (e.person_groups?.[k] || []).forEach((x: any) => s.add(x.name)))
+    return s
+  }
+
+  const scored = eventPool.value
+    .filter(e => e.dynasty === p.dynasty && !relatedEventNames.value.has(e.name))
+    .map(e => {
+      let score = 0
+      if (participate(e)) score += 4
+      ;(e.related_persons || []).forEach((rp: any) => { if (myRelNames.has(nameOf(rp))) score += 2 })
+      groupMembers(e).forEach(n => { if (myRelNames.has(n)) score += 2 })
+      if (e.event_type && myEventTypes.has(e.event_type)) score += 1
+      return { item: e, score }
+    })
+    .sort((a, b) => b.score - a.score || ((a.item.start_year || 0) - (b.item.start_year || 0)))
+    .map(s => s.item)
+
+  if (scored.length) return scored.slice(0, 4)
+  return eventPool.value
+    .filter(e => e.dynasty === p.dynasty && !relatedEventNames.value.has(e.name))
+    .slice(0, 4)
 })
 
 const handleResize = () => {
@@ -783,12 +907,10 @@ const handleResize = () => {
 }
 
 onMounted(async () => {
-  // 尝试加载 JSON 数据
-  if (personId >= 200000) {
-    const data = await tryLoadPersonData(personId)
-    if (data) {
-      jsonData.value = data
-    }
+  // 尝试加载 JSON 数据（覆盖全部有 JSON 的朝代，含 106 秦；mock 朝代 404 时自动回退）
+  const data = await tryLoadPersonData(personId)
+  if (data) {
+    jsonData.value = data
   }
 
   nextTick(() => {
@@ -813,10 +935,17 @@ watch(() => route.params.id, () => {
     }, 200)
   })
 })
+
+// 二级人物统一跳转至 PersonStory（女娲/精卫式）模板，保证与一级人物页面区分
+watch(isLevel2, (isL2) => {
+  if (isL2 && !String(route.path).endsWith('/story')) {
+    router.replace(`/person/${personId}/story`)
+  }
+})
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#F8F6F2] relative" v-if="hasData">
+  <div class="min-h-screen bg-[#F8F6F2] relative" v-if="hasData && !isLevel2">
     <div class="fixed inset-0 pointer-events-none opacity-40" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Cfill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M0 0h100v100H0z%22 fill=%22%23F8F6F2%22/%3E%3Cpath d=%22M20 30c5-5 10-5 15 0s10 5 15 0 10-5 15 0 10 5 15 0 10-5 15 0%22 fill=%22none%22 stroke=%22%23D8B26A%22 stroke-width=%220.3%22 opacity=%220.3%22/%3E%3C/svg%3E');"></div>
 
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
@@ -1040,11 +1169,7 @@ watch(() => route.params.id, () => {
             class="group cursor-default"
           >
             <div class="flex items-start gap-3 py-3 border-b border-[#D8B26A]/10">
-              <div class="w-7 h-7 rounded-md bg-gradient-to-br from-[#D8B26A]/25 to-[#C34739]/15 flex items-center justify-center flex-shrink-0 group-hover:from-[#D8B26A]/35 group-hover:to-[#C34739]/25 transition-all mt-0.5">
-                <svg class="w-4 h-4 text-[#C34739]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                </svg>
-              </div>
+              <div class="w-7 h-7 rounded-md bg-gradient-to-br from-[#D8B26A]/25 to-[#C34739]/15 flex items-center justify-center flex-shrink-0 group-hover:from-[#D8B26A]/35 group-hover:to-[#C34739]/25 transition-all mt-0.5" v-html="workIconHtml(w.name)"></div>
               <div class="flex-1 min-w-0">
                 <span class="text-[#2C2C2C] font-medium group-hover:text-[#C34739] transition-colors">{{ w.name }}</span>
                 <p v-if="w.description" class="text-sm text-[#4A4A3A]/70 leading-relaxed mt-1 font-serif">{{ w.description }}</p>
@@ -1061,11 +1186,7 @@ watch(() => route.params.id, () => {
             :key="'ach-fallback-' + idx"
             class="flex items-start gap-3 py-2.5 border-b border-[#D8B26A]/10 group cursor-default"
           >
-            <div class="w-7 h-7 rounded-md bg-gradient-to-br from-[#D8B26A]/25 to-[#C34739]/15 flex items-center justify-center flex-shrink-0 group-hover:from-[#D8B26A]/35 group-hover:to-[#C34739]/25 transition-all mt-0.5">
-              <svg class="w-4 h-4 text-[#C34739]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-              </svg>
-            </div>
+            <div class="w-7 h-7 rounded-md bg-gradient-to-br from-[#D8B26A]/25 to-[#C34739]/15 flex items-center justify-center flex-shrink-0 group-hover:from-[#D8B26A]/35 group-hover:to-[#C34739]/25 transition-all mt-0.5" v-html="workIconHtml(item)"></div>
             <span class="text-[#2C2C2C] group-hover:text-[#C34739] transition-colors pt-0.5">{{ item }}</span>
           </div>
         </div>
@@ -1162,72 +1283,66 @@ watch(() => route.params.id, () => {
           </div>
         </div>
         
-        <div v-if="exploreTab === 'person'" class="grid grid-cols-6 gap-4 min-h-[280px]">
+        <div v-if="exploreTab === 'person' && recommendedPersons.length > 0" class="grid grid-cols-6 gap-4" style="min-height: 340px;">
           <div 
             v-for="rp in recommendedPersons" 
             :key="rp.id"
             @click="navigateToPerson(rp.id)"
             class="group cursor-pointer"
           >
-            <div class="aspect-[3/4] rounded-md overflow-hidden border border-[#D8B26A]/15 mb-2 relative">
-              <div class="absolute inset-0 bg-gradient-to-br from-[#D8B26A]/20 to-[#355C5A]/15 flex items-center justify-center">
-                <span class="font-calligraphy text-5xl text-[#2C2C2C]/25">{{ rp.name.charAt(0) }}</span>
-              </div>
+            <div class="aspect-[3/4] rounded-md overflow-hidden border border-[#D8B26A]/15 mb-2 relative bg-gradient-to-br from-[#D8B26A]/20 to-[#355C5A]/15">
+              <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-5xl text-[#2C2C2C]/25">{{ rp.name.charAt(0) }}</span>
               <img 
+                v-if="rp.image_url"
                 :src="rp.image_url"
                 :alt="rp.name"
-                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 z-10 opacity-0"
-                onload="this.style.opacity='1'"
+                class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-all duration-500"
                 @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/person' + rp.id + '/400/500'; e.target.onerror = null }"
               />
-              <div class="absolute top-2 left-2 px-2 py-0.5 bg-black/40 backdrop-blur-sm text-white text-xs rounded z-20">
-                {{ rp.category }}
-              </div>
             </div>
             <div class="text-center">
               <div class="text-sm text-[#2C2C2C] font-medium group-hover:text-[#355C5A] transition-colors">{{ rp.name }}</div>
-              <div class="text-xs text-[#4A4A3A]/50">{{ rp.dynasty }} · {{ rp.occupations?.[0] || rp.category }}</div>
+              <div class="text-xs text-[#4A4A3A]/50">{{ rp.dynasty }} · {{ rp.category }}</div>
             </div>
           </div>
-          <div v-if="recommendedPersons.length === 0" class="col-span-6 text-center py-12 text-[#4A4A3A]/50 text-sm">
-            暂无更多推荐人物
-          </div>
         </div>
-        
-        <div v-else class="grid grid-cols-6 gap-4 min-h-[280px]">
+        <div v-else-if="exploreTab === 'person'" class="text-center py-12 text-[#4A4A3A]/50 text-sm" style="min-height: 340px;">
+          暂无更多推荐人物
+        </div>
+
+        <div v-else-if="exploreTab === 'event' && recommendedEvents.length > 0" class="grid grid-cols-4 gap-5" style="min-height: 340px;">
           <div 
             v-for="ev in recommendedEvents" 
             :key="ev.id"
             @click="navigateToEvent(ev.id)"
-            class="group cursor-pointer"
+            class="group cursor-pointer bg-white/60 border border-[#D8B26A]/20 rounded-md overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
           >
-            <div class="aspect-[3/4] rounded-md overflow-hidden border border-[#D8B26A]/15 mb-2 relative">
-              <div class="absolute inset-0 bg-gradient-to-br from-[#355C5A]/15 via-[#D8B26A]/15 to-[#C34739]/15 flex items-center justify-center">
-                <div class="text-center px-2">
-                  <svg class="w-10 h-10 text-[#355C5A]/30 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                  <div class="text-[#4A4A3A]/50 text-xs leading-tight">{{ ev.name }}</div>
+            <div class="aspect-video overflow-hidden relative bg-gradient-to-br from-[#355C5A]/20 via-[#D8B26A]/15 to-[#C34739]/20 flex-shrink-0">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <svg class="w-10 h-10 text-[#355C5A]/40 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                  <div class="text-[#4A4A3A]/60 text-xs">{{ ev.name }}</div>
                 </div>
               </div>
               <img 
                 v-if="ev.image_url"
                 :src="ev.image_url"
                 :alt="ev.name"
-                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 z-10 opacity-0"
-                onload="this.style.opacity='1'"
+                class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-all duration-500"
                 @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/event' + ev.id + '/400/300'; e.target.onerror = null }"
               />
-              <div class="absolute top-2 left-2 px-2 py-0.5 bg-[#355C5A]/80 backdrop-blur-sm text-white text-xs rounded z-20">
-                {{ ev.event_type }}
+            </div>
+            <div class="p-4 flex-1">
+              <div class="flex items-center justify-between mb-1">
+                <h3 class="text-base font-medium text-[#2C2C2C] group-hover:text-[#C34739] transition-colors">{{ ev.name }}</h3>
+                <span class="text-xs text-[#4A4A3A]/50">{{ formattedYear(ev.start_year) }}</span>
               </div>
-            </div>
-            <div class="text-center">
-              <div class="text-sm text-[#2C2C2C] font-medium group-hover:text-[#355C5A] transition-colors">{{ ev.name }}</div>
-              <div class="text-xs text-[#4A4A3A]/50">{{ ev.dynasty }} · {{ formattedYear(ev.start_year) }}</div>
+              <p class="text-sm text-[#4A4A3A]/70 line-clamp-2">{{ ev.summary }}</p>
             </div>
           </div>
-          <div v-if="recommendedEvents.length === 0" class="col-span-6 text-center py-12 text-[#4A4A3A]/50 text-sm">
-            暂无更多推荐事件
-          </div>
+        </div>
+        <div v-else-if="exploreTab === 'event'" class="text-center py-12 text-[#4A4A3A]/50 text-sm" style="min-height: 340px;">
+          暂无更多推荐事件
         </div>
       </div>
     </section>
