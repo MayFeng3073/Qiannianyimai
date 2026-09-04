@@ -360,9 +360,17 @@ const eventGraphEdges = computed<GraphEdge[]>(() => {
     alliance: '#5C7A5E', hostile: '#C34739', lord_vassal: '#D8B26A',
     kinship: '#D4756A', teacher_student: '#4A6F7A', friend: '#4A4A3A', support: '#355C5A'
   }
-  const rels = (event.value!.person_relations || []).filter(rel =>
-    personNodes.some(n => n.name === rel.source) && personNodes.some(n => n.name === rel.target)
-  ).slice(0, 4)
+  // 同一对人物 + 同一关系类型仅保留一条连线，避免 A→B 与 B→A 两条重复线占位
+  const seenPair = new Set<string>()
+  const rels = (event.value!.person_relations || [])
+    .filter(rel => personNodes.some(n => n.name === rel.source) && personNodes.some(n => n.name === rel.target))
+    .filter(rel => {
+      const key = [rel.source, rel.target].sort().join('|') + '|' + (rel.type || '')
+      if (seenPair.has(key)) return false
+      seenPair.add(key)
+      return true
+    })
+    .slice(0, 4)
   rels.forEach(rel => {
     const src = personNodes.find(n => n.name === rel.source)!
     const tgt = personNodes.find(n => n.name === rel.target)!
@@ -399,14 +407,15 @@ function getEdgePath(src: GraphNode, tgt: GraphNode): string {
 /**
  * 计算标签位置，带碰撞检测
  * 1. 沿连线 55% 位置作为初始点（无偏移，紧贴连线）
- * 2. 检测是否与任意人物节点矩形重叠
+ * 2. 检测是否与任意人物节点/中心事件方块矩形重叠
  * 3. 若重叠，选择推离距离最小的方向（上/下/左/右）推离
  * 4. 最多迭代 3 轮，收敛到无碰撞位置
  */
 function computeEdgeLabelPos(
   src: GraphNode,
   tgt: GraphNode,
-  allNodes: GraphNode[]
+  allNodes: GraphNode[],
+  placedLabels: Array<{ x: number; y: number }> = []
 ): { x: number; y: number } {
   const sx = src.x + src.w / 2; const sy = src.y + src.h / 2
   const tx = tgt.x + tgt.w / 2; const ty = tgt.y + tgt.h / 2
@@ -414,45 +423,49 @@ function computeEdgeLabelPos(
   let x = sx + (tx - sx) * t
   let y = sy + (ty - sy) * t
 
-  // Collision detection: check against all person nodes
+  // Collision detection: person nodes AND center event square
+  // 中心红色事件方块也必须参与避让，否则穿过中心连线的标签会压住它
   const labelW = 48, labelH = 18
   const margin = 3
-  const personNodes = allNodes.filter(n => n.type === 'person')
+  const obstacles = allNodes.filter(n => n.type === 'person' || n.type === 'center')
 
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < 4; attempt++) {
     let collided = false
     let pushX = 0, pushY = 0
     let minPush = Infinity
 
-    for (const node of personNodes) {
-      // Label AABB
-      const lx = x - labelW / 2 - margin
-      const ly = y - labelH / 2 - margin
-      const lx2 = x + labelW / 2 + margin
-      const ly2 = y + labelH / 2 + margin
-      // Node AABB
-      const nx = node.x, ny = node.y
-      const nx2 = node.x + node.w, ny2 = node.y + node.h
-
-      // Check AABB overlap
-      if (lx < nx2 && lx2 > nx && ly < ny2 && ly2 > ny) {
-        collided = true
-        // Evaluate 4 push directions, pick the smallest
-        const pushes = [
-          { dx: nx2 - lx, dy: 0 },
-          { dx: nx - lx2, dy: 0 },
-          { dx: 0, dy: ny2 - ly },
-          { dx: 0, dy: ny - ly2 }
-        ]
-        for (const p of pushes) {
-          const dist = Math.abs(p.dx) + Math.abs(p.dy)
-          if (dist < minPush) {
-            minPush = dist
-            pushX = p.dx
-            pushY = p.dy
-          }
-        }
+    const consider = (node: { x: number; y: number; w: number; h: number; type: string }) => {
+      const { lx, ly, lx2, ly2 } = {
+        lx: x - labelW / 2 - margin, ly: y - labelH / 2 - margin,
+        lx2: x + labelW / 2 + margin, ly2: y + labelH / 2 + margin
       }
+      const nx = node.x, ny = node.y, nx2 = node.x + node.w, ny2 = node.y + node.h
+      if (!(lx < nx2 && lx2 > nx && ly < ny2 && ly2 > ny)) return false
+      // 中心方块只允许左右横向推离：其上下紧贴人物行，竖向推离必撞相邻行导致振荡
+      const pushes = node.type === 'center'
+        ? [
+            { dx: nx - lx2, dy: 0 },  // 推到方块左侧
+            { dx: nx2 - lx, dy: 0 }   // 推到方块右侧
+          ]
+        : [
+            { dx: nx2 - lx, dy: 0 },
+            { dx: nx - lx2, dy: 0 },
+            { dx: 0, dy: ny2 - ly },
+            { dx: 0, dy: ny - ly2 }
+          ]
+      for (const p of pushes) {
+        const dist = Math.abs(p.dx) + Math.abs(p.dy)
+        if (dist < minPush) { minPush = dist; pushX = p.dx; pushY = p.dy }
+      }
+      return true
+    }
+
+    for (const node of obstacles) if (consider(node)) collided = true
+
+    // 标签互避：与已放置标签不重叠
+    for (const pl of placedLabels) {
+      const plNode = { x: pl.x - labelW / 2, y: pl.y - labelH / 2, w: labelW, h: labelH, type: 'label' as const }
+      if (consider(plNode)) collided = true
     }
 
     if (!collided) break
@@ -468,10 +481,13 @@ const edgeLabelPositions = computed(() => {
   const positions = new Map<string, { x: number; y: number }>()
   const allNodes = eventGraphNodes.value
   const edges = eventGraphEdges.value
+  const placedLabels: Array<{ x: number; y: number }> = []
   for (let i = 0; i < edges.length; i++) {
     const edge = edges[i]
     if (!edge.label) continue
-    positions.set(`el${i}`, computeEdgeLabelPos(edge.source, edge.target, allNodes))
+    const pos = computeEdgeLabelPos(edge.source, edge.target, allNodes, placedLabels)
+    positions.set(`el${i}`, pos)
+    placedLabels.push(pos)
   }
   return positions
 })
@@ -1094,7 +1110,7 @@ watch(impacts, () => {
                 <div
                   class="evolution-node-inner"
                   :class="{ 'clickable': entry.event_id }"
-                  @click="entry.event_id && navigateToChainEvent(entry.title)"
+                  @click="entry.event_id && navigateToEvent(entry.event_id)"
                 >
                   <div class="evolution-node-icon">{{ entry.title.charAt(0) }}</div>
                   <div v-if="entry.event_id" class="evolution-node-tooltip">点击跳转 →</div>

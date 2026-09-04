@@ -27184,6 +27184,48 @@
       "value": 62,
       "category": "event",
       "desc": "秦统一六国是战国时期的重要概念。"
+    },
+    {
+      "name": "郡县制",
+      "value": 72,
+      "category": "civilization",
+      "desc": "各国推行郡县，取代分封、加强集权。"
+    },
+    {
+      "name": "铁器牛耕",
+      "value": 68,
+      "category": "civilization",
+      "desc": "铁农具与牛耕普及，生产力大幅提高。"
+    },
+    {
+      "name": "编钟乐悬",
+      "value": 60,
+      "category": "civilization",
+      "desc": "金石礼乐文明，曾侯乙编钟即其代表。"
+    },
+    {
+      "name": "邯郸",
+      "value": 64,
+      "category": "geo",
+      "desc": "赵国都城，战国中后期北方都会。"
+    },
+    {
+      "name": "临淄",
+      "value": 62,
+      "category": "geo",
+      "desc": "齐国都城，工商业繁荣的东方大城。"
+    },
+    {
+      "name": "咸阳",
+      "value": 66,
+      "category": "geo",
+      "desc": "秦国都城，统一战争中崛起之地。"
+    },
+    {
+      "name": "函谷关",
+      "value": 58,
+      "category": "geo",
+      "desc": "关中东部门户，秦与六国对峙要冲。"
     }
   ],
   "_meta": {

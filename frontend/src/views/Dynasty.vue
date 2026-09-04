@@ -51,8 +51,10 @@ const dynastyEvents = computed(() => {
 })
 
 const dynastyPersons = computed(() => {
-  if (jsonData.value && jsonData.value.persons.length > 0) {
-    return jsonData.value.persons
+  if (jsonData.value && jsonData.value.persons.length > 0 && dynasty.value) {
+    // 按 dynasty 字段过滤：让已划到其他朝代的人物（如傅玄/卫瓘→晋南北朝）卡片移出当前朝代列表
+    const name = dynasty.value.name
+    return jsonData.value.persons.filter(p => p.dynasty === name)
   }
   if (!dynasty.value) return []
   return persons.filter(p => p.dynasty === dynasty.value!.name)
@@ -215,7 +217,7 @@ const dynastyKeywords = computed<DynastyKw[]>(() => {
     ],
 
     // ============= 【汉朝】21条 — 用户核心词：大一统 + 丝绸之路 =============
-    '汉朝': [
+    '汉': [
       { name: '大一统', value: 100, category: 'era', desc: '汉朝奠定了中国统一多民族国家的基本疆域与制度格局' },
       { name: '丝绸之路', value: 98, category: 'event', desc: '张骞凿空西域，连接东西方文明的重要贸易与文化通道' },
       { name: '汉武帝', value: 96, category: 'person', desc: '刘彻，汉武盛世缔造者，北击匈奴，独尊儒术' },
@@ -417,7 +419,11 @@ const dynastyKeywords = computed<DynastyKw[]>(() => {
       { name: '陈胜吴广', value: 60, category: 'event', desc: '大泽乡揭竿而起，「王侯将相宁有种乎」' }
     ]
   }
-  return M[dynasty.value.name] || M['上古']
+  // 优先使用 JSON 导入的朝代关键词，避免回退到上古占位数据
+  if (jsonData.value?.keywords && jsonData.value.keywords.length > 0) {
+    return jsonData.value.keywords as DynastyKw[]
+  }
+  return M[dynasty.value.name] || []
 })
 
 // =====================================================
@@ -681,7 +687,7 @@ const chinaMapData = computed(() => {
         { name: '蓟城', x: 333, y: 108, r: 7 }                           // 燕都（北京）
       ]
     },
-    '汉朝': {
+    '汉': {
       regions: [
         // 西汉极盛（汉武帝）：长安为都，设西域都护府，东至朝鲜、西至葱岭、北至漠北、南至越南
         { name: '长安', x: 241, y: 156, r: 10, isCapital: true },       // 西安（西汉都城）
@@ -780,7 +786,7 @@ const chinaMapPath = computed(() => {
     // 战国（七雄并立后期，约260年）：约500万km²，西至陇西、北至辽东、东至山东半岛、南至湖南江西
     '战国': 'M 95 150 L 85 172 L 90 200 L 108 230 L 135 255 L 168 278 L 205 295 L 240 308 L 272 316 L 300 320 L 325 316 L 345 300 L 360 280 L 378 260 L 395 240 L 412 218 L 424 195 L 432 172 L 434 148 L 428 128 L 418 112 L 404 100 L 386 90 L 362 84 L 332 80 L 302 78 L 272 82 L 244 80 L 218 86 L 192 94 L 168 106 L 146 118 L 126 132 L 108 146 Z',
     // 汉朝（西汉极盛）：约610万km²，东至朝鲜、西至巴尔喀什湖/葱岭、北至贝加尔湖、南至越南
-    '汉朝': 'M 38 78 L 32 65 L 50 42 L 80 25 L 120 18 L 175 20 L 230 28 L 280 26 L 330 32 L 370 48 L 405 70 L 430 95 L 438 118 L 420 142 L 400 162 L 388 185 L 382 208 L 388 235 L 395 255 L 388 285 L 370 315 L 352 340 L 338 352 L 325 358 L 300 365 L 275 370 L 250 362 L 228 340 L 210 310 L 195 285 L 180 260 L 165 230 L 152 205 L 138 178 L 118 158 L 95 138 L 72 115 L 52 100 Z',
+    '汉': 'M 38 78 L 32 65 L 50 42 L 80 25 L 120 18 L 175 20 L 230 28 L 280 26 L 330 32 L 370 48 L 405 70 L 430 95 L 438 118 L 420 142 L 400 162 L 388 185 L 382 208 L 388 235 L 395 255 L 388 285 L 370 315 L 352 340 L 338 352 L 325 358 L 300 365 L 275 370 L 250 362 L 228 340 L 210 310 L 195 285 L 180 260 L 165 230 L 152 205 L 138 178 L 118 158 L 95 138 L 72 115 L 52 100 Z',
     // 唐朝（高宗极盛）：约1237万km²，西至咸海/波斯边境、北至贝加尔湖、东至朝鲜、南至越南
     '唐朝': 'M 18 85 L 8 68 L 15 48 L 40 28 L 72 15 L 120 8 L 180 10 L 242 20 L 302 22 L 355 28 L 400 42 L 430 62 L 450 88 L 452 115 L 438 142 L 425 162 L 410 185 L 402 208 L 408 235 L 415 258 L 405 290 L 388 322 L 368 348 L 348 362 L 328 370 L 305 375 L 280 378 L 262 372 L 245 355 L 225 328 L 210 298 L 195 268 L 178 238 L 160 208 L 142 180 L 120 155 L 95 132 L 70 112 L 48 102 Z',
     // 宋朝（北宋）：约264万km²，东至大海、西至秦州、北至白沟河、南至海南岛
@@ -828,7 +834,7 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '会昌中兴', year: 842, value: 5.5, tag: '短暂回暖' },
     { name: '黄巢起义', year: 880, value: 2.5, tag: '大厦将倾' }
   ],
-  '汉朝': [
+  '汉': [
     { name: '楚汉相争', year: -204, value: 5, tag: '逐鹿中原' },
     { name: '刘邦建汉', year: -202, value: 6.5, tag: '高祖定鼎' },
     { name: '吕氏专权', year: -180, value: 5, tag: '外戚初现' },
@@ -925,6 +931,34 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '邯郸之战', year: -257, value: 6.5, tag: '合纵救赵' },
     { name: '荆轲刺秦', year: -227, value: 4.5, tag: '垂死一搏' },
     { name: '秦灭六国', year: -221, value: 9, tag: '天下归一' }
+  ],
+  '三国': [
+    { name: '曹丕代汉', year: 220, value: 7, tag: '三国始' },
+    { name: '刘备称帝', year: 221, value: 7.5, tag: '蜀汉立' },
+    { name: '夷陵之战', year: 222, value: 4.5, tag: '孙刘决裂' },
+    { name: '孙权称帝', year: 229, value: 8.5, tag: '鼎足之势' },
+    { name: '诸葛亮北伐', year: 234, value: 8, tag: '丞相星陨' },
+    { name: '高平陵之变', year: 249, value: 6, tag: '司马篡权' },
+    { name: '淮南三叛', year: 255, value: 5.5, tag: '曹氏抗争' },
+    { name: '魏灭蜀之战', year: 263, value: 4, tag: '蜀汉亡' },
+    { name: '司马昭称晋公', year: 264, value: 5.5, tag: '晋奠基' },
+    { name: '司马炎代魏', year: 266, value: 6.5, tag: '西晋立' },
+    { name: '晋灭吴之战', year: 280, value: 7.5, tag: '三国终' },
+    { name: '太康之治', year: 282, value: 7, tag: '统一后治世' }
+  ],
+  '晋南北朝': [
+    { name: '西晋灭吴', year: 280, value: 7.5, tag: '代魏一统' },
+    { name: '八王之乱', year: 300, value: 3.5, tag: '宗室内耗' },
+    { name: '永嘉之乱', year: 311, value: 2.5, tag: '衣冠南渡' },
+    { name: '王敦之乱', year: 324, value: 5, tag: '东晋初定' },
+    { name: '淝水之战', year: 383, value: 8.5, tag: '北府决胜' },
+    { name: '桓玄篡晋', year: 402, value: 5.5, tag: '东晋内争' },
+    { name: '刘宋代晋', year: 420, value: 6, tag: '南朝宋立' },
+    { name: '元嘉之治', year: 445, value: 8, tag: '南朝治世' },
+    { name: '北魏孝文改制', year: 493, value: 8.5, tag: '汉化改革' },
+    { name: '侯景之乱', year: 548, value: 3, tag: '江南浩劫' },
+    { name: '北周灭北齐', year: 577, value: 6.5, tag: '北朝一统' },
+    { name: '隋代北周', year: 581, value: 7, tag: '南北朝终' }
   ]
 }
 

@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
@@ -316,6 +316,45 @@ export const dynasties: Dynasty[] = [
   duration: '约15年',
   representative_buildings: ["万里长城","阿房宫","驰道","灵渠"],
   characteristics: {"politics":96,"culture":82,"military":92,"technology":85,"openness":60}
+},
+{
+    id: 107,
+  name: '汉',
+  english_name: 'Han Dynasty',
+  start_year: -202,
+  end_year: 220,
+  summary: '汉朝上承秦制、下启后世，是中国历史上第一个国祚绵长、疆域辽阔的大一统王朝。汉初休养生息，文景之治奠定国力；汉武帝北伐匈奴、遣使西域，独尊儒术；中经王莽新朝割裂，光武中兴重建东汉，最终在黄巾之乱与天下纷争中落幕，造就了延续四百余年的帝国基业与中华文化认同。',
+  capital: '长安、洛阳',
+  population: '约5700万',
+  duration: '422年',
+  representative_buildings: ["未央宫","建章宫","长城"],
+  characteristics: {"politics":90,"culture":88,"military":95,"technology":82,"openness":85}
+},
+{
+    id: 109,
+  name: '三国',
+  english_name: 'Three Kingdoms',
+  start_year: 220,
+  end_year: 280,
+  summary: '东汉末年群雄逐鹿，曹操统一北方，刘备据蜀，孙权据江东，三国鼎立之势形成。魏、蜀、吴三国在政治、军事、经济、文化上各展所长，诸葛亮北伐、夷陵之战等大事迭出。最终司马氏篡魏灭蜀、代魏立晋，再灭吴，于280年结束三国分裂，重归统一。三国时期英雄辈出、思想活跃，是继两汉之后又一个群星璀璨的时代。',
+  capital: '洛阳、成都、建业',
+  population: '约数千万',
+  duration: '约60年',
+  representative_buildings: ["铜雀台","成都城","建业城"],
+  characteristics: {"politics":82,"culture":88,"military":96,"technology":78,"openness":70}
+},
+{
+  id: 110,
+  name: '晋南北朝',
+  english_name: 'Jin, Southern and Northern Dynasties',
+  start_year: 265,
+  end_year: 589,
+  summary: '公元265年司马炎代魏建晋，一统后经八王之乱与永嘉之乱，衣冠南渡，西晋覆亡。东晋偏安江左，北方五胡十六国更迭并立。北魏统一北方后裂为东西，南朝历宋、齐、梁、陈四代，南北对峙三百余年。此间玄学佛学兴起，文学艺术繁荣，民族大融合加速，是中国历史上政权频繁更替却创造力极盛的时代。',
+  capital: '洛阳、建康、平城、邺',
+  population: '约数千万',
+  duration: '约325年',
+  representative_buildings: ["白马寺","云冈石窟","建康宫"],
+  characteristics: {"politics":84,"culture":92,"military":90,"technology":76,"openness":86}
 },
 ]
 

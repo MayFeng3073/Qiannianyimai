@@ -1,6 +1,6 @@
-// 战国数据导入脚本 v1：从 Excel 生成 frontend/public/data/dynasty_203.json
-// 结构完全对齐 import-chunqiu.js（春秋），只改朝代配置/ID前缀/类型映射
-// 用法：node scripts/import-zhanguo.js
+// 晋南北朝数据导入脚本 v1：从 Excel 生成 frontend/public/data/dynasty_110.json
+// 结构对齐 import-109.js（三国），只改朝代配置/ID前缀/类型映射/二级分类/别名
+// 用法：node scripts/import-110.js
 const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
@@ -19,31 +19,31 @@ function col(r, ...ks) {
 }
 
 const DYN = {
-  id: 203, name: '战国', english_name: 'Warring States Period',
-  start_year: -475, end_year: -221,
-  summary: '战国时期诸侯兼并愈演愈烈，秦、楚、齐、燕、赵、魏、韩七雄并立，商鞅变法、合纵连横、长平之战等历史大事件接连上演，诸子百家争鸣达到鼎盛，是中国古代从分裂走向大一统的关键转折时代。',
-  capital: '咸阳（秦）', population: '约两千余万', duration: '约254年',
-  representative_buildings: ['都江堰', '郑国渠', '战国长城', '曾侯乙墓'],
-  characteristics: { politics: 85, culture: 95, military: 95, technology: 88, openness: 80 }
+  id: 110, name: '晋南北朝', english_name: 'Jin, Southern and Northern Dynasties',
+  start_year: 265, end_year: 589,
+  summary: '公元265年司马炎代魏建晋，一统后经八王之乱与永嘉之乱，衣冠南渡，西晋覆亡。东晋偏安江左，北方五胡十六国更迭并立。北魏统一北方后裂为东西，南朝历宋、齐、梁、陈四代，南北对峙三百余年。此间玄学佛学兴起，文学艺术繁荣，民族大融合加速，是中国历史上政权频繁更替却创造力极盛的时代。',
+  capital: '洛阳、建康、平城、邺', population: '约数千万', duration: '约325年',
+  representative_buildings: ['白马寺', '云冈石窟', '建康宫'],
+  characteristics: { politics: 84, culture: 92, military: 90, technology: 76, openness: 86 }
 };
 
-// ---- 读取并过滤战国数据 ----
-const l1 = read('1级人物数据.xlsx').filter(r => String(col(r, '朝代')).includes('战国'));
-const l2 = read('2级人物数据.xlsx').filter(r => String(col(r, '朝代')).includes('战国'));
-const ev = read('事件数据.xlsx').filter(r => String(col(r, '朝代')).includes('战国'));
-const kw = read('朝代热力图.xlsx').filter(r => String(col(r, '朝代')).includes('战国'));
+// ---- 读取并过滤晋南北朝数据 ----
+const l1 = read('1级人物数据.xlsx').filter(r => String(col(r, '朝代')).includes('晋南北朝'));
+const l2 = read('2级人物数据.xlsx').filter(r => String(col(r, '朝代')).includes('晋南北朝'));
+const ev = read('事件数据.xlsx').filter(r => String(col(r, '朝代')).includes('晋南北朝'));
+const kw = read('朝代热力图.xlsx').filter(r => String(col(r, '朝代')).includes('晋南北朝'));
 const rel = read('人物关系表.xlsx');
 const pev = read('人事关系表.xlsx');
 
-// ---- 年份解析（与春秋一致）----
+// ---- 年份解析 ----
 function parseYear(s) {
   if (!s || typeof s !== 'string') return null;
   const t = s.trim();
-  let m = t.match(/约?前(\d{3,4})(?:年|世纪)?/);
-  if (m) return t.includes('世纪') ? -(parseInt(m[1]) * 100) : -parseInt(m[1]);
-  m = t.match(/约?(\d{3,4})年前?/);
-  if (m) return -parseInt(m[1]);
-  m = t.match(/^(\d{3,4})年?/);
+  let m = t.match(/约?公元前?(\d{1,4})(?:年|世纪)?/);
+  if (m) return t.includes('世纪') ? -parseInt(m[1]) * 100 : -parseInt(m[1]);
+  m = t.match(/约?(\d{1,2})世纪(?:初|中叶|前期|后期|末)?/);
+  if (m) return parseInt(m[1]) * 100;
+  m = t.match(/^约?(\d{1,4})年?/);
   if (m) return parseInt(m[1]);
   return null;
 }
@@ -73,38 +73,67 @@ function parseLaterQuotes(raw) {
   return out;
 }
 
-// ---- 生成人物 (一级 2030xx, 二级 2031xx) ----
-// 人物类型归一化：将 Excel 中五花八门的类型统一为系统标准 6 类（与 Person.vue dimensionConfig 一致）
-const CAT_MAP = { '思想家': '思想人物', '思想家/政治家': '思想人物', '军事家': '军事人物', '军事家/改革家': '军事人物', '军事家/外交家': '军事人物', '历史人物/刺客': '军事人物', '君主': '统治者', '君主/改革家': '统治者', '外交家': '政治人物', '改革家': '政治人物', '政治家/思想组织者': '政治人物', '工程家': '科技人物', '天文学家': '科技人物', '医学家': '科技人物', '文学家': '文化人物', '文学家/政治家': '文化人物' };
-// 二级人物逐人分类（Excel 无类型列，依据身份摘要逐人归类，与一级人物 6 类体系一致）
-const L2_CAT_MAP = {
-  // 统治者（君主/王/太后）
-  '秦孝公': '统治者', '秦惠文王': '统治者', '魏文侯': '统治者', '魏武侯': '统治者', '楚悼王': '统治者', '楚肃王': '统治者', '齐宣王': '统治者', '赵成侯': '统治者', '赵惠文王': '统治者', '田和': '统治者', '韩王安': '统治者', '魏惠王': '统治者', '赵孝成王': '统治者', '赵王迁': '统治者', '楚怀王': '统治者', '魏襄王': '统治者', '韩王然': '统治者', '齐湣王': '统治者', '楚襄王': '统治者', '蔡桓公': '统治者', '秦王政': '统治者', '韩桓惠王': '统治者', '梁惠王': '统治者', '燕惠王': '统治者', '滕文公': '统治者', '齐桓侯': '统治者', '秦武王': '统治者', '魏安釐王': '统治者', '赵太后': '统治者', '楚考烈王': '统治者', '韩昭侯': '统治者',
-  // 政治人物（相国/权臣/纵横家/宗室/名臣/门客等）
-  '甘龙': '政治人物', '杜挚': '政治人物', '李克': '政治人物', '西门豹': '政治人物', '邹忌': '政治人物', '田婴': '政治人物', '公子成': '政治人物', '赵豹': '政治人物', '公叔痤': '政治人物', '李兑': '政治人物', '蔺相如': '政治人物', '郭开': '政治人物', '信陵君': '政治人物', '田横': '政治人物', '魏冉': '政治人物', '范雎': '政治人物', '公子昂': '政治人物', '苏代': '政治人物', '苏厉': '政治人物', '陈轸': '政治人物', '楼缓': '政治人物', '孟尝君': '政治人物', '触詟': '政治人物', '唐雎': '政治人物', '蔡泽': '政治人物', '毛遂': '政治人物', '虞卿': '政治人物', '冯谖': '政治人物', '春申君': '政治人物', '平原君赵胜': '政治人物', '甘罗': '政治人物', '申不害': '政治人物', '李斯': '政治人物', '燕太子丹': '政治人物', '子兰': '政治人物', '靳尚': '政治人物', '景兰': '政治人物', '嫪毐': '政治人物', '姚贾': '政治人物', '李园': '政治人物',
-  // 军事人物（将领/名将/勇士/刺客）
-  '乐羊': '军事人物', '庞涓': '军事人物', '田忌': '军事人物', '赵奢': '军事人物', '赵括': '军事人物', '赵葱': '军事人物', '乐乘': '军事人物', '王贲': '军事人物', '蒙骜': '军事人物', '蒙武': '军事人物', '蒙恬': '军事人物', '项燕': '军事人物', '项梁': '军事人物', '晋鄙': '军事人物', '朱亥': '军事人物', '乐间': '军事人物', '公孙喜': '军事人物', '司马错': '军事人物', '甘茂': '军事人物', '樗里疾': '军事人物', '魏章': '军事人物', '樊於期': '军事人物', '秦舞阳': '军事人物', '张若': '军事人物', '田光': '军事人物',
-  // 思想人物（思想家/学者/诸子/稷下/隐士）
-  '赵良': '思想人物', '段干木': '思想人物', '淳于髡': '思想人物', '告子': '思想人物', '杨朱': '思想人物', '慎到': '思想人物', '子思': '思想人物', '曾参': '思想人物', '仲弓': '思想人物', '陈相': '思想人物', '陈良': '思想人物', '田骈': '思想人物', '环渊': '思想人物', '尹文': '思想人物', '彭蒙': '思想人物', '宋钘': '思想人物', '尸佼': '思想人物', '子游': '思想人物', '子夏': '思想人物', '子张': '思想人物', '公孙尼子': '思想人物', '魏牟': '思想人物', '徐无鬼': '思想人物', '鲁仲连': '思想人物', '孔穿': '思想人物', '邹奭': '思想人物', '鬼谷子': '思想人物', '禽滑厘': '思想人物', '乐羊子': '思想人物',
-  // 文化人物（辞赋家/乐师/优人/方术）
-  '高渐离': '文化人物', '景差': '文化人物', '唐勒': '文化人物', '优孟': '文化人物', '优旃': '文化人物', '唐举': '文化人物',
-  // 科技人物（医家/工匠）
-  '夏无且': '科技人物', '长桑君': '科技人物', '公输般（鲁班）': '科技人物'
+// ---- 生成人物 (一级 1100xx, 二级 1101xx) ----
+const CAT_MAP = { '思想家': '思想人物', '思想家/政治家': '思想人物', '君主': '统治者', '君主/改革家': '统治者', '皇帝': '统治者', '帝王': '统治者', '军事家': '军事人物', '军事家/政治家': '军事人物', '外交家': '政治人物', '改革家': '政治人物', '政治家': '政治人物', '文学家': '文化人物', '文学家/政治家': '文化人物', '史学家': '文化人物', '科学家': '科技人物', '医学家': '科技人物', '工程师': '科技人物', '发明家': '科技人物' };
+// 二级人物分类（Excel 无类型列，依身份/事迹逐人归入标准 6 类）
+const L2_CAT_MAP_110 = {
+  // —— 统治者 ——
+  '司马伦': '统治者', '司马冏': '统治者', '司马颖': '统治者', '司马颙': '统治者', '刘聪': '统治者',
+  '刘曜': '统治者', '冉闵': '统治者', '慕容皝': '统治者', '慕容儁': '统治者', '慕容宝': '统治者',
+  '慕容德': '统治者', '姚泓': '统治者', '吕纂': '统治者', '沮渠蒙逊': '统治者', '赫连昌': '统治者',
+  '拓跋嗣': '统治者', '刘义符': '统治者', '刘义真': '统治者', '元恪': '统治者', '元勰': '统治者',
+  '元宝炬': '统治者', '萧鸾': '统治者', '萧子良': '统治者', '萧宏': '统治者', '萧正德': '统治者',
+  '萧纲': '统治者', '萧绎': '统治者', '陈顼': '统治者', '高演': '统治者', '高湛': '统治者', '宇文毓': '统治者',
+  // —— 军事人物 ——
+  '王浑': '军事人物', '张方': '军事人物', '苏峻': '军事人物', '祖约': '军事人物', '郗鉴': '军事人物',
+  '桓冲': '军事人物', '谢琰': '军事人物', '刘毅': '军事人物', '何无忌': '军事人物', '姚襄': '军事人物',
+  '卢循': '军事人物', '奚斤': '军事人物', '檀道济': '军事人物', '王僧辩': '军事人物', '侯安都': '军事人物',
+  '尔朱荣': '军事人物', '尔朱兆': '军事人物', '斛律光': '军事人物', '段韶': '军事人物', '宇文护': '军事人物',
+  '韦孝宽': '军事人物', '杨忠': '军事人物',
+  // —— 政治人物 ——
+  '贾充': '政治人物', '杨骏': '政治人物', '贾南风': '政治人物', '杨芷': '政治人物', '何曾': '政治人物',
+  '石崇': '政治人物', '山涛': '政治人物', '傅亮': '政治人物', '王弘': '政治人物', '诸葛长民': '政治人物',
+  '张宾': '政治人物', '程遐': '政治人物', '徐光': '政治人物', '崔浩': '政治人物', '刘义康': '政治人物',
+  '徐羡之': '政治人物', '谢晦': '政治人物', '袁淑': '政治人物', '王僧达': '政治人物', '王俭': '政治人物',
+  '徐勉': '政治人物', '朱异': '政治人物', '高澄': '政治人物', '冯熙': '政治人物', '李冲': '政治人物',
+  '王肃': '政治人物', '高颎': '政治人物', '荀藩': '政治人物', '庾冰': '政治人物', '何充': '政治人物',
+  '殷浩': '政治人物', '谢万': '政治人物', '谢朗': '政治人物', '孙恩': '政治人物', '杜锡': '政治人物',
+  // —— 文化人物 ——
+  '傅玄': '文化人物', '卫瓘': '文化人物', '卫恒': '文化人物', '荀勖': '文化人物', '潘岳': '文化人物',
+  '陆机': '文化人物', '陆云': '文化人物', '王戎': '文化人物', '刘伶': '文化人物', '阮咸': '文化人物',
+  '谢道韫': '文化人物', '王献之': '文化人物', '王徽之': '文化人物', '谢惠连': '文化人物', '谢朓': '文化人物',
+  '鲍照': '文化人物', '庾信': '文化人物', '王褒': '文化人物', '江淹': '文化人物', '范云': '文化人物',
+  '徐陵': '文化人物', '江总': '文化人物', '范晔': '文化人物', '裴松之': '文化人物', '裴骃': '文化人物',
+  '萧子显': '文化人物', '魏收': '文化人物', '崔鸿': '文化人物',
+  // —— 思想人物 ——
+  '何晏': '思想人物', '向秀': '思想人物', '夏侯玄': '思想人物', '支遁': '思想人物', '竺法护': '思想人物',
+  '道生': '思想人物', '僧肇': '思想人物', '道融': '思想人物', '佛陀跋陀罗': '思想人物'
 };
+// 兜底默认分类（未被覆盖的二级人物）
+const DEFAULT_L2_CAT = '政治人物';
+// 需跳过的跨朝代重复人物（保留在三国，不从晋南北朝导入）
+const EXCLUDE_NAMES = new Set(['夏侯玄']);
+
 const persons = [];
 let i2 = 1;
 const nameToId = {};
 
 // --- 一级人物 ---
 const l1Persons = [];
+const aliasMap = {};
+const addAlias = (a, c) => { if (a && String(a).trim()) aliasMap[String(a).trim()] = c; };
 let i1 = 1;
 for (const r of l1) {
-  const id = 203000 + i1++;
   const name = String(col(r, '姓名'));
-  nameToId[name] = id;
+  nameToId[name] = 110000 + i1;
+  const id = 110000 + i1++;
+  addAlias(name, name);
+  const m = name.match(/^(.+?)（(.+?)）$/);
+  if (m) { addAlias(m[1], name); addAlias(m[2], name); }
+  (String(col(r, '称号') || '') || '').split(/[；;]/).forEach(a => addAlias(a, name));
   const { birth, death } = pbd(col(r, '生年'), col(r, '卒年'));
-  const rawCat = String(col(r, '人物类型') || '政治人物');
-  const cat = CAT_MAP[rawCat] || rawCat;
+  const rawCat = String(col(r, '人物类型') || '政治人物').trim();
+  const cat = CAT_MAP[rawCat] || rawCat || '政治人物';
   const influence = Number(col(r, '历史影响力')) || 80;
   const impactRaw = col(r, '影响力描述');
   const impactList = impactRaw ? String(impactRaw).split(/[；;、\n]/).map(s => s.trim()).filter(Boolean) : [];
@@ -117,19 +146,19 @@ for (const r of l1) {
     try { const arr = JSON.parse(String(lifeRaw).trim()); if (Array.isArray(arr)) life = arr.map(x => ({ year: Number(x.year), title: x.title, description: x.description || '', importance: Number(x.importance) || 5 })); } catch (e) {}
   }
   if (!life.length) {
-    let y = birth || death || -350;
+    let y = birth || death || 200;
     const storyRaw = col(r, '代表事件');
     const items = storyRaw ? String(storyRaw).split(/[，,；;、]/) : [];
     life = items.filter(Boolean).slice(0, 4).map((t, k) => ({ year: y + k, title: t.trim(), description: name + '人生重要节点：' + t.trim(), importance: 8 }));
   }
   const dimDefaults = {
     '统治者': [95, 88, 92], '政治人物': [88, 85, 80], '军事人物': [88, 82, 75],
-    '文化人物': [82, 78, 88], '思想人物': [82, 76, 90], '思想': [82, 76, 90], '外交人物': [82, 90, 78]
+    '文化人物': [82, 78, 88], '思想人物': [82, 76, 90], '科技人物': [88, 80, 90]
   };
   const dd = dimDefaults[cat] || [85, 80, 80];
   const tags = col(r, '人物标签') ? String(col(r, '人物标签')).split(/[；;、/\n]/).map(s => s.trim()).filter(Boolean).slice(0, 5) : [];
   const p = {
-    id, name, dynasty: '战国',
+    id, name, dynasty: '晋南北朝',
     summary: String(col(r, '人物简介') || '').trim() || String(col(r, '历史地位') || '').trim(),
     historical_position: String(col(r, '历史地位') || '').trim(),
     achievement: (() => { const a = String(col(r, '称号') || '').trim(); return (a && a !== name) ? a : ''; })(),
@@ -153,20 +182,23 @@ for (const r of l1) {
 const l2Persons = [];
 for (const r of l2) {
   const name = String(col(r, '姓名'));
+  if (EXCLUDE_NAMES.has(name)) continue; // 跳过跨朝代重复人物
   if (nameToId[name]) continue; // 与一级重名则跳过
-  const id = 203100 + i2++;
+  const id = 110100 + i2++;
   nameToId[name] = id;
+  addAlias(name, name);
   const storyContent = String(col(r, '故事内容') || '').trim();
   const storyTitle = String(col(r, '故事标题') || '').trim();
   const summary = (storyTitle && storyTitle.length >= 3)
-    ? `${name}是${'战国'}时期的历史人物，其重要事迹为「${storyTitle}」，从侧面展现了这一时期的历史风貌。`
-    : `${name}是${'战国'}时期的历史人物，其事迹载于史籍文献，从侧面展现了这一时期的历史风貌。`;
+    ? `${name}是晋南北朝时期的历史人物，其重要事迹为「${storyTitle}」，从侧面展现了这一时期的历史风貌。`
+    : `${name}是晋南北朝时期的历史人物，其事迹载于史籍文献，从侧面展现了这一时期的历史风貌。`;
+  const cat = L2_CAT_MAP_110[name] || DEFAULT_L2_CAT;
   const p = {
-    id, name, dynasty: '战国',
+    id, name, dynasty: '晋南北朝',
     summary,
     image_url: imageUrl(name),
     birth_year: null, death_year: null,
-    category: L2_CAT_MAP[name] || '历史人物', level: 2,
+    category: cat, level: 2,
     birth_place: null,
     occupations: [],
     works: [], related_people: [], life_events: [], related_events: [],
@@ -179,35 +211,37 @@ for (const r of l2) {
   persons.push(p);
 }
 
-// ---- 事件 (id 2033xx) ----
+// ---- 事件 (id 1103xx) ----
 const events = [];
 let e1 = 1;
 const evNameToId = {};
-const TYPE_MAP = { '战争军事': '战争军事', '战争': '战争军事', '会盟外交': '外交', '外交': '外交', '外交交流': '外交', '纵横': '外交', '政治改革': '政治事件', '变法': '政治事件', '政治权力': '政治事件', '政治迁都': '政治事件', '政治制度': '政治事件', '政变': '政治事件', '制度文化': '制度建设', '人物故事': '人物故事', '思想文化': '思想文化', '思想教育': '思想文化', '科技工程': '科技发明', '科技发明': '科技发明', '文化艺术': '文化艺术' };
+const TYPE_MAP = { '战争军事': '战争军事', '政治制度': '政治事件', '政治': '政治事件', '外交交流': '外交', '外交': '外交', '对外交流': '外交', '经济贸易': '经济', '经济': '经济', '思想教育': '思想文化', '思想文化': '思想文化', '文化艺术': '文化艺术', '文化': '文化艺术', '科技发明': '科技发明', '科技': '科技发明', '自然灾害': '自然灾害' };
 for (const r of ev) {
-  const id = 203300 + e1++;
+  const id = 110300 + e1++;
   const name = String(col(r, '事件名称'));
   evNameToId[name] = id;
-  const y = parseYear(String(col(r, '发生时间') || '')) || -350;
+  const y = parseYear(String(col(r, '发生时间') || '')) || 265;
   const bg = {};
   for (const [k, v] of [['政治背景', 'political'], ['经济背景', 'economic'], ['社会背景', 'social'], ['文化背景', 'cultural'], ['地理背景', 'geographic']]) {
     const x = col(r, k); if (x) bg[v] = String(x);
   }
   const significance = String(col(r, '历史影响') || '').trim();
-  const rawType = String(col(r, '类型') || '');
+  const rawType = String(col(r, '类型') || '').trim();
   const etype = TYPE_MAP[rawType] || '政治事件';
   const impacts = [];
-  for (const [colKey, nameKey] of [['政治影响', '政治影响'], ['社会影响', '社会影响'], ['文化影响', '文化影响'], ['历史影响_1', '历史影响']]) {
-    const v = col(r, colKey);
+  // 精确匹配列名，避免「历史影响」命中「历史影响（约35个字）」文本列导致分数读不到
+  for (const [colKey, nameKey] of [['政治影响', '政治影响'], ['社会影响', '社会影响'], ['文化影响', '文化影响'], ['历史影响', '历史影响']]) {
+    const fk = Object.keys(r).find(kk => String(kk).trim() === colKey);
+    const v = fk ? r[fk] : null;
     if (v != null && !isNaN(Number(v))) impacts.push({ name: nameKey, score: Number(v) });
   }
   const summaryText = String(col(r, '简介') || '').trim();
   const osFirst = significance ? String(significance).split(/。/)[0].trim() : '';
   const one_sentence = (osFirst && osFirst.length >= 8 && osFirst !== summaryText)
     ? osFirst
-    : `「${name}」作为战国时期重要的${etype === '战争军事' ? '征战' : etype}事件，深刻影响了当时的政治格局，是理解战国七雄争雄历史的关键节点。`;
+    : `「${name}」作为晋南北朝时期重要的${etype}事件，深刻影响了当时的政治格局，是理解这段历史的关键节点。`;
   events.push({
-    id, name, dynasty: '战国',
+    id, name, dynasty: '晋南北朝',
     start_year: y, end_year: y,
     summary: summaryText,
     event_type: etype,
@@ -220,12 +254,12 @@ for (const r of ev) {
   });
 }
 
-// ---- 关系聚合：人物关系表 -> related_people (双向，含二级) ----
+// ---- 关系聚合 ----
 const REL_MAP = { '对手': '敌对', '敌对': '敌对', '敌人': '敌对', '政敌': '敌对', '盟友': '盟友', '同盟': '盟友', '合作': '盟友', '君臣': '君臣', '父子': '亲属', '母子': '亲属', '兄弟': '亲属', '兄弟姐妹': '亲属', '夫妻': '亲属', '夫妻/宫廷关系': '亲属', '宗族': '亲属', '叔侄': '亲属', '祖孙': '亲属', '父子/宗族': '亲属', '同僚': '同僚', '朋友': '同僚', '友人': '同僚', '同门': '同僚', '师徒': '师生', '师生': '师生', '下属': '支持', '支持': '支持', '继承': '继承', '宗族/继承': '继承', '宗族/王位世系': '继承', '文化影响': '影响', '影响': '影响', '思想关联': '影响', '交流': '交流', '宗族/君臣': '君臣', '君臣/宗族': '君臣' };
-// 人物名别名映射：关系表用名 → 人物表规范名（处理同名异写/括号注释/繁简差异）
-const ALIAS = { '秦始皇': '秦王政', '公输般': '公输般（鲁班）' };
-const canon = n => ALIAS[n] || n;
-const personByName = n => persons.find(p => p.name === n) || persons.find(p => p.name === (ALIAS[n] || ''));
+function canon(n) { return aliasMap[n] || n; }
+function personByName(n) {
+  return persons.find(p => p.name === n) || persons.find(p => p.name === (aliasMap[n] || ''));
+}
 for (const r of rel) {
   const a = col(r, '起点人物'), b = col(r, '终点人物');
   const pa = personByName(a), pb = personByName(b);
@@ -236,7 +270,7 @@ for (const r of rel) {
 }
 persons.forEach(p => { p.related_people = (p.related_people || []).slice(0, 10); });
 
-// ---- 关键人物角色分类（人事关系表）----
+// ---- 关键人物角色分类 ----
 function classifyRole(role) {
   const s = role || '';
   const OPPO = ['失败', '对立', '对抗', '反对', '挑战', '复仇对象', '竞争', '被消灭', '对手', '敌对', '敌', '讨伐对象', '征讨对象', '征伐对象', '落败', '竞争者', '叛乱', '被伐', '对抗方', '敌对者'];
@@ -264,27 +298,39 @@ for (const e of events) {
   Object.values(e.person_groups).forEach(arr => arr.forEach(x => names.add(x.name)));
   const findPersonId = n => personByName(n)?.id;
   const rels = [];
+  // 去重：同一对人物 + 同一关系类型只保留一条（避免 A→B 与 B→A 重复出现）
+  const seenPair = new Set();
   for (const r of rel) {
     const a = canon(col(r, '起点人物')), b = canon(col(r, '终点人物'));
-    if (names.has(a) && names.has(b)) rels.push({ source: a, target: b, type: REL_MAP[String(col(r, '关系类型'))] || '关联', desc: String(col(r, '关系说明') || ''), sourceId: findPersonId(a), targetId: findPersonId(b) });
+    if (names.has(a) && names.has(b)) {
+      const type = REL_MAP[String(col(r, '关系类型'))] || '关联';
+      const key = [a, b].sort().join('|') + '|' + type;
+      if (seenPair.has(key)) continue;
+      seenPair.add(key);
+      rels.push({ source: a, target: b, type, desc: String(col(r, '关系说明') || ''), sourceId: findPersonId(a), targetId: findPersonId(b) });
+    }
   }
   e.person_relations = rels.slice(0, 6);
 }
 
-// ---- 事件经过（分阶段叙述）----
+// ---- 事件经过（分阶段叙述初版：句切分，按 起因/经过/结果/影响 轮转 tag，标题独立） ----
 function buildNarratives(evObj) {
   const summary = evObj.summary;
   if (!summary) return [];
-  const sents = summary.split(/。/).map(s => s.trim()).filter(Boolean);
+  const sents = summary.split(/[。；]/).map(s => s.trim()).filter(Boolean).slice(0, 6);
   if (sents.length === 0) return [];
   const y = evObj.start_year;
+  const tags = ['起因', '经过', '结果', '影响'];
   return sents.map((s, i) => ({
-    year: y, tag: '经过', title: s.slice(0, 12) + (s.length > 12 ? '…' : ''), description: s
-  })).slice(0, 6);
+    year: y,
+    tag: tags[i % tags.length],
+    title: s.slice(0, 10) + (s.length > 10 ? '…' : ''),
+    description: s
+  }));
 }
 events.forEach(e => { e.narratives = buildNarratives(e); });
 
-// ---- 历史脉络：共享人物 + 时间先后 ----
+// ---- 历史脉络 ----
 {
   const eventPersonMap = new Map();
   for (const e of events) {
@@ -320,9 +366,7 @@ events.forEach(e => { e.narratives = buildNarratives(e); });
       if (after) chain.push({ type: 'consequence', title: after, year: fmt(after) });
       if (sorted.length === 0) chain = [{ type: 'event', title: e.id, year: fmt(e.id) }];
     }
-    chain.forEach(c => {
-      c.title = events.find(x => x.id === c.title)?.name || c.title;
-    });
+    chain.forEach(c => { c.title = events.find(x => x.id === c.title)?.name || c.title; });
     e.chain = chain;
     if (e.chain.length === 0) e.chain = [{ type: 'event', title: e.name, year: fmt(e.id) }];
   }
@@ -351,26 +395,27 @@ events.forEach(e => { e.narratives = buildNarratives(e); });
 
 // ---- 关键词 ----
 const KC = { '时代印象': 'era', '历史概念': 'event', '政治改革': 'civilization', '历史事件': 'event', '政治理念': 'civilization', '外交制度': 'civilization', '人物': 'person', '人物故事': 'person', '历史典故': 'event', '思想文化': 'civilization', '政治格局': 'era', '战争': 'event', '制度文化': 'civilization', '科技发明': 'civilization' };
-const keywords = kw.map(r => ({ name: String(col(r, '关键词')), value: Number(col(r, '权重（100）')) || 50, category: KC[String(col(r, '类别'))] || 'era', desc: String(col(r, '关键词')) + '是战国时期的重要概念。' }));
+const keywords = kw.map(r => ({ name: String(col(r, '关键词')), value: Number(col(r, '权重（100）')) || 50, category: KC[String(col(r, '类别'))] || 'era', desc: String(col(r, '关键词')) + '是晋南北朝时期的重要概念。' }));
 require('./kw_patch.js').injectKeywords(keywords, DYN.name);
 
 // ---- 写文件 ----
 const out = { dynasty: DYN, persons, events, keywords, _meta: { imported_at: new Date().toISOString(), stats: { persons: persons.length, level1: persons.filter(p => p.level === 1).length, level2: persons.filter(p => p.level === 2).length, events: events.length, keywords: keywords.length } } };
-const target = path.join(dir, 'frontend/public/data/dynasty_203.json');
+const target = path.join(dir, 'frontend/public/data/dynasty_110.json');
 fs.writeFileSync(target, JSON.stringify(out, null, 2), 'utf-8');
 
-console.log('dynasty_203.json 生成完成');
+console.log('dynasty_110.json 生成完成');
 console.log('  人物: ' + persons.length + ' (一级 ' + persons.filter(p => p.level === 1).length + ', 二级 ' + persons.filter(p => p.level === 2).length + ')');
 console.log('  事件: ' + events.length);
 console.log('  关键词: ' + keywords.length);
+console.log('  二级分类覆盖: ' + persons.filter(p => p.level === 2).length + ' 人, 未覆盖默认类 ' + l2Persons.filter(p => p.category === DEFAULT_L2_CAT).length + ' 人');
 console.log('  事件有经过: ' + events.filter(e => e.narratives.length > 0).length + ', 有影响: ' + events.filter(e => e.impacts.length > 0).length + ', 有脉络: ' + events.filter(e => e.chain.length > 0).length);
-console.log('  事件有对手: ' + events.filter(e => e.person_groups.opponents.length > 0).length);
 console.log('  一级有称号: ' + l1Persons.filter(p => p.achievement).length + ', 有历史地位: ' + l1Persons.filter(p => p.historical_position).length + ', 有后世评价: ' + l1Persons.filter(p => p.later_quotes.length).length + ', 有影响力描述: ' + l1Persons.filter(p => p.impact_list.length).length);
 
-// ---- 后续处理（防止重新导入时覆盖已修复/已丰富的内容）----
-// ① fix_203_content.js：事件经过分阶段 + 一级人物主要贡献描述精简到 50 字左右
-console.log('\n--- 运行内容精修 fix_203_content.js ---');
-require('./fix_203_content.js');
-// ② enrich_203_relations.js：宏观时间线 / 推荐人物事件 / 二级引语 / 二级因缘际会
-console.log('\n--- 运行数据丰富 enrich_203_relations.js ---');
-require('./enrich_203_relations.js');
+if (fs.existsSync(path.join(__dirname, 'fix_110_content.js'))) {
+  console.log('\n--- 运行内容精修 fix_110_content.js ---');
+  require('./fix_110_content.js');
+}
+if (fs.existsSync(path.join(__dirname, 'enrich_110_relations.js'))) {
+  console.log('\n--- 运行数据丰富 enrich_110_relations.js ---');
+  require('./enrich_110_relations.js');
+}
