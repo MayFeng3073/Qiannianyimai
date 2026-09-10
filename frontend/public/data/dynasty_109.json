@@ -23472,10 +23472,6 @@
           {
             "name": "诸葛亮",
             "role": "领导"
-          },
-          {
-            "name": "陈群",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -23510,6 +23506,10 @@
           {
             "name": "张郃",
             "role": "参与"
+          },
+          {
+            "name": "陈群",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -26187,7 +26187,9 @@
           {
             "name": "陈群",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "华歆",
             "role": "支持"
@@ -26197,7 +26199,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -26347,15 +26348,16 @@
             "role": "完成"
           },
           {
-            "name": "曹丕",
-            "role": "支持"
-          },
-          {
             "name": "曹操",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "曹丕",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },
@@ -26481,13 +26483,14 @@
           {
             "name": "刘备",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "诸葛亮",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -26910,10 +26913,6 @@
           {
             "name": "司马懿",
             "role": "胜利方"
-          },
-          {
-            "name": "陈泰",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -26924,6 +26923,10 @@
           {
             "name": "司马昭",
             "role": "参与"
+          },
+          {
+            "name": "陈泰",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -27082,10 +27085,6 @@
           {
             "name": "司马懿",
             "role": "胜利方"
-          },
-          {
-            "name": "陈泰",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -27096,6 +27095,10 @@
           {
             "name": "司马昭",
             "role": "参与"
+          },
+          {
+            "name": "陈泰",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -27255,7 +27258,9 @@
           {
             "name": "孙权",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "孙鲁班",
             "role": "支持"
@@ -27269,7 +27274,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "孙鲁育",
@@ -28045,13 +28049,14 @@
           {
             "name": "司马师",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "司马孚",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -29458,13 +29463,13 @@
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E9%A9%AC%E9%92%A7%E7%BB%87%E7%BB%AB%E6%9C%BA%20traditional%20ink%20painting%20style&image_size=landscape_16_9",
       "one_sentence": "改进织绫机械并提高生产效率，推动传统纺织技术进步，对魏晋时期手工业发展具有积极作用",
       "person_groups": {
-        "leaders": [
+        "leaders": [],
+        "participants": [
           {
             "name": "曹叡",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -29742,23 +29747,24 @@
             "role": "推动"
           },
           {
-            "name": "刘禅",
-            "role": "支持"
-          },
-          {
             "name": "诸葛亮",
             "role": "推动"
           },
           {
             "name": "诸葛瑾",
             "role": "推动"
+          }
+        ],
+        "participants": [
+          {
+            "name": "刘禅",
+            "role": "支持"
           },
           {
             "name": "陆逊",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -30213,7 +30219,9 @@
           {
             "name": "曹操",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "曹丕",
             "role": "支持"
@@ -30227,7 +30235,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -30362,10 +30369,6 @@
           {
             "name": "诸葛亮",
             "role": "推动"
-          },
-          {
-            "name": "刘禅",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -30376,6 +30379,10 @@
           {
             "name": "李严",
             "role": "参与"
+          },
+          {
+            "name": "刘禅",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -30533,13 +30540,14 @@
           {
             "name": "诸葛亮",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "刘禅",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -30769,13 +30777,14 @@
           {
             "name": "诸葛亮",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "刘禅",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },

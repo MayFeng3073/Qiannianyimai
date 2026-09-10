@@ -7975,13 +7975,14 @@
           {
             "name": "隗状",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "周青臣",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -8141,7 +8142,9 @@
           {
             "name": "李斯",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "隗状",
             "role": "支持"
@@ -8151,7 +8154,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "王绾",
@@ -9199,10 +9201,6 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "秦始皇（嬴政）",
-            "role": "支持"
-          },
-          {
             "name": "徐福",
             "role": "领导"
           }
@@ -9219,6 +9217,10 @@
           {
             "name": "赵高",
             "role": "参与"
+          },
+          {
+            "name": "秦始皇（嬴政）",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -11721,15 +11723,16 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "秦二世（胡亥）",
-            "role": "支持"
-          },
-          {
             "name": "章邯",
             "role": "领导"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "秦二世（胡亥）",
+            "role": "支持"
+          }
+        ],
         "opponents": [
           {
             "name": "陈胜",

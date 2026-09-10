@@ -13208,7 +13208,9 @@
           {
             "name": "李悝",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "魏文侯",
             "role": "支持"
@@ -13218,7 +13220,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -13340,13 +13341,14 @@
           {
             "name": "吴起",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "楚悼王",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -13466,13 +13468,14 @@
           {
             "name": "申不害",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "齐威王",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -13699,13 +13702,14 @@
           {
             "name": "商鞅",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "秦孝公",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "甘龙",
@@ -13858,13 +13862,14 @@
           {
             "name": "商鞅",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "秦孝公",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -14908,13 +14913,14 @@
           {
             "name": "白起",
             "role": "胜利方"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "秦昭襄王",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "公孙喜",
@@ -15328,13 +15334,14 @@
           {
             "name": "白起",
             "role": "胜利方"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "秦昭襄王",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "楚襄王",
@@ -15457,16 +15464,16 @@
           {
             "name": "白起",
             "role": "胜利方"
-          },
-          {
-            "name": "秦昭襄王",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "廉颇",
             "role": "参与"
+          },
+          {
+            "name": "秦昭襄王",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -15772,16 +15779,16 @@
           {
             "name": "信陵君",
             "role": "领导"
-          },
-          {
-            "name": "平原君赵胜",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "朱亥",
             "role": "参与"
+          },
+          {
+            "name": "平原君赵胜",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -16160,10 +16167,6 @@
             "role": "领导"
           },
           {
-            "name": "平原君赵胜",
-            "role": "支持"
-          },
-          {
             "name": "苏代",
             "role": "推动"
           }
@@ -16172,6 +16175,10 @@
           {
             "name": "毛遂",
             "role": "参与"
+          },
+          {
+            "name": "平原君赵胜",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -16546,13 +16553,14 @@
           {
             "name": "李牧",
             "role": "胜利方"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "赵王迁",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "王翦",
@@ -16680,10 +16688,6 @@
           {
             "name": "燕太子丹",
             "role": "领导"
-          },
-          {
-            "name": "樊於期",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -16698,6 +16702,10 @@
           {
             "name": "夏无且",
             "role": "见证"
+          },
+          {
+            "name": "樊於期",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -17890,13 +17898,14 @@
           {
             "name": "郑国",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "秦王政",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -18008,15 +18017,16 @@
             "role": "推动"
           },
           {
-            "name": "秦孝公",
-            "role": "支持"
-          },
-          {
             "name": "李冰",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "秦孝公",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },

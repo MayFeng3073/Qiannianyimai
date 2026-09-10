@@ -25316,20 +25316,8 @@
             "role": "推动"
           },
           {
-            "name": "李建成",
-            "role": "支持"
-          },
-          {
-            "name": "李元吉",
-            "role": "支持"
-          },
-          {
             "name": "刘文静",
             "role": "推动"
-          },
-          {
-            "name": "裴寂",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -25340,6 +25328,18 @@
           {
             "name": "李孝恭",
             "role": "参与"
+          },
+          {
+            "name": "李建成",
+            "role": "支持"
+          },
+          {
+            "name": "李元吉",
+            "role": "支持"
+          },
+          {
+            "name": "裴寂",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -25675,6 +25675,12 @@
             "role": "胜利方"
           },
           {
+            "name": "尉迟敬德",
+            "role": "推动"
+          }
+        ],
+        "participants": [
+          {
             "name": "长孙无忌",
             "role": "支持"
           },
@@ -25687,15 +25693,10 @@
             "role": "支持"
           },
           {
-            "name": "尉迟敬德",
-            "role": "推动"
-          },
-          {
             "name": "秦琼",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "李建成",
@@ -26028,15 +26029,16 @@
             "role": "推动"
           },
           {
-            "name": "李靖",
-            "role": "支持"
-          },
-          {
             "name": "马周",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "李靖",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },
@@ -26197,13 +26199,14 @@
             "name": "文成公主",
             "role": "完成",
             "cross_dynasty": "待接入"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "长孙无忌",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -26319,10 +26322,6 @@
             "role": "领导"
           },
           {
-            "name": "李靖",
-            "role": "支持"
-          },
-          {
             "name": "李勣",
             "role": "领导"
           },
@@ -26339,6 +26338,10 @@
           {
             "name": "李勣",
             "role": "参与"
+          },
+          {
+            "name": "李靖",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -26658,7 +26661,9 @@
           {
             "name": "褚遂良",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "狄仁杰",
             "role": "支持"
@@ -26668,7 +26673,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -26822,17 +26826,8 @@
             "role": "领导"
           },
           {
-            "name": "上官婉儿",
-            "role": "支持"
-          },
-          {
             "name": "武承嗣",
             "role": "推动",
-            "cross_dynasty": "待接入"
-          },
-          {
-            "name": "李昭德",
-            "role": "支持",
             "cross_dynasty": "待接入"
           }
         ],
@@ -26840,6 +26835,15 @@
           {
             "name": "李治",
             "role": "见证"
+          },
+          {
+            "name": "上官婉儿",
+            "role": "支持"
+          },
+          {
+            "name": "李昭德",
+            "role": "支持",
+            "cross_dynasty": "待接入"
           }
         ],
         "opponents": [
@@ -27139,20 +27143,21 @@
             "role": "推动"
           },
           {
+            "name": "张九龄",
+            "role": "推动"
+          }
+        ],
+        "participants": [
+          {
             "name": "张说",
             "role": "支持",
             "cross_dynasty": "待接入"
-          },
-          {
-            "name": "张九龄",
-            "role": "推动"
           },
           {
             "name": "王忠嗣",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -27312,14 +27317,15 @@
           {
             "name": "张九龄",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "张说",
             "role": "支持",
             "cross_dynasty": "待接入"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -27638,10 +27644,6 @@
             "cross_dynasty": "待接入"
           },
           {
-            "name": "颜真卿",
-            "role": "支持"
-          },
-          {
             "name": "唐肃宗",
             "role": "领导",
             "cross_dynasty": "待接入"
@@ -27671,6 +27673,10 @@
           {
             "name": "李嗣业",
             "role": "参与"
+          },
+          {
+            "name": "颜真卿",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -28665,13 +28671,14 @@
             "name": "杨炎",
             "role": "推动",
             "cross_dynasty": "待接入"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "陆贽",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -28953,10 +28960,6 @@
           {
             "name": "朱泚",
             "role": "推动"
-          },
-          {
-            "name": "陆贽",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -28971,6 +28974,10 @@
           {
             "name": "李怀光",
             "role": "参与"
+          },
+          {
+            "name": "陆贽",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -29298,7 +29305,9 @@
           {
             "name": "李晟",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "唐德宗",
             "role": "支持"
@@ -29308,7 +29317,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "李怀光",
@@ -29627,19 +29635,20 @@
             "role": "推动"
           },
           {
-            "name": "李愬",
-            "role": "支持"
-          },
-          {
             "name": "武元衡",
             "role": "推动"
+          }
+        ],
+        "participants": [
+          {
+            "name": "李愬",
+            "role": "支持"
           },
           {
             "name": "李德裕",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -29788,17 +29797,17 @@
           {
             "name": "李德裕",
             "role": "推动"
-          },
-          {
-            "name": "李绅",
-            "role": "支持",
-            "cross_dynasty": "待接入"
           }
         ],
         "participants": [
           {
             "name": "韩愈",
             "role": "影响"
+          },
+          {
+            "name": "李绅",
+            "role": "支持",
+            "cross_dynasty": "待接入"
           }
         ],
         "opponents": [],
@@ -31010,7 +31019,12 @@
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E9%81%A3%E5%94%90%E4%BD%BF%E6%9D%A5%E5%8D%8E%20traditional%20ink%20painting%20style&image_size=landscape_16_9",
       "one_sentence": "遣唐使推动中日制度与文化交流，使唐朝文明深刻影响日本古代国家建设",
       "person_groups": {
-        "leaders": [
+        "leaders": [],
+        "participants": [
+          {
+            "name": "鉴真",
+            "role": "参与"
+          },
           {
             "name": "李世民",
             "role": "支持"
@@ -31022,12 +31036,6 @@
           {
             "name": "李隆基",
             "role": "支持"
-          }
-        ],
-        "participants": [
-          {
-            "name": "鉴真",
-            "role": "参与"
           }
         ],
         "opponents": [],
@@ -31151,13 +31159,14 @@
           {
             "name": "鉴真",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "李隆基",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -31269,7 +31278,9 @@
           {
             "name": "玄奘",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "李世民",
             "role": "支持"
@@ -31279,7 +31290,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -31406,13 +31416,14 @@
           {
             "name": "义净",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "武则天",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -31510,13 +31521,13 @@
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E5%A4%A7%E7%A7%A6%E6%99%AF%E6%95%99%E5%85%A5%E5%8D%8E%20traditional%20ink%20painting%20style&image_size=landscape_16_9",
       "one_sentence": "景教入华体现唐代开放的宗教环境，展示中西文明在长安等城市的深度交流",
       "person_groups": {
-        "leaders": [
+        "leaders": [],
+        "participants": [
           {
             "name": "李世民",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -31616,15 +31627,16 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "李隆基",
-            "role": "支持"
-          },
-          {
             "name": "僧一行",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "李隆基",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },
@@ -32403,13 +32415,13 @@
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E6%9B%B2%E8%BE%95%E7%8A%81%E6%8E%A8%E5%B9%BF%20traditional%20ink%20painting%20style&image_size=landscape_16_9",
       "one_sentence": "曲辕犁推广提高农业耕作效率，推动唐代南方农业发展和农业技术进步",
       "person_groups": {
-        "leaders": [
+        "leaders": [],
+        "participants": [
           {
             "name": "李隆基",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -32506,13 +32518,13 @@
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E7%AD%92%E8%BD%A6%E6%8E%A8%E5%B9%BF%20traditional%20ink%20painting%20style&image_size=landscape_16_9",
       "one_sentence": "筒车推广提高农业灌溉效率，体现唐代水利机械技术对农业生产的促进作用",
       "person_groups": {
-        "leaders": [
+        "leaders": [],
+        "participants": [
           {
             "name": "李隆基",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -33544,13 +33556,13 @@
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E6%95%A6%E7%85%8C%E6%96%87%E5%8C%96%E7%B9%81%E8%8D%A3%20traditional%20ink%20painting%20style&image_size=landscape_16_9",
       "one_sentence": "敦煌文化集中体现唐代多元文明交流，是研究丝绸之路和唐代社会的重要文化遗产",
       "person_groups": {
-        "leaders": [
+        "leaders": [],
+        "participants": [
           {
             "name": "李隆基",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },

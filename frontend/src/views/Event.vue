@@ -822,7 +822,7 @@ watch(impacts, () => {
         </div>
 
         <div class="grid grid-cols-4 gap-6">
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="leaders.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#C34739]"></span>
               <h3 class="text-sm text-[#C34739] font-medium">领导者</h3>
@@ -847,7 +847,7 @@ watch(impacts, () => {
             </div>
           </div>
 
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="participants.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#355C5A]"></span>
               <h3 class="text-sm text-[#355C5A] font-medium">参与者</h3>
@@ -872,7 +872,7 @@ watch(impacts, () => {
             </div>
           </div>
 
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="opponents.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#8B5A2B]"></span>
               <h3 class="text-sm text-[#8B5A2B] font-medium">对手 / 对抗方</h3>
@@ -897,7 +897,7 @@ watch(impacts, () => {
             </div>
           </div>
 
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="affected.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#5C7A5E]"></span>
               <h3 class="text-sm text-[#5C7A5E] font-medium">受影响人物</h3>

@@ -13873,6 +13873,16 @@
           {
             "name": "杨坚",
             "role": "完成"
+          }
+        ],
+        "participants": [
+          {
+            "name": "杨勇",
+            "role": "参与"
+          },
+          {
+            "name": "杨广",
+            "role": "参与"
           },
           {
             "name": "独孤伽罗",
@@ -13885,16 +13895,6 @@
           {
             "name": "杨素",
             "role": "支持"
-          }
-        ],
-        "participants": [
-          {
-            "name": "杨勇",
-            "role": "参与"
-          },
-          {
-            "name": "杨广",
-            "role": "参与"
           }
         ],
         "opponents": [],
@@ -14055,15 +14055,16 @@
             "role": "推动"
           },
           {
-            "name": "杨素",
-            "role": "支持"
-          },
-          {
             "name": "李德林",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "杨素",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },
@@ -14401,10 +14402,6 @@
             "role": "领导"
           },
           {
-            "name": "独孤伽罗",
-            "role": "支持"
-          },
-          {
             "name": "高颎",
             "role": "推动"
           },
@@ -14417,15 +14414,20 @@
             "role": "推动"
           },
           {
-            "name": "杨素",
-            "role": "支持"
-          },
-          {
             "name": "李德林",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "独孤伽罗",
+            "role": "支持"
+          },
+          {
+            "name": "杨素",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },
@@ -14742,19 +14744,20 @@
             "role": "推动"
           },
           {
-            "name": "苏威",
-            "role": "支持"
-          },
-          {
             "name": "李德林",
             "role": "推动"
+          }
+        ],
+        "participants": [
+          {
+            "name": "苏威",
+            "role": "支持"
           },
           {
             "name": "杨素",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -14913,16 +14916,16 @@
           {
             "name": "杨广",
             "role": "推动"
-          },
-          {
-            "name": "牛弘",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "刘焯",
             "role": "参与"
+          },
+          {
+            "name": "牛弘",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -15089,16 +15092,16 @@
           {
             "name": "苏威",
             "role": "推动"
-          },
-          {
-            "name": "杨素",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "牛弘",
             "role": "参与"
+          },
+          {
+            "name": "杨素",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -15251,7 +15254,9 @@
           {
             "name": "高颎",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "苏威",
             "role": "支持"
@@ -15261,7 +15266,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -15413,16 +15417,16 @@
           {
             "name": "高颎",
             "role": "推动"
-          },
-          {
-            "name": "牛弘",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "宇文述",
             "role": "参与"
+          },
+          {
+            "name": "牛弘",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -15757,14 +15761,6 @@
           {
             "name": "杨广",
             "role": "完成"
-          },
-          {
-            "name": "独孤伽罗",
-            "role": "支持"
-          },
-          {
-            "name": "杨素",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -15775,6 +15771,14 @@
           {
             "name": "杨勇",
             "role": "继承"
+          },
+          {
+            "name": "独孤伽罗",
+            "role": "支持"
+          },
+          {
+            "name": "杨素",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -15943,16 +15947,16 @@
           {
             "name": "裴矩",
             "role": "推动"
-          },
-          {
-            "name": "杨素",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "张衡",
             "role": "参与"
+          },
+          {
+            "name": "杨素",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -16119,14 +16123,6 @@
           {
             "name": "宇文恺",
             "role": "推动"
-          },
-          {
-            "name": "裴矩",
-            "role": "支持"
-          },
-          {
-            "name": "牛弘",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -16137,6 +16133,14 @@
           {
             "name": "宇文述",
             "role": "参与"
+          },
+          {
+            "name": "裴矩",
+            "role": "支持"
+          },
+          {
+            "name": "牛弘",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -16311,16 +16315,16 @@
           {
             "name": "杨义臣",
             "role": "胜利方"
-          },
-          {
-            "name": "长孙晟",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "周法尚",
             "role": "参与"
+          },
+          {
+            "name": "长孙晟",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -17745,10 +17749,6 @@
           {
             "name": "李密",
             "role": "推动"
-          },
-          {
-            "name": "裴仁基",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -17759,6 +17759,10 @@
           {
             "name": "王伯当",
             "role": "参与"
+          },
+          {
+            "name": "裴仁基",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -18793,14 +18797,15 @@
             "name": "刘文静",
             "role": "推动",
             "cross_dynasty": "唐·待接入"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "裴寂",
             "role": "支持",
             "cross_dynasty": "唐·待接入"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "刘武周",
@@ -18951,16 +18956,16 @@
           {
             "name": "王世充",
             "role": "领导"
-          },
-          {
-            "name": "杨侗",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "窦建德",
             "role": "盟友"
+          },
+          {
+            "name": "杨侗",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -19119,11 +19124,6 @@
           {
             "name": "王世充",
             "role": "胜利方"
-          },
-          {
-            "name": "李渊",
-            "role": "支持",
-            "cross_dynasty": "唐·待接入"
           }
         ],
         "participants": [
@@ -19134,6 +19134,11 @@
           {
             "name": "裴仁基",
             "role": "参与"
+          },
+          {
+            "name": "李渊",
+            "role": "支持",
+            "cross_dynasty": "唐·待接入"
           }
         ],
         "opponents": [
@@ -19293,11 +19298,6 @@
             "role": "完成"
           },
           {
-            "name": "刘黑闼",
-            "role": "支持",
-            "cross_dynasty": "唐·待接入"
-          },
-          {
             "name": "范愿",
             "role": "推动",
             "cross_dynasty": "唐·待接入"
@@ -19313,7 +19313,13 @@
             "cross_dynasty": "唐·待接入"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "刘黑闼",
+            "role": "支持",
+            "cross_dynasty": "唐·待接入"
+          }
+        ],
         "opponents": [
           {
             "name": "李密",
@@ -19640,11 +19646,6 @@
             "name": "刘文静",
             "role": "推动",
             "cross_dynasty": "唐·待接入"
-          },
-          {
-            "name": "裴寂",
-            "role": "支持",
-            "cross_dynasty": "唐·待接入"
           }
         ],
         "participants": [
@@ -19659,6 +19660,11 @@
           {
             "name": "萧铣",
             "role": "参与"
+          },
+          {
+            "name": "裴寂",
+            "role": "支持",
+            "cross_dynasty": "唐·待接入"
           }
         ],
         "opponents": [

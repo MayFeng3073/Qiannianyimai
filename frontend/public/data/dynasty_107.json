@@ -20566,20 +20566,8 @@
             "role": "领导"
           },
           {
-            "name": "萧何",
-            "role": "支持"
-          },
-          {
             "name": "韩信",
             "role": "领导"
-          },
-          {
-            "name": "彭越",
-            "role": "支持"
-          },
-          {
-            "name": "英布",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -20606,6 +20594,18 @@
           {
             "name": "灌婴",
             "role": "参与"
+          },
+          {
+            "name": "萧何",
+            "role": "支持"
+          },
+          {
+            "name": "彭越",
+            "role": "支持"
+          },
+          {
+            "name": "英布",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -20759,14 +20759,6 @@
           {
             "name": "刘邦（汉高祖）",
             "role": "完成"
-          },
-          {
-            "name": "张良",
-            "role": "支持"
-          },
-          {
-            "name": "萧何",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -20797,6 +20789,14 @@
           {
             "name": "夏侯婴",
             "role": "参与"
+          },
+          {
+            "name": "张良",
+            "role": "支持"
+          },
+          {
+            "name": "萧何",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -20942,13 +20942,14 @@
           {
             "name": "刘邦（汉高祖）",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "萧何",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -21269,14 +21270,6 @@
             "role": "推动"
           },
           {
-            "name": "吕雉（吕后）",
-            "role": "支持"
-          },
-          {
-            "name": "冒顿单于",
-            "role": "支持"
-          },
-          {
             "name": "汉文帝（刘恒）",
             "role": "推动"
           },
@@ -21289,6 +21282,14 @@
           {
             "name": "王昭君",
             "role": "参与"
+          },
+          {
+            "name": "吕雉（吕后）",
+            "role": "支持"
+          },
+          {
+            "name": "冒顿单于",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -21751,10 +21752,6 @@
             "role": "领导"
           },
           {
-            "name": "袁盎",
-            "role": "支持"
-          },
-          {
             "name": "晁错",
             "role": "推动"
           },
@@ -21763,7 +21760,12 @@
             "role": "领导"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "袁盎",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": [
           {
@@ -22587,13 +22589,14 @@
           {
             "name": "霍去病",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "张骞",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -22713,13 +22716,14 @@
           {
             "name": "董仲舒",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "公孙弘",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -22854,16 +22858,16 @@
           {
             "name": "董仲舒",
             "role": "推动"
-          },
-          {
-            "name": "公孙弘",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "儿宽",
             "role": "参与"
+          },
+          {
+            "name": "公孙弘",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -23149,16 +23153,16 @@
           {
             "name": "汉武帝（刘彻）",
             "role": "推动"
-          },
-          {
-            "name": "卜式",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "桑弘羊",
             "role": "参与"
+          },
+          {
+            "name": "卜式",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -23286,13 +23290,14 @@
           {
             "name": "唐蒙",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "司马相如",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -23732,7 +23737,9 @@
           {
             "name": "汉武帝（刘彻）",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "田千秋",
             "role": "支持"
@@ -23742,7 +23749,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -23859,7 +23865,9 @@
           {
             "name": "霍光",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "金日磾",
             "role": "支持"
@@ -23869,7 +23877,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -24019,13 +24026,14 @@
           {
             "name": "郑吉",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "傅介子",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -24258,13 +24266,14 @@
           {
             "name": "陈汤",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "郑吉",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -24573,13 +24582,14 @@
           {
             "name": "王莽",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "王政君",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "刘向",
@@ -24716,13 +24726,14 @@
           {
             "name": "王莽",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "刘歆",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -25505,7 +25516,9 @@
           {
             "name": "光武帝（刘秀）",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "邓禹",
             "role": "支持"
@@ -25535,7 +25548,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -25881,7 +25893,9 @@
           {
             "name": "光武帝（刘秀）",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "邓禹",
             "role": "支持"
@@ -25899,7 +25913,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -26040,13 +26053,14 @@
           {
             "name": "光武帝（刘秀）",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "邓禹",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -26161,22 +26175,22 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "汉明帝（刘庄）",
-            "role": "支持"
-          },
-          {
             "name": "班超",
             "role": "领导"
-          },
-          {
-            "name": "邓骘",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "甘英",
             "role": "参与"
+          },
+          {
+            "name": "汉明帝（刘庄）",
+            "role": "支持"
+          },
+          {
+            "name": "邓骘",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -26540,13 +26554,14 @@
           {
             "name": "甘英",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "汉和帝（刘肇）",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -26660,15 +26675,16 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "汉明帝（刘庄）",
-            "role": "支持"
-          },
-          {
             "name": "楚王刘英",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "汉明帝（刘庄）",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },
@@ -27016,13 +27032,14 @@
           {
             "name": "蔡伦",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "汉和帝（刘肇）",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -27123,13 +27140,14 @@
           {
             "name": "张衡",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "汉顺帝",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -27321,13 +27339,14 @@
           {
             "name": "汉灵帝（刘宏）",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "窦武",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "李膺",

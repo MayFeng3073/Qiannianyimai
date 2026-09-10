@@ -24887,16 +24887,16 @@
           {
             "name": "张宾",
             "role": "推动"
-          },
-          {
-            "name": "程遐",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "石虎",
             "role": "参与"
+          },
+          {
+            "name": "程遐",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -25053,10 +25053,6 @@
           {
             "name": "陶侃",
             "role": "胜利方"
-          },
-          {
-            "name": "庾冰",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -25067,6 +25063,10 @@
           {
             "name": "郗鉴",
             "role": "参与"
+          },
+          {
+            "name": "庾冰",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -25532,13 +25532,14 @@
           {
             "name": "王猛",
             "role": "领导"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "慕容垂",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "慕容儁",
@@ -25891,10 +25892,6 @@
           {
             "name": "刘裕",
             "role": "胜利方"
-          },
-          {
-            "name": "刘穆之",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -25909,6 +25906,10 @@
           {
             "name": "何无忌",
             "role": "参与"
+          },
+          {
+            "name": "刘穆之",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -26233,6 +26234,12 @@
           {
             "name": "刘裕",
             "role": "领导"
+          }
+        ],
+        "participants": [
+          {
+            "name": "檀道济",
+            "role": "参与"
           },
           {
             "name": "刘毅",
@@ -26241,12 +26248,6 @@
           {
             "name": "王弘",
             "role": "支持"
-          }
-        ],
-        "participants": [
-          {
-            "name": "檀道济",
-            "role": "参与"
           }
         ],
         "opponents": [],
@@ -26396,16 +26397,16 @@
           {
             "name": "刘穆之",
             "role": "推动"
-          },
-          {
-            "name": "傅亮",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "檀道济",
             "role": "参与"
+          },
+          {
+            "name": "傅亮",
+            "role": "支持"
           }
         ],
         "opponents": [
@@ -26743,10 +26744,6 @@
           {
             "name": "拓跋焘",
             "role": "胜利方"
-          },
-          {
-            "name": "刘义康",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -26757,6 +26754,10 @@
           {
             "name": "刘义真",
             "role": "参与"
+          },
+          {
+            "name": "刘义康",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -27068,10 +27069,6 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "元勰",
-            "role": "支持"
-          },
-          {
             "name": "尔朱荣",
             "role": "领导"
           }
@@ -27080,6 +27077,10 @@
           {
             "name": "高欢",
             "role": "参与"
+          },
+          {
+            "name": "元勰",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -27518,13 +27519,14 @@
           {
             "name": "韦孝宽",
             "role": "胜利方"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "宇文泰",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "高欢",
@@ -27671,10 +27673,6 @@
             "role": "领导"
           },
           {
-            "name": "萧正德",
-            "role": "支持"
-          },
-          {
             "name": "王僧辩",
             "role": "胜利方"
           }
@@ -27683,6 +27681,10 @@
           {
             "name": "陈霸先",
             "role": "参与"
+          },
+          {
+            "name": "萧正德",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -27857,13 +27859,14 @@
           {
             "name": "宇文泰",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "王僧辩",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "萧绎",
@@ -28164,7 +28167,9 @@
           {
             "name": "贾充",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "张华",
             "role": "支持"
@@ -28174,7 +28179,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -28303,7 +28307,9 @@
           {
             "name": "张华",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "杜预",
             "role": "支持"
@@ -28313,7 +28319,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -28452,10 +28457,6 @@
           {
             "name": "王导",
             "role": "推动"
-          },
-          {
-            "name": "王敦",
-            "role": "支持"
           }
         ],
         "participants": [
@@ -28466,6 +28467,10 @@
           {
             "name": "陶侃",
             "role": "参与"
+          },
+          {
+            "name": "王敦",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -28619,7 +28624,9 @@
           {
             "name": "王导",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "王敦",
             "role": "支持"
@@ -28629,7 +28636,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -28781,10 +28787,6 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "司马睿",
-            "role": "支持"
-          },
-          {
             "name": "王导",
             "role": "推动"
           },
@@ -28801,6 +28803,10 @@
           {
             "name": "谢安",
             "role": "参与"
+          },
+          {
+            "name": "司马睿",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -28949,13 +28955,14 @@
           {
             "name": "桓温",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "桓冲",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "谢安",
@@ -29115,7 +29122,9 @@
           {
             "name": "刘穆之",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "傅亮",
             "role": "支持"
@@ -29129,7 +29138,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -29282,6 +29290,12 @@
           {
             "name": "刘裕",
             "role": "完成"
+          }
+        ],
+        "participants": [
+          {
+            "name": "檀道济",
+            "role": "参与"
           },
           {
             "name": "傅亮",
@@ -29290,12 +29304,6 @@
           {
             "name": "王弘",
             "role": "支持"
-          }
-        ],
-        "participants": [
-          {
-            "name": "檀道济",
-            "role": "参与"
           }
         ],
         "opponents": [],
@@ -29442,6 +29450,12 @@
           {
             "name": "拓跋珪",
             "role": "完成"
+          }
+        ],
+        "participants": [
+          {
+            "name": "奚斤",
+            "role": "参与"
           },
           {
             "name": "拓跋嗣",
@@ -29450,12 +29464,6 @@
           {
             "name": "长孙嵩",
             "role": "支持"
-          }
-        ],
-        "participants": [
-          {
-            "name": "奚斤",
-            "role": "参与"
           }
         ],
         "opponents": [],
@@ -29599,7 +29607,9 @@
           {
             "name": "李冲",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "元恪",
             "role": "支持"
@@ -29609,7 +29619,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -29726,16 +29735,16 @@
           {
             "name": "李冲",
             "role": "推动"
-          },
-          {
-            "name": "元恪",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "王肃",
             "role": "参与"
+          },
+          {
+            "name": "元恪",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -29859,16 +29868,16 @@
           {
             "name": "李冲",
             "role": "推动"
-          },
-          {
-            "name": "王肃",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "元恪",
             "role": "参与"
+          },
+          {
+            "name": "王肃",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -30011,7 +30020,9 @@
           {
             "name": "冯太后",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "李冲",
             "role": "支持"
@@ -30021,7 +30032,6 @@
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -30162,13 +30172,14 @@
           {
             "name": "宇文泰",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "高澄",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -30301,13 +30312,14 @@
           {
             "name": "高欢",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "高澄",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [
           {
             "name": "元宝炬",
@@ -30429,16 +30441,16 @@
           {
             "name": "元宝炬",
             "role": "完成"
-          },
-          {
-            "name": "独孤信",
-            "role": "支持"
           }
         ],
         "participants": [
           {
             "name": "韦孝宽",
             "role": "参与"
+          },
+          {
+            "name": "独孤信",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -30560,13 +30572,14 @@
           {
             "name": "杨坚",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "高颎",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
@@ -31332,13 +31345,14 @@
           {
             "name": "法显",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "慧远",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -32070,16 +32084,15 @@
       "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20event%20%E3%80%8A%E4%B8%96%E8%AF%B4%E6%96%B0%E8%AF%AD%E3%80%8B%E6%88%90%E4%B9%A6%20traditional%20ink%20painting%20style&image_size=landscape_16_9",
       "one_sentence": "《世说新语》保存大量魏晋人物轶事，成为研究六朝社会文化和士人精神的重要文献",
       "person_groups": {
-        "leaders": [
-          {
-            "name": "刘义隆",
-            "role": "支持"
-          }
-        ],
+        "leaders": [],
         "participants": [
           {
             "name": "王戎",
             "role": "见证"
+          },
+          {
+            "name": "刘义隆",
+            "role": "支持"
           }
         ],
         "opponents": [],
@@ -32421,13 +32434,14 @@
           {
             "name": "拓跋宏",
             "role": "推动"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "冯太后",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -32881,15 +32895,16 @@
             "role": "推动"
           },
           {
-            "name": "冯太后",
-            "role": "支持"
-          },
-          {
             "name": "元恪",
             "role": "推动"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "冯太后",
+            "role": "支持"
+          }
+        ],
         "opponents": [],
         "affected": []
       },
@@ -33288,13 +33303,14 @@
           {
             "name": "祖冲之",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "沈约",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -33671,13 +33687,14 @@
           {
             "name": "法显",
             "role": "完成"
-          },
+          }
+        ],
+        "participants": [
           {
             "name": "慧远",
             "role": "支持"
           }
         ],
-        "participants": [],
         "opponents": [],
         "affected": [
           {
