@@ -910,6 +910,21 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '开禧北伐', year: 1206, value: 5, tag: '功亏一篑' },
     { name: '崖山海战', year: 1279, value: 1.5, tag: '宋室终结' }
   ],
+  '宋': [
+    { name: '陈桥兵变', year: 960, value: 6, tag: '黄袍加身' },
+    { name: '杯酒释兵', year: 961, value: 7, tag: '强干弱枝' },
+    { name: '先南后北', year: 975, value: 8, tag: '初定天下' },
+    { name: '澶渊之盟', year: 1005, value: 8, tag: '宋辽和议' },
+    { name: '庆历新政', year: 1043, value: 8.5, tag: '范公改革' },
+    { name: '王安石变', year: 1070, value: 9.5, tag: '熙宁立新' },
+    { name: '元祐更化', year: 1086, value: 6.5, tag: '新旧党争' },
+    { name: '靖康之变', year: 1127, value: 2, tag: '北宋灭亡' },
+    { name: '高宗南渡', year: 1130, value: 5, tag: '南宋肇建' },
+    { name: '绍兴和议', year: 1141, value: 6, tag: '宋金对峙' },
+    { name: '乾淳之治', year: 1175, value: 8, tag: '南宋中兴' },
+    { name: '端平入洛', year: 1234, value: 5.5, tag: '收复京洛' },
+    { name: '崖山海战', year: 1279, value: 1.5, tag: '宋室终结' }
+  ],
   '明朝': [
     { name: '洪武建明', year: 1368, value: 8, tag: '朱元璋立' },
     { name: '胡惟庸案', year: 1380, value: 6.5, tag: '废相集权' },

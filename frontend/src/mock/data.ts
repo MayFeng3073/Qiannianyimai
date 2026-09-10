@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
@@ -381,6 +381,19 @@ export const dynasties: Dynasty[] = [
   duration: '约289年',
   representative_buildings: ["大明宫","大雁塔","含元殿","洛阳紫微城"],
   characteristics: {"politics":88,"culture":96,"military":90,"technology":88,"openness":95}
+},
+{
+  id: 113,
+  name: '宋',
+  english_name: 'Song Dynasty',
+  start_year: 960,
+  end_year: 1279,
+  summary: '公元960年赵匡胤陈桥兵变代周建宋，定都汴京，结束五代十国分裂。宋初杯酒释兵权、重文轻武，经济文化空前繁荣，活字印刷、火药、罗盘等科技成就斐然。靖康之变后赵构南渡建南宋，偏安江南，与金、蒙古长期对峙。岳飞抗金、崖山殉国悲壮沉痛，1279年南宋亡。两宋文化昌盛、艺术精绝，是中国古代文明高度发展的黄金时代，对世界历史影响深远。',
+  capital: '汴京（东京）、临安（杭州）',
+  population: '约一亿（鼎盛）',
+  duration: '约319年',
+  representative_buildings: ["开封铁塔","艮岳御苑","临安皇城","雷峰塔"],
+  characteristics: {"politics":82,"culture":96,"military":80,"technology":92,"openness":88}
 },
 ]
 
