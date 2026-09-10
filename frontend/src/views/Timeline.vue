@@ -27,7 +27,7 @@ const DYNASTY_NODES: DynastyNode[] = [
   { id: 107, name: '汉',               display: '汉',       start_year: -202,  end_year:  220,  era: '大汉雄风，丝路西通', available: true  },
   { id: 109, name: '三国',             display: '三国',     start_year:  220,  end_year:  280,  era: '群雄逐鹿，三足鼎立', available: true  },
   { id: 110, name: '晋南北朝',         display: '晋南北朝', start_year:  265,  end_year:  589,  era: '衣冠南渡，民族融合', available: true  },
-  { id: 111, name: '隋',               display: '隋',       start_year:  581,  end_year:  618,  era: '南北重归，运河千里', available: false },
+  { id: 111, name: '隋',               display: '隋',       start_year:  581,  end_year:  618,  era: '南北重归，运河千里', available: true  },
   { id: 112, name: '唐',               display: '唐',       start_year:  618,  end_year:  907,  era: '盛世风华，万国来朝', available: true  },
   { id: 113, name: '宋（北宋+南宋）',  display: '宋',       start_year:  960,  end_year: 1279,  era: '文化造极，雅韵千载', available: true  },
   { id: 114, name: '元',               display: '元',       start_year: 1271,  end_year: 1368,  era: '铁骑纵横，版图空前', available: false },

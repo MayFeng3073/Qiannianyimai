@@ -16,9 +16,14 @@ const wordCloudRef = ref<HTMLElement | null>(null)
 const occupationChartRef = ref<HTMLElement | null>(null)
 const eventBarChartRef = ref<HTMLElement | null>(null)
 
+// 词云容器实测尺寸（px）：使碰撞检测与实际渲染使用同一坐标系，杜绝比例失配导致的重叠/截断
+const cloudBoxW = ref(980)
+const cloudBoxH = ref(420)
+
 
 let occupationChart: echarts.ECharts | null = null
 let eventBarChart: echarts.ECharts | null = null
+let wordCloudResizeObserver: ResizeObserver | null = null
 
 const dynastyId = computed(() => {
   const id = Number(route.params.id)
@@ -440,17 +445,31 @@ interface PlacedBox {
   h: number    // 半高  (%)
 }
 
-// AABB 相交检测（大幅增加间隙，确保字间有充足留白）
-const aabbOverlap = (a: PlacedBox, b: PlacedBox, pad = 8): boolean => {
+// AABB 相交检测（分轴留白，水平/垂直使用不同 %，保证字间有舒适留白）
+const aabbOverlap = (a: PlacedBox, b: PlacedBox, padX = PAD_X, padY = PAD_Y): boolean => {
   return (
-    Math.abs(a.cx - b.cx) < a.w + b.w + pad &&
-    Math.abs(a.cy - b.cy) < a.h + b.h + pad
+    Math.abs(a.cx - b.cx) < a.w + b.w + padX &&
+    Math.abs(a.cy - b.cy) < a.h + b.h + padY
   )
 }
 
-// 容器基准（适配 420px 高度，与右卡五维评分等高）
-const BASE_W_PX = 980
-const BASE_H_PX = 420
+// 计算某词专属可行边界（%）：把「半宽/半高 + 留白 + 边距」都钳制在 0~100 内，
+// 中心点落在此区间即保证整词完整、不越界、不截断
+const boxBound = (box: { wPct: number; hPct: number }): { xMin: number; xMax: number; yMin: number; yMax: number } => {
+  const MARGIN = 0.6
+  const xMin = Math.max(0, box.wPct + PAD_X + MARGIN)
+  const xMax = Math.min(100, 100 - box.wPct - PAD_X - MARGIN)
+  const yMin = Math.max(0, box.hPct + PAD_Y + MARGIN)
+  const yMax = Math.min(100, 100 - box.hPct - PAD_Y - MARGIN)
+  return {
+    xMin, xMax: Math.max(xMin, xMax),
+    yMin, yMax: Math.max(yMin, yMax)
+  }
+}
+
+// 词间留白（%）：水平/垂直对应窄卡片下的紧凑间隙，既美观又给 20 个词留出可放置空间
+const PAD_X = 1.0
+const PAD_Y = 2.0
 
 // Canvas 精确测量文字宽度（只创建一次）
 let measureCanvas: HTMLCanvasElement | null = null
@@ -463,18 +482,20 @@ const getTextWidth = (text: string, fontSize: number, fontFamily: string): numbe
   return ctx.measureText(text).width
 }
 
-// 字号 → % 半宽高（使用 Canvas 精确测量文字宽度，避免公式估算的偏差）
+// 字号 → % 半宽高（使用 Canvas 精确测量文字宽度 + 容器实测尺寸，保证碰撞与渲染同一坐标系）
 const WORD_CLOUD_FONT = "'Ma Shan Zheng', 'KaiTi', 'STKaiti', cursive"
 const estimateBox = (name: string, sizePx: number): { wPct: number; hPct: number } => {
   const wPx = getTextWidth(name, sizePx, WORD_CLOUD_FONT)
   const hPx = sizePx * 1.2  // 中文字符近似正方形，行高约为字号的1.2倍
+  const RW = cloudBoxW.value
+  const RH = cloudBoxH.value
   return {
-    wPct: (wPx / BASE_W_PX) * 100 * 0.5,  // 半宽
-    hPct: (hPx / BASE_H_PX) * 100 * 0.5   // 半高
+    wPct: (wPx / RW) * 100 * 0.5,  // 半宽
+    hPct: (hPx / RH) * 100 * 0.5   // 半高
   }
 }
 
-// 螺旋搜索候选点（围绕初始位置，半径逐渐增大，32 方向，最多 15 环）
+// 螺旋搜索候选点（围绕初始位置，半径逐渐增大，32 方向，覆盖整个可行区域）
 const spiralSearch = (
   initX: number, initY: number,
   box: { wPct: number; hPct: number },
@@ -488,8 +509,9 @@ const spiralSearch = (
     [1,0.25],[-1,0.25],[0.25,1],[-0.25,-1],[1,-0.25],[-1,-0.25],[0.25,-1],[-0.25,1],
     [0.5,0.5],[-0.5,0.5],[-0.5,-0.5],[0.5,-0.5],[0.87,0.71],[-0.87,0.71],[-0.87,-0.71],[0.87,-0.71]
   ]
-  for (let ring = 1; ring <= 15; ring++) {
-    const step = ring * 0.65
+  // 半径逐步扩大到覆盖整个容器（55 环 × step 1.15 ≈ 63% 半径，足以扫满画布）
+  for (let ring = 1; ring <= 55; ring++) {
+    const step = ring * 1.15
     for (const [dx, dy] of dirs) {
       const cx = initX + dx * step
       const cy = initY + dy * step
@@ -500,6 +522,28 @@ const spiralSearch = (
         if (aabbOverlap(test, p)) { hit = true; break }
       }
       if (!hit) return { x: cx, y: cy }
+    }
+  }
+  return null
+}
+
+// 全画布细网格寻空（极端兜底）：保证不重叠、不越界，尽量靠近中心
+// pad 可传 0 进行「零留白」搜索，确保即便常规留白无处可放，也能挤进真正不重叠的缝隙
+const findAnyFree = (
+  box: { wPct: number; hPct: number },
+  placed: PlacedBox[],
+  bound: { xMin: number; xMax: number; yMin: number; yMax: number },
+  padX = PAD_X,
+  padY = PAD_Y
+): { x: number; y: number } | null => {
+  for (let gx = bound.xMin; gx <= bound.xMax; gx += 0.6) {
+    for (let gy = bound.yMin; gy <= bound.yMax; gy += 1.0) {
+      const test: PlacedBox = { cx: gx, cy: gy, w: box.wPct, h: box.hPct }
+      let hit = false
+      for (const p of placed) {
+        if (aabbOverlap(test, p, padX, padY)) { hit = true; break }
+      }
+      if (!hit) return { x: gx, y: gy }
     }
   }
   return null
@@ -536,61 +580,55 @@ const keywordCloudData = computed<KwLayout[]>(() => {
     return SIZE_STAIRS[Math.min(SIZE_STAIRS.length - 1, idx + 1)]
   }
 
-  // 放置边界（%，保证不溢出容器，留边距 4% ~ 96%）
-  const BOUND = { xMin: 5, xMax: 95, yMin: 6, yMax: 94 }
-
   const placed: PlacedBox[] = []
   const result: KwLayout[] = []
 
   for (let i = 0; i < sorted.length; i++) {
     const kw = sorted[i]
-    // 初始理想位置（第 0 次重试使用预设位置，后续重试使用随机起点）
-    let size = pickSizeByValue(kw.value)
     let finalPos: { x: number; y: number } | null = null
-    let finalSize = size
+    // 初始字号按 value 取值；失败时逐级下降直到找到可放置位置
+    let finalSize = pickSizeByValue(kw.value)
+    const ideal = getLayoutPos(i)
 
-    // 随机初始位置重试（最多 3 次随机起点，避免局部最优无解）
-    for (let retry = 0; retry < 3 && !finalPos; retry++) {
-      const ideal = retry === 0
-        ? getLayoutPos(i)
-        : {
-            x: BOUND.xMin + Math.random() * (BOUND.xMax - BOUND.xMin),
-            y: BOUND.yMin + Math.random() * (BOUND.yMax - BOUND.yMin)
-          }
-      finalSize = size
-
-      // 碰撞失败 → 最多降 8 级字号重试
-      for (let attempt = 0; attempt < 9; attempt++) {
-        const box = estimateBox(kw.name, finalSize)
-        const candidate: PlacedBox = { cx: ideal.x, cy: ideal.y, w: box.wPct, h: box.hPct }
-        // 1) 先试初始位置
-        let ok = true
-        for (const p of placed) {
-          if (aabbOverlap(candidate, p)) { ok = false; break }
-        }
-        // 2) 碰撞则螺旋搜索
-        if (!ok) {
-          const sp = spiralSearch(ideal.x, ideal.y, box, placed, BOUND)
-          if (sp) {
-            finalPos = sp
-            break
-          } else {
-            // 3) 失败 → 降一级字号重试
-            finalSize = lowerSize(finalSize)
-            continue
-          }
-        } else {
-          finalPos = { x: ideal.x, y: ideal.y }
-          break
-        }
-      }
-    }
-    if (!finalPos) {
-      // 极端兜底：再大一圈搜索 + 最小字号
-      finalSize = 18
+    // 字号逐级下降，寻找「不越界 + 不碰撞」的放置点
+    for (let attempt = 0; attempt < 10 && !finalPos; attempt++) {
       const box = estimateBox(kw.name, finalSize)
-      const sp = spiralSearch(getLayoutPos(i).x, getLayoutPos(i).y, box, placed, BOUND)
-      finalPos = sp || { x: getLayoutPos(i).x, y: getLayoutPos(i).y }
+      // 该词专属可行边界：保证整词 + 留白 + 边距 都在卡片内，杜绝截断/溢出
+      const bound = boxBound(box)
+
+      // 3 组起点（理想点 + 两个随机点），每组先试起点再螺旋搜索
+      for (let r = 0; r < 3 && !finalPos; r++) {
+        const sx = r === 0
+          ? Math.min(Math.max(ideal.x, bound.xMin), bound.xMax)
+          : bound.xMin + Math.random() * (bound.xMax - bound.xMin)
+        const sy = r === 0
+          ? Math.min(Math.max(ideal.y, bound.yMin), bound.yMax)
+          : bound.yMin + Math.random() * (bound.yMax - bound.yMin)
+        const cand: PlacedBox = { cx: sx, cy: sy, w: box.wPct, h: box.hPct }
+        let collide = false
+        for (const p of placed) {
+          if (aabbOverlap(cand, p)) { collide = true; break }
+        }
+        if (!collide) { finalPos = { x: sx, y: sy }; break }
+        // 撞中心/既有框 → 螺旋搜索可行边界内空位
+        const sp = spiralSearch(sx, sy, box, placed, bound)
+        if (sp) { finalPos = sp; break }
+      }
+      // 字号全部尝试仍无空位 → 降一级字号重试
+      if (!finalPos) finalSize = lowerSize(finalSize)
+    }
+
+    // 极端兜底：最小字号 + 全画布细网格寻空（先用常规留白，失败则零留白，确保绝不重叠、绝不越界）
+    if (!finalPos) {
+      finalSize = 16
+      const box = estimateBox(kw.name, finalSize)
+      const bound = boxBound(box)
+      finalPos = findAnyFree(box, placed, bound)
+      if (!finalPos) finalPos = findAnyFree(box, placed, bound, 0, 0)
+      if (!finalPos) {
+        // 理论上 20 词极难发生；极特殊兜底：置于专属边界中心，仍钳制在框内
+        finalPos = { x: (bound.xMin + bound.xMax) / 2, y: (bound.yMin + bound.yMax) / 2 }
+      }
     }
 
     const color = CATEGORY_COLORS[kw.category]
@@ -834,6 +872,18 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '会昌中兴', year: 842, value: 5.5, tag: '短暂回暖' },
     { name: '黄巢起义', year: 880, value: 2.5, tag: '大厦将倾' }
   ],
+  '唐': [
+    { name: '唐朝建立', year: 618, value: 6, tag: '大唐建元' },
+    { name: '玄武门变', year: 626, value: 5.5, tag: '宫闱之变' },
+    { name: '贞观之治', year: 630, value: 9, tag: '天下大治' },
+    { name: '武周称帝', year: 690, value: 8, tag: '女皇临朝' },
+    { name: '开元盛世', year: 730, value: 10, tag: '万国来朝' },
+    { name: '安史之乱', year: 755, value: 3, tag: '由盛转衰' },
+    { name: '藩镇割据', year: 780, value: 5.5, tag: '两税法行' },
+    { name: '甘露之变', year: 835, value: 3.5, tag: '宦官专权' },
+    { name: '黄巢起义', year: 880, value: 2.5, tag: '大厦将倾' },
+    { name: '朱温篡唐', year: 907, value: 1.5, tag: '大唐终结' }
+  ],
   '汉': [
     { name: '楚汉相争', year: -204, value: 5, tag: '逐鹿中原' },
     { name: '刘邦建汉', year: -202, value: 6.5, tag: '高祖定鼎' },
@@ -959,6 +1009,21 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '侯景之乱', year: 548, value: 3, tag: '江南浩劫' },
     { name: '北周灭北齐', year: 577, value: 6.5, tag: '北朝一统' },
     { name: '隋代北周', year: 581, value: 7, tag: '南北朝终' }
+  ],
+  '隋': [
+    { name: '隋代北周', year: 581, value: 6.5, tag: '文帝开国' },
+    { name: '开皇改革', year: 585, value: 8.5, tag: '三省六部' },
+    { name: '平陈统一', year: 589, value: 9, tag: '天下一统' },
+    { name: '开皇律颁', year: 590, value: 8, tag: '以法治国' },
+    { name: '大兴城营建', year: 595, value: 7.5, tag: '都城营造' },
+    { name: '科举制兴', year: 600, value: 8, tag: '取士新制' },
+    { name: '隋击突厥', year: 602, value: 7, tag: '北疆永安' },
+    { name: '炀帝即位', year: 605, value: 6.5, tag: '大业改元' },
+    { name: '大运河开凿', year: 610, value: 7.5, tag: '南北贯通' },
+    { name: '灭吐谷浑', year: 609, value: 7, tag: '西拓河源' },
+    { name: '三征高句丽', year: 613, value: 3, tag: '连年用兵' },
+    { name: '隋末大起义', year: 616, value: 2, tag: '群雄并起' },
+    { name: '江都兵变', year: 618, value: 1.5, tag: '隋室倾覆' }
   ]
 }
 
@@ -1195,7 +1260,20 @@ watch([dynastyId, dynasty], () => {
 
 onMounted(async () => {
   window.addEventListener('resize', handleResize)
-  
+
+  // 实测词云容器尺寸并让布局按真实坐标重排（避免硬编码基准与实际渲染宽度不一致）
+  const syncCloudBox = () => {
+    if (wordCloudRef.value) {
+      cloudBoxW.value = wordCloudRef.value.offsetWidth || 980
+      cloudBoxH.value = wordCloudRef.value.offsetHeight || 420
+    }
+  }
+  syncCloudBox()
+  // 容器尺寸随 responsive/字体加载变化，用 ResizeObserver 保证碰撞与渲染始终一致
+  const cloudResizeObserver = new ResizeObserver(syncCloudBox)
+  if (wordCloudRef.value) cloudResizeObserver.observe(wordCloudRef.value)
+  nextTick(syncCloudBox)
+
   // 尝试加载 JSON 数据
   const data = await loadDynastyData(dynastyId.value)
   if (data) {
@@ -1205,10 +1283,14 @@ onMounted(async () => {
   if (hasData.value) {
     initAllCharts()
   }
+
+  // 保存 observer 以便卸载时断开
+  wordCloudResizeObserver = cloudResizeObserver
 })
 
 onUnmounted(() => {
   window.removeEventListener('resize', handleResize)
+  wordCloudResizeObserver?.disconnect()
   occupationChart?.dispose()
   eventBarChart?.dispose()
 })

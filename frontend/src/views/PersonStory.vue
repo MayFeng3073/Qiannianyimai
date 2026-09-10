@@ -770,8 +770,8 @@ onUnmounted(() => {
                     :d="getEdgePath(edge.source, edge.target)"
                     fill="none"
                     :stroke="relationColor(edge.label) || '#5C7A5E'"
-                    stroke-opacity="0.55"
-                    stroke-width="1.3"
+                    stroke-opacity="0.8"
+                    stroke-width="2"
                     stroke-linecap="round"
                   />
                   <!-- 叙事标签：小号米白胶囊（回退上一个版本的样式），碰撞检测自动避让节点与其他标签 -->

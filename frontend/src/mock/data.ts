@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
@@ -355,6 +355,32 @@ export const dynasties: Dynasty[] = [
   duration: '约325年',
   representative_buildings: ["白马寺","云冈石窟","建康宫"],
   characteristics: {"politics":84,"culture":92,"military":90,"technology":76,"openness":86}
+},
+{
+  id: 111,
+  name: '隋',
+  english_name: 'Sui Dynasty',
+  start_year: 581,
+  end_year: 618,
+  summary: '公元581年杨坚代周建隋，589年平陈统一南北，结束自西晋末年以来三百多年分裂割据。文帝厉行开皇之治，创三省六部、确立科举、颁行均田，天下仓廪充实。炀帝即位后开凿大运河、营建东都与大兴城、西征吐谷浑、三伐高句丽，极役伤民致天下大乱。617年李渊晋阳起兵，618年江都兵变炀帝被杀，隋朝灭亡。其制度多被大唐所承，影响深远。',
+  capital: '大兴城（长安）、东都洛阳',
+  population: '约五千万（鼎盛）',
+  duration: '约37年',
+  representative_buildings: ["大兴城","东都洛阳","京杭大运河","赵州桥"],
+  characteristics: {"politics":88,"culture":88,"military":92,"technology":90,"openness":82}
+},
+{
+  id: 112,
+  name: '唐',
+  english_name: 'Tang Dynasty',
+  start_year: 618,
+  end_year: 907,
+  summary: '公元618年李渊在长安称帝建立唐朝，此后历经贞观之治、开元盛世，疆域辽阔、经济繁荣、文化昌盛，成为当时世界最强大的帝国之一。安史之乱后转衰，藩镇割据、宦官专权、朋党相争交错，907年朱温篡唐建立后梁，唐朝灭亡。唐代是中华文明高度开放、中外交流活跃的黄金时代，诗歌、书法、艺术与制度均达鼎盛，对后世影响深远。',
+  capital: '长安、洛阳',
+  population: '约八千万（鼎盛）',
+  duration: '约289年',
+  representative_buildings: ["大明宫","大雁塔","含元殿","洛阳紫微城"],
+  characteristics: {"politics":88,"culture":96,"military":90,"technology":88,"openness":95}
 },
 ]
 
