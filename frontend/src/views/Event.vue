@@ -3,6 +3,7 @@ import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { events, persons, dynasties, eventTimelines } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
+import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 import ComingSoon from '@/components/ComingSoon.vue'
 import * as echarts from 'echarts'
 
@@ -180,6 +181,9 @@ const relatedDynasty = computed(() => {
 const navigateToPerson = (name: string) => {
   const p = getPersonByName(name)
   if (p) router.push(`/person/${p.id}`)
+  // 跨朝代打通：本朝无此人物时，尝试通过全局索引跳转到其实际所属朝代详情页
+  const crossId = resolvePersonIdByName(name)
+  if (crossId) router.push(`/person/${crossId}`)
 }
 
 const navigateToEvent = (id: number) => router.push(`/event/${id}`)

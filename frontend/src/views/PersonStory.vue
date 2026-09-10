@@ -3,6 +3,7 @@ import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { persons, dynasties, events } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
+import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 
 const route = useRoute()
 const router = useRouter()
@@ -95,7 +96,11 @@ const navigateToPerson = (name: string) => {
     } else {
       router.push(`/person/${found.id}`)
     }
+    return
   }
+  // 跨朝代打通：本朝无此人物时，通过全局索引跳到其实际所属朝代详情页
+  const crossId = resolvePersonIdByName(name)
+  if (crossId) router.push(`/person/${crossId}`)
 }
 
 const navigateToDynasty = () => {

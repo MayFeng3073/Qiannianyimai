@@ -3,6 +3,7 @@ import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { persons, dynasties, events } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
+import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 import ComingSoon from '@/components/ComingSoon.vue'
 import * as echarts from 'echarts'
 
@@ -724,6 +725,9 @@ const initRelationChart = () => {
           } else {
             router.push(`/person/${found.id}`)
           }
+        } else {
+          const crossId = resolvePersonIdByName(p.name)
+          if (crossId) router.push(`/person/${crossId}`)
         }
       }
     })
