@@ -852,6 +852,7 @@ const recommendedPersons = computed(() => {
     .filter(q => q.id !== p.id && q.dynasty === p.dynasty && !relatedPersonNames.value.has(q.name))
     .map(q => {
       let score = 0
+      if (q.level === 1) score += 8   // 一级人物优先推荐（与当前人物同级别更值得探索）
       if (q.category && myCats.has(q.category)) score += 3
       ;(q.tags || []).forEach((t: string) => { if (myCats.has(t)) score += 2 })
       ;(q.occupations || []).forEach((o: string) => { if (myOcc.has(o)) score += 2 })

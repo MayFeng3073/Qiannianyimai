@@ -367,9 +367,26 @@ function main() {
       if (share > 0) scored.push({ id: o.id, name: o.name, share });
     });
     scored.sort((a, b) => b.share - a.share);
-    // 额外补充宏观时间线里的非本事件节点，保证有内容
-    CHUNQUI_TIMELINE.forEach(t => { if (t.event_id !== ev.id && !scored.some(s => s.id === t.event_id)) scored.push({ id: t.event_id, name: t.title, share: 0 }); });
-    return scored.slice(0, 6).map(s => s.name);
+    let result = scored.slice(0, 6).map(s => s.name);
+
+    // Fallback: 人物共享不足3个时，按时间邻近+同类型+同 timeline 补充
+    if (result.length < 3) {
+      const have = new Set(result);
+      const sameTimeline = events.filter(o => o.id !== ev.id && o.timeline_id === ev.timeline_id);
+      sameTimeline.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+      sameTimeline.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      if (result.length < 4) {
+        const sameType = events.filter(o => o.id !== ev.id && o.event_type === ev.event_type && !have.has(o.name));
+        sameType.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+        sameType.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      }
+      if (result.length < 3) {
+        const near = events.filter(o => o.id !== ev.id && Math.abs(o.start_year - ev.start_year) <= 30 && !have.has(o.name));
+        near.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+        near.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      }
+    }
+    return result;
   }
 
   console.log('\n===== #2 推荐人物 / 推荐事件 =====');
@@ -591,7 +608,25 @@ function main() {
     '齐桓公>>公子小白': '继承',
     // 其余泛化标签：归入确切基础关系
     '晋厉公>>楚庄王': '敌对',
-    '老子>>孔子': '影响'
+    '老子>>孔子': '影响',
+    // 齐国公室
+    '齐襄公>>公子小白': '兄弟', '齐襄公>>公子纠': '兄弟',
+    '公子纠>>齐襄公': '兄弟', '公子小白>>齐襄公': '兄弟',
+    // 晋国卿族
+    '郤芮>>郤缺': '父子', '郤缺>>郤芮': '父子',
+    '郤缺>>郤克': '父子', '郤克>>郤缺': '父子',
+    '狐突>>狐毛': '父子', '狐突>>狐偃': '父子', '狐毛>>狐突': '父子', '狐毛>>狐偃': '兄弟',
+    '赵盾>>赵朔': '父子', '赵朔>>赵盾': '父子',
+    '赵朔>>赵武': '父子', '赵武>>赵朔': '父子',
+    '荀林父>>荀首': '兄弟', '荀首>>荀林父': '兄弟',
+    // 鲁国三桓
+    '季武子>>季孙氏（季平子）': '祖孙', '季武子>>季孙宿': '父子', '季孙宿>>季武子': '父子',
+    '叔孙豹>>叔孙氏（叔孙穆子）': '宗亲',
+    // 吴国 / 越国
+    '吴王诸樊>>吴王余祭': '兄弟', '吴王余祭>>吴王诸樊': '兄弟',
+    '吴王余祭>>吴王余昧': '兄弟', '吴王余昧>>吴王余祭': '兄弟',
+    '吴王余昧>>吴王僚': '父子', '吴王僚>>吴王余昧': '父子',
+    '夫概>>夫差': '叔侄', '越王允常>>越王勾践': '父子'
   };
   let relFixed202 = 0;
   const d202f = load(f202);
@@ -677,6 +712,33 @@ function main() {
   });
   save(f202, d202c);
   console.log('  dynasty_202 二级人物分类:', cat202, '/', (d202c.persons||[]).filter(p=>(p.level||2)===2).length);
+
+  // ---------- 202（春秋）一级人物历史影响断句碎片修复 + 二级故事去后台文本 ----------
+  // 断句碎片：Excel 逗号被当作分点，产生 <8 字碎片，这里用完整整句覆盖
+  const IMPACT_OVERRIDE_202 = {
+    '赵衰': ['参与晋文公霸业，奠定赵氏在晋国政治中的地位', '其家族后来发展为三家分晋的重要政治力量之一'],
+    '孔子': ['建立以仁、礼、德治和教育为核心的思想体系，形成影响东亚文明数千年的儒家传统。'],
+    '子贡': ['兼具政治、外交、商业与儒学传播能力，是孔门弟子中社会活动范围最广的人物之一。'],
+    '曾子': ['连接孔子与子思、孟子传统，在儒家思想传承史中具有承上启下的重要作用。'],
+    '叔孙氏（叔孙穆子）': ['提出“三不朽”思想，使“立德、立功、立言”成为中国传统士大夫价值观的重要概念，同时在鲁国外交中发挥重要作用。'],
+    '晏婴': ['以直谏、节俭和政治智慧影响齐国数十年，并成为中国传统政治文化中“贤臣直谏”的经典人物。'],
+    '郑庄公': ['通过军事、外交和政治手段使郑国成为春秋初期强国，并推动周王室权威下降、诸侯争霸格局形成。'],
+    '祭仲': ['通过军事、外交和继承政治深度影响郑国政局，是春秋初期“卿大夫影响君位继承”的典型人物。'],
+    '子产': ['通过政治、经济、法制和外交改革提高郑国治理能力，对中国早期国家治理和法制思想产生重要历史影响。'],
+    '孙武': ['建立系统的军事理论体系，将战争中的战略、谋略、情报、用兵等原则进行高度概括，对中国乃至世界军事思想产生长期影响。'],
+    '老子': ['奠定中国古代道家思想的重要基础，其“道”“无为”“自然”等思想长期影响中国哲学、政治思想、文学艺术和宗教文化。']
+  };
+  const STORY_FIX_202 = {
+    '东郭牙': '东郭牙是齐桓公时期的重要人物，曾参与齐国政治事务。关于他的记载虽然不像管仲、鲍叔牙那样丰富，但他与齐桓公政治集团存在密切联系。齐桓公能够建立霸业，并非只依靠一位管仲，而是依靠多个能够识人、荐才和处理政务的大臣共同支撑。东郭牙正是齐国大夫群体的代表之一，与管仲、鲍叔牙等同朝共事，共同促成齐桓公的霸业。'
+  };
+  let impFixed202 = 0, storyFixed202 = 0;
+  const d202g = load(f202);
+  d202g.persons.forEach(p => {
+    if (IMPACT_OVERRIDE_202[p.name]) { p.impact_list = IMPACT_OVERRIDE_202[p.name]; impFixed202++; }
+    if (STORY_FIX_202[p.name] && p.story) { p.story.content = STORY_FIX_202[p.name]; storyFixed202++; }
+  });
+  save(f202, d202g);
+  console.log('  dynasty_202 历史影响碎片修复:', impFixed202, '；故事去后台文本:', storyFixed202);
 
   console.log('\n完成。');
 }

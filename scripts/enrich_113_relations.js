@@ -31,97 +31,97 @@ const SONG_TIMELINE = [
   { title: '崖山海战', year: '1279年', desc: '王朝终结', event_id: 113341 },
 ];
 
-/* ---------- #6 事件经过分阶段叙述（关键事件手写，含独立标题/正文） ---------- */
+/* ---------- #6 事件经过分阶段叙述（关键事件手写，标题均为4-8字无标点短语） ---------- */
 const SONG_EVENT_STAGES = {
   113301: [ // 陈桥兵变
-    { tag: '起因', title: '北征契丹，行至陈桥', description: '后周显德七年赵匡胤率军北上御敌，行至开封东北陈桥驿驻宿。' },
-    { tag: '经过', title: '黄袍加身，拥立为帝', description: '960年将士哗变，将黄袍披于赵匡胤身，拥立他回京即位。' },
-    { tag: '结果', title: '恭帝禅位，终成正统', description: '赵匡胤受禅称帝，改元建隆，定都汴京，建立大宋王朝。' }
+    { tag: '起因', title: '北征行至陈桥', description: '后周显德七年赵匡胤率军北上御敌，行至开封东北陈桥驿驻宿。' },
+    { tag: '经过', title: '黄袍加身', description: '960年将士哗变，将黄袍披于赵匡胤身，拥立他回京即位。' },
+    { tag: '结果', title: '受禅称帝', description: '赵匡胤受禅称帝，改元建隆，定都汴京，建立大宋王朝。' }
   ],
   113302: [ // 北宋建立
-    { tag: '起因', title: '陈桥兵变，代周建宋', description: '赵匡胤自陈桥兵变受禅立宋，重新收拾五代乱局。' },
-    { tag: '经过', title: '定都汴京，革弊立制', description: '设都于开封，颁行统一钱币与税制，安抚勋旧，安抚地方。' },
-    { tag: '结果', title: '政局初定，基业始兴', description: '北宋政权组织渐趋完备，为后续统一南方奠定基础。' }
+    { tag: '起因', title: '陈桥兵变建宋', description: '赵匡胤自陈桥兵变受禅立宋，重新收拾五代乱局。' },
+    { tag: '经过', title: '定都汴京立制', description: '设都于开封，颁行统一钱币与税制，安抚勋旧，安抚地方。' },
+    { tag: '结果', title: '政局初定', description: '北宋政权组织渐趋完备，为后续统一南方奠定基础。' }
   ],
   113303: [ // 统一南方战争
-    { tag: '起因', title: '先南后北，谋划统一', description: '宋朝既定中原，依先易后难方略，着手削平南方割据诸国。' },
-    { tag: '经过', title: '讨平荆湖南唐诸国', description: '963年灭荆南与湖南，继灭后蜀、南汉、南唐，席卷江南。' },
-    { tag: '结果', title: '南方底定，回归一统', description: '979年灭北汉，基本完成天下统一，结束五代十国分裂局面。' }
+    { tag: '起因', title: '先南后北方略', description: '宋朝既定中原，依先易后难方略，着手削平南方割据诸国。' },
+    { tag: '经过', title: '讨平诸国', description: '963年灭荆南与湖南，继灭后蜀、南汉、南唐，席卷江南。' },
+    { tag: '结果', title: '天下一统', description: '979年灭北汉，基本完成天下统一，结束五代十国分裂局面。' }
   ],
   113304: [ // 杯酒释兵权
-    { tag: '起因', title: '王养军士，恐蹈覆辙', description: '赵匡胤忌惮宿将拥兵，忧其重演黄袍加身之局。' },
-    { tag: '经过', title: '设宴歌舞，曲示求归', description: '961年宴请石守信等，晓以利害，劝其交出兵权、享富贵终老。' },
-    { tag: '结果', title: '兵权尽释，集权中央', description: '诸将交出兵权，宋朝遂行重文轻武，杜绝藩镇拥兵之患。' }
+    { tag: '起因', title: '恐蹈前朝覆辙', description: '赵匡胤忌惮宿将拥兵，忧其重演黄袍加身之局。' },
+    { tag: '经过', title: '设宴示富贵', description: '961年宴请石守信等，晓以利害，劝其交出兵权、享富贵终老。' },
+    { tag: '结果', title: '兵权尽释', description: '诸将交出兵权，宋朝遂行重文轻武，杜绝藩镇拥兵之患。' }
   ],
   113306: [ // 澶渊之盟
-    { tag: '起因', title: '辽军南侵，兵临澶州', description: '1004年辽萧太后与圣宗大举南征，直逼黄河北岸澶州。' },
-    { tag: '经过', title: '真宗亲征，两军相持', description: '宋真宗亲至澶州督战，射杀辽将萧挞览，宋军士气大振。' },
-    { tag: '结果', title: '澶渊订盟，宋辽和好', description: '1005年宋辽议和，宋岁输银绢，互换使者，维持百年和平。' }
+    { tag: '起因', title: '辽军南侵澶州', description: '1004年辽萧太后与圣宗大举南征，直逼黄河北岸澶州。' },
+    { tag: '经过', title: '真宗亲征督战', description: '宋真宗亲至澶州督战，射杀辽将萧挞览，宋军士气大振。' },
+    { tag: '结果', title: '澶渊订盟', description: '1005年宋辽议和，宋岁输银绢，互换使者，维持百年和平。' }
   ],
   113307: [ // 庆历新政
-    { tag: '起因', title: '兵冗财困，积弊丛生', description: '宋仁宗时兵员冗滥、财政困顿，士人鼓吹革新求治。' },
-    { tag: '经过', title: '范仲淹主政兴革', description: '1043年范仲淹主持新政，主张整饬吏治、兴学育才、均田薄赋。' },
-    { tag: '结果', title: '触旧失势，新政告罢', description: '新政触犯权贵利益，仅行年余即废，然开宋代改革之先声。' }
+    { tag: '起因', title: '兵冗财困', description: '宋仁宗时兵员冗滥、财政困顿，士人鼓吹革新求治。' },
+    { tag: '经过', title: '范仲淹主新政', description: '1043年范仲淹主持新政，主张整饬吏治、兴学育才、均田薄赋。' },
+    { tag: '结果', title: '新政告罢', description: '新政触犯权贵利益，仅行年余即废，然开宋代改革之先声。' }
   ],
   113310: [ // 王安石变法
-    { tag: '起因', title: '积贫积弱，亟思振作', description: '宋神宗锐意求治，起用王安石主持变法，期以富国强兵。' },
-    { tag: '经过', title: '颁行青苗募役诸法', description: '1069年推青苗、募役、农田水利、方田均税、保甲诸新法。' },
-    { tag: '结果', title: '新旧相争，变法屡挫', description: '变法见成效却激化党争，神宗死后新法尽废，埋下党争之祸。' }
+    { tag: '起因', title: '积贫积弱思治', description: '宋神宗锐意求治，起用王安石主持变法，期以富国强兵。' },
+    { tag: '经过', title: '颁行诸新法', description: '1069年推青苗、募役、农田水利、方田均税、保甲诸新法。' },
+    { tag: '结果', title: '新旧党争', description: '变法见成效却激化党争，神宗死后新法尽废，埋下党争之祸。' }
   ],
   113313: [ // 乌台诗案
-    { tag: '起因', title: '诗章讥政，酿成狱案', description: '苏轼诗作被指讥讪新法，遭劾被捕，下御史台（乌台）问罪。' },
-    { tag: '经过', title: '入狱问讯，多方援救', description: '1079年苏轼下狱，幸得王安石、太后等救助，方免于死。' },
-    { tag: '结果', title: '贬谪黄州，旷达自遣', description: '苏轼被贬黄州，自此愈发旷达，成其文学创作之高峰。' }
+    { tag: '起因', title: '诗章讥政', description: '苏轼诗作被指讥讪新法，遭劾被捕，下御史台（乌台）问罪。' },
+    { tag: '经过', title: '入狱受审', description: '1079年苏轼下狱，幸得王安石、太后等救助，方免于死。' },
+    { tag: '结果', title: '贬谪黄州', description: '苏轼被贬黄州，自此愈发旷达，成其文学创作之高峰。' }
   ],
   113319: [ // 靖康之变
-    { tag: '起因', title: '金兵南下，两路夹攻', description: '1126年金军两路南侵，围攻开封，徽宗禅位钦宗。' },
-    { tag: '经过', title: '城破汴京，宗室被掳', description: '1127年金军攻破汴京，掳徽钦二帝及宗室百官北去。' },
-    { tag: '结果', title: '北宋灭亡，光庙倾覆', description: '北宋亡，康王赵构于应天即位，是为南宋之初。' }
+    { tag: '起因', title: '金兵两路南下', description: '1126年金军两路南侵，围攻开封，徽宗禅位钦宗。' },
+    { tag: '经过', title: '城破汴京', description: '1127年金军攻破汴京，掳徽钦二帝及宗室百官北去。' },
+    { tag: '结果', title: '北宋灭亡', description: '北宋亡，康王赵构于应天即位，是为南宋之初。' }
   ],
   113320: [ // 南宋建立
-    { tag: '起因', title: '靖康蒙尘，康王南渡', description: '金军虏掠北撤后，康王赵构脱离金营，南返监国。' },
-    { tag: '经过', title: '应天即位，建元建炎', description: '1127年赵构于应天府即位，重建宋室，史称南宋。' },
-    { tag: '结果', title: '偏安江南，与金周旋', description: '南宋迁都临安，据守东南，与金南北对峙、时战时和。' }
+    { tag: '起因', title: '靖康后南渡', description: '金军虏掠北撤后，康王赵构脱离金营，南返监国。' },
+    { tag: '经过', title: '应天即位', description: '1127年赵构于应天府即位，重建宋室，史称南宋。' },
+    { tag: '结果', title: '偏安江南', description: '南宋迁都临安，据守东南，与金南北对峙、时战时和。' }
   ],
   113322: [ // 宗泽守东京
-    { tag: '起因', title: '汴京残破，金骑环伺', description: '靖康后汴京残破，金军屡至，危局亟待重臣固守。' },
-    { tag: '经过', title: '宗泽守汴，整军御敌', description: '宗泽出任东京留守，修筑城防、招纳义军，屡挫金军。' },
-    { tag: '结果', title: '壮志未酬，呼过河而卒', description: '宗泽力请回銮不果，忧愤成疾，临终三呼过河而终。' }
+    { tag: '起因', title: '汴京残破待守', description: '靖康后汴京残破，金军屡至，危局亟待重臣固守。' },
+    { tag: '经过', title: '宗泽整军御敌', description: '宗泽出任东京留守，修筑城防、招纳义军，屡挫金军。' },
+    { tag: '结果', title: '三呼过河而卒', description: '宗泽力请回銮不果，忧愤成疾，临终三呼过河而终。' }
   ],
   113323: [ // 岳飞抗金
-    { tag: '起因', title: '金兵南犯，国难当头', description: '金兀术率军南征，南宋军情危急，岳飞挺身抗敌。' },
-    { tag: '经过', title: '岳飞北伐，连战皆捷', description: '岳飞统岳家军北伐，克复襄阳六郡，连败金军，声威大振。' },
-    { tag: '结果', title: '郾城大捷，直指汴京', description: '1140年郾城、颍昌大捷，金军胆寒，光复中原在望。' }
+    { tag: '起因', title: '金兵南犯', description: '金兀术率军南征，南宋军情危急，岳飞挺身抗敌。' },
+    { tag: '经过', title: '北伐连战皆捷', description: '岳飞统岳家军北伐，克复襄阳六郡，连败金军，声威大振。' },
+    { tag: '结果', title: '郾城大捷', description: '1140年郾城、颍昌大捷，金军胆寒，光复中原在望。' }
   ],
   113327: [ // 绍兴和议
-    { tag: '起因', title: '秦桧主和，构陷良将', description: '秦桧力主和议，剥夺岳飞、韩世忠等兵权，议和金廷。' },
-    { tag: '经过', title: '割地称臣，岁贡和议', description: '1141年宋金议和，宋称臣纳贡，以淮水、大散关为界。' },
-    { tag: '结果', title: '偏安既定，北伐遂辍', description: '和议成后南宋偏安江南，北方恢复大业自此搁置。' }
+    { tag: '起因', title: '秦桧主和', description: '秦桧力主和议，剥夺岳飞、韩世忠等兵权，议和金廷。' },
+    { tag: '经过', title: '割地称臣', description: '1141年宋金议和，宋称臣纳贡，以淮水、大散关为界。' },
+    { tag: '结果', title: '北伐遂辍', description: '和议成后南宋偏安江南，北方恢复大业自此搁置。' }
   ],
   113328: [ // 岳飞遇害
-    { tag: '起因', title: '莫须有之，罗织罪名', description: '秦桧以莫须有三字罗织罪名，构陷岳飞谋反。' },
-    { tag: '经过', title: '风波亭狱，父子殒命', description: '1142年岳飞及其子岳云遇害于临安大理寺风波亭狱中。' },
-    { tag: '结果', title: '千古奇冤，日后昭雪', description: '孝宗时平反昭雪，追封鄂王，岳飞精忠精神永耀史册。' }
+    { tag: '起因', title: '莫须有罪名', description: '秦桧以莫须有三字罗织罪名，构陷岳飞谋反。' },
+    { tag: '经过', title: '风波亭狱', description: '1142年岳飞及其子岳云遇害于临安大理寺风波亭狱中。' },
+    { tag: '结果', title: '日后昭雪', description: '孝宗时平反昭雪，追封鄂王，岳飞精忠精神永耀史册。' }
   ],
   113334: [ // 开禧北伐
-    { tag: '起因', title: '韩侂胄主战，锐意伐金', description: '权相韩侂胄力主伐金，发动开禧北伐，规复中原。' },
-    { tag: '经过', title: '三路进兵，连遭挫败', description: '1206年宋军分道出击，但诸将不协、粮援不继，多路失利。' },
-    { tag: '结果', title: '兵败请和，韩亦被诛', description: '韩侂胄被杀，宋金再议和，开禧北伐以失败告终。' }
+    { tag: '起因', title: '韩侂胄主战', description: '权相韩侂胄力主伐金，发动开禧北伐，规复中原。' },
+    { tag: '经过', title: '三路进兵失利', description: '1206年宋军分道出击，但诸将不协、粮援不继，多路失利。' },
+    { tag: '结果', title: '兵败请和', description: '韩侂胄被杀，宋金再议和，开禧北伐以失败告终。' }
   ],
   113337: [ // 蒙古灭金
-    { tag: '起因', title: '蒙古崛起，金国倾颓', description: '蒙古铁骑连年伐金，金国南迁汴梁，国势日蹙。' },
-    { tag: '经过', title: '宋蒙联兵，围困蔡州', description: '1234年宋蒙联军合围蔡州，金哀宗自缢，金朝灭亡。' },
-    { tag: '结果', title: '唇亡齿寒，蒙锋转宋', description: '金亡后蒙古转而南下，南宋北面压力陡增，危在旦夕。' }
+    { tag: '起因', title: '蒙古崛起', description: '蒙古铁骑连年伐金，金国南迁汴梁，国势日蹙。' },
+    { tag: '经过', title: '宋蒙联兵围蔡', description: '1234年宋蒙联军合围蔡州，金哀宗自缢，金朝灭亡。' },
+    { tag: '结果', title: '蒙锋转宋', description: '金亡后蒙古转而南下，南宋北面压力陡增，危在旦夕。' }
   ],
   113340: [ // 临安陷落
-    { tag: '起因', title: '元军长驱，临安告急', description: '元军破襄阳后顺流东下，1276年兵临临安城下。' },
-    { tag: '经过', title: '恭帝出降，南宋瓦解', description: '南宋太皇太后奉幼主出降，临安陷落，朝廷麇集南奔。' },
-    { tag: '结果', title: '残部南遁，负隅一战', description: '陆秀夫、张世杰等拥幼帝南走，退守岭南做最后一搏。' }
+    { tag: '起因', title: '元军长驱东下', description: '元军破襄阳后顺流东下，1276年兵临临安城下。' },
+    { tag: '经过', title: '恭帝出降', description: '南宋太皇太后奉幼主出降，临安陷落，朝廷麇集南奔。' },
+    { tag: '结果', title: '残部南遁', description: '陆秀夫、张世杰等拥幼帝南走，退守岭南做最后一搏。' }
   ],
   113341: [ // 崖山海战
-    { tag: '起因', title: '宋室南遁，驻跸崖山', description: '1279年南宋流亡朝廷退至广东崖山，据险死守。' },
-    { tag: '经过', title: '崖山海战，溃不成军', description: '元将张弘范率舰兜围，宋军水师大败，海战惨烈至极。' },
-    { tag: '结果', title: '帝昺蹈海，宋祚终焉', description: '陆秀夫背幼帝跳海殉国，南宋覆亡，两宋三百二十载终结。' }
+    { tag: '起因', title: '宋室南遁崖山', description: '1279年南宋流亡朝廷退至广东崖山，据险死守。' },
+    { tag: '经过', title: '崖山海战大败', description: '元将张弘范率舰兜围，宋军水师大败，海战惨烈至极。' },
+    { tag: '结果', title: '帝昺蹈海', description: '陆秀夫背幼帝跳海殉国，南宋覆亡，两宋三百二十载终结。' }
   ]
 };
 
@@ -248,12 +248,47 @@ function main() {
       stageOk++;
     } else {
       ev.narratives = (ev.summary ? ev.summary.split(/[。；]/).map(s => s.trim()).filter(Boolean).map(s => {
-        let title = s.slice(0, 7).replace(/[，。；、,]+\s*$/, '');
+        // 取第一短句（第一个逗号/句号前），去掉所有标点，截取6字
+        let title = s.split(/[，,。；;、]/)[0].trim().slice(0, 6).replace(/[，。；、,.:：！?？]+$/, '');
         return { year: ev.start_year, tag: '经过', title: title || '史事始末', description: s };
       }).slice(0, 6) : []);
     }
   });
   console.log('  已应用分阶段叙述的事件数:', stageOk, '/', events.length);
+
+  // 事件经过标题修正：覆盖由 summary 首句截断产生的「伪标题」（黑体小标题=灰体描述前几个字）
+  const SONG_TITLE_FIX = {
+    '开宝藏雕印': ['太祖敕刻藏经', '首部官刻大藏', '佛典流传后世'],
+    '庆历和议': ['宋夏战罢议和', '西夏接受册封', '西北边境趋稳'],
+    '狄青平侬智高': ['侬智高起兵反宋', '狄青南平岭南', '稳固岭南统治'],
+    '熙河开边': ['王韶经略河湟', '宋军拓地熙河', '拓展西北边疆'],
+    '元丰改制': ['神宗改革官制', '厘定三省职掌', '规范中央行政'],
+    '元祐更化': ['宣仁太后临朝', '力主恢复旧制', '政治路线转向'],
+    '绍圣绍述': ['哲宗亲政绍述', '清算元祐旧党', '党争愈演愈烈'],
+    '洛学兴起': ['二程创立洛学', '倡格物穷理', '洛学泽被后世'],
+    '苏门文人活动': ['苏门文人结集', '推动北宋文风'],
+    '北宋党争': ['新旧党争肇始', '政策用人对立', '党争蔓延朝野'],
+    '建炎南渡': ['高宗辗转南迁', '北人大量南迁', '南宋格局奠定'],
+    '黄天荡之战': ['韩世忠阻击金军', '水网设防制敌', '抗金信心大振'],
+    '顺昌大捷': ['刘锜顺昌迎战', '守城伏击破金', '重创金军南下'],
+    '郾城之战': ['岳飞郾城迎敌', '大破金军骑兵', '遏制金军南侵'],
+    '宋金隆兴和议': ['北伐失利议和', '宋金达成和议', '宋金改定名分', '宋金长期相安'],
+    '隆兴北伐': ['孝宗起用主战', '宋军初胜后败', '北伐未果促和'],
+    '乾道淳熙之治': ['孝宗整饬内政', '社会经济繁荣', '改革持重谨慎', '南宋中期承平'],
+    '朱熹理学发展': ['朱熹集成理学', '讲学著述传道', '朱学影响后世'],
+    '庆元党禁': ['韩侂胄斥理学', '理学被斥伪学', '党争牵连学术', '禁令渐弛学兴'],
+    '嘉定和议': ['开禧北伐失利', '诛韩侂胄求和', '重定边界岁币', '宋金维持和平'],
+    '端平入洛': ['蒙古灭金图洛', '宋军入洛受挫', '宋蒙关系破裂'],
+    '襄阳樊城之战': ['襄樊长期攻防', '蒙军断援取势', '襄樊失守'],
+    '钓鱼城抗战': ['合州山城据险', '军民坚守山城', '蒙哥殒命城下', '孤城坚守至终']
+  };
+  let titleFix = 0;
+  events.forEach(ev => {
+    const arr = SONG_TITLE_FIX[ev.name];
+    if (!arr) return;
+    (ev.narratives || []).forEach((nd, i) => { if (arr[i]) { nd.title = arr[i]; titleFix++; } });
+  });
+  console.log('  修正事件经过标题:', titleFix);
 
   // 事件参与人索引
   const personEvents = new Map();
@@ -311,7 +346,29 @@ function main() {
       if (share > 0) scored.push({ id: o.id, name: o.name, share });
     });
     scored.sort((a, b) => b.share - a.share);
-    return scored.slice(0, 6).map(s => s.name);
+    let result = scored.slice(0, 6).map(s => s.name);
+
+    // Fallback: 人物共享不足3个时，按时间邻近+同类型+同 timeline 补充
+    if (result.length < 3) {
+      const have = new Set(result);
+      // 同 timeline 节点邻近（前后各3个）
+      const sameTimeline = events.filter(o => o.id !== ev.id && o.timeline_id === ev.timeline_id);
+      sameTimeline.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+      sameTimeline.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      // 同 event_type 邻近
+      if (result.length < 4) {
+        const sameType = events.filter(o => o.id !== ev.id && o.event_type === ev.event_type && !have.has(o.name));
+        sameType.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+        sameType.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      }
+      // 纯时间邻近（±30年）兜底
+      if (result.length < 3) {
+        const near = events.filter(o => o.id !== ev.id && Math.abs(o.start_year - ev.start_year) <= 30 && !have.has(o.name));
+        near.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+        near.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      }
+    }
+    return result;
   }
 
   console.log('\n===== #2 推荐人物 / 推荐事件 =====');

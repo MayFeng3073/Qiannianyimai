@@ -453,8 +453,26 @@ function main() {
       if (share > 0) scored.push({ id: o.id, name: o.name, share });
     });
     scored.sort((a, b) => b.share - a.share);
-    HAN_TIMELINE.forEach(t => { if (t.event_id !== ev.id && !scored.some(s => s.id === t.event_id)) scored.push({ id: t.event_id, name: t.title, share: 0 }); });
-    return scored.slice(0, 6).map(s => s.name);
+    let result = scored.slice(0, 6).map(s => s.name);
+
+    // Fallback: 人物共享不足3个时，按时间邻近+同类型+同 timeline 补充
+    if (result.length < 3) {
+      const have = new Set(result);
+      const sameTimeline = events.filter(o => o.id !== ev.id && o.timeline_id === ev.timeline_id);
+      sameTimeline.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+      sameTimeline.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      if (result.length < 4) {
+        const sameType = events.filter(o => o.id !== ev.id && o.event_type === ev.event_type && !have.has(o.name));
+        sameType.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+        sameType.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      }
+      if (result.length < 3) {
+        const near = events.filter(o => o.id !== ev.id && Math.abs(o.start_year - ev.start_year) <= 30 && !have.has(o.name));
+        near.sort((a, b) => Math.abs(a.start_year - ev.start_year) - Math.abs(b.start_year - ev.start_year));
+        near.forEach(o => { if (!have.has(o.name) && result.length < 6) { result.push(o.name); have.add(o.name); } });
+      }
+    }
+    return result;
   }
 
   console.log('\n===== #2 推荐人物 / 推荐事件 =====');

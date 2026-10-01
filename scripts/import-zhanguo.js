@@ -197,8 +197,10 @@ for (const r of ev) {
   const rawType = String(col(r, '类型') || '');
   const etype = TYPE_MAP[rawType] || '政治事件';
   const impacts = [];
-  for (const [colKey, nameKey] of [['政治影响', '政治影响'], ['社会影响', '社会影响'], ['文化影响', '文化影响'], ['历史影响_1', '历史影响']]) {
-    const v = col(r, colKey);
+  // 精确匹配列名，避免「历史影响」命中「历史影响描述（约35个字）」文本列导致分数读不到
+  for (const [colKey, nameKey] of [['政治影响', '政治影响'], ['社会影响', '社会影响'], ['文化影响', '文化影响'], ['历史影响', '历史影响']]) {
+    const fk = Object.keys(r).find(kk => String(kk).trim() === colKey);
+    const v = fk ? r[fk] : null;
     if (v != null && !isNaN(Number(v))) impacts.push({ name: nameKey, score: Number(v) });
   }
   const summaryText = String(col(r, '简介') || '').trim();

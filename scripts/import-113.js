@@ -332,11 +332,11 @@ function buildNarratives(evObj) {
   const sents = summary.split(/[。；]/).map(s => s.trim()).filter(Boolean).slice(0, 6);
   if (sents.length === 0) return [];
   const y = evObj.start_year;
-  const tags = ['因起', '经过', '转折', '结果'];
+  const tags = ['起因', '经过', '转折', '结果'];
   return sents.map((s, i) => ({
     year: y,
     tag: tags[i % tags.length],
-    title: s.slice(0, 10) + (s.length > 10 ? '…' : ''),
+    title: s.split(/[，,。；;、]/)[0].trim().slice(0, 6).replace(/[，。；、,.:：！?？]+$/, '') || '史事始末',
     description: s
   }));
 }

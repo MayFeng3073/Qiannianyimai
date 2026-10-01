@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
@@ -394,6 +394,19 @@ export const dynasties: Dynasty[] = [
   duration: '约319年',
   representative_buildings: ["开封铁塔","艮岳御苑","临安皇城","雷峰塔"],
   characteristics: {"politics":82,"culture":96,"military":80,"technology":92,"openness":88}
+},
+{
+  id: 114,
+  name: '元',
+  english_name: 'Yuan Dynasty',
+  start_year: 1271,
+  end_year: 1368,
+  summary: '公元1206年成吉思汗统一蒙古各部建大蒙古国，其孙忽必烈1271年改国号为元、1279年灭南宋完成统一。元朝疆域空前辽阔，行省制度影响深远，中外交流活跃，马可·波罗来华即是此际。然统治时间不足百年，吏治腐败、民族矛盾、天灾叠乘，1351年红巾军起义爆发，1368年朱元璋北伐攻克大都，元顺帝北遁，元朝灭亡。',
+  capital: '大都（今北京）、上都（开平）',
+  population: '约八千万（鼎盛）',
+  duration: '约97年',
+  representative_buildings: ["大都城","上都开平","妙应寺白塔","居庸关"],
+  characteristics: {"politics":82,"culture":86,"military":94,"technology":90,"openness":96}
 },
 ]
 
