@@ -14,22 +14,24 @@ const f203 = path.join(DIR, 'dynasty_203.json');
 function load(f) { return JSON.parse(fs.readFileSync(f, 'utf-8')); }
 function save(f, o) { fs.writeFileSync(f, JSON.stringify(o, null, 2), 'utf-8'); }
 
-/* ---------- #1 战国历史脉络宏观时间线（14节点骨干） ---------- */
+/* ---------- #1 战国历史脉络宏观时间线（13节点骨干） ----------
+   注：原节点硬编码了事件 ID，但事件 ID 会随 Excel「事件数据」行序变动而整体漂移，
+   导致点击时间线节点跳到错误的事件页，故改为运行时按「事件名称」解析 ID。 */
 const ZHANGUO_TIMELINE_KEY = '战国霸业兴衰';
 const ZHANGUO_TIMELINE = [
-  { title: '晋阳之战', year: '前455年', desc: '智氏覆灭', event_id: 203301 },
-  { title: '三家分晋', year: '前403年', desc: '战国肇始', event_id: 203303 },
-  { title: '魏文侯变法', year: '前445年', desc: '魏国崛起', event_id: 203305 },
-  { title: '商鞅变法', year: '前356年', desc: '秦国强盛', event_id: 203310 },
-  { title: '桂陵之战', year: '前354年', desc: '孙庞斗智', event_id: 203313 },
-  { title: '马陵之战', year: '前341年', desc: '魏国衰落', event_id: 203314 },
-  { title: '徐州相王', year: '前334年', desc: '齐魏并王', event_id: 203315 },
-  { title: '胡服骑射', year: '前307年', desc: '赵武灵王', event_id: 203317 },
-  { title: '乐毅伐齐', year: '前284年', desc: '燕国复仇', event_id: 203320 },
-  { title: '长平之战', year: '前260年', desc: '白起坑赵', event_id: 203323 },
-  { title: '邯郸之战', year: '前257年', desc: '合纵救赵', event_id: 203324 },
-  { title: '荆轲刺秦', year: '前227年', desc: '垂死一搏', event_id: 203332 },
-  { title: '秦灭六国', year: '前221年', desc: '天下归一', event_id: 203334 },
+  { title: '晋阳之战', year: '前455年', desc: '智氏覆灭' },
+  { title: '三家分晋', year: '前403年', desc: '战国肇始' },
+  { title: '魏文侯变法', year: '前445年', desc: '魏国崛起' },
+  { title: '商鞅变法', year: '前356年', desc: '秦国强盛' },
+  { title: '桂陵之战', year: '前354年', desc: '孙庞斗智' },
+  { title: '马陵之战', year: '前341年', desc: '魏国衰落' },
+  { title: '徐州相王', year: '前334年', desc: '齐魏并王' },
+  { title: '胡服骑射', year: '前307年', desc: '赵武灵王' },
+  { title: '乐毅伐齐', year: '前284年', desc: '燕国复仇' },
+  { title: '长平之战', year: '前260年', desc: '白起坑赵' },
+  { title: '邯郸之战', year: '前257年', desc: '合纵救赵' },
+  { title: '荆轲刺秦', year: '前227年', desc: '垂死一搏' },
+  { title: '秦灭六国', year: '前221年', desc: '天下归一' },
 ];
 
 /* ---------- #3 二级人物引语（身份摘要+一句话定位）按 name 索引 ---------- */
@@ -221,10 +223,16 @@ function main() {
 
   console.log('===== #1 历史脉络时间线 =====');
   d.timelines = d.timelines || {};
-  d.timelines[ZHANGUO_TIMELINE_KEY] = ZHANGUO_TIMELINE;
+  // 按事件名称解析节点对应的 event_id（名称不存在则不挂链接）
+  const evIdByName = new Map(events.map(e => [e.name, e.id]));
+  const tlNodes = ZHANGUO_TIMELINE.map(n => {
+    const id = evIdByName.get(n.title);
+    return id ? { ...n, event_id: id } : { ...n };
+  });
+  d.timelines[ZHANGUO_TIMELINE_KEY] = tlNodes;
   let tidCount = 0;
   events.forEach(ev => { ev.timeline_id = ZHANGUO_TIMELINE_KEY; tidCount++; });
-  console.log('  timeline节点', ZHANGUO_TIMELINE.length, '；已为', tidCount, '条事件设置 timeline_id');
+  console.log('  timeline节点', tlNodes.length, '（挂接事件', tlNodes.filter(n => n.event_id).length, '个）；已为', tidCount, '条事件设置 timeline_id');
 
   // 事件维度参与人
   const personEvents = new Map();
@@ -530,6 +538,40 @@ function main() {
     if (g.nodes.length >= 5) l2ok++;
   });
   console.log('  二级人物因缘际会(>=5节点) 数量:', l2ok, '/', persons.filter(p=>p.level===2).length);
+
+  /* ---------- #5 泛化「关联」关系细化：覆盖 #4 为一级人物补链时产生的泛化标签 ---------- */
+  const REL_FIX_203 = {
+    '赵武灵王>>赵惠文王': '父子', '齐威王>>田婴': '宗亲', '乐毅>>邹衍': '同僚',
+    '乐毅>>齐宣王': '敌对', '乐毅>>赵惠文王': '君臣', '乐毅>>苏秦': '同僚',
+    '王翦>>王贲': '父子', '田单>>邹衍': '同僚', '田单>>孟子': '同僚',
+    '田单>>赵武灵王': '影响', '田单>>齐威王': '君臣', '许行>>齐威王': '影响',
+    '许行>>齐宣王': '影响', '许行>>庄子': '影响', '许行>>荀子': '影响',
+    '宋玉>>白起': '敌对', '宋玉>>楚怀王': '君臣', '宋玉>>项燕': '同僚',
+    '宋玉>>子兰': '同僚', '宋玉>>靳尚': '同僚', '扁鹊>>秦昭襄王': '影响',
+    '扁鹊>>韩非': '影响', '扁鹊>>秦惠文王': '影响', '甘德>>孟子': '同僚',
+    '甘德>>齐湣王': '君臣', '甘德>>魏惠王': '影响', '甘德>>燕昭王': '影响',
+    '甘德>>公孙龙': '同僚', '石申>>公孙衍': '影响', '石申>>齐威王': '君臣',
+    '石申>>齐宣王': '君臣', '石申>>齐湣王': '君臣', '石申>>燕昭王': '影响',
+    '石申>>公孙龙': '同僚', '郑国>>李牧': '影响', '郑国>>廉颇': '影响',
+    '郑国>>白起': '同僚', '郑国>>王翦': '同僚', '郑国>>樗里疾': '同僚',
+    '田婴>>田单': '宗亲', '田婴>>孟尝君': '父子', '齐宣王>>田单': '君臣',
+    '赵成侯>>赵武灵王': '祖孙', '赵惠文王>>平原君赵胜': '兄弟', '赵惠文王>>赵豹': '君臣',
+    '乐羊>>乐羊子': '父子', '韩王安>>韩桓惠王': '父子', '赵孝成王>>平原君赵胜': '叔侄',
+    '蒙骜>>蒙武': '父子', '蒙武>>蒙恬': '父子', '项燕>>项梁': '父子',
+    '信陵君>>魏安釐王': '兄弟', '乐间>>燕昭王': '君臣', '乐间>>乐毅': '父子',
+    '樗里疾>>秦昭襄王': '叔侄', '樗里疾>>魏冉': '同僚', '魏冉>>秦昭襄王': '舅甥',
+    '苏代>>苏秦': '兄弟', '苏代>>苏厉': '兄弟', '苏厉>>苏秦': '兄弟',
+    '甘罗>>吕不韦': '君臣',
+  };
+  let relFix203 = 0;
+  persons.forEach(p => {
+    (p.related_people || []).forEach(rp => {
+      if (!rp || rp.relation !== '关联') return;
+      const fixed = REL_FIX_203[p.name + '>>' + rp.name] || REL_FIX_203[rp.name + '>>' + p.name];
+      if (fixed) { rp.relation = fixed; relFix203++; }
+    });
+  });
+  console.log('  泛化「关联」关系细化:', relFix203);
 
   save(f203, d);
 
