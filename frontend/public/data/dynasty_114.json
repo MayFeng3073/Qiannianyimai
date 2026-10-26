@@ -450,32 +450,32 @@
         {
           "name": "安童",
           "relation": "君臣",
-          "influence": 85
+          "influence": 88
         },
         {
           "name": "完泽",
           "relation": "君臣",
-          "influence": 82
+          "influence": 85
         },
         {
           "name": "哈剌哈孙",
           "relation": "君臣",
-          "influence": 79
+          "influence": 82
         },
         {
           "name": "燕铁木儿",
           "relation": "君臣",
-          "influence": 76
+          "influence": 79
         },
         {
           "name": "李孟",
           "relation": "君臣",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "月赤察儿",
           "relation": "君臣",
-          "influence": 67
+          "influence": 73
         }
       ],
       "life_events": [
@@ -588,32 +588,32 @@
         {
           "name": "赵孟頫",
           "relation": "同盟",
-          "influence": 79
+          "influence": 85
         },
         {
           "name": "李孟",
           "relation": "君臣",
-          "influence": 76
+          "influence": 82
         },
         {
           "name": "廉希宪",
           "relation": "君臣",
-          "influence": 73
+          "influence": 79
         },
         {
           "name": "哈剌哈孙",
           "relation": "君臣",
-          "influence": 70
+          "influence": 76
         },
         {
           "name": "不忽木",
           "relation": "君臣",
-          "influence": 67
+          "influence": 73
         },
         {
           "name": "完泽",
           "relation": "君臣",
-          "influence": 64
+          "influence": 70
         }
       ],
       "life_events": [
@@ -732,42 +732,42 @@
         {
           "name": "赵孟頫",
           "relation": "君臣",
-          "influence": 85
+          "influence": 88
         },
         {
           "name": "铁失",
           "relation": "敌对",
-          "influence": 82
+          "influence": 85
         },
         {
           "name": "也先帖木儿",
           "relation": "君臣",
-          "influence": 79
+          "influence": 82
         },
         {
           "name": "拜住",
           "relation": "君臣",
-          "influence": 76
+          "influence": 79
         },
         {
           "name": "李孟",
           "relation": "君臣",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "彻里帖木儿",
           "relation": "君臣",
-          "influence": 70
+          "influence": 73
         },
         {
           "name": "阿鲁图",
           "relation": "君臣",
-          "influence": 67
+          "influence": 70
         },
         {
           "name": "燕铁木儿",
           "relation": "敌对",
-          "influence": 64
+          "influence": 67
         }
       ],
       "life_events": [
@@ -870,12 +870,12 @@
         {
           "name": "伯颜",
           "relation": "君臣",
-          "influence": 85
+          "influence": 88
         },
         {
           "name": "赵孟頫",
           "relation": "君臣",
-          "influence": 82
+          "influence": 85
         },
         {
           "name": "燕铁木儿",
@@ -995,17 +995,17 @@
         {
           "name": "伯颜",
           "relation": "君臣",
-          "influence": 85
+          "influence": 88
         },
         {
           "name": "燕铁木儿",
           "relation": "盟友",
-          "influence": 76
+          "influence": 82
         },
         {
           "name": "马札儿台",
           "relation": "君臣",
-          "influence": 73
+          "influence": 64
         }
       ],
       "life_events": [
@@ -1124,31 +1124,36 @@
         {
           "name": "伯颜",
           "relation": "君臣",
-          "influence": 79
+          "influence": 82
         },
         {
           "name": "贾鲁",
           "relation": "君臣",
-          "influence": 76
+          "influence": 79
         },
         {
           "name": "张士诚",
           "relation": "敌对",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "韩林儿",
           "relation": "敌对",
-          "influence": 70
+          "influence": 73
         },
         {
           "name": "马札儿台",
           "relation": "君臣",
-          "influence": 67
+          "influence": 70
         },
         {
           "name": "也先帖木儿",
           "relation": "君臣",
+          "influence": 67
+        },
+        {
+          "name": "欧阳玄",
+          "relation": "同盟",
           "influence": 64
         }
       ],
@@ -1740,23 +1745,23 @@
           "influence": 79
         },
         {
-          "name": "耶律楚材",
+          "name": "赵孟頫",
           "relation": "影响",
           "influence": 76
         },
         {
-          "name": "郭守敬",
-          "relation": "同僚",
+          "name": "耶律楚材",
+          "relation": "影响",
           "influence": 73
         },
         {
-          "name": "王恂",
+          "name": "郭守敬",
           "relation": "同僚",
           "influence": 70
         },
         {
-          "name": "赵孟頫",
-          "relation": "影响",
+          "name": "王恂",
+          "relation": "同僚",
           "influence": 67
         },
         {
@@ -2032,27 +2037,27 @@
         {
           "name": "董文炳",
           "relation": "盟友",
-          "influence": 76
+          "influence": 79
         },
         {
           "name": "董文用",
           "relation": "盟友",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "木华黎",
           "relation": "影响",
-          "influence": 70
+          "influence": 73
         },
         {
           "name": "博尔术",
           "relation": "影响",
-          "influence": 67
+          "influence": 70
         },
         {
           "name": "拔都",
           "relation": "影响",
-          "influence": 64
+          "influence": 67
         }
       ],
       "life_events": [
@@ -2500,6 +2505,11 @@
         {
           "name": "阿合马",
           "relation": "君臣",
+          "influence": 67
+        },
+        {
+          "name": "阿里海牙",
+          "relation": "同盟",
           "influence": 64
         }
       ],
@@ -2617,26 +2627,36 @@
         {
           "name": "伯颜",
           "relation": "敌对",
-          "influence": 79
+          "influence": 82
         },
         {
           "name": "刘福通",
           "relation": "敌对",
-          "influence": 76
+          "influence": 79
         },
         {
           "name": "赵孟頫",
           "relation": "影响",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "张士诚",
           "relation": "敌对",
-          "influence": 70
+          "influence": 73
         },
         {
           "name": "李好文",
           "relation": "君臣",
+          "influence": 70
+        },
+        {
+          "name": "欧阳玄",
+          "relation": "同盟",
+          "influence": 67
+        },
+        {
+          "name": "许有壬",
+          "relation": "同盟",
           "influence": 64
         }
       ],
@@ -3074,21 +3094,26 @@
         {
           "name": "忽必烈",
           "relation": "君臣",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "黄公望",
           "relation": "盟友",
-          "influence": 70
+          "influence": 73
         },
         {
           "name": "高克恭",
           "relation": "同僚",
-          "influence": 67
+          "influence": 70
         },
         {
           "name": "王蒙",
           "relation": "影响",
+          "influence": 67
+        },
+        {
+          "name": "爱育黎拔力八达",
+          "relation": "同盟",
           "influence": 64
         }
       ],
@@ -4951,32 +4976,32 @@
         {
           "name": "黄公望",
           "relation": "影响",
-          "influence": 85
+          "influence": 88
         },
         {
           "name": "王蒙",
           "relation": "影响",
-          "influence": 82
+          "influence": 85
         },
         {
           "name": "倪瓒",
           "relation": "影响",
-          "influence": 79
+          "influence": 82
         },
         {
           "name": "吴镇",
           "relation": "影响",
-          "influence": 76
+          "influence": 79
         },
         {
           "name": "黄道婆",
           "relation": "影响",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "高克恭",
           "relation": "影响",
-          "influence": 70
+          "influence": 73
         }
       ],
       "life_events": [
@@ -5593,12 +5618,12 @@
             "size": "medium"
           },
           {
-            "name": "博尔术",
+            "name": "速不台",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "速不台",
+            "name": "博尔术",
             "type": "person",
             "size": "small"
           }
@@ -5624,14 +5649,14 @@
           },
           {
             "source": "木华黎",
-            "target": "博尔术",
+            "target": "速不台",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "木华黎",
-            "target": "速不台",
-            "label": "盟友",
+            "target": "博尔术",
+            "label": "同僚",
             "direction": "forward"
           },
           {
@@ -5743,7 +5768,7 @@
           {
             "source": "博尔术",
             "target": "木华黎",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
@@ -5845,12 +5870,12 @@
             "size": "medium"
           },
           {
-            "name": "拔都",
+            "name": "贵由",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "贵由",
+            "name": "拔都",
             "type": "person",
             "size": "small"
           }
@@ -5876,20 +5901,20 @@
           },
           {
             "source": "速不台",
-            "target": "拔都",
+            "target": "贵由",
             "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "速不台",
-            "target": "贵由",
+            "target": "拔都",
             "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "木华黎",
             "target": "博尔术",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -6176,12 +6201,12 @@
             "size": "medium"
           },
           {
-            "name": "海山",
+            "name": "不忽木",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "不忽木",
+            "name": "海山",
             "type": "person",
             "size": "small"
           },
@@ -6212,14 +6237,14 @@
           },
           {
             "source": "安童",
-            "target": "海山",
-            "label": "君臣",
+            "target": "不忽木",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "安童",
-            "target": "不忽木",
-            "label": "影响",
+            "target": "海山",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -6344,11 +6369,6 @@
             "size": "medium"
           },
           {
-            "name": "爱育黎拔力八达",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "姚枢",
             "type": "person",
             "size": "medium"
@@ -6361,7 +6381,7 @@
           {
             "name": "刘秉忠",
             "type": "person",
-            "size": "small"
+            "size": "medium"
           },
           {
             "name": "许衡",
@@ -6370,6 +6390,11 @@
           },
           {
             "name": "哈剌哈孙",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "爱育黎拔力八达",
             "type": "person",
             "size": "small"
           },
@@ -6388,12 +6413,6 @@
           {
             "source": "廉希宪",
             "target": "铁穆耳",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "廉希宪",
-            "target": "爱育黎拔力八达",
             "label": "君臣",
             "direction": "forward"
           },
@@ -6429,6 +6448,12 @@
           },
           {
             "source": "廉希宪",
+            "target": "爱育黎拔力八达",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "廉希宪",
             "target": "耶律楚材",
             "label": "影响",
             "direction": "forward"
@@ -6446,8 +6471,8 @@
             "direction": "forward"
           },
           {
-            "source": "爱育黎拔力八达",
-            "target": "哈剌哈孙",
+            "source": "姚枢",
+            "target": "忽必烈",
             "label": "君臣",
             "direction": "forward"
           }
@@ -6532,17 +6557,17 @@
             "size": "medium"
           },
           {
+            "name": "郭守敬",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "许衡",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "姚枢",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "郭守敬",
             "type": "person",
             "size": "small"
           },
@@ -6567,6 +6592,12 @@
           },
           {
             "source": "张文谦",
+            "target": "郭守敬",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "张文谦",
             "target": "许衡",
             "label": "盟友",
             "direction": "forward"
@@ -6574,12 +6605,6 @@
           {
             "source": "张文谦",
             "target": "姚枢",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "张文谦",
-            "target": "郭守敬",
             "label": "盟友",
             "direction": "forward"
           },
@@ -6597,7 +6622,7 @@
           },
           {
             "source": "忽必烈",
-            "target": "许衡",
+            "target": "郭守敬",
             "label": "君臣",
             "direction": "forward"
           }
@@ -6722,7 +6747,7 @@
           {
             "source": "窦默",
             "target": "许衡",
-            "label": "影响",
+            "label": "师生",
             "direction": "forward"
           },
           {
@@ -6734,7 +6759,7 @@
           {
             "source": "窦默",
             "target": "忽必烈",
-            "label": "君臣",
+            "label": "师生",
             "direction": "forward"
           },
           {
@@ -6762,7 +6787,7 @@
             "direction": "forward"
           },
           {
-            "source": "许衡",
+            "source": "刘秉忠",
             "target": "忽必烈",
             "label": "君臣",
             "direction": "forward"
@@ -7048,7 +7073,7 @@
           {
             "source": "忽必烈",
             "target": "许衡",
-            "label": "君臣",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -7145,7 +7170,7 @@
             "size": "large"
           },
           {
-            "name": "爱育黎拔力八达",
+            "name": "完泽",
             "type": "person",
             "size": "medium"
           },
@@ -7155,27 +7180,27 @@
             "size": "medium"
           },
           {
-            "name": "完泽",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "哈剌哈孙",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "海山",
-            "type": "person",
-            "size": "small"
-          },
-          {
             "name": "硕德八剌",
             "type": "person",
-            "size": "small"
+            "size": "medium"
           },
           {
             "name": "不忽木",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "爱育黎拔力八达",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "海山",
             "type": "person",
             "size": "small"
           },
@@ -7188,8 +7213,8 @@
         "edges": [
           {
             "source": "李孟",
-            "target": "爱育黎拔力八达",
-            "label": "君臣",
+            "target": "完泽",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -7200,20 +7225,8 @@
           },
           {
             "source": "李孟",
-            "target": "完泽",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "李孟",
             "target": "哈剌哈孙",
             "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "李孟",
-            "target": "海山",
-            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -7230,19 +7243,31 @@
           },
           {
             "source": "李孟",
+            "target": "爱育黎拔力八达",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "李孟",
+            "target": "海山",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "李孟",
             "target": "拜住",
             "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "爱育黎拔力八达",
-            "target": "完泽",
+            "source": "完泽",
+            "target": "铁穆耳",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "爱育黎拔力八达",
-            "target": "哈剌哈孙",
+            "source": "完泽",
+            "target": "爱育黎拔力八达",
             "label": "君臣",
             "direction": "forward"
           }
@@ -7337,32 +7362,32 @@
             "size": "medium"
           },
           {
-            "name": "爱育黎拔力八达",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "哈剌哈孙",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "海山",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "李孟",
             "type": "person",
-            "size": "small"
+            "size": "medium"
           },
           {
             "name": "不忽木",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "爱育黎拔力八达",
             "type": "person",
             "size": "small"
           },
           {
             "name": "彻里帖木儿",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "海山",
             "type": "person",
             "size": "small"
           },
@@ -7386,20 +7411,8 @@
           },
           {
             "source": "完泽",
-            "target": "爱育黎拔力八达",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "完泽",
             "target": "哈剌哈孙",
             "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "完泽",
-            "target": "海山",
-            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -7416,8 +7429,20 @@
           },
           {
             "source": "完泽",
+            "target": "爱育黎拔力八达",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "完泽",
             "target": "彻里帖木儿",
             "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "完泽",
+            "target": "海山",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -7525,17 +7550,12 @@
             "size": "large"
           },
           {
-            "name": "铁穆耳",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "爱育黎拔力八达",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "完泽",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "铁穆耳",
             "type": "person",
             "size": "medium"
           },
@@ -7545,17 +7565,22 @@
             "size": "medium"
           },
           {
-            "name": "海山",
-            "type": "person",
-            "size": "small"
-          },
-          {
             "name": "李孟",
             "type": "person",
-            "size": "small"
+            "size": "medium"
           },
           {
             "name": "不忽木",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "爱育黎拔力八达",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "海山",
             "type": "person",
             "size": "small"
           },
@@ -7568,32 +7593,20 @@
         "edges": [
           {
             "source": "哈剌哈孙",
-            "target": "铁穆耳",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "哈剌哈孙",
-            "target": "爱育黎拔力八达",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "哈剌哈孙",
             "target": "完泽",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "哈剌哈孙",
-            "target": "廉希宪",
-            "label": "影响",
+            "target": "铁穆耳",
+            "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "哈剌哈孙",
-            "target": "海山",
-            "label": "君臣",
+            "target": "廉希宪",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -7610,19 +7623,31 @@
           },
           {
             "source": "哈剌哈孙",
+            "target": "爱育黎拔力八达",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "哈剌哈孙",
+            "target": "海山",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "哈剌哈孙",
             "target": "月赤察儿",
             "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "完泽",
+            "source": "完泽",
+            "target": "铁穆耳",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "廉希宪",
+            "source": "完泽",
+            "target": "爱育黎拔力八达",
             "label": "君臣",
             "direction": "forward"
           }
@@ -7707,17 +7732,12 @@
             "size": "large"
           },
           {
-            "name": "铁穆耳",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "爱育黎拔力八达",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "完泽",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "铁穆耳",
             "type": "person",
             "size": "medium"
           },
@@ -7729,15 +7749,20 @@
           {
             "name": "李孟",
             "type": "person",
-            "size": "small"
+            "size": "medium"
           },
           {
-            "name": "安童",
+            "name": "爱育黎拔力八达",
             "type": "person",
             "size": "small"
           },
           {
             "name": "彻里帖木儿",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "安童",
             "type": "person",
             "size": "small"
           },
@@ -7750,20 +7775,14 @@
         "edges": [
           {
             "source": "不忽木",
-            "target": "铁穆耳",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "不忽木",
-            "target": "爱育黎拔力八达",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "不忽木",
             "target": "完泽",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "不忽木",
+            "target": "铁穆耳",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -7780,8 +7799,8 @@
           },
           {
             "source": "不忽木",
-            "target": "安童",
-            "label": "影响",
+            "target": "爱育黎拔力八达",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -7792,19 +7811,25 @@
           },
           {
             "source": "不忽木",
+            "target": "安童",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "不忽木",
             "target": "桑哥",
             "label": "敌对",
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "完泽",
+            "source": "完泽",
+            "target": "铁穆耳",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "哈剌哈孙",
+            "source": "完泽",
+            "target": "爱育黎拔力八达",
             "label": "君臣",
             "direction": "forward"
           }
@@ -7879,17 +7904,17 @@
             "size": "large"
           },
           {
-            "name": "爱育黎拔力八达",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "硕德八剌",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "李孟",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "爱育黎拔力八达",
             "type": "person",
             "size": "medium"
           },
@@ -7912,12 +7937,6 @@
         "edges": [
           {
             "source": "拜住",
-            "target": "爱育黎拔力八达",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "拜住",
             "target": "硕德八剌",
             "label": "君臣",
             "direction": "forward"
@@ -7926,6 +7945,12 @@
             "source": "拜住",
             "target": "李孟",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "拜住",
+            "target": "爱育黎拔力八达",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -7947,14 +7972,14 @@
             "direction": "forward"
           },
           {
-            "source": "爱育黎拔力八达",
+            "source": "硕德八剌",
             "target": "李孟",
             "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "硕德八剌",
-            "target": "李孟",
+            "target": "也先帖木儿",
             "label": "君臣",
             "direction": "forward"
           }
@@ -8044,12 +8069,12 @@
             "size": "medium"
           },
           {
-            "name": "玉昔帖木儿",
+            "name": "阿鲁图",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "阿鲁图",
+            "name": "玉昔帖木儿",
             "type": "person",
             "size": "small"
           },
@@ -8063,7 +8088,7 @@
           {
             "source": "铁失",
             "target": "硕德八剌",
-            "label": "君臣",
+            "label": "敌对",
             "direction": "forward"
           },
           {
@@ -8080,14 +8105,14 @@
           },
           {
             "source": "铁失",
-            "target": "玉昔帖木儿",
-            "label": "盟友",
+            "target": "阿鲁图",
+            "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "铁失",
-            "target": "阿鲁图",
-            "label": "敌对",
+            "target": "玉昔帖木儿",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -8208,12 +8233,12 @@
             "size": "medium"
           },
           {
-            "name": "和世㻋",
+            "name": "马札儿台",
             "type": "person",
             "size": "small"
           },
           {
-            "name": "马札儿台",
+            "name": "和世㻋",
             "type": "person",
             "size": "small"
           }
@@ -8245,13 +8270,13 @@
           },
           {
             "source": "燕铁木儿",
-            "target": "和世㻋",
+            "target": "马札儿台",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "燕铁木儿",
-            "target": "马札儿台",
+            "target": "和世㻋",
             "label": "盟友",
             "direction": "forward"
           },
@@ -8348,12 +8373,12 @@
             "size": "medium"
           },
           {
-            "name": "和世㻋",
+            "name": "燕铁木儿",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "燕铁木儿",
+            "name": "和世㻋",
             "type": "person",
             "size": "small"
           }
@@ -8379,14 +8404,14 @@
           },
           {
             "source": "马札儿台",
-            "target": "和世㻋",
-            "label": "君臣",
+            "target": "燕铁木儿",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "马札儿台",
-            "target": "燕铁木儿",
-            "label": "盟友",
+            "target": "和世㻋",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -8397,7 +8422,7 @@
           },
           {
             "source": "伯颜",
-            "target": "和世㻋",
+            "target": "燕铁木儿",
             "label": "君臣",
             "direction": "forward"
           }
@@ -8861,22 +8886,22 @@
             "size": "large"
           },
           {
-            "name": "铁穆耳",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "爱育黎拔力八达",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "完泽",
             "type": "person",
             "size": "medium"
           },
           {
+            "name": "铁穆耳",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "哈剌哈孙",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "爱育黎拔力八达",
             "type": "person",
             "size": "medium"
           },
@@ -8889,8 +8914,20 @@
         "edges": [
           {
             "source": "月赤察儿",
+            "target": "完泽",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "月赤察儿",
             "target": "铁穆耳",
             "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "月赤察儿",
+            "target": "哈剌哈孙",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -8901,31 +8938,19 @@
           },
           {
             "source": "月赤察儿",
-            "target": "完泽",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "月赤察儿",
-            "target": "哈剌哈孙",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "月赤察儿",
             "target": "海山",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "完泽",
+            "source": "完泽",
+            "target": "铁穆耳",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "哈剌哈孙",
+            "source": "完泽",
+            "target": "爱育黎拔力八达",
             "label": "君臣",
             "direction": "forward"
           }
@@ -9488,12 +9513,12 @@
             "size": "medium"
           },
           {
-            "name": "董文炳",
+            "name": "阿里海牙",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "阿里海牙",
+            "name": "董文炳",
             "type": "person",
             "size": "medium"
           },
@@ -9523,13 +9548,13 @@
           },
           {
             "source": "李恒",
-            "target": "董文炳",
+            "target": "阿里海牙",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "李恒",
-            "target": "阿里海牙",
+            "target": "董文炳",
             "label": "盟友",
             "direction": "forward"
           },
@@ -9553,7 +9578,7 @@
           },
           {
             "source": "阿术",
-            "target": "董文炳",
+            "target": "阿里海牙",
             "label": "盟友",
             "direction": "forward"
           }
@@ -9642,12 +9667,12 @@
             "size": "large"
           },
           {
-            "name": "史天泽",
+            "name": "阿术",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "阿术",
+            "name": "史天泽",
             "type": "person",
             "size": "medium"
           },
@@ -9662,12 +9687,12 @@
             "size": "medium"
           },
           {
-            "name": "木华黎",
+            "name": "李恒",
             "type": "person",
             "size": "small"
           },
           {
-            "name": "李恒",
+            "name": "木华黎",
             "type": "person",
             "size": "small"
           },
@@ -9680,13 +9705,13 @@
         "edges": [
           {
             "source": "董文炳",
-            "target": "史天泽",
+            "target": "阿术",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "董文炳",
-            "target": "阿术",
+            "target": "史天泽",
             "label": "盟友",
             "direction": "forward"
           },
@@ -9704,14 +9729,14 @@
           },
           {
             "source": "董文炳",
-            "target": "木华黎",
-            "label": "影响",
+            "target": "李恒",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "董文炳",
-            "target": "李恒",
-            "label": "盟友",
+            "target": "木华黎",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -9721,13 +9746,13 @@
             "direction": "forward"
           },
           {
-            "source": "史天泽",
-            "target": "阿术",
+            "source": "阿术",
+            "target": "史天泽",
             "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "史天泽",
+            "source": "阿术",
             "target": "张弘范",
             "label": "盟友",
             "direction": "forward"
@@ -9793,12 +9818,12 @@
             "size": "large"
           },
           {
-            "name": "史天泽",
+            "name": "忽必烈",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "忽必烈",
+            "name": "史天泽",
             "type": "person",
             "size": "medium"
           },
@@ -9816,14 +9841,14 @@
         "edges": [
           {
             "source": "董文用",
-            "target": "史天泽",
-            "label": "盟友",
+            "target": "忽必烈",
+            "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "董文用",
-            "target": "忽必烈",
-            "label": "君臣",
+            "target": "史天泽",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -9839,8 +9864,8 @@
             "direction": "forward"
           },
           {
-            "source": "史天泽",
-            "target": "忽必烈",
+            "source": "忽必烈",
+            "target": "史天泽",
             "label": "君臣",
             "direction": "forward"
           },
@@ -9906,12 +9931,12 @@
             "size": "large"
           },
           {
-            "name": "史天泽",
+            "name": "忽必烈",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "忽必烈",
+            "name": "史天泽",
             "type": "person",
             "size": "medium"
           },
@@ -9934,14 +9959,14 @@
         "edges": [
           {
             "source": "董文忠",
-            "target": "史天泽",
-            "label": "盟友",
+            "target": "忽必烈",
+            "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "董文忠",
-            "target": "忽必烈",
-            "label": "君臣",
+            "target": "史天泽",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -9951,8 +9976,8 @@
             "direction": "forward"
           },
           {
-            "source": "史天泽",
-            "target": "忽必烈",
+            "source": "忽必烈",
+            "target": "史天泽",
             "label": "君臣",
             "direction": "forward"
           },
@@ -10213,13 +10238,13 @@
             "direction": "forward"
           },
           {
-            "source": "许衡",
+            "source": "姚枢",
             "target": "忽必烈",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "姚枢",
+            "source": "刘秉忠",
             "target": "忽必烈",
             "label": "君臣",
             "direction": "forward"
@@ -10305,17 +10330,17 @@
             "size": "large"
           },
           {
-            "name": "许衡",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "吴澄",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "虞集",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "许衡",
             "type": "person",
             "size": "medium"
           },
@@ -10330,11 +10355,6 @@
             "size": "small"
           },
           {
-            "name": "耶律有尚",
-            "type": "person",
-            "size": "small"
-          },
-          {
             "name": "张养浩",
             "type": "person",
             "size": "small"
@@ -10343,15 +10363,14 @@
             "name": "元好问",
             "type": "person",
             "size": "small"
+          },
+          {
+            "name": "耶律有尚",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
-          {
-            "source": "姚燧",
-            "target": "许衡",
-            "label": "影响",
-            "direction": "forward"
-          },
           {
             "source": "姚燧",
             "target": "吴澄",
@@ -10361,6 +10380,12 @@
           {
             "source": "姚燧",
             "target": "虞集",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "姚燧",
+            "target": "许衡",
             "label": "影响",
             "direction": "forward"
           },
@@ -10378,12 +10403,6 @@
           },
           {
             "source": "姚燧",
-            "target": "耶律有尚",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "姚燧",
             "target": "张养浩",
             "label": "影响",
             "direction": "forward"
@@ -10395,8 +10414,8 @@
             "direction": "forward"
           },
           {
-            "source": "吴澄",
-            "target": "刘因",
+            "source": "姚燧",
+            "target": "耶律有尚",
             "label": "盟友",
             "direction": "forward"
           },
@@ -10404,6 +10423,12 @@
             "source": "吴澄",
             "target": "耶律有尚",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "吴澄",
+            "target": "虞集",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -10487,7 +10512,7 @@
             "size": "medium"
           },
           {
-            "name": "吴澄",
+            "name": "姚燧",
             "type": "person",
             "size": "medium"
           },
@@ -10497,14 +10522,9 @@
             "size": "medium"
           },
           {
-            "name": "姚燧",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "朱世杰",
             "type": "person",
-            "size": "small"
+            "size": "medium"
           },
           {
             "name": "赵复",
@@ -10526,7 +10546,7 @@
           },
           {
             "source": "刘因",
-            "target": "吴澄",
+            "target": "姚燧",
             "label": "盟友",
             "direction": "forward"
           },
@@ -10538,12 +10558,6 @@
           },
           {
             "source": "刘因",
-            "target": "姚燧",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "刘因",
             "target": "朱世杰",
             "label": "影响",
             "direction": "forward"
@@ -10551,7 +10565,7 @@
           {
             "source": "刘因",
             "target": "赵复",
-            "label": "影响",
+            "label": "师生",
             "direction": "forward"
           },
           {
@@ -10561,14 +10575,14 @@
             "direction": "forward"
           },
           {
-            "source": "吴澄",
-            "target": "姚燧",
-            "label": "盟友",
+            "source": "许衡",
+            "target": "赵孟頫",
+            "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "许衡",
-            "target": "吴澄",
+            "source": "姚燧",
+            "target": "赵孟頫",
             "label": "影响",
             "direction": "forward"
           }
@@ -10663,17 +10677,17 @@
             "size": "large"
           },
           {
-            "name": "许衡",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "虞集",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "揭傒斯",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "许衡",
             "type": "person",
             "size": "medium"
           },
@@ -10693,17 +10707,7 @@
             "size": "small"
           },
           {
-            "name": "刘因",
-            "type": "person",
-            "size": "small"
-          },
-          {
             "name": "危亦林",
-            "type": "person",
-            "size": "small"
-          },
-          {
-            "name": "耶律有尚",
             "type": "person",
             "size": "small"
           },
@@ -10711,15 +10715,14 @@
             "name": "赵复",
             "type": "person",
             "size": "small"
+          },
+          {
+            "name": "耶律有尚",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
-          {
-            "source": "吴澄",
-            "target": "许衡",
-            "label": "影响",
-            "direction": "forward"
-          },
           {
             "source": "吴澄",
             "target": "虞集",
@@ -10729,6 +10732,12 @@
           {
             "source": "吴澄",
             "target": "揭傒斯",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "吴澄",
+            "target": "许衡",
             "label": "影响",
             "direction": "forward"
           },
@@ -10752,13 +10761,13 @@
           },
           {
             "source": "吴澄",
-            "target": "刘因",
-            "label": "盟友",
+            "target": "危亦林",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "吴澄",
-            "target": "危亦林",
+            "target": "赵复",
             "label": "影响",
             "direction": "forward"
           },
@@ -10769,21 +10778,15 @@
             "direction": "forward"
           },
           {
-            "source": "吴澄",
-            "target": "赵复",
-            "label": "影响",
+            "source": "姚燧",
+            "target": "耶律有尚",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "虞集",
             "target": "揭傒斯",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "姚燧",
-            "target": "刘因",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -10847,17 +10850,12 @@
             "size": "large"
           },
           {
-            "name": "许衡",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "吴澄",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "赵孟頫",
+            "name": "许衡",
             "type": "person",
             "size": "medium"
           },
@@ -10865,18 +10863,29 @@
             "name": "姚燧",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "赵孟頫",
+            "type": "person",
+            "size": "medium"
           }
         ],
         "edges": [
           {
             "source": "耶律有尚",
-            "target": "许衡",
+            "target": "吴澄",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "耶律有尚",
-            "target": "吴澄",
+            "target": "许衡",
+            "label": "师生",
+            "direction": "forward"
+          },
+          {
+            "source": "耶律有尚",
+            "target": "姚燧",
             "label": "盟友",
             "direction": "forward"
           },
@@ -10887,20 +10896,14 @@
             "direction": "forward"
           },
           {
-            "source": "耶律有尚",
-            "target": "姚燧",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
             "source": "吴澄",
             "target": "姚燧",
             "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "许衡",
-            "target": "吴澄",
+            "source": "吴澄",
+            "target": "许衡",
             "label": "影响",
             "direction": "forward"
           }
@@ -10970,17 +10973,17 @@
             "size": "large"
           },
           {
+            "name": "吴澄",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "许衡",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "姚枢",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "吴澄",
             "type": "person",
             "size": "medium"
           },
@@ -10998,6 +11001,12 @@
         "edges": [
           {
             "source": "赵复",
+            "target": "吴澄",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "赵复",
             "target": "许衡",
             "label": "影响",
             "direction": "forward"
@@ -11010,14 +11019,8 @@
           },
           {
             "source": "赵复",
-            "target": "吴澄",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "赵复",
             "target": "刘因",
-            "label": "影响",
+            "label": "师生",
             "direction": "forward"
           },
           {
@@ -11033,9 +11036,9 @@
             "direction": "forward"
           },
           {
-            "source": "吴澄",
-            "target": "刘因",
-            "label": "盟友",
+            "source": "许衡",
+            "target": "姚枢",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -11104,16 +11107,6 @@
             "size": "large"
           },
           {
-            "name": "忽必烈",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "赵孟頫",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "虞集",
             "type": "person",
             "size": "medium"
@@ -11126,22 +11119,20 @@
           {
             "name": "欧阳玄",
             "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "忽必烈",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "赵孟頫",
+            "type": "person",
             "size": "small"
           }
         ],
         "edges": [
-          {
-            "source": "程钜夫",
-            "target": "忽必烈",
-            "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "程钜夫",
-            "target": "赵孟頫",
-            "label": "盟友",
-            "direction": "forward"
-          },
           {
             "source": "程钜夫",
             "target": "虞集",
@@ -11161,15 +11152,27 @@
             "direction": "forward"
           },
           {
-            "source": "虞集",
-            "target": "揭傒斯",
-            "label": "盟友",
+            "source": "程钜夫",
+            "target": "忽必烈",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "程钜夫",
+            "target": "赵孟頫",
+            "label": "同僚",
             "direction": "forward"
           },
           {
             "source": "揭傒斯",
             "target": "欧阳玄",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "虞集",
+            "target": "揭傒斯",
+            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -11263,17 +11266,17 @@
             "size": "large"
           },
           {
-            "name": "赵孟頫",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "吴澄",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "揭傒斯",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "赵孟頫",
             "type": "person",
             "size": "medium"
           },
@@ -11316,12 +11319,6 @@
         "edges": [
           {
             "source": "虞集",
-            "target": "赵孟頫",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "虞集",
             "target": "吴澄",
             "label": "师生",
             "direction": "forward"
@@ -11329,7 +11326,13 @@
           {
             "source": "虞集",
             "target": "揭傒斯",
-            "label": "盟友",
+            "label": "同僚",
+            "direction": "forward"
+          },
+          {
+            "source": "虞集",
+            "target": "赵孟頫",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -11381,8 +11384,8 @@
             "direction": "forward"
           },
           {
-            "source": "赵孟頫",
-            "target": "高克恭",
+            "source": "吴澄",
+            "target": "姚燧",
             "label": "盟友",
             "direction": "forward"
           }
@@ -11462,17 +11465,17 @@
             "size": "medium"
           },
           {
-            "name": "赵孟頫",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "揭傒斯",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "欧阳玄",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "赵孟頫",
             "type": "person",
             "size": "medium"
           },
@@ -11496,12 +11499,6 @@
           },
           {
             "source": "杨载",
-            "target": "赵孟頫",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "杨载",
             "target": "揭傒斯",
             "label": "盟友",
             "direction": "forward"
@@ -11510,6 +11507,12 @@
             "source": "杨载",
             "target": "欧阳玄",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "杨载",
+            "target": "赵孟頫",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -11525,14 +11528,14 @@
             "direction": "forward"
           },
           {
-            "source": "虞集",
-            "target": "揭傒斯",
+            "source": "揭傒斯",
+            "target": "欧阳玄",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "揭傒斯",
-            "target": "欧阳玄",
+            "target": "黄溍",
             "label": "盟友",
             "direction": "forward"
           }
@@ -11687,7 +11690,7 @@
           {
             "source": "揭傒斯",
             "target": "虞集",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
@@ -11746,7 +11749,7 @@
           },
           {
             "source": "欧阳玄",
-            "target": "黄溍",
+            "target": "杨载",
             "label": "盟友",
             "direction": "forward"
           }
@@ -11865,7 +11868,7 @@
           {
             "source": "黄溍",
             "target": "虞集",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
@@ -11877,7 +11880,7 @@
           {
             "source": "黄溍",
             "target": "欧阳玄",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
@@ -11906,13 +11909,13 @@
           },
           {
             "source": "虞集",
-            "target": "揭傒斯",
+            "target": "杨载",
             "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "虞集",
-            "target": "杨载",
+            "source": "揭傒斯",
+            "target": "欧阳玄",
             "label": "盟友",
             "direction": "forward"
           }
@@ -12248,7 +12251,7 @@
           {
             "source": "欧阳玄",
             "target": "黄溍",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
@@ -12283,13 +12286,13 @@
           },
           {
             "source": "虞集",
-            "target": "揭傒斯",
+            "target": "杨载",
             "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "虞集",
-            "target": "杨载",
+            "source": "揭傒斯",
+            "target": "黄溍",
             "label": "盟友",
             "direction": "forward"
           }
@@ -12444,7 +12447,7 @@
           },
           {
             "source": "揭傒斯",
-            "target": "虞集",
+            "target": "黄溍",
             "label": "盟友",
             "direction": "forward"
           }
@@ -12653,22 +12656,22 @@
             "size": "large"
           },
           {
-            "name": "忽必烈",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "许衡",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "虞集",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "欧阳玄",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "忽必烈",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "许衡",
             "type": "person",
             "size": "medium"
           },
@@ -12686,18 +12689,6 @@
         "edges": [
           {
             "source": "张养浩",
-            "target": "忽必烈",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "张养浩",
-            "target": "许衡",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "张养浩",
             "target": "虞集",
             "label": "盟友",
             "direction": "forward"
@@ -12705,6 +12696,18 @@
           {
             "source": "张养浩",
             "target": "欧阳玄",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "张养浩",
+            "target": "忽必烈",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "张养浩",
+            "target": "许衡",
             "label": "影响",
             "direction": "forward"
           },
@@ -12723,7 +12726,7 @@
           {
             "source": "忽必烈",
             "target": "许衡",
-            "label": "君臣",
+            "label": "师生",
             "direction": "forward"
           },
           {
@@ -12889,13 +12892,13 @@
           {
             "source": "马致远",
             "target": "白朴",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
             "source": "马致远",
-            "target": "睢景臣",
-            "label": "影响",
+            "target": "关汉卿",
+            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -13055,13 +13058,13 @@
           {
             "source": "马致远",
             "target": "白朴",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
             "source": "马致远",
             "target": "关汉卿",
-            "label": "影响",
+            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -13264,12 +13267,12 @@
             "size": "large"
           },
           {
-            "name": "赵孟頫",
+            "name": "虞集",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "虞集",
+            "name": "赵孟頫",
             "type": "person",
             "size": "medium"
           },
@@ -13292,14 +13295,14 @@
         "edges": [
           {
             "source": "鲜于枢",
-            "target": "赵孟頫",
-            "label": "盟友",
+            "target": "虞集",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "鲜于枢",
-            "target": "虞集",
-            "label": "影响",
+            "target": "赵孟頫",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -13327,8 +13330,8 @@
             "direction": "forward"
           },
           {
-            "source": "赵孟頫",
-            "target": "虞集",
+            "source": "虞集",
+            "target": "赵孟頫",
             "label": "影响",
             "direction": "forward"
           }
@@ -13398,17 +13401,17 @@
             "size": "large"
           },
           {
-            "name": "赵孟頫",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "虞集",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "揭傒斯",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "赵孟頫",
             "type": "person",
             "size": "medium"
           },
@@ -13426,12 +13429,6 @@
         "edges": [
           {
             "source": "康里巎巎",
-            "target": "赵孟頫",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "康里巎巎",
             "target": "虞集",
             "label": "盟友",
             "direction": "forward"
@@ -13440,6 +13437,12 @@
             "source": "康里巎巎",
             "target": "揭傒斯",
             "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "康里巎巎",
+            "target": "赵孟頫",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -13457,12 +13460,12 @@
           {
             "source": "虞集",
             "target": "揭傒斯",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
-            "source": "赵孟頫",
-            "target": "虞集",
+            "source": "虞集",
+            "target": "赵孟頫",
             "label": "影响",
             "direction": "forward"
           }
@@ -13537,17 +13540,17 @@
             "size": "large"
           },
           {
-            "name": "赵孟頫",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "虞集",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "揭傒斯",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "赵孟頫",
             "type": "person",
             "size": "medium"
           },
@@ -13570,12 +13573,6 @@
         "edges": [
           {
             "source": "柯九思",
-            "target": "赵孟頫",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "柯九思",
             "target": "虞集",
             "label": "盟友",
             "direction": "forward"
@@ -13583,6 +13580,12 @@
           {
             "source": "柯九思",
             "target": "揭傒斯",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "柯九思",
+            "target": "赵孟頫",
             "label": "影响",
             "direction": "forward"
           },
@@ -13607,12 +13610,12 @@
           {
             "source": "虞集",
             "target": "揭傒斯",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
-            "source": "赵孟頫",
-            "target": "虞集",
+            "source": "虞集",
+            "target": "赵孟頫",
             "label": "影响",
             "direction": "forward"
           }
@@ -13695,7 +13698,7 @@
             "size": "medium"
           },
           {
-            "name": "脱脱",
+            "name": "贾鲁",
             "type": "person",
             "size": "medium"
           },
@@ -13705,7 +13708,7 @@
             "size": "medium"
           },
           {
-            "name": "贾鲁",
+            "name": "脱脱",
             "type": "person",
             "size": "medium"
           },
@@ -13729,7 +13732,7 @@
           },
           {
             "source": "韩山童",
-            "target": "脱脱",
+            "target": "贾鲁",
             "label": "敌对",
             "direction": "forward"
           },
@@ -13741,7 +13744,7 @@
           },
           {
             "source": "韩山童",
-            "target": "贾鲁",
+            "target": "脱脱",
             "label": "敌对",
             "direction": "forward"
           },
@@ -13758,14 +13761,14 @@
             "direction": "forward"
           },
           {
-            "source": "脱脱",
-            "target": "贾鲁",
+            "source": "贾鲁",
+            "target": "脱脱",
             "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "刘福通",
-            "target": "脱脱",
+            "target": "贾鲁",
             "label": "敌对",
             "direction": "forward"
           }
@@ -13868,17 +13871,17 @@
             "size": "medium"
           },
           {
+            "name": "贾鲁",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "徐寿辉",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "韩林儿",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "贾鲁",
             "type": "person",
             "size": "small"
           },
@@ -13908,6 +13911,12 @@
           },
           {
             "source": "彭莹玉",
+            "target": "贾鲁",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "彭莹玉",
             "target": "徐寿辉",
             "label": "盟友",
             "direction": "forward"
@@ -13916,12 +13925,6 @@
             "source": "彭莹玉",
             "target": "韩林儿",
             "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "彭莹玉",
-            "target": "贾鲁",
-            "label": "敌对",
             "direction": "forward"
           },
           {
@@ -13944,8 +13947,8 @@
           },
           {
             "source": "刘福通",
-            "target": "徐寿辉",
-            "label": "盟友",
+            "target": "贾鲁",
+            "label": "敌对",
             "direction": "forward"
           }
         ]
@@ -14041,12 +14044,12 @@
             "size": "large"
           },
           {
-            "name": "刘福通",
+            "name": "张士诚",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "张士诚",
+            "name": "刘福通",
             "type": "person",
             "size": "medium"
           },
@@ -14079,14 +14082,14 @@
         "edges": [
           {
             "source": "徐寿辉",
-            "target": "刘福通",
-            "label": "盟友",
+            "target": "张士诚",
+            "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "徐寿辉",
-            "target": "张士诚",
-            "label": "敌对",
+            "target": "刘福通",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -14120,15 +14123,15 @@
             "direction": "forward"
           },
           {
-            "source": "刘福通",
-            "target": "张士诚",
+            "source": "张士诚",
+            "target": "刘福通",
             "label": "敌对",
             "direction": "forward"
           },
           {
-            "source": "刘福通",
-            "target": "彭莹玉",
-            "label": "盟友",
+            "source": "张士诚",
+            "target": "陈友谅",
+            "label": "敌对",
             "direction": "forward"
           }
         ]
@@ -14373,12 +14376,12 @@
             "size": "large"
           },
           {
-            "name": "刘福通",
+            "name": "张士诚",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "张士诚",
+            "name": "刘福通",
             "type": "person",
             "size": "medium"
           },
@@ -14406,14 +14409,14 @@
         "edges": [
           {
             "source": "韩林儿",
-            "target": "刘福通",
-            "label": "盟友",
+            "target": "张士诚",
+            "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "韩林儿",
-            "target": "张士诚",
-            "label": "敌对",
+            "target": "刘福通",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -14441,13 +14444,13 @@
             "direction": "forward"
           },
           {
-            "source": "刘福通",
-            "target": "张士诚",
+            "source": "张士诚",
+            "target": "刘福通",
             "label": "敌对",
             "direction": "forward"
           },
           {
-            "source": "刘福通",
+            "source": "张士诚",
             "target": "妥欢帖睦尔",
             "label": "敌对",
             "direction": "forward"
@@ -14556,11 +14559,6 @@
             "size": "large"
           },
           {
-            "name": "脱脱",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "刘福通",
             "type": "person",
             "size": "medium"
@@ -14576,17 +14574,22 @@
             "size": "medium"
           },
           {
+            "name": "脱脱",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "贾鲁",
+            "type": "person",
+            "size": "small"
+          },
+          {
             "name": "韩林儿",
             "type": "person",
             "size": "small"
           },
           {
             "name": "徐寿辉",
-            "type": "person",
-            "size": "small"
-          },
-          {
-            "name": "贾鲁",
             "type": "person",
             "size": "small"
           },
@@ -14609,12 +14612,6 @@
         "edges": [
           {
             "source": "张士诚",
-            "target": "脱脱",
-            "label": "敌对",
-            "direction": "forward"
-          },
-          {
-            "source": "张士诚",
             "target": "刘福通",
             "label": "敌对",
             "direction": "forward"
@@ -14633,6 +14630,18 @@
           },
           {
             "source": "张士诚",
+            "target": "脱脱",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "张士诚",
+            "target": "贾鲁",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "张士诚",
             "target": "韩林儿",
             "label": "敌对",
             "direction": "forward"
@@ -14640,12 +14649,6 @@
           {
             "source": "张士诚",
             "target": "徐寿辉",
-            "label": "敌对",
-            "direction": "forward"
-          },
-          {
-            "source": "张士诚",
-            "target": "贾鲁",
             "label": "敌对",
             "direction": "forward"
           },
@@ -14668,13 +14671,13 @@
             "direction": "forward"
           },
           {
-            "source": "脱脱",
-            "target": "妥欢帖睦尔",
+            "source": "妥欢帖睦尔",
+            "target": "脱脱",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "脱脱",
+            "source": "妥欢帖睦尔",
             "target": "贾鲁",
             "label": "君臣",
             "direction": "forward"
@@ -14903,12 +14906,12 @@
             "size": "large"
           },
           {
-            "name": "刘福通",
+            "name": "张士诚",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "张士诚",
+            "name": "刘福通",
             "type": "person",
             "size": "medium"
           },
@@ -14936,13 +14939,13 @@
         "edges": [
           {
             "source": "明玉珍",
-            "target": "刘福通",
+            "target": "张士诚",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "明玉珍",
-            "target": "张士诚",
+            "target": "刘福通",
             "label": "影响",
             "direction": "forward"
           },
@@ -14977,8 +14980,8 @@
             "direction": "forward"
           },
           {
-            "source": "刘福通",
-            "target": "张士诚",
+            "source": "张士诚",
+            "target": "刘福通",
             "label": "敌对",
             "direction": "forward"
           }
@@ -15631,11 +15634,6 @@
             "size": "large"
           },
           {
-            "name": "赵孟頫",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "虞集",
             "type": "person",
             "size": "medium"
@@ -15651,18 +15649,17 @@
             "size": "medium"
           },
           {
+            "name": "赵孟頫",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "刘因",
             "type": "person",
             "size": "small"
           }
         ],
         "edges": [
-          {
-            "source": "元好问",
-            "target": "赵孟頫",
-            "label": "影响",
-            "direction": "forward"
-          },
           {
             "source": "元好问",
             "target": "虞集",
@@ -15683,6 +15680,12 @@
           },
           {
             "source": "元好问",
+            "target": "赵孟頫",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "元好问",
             "target": "刘因",
             "label": "影响",
             "direction": "forward"
@@ -15694,8 +15697,8 @@
             "direction": "forward"
           },
           {
-            "source": "赵孟頫",
-            "target": "虞集",
+            "source": "虞集",
+            "target": "姚燧",
             "label": "影响",
             "direction": "forward"
           }
@@ -15840,13 +15843,13 @@
           {
             "source": "马致远",
             "target": "白朴",
-            "label": "盟友",
+            "label": "同僚",
             "direction": "forward"
           },
           {
             "source": "马致远",
             "target": "关汉卿",
-            "label": "影响",
+            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -15929,12 +15932,12 @@
             "size": "medium"
           },
           {
-            "name": "史天泽",
+            "name": "刘秉忠",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "刘秉忠",
+            "name": "史天泽",
             "type": "person",
             "size": "medium"
           },
@@ -15963,13 +15966,13 @@
           },
           {
             "source": "阿合马",
-            "target": "史天泽",
+            "target": "刘秉忠",
             "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "阿合马",
-            "target": "刘秉忠",
+            "target": "史天泽",
             "label": "敌对",
             "direction": "forward"
           },
@@ -15993,13 +15996,13 @@
           },
           {
             "source": "忽必烈",
-            "target": "史天泽",
+            "target": "刘秉忠",
             "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "忽必烈",
-            "target": "刘秉忠",
+            "target": "史天泽",
             "label": "君臣",
             "direction": "forward"
           }
@@ -16078,17 +16081,17 @@
             "size": "large"
           },
           {
+            "name": "完泽",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "忽必烈",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "铁穆耳",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "完泽",
             "type": "person",
             "size": "medium"
           },
@@ -16111,6 +16114,12 @@
         "edges": [
           {
             "source": "桑哥",
+            "target": "完泽",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "桑哥",
             "target": "忽必烈",
             "label": "君臣",
             "direction": "forward"
@@ -16119,12 +16128,6 @@
             "source": "桑哥",
             "target": "铁穆耳",
             "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "桑哥",
-            "target": "完泽",
-            "label": "敌对",
             "direction": "forward"
           },
           {
@@ -16146,8 +16149,8 @@
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "完泽",
+            "source": "完泽",
+            "target": "铁穆耳",
             "label": "君臣",
             "direction": "forward"
           },
@@ -16237,12 +16240,12 @@
             "size": "large"
           },
           {
-            "name": "铁穆耳",
+            "name": "完泽",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "完泽",
+            "name": "铁穆耳",
             "type": "person",
             "size": "medium"
           },
@@ -16270,14 +16273,14 @@
         "edges": [
           {
             "source": "彻里帖木儿",
-            "target": "铁穆耳",
-            "label": "君臣",
+            "target": "完泽",
+            "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "彻里帖木儿",
-            "target": "完泽",
-            "label": "敌对",
+            "target": "铁穆耳",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -16305,8 +16308,8 @@
             "direction": "forward"
           },
           {
-            "source": "铁穆耳",
-            "target": "完泽",
+            "source": "完泽",
+            "target": "铁穆耳",
             "label": "君臣",
             "direction": "forward"
           },
@@ -17009,21 +17012,27 @@
       "narratives": [
         {
           "year": 1267,
-          "tag": "经过",
-          "title": "忽必烈决定在",
-          "description": "忽必烈决定在原中都旧址附近营建新的都城，刘秉忠等参与规划建设，最终形成规模宏大的大都城"
+          "tag": "起因",
+          "title": "燕京旧城",
+          "description": "金中都旧城残破，忽必烈决意在燕京另建新都。"
         },
         {
           "year": 1267,
           "tag": "经过",
-          "title": "城市布局以宫",
-          "description": "城市布局以宫城、皇城和外城为主要结构，并通过漕运和道路连接华北及江南"
+          "title": "择址规划",
+          "description": "刘秉忠主持选址，依《周礼》布局宫城、坛庙与街巷。"
         },
         {
           "year": 1267,
           "tag": "经过",
-          "title": "大都后来成为",
-          "description": "大都后来成为元朝政治、经济和文化中心，也是当时世界著名的大城市之一"
+          "title": "宫城营建",
+          "description": "征调各地工匠民夫，营建宫室、城墙与漕运水系。"
+        },
+        {
+          "year": 1267,
+          "tag": "结果",
+          "title": "定都大都",
+          "description": "1271年后大都成为元朝都城，奠定此后北京的城市格局。"
         }
       ],
       "background": {
@@ -17848,21 +17857,27 @@
       "narratives": [
         {
           "year": 1279,
-          "tag": "经过",
-          "title": "1279年南",
-          "description": "1279年南宋灭亡后，元朝基本结束了自唐末以来长期分裂割据的局面，实现对中国主要传统疆域的统一"
+          "tag": "起因",
+          "title": "南北分治",
+          "description": "蒙古灭金后与南宋长期对峙，南北分裂已逾百年。"
         },
         {
           "year": 1279,
           "tag": "经过",
-          "title": "元朝将草原",
-          "description": "元朝将草原、北方、中原、江南及西南等广大地区纳入同一政权之下，并通过行省等制度加强统治"
+          "title": "崖山定局",
+          "description": "1279年崖山海战宋军覆没，南宋政权彻底终结。"
         },
         {
           "year": 1279,
-          "tag": "经过",
-          "title": "统一促进了不",
-          "description": "统一促进了不同地区之间的交通和人员往来"
+          "tag": "转折",
+          "title": "疆域一统",
+          "description": "元朝疆域北逾阴山、南越海表，首次由北方民族统一全国。"
+        },
+        {
+          "year": 1279,
+          "tag": "结果",
+          "title": "混一南北",
+          "description": "统一结束长期分裂，行省与驿道把南北纳入同一行政体系。"
         }
       ],
       "background": {
@@ -18011,21 +18026,21 @@
       "narratives": [
         {
           "year": 1281,
-          "tag": "经过",
-          "title": "元朝统一南宋",
-          "description": "元朝统一南宋后加强对东南沿海及台湾海峡地区的管理"
+          "tag": "起因",
+          "title": "经略海疆",
+          "description": "元朝统一后重视东南海道，需要管理澎湖与台湾海域。"
         },
         {
           "year": 1281,
           "tag": "经过",
-          "title": "1281年前",
-          "description": "1281年前后，元朝在澎湖设置巡检司，负责治安、巡逻和地方事务管理"
+          "title": "设司澎湖",
+          "description": "1281年在澎湖设置巡检司，隶属泉州路晋江县。"
         },
         {
           "year": 1281,
-          "tag": "经过",
-          "title": "澎湖巡检司是",
-          "description": "澎湖巡检司是元朝对澎湖地区实施行政管辖的重要机构，其设置反映出元朝中央政权对东南海域及岛屿地区治理范围的进一步延伸"
+          "tag": "结果",
+          "title": "海道归治",
+          "description": "澎湖正式纳入行政建制，海上治安与商贸得到管理。"
         }
       ],
       "background": {
@@ -18250,27 +18265,27 @@
       "narratives": [
         {
           "year": 1274,
-          "tag": "经过",
-          "title": "元朝统一高丽",
-          "description": "元朝统一高丽后，忽必烈多次遣使要求日本臣服并建立朝贡关系，但日本方面拒绝"
+          "tag": "起因",
+          "title": "高丽归附",
+          "description": "元朝征服高丽后，要求其协助招谕日本。"
         },
         {
           "year": 1274,
           "tag": "经过",
-          "title": "1274年",
-          "description": "1274年，元军与高丽军、汉军组成联军渡海进攻日本，在对马、壹岐等地作战后进入博多湾"
+          "title": "遣使招日",
+          "description": "忽必烈多次遣使赴日，镰仓幕府拒绝称臣。"
         },
         {
           "year": 1274,
-          "tag": "经过",
-          "title": "由于遭遇日本",
-          "description": "由于遭遇日本抵抗以及风暴等因素，联军最终撤退"
+          "tag": "转折",
+          "title": "文永之役",
+          "description": "1274年元军登陆博多湾，因后勤不继与天气不利撤返。"
         },
         {
           "year": 1274,
-          "tag": "经过",
-          "title": "这是元朝第一",
-          "description": "这是元朝第一次大规模对日军事行动"
+          "tag": "结果",
+          "title": "暴风折返",
+          "description": "船队在海上遭遇暴风，损失惨重，首次征日失败。"
         }
       ],
       "background": {
@@ -18374,21 +18389,27 @@
       "narratives": [
         {
           "year": 1281,
-          "tag": "经过",
-          "title": "元朝在第一次",
-          "description": "元朝在第一次征日失败后，再次组织大规模远征"
+          "tag": "起因",
+          "title": "南宋已灭",
+          "description": "元朝灭宋后集中力量，再次筹划大规模征日。"
         },
         {
           "year": 1281,
           "tag": "经过",
-          "title": "忽必烈调集江",
-          "description": "忽必烈调集江南新附军、蒙古军及高丽军，分别从朝鲜和江南方向出兵，形成规模更大的联合舰队"
+          "title": "两路东征",
+          "description": "1281年东路军与江南军分路进攻九州。"
         },
         {
           "year": 1281,
-          "tag": "经过",
-          "title": "联军在日本九",
-          "description": "联军在日本九州沿海遭遇顽强抵抗，长期作战后又遭强台风袭击，舰队损失惨重，最终撤军"
+          "tag": "转折",
+          "title": "鹰岛鏖战",
+          "description": "元军主力在鹰岛一带遭遇日军顽强抵抗，久攻不下。"
+        },
+        {
+          "year": 1281,
+          "tag": "结果",
+          "title": "台风覆师",
+          "description": "飓风摧毁舰队，元军损失惨重，征日彻底失败。"
         }
       ],
       "background": {
@@ -18507,27 +18528,27 @@
       "narratives": [
         {
           "year": 1277,
-          "tag": "经过",
-          "title": "元朝统一云南",
-          "description": "元朝统一云南后，逐渐向缅甸蒲甘王朝方向扩展势力"
+          "tag": "起因",
+          "title": "缅使挑衅",
+          "description": "缅甸蒲甘王朝拒绝臣服，边境冲突不断。"
         },
         {
           "year": 1277,
           "tag": "经过",
-          "title": "1277年元",
-          "description": "1277年元军与缅甸军队发生军事冲突，此后双方多次交战"
+          "title": "元军南征",
+          "description": "1277年元军击败缅军，随后深入云南边外。"
         },
         {
           "year": 1277,
-          "tag": "经过",
-          "title": "1283年元",
-          "description": "1283年元军再次南下并攻入缅甸腹地，蒲甘王朝势力受到严重打击"
+          "tag": "转折",
+          "title": "牙嵩羌战",
+          "description": "元军以骑兵配合步阵，击溃缅军与象兵主力。"
         },
         {
           "year": 1277,
-          "tag": "经过",
-          "title": "1287年元",
-          "description": "1287年元军进一步推进，蒲甘政权逐渐瓦解，元朝扩大了对西南边疆的影响"
+          "tag": "结果",
+          "title": "缅甸臣服",
+          "description": "1287年蒲甘王朝瓦解，缅甸诸势力向元朝称臣。"
         }
       ],
       "background": {
@@ -18674,20 +18695,26 @@
         {
           "year": 1283,
           "tag": "起因",
-          "title": "理财聚敛",
-          "description": "忽必烈需要巨额军费和财政收入，重用阿合马理财。"
+          "title": "安南拒命",
+          "description": "安南陈朝表面称臣，实则拒绝元朝征调与借道。"
         },
         {
           "year": 1283,
           "tag": "经过",
-          "title": "阿合马独揽财权",
-          "description": "阿合马主政二十年，兴铁冶、增盐税、理财政，树敌甚众。"
+          "title": "元军三征",
+          "description": "1257年、1284年、1287年元军三次南下攻入安南。"
+        },
+        {
+          "year": 1283,
+          "tag": "转折",
+          "title": "陈氏游击",
+          "description": "陈兴道坚壁清野、避实击虚，元军补给日益困难。"
         },
         {
           "year": 1283,
           "tag": "结果",
-          "title": "被刺身亡",
-          "description": "1282年阿合马被王著、高和尚刺杀于大都。"
+          "title": "元军撤退",
+          "description": "元军虽一度攻入升龙，终因气候与游击战撤还。"
         }
       ],
       "background": {
@@ -18801,21 +18828,27 @@
       "narratives": [
         {
           "year": 1260,
-          "tag": "经过",
-          "title": "阿合马出身于",
-          "description": "阿合马出身于中亚地区，长期担任忽必烈的重要财政官员，主持财政事务并逐渐掌握中书省权力"
+          "tag": "起因",
+          "title": "世祖理财",
+          "description": "忽必烈连年用兵，急需增加财政收入。"
         },
         {
           "year": 1260,
           "tag": "经过",
-          "title": "他推行较强的",
-          "description": "他推行较强的财政汲取政策，通过盐铁、税收、专卖等方式增加国家收入，同时大量任用亲信"
+          "title": "阿合马掌财",
+          "description": "阿合马以增税、兴铁冶、清理户籍等手段聚敛财赋。"
         },
         {
           "year": 1260,
-          "tag": "经过",
-          "title": "阿合马权势不",
-          "description": "阿合马权势不断扩大，引发部分蒙古贵族和汉地官员不满，最终在1282年被王著等人刺杀"
+          "tag": "转折",
+          "title": "专权树敌",
+          "description": "他长期把持财权、排斥异己，结怨于朝臣与百姓。"
+        },
+        {
+          "year": 1260,
+          "tag": "结果",
+          "title": "朝野怨愤",
+          "description": "阿合马权势熏天，为日后的刺杀埋下伏笔。"
         }
       ],
       "background": {
@@ -18943,20 +18976,20 @@
         {
           "year": 1282,
           "tag": "起因",
-          "title": "财政困窘",
-          "description": "征日征缅耗资巨大，忽必烈朝财政捉襟见肘。"
+          "title": "王著密谋",
+          "description": "益都千户王著痛恨阿合马，联络高和尚等密谋除之。"
         },
         {
           "year": 1282,
           "tag": "经过",
-          "title": "桑哥整顿财政",
-          "description": "1287年桑哥任尚书省丞相，清理钱谷、增收节支。"
+          "title": "铜锤行刺",
+          "description": "1282年王著等假传太子令，将阿合马诱出并以铜锤击毙。"
         },
         {
           "year": 1282,
           "tag": "结果",
-          "title": "桑哥被诛",
-          "description": "桑哥理财虽见成效但树敌过多，1291年被诛。"
+          "title": "阿合马毙命",
+          "description": "忽必烈查明阿合马罪状，追戮其尸并籍没家产。"
         }
       ],
       "background": {
@@ -19069,21 +19102,27 @@
       "narratives": [
         {
           "year": 1287,
-          "tag": "经过",
-          "title": "桑哥在元世祖",
-          "description": "桑哥在元世祖后期逐渐掌握财政权力，主持尚书省等机构，推行以增加国家收入为目标的财政政策"
+          "tag": "起因",
+          "title": "财政困窘",
+          "description": "征日、征缅与平叛耗费巨大，国库入不敷出。"
         },
         {
           "year": 1287,
           "tag": "经过",
-          "title": "他整顿盐税",
-          "description": "他整顿盐税、赋税和钱谷，并大规模清查地方财赋"
+          "title": "桑哥主政",
+          "description": "1287年桑哥任尚书省丞相，主持财政整顿。"
         },
         {
           "year": 1287,
-          "tag": "经过",
-          "title": "桑哥试图通过",
-          "description": "桑哥试图通过强化财政机构提高朝廷收入，但理财手段严厉，导致地方官吏和民众负担加重，也引发朝廷内部强烈反对"
+          "tag": "转折",
+          "title": "清查钱谷",
+          "description": "他清理仓库、追征逋赋、改革钞法，增加财政收入。"
+        },
+        {
+          "year": 1287,
+          "tag": "结果",
+          "title": "增收节支",
+          "description": "财政一度好转，但扰民过甚，朝野怨声载道。"
         }
       ],
       "background": {
@@ -19202,21 +19241,21 @@
       "narratives": [
         {
           "year": 1291,
-          "tag": "经过",
-          "title": "桑哥掌权期间",
-          "description": "桑哥掌权期间因财政政策严苛、擅权及任用亲信等问题遭到大量弹劾"
+          "tag": "起因",
+          "title": "专权树敌",
+          "description": "桑哥长期掌权、任用亲信，激起台谏与官员不满。"
         },
         {
           "year": 1291,
           "tag": "经过",
-          "title": "1291年",
-          "description": "1291年，其财政政策和政治行为受到朝廷调查，桑哥最终被处死，尚书省等相关机构也受到整顿"
+          "title": "台臣弹劾",
+          "description": "1291年御史台官员联名弹劾桑哥贪暴不法。"
         },
         {
           "year": 1291,
-          "tag": "经过",
-          "title": "桑哥案成为元",
-          "description": "桑哥案成为元朝清算权臣、重新调整财政机构的重要事件，并促使朝廷重新审视高度集中的财政权力"
+          "tag": "结果",
+          "title": "桑哥被诛",
+          "description": "忽必烈下令处死桑哥，籍没其家，相关改革多被废止。"
         }
       ],
       "background": {
@@ -19924,20 +19963,20 @@
         {
           "year": 1314,
           "tag": "起因",
-          "title": "伯颜倒行逆施",
-          "description": "权臣伯颜专权，贬逐异己、虐害汉臣，朝野怨愤。"
+          "title": "科举久废",
+          "description": "元朝立国后科举长期停废，士人入仕无门。"
         },
         {
           "year": 1314,
           "tag": "经过",
-          "title": "脱脱逐伯颜",
-          "description": "1340年脱脱发动政变驱逐伯颜，开始脱脱更化。"
+          "title": "仁宗下诏",
+          "description": "1313年元仁宗下诏恢复科举，颁定《科举程式》。"
         },
         {
           "year": 1314,
           "tag": "结果",
-          "title": "新政受挫",
-          "description": "脱脱更化一度见效，但旋因贾鲁治河失败、红巾起义中断。"
+          "title": "延祐首科",
+          "description": "1315年举行首次会试，分蒙古色目与汉人南人两榜取士。"
         }
       ],
       "background": {
@@ -20061,27 +20100,27 @@
       "narratives": [
         {
           "year": 1340,
-          "tag": "经过",
-          "title": "元顺帝时期",
-          "description": "元顺帝时期，脱脱重新执掌朝政后开始推行改革，清理权臣政治影响，恢复部分旧制，并重视农业、水利和国家财政"
+          "tag": "起因",
+          "title": "伯颜专权",
+          "description": "伯颜独相七年，排斥汉臣、倒行逆施，朝野怨愤。"
         },
         {
           "year": 1340,
           "tag": "经过",
-          "title": "脱脱主持下",
-          "description": "脱脱主持下，元朝一度出现政治调整和社会治理改善的局面"
+          "title": "脱脱逐伯颜",
+          "description": "1340年脱脱与顺帝合谋罢黜伯颜，自任中书右丞相。"
         },
         {
           "year": 1340,
-          "tag": "经过",
-          "title": "同时",
-          "description": "同时，他推动修撰《辽史》《金史》《宋史》，对元代文化建设产生重要影响"
+          "tag": "转折",
+          "title": "更化新政",
+          "description": "恢复科举、修撰三史、整顿吏治与财政。"
         },
         {
           "year": 1340,
-          "tag": "经过",
-          "title": "但改革未能根",
-          "description": "但改革未能根本解决元朝后期的财政和社会危机"
+          "tag": "结果",
+          "title": "改革中断",
+          "description": "新政初见成效，却因治河失败与红巾起义而中断。"
         }
       ],
       "background": {
@@ -20195,21 +20234,21 @@
       "narratives": [
         {
           "year": 1344,
-          "tag": "经过",
-          "title": "1344年",
-          "description": "1344年，黄河在山东、河南等地多次决口，洪水造成大片农田被淹，严重破坏沿河农业生产和交通"
+          "tag": "起因",
+          "title": "河患频仍",
+          "description": "黄河下游河道淤塞，连年决口泛滥。"
         },
         {
           "year": 1344,
           "tag": "经过",
-          "title": "灾害导致大量",
-          "description": "灾害导致大量百姓流离失所，粮食生产下降，并加重元朝财政和社会治理压力"
+          "title": "灾情蔓延",
+          "description": "1344年黄河大决，豫东、鲁西南大片田园被淹。"
         },
         {
           "year": 1344,
-          "tag": "经过",
-          "title": "黄河水患与元",
-          "description": "黄河水患与元末频繁灾荒、赋役问题相互叠加，成为社会矛盾进一步恶化的重要背景"
+          "tag": "结果",
+          "title": "灾民流离",
+          "description": "大批灾民流亡，社会矛盾进一步激化。"
         }
       ],
       "background": {
@@ -20623,21 +20662,21 @@
       "narratives": [
         {
           "year": 1355,
-          "tag": "经过",
-          "title": "红巾军发展过",
-          "description": "红巾军发展过程中，刘福通等拥立韩林儿为皇帝，建立宋政权，继续以恢复宋朝传统为政治号召"
+          "tag": "起因",
+          "title": "红巾势盛",
+          "description": "刘福通拥立韩山童之子韩林儿，北方红巾军声势日盛。"
         },
         {
           "year": 1355,
           "tag": "经过",
-          "title": "韩林儿政权在",
-          "description": "韩林儿政权在亳州、安丰等地活动，并与元军及其他割据势力长期交战"
+          "title": "亳州建号",
+          "description": "1355年韩林儿在亳州称帝，国号宋，号小明王。"
         },
         {
           "year": 1355,
-          "tag": "经过",
-          "title": "其政权虽然最",
-          "description": "其政权虽然最终失败，但在元末群雄竞争中具有重要象征意义，也成为后来朱元璋等势力崛起的重要政治背景"
+          "tag": "结果",
+          "title": "小明王立",
+          "description": "韩宋政权成为北方红巾军名义共主，后为朱元璋所并。"
         }
       ],
       "background": {
@@ -20785,27 +20824,21 @@
       "narratives": [
         {
           "year": 1351,
-          "tag": "经过",
-          "title": "元末社会动荡",
-          "description": "元末社会动荡时期，徐寿辉在蕲州地区起兵，建立天完政权，并迅速扩大势力"
+          "tag": "起因",
+          "title": "蕲州起兵",
+          "description": "1351年徐寿辉、彭莹玉在蕲州起义，响应红巾。"
         },
         {
           "year": 1351,
           "tag": "经过",
-          "title": "彭莹玉",
-          "description": "彭莹玉、邹普胜等人与其共同活动，起义军控制湖北、江西等部分地区"
+          "title": "天完建号",
+          "description": "徐寿辉称帝，国号天完，势力扩展至长江中游。"
         },
         {
           "year": 1351,
-          "tag": "经过",
-          "title": "徐寿辉政权长",
-          "description": "徐寿辉政权长期与元军及其他地方势力交战，后来因内部权力斗争而逐渐衰落"
-        },
-        {
-          "year": 1351,
-          "tag": "经过",
-          "title": "其活动成为元",
-          "description": "其活动成为元末南方反元力量的重要组成部分"
+          "tag": "结果",
+          "title": "转战长江",
+          "description": "天完军长期转战湖广、江西，后并入陈友谅势力。"
         }
       ],
       "background": {
@@ -20938,20 +20971,20 @@
         {
           "year": 1353,
           "tag": "起因",
-          "title": "北伐之势已成",
-          "description": "1356年朱元璋占据集庆称吴王，实力壮大。"
+          "title": "盐丁起事",
+          "description": "1353年张士诚率盐丁在泰州起义，反抗元朝苛政。"
         },
         {
           "year": 1353,
           "tag": "经过",
-          "title": "朱元璋北伐大都",
-          "description": "1367年朱元璋遣徐达常遇春北伐，1368年兵临大都。"
+          "title": "高邮建号",
+          "description": "张士诚攻占高邮，称诚王，国号大周。"
         },
         {
           "year": 1353,
           "tag": "结果",
-          "title": "元顺帝北遁",
-          "description": "元顺帝妥欢帖睦尔北遁上都，明朝建立，元朝覆亡。"
+          "title": "割据苏吴",
+          "description": "张士诚据平江，控制江南富庶之地，后为朱元璋所灭。"
         }
       ],
       "background": {
@@ -21108,21 +21141,27 @@
       "narratives": [
         {
           "year": 1355,
-          "tag": "经过",
-          "title": "红巾军起义后",
-          "description": "红巾军起义后，元朝中央控制力持续下降，各地武装势力相继建立地方政权"
+          "tag": "起因",
+          "title": "红巾蜂起",
+          "description": "红巾军起义后各地响应，元朝地方控制迅速瓦解。"
         },
         {
           "year": 1355,
           "tag": "经过",
-          "title": "韩林儿",
-          "description": "韩林儿、徐寿辉、张士诚、陈友谅、朱元璋等势力在中原、长江流域和江南地区展开长期战争，同时元军内部也出现严重分裂"
+          "title": "群雄并立",
+          "description": "韩林儿、徐寿辉、张士诚、陈友谅等各据一方。"
         },
         {
           "year": 1355,
-          "tag": "经过",
-          "title": "各地政权相互",
-          "description": "各地政权相互攻伐，最终朱元璋势力逐渐取得优势并北伐中原"
+          "tag": "转折",
+          "title": "相互攻伐",
+          "description": "群雄为争夺地盘连年混战，江南政局持续动荡。"
+        },
+        {
+          "year": 1355,
+          "tag": "结果",
+          "title": "元廷失控",
+          "description": "元朝中央号令不行，只能依赖地方军阀支撑局面。"
         }
       ],
       "background": {
@@ -21282,27 +21321,27 @@
       "narratives": [
         {
           "year": 1368,
-          "tag": "经过",
-          "title": "朱元璋建立明",
-          "description": "朱元璋建立明朝后，派徐达、常遇春等率军北伐"
+          "tag": "起因",
+          "title": "江南易手",
+          "description": "朱元璋先后击败陈友谅、张士诚，统一江南。"
         },
         {
           "year": 1368,
           "tag": "经过",
-          "title": "1368年",
-          "description": "1368年，明军攻入大都，元顺帝妥欢帖木儿北逃上都，元朝在中原地区的统治正式结束"
+          "title": "徐达北伐",
+          "description": "1367年朱元璋命徐达、常遇春率军北伐。"
         },
         {
           "year": 1368,
-          "tag": "经过",
-          "title": "元廷此后退居",
-          "description": "元廷此后退居漠北，继续以北元政权形式存在"
+          "tag": "转折",
+          "title": "大都陷落",
+          "description": "1368年明军攻入大都，元顺帝仓促北走。"
         },
         {
           "year": 1368,
-          "tag": "经过",
-          "title": "大都失陷标志",
-          "description": "大都失陷标志着元朝作为中国王朝的统治结束，也开启明朝新的历史阶段"
+          "tag": "结果",
+          "title": "元廷北遁",
+          "description": "元朝失去中原统治，退居漠北，史称北元。"
         }
       ],
       "background": {

@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
@@ -407,6 +407,19 @@ export const dynasties: Dynasty[] = [
   duration: '约97年',
   representative_buildings: ["大都城","上都开平","妙应寺白塔","居庸关"],
   characteristics: {"politics":82,"culture":86,"military":94,"technology":90,"openness":96}
+},
+{
+  id: 115,
+  name: '明',
+  english_name: 'Ming Dynasty',
+  start_year: 1368,
+  end_year: 1644,
+  summary: '公元1368年朱元璋在应天府称帝建明，同年北伐攻克大都，元廷北遁。明初废丞相、设卫所，皇权空前集中；永乐迁都北京、七下西洋，国势鼎盛。中后期内阁与宦官交替弄权，边患、党争、财政危机交织，终在农民战争与清军入关的双重打击下于1644年覆亡。明代商品经济繁荣、小说戏曲与科技著述辈出，是中华文明走向近代的重要转折期。',
+  capital: '应天（南京）、北京',
+  population: '约一亿五千万（鼎盛）',
+  duration: '约276年',
+  representative_buildings: ["紫禁城","明长城","天坛","明孝陵"],
+  characteristics: {"politics":88,"culture":92,"military":85,"technology":90,"openness":70}
 },
 ]
 

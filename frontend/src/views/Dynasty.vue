@@ -693,35 +693,36 @@ const handleKwClick = (kw: KwLayout) => {
   if (kw.detailRoute) router.push(kw.detailRoute.path)
 }
 
-// 人物-事件关联密度：平均每人关联的事件数（只统计人物↔事件的关联，不混入人物间关系）
+// 事件参与度：人物↔事件关联对数 ÷ 事件数，反映平均每个事件有多少位人物参与
 const associationDensity = computed(() => {
   const persons = dynastyPersons.value
-  if (persons.length === 0) return 0
+  const events = dynastyEvents.value
+  if (events.length === 0 || persons.length === 0) return '0'
   const clicks = new Set<string>() // "人物|事件" 去重，统计人物参与/关联事件的真实对数
+  // 只统计本朝代人物表中的在册人物，跨朝代未接入的人物不计入
+  const known = new Set(persons.map(p => p.name))
   dynastyEvents.value.forEach(ev => {
     const names = new Set<string>()
     ;(ev.person_relations || []).forEach(r => { if (r.source) names.add(r.source); if (r.target) names.add(r.target) })
     const groups: Array<'leaders' | 'participants' | 'opponents'> = ['leaders', 'participants', 'opponents']
     groups.forEach((k) =>
       (ev.person_groups?.[k] || []).forEach((x: any) => { if (x.name) names.add(x.name) }))
-    names.forEach(n => clicks.add(`${n}|${ev.name}`))
+    names.forEach(n => { if (known.has(n)) clicks.add(`${n}|${ev.name}`) })
   })
   // 兜底合并人物自身的 related_events
   persons.forEach(p => (p.related_events || []).forEach((e: any) => {
     const en = typeof e === 'string' ? e : e?.name
     if (en) clicks.add(`${p.name}|${en}`)
   }))
-  return (clicks.size / persons.length).toFixed(1)
+  return (clicks.size / events.length).toFixed(1)
 })
 
-// 关系网络活跃度：参与关系网络的人物占比（0-100 指数）
+// 平均关系度：人物关系条目总数 ÷ 人物数，反映每人平均关联几位人物
 const networkActivity = computed(() => {
   const persons = dynastyPersons.value
   if (persons.length === 0) return '0'
-  const connected = persons.filter(p =>
-    (p.related_people?.length || 0) + (p.related_events?.length || 0) > 0
-  ).length
-  return String(Math.round((connected / persons.length) * 100))
+  const total = persons.reduce((s, p) => s + (p.related_people?.length || 0), 0)
+  return (total / persons.length).toFixed(1)
 })
 
 const chinaMapData = computed(() => {
@@ -1101,7 +1102,8 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
 
 const dynStages = computed(() => {
   if (!dynasty.value) return []
-  const mapped = dynStagesMap[dynasty.value.name]
+  // 朝代对象的 name 可能是不带「朝」的简称（如「明」），预设表里却是「明朝」
+  const mapped = dynStagesMap[dynasty.value.name] || dynStagesMap[`${dynasty.value.name}朝`]
   if (mapped) return mapped
   // 没有预设就用事件自动生成 4 段（开端/鼎盛/过渡/衰落）
   const evs = dynastyEvents.value.slice().sort((a, b) => a.start_year - b.start_year)
@@ -1780,7 +1782,7 @@ onUnmounted(() => {
               <div class="bg-white/60 border border-[#D8B26A]/20 rounded-md p-5 flex-1">
                 <h4 class="text-xs text-[#4A4A3A]/60 mb-3 font-medium flex items-center gap-2">
                   <svg class="w-3.5 h-3.5 text-[#355C5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-                  人物-事件关联密度
+                  事件参与度
                 </h4>
                 <div class="flex items-center gap-4">
                   <div class="w-16 h-16 flex-shrink-0 relative">
@@ -1801,11 +1803,11 @@ onUnmounted(() => {
                   <div class="flex-1">
                     <div class="flex items-baseline gap-1.5 mb-0.5">
                       <span class="font-calligraphy text-3xl text-[#355C5A]">{{ associationDensity }}</span>
-                      <span class="text-xs text-[#4A4A3A]/50">个/人</span>
+                      <span class="text-xs text-[#4A4A3A]/50">位/事件</span>
                     </div>
-                    <p class="text-xs text-[#4A4A3A]/50 mb-2">平均每人关联事件数</p>
+                    <p class="text-xs text-[#4A4A3A]/50 mb-2">平均每个事件关联人物数</p>
                     <div class="w-full h-2 bg-[#D8B26A]/15 rounded-full overflow-hidden">
-                      <div class="h-full bg-gradient-to-r from-[#355C5A] via-[#4A6F7A] to-[#D8B26A] rounded-full transition-all duration-1000" :style="{ width: Math.min(100, Number(associationDensity) * 20) + '%' }"></div>
+                      <div class="h-full bg-gradient-to-r from-[#355C5A] via-[#4A6F7A] to-[#D8B26A] rounded-full transition-all duration-1000" :style="{ width: Math.min(100, Number(associationDensity) * 18) + '%' }"></div>
                     </div>
                   </div>
                 </div>
@@ -1815,7 +1817,7 @@ onUnmounted(() => {
               <div class="bg-white/60 border border-[#D8B26A]/20 rounded-md p-5 flex-1">
                 <h4 class="text-xs text-[#4A4A3A]/60 mb-3 font-medium flex items-center gap-2">
                   <svg class="w-3.5 h-3.5 text-[#C34739]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  关系网络活跃度
+                  平均关系度
                 </h4>
                 <div class="flex items-center gap-4">
                   <div class="w-16 h-16 flex-shrink-0 relative">
@@ -1837,11 +1839,11 @@ onUnmounted(() => {
                   <div class="flex-1">
                     <div class="flex items-baseline gap-1.5 mb-0.5">
                       <span class="font-calligraphy text-3xl text-[#C34739]">{{ networkActivity }}</span>
-                      <span class="text-xs text-[#4A4A3A]/50">指数</span>
+                      <span class="text-xs text-[#4A4A3A]/50">位/人</span>
                     </div>
-                    <p class="text-xs text-[#4A4A3A]/50 mb-2">网络参与活跃指数</p>
+                    <p class="text-xs text-[#4A4A3A]/50 mb-2">平均每人关联人物数</p>
                     <div class="w-full h-2 bg-[#D8B26A]/15 rounded-full overflow-hidden">
-                      <div class="h-full bg-gradient-to-r from-[#C34739] via-[#D4756A] to-[#D8B26A] rounded-full transition-all duration-1000" :style="{ width: Math.min(100, Number(networkActivity)) + '%' }"></div>
+                      <div class="h-full bg-gradient-to-r from-[#C34739] via-[#D4756A] to-[#D8B26A] rounded-full transition-all duration-1000" :style="{ width: Math.min(100, Number(networkActivity) * 14) + '%' }"></div>
                     </div>
                   </div>
                 </div>

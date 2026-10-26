@@ -125,7 +125,115 @@ const YUAN_EVENT_STAGES = {
   ]
 };
 
-/* ---------- #5 泛化「关联」标签细化 ---------- */
+/* ---------- #6 补充：此前自动截取或内容错位的事件，按事件名重写为 3-5 个阶段 ---------- */
+const YUAN_EVENT_STAGES_FIX = {
+  114304: [ // 大都营建
+    { tag: '起因', title: '燕京旧城', description: '金中都旧城残破，忽必烈决意在燕京另建新都。' },
+    { tag: '经过', title: '择址规划', description: '刘秉忠主持选址，依《周礼》布局宫城、坛庙与街巷。' },
+    { tag: '经过', title: '宫城营建', description: '征调各地工匠民夫，营建宫室、城墙与漕运水系。' },
+    { tag: '结果', title: '定都大都', description: '1271年后大都成为元朝都城，奠定此后北京的城市格局。' }
+  ],
+  114309: [ // 元朝统一全国
+    { tag: '起因', title: '南北分治', description: '蒙古灭金后与南宋长期对峙，南北分裂已逾百年。' },
+    { tag: '经过', title: '崖山定局', description: '1279年崖山海战宋军覆没，南宋政权彻底终结。' },
+    { tag: '转折', title: '疆域一统', description: '元朝疆域北逾阴山、南越海表，首次由北方民族统一全国。' },
+    { tag: '结果', title: '混一南北', description: '统一结束长期分裂，行省与驿道把南北纳入同一行政体系。' }
+  ],
+  114310: [ // 澎湖巡检司设置
+    { tag: '起因', title: '经略海疆', description: '元朝统一后重视东南海道，需要管理澎湖与台湾海域。' },
+    { tag: '经过', title: '设司澎湖', description: '1281年在澎湖设置巡检司，隶属泉州路晋江县。' },
+    { tag: '结果', title: '海道归治', description: '澎湖正式纳入行政建制，海上治安与商贸得到管理。' }
+  ],
+  114312: [ // 第一次征日战争
+    { tag: '起因', title: '高丽归附', description: '元朝征服高丽后，要求其协助招谕日本。' },
+    { tag: '经过', title: '遣使招日', description: '忽必烈多次遣使赴日，镰仓幕府拒绝称臣。' },
+    { tag: '转折', title: '文永之役', description: '1274年元军登陆博多湾，因后勤不继与天气不利撤返。' },
+    { tag: '结果', title: '暴风折返', description: '船队在海上遭遇暴风，损失惨重，首次征日失败。' }
+  ],
+  114313: [ // 第二次征日战争
+    { tag: '起因', title: '南宋已灭', description: '元朝灭宋后集中力量，再次筹划大规模征日。' },
+    { tag: '经过', title: '两路东征', description: '1281年东路军与江南军分路进攻九州。' },
+    { tag: '转折', title: '鹰岛鏖战', description: '元军主力在鹰岛一带遭遇日军顽强抵抗，久攻不下。' },
+    { tag: '结果', title: '台风覆师', description: '飓风摧毁舰队，元军损失惨重，征日彻底失败。' }
+  ],
+  114314: [ // 元缅战争
+    { tag: '起因', title: '缅使挑衅', description: '缅甸蒲甘王朝拒绝臣服，边境冲突不断。' },
+    { tag: '经过', title: '元军南征', description: '1277年元军击败缅军，随后深入云南边外。' },
+    { tag: '转折', title: '牙嵩羌战', description: '元军以骑兵配合步阵，击溃缅军与象兵主力。' },
+    { tag: '结果', title: '缅甸臣服', description: '1287年蒲甘王朝瓦解，缅甸诸势力向元朝称臣。' }
+  ],
+  114315: [ // 元安南战争
+    { tag: '起因', title: '安南拒命', description: '安南陈朝表面称臣，实则拒绝元朝征调与借道。' },
+    { tag: '经过', title: '元军三征', description: '1257年、1284年、1287年元军三次南下攻入安南。' },
+    { tag: '转折', title: '陈氏游击', description: '陈兴道坚壁清野、避实击虚，元军补给日益困难。' },
+    { tag: '结果', title: '元军撤退', description: '元军虽一度攻入升龙，终因气候与游击战撤还。' }
+  ],
+  114316: [ // 阿合马专权
+    { tag: '起因', title: '世祖理财', description: '忽必烈连年用兵，急需增加财政收入。' },
+    { tag: '经过', title: '阿合马掌财', description: '阿合马以增税、兴铁冶、清理户籍等手段聚敛财赋。' },
+    { tag: '转折', title: '专权树敌', description: '他长期把持财权、排斥异己，结怨于朝臣与百姓。' },
+    { tag: '结果', title: '朝野怨愤', description: '阿合马权势熏天，为日后的刺杀埋下伏笔。' }
+  ],
+  114317: [ // 刺杀阿合马
+    { tag: '起因', title: '王著密谋', description: '益都千户王著痛恨阿合马，联络高和尚等密谋除之。' },
+    { tag: '经过', title: '铜锤行刺', description: '1282年王著等假传太子令，将阿合马诱出并以铜锤击毙。' },
+    { tag: '结果', title: '阿合马毙命', description: '忽必烈查明阿合马罪状，追戮其尸并籍没家产。' }
+  ],
+  114318: [ // 桑哥理财
+    { tag: '起因', title: '财政困窘', description: '征日、征缅与平叛耗费巨大，国库入不敷出。' },
+    { tag: '经过', title: '桑哥主政', description: '1287年桑哥任尚书省丞相，主持财政整顿。' },
+    { tag: '转折', title: '清查钱谷', description: '他清理仓库、追征逋赋、改革钞法，增加财政收入。' },
+    { tag: '结果', title: '增收节支', description: '财政一度好转，但扰民过甚，朝野怨声载道。' }
+  ],
+  114319: [ // 桑哥案
+    { tag: '起因', title: '专权树敌', description: '桑哥长期掌权、任用亲信，激起台谏与官员不满。' },
+    { tag: '经过', title: '台臣弹劾', description: '1291年御史台官员联名弹劾桑哥贪暴不法。' },
+    { tag: '结果', title: '桑哥被诛', description: '忽必烈下令处死桑哥，籍没其家，相关改革多被废止。' }
+  ],
+  114324: [ // 延祐复科
+    { tag: '起因', title: '科举久废', description: '元朝立国后科举长期停废，士人入仕无门。' },
+    { tag: '经过', title: '仁宗下诏', description: '1313年元仁宗下诏恢复科举，颁定《科举程式》。' },
+    { tag: '结果', title: '延祐首科', description: '1315年举行首次会试，分蒙古色目与汉人南人两榜取士。' }
+  ],
+  114325: [ // 脱脱更化
+    { tag: '起因', title: '伯颜专权', description: '伯颜独相七年，排斥汉臣、倒行逆施，朝野怨愤。' },
+    { tag: '经过', title: '脱脱逐伯颜', description: '1340年脱脱与顺帝合谋罢黜伯颜，自任中书右丞相。' },
+    { tag: '转折', title: '更化新政', description: '恢复科举、修撰三史、整顿吏治与财政。' },
+    { tag: '结果', title: '改革中断', description: '新政初见成效，却因治河失败与红巾起义而中断。' }
+  ],
+  114326: [ // 黄河决口
+    { tag: '起因', title: '河患频仍', description: '黄河下游河道淤塞，连年决口泛滥。' },
+    { tag: '经过', title: '灾情蔓延', description: '1344年黄河大决，豫东、鲁西南大片田园被淹。' },
+    { tag: '结果', title: '灾民流离', description: '大批灾民流亡，社会矛盾进一步激化。' }
+  ],
+  114329: [ // 韩林儿称帝
+    { tag: '起因', title: '红巾势盛', description: '刘福通拥立韩山童之子韩林儿，北方红巾军声势日盛。' },
+    { tag: '经过', title: '亳州建号', description: '1355年韩林儿在亳州称帝，国号宋，号小明王。' },
+    { tag: '结果', title: '小明王立', description: '韩宋政权成为北方红巾军名义共主，后为朱元璋所并。' }
+  ],
+  114330: [ // 徐寿辉起义
+    { tag: '起因', title: '蕲州起兵', description: '1351年徐寿辉、彭莹玉在蕲州起义，响应红巾。' },
+    { tag: '经过', title: '天完建号', description: '徐寿辉称帝，国号天完，势力扩展至长江中游。' },
+    { tag: '结果', title: '转战长江', description: '天完军长期转战湖广、江西，后并入陈友谅势力。' }
+  ],
+  114331: [ // 张士诚起义
+    { tag: '起因', title: '盐丁起事', description: '1353年张士诚率盐丁在泰州起义，反抗元朝苛政。' },
+    { tag: '经过', title: '高邮建号', description: '张士诚攻占高邮，称诚王，国号大周。' },
+    { tag: '结果', title: '割据苏吴', description: '张士诚据平江，控制江南富庶之地，后为朱元璋所灭。' }
+  ],
+  114332: [ // 元末群雄割据
+    { tag: '起因', title: '红巾蜂起', description: '红巾军起义后各地响应，元朝地方控制迅速瓦解。' },
+    { tag: '经过', title: '群雄并立', description: '韩林儿、徐寿辉、张士诚、陈友谅等各据一方。' },
+    { tag: '转折', title: '相互攻伐', description: '群雄为争夺地盘连年混战，江南政局持续动荡。' },
+    { tag: '结果', title: '元廷失控', description: '元朝中央号令不行，只能依赖地方军阀支撑局面。' }
+  ],
+  114333: [ // 大都失陷与元朝灭亡
+    { tag: '起因', title: '江南易手', description: '朱元璋先后击败陈友谅、张士诚，统一江南。' },
+    { tag: '经过', title: '徐达北伐', description: '1367年朱元璋命徐达、常遇春率军北伐。' },
+    { tag: '转折', title: '大都陷落', description: '1368年明军攻入大都，元顺帝仓促北走。' },
+    { tag: '结果', title: '元廷北遁', description: '元朝失去中原统治，退居漠北，史称北元。' }
+  ]
+};
 const REL_FIX_114 = {
   '忽必烈|刘秉忠': '君臣', '忽必烈|廉希宪': '君臣', '忽必烈|姚枢': '君臣',
   '忽必烈|张文谦': '君臣', '忽必烈|赵璧': '君臣', '忽必烈|王盘': '君臣',
@@ -249,7 +357,7 @@ function main() {
   console.log('\n===== #6 事件经过细化 =====');
   let stageOk = 0;
   events.forEach(ev => {
-    const stages = YUAN_EVENT_STAGES[ev.id];
+    const stages = YUAN_EVENT_STAGES_FIX[ev.id] || YUAN_EVENT_STAGES[ev.id];
     if (stages && Array.isArray(stages) && stages.length) {
       ev.narratives = stages.map(s => ({ year: ev.start_year, tag: s.tag, title: s.title, description: s.description }));
       stageOk++;

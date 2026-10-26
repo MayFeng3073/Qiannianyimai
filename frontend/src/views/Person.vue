@@ -616,7 +616,7 @@ const initRelationChart = () => {
       '鲁君': '#D8B26A', '吴君': '#D8B26A'
     }
     // 亲属类关系：图例统一归为「亲属」，连线标签保留具体关系；统一取黛青冷色，与朱砂红「敌对」拉开辨识度
-    const kinshipRels = new Set(['亲属', '兄弟', '父子', '祖孙', '叔侄', '舅甥', '宗亲', '宗族', '子嗣', '子孙', '继承', '同族', '家族', '夫妻', '母子'])
+    const kinshipRels = new Set(['亲属', '兄弟', '父子', '祖孙', '叔侄', '舅甥', '宗亲', '宗族', '子嗣', '子孙', '继承', '同族', '家族', '夫妻', '母子', '堂兄弟', '姻亲', '义父', '义父子'])
     const relPalette = ['#5C7A5E', '#D4756A', '#4A6F9E', '#8A6AAE', '#4A8A9E', '#B06A4A', '#2E6E6C', '#6B8E6A', '#8A6A5E', '#9E5A4A']
     const relColor = (rel: string): string => {
       const base = kinshipRels.has(rel) ? '亲属' : rel
