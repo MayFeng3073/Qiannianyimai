@@ -354,3 +354,8 @@ console.log('  关键词: ' + keywords.length);
 console.log('  事件有经过: ' + events.filter(e => e.narratives.length > 0).length + ', 有影响: ' + events.filter(e => e.impacts.length > 0).length + ', 有脉络: ' + events.filter(e => e.chain.length > 0).length);
 console.log('  事件有对手: ' + events.filter(e => e.person_groups.opponents.length > 0).length);
 console.log('  一级有称号: ' + l1Persons.filter(p => p.achievement).length + ', 有历史地位: ' + l1Persons.filter(p => p.historical_position).length + ', 有后世评价: ' + l1Persons.filter(p => p.later_quotes.length).length + ', 有影响力描述: ' + l1Persons.filter(p => p.impact_list.length).length);
+
+if (fs.existsSync(path.join(__dirname, 'fix_202_stories.js'))) {
+  console.log('\n--- 运行二级人物故事精修 fix_202_stories.js ---');
+  require('./fix_202_stories.js');
+}

@@ -372,6 +372,11 @@ console.log('  一级有称号: ' + l1Persons.filter(p => p.achievement).length 
 // ① fix_203_content.js：事件经过分阶段 + 一级人物主要贡献描述精简到 50 字左右
 console.log('\n--- 运行内容精修 fix_203_content.js ---');
 require('./fix_203_content.js');
-// ② enrich_203_relations.js：宏观时间线 / 推荐人物事件 / 二级引语 / 二级因缘际会
+// ② 二级人物故事补齐到 170-210 字
+if (fs.existsSync(path.join(__dirname, 'fix_203_stories.js'))) {
+  console.log('\n--- 运行二级人物故事精修 fix_203_stories.js ---');
+  require('./fix_203_stories.js');
+}
+// ③ enrich_203_relations.js：宏观时间线 / 推荐人物事件 / 二级引语 / 二级因缘际会
 console.log('\n--- 运行数据丰富 enrich_203_relations.js ---');
 require('./enrich_203_relations.js');

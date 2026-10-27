@@ -2177,9 +2177,14 @@
           "influence": 70
         },
         {
+          "name": "毛文龙",
+          "relation": "君臣",
+          "influence": 67
+        },
+        {
           "name": "高攀龙",
           "relation": "敌对",
-          "influence": 67
+          "influence": 64
         }
       ],
       "life_events": [
@@ -2297,42 +2302,42 @@
           "influence": 88
         },
         {
-          "name": "张献忠",
-          "relation": "敌对",
-          "influence": 85
-        },
-        {
           "name": "朱常洛",
           "relation": "父子",
-          "influence": 82
+          "influence": 85
         },
         {
           "name": "朱由校",
           "relation": "兄弟",
-          "influence": 79
+          "influence": 82
         },
         {
           "name": "朱由崧",
           "relation": "堂兄弟",
-          "influence": 76
+          "influence": 79
         },
         {
           "name": "袁崇焕",
           "relation": "君臣",
-          "influence": 73
+          "influence": 76
         },
         {
           "name": "孙承宗",
           "relation": "君臣",
+          "influence": 73
+        },
+        {
+          "name": "张献忠",
+          "relation": "敌对",
           "influence": 70
         },
         {
-          "name": "魏忠贤",
-          "relation": "敌对",
+          "name": "孙传庭",
+          "relation": "君臣",
           "influence": 67
         },
         {
-          "name": "孙传庭",
+          "name": "卢象升",
           "relation": "君臣",
           "influence": 64
         }
@@ -2480,18 +2485,18 @@
           "influence": 73
         },
         {
-          "name": "吴三桂",
-          "relation": "敌对",
+          "name": "黄道周",
+          "relation": "君臣",
           "influence": 70
         },
         {
-          "name": "张煌言",
-          "relation": "影响",
+          "name": "陈子龙",
+          "relation": "君臣",
           "influence": 67
         },
         {
-          "name": "李定国",
-          "relation": "同盟",
+          "name": "吴三桂",
+          "relation": "敌对",
           "influence": 64
         }
       ],
@@ -2628,14 +2633,19 @@
           "influence": 73
         },
         {
-          "name": "吴三桂",
-          "relation": "敌对",
+          "name": "张煌言",
+          "relation": "君臣",
           "influence": 70
         },
         {
-          "name": "张煌言",
-          "relation": "盟友",
+          "name": "黄道周",
+          "relation": "君臣",
           "influence": 67
+        },
+        {
+          "name": "郑芝龙",
+          "relation": "君臣",
+          "influence": 64
         }
       ],
       "life_events": [
@@ -3376,8 +3386,8 @@
           "influence": 85
         },
         {
-          "name": "俞大猷",
-          "relation": "影响",
+          "name": "王艮",
+          "relation": "师生",
           "influence": 82
         },
         {
@@ -3401,13 +3411,13 @@
           "influence": 70
         },
         {
-          "name": "王艮",
-          "relation": "影响",
+          "name": "邹守益",
+          "relation": "师生",
           "influence": 67
         },
         {
-          "name": "邹守益",
-          "relation": "影响",
+          "name": "聂豹",
+          "relation": "师生",
           "influence": 64
         }
       ],
@@ -3547,13 +3557,13 @@
           "influence": 82
         },
         {
-          "name": "海瑞",
-          "relation": "影响",
+          "name": "高拱",
+          "relation": "敌对",
           "influence": 79
         },
         {
-          "name": "高拱",
-          "relation": "敌对",
+          "name": "潘季驯",
+          "relation": "盟友",
           "influence": 76
         },
         {
@@ -3989,23 +3999,23 @@
           "influence": 88
         },
         {
-          "name": "朱翊钧",
-          "relation": "君臣",
-          "influence": 85
-        },
-        {
-          "name": "张居正",
-          "relation": "君臣",
-          "influence": 82
-        },
-        {
           "name": "胡宗宪",
-          "relation": "君臣",
-          "influence": 79
+          "relation": "盟友",
+          "influence": 85
         },
         {
           "name": "谭纶",
           "relation": "盟友",
+          "influence": 82
+        },
+        {
+          "name": "朱翊钧",
+          "relation": "君臣",
+          "influence": 79
+        },
+        {
+          "name": "张居正",
+          "relation": "君臣",
           "influence": 76
         },
         {
@@ -4296,13 +4306,13 @@
           "influence": 79
         },
         {
-          "name": "毛文龙",
-          "relation": "敌对",
+          "name": "祖大寿",
+          "relation": "君臣",
           "influence": 76
         },
         {
-          "name": "祖大寿",
-          "relation": "盟友",
+          "name": "毛文龙",
+          "relation": "敌对",
           "influence": 73
         },
         {
@@ -4550,28 +4560,28 @@
       ],
       "related_people": [
         {
+          "name": "刘宗敏",
+          "relation": "盟友",
+          "influence": 88
+        },
+        {
           "name": "朱由检",
           "relation": "敌对",
-          "influence": 88
+          "influence": 85
         },
         {
           "name": "张献忠",
           "relation": "盟友",
-          "influence": 85
+          "influence": 82
         },
         {
           "name": "朱由崧",
           "relation": "敌对",
-          "influence": 82
+          "influence": 79
         },
         {
           "name": "史可法",
           "relation": "敌对",
-          "influence": 79
-        },
-        {
-          "name": "刘宗敏",
-          "relation": "君臣",
           "influence": 76
         },
         {
@@ -4580,18 +4590,18 @@
           "influence": 73
         },
         {
-          "name": "高迎祥",
-          "relation": "盟友",
+          "name": "吴三桂",
+          "relation": "敌对",
           "influence": 70
         },
         {
-          "name": "罗汝才",
-          "relation": "盟友",
+          "name": "卢象升",
+          "relation": "敌对",
           "influence": 67
         },
         {
-          "name": "卢象升",
-          "relation": "同盟",
+          "name": "洪承畴",
+          "relation": "敌对",
           "influence": 64
         }
       ],
@@ -4754,12 +4764,12 @@
           "influence": 70
         },
         {
-          "name": "孙传庭",
-          "relation": "同盟",
+          "name": "罗汝才",
+          "relation": "盟友",
           "influence": 67
         },
         {
-          "name": "卢象升",
+          "name": "孙传庭",
           "relation": "同盟",
           "influence": 64
         }
@@ -6738,6 +6748,11 @@
           "name": "高攀龙",
           "relation": "影响",
           "influence": 70
+        },
+        {
+          "name": "方以智",
+          "relation": "影响",
+          "influence": 67
         }
       ],
       "life_events": [
@@ -13492,6 +13507,30 @@
       "related_people": [
         {
           "name": "王阳明",
+          "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "钱德洪",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "湛若水",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李贽",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -13530,17 +13569,12 @@
             "size": "medium"
           },
           {
-            "name": "阳明心学",
-            "type": "event",
-            "size": "small"
-          },
-          {
-            "name": "徐爱",
+            "name": "王畿",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "王畿",
+            "name": "李贽",
             "type": "person",
             "size": "medium"
           },
@@ -13552,13 +13586,42 @@
           {
             "name": "湛若水",
             "type": "person",
-            "size": "medium"
+            "size": "small"
+          },
+          {
+            "name": "阳明心学",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "王艮",
             "target": "王阳明",
+            "label": "师生",
+            "direction": "forward"
+          },
+          {
+            "source": "王艮",
+            "target": "王畿",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王艮",
+            "target": "李贽",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王艮",
+            "target": "钱德洪",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王艮",
+            "target": "湛若水",
             "label": "影响",
             "direction": "forward"
           },
@@ -13569,27 +13632,15 @@
             "direction": "forward"
           },
           {
-            "source": "王艮",
-            "target": "徐爱",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "王艮",
-            "target": "王畿",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "王艮",
-            "target": "钱德洪",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "王艮",
+            "source": "王阳明",
             "target": "湛若水",
-            "label": "同朝",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王畿",
+            "target": "钱德洪",
+            "label": "盟友",
             "direction": "forward"
           }
         ]
@@ -13612,6 +13663,54 @@
         {
           "name": "王阳明",
           "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "钱德洪",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王艮",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐爱",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "罗洪先",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "湛若水",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "邹守益",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "聂豹",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李贽",
+          "relation": "影响",
           "influence": 75,
           "desc": ""
         }
@@ -13649,17 +13748,7 @@
             "size": "medium"
           },
           {
-            "name": "阳明心学",
-            "type": "event",
-            "size": "small"
-          },
-          {
-            "name": "徐爱",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "王艮",
+            "name": "李贽",
             "type": "person",
             "size": "medium"
           },
@@ -13669,9 +13758,34 @@
             "size": "medium"
           },
           {
-            "name": "湛若水",
+            "name": "王艮",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "聂豹",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "罗洪先",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "湛若水",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "邹守益",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "徐爱",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
@@ -13683,32 +13797,62 @@
           },
           {
             "source": "王畿",
-            "target": "阳明心学",
-            "label": "参与",
-            "direction": "forward"
-          },
-          {
-            "source": "王畿",
-            "target": "徐爱",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "王畿",
-            "target": "王艮",
-            "label": "同朝",
+            "target": "李贽",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "王畿",
             "target": "钱德洪",
-            "label": "同朝",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王畿",
+            "target": "王艮",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王畿",
+            "target": "聂豹",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王畿",
+            "target": "罗洪先",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "王畿",
             "target": "湛若水",
-            "label": "同朝",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王畿",
+            "target": "邹守益",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王畿",
+            "target": "徐爱",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王阳明",
+            "target": "湛若水",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王阳明",
+            "target": "钱德洪",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -13731,6 +13875,36 @@
         {
           "name": "王阳明",
           "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王艮",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐爱",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "聂豹",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "邹守益",
+          "relation": "影响",
           "influence": 75,
           "desc": ""
         }
@@ -13768,12 +13942,7 @@
             "size": "medium"
           },
           {
-            "name": "阳明心学",
-            "type": "event",
-            "size": "small"
-          },
-          {
-            "name": "徐爱",
+            "name": "王畿",
             "type": "person",
             "size": "medium"
           },
@@ -13783,14 +13952,19 @@
             "size": "medium"
           },
           {
-            "name": "王畿",
+            "name": "聂豹",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "湛若水",
+            "name": "邹守益",
             "type": "person",
-            "size": "medium"
+            "size": "small"
+          },
+          {
+            "name": "徐爱",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
@@ -13802,32 +13976,44 @@
           },
           {
             "source": "钱德洪",
-            "target": "阳明心学",
-            "label": "参与",
-            "direction": "forward"
-          },
-          {
-            "source": "钱德洪",
-            "target": "徐爱",
-            "label": "同朝",
+            "target": "王畿",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "钱德洪",
             "target": "王艮",
-            "label": "同朝",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "钱德洪",
+            "target": "聂豹",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "钱德洪",
+            "target": "邹守益",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "钱德洪",
+            "target": "徐爱",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "王阳明",
             "target": "王畿",
-            "label": "同朝",
+            "label": "师生",
             "direction": "forward"
           },
           {
-            "source": "钱德洪",
-            "target": "湛若水",
-            "label": "同朝",
+            "source": "王阳明",
+            "target": "王艮",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -13850,6 +14036,18 @@
         {
           "name": "王阳明",
           "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "钱德洪",
+          "relation": "影响",
           "influence": 75,
           "desc": ""
         }
@@ -13887,16 +14085,6 @@
             "size": "medium"
           },
           {
-            "name": "阳明心学",
-            "type": "event",
-            "size": "small"
-          },
-          {
-            "name": "王艮",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "王畿",
             "type": "person",
             "size": "medium"
@@ -13907,9 +14095,9 @@
             "size": "medium"
           },
           {
-            "name": "湛若水",
-            "type": "person",
-            "size": "medium"
+            "name": "阳明心学",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
@@ -13921,32 +14109,32 @@
           },
           {
             "source": "徐爱",
-            "target": "阳明心学",
-            "label": "主导",
-            "direction": "forward"
-          },
-          {
-            "source": "徐爱",
-            "target": "王艮",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "徐爱",
             "target": "王畿",
-            "label": "同朝",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "徐爱",
             "target": "钱德洪",
-            "label": "同朝",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "徐爱",
-            "target": "湛若水",
-            "label": "同朝",
+            "target": "阳明心学",
+            "label": "主导",
+            "direction": "forward"
+          },
+          {
+            "source": "王畿",
+            "target": "钱德洪",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王阳明",
+            "target": "王畿",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -13969,6 +14157,24 @@
         {
           "name": "王阳明",
           "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王艮",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "罗洪先",
+          "relation": "影响",
           "influence": 75,
           "desc": ""
         }
@@ -14006,12 +14212,7 @@
             "size": "medium"
           },
           {
-            "name": "阳明心学",
-            "type": "event",
-            "size": "small"
-          },
-          {
-            "name": "徐爱",
+            "name": "王畿",
             "type": "person",
             "size": "medium"
           },
@@ -14021,14 +14222,14 @@
             "size": "medium"
           },
           {
-            "name": "王畿",
+            "name": "罗洪先",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "钱德洪",
-            "type": "person",
-            "size": "medium"
+            "name": "阳明心学",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
@@ -14040,32 +14241,38 @@
           },
           {
             "source": "湛若水",
-            "target": "阳明心学",
-            "label": "参与",
-            "direction": "forward"
-          },
-          {
-            "source": "湛若水",
-            "target": "徐爱",
-            "label": "同朝",
+            "target": "王畿",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "湛若水",
             "target": "王艮",
-            "label": "同朝",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "湛若水",
+            "target": "罗洪先",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "湛若水",
+            "target": "阳明心学",
+            "label": "参与",
+            "direction": "forward"
+          },
+          {
+            "source": "王阳明",
             "target": "王畿",
-            "label": "同朝",
+            "label": "师生",
             "direction": "forward"
           },
           {
-            "source": "湛若水",
-            "target": "钱德洪",
-            "label": "同朝",
+            "source": "王阳明",
+            "target": "王艮",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -14087,6 +14294,24 @@
       "related_people": [
         {
           "name": "王阳明",
+          "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "钱德洪",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "聂豹",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -14120,44 +14345,56 @@
             "size": "medium"
           },
           {
+            "name": "王畿",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "钱德洪",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "聂豹",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "罗洪先",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "阳明心学",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "邹守益",
             "target": "王阳明",
+            "label": "师生",
+            "direction": "forward"
+          },
+          {
+            "source": "邹守益",
+            "target": "王畿",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "邹守益",
+            "target": "钱德洪",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "邹守益",
             "target": "聂豹",
-            "label": "同僚",
+            "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "邹守益",
-            "target": "罗洪先",
-            "label": "同僚",
+            "source": "王畿",
+            "target": "钱德洪",
+            "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "邹守益",
-            "target": "阳明心学",
-            "label": "参与",
+            "source": "王阳明",
+            "target": "王畿",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -14179,6 +14416,30 @@
       "related_people": [
         {
           "name": "王阳明",
+          "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "钱德洪",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "邹守益",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "罗洪先",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -14212,6 +14473,16 @@
             "size": "medium"
           },
           {
+            "name": "王畿",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "钱德洪",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "邹守益",
             "type": "person",
             "size": "medium"
@@ -14219,11 +14490,6 @@
           {
             "name": "罗洪先",
             "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "阳明心学",
-            "type": "event",
             "size": "small"
           }
         ],
@@ -14231,25 +14497,43 @@
           {
             "source": "聂豹",
             "target": "王阳明",
+            "label": "师生",
+            "direction": "forward"
+          },
+          {
+            "source": "聂豹",
+            "target": "王畿",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "聂豹",
+            "target": "钱德洪",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "聂豹",
             "target": "邹守益",
-            "label": "同僚",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "聂豹",
             "target": "罗洪先",
-            "label": "同僚",
+            "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "聂豹",
-            "target": "阳明心学",
-            "label": "参与",
+            "source": "王畿",
+            "target": "钱德洪",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王阳明",
+            "target": "王畿",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -14268,7 +14552,32 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "王阳明",
+          "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "湛若水",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "聂豹",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [],
       "influence": 60,
@@ -14297,44 +14606,56 @@
             "size": "medium"
           },
           {
+            "name": "王畿",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "聂豹",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "邹守益",
+            "name": "湛若水",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "阳明心学",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "罗洪先",
             "target": "王阳明",
+            "label": "师生",
+            "direction": "forward"
+          },
+          {
+            "source": "罗洪先",
+            "target": "王畿",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "罗洪先",
             "target": "聂豹",
-            "label": "同僚",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "罗洪先",
-            "target": "邹守益",
-            "label": "同僚",
+            "target": "湛若水",
+            "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "罗洪先",
-            "target": "阳明心学",
-            "label": "参与",
+            "source": "王阳明",
+            "target": "湛若水",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王阳明",
+            "target": "王畿",
+            "label": "师生",
             "direction": "forward"
           }
         ]
@@ -14353,7 +14674,32 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "胡宗宪",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王世贞",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李攀龙",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐渭",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [],
       "influence": 60,
@@ -14382,7 +14728,7 @@
             "size": "medium"
           },
           {
-            "name": "谭纶",
+            "name": "徐渭",
             "type": "person",
             "size": "medium"
           },
@@ -14392,34 +14738,46 @@
             "size": "medium"
           },
           {
-            "name": "明代抗倭",
-            "type": "event",
-            "size": "small"
+            "name": "李攀龙",
+            "type": "person",
+            "size": "medium"
           }
         ],
         "edges": [
           {
             "source": "唐顺之",
             "target": "胡宗宪",
-            "label": "同僚",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "唐顺之",
-            "target": "谭纶",
-            "label": "同僚",
+            "target": "徐渭",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "唐顺之",
             "target": "王世贞",
-            "label": "交流",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "唐顺之",
-            "target": "明代抗倭",
-            "label": "参与",
+            "target": "李攀龙",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "胡宗宪",
+            "target": "徐渭",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王世贞",
+            "target": "李攀龙",
+            "label": "盟友",
             "direction": "forward"
           }
         ]
@@ -14438,7 +14796,26 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "李攀龙",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "唐顺之",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐渭",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [
         {
@@ -14467,12 +14844,12 @@
             "size": "large"
           },
           {
-            "name": "《本草纲目》刊行",
-            "type": "event",
-            "size": "small"
+            "name": "徐渭",
+            "type": "person",
+            "size": "medium"
           },
           {
-            "name": "李时珍",
+            "name": "唐顺之",
             "type": "person",
             "size": "medium"
           },
@@ -14482,27 +14859,22 @@
             "size": "medium"
           },
           {
-            "name": "李东阳",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "张居正",
-            "type": "person",
-            "size": "medium"
+            "name": "《本草纲目》刊行",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "王世贞",
-            "target": "《本草纲目》刊行",
-            "label": "主导",
+            "target": "徐渭",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "王世贞",
-            "target": "李时珍",
-            "label": "同朝",
+            "target": "唐顺之",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -14513,14 +14885,20 @@
           },
           {
             "source": "王世贞",
-            "target": "李东阳",
+            "target": "《本草纲目》刊行",
+            "label": "主导",
+            "direction": "forward"
+          },
+          {
+            "source": "徐渭",
+            "target": "唐顺之",
             "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "王世贞",
-            "target": "张居正",
-            "label": "敌对",
+            "source": "唐顺之",
+            "target": "李攀龙",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -14539,7 +14917,20 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "王世贞",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "唐顺之",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [],
       "influence": 60,
@@ -14561,6 +14952,11 @@
             "name": "李攀龙",
             "type": "person",
             "size": "large"
+          },
+          {
+            "name": "唐顺之",
+            "type": "person",
+            "size": "medium"
           },
           {
             "name": "王世贞",
@@ -14586,8 +14982,20 @@
         "edges": [
           {
             "source": "李攀龙",
+            "target": "唐顺之",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李攀龙",
             "target": "王世贞",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "唐顺之",
+            "target": "王世贞",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -14654,6 +15062,30 @@
           "relation": "敌对",
           "influence": 75,
           "desc": ""
+        },
+        {
+          "name": "高拱",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "严世蕃",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李春芳",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "潘季驯",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
         }
       ],
       "life_events": [],
@@ -14694,12 +15126,32 @@
             "size": "medium"
           },
           {
-            "name": "海瑞",
+            "name": "高拱",
             "type": "person",
             "size": "medium"
           },
           {
+            "name": "海瑞",
+            "type": "person",
+            "size": "small"
+          },
+          {
             "name": "严嵩",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "李春芳",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "严世蕃",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "潘季驯",
             "type": "person",
             "size": "small"
           }
@@ -14725,6 +15177,12 @@
           },
           {
             "source": "徐阶",
+            "target": "高拱",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "徐阶",
             "target": "海瑞",
             "label": "君臣",
             "direction": "forward"
@@ -14736,15 +15194,33 @@
             "direction": "forward"
           },
           {
+            "source": "徐阶",
+            "target": "李春芳",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "徐阶",
+            "target": "严世蕃",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "徐阶",
+            "target": "潘季驯",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
             "source": "张居正",
             "target": "朱载坖",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "朱厚熜",
-            "target": "朱载坖",
-            "label": "父子",
+            "source": "张居正",
+            "target": "李春芳",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -14777,7 +15253,19 @@
           "desc": ""
         },
         {
+          "name": "朱翊钧",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "张居正",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐阶",
           "relation": "敌对",
           "influence": 75,
           "desc": ""
@@ -14817,7 +15305,17 @@
             "size": "large"
           },
           {
+            "name": "朱翊钧",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "张居正",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "徐阶",
             "type": "person",
             "size": "medium"
           },
@@ -14829,23 +15327,30 @@
           {
             "name": "海瑞",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           },
           {
             "name": "严嵩",
             "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "俺答封贡",
-            "type": "event",
             "size": "small"
           }
         ],
         "edges": [
           {
             "source": "高拱",
+            "target": "朱翊钧",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "高拱",
             "target": "张居正",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "高拱",
+            "target": "徐阶",
             "label": "敌对",
             "direction": "forward"
           },
@@ -14868,21 +15373,15 @@
             "direction": "forward"
           },
           {
-            "source": "高拱",
-            "target": "俺答封贡",
-            "label": "主导",
-            "direction": "forward"
-          },
-          {
-            "source": "张居正",
-            "target": "朱载坖",
+            "source": "朱翊钧",
+            "target": "张居正",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "海瑞",
-            "target": "严嵩",
-            "label": "敌对",
+            "source": "朱翊钧",
+            "target": "朱载坖",
+            "label": "父子",
             "direction": "forward"
           }
         ]
@@ -14915,7 +15414,25 @@
           "desc": ""
         },
         {
+          "name": "王锡爵",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "潘季驯",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "朱常洛",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李春芳",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -14959,14 +15476,19 @@
             "size": "medium"
           },
           {
-            "name": "高拱",
+            "name": "李春芳",
             "type": "person",
             "size": "medium"
           },
           {
             "name": "王锡爵",
             "type": "person",
-            "size": "medium"
+            "size": "small"
+          },
+          {
+            "name": "潘季驯",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
@@ -14989,6 +15511,24 @@
             "direction": "forward"
           },
           {
+            "source": "申时行",
+            "target": "李春芳",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "申时行",
+            "target": "王锡爵",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "申时行",
+            "target": "潘季驯",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
             "source": "朱翊钧",
             "target": "张居正",
             "label": "君臣",
@@ -14998,18 +15538,6 @@
             "source": "朱翊钧",
             "target": "朱常洛",
             "label": "父子",
-            "direction": "forward"
-          },
-          {
-            "source": "申时行",
-            "target": "高拱",
-            "label": "同僚",
-            "direction": "forward"
-          },
-          {
-            "source": "申时行",
-            "target": "王锡爵",
-            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -15038,6 +15566,24 @@
         {
           "name": "张居正",
           "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "朱翊钧",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐阶",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "申时行",
+          "relation": "影响",
           "influence": 75,
           "desc": ""
         }
@@ -15070,12 +15616,7 @@
             "size": "medium"
           },
           {
-            "name": "朱载坖",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "严嵩",
+            "name": "朱翊钧",
             "type": "person",
             "size": "medium"
           },
@@ -15085,9 +15626,14 @@
             "size": "medium"
           },
           {
-            "name": "高拱",
+            "name": "朱载坖",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "申时行",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
@@ -15099,7 +15645,31 @@
           },
           {
             "source": "李春芳",
+            "target": "朱翊钧",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "李春芳",
+            "target": "徐阶",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "李春芳",
             "target": "朱载坖",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "李春芳",
+            "target": "申时行",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "张居正",
+            "target": "朱翊钧",
             "label": "君臣",
             "direction": "forward"
           },
@@ -15107,24 +15677,6 @@
             "source": "张居正",
             "target": "朱载坖",
             "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "李春芳",
-            "target": "严嵩",
-            "label": "同僚",
-            "direction": "forward"
-          },
-          {
-            "source": "李春芳",
-            "target": "徐阶",
-            "label": "同僚",
-            "direction": "forward"
-          },
-          {
-            "source": "李春芳",
-            "target": "高拱",
-            "label": "同僚",
             "direction": "forward"
           }
         ]
@@ -15153,6 +15705,12 @@
         {
           "name": "张居正",
           "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "申时行",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         },
@@ -15201,6 +15759,11 @@
             "size": "medium"
           },
           {
+            "name": "申时行",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "朱常洛",
             "type": "person",
             "size": "medium"
@@ -15226,6 +15789,12 @@
           },
           {
             "source": "王锡爵",
+            "target": "申时行",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "王锡爵",
             "target": "朱常洛",
             "label": "影响",
             "direction": "forward"
@@ -15244,8 +15813,8 @@
           },
           {
             "source": "朱翊钧",
-            "target": "朱常洛",
-            "label": "父子",
+            "target": "申时行",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -15286,6 +15855,30 @@
         {
           "name": "严嵩",
           "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "唐顺之",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "谭纶",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "严世蕃",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐渭",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         }
@@ -15342,13 +15935,23 @@
             "size": "medium"
           },
           {
-            "name": "明代抗倭",
-            "type": "event",
+            "name": "谭纶",
+            "type": "person",
             "size": "small"
           },
           {
-            "name": "戚家军整顿",
-            "type": "event",
+            "name": "徐渭",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "唐顺之",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "严世蕃",
+            "type": "person",
             "size": "small"
           }
         ],
@@ -15379,14 +15982,26 @@
           },
           {
             "source": "胡宗宪",
-            "target": "明代抗倭",
-            "label": "主导",
+            "target": "谭纶",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "胡宗宪",
-            "target": "戚家军整顿",
-            "label": "主导",
+            "target": "徐渭",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "胡宗宪",
+            "target": "唐顺之",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "胡宗宪",
+            "target": "严世蕃",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -15396,9 +16011,9 @@
             "direction": "forward"
           },
           {
-            "source": "戚继光",
-            "target": "俞大猷",
-            "label": "盟友",
+            "source": "朱厚熜",
+            "target": "严世蕃",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -15432,6 +16047,18 @@
         },
         {
           "name": "戚继光",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "胡宗宪",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "张居正",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -15469,6 +16096,16 @@
             "size": "large"
           },
           {
+            "name": "张居正",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "胡宗宪",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "朱载坖",
             "type": "person",
             "size": "medium"
@@ -15481,20 +16118,27 @@
           {
             "name": "戚继光",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           },
           {
             "name": "明代抗倭",
             "type": "event",
             "size": "small"
-          },
-          {
-            "name": "戚家军整顿",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "谭纶",
+            "target": "张居正",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "谭纶",
+            "target": "胡宗宪",
+            "label": "盟友",
+            "direction": "forward"
+          },
           {
             "source": "谭纶",
             "target": "朱载坖",
@@ -15520,15 +16164,15 @@
             "direction": "forward"
           },
           {
-            "source": "谭纶",
-            "target": "戚家军整顿",
-            "label": "主导",
+            "source": "张居正",
+            "target": "朱载坖",
+            "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "俞大猷",
+            "source": "张居正",
             "target": "戚继光",
-            "label": "盟友",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -15559,6 +16203,18 @@
           "relation": "父子",
           "influence": 75,
           "desc": ""
+        },
+        {
+          "name": "徐阶",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "胡宗宪",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
         }
       ],
       "life_events": [],
@@ -15584,7 +16240,17 @@
             "size": "large"
           },
           {
+            "name": "徐阶",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "朱厚熜",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "胡宗宪",
             "type": "person",
             "size": "medium"
           },
@@ -15592,28 +16258,25 @@
             "name": "严嵩",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "徐阶",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "张居正",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "大礼议",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "严世蕃",
+            "target": "徐阶",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "严世蕃",
             "target": "朱厚熜",
             "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "严世蕃",
+            "target": "胡宗宪",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -15623,27 +16286,15 @@
             "direction": "forward"
           },
           {
-            "source": "朱厚熜",
-            "target": "严嵩",
+            "source": "徐阶",
+            "target": "朱厚熜",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "严世蕃",
-            "target": "徐阶",
-            "label": "敌对",
-            "direction": "forward"
-          },
-          {
-            "source": "严世蕃",
-            "target": "张居正",
-            "label": "敌对",
-            "direction": "forward"
-          },
-          {
-            "source": "严世蕃",
-            "target": "大礼议",
-            "label": "参与",
+            "source": "朱厚熜",
+            "target": "胡宗宪",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -15672,6 +16323,24 @@
         {
           "name": "俞大猷",
           "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "胡宗宪",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "唐顺之",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王世贞",
+          "relation": "影响",
           "influence": 75,
           "desc": ""
         }
@@ -15704,6 +16373,11 @@
             "size": "large"
           },
           {
+            "name": "胡宗宪",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "戚继光",
             "type": "person",
             "size": "medium"
@@ -15714,22 +16388,28 @@
             "size": "medium"
           },
           {
-            "name": "明代抗倭",
-            "type": "event",
+            "name": "唐顺之",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "王世贞",
+            "type": "person",
             "size": "small"
           },
           {
-            "name": "胡宗宪",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "谭纶",
-            "type": "person",
-            "size": "medium"
+            "name": "明代抗倭",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "徐渭",
+            "target": "胡宗宪",
+            "label": "盟友",
+            "direction": "forward"
+          },
           {
             "source": "徐渭",
             "target": "戚继光",
@@ -15744,26 +16424,32 @@
           },
           {
             "source": "徐渭",
+            "target": "唐顺之",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "徐渭",
+            "target": "王世贞",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "徐渭",
             "target": "明代抗倭",
             "label": "参与",
             "direction": "forward"
           },
           {
-            "source": "戚继光",
+            "source": "胡宗宪",
+            "target": "戚继光",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "胡宗宪",
             "target": "俞大猷",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "徐渭",
-            "target": "胡宗宪",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "徐渭",
-            "target": "谭纶",
-            "label": "同朝",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -15791,6 +16477,12 @@
         },
         {
           "name": "董其昌",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "仇英",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -15853,13 +16545,19 @@
             "direction": "forward"
           },
           {
+            "source": "文徵明",
+            "target": "仇英",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
             "source": "唐寅",
             "target": "董其昌",
             "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "文徵明",
+            "source": "唐寅",
             "target": "仇英",
             "label": "影响",
             "direction": "forward"
@@ -15898,6 +16596,18 @@
           "relation": "影响",
           "influence": 75,
           "desc": ""
+        },
+        {
+          "name": "文徵明",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "陈洪绶",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
         }
       ],
       "life_events": [],
@@ -15933,14 +16643,14 @@
             "size": "medium"
           },
           {
-            "name": "文徵明",
+            "name": "陈洪绶",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "《牡丹亭》问世",
-            "type": "event",
-            "size": "small"
+            "name": "文徵明",
+            "type": "person",
+            "size": "medium"
           }
         ],
         "edges": [
@@ -15957,8 +16667,8 @@
             "direction": "forward"
           },
           {
-            "source": "董其昌",
-            "target": "唐寅",
+            "source": "仇英",
+            "target": "陈洪绶",
             "label": "影响",
             "direction": "forward"
           },
@@ -15969,9 +16679,15 @@
             "direction": "forward"
           },
           {
-            "source": "仇英",
-            "target": "《牡丹亭》问世",
-            "label": "参与",
+            "source": "唐寅",
+            "target": "文徵明",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "董其昌",
+            "target": "唐寅",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -15993,6 +16709,54 @@
       "related_people": [
         {
           "name": "吴承恩",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王阳明",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王艮",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王畿",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "冯梦龙",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "凌濛初",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁宏道",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁宗道",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁中道",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -16021,35 +16785,79 @@
             "size": "large"
           },
           {
+            "name": "王阳明",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "王畿",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "吴承恩",
             "type": "person",
             "size": "medium"
           },
           {
+            "name": "冯梦龙",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "袁宏道",
+            "type": "person",
+            "size": "small"
+          },
+          {
             "name": "王艮",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           },
           {
-            "name": "顾宪成",
+            "name": "凌濛初",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           },
           {
-            "name": "汤显祖",
+            "name": "袁宗道",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           },
           {
-            "name": "东林书院",
-            "type": "event",
+            "name": "袁中道",
+            "type": "person",
             "size": "small"
           }
         ],
         "edges": [
           {
             "source": "李贽",
+            "target": "王阳明",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李贽",
+            "target": "王畿",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李贽",
             "target": "吴承恩",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李贽",
+            "target": "冯梦龙",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李贽",
+            "target": "袁宏道",
             "label": "影响",
             "direction": "forward"
           },
@@ -16061,20 +16869,32 @@
           },
           {
             "source": "李贽",
-            "target": "顾宪成",
-            "label": "敌对",
+            "target": "凌濛初",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "李贽",
-            "target": "汤显祖",
-            "label": "交流",
+            "target": "袁宗道",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "李贽",
-            "target": "东林书院",
-            "label": "参与",
+            "target": "袁中道",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "袁宏道",
+            "target": "袁宗道",
+            "label": "兄弟",
+            "direction": "forward"
+          },
+          {
+            "source": "袁宏道",
+            "target": "袁中道",
+            "label": "兄弟",
             "direction": "forward"
           }
         ]
@@ -16111,6 +16931,24 @@
           "relation": "影响",
           "influence": 75,
           "desc": ""
+        },
+        {
+          "name": "李贽",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "凌濛初",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁宏道",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
         }
       ],
       "life_events": [],
@@ -16136,6 +16974,11 @@
             "size": "large"
           },
           {
+            "name": "李贽",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "汤显祖",
             "type": "person",
             "size": "medium"
@@ -16151,17 +16994,23 @@
             "size": "medium"
           },
           {
-            "name": "凌濛初",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "袁宏道",
             "type": "person",
-            "size": "medium"
+            "size": "small"
+          },
+          {
+            "name": "凌濛初",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "冯梦龙",
+            "target": "李贽",
+            "label": "影响",
+            "direction": "forward"
+          },
           {
             "source": "冯梦龙",
             "target": "汤显祖",
@@ -16181,21 +17030,27 @@
             "direction": "forward"
           },
           {
-            "source": "汤显祖",
-            "target": "吴承恩",
+            "source": "冯梦龙",
+            "target": "袁宏道",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "冯梦龙",
             "target": "凌濛初",
-            "label": "交流",
+            "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "冯梦龙",
+            "source": "李贽",
+            "target": "吴承恩",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李贽",
             "target": "袁宏道",
-            "label": "交流",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -16226,6 +17081,18 @@
           "relation": "影响",
           "influence": 75,
           "desc": ""
+        },
+        {
+          "name": "李贽",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "冯梦龙",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
         }
       ],
       "life_events": [],
@@ -16251,6 +17118,11 @@
             "size": "large"
           },
           {
+            "name": "李贽",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "汤显祖",
             "type": "person",
             "size": "medium"
@@ -16264,19 +17136,15 @@
             "name": "冯梦龙",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "袁宏道",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "《牡丹亭》问世",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "凌濛初",
+            "target": "李贽",
+            "label": "影响",
+            "direction": "forward"
+          },
           {
             "source": "凌濛初",
             "target": "汤显祖",
@@ -16290,27 +17158,21 @@
             "direction": "forward"
           },
           {
-            "source": "汤显祖",
+            "source": "凌濛初",
+            "target": "冯梦龙",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李贽",
             "target": "吴承恩",
             "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "凌濛初",
+            "source": "李贽",
             "target": "冯梦龙",
-            "label": "交流",
-            "direction": "forward"
-          },
-          {
-            "source": "凌濛初",
-            "target": "袁宏道",
-            "label": "交流",
-            "direction": "forward"
-          },
-          {
-            "source": "凌濛初",
-            "target": "《牡丹亭》问世",
-            "label": "参与",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -16331,6 +17193,18 @@
       "works": [],
       "related_people": [
         {
+          "name": "袁宗道",
+          "relation": "兄弟",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁中道",
+          "relation": "兄弟",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "汤显祖",
           "relation": "影响",
           "influence": 75,
@@ -16338,6 +17212,18 @@
         },
         {
           "name": "唐寅",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "冯梦龙",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李贽",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -16366,6 +17252,11 @@
             "size": "large"
           },
           {
+            "name": "李贽",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "汤显祖",
             "type": "person",
             "size": "medium"
@@ -16376,22 +17267,28 @@
             "size": "medium"
           },
           {
-            "name": "袁宗道",
+            "name": "冯梦龙",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "袁宗道",
+            "type": "person",
+            "size": "small"
           },
           {
             "name": "袁中道",
             "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "李贽",
-            "type": "person",
-            "size": "medium"
+            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "袁宏道",
+            "target": "李贽",
+            "label": "影响",
+            "direction": "forward"
+          },
           {
             "source": "袁宏道",
             "target": "汤显祖",
@@ -16401,6 +17298,12 @@
           {
             "source": "袁宏道",
             "target": "唐寅",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "袁宏道",
+            "target": "冯梦龙",
             "label": "影响",
             "direction": "forward"
           },
@@ -16417,9 +17320,15 @@
             "direction": "forward"
           },
           {
-            "source": "袁宏道",
-            "target": "李贽",
-            "label": "师生",
+            "source": "袁宗道",
+            "target": "袁中道",
+            "label": "兄弟",
+            "direction": "forward"
+          },
+          {
+            "source": "李贽",
+            "target": "冯梦龙",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -16440,7 +17349,25 @@
       "works": [],
       "related_people": [
         {
+          "name": "袁宏道",
+          "relation": "兄弟",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁中道",
+          "relation": "兄弟",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "汤显祖",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李贽",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -16469,7 +17396,7 @@
             "size": "large"
           },
           {
-            "name": "汤显祖",
+            "name": "李贽",
             "type": "person",
             "size": "medium"
           },
@@ -16479,25 +17406,20 @@
             "size": "medium"
           },
           {
+            "name": "汤显祖",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "袁中道",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "李贽",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "东林书院",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "袁宗道",
-            "target": "汤显祖",
+            "target": "李贽",
             "label": "影响",
             "direction": "forward"
           },
@@ -16509,20 +17431,26 @@
           },
           {
             "source": "袁宗道",
+            "target": "汤显祖",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "袁宗道",
             "target": "袁中道",
             "label": "兄弟",
             "direction": "forward"
           },
           {
-            "source": "袁宗道",
-            "target": "李贽",
-            "label": "师生",
+            "source": "袁宏道",
+            "target": "袁中道",
+            "label": "兄弟",
             "direction": "forward"
           },
           {
-            "source": "袁宗道",
-            "target": "东林书院",
-            "label": "参与",
+            "source": "李贽",
+            "target": "袁宏道",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -16543,7 +17471,25 @@
       "works": [],
       "related_people": [
         {
+          "name": "袁宏道",
+          "relation": "兄弟",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁宗道",
+          "relation": "兄弟",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "汤显祖",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李贽",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -16572,7 +17518,7 @@
             "size": "large"
           },
           {
-            "name": "汤显祖",
+            "name": "李贽",
             "type": "person",
             "size": "medium"
           },
@@ -16582,25 +17528,20 @@
             "size": "medium"
           },
           {
+            "name": "汤显祖",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "袁宗道",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "李贽",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "东林书院",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "袁中道",
-            "target": "汤显祖",
+            "target": "李贽",
             "label": "影响",
             "direction": "forward"
           },
@@ -16612,20 +17553,26 @@
           },
           {
             "source": "袁中道",
+            "target": "汤显祖",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "袁中道",
             "target": "袁宗道",
             "label": "兄弟",
             "direction": "forward"
           },
           {
-            "source": "袁中道",
-            "target": "李贽",
-            "label": "师生",
+            "source": "袁宏道",
+            "target": "袁宗道",
+            "label": "兄弟",
             "direction": "forward"
           },
           {
-            "source": "袁中道",
-            "target": "东林书院",
-            "label": "参与",
+            "source": "李贽",
+            "target": "袁宏道",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -16648,6 +17595,12 @@
         {
           "name": "魏忠贤",
           "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "高攀龙",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         },
@@ -16696,17 +17649,22 @@
             "size": "large"
           },
           {
-            "name": "黄宗羲",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "顾炎武",
             "type": "person",
             "size": "medium"
           },
           {
+            "name": "黄宗羲",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "魏忠贤",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "高攀龙",
             "type": "person",
             "size": "medium"
           },
@@ -16724,13 +17682,13 @@
         "edges": [
           {
             "source": "顾宪成",
-            "target": "黄宗羲",
+            "target": "顾炎武",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "顾宪成",
-            "target": "顾炎武",
+            "target": "黄宗羲",
             "label": "影响",
             "direction": "forward"
           },
@@ -16738,6 +17696,12 @@
             "source": "顾宪成",
             "target": "魏忠贤",
             "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "顾宪成",
+            "target": "高攀龙",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -16753,9 +17717,15 @@
             "direction": "forward"
           },
           {
-            "source": "黄宗羲",
-            "target": "顾炎武",
+            "source": "顾炎武",
+            "target": "黄宗羲",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "魏忠贤",
+            "target": "高攀龙",
+            "label": "敌对",
             "direction": "forward"
           }
         ]
@@ -16778,6 +17748,12 @@
         {
           "name": "魏忠贤",
           "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "顾宪成",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         },
@@ -16826,17 +17802,22 @@
             "size": "large"
           },
           {
-            "name": "黄宗羲",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "顾炎武",
             "type": "person",
             "size": "medium"
           },
           {
+            "name": "黄宗羲",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "魏忠贤",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "顾宪成",
             "type": "person",
             "size": "medium"
           },
@@ -16854,13 +17835,13 @@
         "edges": [
           {
             "source": "高攀龙",
-            "target": "黄宗羲",
+            "target": "顾炎武",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "高攀龙",
-            "target": "顾炎武",
+            "target": "黄宗羲",
             "label": "影响",
             "direction": "forward"
           },
@@ -16868,6 +17849,12 @@
             "source": "高攀龙",
             "target": "魏忠贤",
             "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "高攀龙",
+            "target": "顾宪成",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -16883,9 +17870,15 @@
             "direction": "forward"
           },
           {
-            "source": "黄宗羲",
-            "target": "顾炎武",
+            "source": "顾炎武",
+            "target": "黄宗羲",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "魏忠贤",
+            "target": "顾宪成",
+            "label": "敌对",
             "direction": "forward"
           }
         ]
@@ -16907,6 +17900,12 @@
       "related_people": [
         {
           "name": "吴承恩",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "施耐庵",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -16965,7 +17964,13 @@
           {
             "source": "罗贯中",
             "target": "施耐庵",
-            "label": "师生",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "吴承恩",
+            "target": "施耐庵",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -16999,6 +18004,12 @@
       "related_people": [
         {
           "name": "吴承恩",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "罗贯中",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -17057,7 +18068,13 @@
           {
             "source": "施耐庵",
             "target": "罗贯中",
-            "label": "师生",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "吴承恩",
+            "target": "罗贯中",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -17090,6 +18107,12 @@
       "works": [],
       "related_people": [
         {
+          "name": "张岱",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "董其昌",
           "relation": "影响",
           "influence": 75,
@@ -17097,6 +18120,12 @@
         },
         {
           "name": "唐寅",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "仇英",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -17135,7 +18164,7 @@
             "size": "medium"
           },
           {
-            "name": "文徵明",
+            "name": "张岱",
             "type": "person",
             "size": "medium"
           },
@@ -17143,11 +18172,6 @@
             "name": "仇英",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "《牡丹亭》问世",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
@@ -17164,15 +18188,9 @@
             "direction": "forward"
           },
           {
-            "source": "董其昌",
-            "target": "唐寅",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
             "source": "陈洪绶",
-            "target": "文徵明",
-            "label": "影响",
+            "target": "张岱",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -17182,9 +18200,15 @@
             "direction": "forward"
           },
           {
-            "source": "陈洪绶",
-            "target": "《牡丹亭》问世",
-            "label": "参与",
+            "source": "董其昌",
+            "target": "唐寅",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "董其昌",
+            "target": "张岱",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -17203,7 +18227,32 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "朱翊钧",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "张居正",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "徐阶",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "申时行",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [
         {
@@ -17232,11 +18281,6 @@
             "size": "large"
           },
           {
-            "name": "张居正改革",
-            "type": "event",
-            "size": "small"
-          },
-          {
             "name": "朱翊钧",
             "type": "person",
             "size": "medium"
@@ -17247,12 +18291,17 @@
             "size": "medium"
           },
           {
+            "name": "徐阶",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "申时行",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "一条鞭法",
+            "name": "张居正改革",
             "type": "event",
             "size": "small"
           }
@@ -17260,32 +18309,44 @@
         "edges": [
           {
             "source": "潘季驯",
-            "target": "张居正改革",
-            "label": "参与",
-            "direction": "forward"
-          },
-          {
-            "source": "潘季驯",
             "target": "朱翊钧",
-            "label": "同朝",
+            "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "潘季驯",
             "target": "张居正",
-            "label": "同朝",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "潘季驯",
+            "target": "徐阶",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "潘季驯",
             "target": "申时行",
-            "label": "同僚",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "潘季驯",
-            "target": "一条鞭法",
+            "target": "张居正改革",
             "label": "参与",
+            "direction": "forward"
+          },
+          {
+            "source": "朱翊钧",
+            "target": "张居正",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "朱翊钧",
+            "target": "申时行",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -17314,6 +18375,18 @@
         {
           "name": "李自成",
           "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "洪承畴",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "卢象升",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         }
@@ -17356,17 +18429,7 @@
             "size": "medium"
           },
           {
-            "name": "明末农民战争",
-            "type": "event",
-            "size": "small"
-          },
-          {
-            "name": "张献忠",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "高迎祥",
+            "name": "洪承畴",
             "type": "person",
             "size": "medium"
           },
@@ -17374,6 +18437,11 @@
             "name": "卢象升",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "明末农民战争",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
@@ -17391,32 +18459,32 @@
           },
           {
             "source": "孙传庭",
+            "target": "洪承畴",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "孙传庭",
+            "target": "卢象升",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "孙传庭",
             "target": "明末农民战争",
             "label": "参与",
             "direction": "forward"
           },
           {
             "source": "朱由检",
-            "target": "李自成",
-            "label": "敌对",
+            "target": "洪承畴",
+            "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "孙传庭",
-            "target": "张献忠",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "孙传庭",
-            "target": "高迎祥",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "孙传庭",
+            "source": "朱由检",
             "target": "卢象升",
-            "label": "同朝",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -17439,6 +18507,24 @@
         {
           "name": "朱由检",
           "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李自成",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "孙传庭",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "洪承畴",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         }
@@ -17476,22 +18562,7 @@
             "size": "medium"
           },
           {
-            "name": "明末农民战争",
-            "type": "event",
-            "size": "small"
-          },
-          {
             "name": "李自成",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "张献忠",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "高迎祥",
             "type": "person",
             "size": "medium"
           },
@@ -17499,6 +18570,16 @@
             "name": "孙传庭",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "洪承畴",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "明末农民战争",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
@@ -17510,32 +18591,38 @@
           },
           {
             "source": "卢象升",
-            "target": "明末农民战争",
-            "label": "参与",
-            "direction": "forward"
-          },
-          {
-            "source": "卢象升",
             "target": "李自成",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "卢象升",
-            "target": "张献忠",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "卢象升",
-            "target": "高迎祥",
-            "label": "同朝",
+            "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "卢象升",
             "target": "孙传庭",
-            "label": "同朝",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "卢象升",
+            "target": "洪承畴",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "卢象升",
+            "target": "明末农民战争",
+            "label": "参与",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由检",
+            "target": "孙传庭",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由检",
+            "target": "洪承畴",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -17557,6 +18644,18 @@
       "related_people": [
         {
           "name": "孙承宗",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "朱由校",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "朱由检",
           "relation": "君臣",
           "influence": 75,
           "desc": ""
@@ -17591,6 +18690,16 @@
             "size": "large"
           },
           {
+            "name": "朱由检",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "朱由校",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "孙承宗",
             "type": "person",
             "size": "medium"
@@ -17599,19 +18708,21 @@
             "name": "袁崇焕",
             "type": "person",
             "size": "medium"
-          },
-          {
-            "name": "祖大寿",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "萨尔浒之战",
-            "type": "event",
-            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "毛文龙",
+            "target": "朱由检",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "毛文龙",
+            "target": "朱由校",
+            "label": "君臣",
+            "direction": "forward"
+          },
           {
             "source": "毛文龙",
             "target": "孙承宗",
@@ -17625,21 +18736,15 @@
             "direction": "forward"
           },
           {
-            "source": "孙承宗",
-            "target": "袁崇焕",
+            "source": "朱由检",
+            "target": "朱由校",
+            "label": "兄弟",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由检",
+            "target": "孙承宗",
             "label": "君臣",
-            "direction": "forward"
-          },
-          {
-            "source": "毛文龙",
-            "target": "祖大寿",
-            "label": "同僚",
-            "direction": "forward"
-          },
-          {
-            "source": "毛文龙",
-            "target": "萨尔浒之战",
-            "label": "参与",
             "direction": "forward"
           }
         ]
@@ -17660,13 +18765,25 @@
       "works": [],
       "related_people": [
         {
+          "name": "袁崇焕",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "孙承宗",
           "relation": "君臣",
           "influence": 75,
           "desc": ""
         },
         {
-          "name": "袁崇焕",
+          "name": "朱由检",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "吴三桂",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -17700,7 +18817,12 @@
             "size": "large"
           },
           {
-            "name": "孙承宗",
+            "name": "朱由检",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "吴三桂",
             "type": "person",
             "size": "medium"
           },
@@ -17710,32 +18832,39 @@
             "size": "medium"
           },
           {
+            "name": "孙承宗",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "松锦之战",
             "type": "event",
             "size": "small"
-          },
-          {
-            "name": "吴三桂",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "洪承畴",
-            "type": "person",
-            "size": "medium"
           }
         ],
         "edges": [
           {
             "source": "祖大寿",
-            "target": "孙承宗",
+            "target": "朱由检",
             "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "祖大寿",
-            "target": "袁崇焕",
+            "target": "吴三桂",
             "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "祖大寿",
+            "target": "袁崇焕",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "祖大寿",
+            "target": "孙承宗",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -17745,21 +18874,15 @@
             "direction": "forward"
           },
           {
-            "source": "孙承宗",
+            "source": "朱由检",
             "target": "袁崇焕",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "祖大寿",
-            "target": "吴三桂",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "祖大寿",
-            "target": "洪承畴",
-            "label": "敌对",
+            "source": "朱由检",
+            "target": "孙承宗",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -17780,8 +18903,32 @@
       "works": [],
       "related_people": [
         {
+          "name": "朱由检",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "张献忠",
           "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李自成",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "孙传庭",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "卢象升",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         }
@@ -17814,31 +18961,65 @@
             "size": "large"
           },
           {
+            "name": "朱由检",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "李自成",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "张献忠",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "松锦之战",
-            "type": "event",
+            "name": "孙传庭",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "卢象升",
+            "type": "person",
             "size": "small"
           },
           {
-            "name": "祖大寿",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "吴三桂",
-            "type": "person",
-            "size": "medium"
+            "name": "松锦之战",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "洪承畴",
+            "target": "朱由检",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "洪承畴",
+            "target": "李自成",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "洪承畴",
             "target": "张献忠",
             "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "洪承畴",
+            "target": "孙传庭",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "洪承畴",
+            "target": "卢象升",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -17848,15 +19029,15 @@
             "direction": "forward"
           },
           {
-            "source": "洪承畴",
-            "target": "祖大寿",
-            "label": "同朝",
+            "source": "朱由检",
+            "target": "孙传庭",
+            "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "洪承畴",
-            "target": "吴三桂",
-            "label": "同朝",
+            "source": "朱由检",
+            "target": "卢象升",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -17876,6 +19057,12 @@
       "occupations": [],
       "works": [],
       "related_people": [
+        {
+          "name": "朱由检",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
         {
           "name": "朱由崧",
           "relation": "敌对",
@@ -17907,13 +19094,25 @@
           "desc": ""
         },
         {
-          "name": "袁崇焕",
-          "relation": "影响",
+          "name": "李自成",
+          "relation": "敌对",
           "influence": 75,
           "desc": ""
         },
         {
-          "name": "孙承宗",
+          "name": "李定国",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "祖大寿",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "袁崇焕",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -17955,6 +19154,16 @@
             "size": "large"
           },
           {
+            "name": "朱由检",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "李自成",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "朱由崧",
             "type": "person",
             "size": "medium"
@@ -17965,17 +19174,22 @@
             "size": "medium"
           },
           {
-            "name": "史可法",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "张献忠",
             "type": "person",
-            "size": "medium"
+            "size": "small"
+          },
+          {
+            "name": "史可法",
+            "type": "person",
+            "size": "small"
           },
           {
             "name": "郑成功",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "李定国",
             "type": "person",
             "size": "small"
           },
@@ -17985,12 +19199,24 @@
             "size": "small"
           },
           {
-            "name": "孙承宗",
+            "name": "祖大寿",
             "type": "person",
             "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "吴三桂",
+            "target": "朱由检",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "吴三桂",
+            "target": "李自成",
+            "label": "敌对",
+            "direction": "forward"
+          },
           {
             "source": "吴三桂",
             "target": "朱由崧",
@@ -18005,19 +19231,25 @@
           },
           {
             "source": "吴三桂",
-            "target": "史可法",
-            "label": "敌对",
-            "direction": "forward"
-          },
-          {
-            "source": "吴三桂",
             "target": "张献忠",
             "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "吴三桂",
+            "target": "史可法",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "吴三桂",
             "target": "郑成功",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "吴三桂",
+            "target": "李定国",
             "label": "敌对",
             "direction": "forward"
           },
@@ -18029,19 +19261,19 @@
           },
           {
             "source": "吴三桂",
-            "target": "孙承宗",
-            "label": "影响",
+            "target": "祖大寿",
+            "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "朱由崧",
-            "target": "史可法",
+            "source": "朱由检",
+            "target": "袁崇焕",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "朱由榔",
-            "target": "郑成功",
+            "source": "朱由检",
+            "target": "祖大寿",
             "label": "君臣",
             "direction": "forward"
           }
@@ -18075,7 +19307,31 @@
           "desc": ""
         },
         {
+          "name": "吴三桂",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "孙可望",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "郑成功",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "张煌言",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "瞿式耜",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -18114,6 +19370,11 @@
             "size": "medium"
           },
           {
+            "name": "吴三桂",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "张献忠",
             "type": "person",
             "size": "medium"
@@ -18124,8 +19385,18 @@
             "size": "medium"
           },
           {
-            "name": "南明抗清",
-            "type": "event",
+            "name": "张煌言",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "瞿式耜",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "孙可望",
+            "type": "person",
             "size": "small"
           }
         ],
@@ -18134,6 +19405,12 @@
             "source": "李定国",
             "target": "朱由榔",
             "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "李定国",
+            "target": "吴三桂",
+            "label": "敌对",
             "direction": "forward"
           },
           {
@@ -18150,13 +19427,31 @@
           },
           {
             "source": "李定国",
-            "target": "南明抗清",
-            "label": "参与",
+            "target": "张煌言",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "李定国",
+            "target": "瞿式耜",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "李定国",
+            "target": "孙可望",
+            "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "朱由榔",
             "target": "郑成功",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由榔",
+            "target": "张煌言",
             "label": "君臣",
             "direction": "forward"
           }
@@ -18179,7 +19474,7 @@
       "related_people": [
         {
           "name": "朱由榔",
-          "relation": "盟友",
+          "relation": "君臣",
           "influence": 75,
           "desc": ""
         },
@@ -18191,6 +19486,18 @@
         },
         {
           "name": "郑成功",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李定国",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "夏完淳",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -18230,12 +19537,12 @@
             "size": "medium"
           },
           {
-            "name": "史可法",
+            "name": "朱由崧",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "朱由崧",
+            "name": "史可法",
             "type": "person",
             "size": "medium"
           },
@@ -18243,19 +19550,23 @@
             "name": "郑成功",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "李定国",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "夏完淳",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "张煌言",
             "target": "朱由榔",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "张煌言",
-            "target": "史可法",
-            "label": "盟友",
+            "label": "君臣",
             "direction": "forward"
           },
           {
@@ -18266,7 +19577,25 @@
           },
           {
             "source": "张煌言",
+            "target": "史可法",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "张煌言",
             "target": "郑成功",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "张煌言",
+            "target": "李定国",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "张煌言",
+            "target": "夏完淳",
             "label": "盟友",
             "direction": "forward"
           },
@@ -18277,8 +19606,8 @@
             "direction": "forward"
           },
           {
-            "source": "史可法",
-            "target": "朱由崧",
+            "source": "朱由榔",
+            "target": "李定国",
             "label": "君臣",
             "direction": "forward"
           }
@@ -18312,7 +19641,25 @@
           "desc": ""
         },
         {
+          "name": "孙可望",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "史可法",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李定国",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "黄道周",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -18361,8 +19708,18 @@
             "size": "medium"
           },
           {
-            "name": "南明抗清",
-            "type": "event",
+            "name": "李定国",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "黄道周",
+            "type": "person",
+            "size": "small"
+          },
+          {
+            "name": "孙可望",
+            "type": "person",
             "size": "small"
           }
         ],
@@ -18387,8 +19744,20 @@
           },
           {
             "source": "瞿式耜",
-            "target": "南明抗清",
-            "label": "参与",
+            "target": "李定国",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "瞿式耜",
+            "target": "黄道周",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "瞿式耜",
+            "target": "孙可望",
+            "label": "敌对",
             "direction": "forward"
           },
           {
@@ -18398,9 +19767,9 @@
             "direction": "forward"
           },
           {
-            "source": "朱由榔",
-            "target": "史可法",
-            "label": "影响",
+            "source": "朱由崧",
+            "target": "黄道周",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -18421,7 +19790,31 @@
       "works": [],
       "related_people": [
         {
+          "name": "朱由崧",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "朱由榔",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "史可法",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "瞿式耜",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "陈子龙",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -18450,17 +19843,17 @@
             "size": "large"
           },
           {
+            "name": "朱由崧",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "朱由榔",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "史可法",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "朱由检",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "郑芝龙",
             "type": "person",
             "size": "medium"
           },
@@ -18470,28 +19863,28 @@
             "size": "medium"
           },
           {
-            "name": "南明抗清",
-            "type": "event",
+            "name": "陈子龙",
+            "type": "person",
             "size": "small"
           }
         ],
         "edges": [
           {
             "source": "黄道周",
-            "target": "史可法",
-            "label": "盟友",
-            "direction": "forward"
-          },
-          {
-            "source": "黄道周",
-            "target": "朱由检",
+            "target": "朱由崧",
             "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "黄道周",
-            "target": "郑芝龙",
-            "label": "敌对",
+            "target": "朱由榔",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "黄道周",
+            "target": "史可法",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -18502,8 +19895,20 @@
           },
           {
             "source": "黄道周",
-            "target": "南明抗清",
-            "label": "参与",
+            "target": "陈子龙",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由崧",
+            "target": "史可法",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由崧",
+            "target": "瞿式耜",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -18526,6 +19931,12 @@
         {
           "name": "郑成功",
           "relation": "父子",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "朱由榔",
+          "relation": "君臣",
           "influence": 75,
           "desc": ""
         }
@@ -18553,12 +19964,12 @@
             "size": "large"
           },
           {
-            "name": "郑成功",
+            "name": "朱由榔",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "朱由榔",
+            "name": "郑成功",
             "type": "person",
             "size": "medium"
           },
@@ -18576,13 +19987,19 @@
         "edges": [
           {
             "source": "郑芝龙",
+            "target": "朱由榔",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "郑芝龙",
             "target": "郑成功",
             "label": "父子",
             "direction": "forward"
           },
           {
-            "source": "郑芝龙",
-            "target": "朱由榔",
+            "source": "朱由榔",
+            "target": "郑成功",
             "label": "君臣",
             "direction": "forward"
           },
@@ -18616,6 +20033,12 @@
       "works": [],
       "related_people": [
         {
+          "name": "朱由检",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "李自成",
           "relation": "盟友",
           "influence": 75,
@@ -18623,6 +20046,18 @@
         },
         {
           "name": "张献忠",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "罗汝才",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "刘宗敏",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -18656,6 +20091,11 @@
             "size": "large"
           },
           {
+            "name": "朱由检",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "李自成",
             "type": "person",
             "size": "medium"
@@ -18666,22 +20106,28 @@
             "size": "medium"
           },
           {
-            "name": "明末农民战争",
-            "type": "event",
+            "name": "罗汝才",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "刘宗敏",
+            "type": "person",
             "size": "small"
           },
           {
-            "name": "孙传庭",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "卢象升",
-            "type": "person",
-            "size": "medium"
+            "name": "明末农民战争",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "高迎祥",
+            "target": "朱由检",
+            "label": "敌对",
+            "direction": "forward"
+          },
           {
             "source": "高迎祥",
             "target": "李自成",
@@ -18696,26 +20142,32 @@
           },
           {
             "source": "高迎祥",
+            "target": "罗汝才",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "高迎祥",
+            "target": "刘宗敏",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "高迎祥",
             "target": "明末农民战争",
             "label": "主导",
             "direction": "forward"
           },
           {
             "source": "李自成",
-            "target": "张献忠",
-            "label": "盟友",
+            "target": "刘宗敏",
+            "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "高迎祥",
-            "target": "孙传庭",
-            "label": "同朝",
-            "direction": "forward"
-          },
-          {
-            "source": "高迎祥",
-            "target": "卢象升",
-            "label": "同朝",
+            "source": "朱由检",
+            "target": "李自成",
+            "label": "敌对",
             "direction": "forward"
           }
         ]
@@ -18736,7 +20188,31 @@
       "works": [],
       "related_people": [
         {
+          "name": "朱由检",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "李自成",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "高迎祥",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "张献忠",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "刘宗敏",
           "relation": "盟友",
           "influence": 75,
           "desc": ""
@@ -18765,6 +20241,11 @@
             "size": "large"
           },
           {
+            "name": "朱由检",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "李自成",
             "type": "person",
             "size": "medium"
@@ -18780,12 +20261,18 @@
             "size": "medium"
           },
           {
-            "name": "明末农民战争",
-            "type": "event",
+            "name": "刘宗敏",
+            "type": "person",
             "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "罗汝才",
+            "target": "朱由检",
+            "label": "敌对",
+            "direction": "forward"
+          },
           {
             "source": "罗汝才",
             "target": "李自成",
@@ -18801,13 +20288,25 @@
           {
             "source": "罗汝才",
             "target": "高迎祥",
-            "label": "同僚",
+            "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "罗汝才",
-            "target": "明末农民战争",
-            "label": "参与",
+            "target": "刘宗敏",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "李自成",
+            "target": "刘宗敏",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由检",
+            "target": "李自成",
+            "label": "敌对",
             "direction": "forward"
           }
         ]
@@ -18830,6 +20329,24 @@
         {
           "name": "李自成",
           "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "朱由检",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "高迎祥",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "罗汝才",
+          "relation": "盟友",
           "influence": 75,
           "desc": ""
         }
@@ -18871,6 +20388,21 @@
             "size": "medium"
           },
           {
+            "name": "朱由检",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "高迎祥",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "罗汝才",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "明亡北京陷落",
             "type": "event",
             "size": "small"
@@ -18879,16 +20411,6 @@
             "name": "山海关之战",
             "type": "event",
             "size": "small"
-          },
-          {
-            "name": "朱由检",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "吴三桂",
-            "type": "person",
-            "size": "medium"
           }
         ],
         "edges": [
@@ -18896,6 +20418,24 @@
             "source": "刘宗敏",
             "target": "李自成",
             "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "刘宗敏",
+            "target": "朱由检",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "刘宗敏",
+            "target": "高迎祥",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "刘宗敏",
+            "target": "罗汝才",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -18911,15 +20451,15 @@
             "direction": "forward"
           },
           {
-            "source": "刘宗敏",
+            "source": "李自成",
             "target": "朱由检",
             "label": "敌对",
             "direction": "forward"
           },
           {
-            "source": "刘宗敏",
-            "target": "吴三桂",
-            "label": "同朝",
+            "source": "李自成",
+            "target": "高迎祥",
+            "label": "盟友",
             "direction": "forward"
           }
         ]
@@ -18948,6 +20488,18 @@
         {
           "name": "张献忠",
           "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "李定国",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "瞿式耜",
+          "relation": "敌对",
           "influence": 75,
           "desc": ""
         }
@@ -18990,9 +20542,9 @@
             "size": "medium"
           },
           {
-            "name": "南明抗清",
-            "type": "event",
-            "size": "small"
+            "name": "瞿式耜",
+            "type": "person",
+            "size": "medium"
           }
         ],
         "edges": [
@@ -19016,8 +20568,20 @@
           },
           {
             "source": "孙可望",
-            "target": "南明抗清",
-            "label": "参与",
+            "target": "瞿式耜",
+            "label": "敌对",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由榔",
+            "target": "李定国",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由榔",
+            "target": "瞿式耜",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -19036,7 +20600,14 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "李自成",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [],
       "influence": 60,
@@ -19060,6 +20631,11 @@
             "size": "large"
           },
           {
+            "name": "李自成",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "史可法",
             "type": "person",
             "size": "medium"
@@ -19076,6 +20652,12 @@
           }
         ],
         "edges": [
+          {
+            "source": "阎应元",
+            "target": "李自成",
+            "label": "敌对",
+            "direction": "forward"
+          },
           {
             "source": "阎应元",
             "target": "史可法",
@@ -19110,7 +20692,38 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "朱由崧",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "夏完淳",
+          "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "黄道周",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "钱谦益",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "柳如是",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [
         {
@@ -19139,12 +20752,17 @@
             "size": "large"
           },
           {
-            "name": "《农政全书》刊行",
-            "type": "event",
-            "size": "small"
+            "name": "朱由崧",
+            "type": "person",
+            "size": "medium"
           },
           {
-            "name": "徐光启",
+            "name": "黄道周",
+            "type": "person",
+            "size": "medium"
+          },
+          {
+            "name": "钱谦益",
             "type": "person",
             "size": "medium"
           },
@@ -19156,25 +20774,31 @@
           {
             "name": "柳如是",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           },
           {
-            "name": "钱谦益",
-            "type": "person",
-            "size": "medium"
+            "name": "《农政全书》刊行",
+            "type": "event",
+            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "陈子龙",
-            "target": "《农政全书》刊行",
-            "label": "参与",
+            "target": "朱由崧",
+            "label": "君臣",
             "direction": "forward"
           },
           {
             "source": "陈子龙",
-            "target": "徐光启",
-            "label": "同朝",
+            "target": "黄道周",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "陈子龙",
+            "target": "钱谦益",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -19186,13 +20810,25 @@
           {
             "source": "陈子龙",
             "target": "柳如是",
-            "label": "交流",
+            "label": "影响",
             "direction": "forward"
           },
           {
             "source": "陈子龙",
-            "target": "钱谦益",
-            "label": "交流",
+            "target": "《农政全书》刊行",
+            "label": "参与",
+            "direction": "forward"
+          },
+          {
+            "source": "朱由崧",
+            "target": "黄道周",
+            "label": "君臣",
+            "direction": "forward"
+          },
+          {
+            "source": "钱谦益",
+            "target": "柳如是",
+            "label": "夫妻",
             "direction": "forward"
           }
         ]
@@ -19211,7 +20847,20 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "陈子龙",
+          "relation": "师生",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "张煌言",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [],
       "influence": 60,
@@ -19235,6 +20884,11 @@
             "size": "large"
           },
           {
+            "name": "张煌言",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "陈子龙",
             "type": "person",
             "size": "medium"
@@ -19256,6 +20910,12 @@
           }
         ],
         "edges": [
+          {
+            "source": "夏完淳",
+            "target": "张煌言",
+            "label": "盟友",
+            "direction": "forward"
+          },
           {
             "source": "夏完淳",
             "target": "陈子龙",
@@ -19296,7 +20956,14 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "朱棣",
+          "relation": "敌对",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [
         {
@@ -19325,14 +20992,14 @@
             "size": "large"
           },
           {
-            "name": "靖难之役",
-            "type": "event",
-            "size": "small"
-          },
-          {
             "name": "朱棣",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "靖难之役",
+            "type": "event",
+            "size": "small"
           },
           {
             "name": "姚广孝",
@@ -19353,14 +21020,14 @@
         "edges": [
           {
             "source": "方孝孺",
-            "target": "靖难之役",
-            "label": "对抗",
+            "target": "朱棣",
+            "label": "敌对",
             "direction": "forward"
           },
           {
             "source": "方孝孺",
-            "target": "朱棣",
-            "label": "同朝",
+            "target": "靖难之役",
+            "label": "对抗",
             "direction": "forward"
           },
           {
@@ -19405,6 +21072,12 @@
           "desc": ""
         },
         {
+          "name": "朱翊钧",
+          "relation": "君臣",
+          "influence": 75,
+          "desc": ""
+        },
+        {
           "name": "徐光启",
           "relation": "盟友",
           "influence": 75,
@@ -19412,6 +21085,12 @@
         },
         {
           "name": "李时珍",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "方以智",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -19445,6 +21124,11 @@
             "size": "large"
           },
           {
+            "name": "朱翊钧",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "朱由校",
             "type": "person",
             "size": "medium"
@@ -19460,12 +21144,23 @@
             "size": "medium"
           },
           {
+            "name": "方以智",
+            "type": "person",
+            "size": "small"
+          },
+          {
             "name": "中西科技交流",
             "type": "event",
             "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "李之藻",
+            "target": "朱翊钧",
+            "label": "君臣",
+            "direction": "forward"
+          },
           {
             "source": "李之藻",
             "target": "朱由校",
@@ -19486,20 +21181,26 @@
           },
           {
             "source": "李之藻",
+            "target": "方以智",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李之藻",
             "target": "中西科技交流",
             "label": "参与",
             "direction": "forward"
           },
           {
-            "source": "朱由校",
+            "source": "朱翊钧",
             "target": "徐光启",
             "label": "君臣",
             "direction": "forward"
           },
           {
-            "source": "徐光启",
+            "source": "朱翊钧",
             "target": "李时珍",
-            "label": "影响",
+            "label": "君臣",
             "direction": "forward"
           }
         ]
@@ -19542,6 +21243,12 @@
           "relation": "影响",
           "influence": 75,
           "desc": ""
+        },
+        {
+          "name": "方以智",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
         }
       ],
       "life_events": [],
@@ -19567,12 +21274,12 @@
             "size": "large"
           },
           {
-            "name": "黄宗羲",
+            "name": "顾炎武",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "顾炎武",
+            "name": "黄宗羲",
             "type": "person",
             "size": "medium"
           },
@@ -19585,18 +21292,23 @@
             "name": "宋应星",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "方以智",
+            "type": "person",
+            "size": "small"
           }
         ],
         "edges": [
           {
             "source": "王夫之",
-            "target": "黄宗羲",
+            "target": "顾炎武",
             "label": "盟友",
             "direction": "forward"
           },
           {
             "source": "王夫之",
-            "target": "顾炎武",
+            "target": "黄宗羲",
             "label": "盟友",
             "direction": "forward"
           },
@@ -19613,14 +21325,20 @@
             "direction": "forward"
           },
           {
-            "source": "黄宗羲",
-            "target": "顾炎武",
+            "source": "王夫之",
+            "target": "方以智",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "顾炎武",
+            "target": "黄宗羲",
             "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "徐光启",
-            "target": "宋应星",
+            "source": "顾炎武",
+            "target": "方以智",
             "label": "影响",
             "direction": "forward"
           }
@@ -19649,6 +21367,12 @@
         },
         {
           "name": "宋应星",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "陈实功",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -19711,15 +21435,21 @@
             "direction": "forward"
           },
           {
+            "source": "吴又可",
+            "target": "陈实功",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
             "source": "李时珍",
             "target": "宋应星",
             "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "吴又可",
+            "source": "李时珍",
             "target": "陈实功",
-            "label": "同僚",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -19747,6 +21477,12 @@
       "related_people": [
         {
           "name": "李时珍",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "吴又可",
           "relation": "影响",
           "influence": 75,
           "desc": ""
@@ -19805,7 +21541,13 @@
           {
             "source": "陈实功",
             "target": "吴又可",
-            "label": "同僚",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "李时珍",
+            "target": "吴又可",
+            "label": "影响",
             "direction": "forward"
           },
           {
@@ -19836,7 +21578,20 @@
       "birth_place": null,
       "occupations": [],
       "works": [],
-      "related_people": [],
+      "related_people": [
+        {
+          "name": "钱谦益",
+          "relation": "夫妻",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "陈子龙",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        }
+      ],
       "life_events": [],
       "related_events": [],
       "influence": 60,
@@ -19860,12 +21615,12 @@
             "size": "large"
           },
           {
-            "name": "钱谦益",
+            "name": "陈子龙",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "陈子龙",
+            "name": "钱谦益",
             "type": "person",
             "size": "medium"
           },
@@ -19883,14 +21638,20 @@
         "edges": [
           {
             "source": "柳如是",
+            "target": "陈子龙",
+            "label": "影响",
+            "direction": "forward"
+          },
+          {
+            "source": "柳如是",
             "target": "钱谦益",
             "label": "夫妻",
             "direction": "forward"
           },
           {
-            "source": "柳如是",
-            "target": "陈子龙",
-            "label": "交流",
+            "source": "陈子龙",
+            "target": "钱谦益",
+            "label": "盟友",
             "direction": "forward"
           },
           {
@@ -19922,6 +21683,18 @@
       "occupations": [],
       "works": [],
       "related_people": [
+        {
+          "name": "柳如是",
+          "relation": "夫妻",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "陈子龙",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
         {
           "name": "黄宗羲",
           "relation": "影响",
@@ -19958,22 +21731,12 @@
             "size": "large"
           },
           {
-            "name": "黄宗羲",
-            "type": "person",
-            "size": "medium"
-          },
-          {
             "name": "顾炎武",
             "type": "person",
             "size": "medium"
           },
           {
-            "name": "柳如是",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "张岱",
+            "name": "黄宗羲",
             "type": "person",
             "size": "medium"
           },
@@ -19981,9 +21744,20 @@
             "name": "陈子龙",
             "type": "person",
             "size": "medium"
+          },
+          {
+            "name": "柳如是",
+            "type": "person",
+            "size": "medium"
           }
         ],
         "edges": [
+          {
+            "source": "钱谦益",
+            "target": "顾炎武",
+            "label": "影响",
+            "direction": "forward"
+          },
           {
             "source": "钱谦益",
             "target": "黄宗羲",
@@ -19992,13 +21766,7 @@
           },
           {
             "source": "钱谦益",
-            "target": "顾炎武",
-            "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "黄宗羲",
-            "target": "顾炎武",
+            "target": "陈子龙",
             "label": "盟友",
             "direction": "forward"
           },
@@ -20009,15 +21777,15 @@
             "direction": "forward"
           },
           {
-            "source": "钱谦益",
-            "target": "张岱",
-            "label": "交流",
+            "source": "顾炎武",
+            "target": "黄宗羲",
+            "label": "盟友",
             "direction": "forward"
           },
           {
-            "source": "钱谦益",
-            "target": "陈子龙",
-            "label": "交流",
+            "source": "陈子龙",
+            "target": "柳如是",
+            "label": "影响",
             "direction": "forward"
           }
         ]
@@ -20037,6 +21805,12 @@
       "occupations": [],
       "works": [],
       "related_people": [
+        {
+          "name": "陈洪绶",
+          "relation": "盟友",
+          "influence": 75,
+          "desc": ""
+        },
         {
           "name": "徐霞客",
           "relation": "影响",
@@ -20094,12 +21868,7 @@
             "size": "medium"
           },
           {
-            "name": "钱谦益",
-            "type": "person",
-            "size": "medium"
-          },
-          {
-            "name": "柳如是",
+            "name": "陈洪绶",
             "type": "person",
             "size": "medium"
           }
@@ -20124,6 +21893,12 @@
             "direction": "forward"
           },
           {
+            "source": "张岱",
+            "target": "陈洪绶",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
             "source": "顾炎武",
             "target": "徐霞客",
             "label": "影响",
@@ -20133,18 +21908,6 @@
             "source": "徐霞客",
             "target": "董其昌",
             "label": "影响",
-            "direction": "forward"
-          },
-          {
-            "source": "张岱",
-            "target": "钱谦益",
-            "label": "交流",
-            "direction": "forward"
-          },
-          {
-            "source": "张岱",
-            "target": "柳如是",
-            "label": "交流",
             "direction": "forward"
           }
         ]
@@ -20181,6 +21944,24 @@
           "relation": "影响",
           "influence": 75,
           "desc": ""
+        },
+        {
+          "name": "李之藻",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "王夫之",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
+        },
+        {
+          "name": "顾炎武",
+          "relation": "影响",
+          "influence": 75,
+          "desc": ""
         }
       ],
       "life_events": [],
@@ -20206,6 +21987,11 @@
             "size": "large"
           },
           {
+            "name": "顾炎武",
+            "type": "person",
+            "size": "medium"
+          },
+          {
             "name": "徐光启",
             "type": "person",
             "size": "medium"
@@ -20221,17 +22007,23 @@
             "size": "medium"
           },
           {
-            "name": "王夫之",
+            "name": "李之藻",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           },
           {
-            "name": "顾炎武",
+            "name": "王夫之",
             "type": "person",
-            "size": "medium"
+            "size": "small"
           }
         ],
         "edges": [
+          {
+            "source": "方以智",
+            "target": "顾炎武",
+            "label": "影响",
+            "direction": "forward"
+          },
           {
             "source": "方以智",
             "target": "徐光启",
@@ -20251,21 +22043,27 @@
             "direction": "forward"
           },
           {
-            "source": "徐光启",
-            "target": "宋应星",
+            "source": "方以智",
+            "target": "李之藻",
             "label": "影响",
             "direction": "forward"
           },
           {
             "source": "方以智",
             "target": "王夫之",
-            "label": "交流",
+            "label": "影响",
             "direction": "forward"
           },
           {
-            "source": "方以智",
-            "target": "顾炎武",
-            "label": "交流",
+            "source": "顾炎武",
+            "target": "黄宗羲",
+            "label": "盟友",
+            "direction": "forward"
+          },
+          {
+            "source": "顾炎武",
+            "target": "王夫之",
+            "label": "盟友",
             "direction": "forward"
           }
         ]
@@ -23978,6 +25776,30 @@
           "desc": "",
           "sourceId": 115022,
           "targetId": 115149
+        },
+        {
+          "source": "王艮",
+          "target": "王阳明",
+          "type": "师生",
+          "desc": "",
+          "sourceId": 115145,
+          "targetId": 115022
+        },
+        {
+          "source": "王艮",
+          "target": "王畿",
+          "type": "影响",
+          "desc": "",
+          "sourceId": 115145,
+          "targetId": 115146
+        },
+        {
+          "source": "王艮",
+          "target": "钱德洪",
+          "type": "影响",
+          "desc": "",
+          "sourceId": 115145,
+          "targetId": 115147
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -24442,6 +26264,38 @@
           "desc": "",
           "sourceId": 115026,
           "targetId": 115162
+        },
+        {
+          "source": "胡宗宪",
+          "target": "戚继光",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115161,
+          "targetId": 115026
+        },
+        {
+          "source": "胡宗宪",
+          "target": "谭纶",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115161,
+          "targetId": 115162
+        },
+        {
+          "source": "谭纶",
+          "target": "戚继光",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115162,
+          "targetId": 115026
+        },
+        {
+          "source": "谭纶",
+          "target": "胡宗宪",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115162,
+          "targetId": 115161
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -25488,6 +27342,22 @@
           "desc": "",
           "sourceId": 115023,
           "targetId": 115157
+        },
+        {
+          "source": "高拱",
+          "target": "朱载坖",
+          "type": "君臣",
+          "desc": "",
+          "sourceId": 115157,
+          "targetId": 115011
+        },
+        {
+          "source": "高拱",
+          "target": "张居正",
+          "type": "敌对",
+          "desc": "",
+          "sourceId": 115157,
+          "targetId": 115023
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -25646,6 +27516,22 @@
           "desc": "",
           "sourceId": 115023,
           "targetId": 115012
+        },
+        {
+          "source": "潘季驯",
+          "target": "朱翊钧",
+          "type": "君臣",
+          "desc": "",
+          "sourceId": 115178,
+          "targetId": 115012
+        },
+        {
+          "source": "潘季驯",
+          "target": "张居正",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115178,
+          "targetId": 115023
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -25881,7 +27767,24 @@
         "梃击案",
         "万历三大征"
       ],
-      "person_relations": [],
+      "person_relations": [
+        {
+          "source": "顾宪成",
+          "target": "高攀龙",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115173,
+          "targetId": 115174
+        },
+        {
+          "source": "高攀龙",
+          "target": "顾宪成",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115174,
+          "targetId": 115173
+        }
+      ],
       "timeline_id": "明祚兴衰"
     },
     {
@@ -26318,6 +28221,14 @@
           "desc": "",
           "sourceId": 115013,
           "targetId": 115160
+        },
+        {
+          "source": "王锡爵",
+          "target": "朱翊钧",
+          "type": "君臣",
+          "desc": "",
+          "sourceId": 115160,
+          "targetId": 115012
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -26915,6 +28826,14 @@
           "desc": "",
           "sourceId": 115035,
           "targetId": 115198
+        },
+        {
+          "source": "李之藻",
+          "target": "徐光启",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115198,
+          "targetId": 115035
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -27563,7 +29482,24 @@
         "明亡北京陷落",
         "南明抗清"
       ],
-      "person_relations": [],
+      "person_relations": [
+        {
+          "source": "祖大寿",
+          "target": "吴三桂",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115182,
+          "targetId": 115184
+        },
+        {
+          "source": "吴三桂",
+          "target": "祖大寿",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115184,
+          "targetId": 115182
+        }
+      ],
       "timeline_id": "明祚兴衰"
     },
     {
@@ -27737,6 +29673,30 @@
           "desc": "",
           "sourceId": 115031,
           "targetId": 115190
+        },
+        {
+          "source": "孙传庭",
+          "target": "李自成",
+          "type": "敌对",
+          "desc": "",
+          "sourceId": 115179,
+          "targetId": 115030
+        },
+        {
+          "source": "孙传庭",
+          "target": "卢象升",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115179,
+          "targetId": 115180
+        },
+        {
+          "source": "卢象升",
+          "target": "孙传庭",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115180,
+          "targetId": 115179
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -27876,6 +29836,22 @@
           "desc": "",
           "sourceId": 115030,
           "targetId": 115015
+        },
+        {
+          "source": "刘宗敏",
+          "target": "李自成",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115192,
+          "targetId": 115030
+        },
+        {
+          "source": "刘宗敏",
+          "target": "朱由检",
+          "type": "敌对",
+          "desc": "",
+          "sourceId": 115192,
+          "targetId": 115015
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -28001,6 +29977,22 @@
           "desc": "",
           "sourceId": 115030,
           "targetId": 115192
+        },
+        {
+          "source": "吴三桂",
+          "target": "李自成",
+          "type": "敌对",
+          "desc": "",
+          "sourceId": 115184,
+          "targetId": 115030
+        },
+        {
+          "source": "刘宗敏",
+          "target": "李自成",
+          "type": "盟友",
+          "desc": "",
+          "sourceId": 115192,
+          "targetId": 115030
         }
       ],
       "timeline_id": "明祚兴衰"
@@ -28112,7 +30104,16 @@
         "南明抗清",
         "明末饥荒"
       ],
-      "person_relations": [],
+      "person_relations": [
+        {
+          "source": "吴三桂",
+          "target": "李自成",
+          "type": "敌对",
+          "desc": "",
+          "sourceId": 115184,
+          "targetId": 115030
+        }
+      ],
       "timeline_id": "明祚兴衰"
     },
     {
@@ -28690,7 +30691,7 @@
     }
   ],
   "_meta": {
-    "imported_at": "2026-10-26T13:43:50.694Z",
+    "imported_at": "2026-10-26T14:55:17.819Z",
     "stats": {
       "persons": 150,
       "level1": 45,
