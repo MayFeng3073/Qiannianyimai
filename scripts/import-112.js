@@ -435,6 +435,10 @@ if (fs.existsSync(path.join(__dirname, 'fix_112_stories.js'))) {
   console.log('\n--- 运行二级人物故事精修 fix_112_stories.js ---');
   require('./fix_112_stories.js');
 }
+if (fs.existsSync(path.join(__dirname, 'fix_112_summaries.js'))) {
+  console.log('\n--- 运行二级人物简介精修 fix_112_summaries.js ---');
+  require('./fix_112_summaries.js');
+}
 if (fs.existsSync(path.join(__dirname, 'enrich_112_relations.js'))) {
   console.log('\n--- 运行数据丰富 enrich_112_relations.js ---');
   require('./enrich_112_relations.js');
