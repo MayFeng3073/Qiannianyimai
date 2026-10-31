@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
@@ -420,6 +420,32 @@ export const dynasties: Dynasty[] = [
   duration: '约276年',
   representative_buildings: ["紫禁城","明长城","天坛","明孝陵"],
   characteristics: {"politics":88,"culture":92,"military":85,"technology":90,"openness":70}
+},
+{
+  id: 116,
+  name: '清',
+  english_name: 'Qing Dynasty',
+  start_year: 1644,
+  end_year: 1912,
+  summary: '公元1644年清军入关、定都北京，逐步确立对全国的统治。康雍乾三朝平定边疆、整顿财政，人口与疆域达到极盛，同时君主专制空前强化、文字狱频兴。晚清鸦片战争后国门被迫打开，内外危机交织，洋务、维新、新政相继而起，终在1911年辛亥革命中覆亡，1912年清帝退位，两千余年帝制就此终结。',
+  capital: '北京',
+  population: '约四亿（晚清）',
+  duration: '约268年',
+  representative_buildings: ["圆明园","颐和园","承德避暑山庄"],
+  characteristics: {"politics":82,"culture":85,"military":88,"technology":75,"openness":45}
+},
+{
+  id: 117,
+  name: '民国',
+  english_name: 'Republic of China',
+  start_year: 1912,
+  end_year: 1949,
+  summary: '公元1912年中华民国建立，结束两千余年帝制，共和政体初立。北洋时期军阀割据，政权更迭频繁；1928年北伐后南京国民政府名义统一全国。抗战八年间全民御侮，民族意识空前高涨。抗战胜利后内战再起，1949年国民党政权退台，中华人民共和国成立。民国时期新文化运动兴起，现代学术、文学、艺术与科学体系逐步奠基，是传统中国向现代转型的关键阶段。',
+  capital: '南京',
+  population: '约四亿五千万',
+  duration: '约38年',
+  representative_buildings: ["中山陵","总统府","中央博物院"],
+  characteristics: {"politics":68,"culture":88,"military":82,"technology":74,"openness":72}
 },
 ]
 

@@ -33,7 +33,7 @@ const DYNASTY_NODES: DynastyNode[] = [
   { id: 114, name: '元',               display: '元',       start_year: 1271,  end_year: 1368,  era: '铁骑纵横，版图空前', available: true  },
   { id: 115, name: '明',               display: '明',       start_year: 1368,  end_year: 1644,  era: '远迈汉唐，治隆唐宋', available: true  },
   { id: 116, name: '清',               display: '清',       start_year: 1644,  end_year: 1912,  era: '康乾盛世，百年转折', available: true  },
-  { id: 117, name: '民国（1912–1949）',display: '民国',    start_year: 1912,  end_year: 1949,  era: '风云激荡，共和肇建', available: false },
+  { id: 117, name: '民国（1912–1949）',display: '民国',    start_year: 1912,  end_year: 1949,  era: '风云激荡，共和肇建', available: true },
 ]
 
 // 分两行

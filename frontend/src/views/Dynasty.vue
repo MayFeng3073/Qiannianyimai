@@ -844,9 +844,27 @@ const chinaMapData = computed(() => {
         { name: '瑷珲', x: 425, y: 60, r: 6 },                           // 黑龙江（瑷珲）
         { name: '昆明', x: 185, y: 275, r: 6 }                            // 云南
       ]
+    },
+    '民国': {
+      regions: [
+        // 民国（1947年名义疆域）：南京为都，抗战时重庆为陪都
+        { name: '南京', x: 345, y: 200, r: 10, isCapital: true },       // 首都
+        { name: '重庆', x: 205, y: 225, r: 8 },                          // 战时陪都
+        { name: '北平', x: 334, y: 113, r: 8 },                          // 北平
+        { name: '上海', x: 352, y: 212, r: 7 },                          // 上海特别市
+        { name: '武汉', x: 290, y: 210, r: 7 },                          // 汉口
+        { name: '广州', x: 310, y: 345, r: 7 },                          // 广州
+        { name: '西安', x: 241, y: 156, r: 6 },                          // 西安
+        { name: '沈阳', x: 385, y: 90, r: 6 },                           // 沈阳
+        { name: '台北', x: 390, y: 275, r: 6 },                          // 台湾
+        { name: '昆明', x: 185, y: 275, r: 6 },                          // 昆明
+        { name: '拉萨', x: 125, y: 260, r: 5 },                          // 拉萨
+        { name: '迪化', x: 95, y: 100, r: 5 }                            // 迪化（乌鲁木齐）
+      ]
     }
   }
-  return maps[dynasty.value?.name || ''] || maps['上古']
+  const nm = dynasty.value?.name || ''
+  return maps[nm] || maps[nm + '朝'] || maps['上古']
 })
 
 // Modern China base outline (viewBox 0 0 500 400) - gray background layer
@@ -876,9 +894,12 @@ const chinaMapPath = computed(() => {
     // 明朝（永乐极盛）：约650万km²，含奴儿干都司、关西七卫、乌思藏都司
     '明朝': 'M 175 118 L 168 132 L 155 155 L 138 190 L 125 225 L 118 260 L 128 285 L 145 302 L 172 318 L 202 330 L 235 340 L 265 348 L 295 350 L 315 356 L 335 362 L 355 358 L 375 338 L 392 315 L 405 290 L 418 265 L 428 240 L 438 215 L 442 182 L 435 158 L 428 138 L 412 118 L 392 100 L 372 82 L 358 62 L 355 42 L 348 30 L 335 32 L 318 48 L 298 58 L 275 66 L 252 76 L 228 88 L 205 100 L 188 110 Z',
     // 清朝（乾隆极盛）：约1300万km²，西至巴尔喀什湖、北至外兴安岭、东至库页岛、南至南海，"海棠叶"形
-    '清朝': 'M 38 58 L 48 40 L 72 20 L 108 10 L 152 6 L 200 8 L 255 10 L 305 14 L 355 22 L 392 30 L 425 40 L 450 36 L 462 42 L 456 62 L 448 82 L 444 102 L 448 122 L 440 142 L 432 162 L 422 182 L 415 205 L 422 228 L 430 255 L 425 280 L 408 305 L 388 328 L 368 350 L 348 365 L 328 375 L 305 380 L 280 382 L 262 378 L 242 362 L 225 342 L 208 320 L 192 295 L 175 265 L 158 238 L 142 215 L 122 190 L 100 168 L 78 148 L 58 128 L 48 102 Z'
+    '清朝': 'M 38 58 L 48 40 L 72 20 L 108 10 L 152 6 L 200 8 L 255 10 L 305 14 L 355 22 L 392 30 L 425 40 L 450 36 L 462 42 L 456 62 L 448 82 L 444 102 L 448 122 L 440 142 L 432 162 L 422 182 L 415 205 L 422 228 L 430 255 L 425 280 L 408 305 L 388 328 L 368 350 L 348 365 L 328 375 L 305 380 L 280 382 L 262 378 L 242 362 L 225 342 L 208 320 L 192 295 L 175 265 L 158 238 L 142 215 L 122 190 L 100 168 L 78 148 L 58 128 L 48 102 Z',
+    // 民国：沿用现代中国轮廓（含台湾、海南及南海诸岛示意）
+    '民国': modernChinaPath
   }
-  return paths[dynasty.value?.name || ''] || paths['上古']
+  const nm = dynasty.value?.name || ''
+  return paths[nm] || paths[nm + '朝'] || paths['上古']
 })
 
 const navigateToEvent = (id: number) => router.push(`/event/${id}`)
@@ -1011,6 +1032,20 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '同光中兴', year: 1880, value: 4.5, tag: '洋务自强' },
     { name: '甲午战争', year: 1895, value: 2, tag: '洋务梦碎' },
     { name: '辛亥革命', year: 1911, value: 1.5, tag: '帝制终结' }
+  ],
+  '民国': [
+    { name: '民国肇建', year: 1912, value: 6, tag: '共和初立' },
+    { name: '二次革命', year: 1913, value: 4.5, tag: '讨袁受挫' },
+    { name: '洪宪帝制', year: 1915, value: 3.5, tag: '帝制复辟' },
+    { name: '新文化运动', year: 1917, value: 5, tag: '思想启蒙' },
+    { name: '五四运动', year: 1919, value: 5.5, tag: '外争主权' },
+    { name: '军阀混战', year: 1920, value: 3, tag: '割据纷争' },
+    { name: '北伐统一', year: 1928, value: 6.5, tag: '南京建政' },
+    { name: '黄金十年', year: 1935, value: 7.5, tag: '经济建设' },
+    { name: '抗战爆发', year: 1937, value: 4, tag: '全民御侮' },
+    { name: '抗战胜利', year: 1945, value: 7, tag: '民族凯旋' },
+    { name: '内战再起', year: 1946, value: 4, tag: '战火重燃' },
+    { name: '政权迁台', year: 1949, value: 2, tag: '大陆易帜' }
   ],
   '夏商西周': [
     { name: '启建夏朝', year: -2070, value: 7, tag: '家天下始' },
