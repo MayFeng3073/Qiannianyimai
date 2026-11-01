@@ -23620,121 +23620,121 @@
       "name": "春秋争霸",
       "value": 100,
       "category": "era",
-      "desc": "春秋争霸是春秋时期的重要概念。"
+      "desc": "王室衰微，诸侯争当霸主，会盟征伐不绝。"
     },
     {
       "name": "礼崩乐坏",
       "value": 98,
       "category": "era",
-      "desc": "礼崩乐坏是春秋时期的重要概念。"
+      "desc": "宗法礼制崩解，僭越与兼并成为常态。"
     },
     {
       "name": "周王室衰微",
       "value": 96,
       "category": "era",
-      "desc": "周王室衰微是春秋时期的重要概念。"
+      "desc": "平王东迁后王畿缩小，天子号令不行。"
     },
     {
       "name": "诸侯争霸",
       "value": 94,
       "category": "event",
-      "desc": "诸侯争霸是春秋时期的重要概念。"
+      "desc": "齐、晋、楚、秦等大国角逐中原霸权。"
     },
     {
       "name": "齐桓公",
       "value": 92,
       "category": "person",
-      "desc": "齐桓公是春秋时期的重要概念。"
+      "desc": "任用管仲、尊王攘夷，成为春秋首霸。"
     },
     {
       "name": "管仲改革",
       "value": 90,
       "category": "civilization",
-      "desc": "管仲改革是春秋时期的重要概念。"
+      "desc": "作内政而寄军令、通货积财，齐国由此富强。"
     },
     {
       "name": "晋文公",
       "value": 88,
       "category": "person",
-      "desc": "晋文公是春秋时期的重要概念。"
+      "desc": "流亡归国后整顿内政，城濮败楚而称霸。"
     },
     {
       "name": "城濮之战",
       "value": 86,
       "category": "event",
-      "desc": "城濮之战是春秋时期的重要概念。"
+      "desc": "晋文公退避三舍，大破楚军，奠定霸业。"
     },
     {
       "name": "楚庄王",
       "value": 84,
       "category": "person",
-      "desc": "楚庄王是春秋时期的重要概念。"
+      "desc": "问鼎中原，邲之战败晋，成为南方霸主。"
     },
     {
       "name": "问鼎中原",
       "value": 82,
       "category": "event",
-      "desc": "问鼎中原是春秋时期的重要概念。"
+      "desc": "楚庄王陈兵周疆询问鼎之轻重，显露代周之志。"
     },
     {
       "name": "晋楚争霸",
       "value": 80,
       "category": "event",
-      "desc": "晋楚争霸是春秋时期的重要概念。"
+      "desc": "晋楚百年角逐，中原诸侯附从不定。"
     },
     {
       "name": "吴越争霸",
       "value": 78,
       "category": "event",
-      "desc": "吴越争霸是春秋时期的重要概念。"
+      "desc": "吴王阖闾、夫差与越王勾践争雄东南。"
     },
     {
       "name": "勾践卧薪尝胆",
       "value": 76,
       "category": "person",
-      "desc": "勾践卧薪尝胆是春秋时期的重要概念。"
+      "desc": "战败后忍辱图强，最终灭吴复国。"
     },
     {
       "name": "孔子",
       "value": 74,
       "category": "person",
-      "desc": "孔子是春秋时期的重要概念。"
+      "desc": "创立儒家，删述六经，开私人讲学之风。"
     },
     {
       "name": "儒家思想",
       "value": 72,
       "category": "civilization",
-      "desc": "儒家思想是春秋时期的重要概念。"
+      "desc": "以仁礼为核心，成为后世治国与教化之本。"
     },
     {
       "name": "百家争鸣",
       "value": 70,
       "category": "civilization",
-      "desc": "百家争鸣是春秋时期的重要概念。"
+      "desc": "儒墨道法等学派竞相立说，思想空前活跃。"
     },
     {
       "name": "晋国六卿",
       "value": 68,
       "category": "era",
-      "desc": "晋国六卿是春秋时期的重要概念。"
+      "desc": "韩赵魏智范中行六族专擅晋政，终致三家分晋。"
     },
     {
       "name": "三家分晋",
       "value": 66,
       "category": "event",
-      "desc": "三家分晋是春秋时期的重要概念。"
+      "desc": "韩赵魏瓜分晋国，战国序幕由此拉开。"
     },
     {
       "name": "尊王攘夷",
       "value": 64,
       "category": "civilization",
-      "desc": "尊王攘夷是春秋时期的重要概念。"
+      "desc": "借尊奉周王、抵御戎狄的名义争霸。"
     },
     {
       "name": "弭兵会盟",
       "value": 62,
       "category": "civilization",
-      "desc": "弭兵会盟是春秋时期的重要概念。"
+      "desc": "晋楚及诸侯两次弭兵，中原暂得休战。"
     }
   ],
   "_meta": {

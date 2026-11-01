@@ -104,6 +104,12 @@ interface KwLayout extends DynastyKw {
   style: Record<string, string | number>
   hoverColor: string
   detailRoute?: { path: string; label: string }
+  xPct: number
+  yPct: number
+}
+
+const KW_CATEGORY_LABEL: Record<KwCategory, string> = {
+  era: '时代印象', person: '核心人物', event: '历史事件', civilization: '文明制度', geo: '文化地理'
 }
 
 const CATEGORY_COLORS: Record<KwCategory, string> = {
@@ -668,6 +674,8 @@ const keywordCloudData = computed<KwLayout[]>(() => {
       value: kw.value,
       hoverColor: darken(color),
       detailRoute: route,
+      xPct: finalPos.x,
+      yPct: finalPos.y,
       style: {
         left: `${finalPos.x}%`,
         top: `${finalPos.y}%`,
@@ -681,7 +689,7 @@ const keywordCloudData = computed<KwLayout[]>(() => {
         zIndex: finalSize,
         transition: 'transform 0.25s ease, color 0.25s ease, filter 0.25s ease',
         textShadow: '0 1px 4px rgba(255,255,255,0.45)',
-        cursor: route ? 'pointer' : 'default'
+        cursor: route ? 'pointer' : 'help'
       }
     })
   }
@@ -689,8 +697,30 @@ const keywordCloudData = computed<KwLayout[]>(() => {
   return result
 })
 
+// 词条释义：悬停即时展示，无详情路由的词条可点击固定（再点一次取消）
+const hoveredKw = ref<KwLayout | null>(null)
+const pinnedKw = ref<KwLayout | null>(null)
+const activeKw = computed(() => hoveredKw.value || pinnedKw.value)
+const kwCardStyle = computed(() => {
+  const kw = activeKw.value
+  if (!kw) return {}
+  // 以词云实测尺寸计算像素坐标：优先向右展开，空间不足则翻到左侧，并上下钳制在容器内
+  const W = cloudBoxW.value
+  const H = cloudBoxH.value
+  const cardW = 248
+  const cardH = 92
+  const pad = 6
+  const x = (kw.xPct / 100) * W
+  const y = (kw.yPct / 100) * H
+  let left = x + 14
+  if (left + cardW > W - pad) left = x - 14 - cardW
+  left = Math.max(pad, left)
+  const top = Math.min(Math.max(y - cardH / 2, pad), H - cardH - pad)
+  return { left: `${left}px`, top: `${top}px` }
+})
 const handleKwClick = (kw: KwLayout) => {
   if (kw.detailRoute) router.push(kw.detailRoute.path)
+  else pinnedKw.value = pinnedKw.value?.name === kw.name ? null : kw
 }
 
 // 事件参与度：人物↔事件关联对数 ÷ 事件数，反映平均每个事件有多少位人物参与
@@ -1671,9 +1701,25 @@ onUnmounted(() => {
                   :key="kw.name"
                   class="absolute"
                   :style="kw.style"
+                  @mouseenter="hoveredKw = kw"
+                  @mouseleave="hoveredKw = null"
                   @click="handleKwClick(kw)"
                 >{{ kw.name }}</span>
+
+                <!-- 词条释义卡片：悬停显示；无详情页的词条可点击固定 -->
+                <div
+                  v-if="activeKw && activeKw.desc"
+                  class="absolute z-[999] w-[248px] rounded-md border border-[#D8B26A]/35 bg-white/95 px-3.5 py-2.5 shadow-[0_6px_20px_rgba(44,44,44,0.12)] pointer-events-none"
+                  :style="kwCardStyle"
+                >
+                  <div class="flex items-center gap-1.5 mb-1">
+                    <span class="text-[13px] font-medium" :style="{ color: CATEGORY_COLORS[activeKw.category] }">{{ activeKw.name }}</span>
+                    <span class="text-[10px] text-[#4A4A3A]/45">{{ KW_CATEGORY_LABEL[activeKw.category] }}</span>
+                  </div>
+                  <p class="text-[12px] leading-[1.7] text-[#4A4A3A]/85">{{ activeKw.desc }}</p>
+                </div>
               </div>
+              <div class="mt-1 text-center text-[11px] text-[#4A4A3A]/45">悬停词条查看释义，点击有详情的人物/事件可跳转</div>
             </div>
             
             <!-- Right: Vertical Scores + Evaluation -->

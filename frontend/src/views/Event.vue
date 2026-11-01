@@ -97,6 +97,24 @@ const background = computed(() => event.value?.background || {})
 const impacts = computed(() => event.value?.impacts || [])
 const chain = computed(() => event.value?.chain || [])
 
+// 节点年份：优先用人工编年的 year_text（支持「1937-1945年」这类区间），
+// 没有则回退到导入时的年份。若节点年份缺失或全部相同，说明时间段无区分度，整组不显示
+const narrativeYearLabel = (n: any) => {
+  if (n.year_text) return String(n.year_text)
+  if (n.year === null || n.year === undefined) return ''
+  return formattedYear(n.year)
+}
+// 已人工编年（存在 year_text）的事件：每个节点都显示年份，同年事件也逐条显示；
+// 尚未编年的旧数据：只有节点年份确实不同才显示，避免把导入时统一填的起始年在每个节点重复
+const hasManualYear = computed(() => narratives.value.some(n => n.year_text))
+const showNarrativeYear = computed(() => {
+  const labels = narratives.value.map(narrativeYearLabel)
+  if (!labels.length) return false
+  if (hasManualYear.value) return labels.every(l => !!l)
+  if (labels.some(l => !l)) return false
+  return new Set(labels).size > 1
+})
+
 // 一句话导读：与简介去重，避免黑色简介与黄棕色引言重复
 const oneSentence = computed(() => {
   const g = event.value
@@ -513,20 +531,11 @@ const impactIcons: Record<string, string> = {
 
 const getImpactSummary = () => {
   if (!event.value) return ''
-  const g = event.value
   const imps = impacts.value
-  const name = g.name
 
-  // 优先展示 Excel 导入的详细历史影响文字
+  // 只展示 Excel 导入的真实历史影响文字；无则留空，避免套用统一模板句
   const hist = imps.find(i => i.name.includes('历史'))
-  if (hist && hist.description) return hist.description
-
-  const topImp = imps.length > 0 ? [...imps].sort((a, b) => b.score - a.score)[0] : null
-  const dynasty = g.dynasty
-  if (topImp) {
-    return `${name}作为${dynasty}时期的标志性事件，在${topImp.name}方面影响最为深远（${topImp.score}分），其历史余韵贯穿后世，成为理解${dynasty}兴衰脉络的重要切入点。`
-  }
-  return `${name}是${dynasty}时期的重要历史事件，其影响波及政治、社会与文化等多个层面，在中国历史进程中留下了深刻印记。`
+  return (hist && hist.description) ? hist.description : ''
 }
 
 const initImpactChart = () => {
@@ -742,7 +751,7 @@ watch(impacts, () => {
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center gap-3 mb-1">
-                    <span class="text-sm text-[#C34739] font-medium">{{ formattedYear(n.year!) }}</span>
+                    <span v-if="showNarrativeYear" class="text-sm text-[#C34739] font-medium">{{ narrativeYearLabel(n) }}</span>
                     <span v-if="n.tag" class="px-2 py-0.5 text-xs bg-[#355C5A]/10 text-[#355C5A] rounded">{{ n.tag }}</span>
                   </div>
                   <div class="text-base text-[#2C2C2C] font-medium group-hover:text-[#C34739] transition-colors mb-1">{{ n.title }}</div>
@@ -1080,7 +1089,7 @@ watch(impacts, () => {
             </h2>
             <div class="bg-white/50 border border-[#D8B26A]/15 rounded-lg p-6 flex flex-col" :style="{ height: relationGraphHeight + 'px' }">
               <div ref="impactChartRef" class="w-full flex-1" style="min-height: 220px;"></div>
-              <p class="text-sm text-[#4A4A3A]/70 leading-relaxed mt-4 pt-3 border-t border-[#D8B26A]/15 font-serif">
+              <p v-if="getImpactSummary()" class="text-sm text-[#4A4A3A]/70 leading-relaxed mt-4 pt-3 border-t border-[#D8B26A]/15 font-serif">
                 {{ getImpactSummary() }}
               </p>
             </div>

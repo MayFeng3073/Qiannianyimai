@@ -198,6 +198,8 @@ interface EdgeLayout {
   label: string
   direction: string
   isDirect: boolean
+  bowScale: number
+  avoidCenter: boolean
 }
 
 // 归一化节点/边：兼容「节点有 id」与「节点只有 name」两种数据，统一用 id 关联
@@ -345,13 +347,23 @@ const hasRelations = computed(() => nodeLayouts.value.length > 1)
 
 const edgeLayouts = computed<EdgeLayout[]>(() => {
   const map = new Map(nodeLayouts.value.map(n => [n.id, n]))
+  const centerId = (nodeLayouts.value.find(n => n.name === (person.value?.name || '')) || nodeLayouts.value[0])?.id
   const out: EdgeLayout[] = []
   gEdges.value.forEach(e => {
     const s = map.get(e.source)
     const t = map.get(e.target)
     if (!s || !t) return
-    // 新规则：只要边存在且两端节点都在视图中就标记为 isDirect
-    out.push({ source: s, target: t, label: e.label, direction: e.direction, isDirect: true })
+    const isDirect = e.source === centerId || e.target === centerId
+    // 外围人物之间的连线允许存在，但加大弧度并向外绕开中心节点，避免与中心连线挤在一起
+    out.push({
+      source: s,
+      target: t,
+      label: e.label,
+      direction: e.direction,
+      isDirect,
+      bowScale: isDirect ? 1 : 2.8,
+      avoidCenter: !isDirect
+    })
   })
   return out
 })
@@ -413,8 +425,8 @@ function connectPoints(src: NodeLayout, tgt: NodeLayout) {
     : { a1: anchorPoint(src, 'top', srcRelX * src.w * 0.34), a2: anchorPoint(tgt, 'bottom', relX * tgt.w * 0.34) }
 }
 
-// 柔和贝塞尔曲线：控制点沿连线主方向延伸并带轻微垂直弧度；节点、连线、标签共用同一套坐标
-function curveData(src: NodeLayout, tgt: NodeLayout) {
+// 计算曲线控制点：外围人物之间的连线加大弧度，并朝远离中心人物的方向绕行
+function curveControls(src: NodeLayout, tgt: NodeLayout, bowScale = 1, avoidCenter = false) {
   const { a1, a2 } = connectPoints(src, tgt)
   const dx = a2.x - a1.x
   const dy = a2.y - a1.y
@@ -423,11 +435,30 @@ function curveData(src: NodeLayout, tgt: NodeLayout) {
   const ux = dx / len
   const uy = dy / len
   // 轻微垂直偏移形成自然弧度（直线段越长弧度越大，但不超过 16）
-  const bow = Math.min(16, len * 0.05)
+  let bow = Math.min(16, len * 0.05) * bowScale
+  if (avoidCenter) {
+    const c = nodeLayouts.value.find(n => n.name === (person.value?.name || ''))
+    if (c) {
+      const ccx = c.x + c.w / 2
+      const ccy = c.y + c.h / 2
+      const mx = (a1.x + a2.x) / 2
+      const my = (a1.y + a2.y) / 2
+      // 若弧线默认方向会靠近中心，则反向绕行
+      if ((mx - ccx) * -uy + (my - ccy) * ux < 0) bow = -bow
+    }
+  }
   const px = -uy * bow
   const py = ux * bow
-  const c1 = { x: a1.x + ux * k + px, y: a1.y + uy * k + py }
-  const c2 = { x: a2.x - ux * k + px, y: a2.y - uy * k + py }
+  return {
+    a1,
+    a2,
+    c1: { x: a1.x + ux * k + px, y: a1.y + uy * k + py },
+    c2: { x: a2.x - ux * k + px, y: a2.y - uy * k + py }
+  }
+}
+// 柔和贝塞尔曲线：节点、连线、标签共用同一套坐标
+function curveData(src: NodeLayout, tgt: NodeLayout, bowScale = 1, avoidCenter = false) {
+  const { a1, a2, c1, c2 } = curveControls(src, tgt, bowScale, avoidCenter)
   return {
     d: `M ${a1.x} ${a1.y} C ${c1.x} ${c1.y}, ${c2.x} ${c2.y}, ${a2.x} ${a2.y}`,
     mid: {
@@ -436,8 +467,17 @@ function curveData(src: NodeLayout, tgt: NodeLayout) {
     }
   }
 }
-function getEdgePath(src: NodeLayout, tgt: NodeLayout): string {
-  return curveData(src, tgt).d
+function getEdgePath(src: NodeLayout, tgt: NodeLayout, bowScale = 1, avoidCenter = false): string {
+  return curveData(src, tgt, bowScale, avoidCenter).d
+}
+// 按参数 t（0~1）取贝塞尔曲线上的点，用于把同源多条连线的标签错开
+function curvePointAt(src: NodeLayout, tgt: NodeLayout, t: number, bowScale = 1, avoidCenter = false) {
+  const { a1, a2, c1, c2 } = curveControls(src, tgt, bowScale, avoidCenter)
+  const mt = 1 - t
+  return {
+    x: mt * mt * mt * a1.x + 3 * mt * mt * t * c1.x + 3 * mt * t * t * c2.x + t * t * t * a2.x,
+    y: mt * mt * mt * a1.y + 3 * mt * mt * t * c1.y + 3 * mt * t * t * c2.y + t * t * t * a2.y
+  }
 }
 // 标签位置 + 碰撞检测：标签先落在连线中点，检测与所有节点矩形及已放置标签是否重叠，
 // 沿最小推离方向逐步移开，直到无碰撞；最后把胶囊中心钳制在画布内。
@@ -456,62 +496,85 @@ const edgeLabelPositions = computed(() => {
     const edge = edges[i]
     if (!edge.label) continue
 
-    const mid = curveData(edge.source, edge.target).mid
-    let x = mid.x
-    let y = mid.y
-
     // 标签按叙事文字长度自适应；胶囊中心：rect 顶部在 y-15、高 18 → 中心在 y-6
     const labelW = Math.max(48, edge.label.length * 12 + 24)
     const labelH = 18
     const margin = 3
-    const labelCY = () => y - 6
 
-    for (let attempt = 0; attempt < 30; attempt++) {
-      let collided = false
-      let pushX = 0
-      let pushY = 0
-      let minPush = Infinity
-
-      // 与单个矩形检测碰撞，记录最小推离方向（推动胶囊中心）
-      const collide = (rx: number, ry: number, rw: number, rh: number) => {
-        const lx = x - labelW / 2 - margin
-        const ly = labelCY() - labelH / 2 - margin
-        const lx2 = x + labelW / 2 + margin
-        const ly2 = labelCY() + labelH / 2 + margin
-        if (lx < rx + rw && lx2 > rx && ly < ry + rh && ly2 > ry) {
-          const pushes = [
-            { dx: rx + rw - lx, dy: 0 },
-            { dx: rx - lx2, dy: 0 },
-            { dx: 0, dy: ry + rh - ly },
-            { dx: 0, dy: ry - ly2 }
-          ]
-          for (const p of pushes) {
-            const dist = Math.abs(p.dx) + Math.abs(p.dy)
-            if (dist < minPush) {
-              minPush = dist
-              pushX = p.dx
-              pushY = p.dy
-            }
-          }
-          return true
-        }
-        return false
-      }
-
-      // 与所有节点矩形检测
+    // 以胶囊中心 (px, py) 判断是否压到节点或已放置标签
+    const overlapsAt = (px: number, py: number) => {
+      const lx = px - labelW / 2 - margin
+      const ly = py - labelH / 2 - margin
+      const lx2 = px + labelW / 2 + margin
+      const ly2 = py + labelH / 2 + margin
       for (const node of nodes) {
-        if (collide(node.x, node.y, node.w, node.h)) collided = true
+        if (lx < node.x + node.w && lx2 > node.x && ly < node.y + node.h && ly2 > node.y) return true
       }
-      // 与已放置的标签检测，避免标签互相遮挡
       for (const p of placed) {
-        if (collide(p.cx - p.w / 2, p.cy - p.h / 2, p.w, p.h)) collided = true
+        if (lx < p.cx + p.w / 2 && lx2 > p.cx - p.w / 2 && ly < p.cy + p.h / 2 && ly2 > p.cy - p.h / 2) return true
       }
+      return false
+    }
 
-      if (!collided) break
-      x += pushX
-      y += pushY
-      // 已无可用推离方向，终止避免死循环
-      if (pushX === 0 && pushY === 0) break
+    // 先在连线上采样多个位置：同一人物发出的多条边，其标签会落在各自连线的不同段，
+    // 避免标签挤成一团、看起来像指向了错误的节点
+    let x = 0
+    let y = 0
+    let sampled = false
+    for (const t of [0.5, 0.64, 0.36, 0.76, 0.24, 0.86, 0.14]) {
+      const p = curvePointAt(edge.source, edge.target, t, edge.bowScale, edge.avoidCenter)
+      if (!overlapsAt(p.x, p.y - 6)) { x = p.x; y = p.y; sampled = true; break }
+    }
+
+    // 所有采样点都被占用时，回退到原「中点 + 逐步推离」策略
+    if (!sampled) {
+      const mid = curveData(edge.source, edge.target, edge.bowScale, edge.avoidCenter).mid
+      x = mid.x
+      y = mid.y
+      const labelCY = () => y - 6
+      for (let attempt = 0; attempt < 30; attempt++) {
+        let collided = false
+        let pushX = 0
+        let pushY = 0
+        let minPush = Infinity
+
+        const collide = (rx: number, ry: number, rw: number, rh: number) => {
+          const lx = x - labelW / 2 - margin
+          const ly = labelCY() - labelH / 2 - margin
+          const lx2 = x + labelW / 2 + margin
+          const ly2 = labelCY() + labelH / 2 + margin
+          if (lx < rx + rw && lx2 > rx && ly < ry + rh && ly2 > ry) {
+            const pushes = [
+              { dx: rx + rw - lx, dy: 0 },
+              { dx: rx - lx2, dy: 0 },
+              { dx: 0, dy: ry + rh - ly },
+              { dx: 0, dy: ry - ly2 }
+            ]
+            for (const p of pushes) {
+              const dist = Math.abs(p.dx) + Math.abs(p.dy)
+              if (dist < minPush) {
+                minPush = dist
+                pushX = p.dx
+                pushY = p.dy
+              }
+            }
+            return true
+          }
+          return false
+        }
+
+        for (const node of nodes) {
+          if (collide(node.x, node.y, node.w, node.h)) collided = true
+        }
+        for (const p of placed) {
+          if (collide(p.cx - p.w / 2, p.cy - p.h / 2, p.w, p.h)) collided = true
+        }
+
+        if (!collided) break
+        x += pushX
+        y += pushY
+        if (pushX === 0 && pushY === 0) break
+      }
     }
 
     // 收尾：把胶囊中心限制在画布内，避免标签被推出边界
@@ -772,7 +835,7 @@ onUnmounted(() => {
                   style="transition: opacity .25s;"
                 >
                   <path
-                    :d="getEdgePath(edge.source, edge.target)"
+                    :d="getEdgePath(edge.source, edge.target, edge.bowScale, edge.avoidCenter)"
                     fill="none"
                     :stroke="relationColor(edge.label) || '#5C7A5E'"
                     stroke-opacity="0.8"
