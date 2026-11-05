@@ -17682,19 +17682,22 @@
           "year": -771,
           "title": "犬戎破镐京",
           "description": "犬戎联合申侯攻破镐京，周幽王被杀，西周覆亡",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前771年"
         },
         {
           "year": -770,
           "title": "平王即位",
           "description": "周平王在雒邑继位，正式开启东周时代",
-          "tag": "转折"
+          "tag": "转折",
+          "year_text": "前770年"
         },
         {
           "year": -770,
           "title": "迁都洛邑",
           "description": "因镐京残破难守，平王东迁至洛邑，王权由此衰微",
-          "tag": "东迁"
+          "tag": "东迁",
+          "year_text": "前770年"
         }
       ],
       "background": {
@@ -17815,19 +17818,22 @@
           "year": -707,
           "title": "君臣交恶",
           "description": "周桓王夺郑庄公卿士之职，郑庄公不满，不再朝见周王",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前720年"
         },
         {
           "year": -707,
           "title": "王师来伐",
           "description": "周桓王亲率虢、蔡、卫、陈联军讨伐郑国",
-          "tag": "开战"
+          "tag": "开战",
+          "year_text": "前707年"
         },
         {
           "year": -707,
           "title": "射王中肩",
           "description": "郑军用鱼丽之阵大败王师，祝聃一箭射中桓王肩膀",
-          "tag": "决胜"
+          "tag": "决胜",
+          "year_text": "前707年"
         }
       ],
       "background": {
@@ -17904,7 +17910,7 @@
       "name": "齐桓公即位与管仲改革",
       "dynasty": "春秋",
       "start_year": -685,
-      "end_year": -685,
+      "end_year": -643,
       "summary": "齐桓公即位后重用管仲。管仲从政治、军事和经济多个方面改革齐国，整顿行政制度，发展农业和商业，建立较为强大的军事力量。齐国国力迅速增强，为后来齐桓公称霸奠定了基础。",
       "event_type": "政治事件",
       "related_persons": [
@@ -17972,25 +17978,29 @@
           "year": -686,
           "title": "公孙无知之乱",
           "description": "齐国内乱，公孙无知弑君自立，齐政动荡",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前686年"
         },
         {
           "year": -685,
           "title": "齐桓即位",
           "description": "公子小白回国即位为齐桓公，任用鲍叔牙为辅",
-          "tag": "即位"
+          "tag": "即位",
+          "year_text": "前685年"
         },
         {
           "year": -685,
           "title": "管仲为相",
           "description": "鲍叔牙力荐管仲，齐桓公捐弃前嫌拜其为相",
-          "tag": "任贤"
+          "tag": "任贤",
+          "year_text": "前685年"
         },
         {
           "year": -684,
           "title": "厉行改革",
           "description": "管仲推行军政、经济、用人改革，齐国由弱转强",
-          "tag": "改制"
+          "tag": "改制",
+          "year_text": "前684年"
         }
       ],
       "background": {
@@ -18158,19 +18168,22 @@
           "year": -656,
           "title": "楚侵中原",
           "description": "楚成王北进，灭蔡伐郑，威胁中原诸侯",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前656年"
         },
         {
           "year": -656,
           "title": "齐率诸侯伐楚",
           "description": "齐桓公率鲁、宋等八国联军伐楚，进驻召陵",
-          "tag": "伐楚"
+          "tag": "伐楚",
+          "year_text": "前656年"
         },
         {
           "year": -656,
           "title": "召陵之盟",
           "description": "楚遣屈完求和，齐楚在召陵会盟，楚暂退兵",
-          "tag": "定盟"
+          "tag": "定盟",
+          "year_text": "前656年"
         }
       ],
       "background": {
@@ -18313,19 +18326,22 @@
           "year": -651,
           "title": "齐霸巅峰",
           "description": "齐桓公与众诸侯会盟于葵丘（今河南民权）",
-          "tag": "会盟"
+          "tag": "会盟",
+          "year_text": "前651年"
         },
         {
           "year": -651,
           "title": "周王遣使",
           "description": "周襄王派宰孔赐胙，对齐桓公以示嘉许",
-          "tag": "承命"
+          "tag": "承命",
+          "year_text": "前651年"
         },
         {
           "year": -651,
           "title": "订立盟约",
           "description": "盟约约定互不侵害、尊重王室，齐桓公霸业由此登顶",
-          "tag": "定盟"
+          "tag": "定盟",
+          "year_text": "前651年"
         }
       ],
       "background": {
@@ -18476,19 +18492,22 @@
           "year": -655,
           "title": "骊姬之乱",
           "description": "晋献公宠幸骊姬，逼杀太子申生，重耳被迫流亡",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前656年"
         },
         {
           "year": -636,
           "title": "秦助返晋",
           "description": "重耳在秦国相助下回国，夺取君位为晋文公",
-          "tag": "即位"
+          "tag": "即位",
+          "year_text": "前636年"
         },
         {
           "year": -636,
           "title": "整顿内政",
           "description": "任用狐偃、赵衰等贤臣，轻税薄敛，人心归附",
-          "tag": "图治"
+          "tag": "图治",
+          "year_text": "前636年"
         }
       ],
       "background": {
@@ -18654,19 +18673,22 @@
           "year": -636,
           "title": "辞禄不授",
           "description": "晋文公分封功臣而未及介之推，其不求封赏",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前636年"
         },
         {
           "year": -636,
           "title": "携母隐居",
           "description": "介之推携母隐居绵山，不复出仕",
-          "tag": "隐居"
+          "tag": "隐居",
+          "year_text": "前636年"
         },
         {
           "year": -636,
           "title": "母子被焚",
           "description": "晋文公寻而不得，焚山欲逼其出，介之推抱树而死",
-          "tag": "结局"
+          "tag": "结局",
+          "year_text": "前636年"
         }
       ],
       "background": {
@@ -18799,25 +18821,29 @@
           "year": -633,
           "title": "楚围宋国",
           "description": "楚成王亲率联军围宋，宋向晋求救",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前633年"
         },
         {
           "year": -632,
           "title": "晋伐曹卫",
           "description": "晋文公攻打楚之盟国曹、卫，以诱楚撤围",
-          "tag": "伐敌"
+          "tag": "伐敌",
+          "year_text": "前632年"
         },
         {
           "year": -632,
           "title": "退避三舍",
           "description": "晋军退避三舍信守前诺，诱楚军深入",
-          "tag": "折冲"
+          "tag": "折冲",
+          "year_text": "前632年"
         },
         {
           "year": -632,
           "title": "大破楚军",
           "description": "城濮决战，晋军大败楚军，一战定霸",
-          "tag": "决胜"
+          "tag": "决胜",
+          "year_text": "前632年"
         }
       ],
       "background": {
@@ -18996,25 +19022,29 @@
           "year": -628,
           "title": "郑人告密",
           "description": "秦穆公谋袭郑国，郑人弦高犒师示警，秦军退",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前628年"
         },
         {
           "year": -627,
           "title": "秦过晋境",
           "description": "秦军回师经晋殽山险道，晋襄公设伏以待",
-          "tag": "设伏"
+          "tag": "设伏",
+          "year_text": "前627年"
         },
         {
           "year": -627,
           "title": "伏击全歼",
           "description": "晋军于殽山伏击，秦军主帅孟明视等被俘",
-          "tag": "决战"
+          "tag": "决战",
+          "year_text": "前627年"
         },
         {
           "year": -627,
           "title": "放归三帅",
           "description": "晋文公夫人文嬴出于私情放归秦三帅，为后患埋下伏笔",
-          "tag": "余波"
+          "tag": "余波",
+          "year_text": "前627年"
         }
       ],
       "background": {
@@ -19120,19 +19150,22 @@
           "year": -607,
           "title": "灵公暴虐",
           "description": "晋灵公荒淫暴虐，厚敛民财、戏于台上",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前607年"
         },
         {
           "year": -607,
           "title": "灵公欲杀赵盾",
           "description": "灵公多次谋害忠臣赵盾，赵盾被迫出逃",
-          "tag": "生隙"
+          "tag": "生隙",
+          "year_text": "前607年"
         },
         {
           "year": -607,
           "title": "赵穿弑君",
           "description": "赵穿在桃园弑晋灵公，赵盾返国复位",
-          "tag": "弑君"
+          "tag": "弑君",
+          "year_text": "前607年"
         }
       ],
       "background": {
@@ -19239,19 +19272,22 @@
           "year": -607,
           "title": "弑君事发",
           "description": "赵穿弑灵公，赵盾仓促返国立新君",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前607年"
         },
         {
           "year": -607,
           "title": "太史直书",
           "description": "晋太史董狐直书\"赵盾弑其君\"，不顾情面",
-          "tag": "直笔"
+          "tag": "直笔",
+          "year_text": "前607年"
         },
         {
           "year": -607,
           "title": "孔子称善",
           "description": "孔子赞董狐为\"古之良史\"，书法不隐",
-          "tag": "定评"
+          "tag": "定评",
+          "year_text": "前607年后"
         }
       ],
       "background": {
@@ -19356,19 +19392,22 @@
           "year": -606,
           "title": "楚伐陆浑",
           "description": "楚庄王北伐陆浑之戎，陈兵于周王畿边界",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前606年"
         },
         {
           "year": -606,
           "title": "问鼎轻重",
           "description": "楚庄王观兵周疆，问周鼎\"大小轻重\"，觊觎王权",
-          "tag": "问鼎"
+          "tag": "问鼎",
+          "year_text": "前606年"
         },
         {
           "year": -606,
           "title": "王孙满对",
           "description": "周大夫王孙满答以\"在德不在鼎\"，使楚退兵",
-          "tag": "讥退"
+          "tag": "讥退",
+          "year_text": "前606年"
         }
       ],
       "background": {
@@ -19495,25 +19534,29 @@
           "year": -597,
           "title": "楚攻郑国",
           "description": "楚庄王攻郑，郑降楚，晋国出兵救郑",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前597年"
         },
         {
           "year": -597,
           "title": "晋楚对峙",
           "description": "晋、楚两军于邲（今河南荥阳北）相遇",
-          "tag": "对垒"
+          "tag": "对垒",
+          "year_text": "前597年"
         },
         {
           "year": -597,
           "title": "晋军大败",
           "description": "因主帅和与战不定、议事不决，晋军大败而逃",
-          "tag": "决战"
+          "tag": "决战",
+          "year_text": "前597年"
         },
         {
           "year": -597,
           "title": "楚霸南天",
           "description": "楚庄王由此饮马黄河，成为春秋五霸之一",
-          "tag": "称霸"
+          "tag": "称霸",
+          "year_text": "前597年后"
         }
       ],
       "background": {
@@ -19678,25 +19721,29 @@
           "year": -589,
           "title": "齐伐鲁卫",
           "description": "齐顷公伐鲁、卫，二国求救于晋",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前589年"
         },
         {
           "year": -589,
           "title": "晋师来援",
           "description": "晋景公派郤克率军救鲁卫，与齐战于鞍",
-          "tag": "应援"
+          "tag": "应援",
+          "year_text": "前589年"
         },
         {
           "year": -589,
           "title": "齐师大败",
           "description": "晋军大破齐师，齐顷公险些被俘",
-          "tag": "决战"
+          "tag": "决战",
+          "year_text": "前589年"
         },
         {
           "year": -589,
           "title": "齐晋盟约",
           "description": "齐国求和，晋齐盟于爰娄，齐折服于晋",
-          "tag": "定盟"
+          "tag": "定盟",
+          "year_text": "前589年"
         }
       ],
       "background": {
@@ -19764,8 +19811,8 @@
       "id": 202315,
       "name": "士会返晋",
       "dynasty": "春秋",
-      "start_year": -583,
-      "end_year": -583,
+      "start_year": -620,
+      "end_year": -613,
       "summary": "士会原为晋国大夫，因晋国内部政治斗争一度逃往秦国。秦穆公重用士会，使他在秦国受到礼遇。后来晋国通过外交和谋略设法召回士会，士会返回晋国后重新得到重用，最终成为晋国重要执政大夫。",
       "event_type": "人物故事",
       "related_persons": [
@@ -19817,25 +19864,29 @@
           "year": -620,
           "title": "奔秦避祸",
           "description": "因晋国内乱，士会出奔秦国避难",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前620年"
         },
         {
           "year": -614,
           "title": "秦晋相持",
           "description": "秦晋交恶，士会以才智为秦所重，晋深忌之",
-          "tag": "生隙"
+          "tag": "生隙",
+          "year_text": "前614年"
         },
         {
           "year": -614,
           "title": "诱返晋国",
           "description": "晋使魏寿余伪奔秦，诱俘士会归晋",
-          "tag": "归晋"
+          "tag": "归晋",
+          "year_text": "前614年"
         },
         {
           "year": -613,
           "title": "出任执政",
           "description": "士会返晋后任中军帅，修明内政，晋国大治",
-          "tag": "为政"
+          "tag": "为政",
+          "year_text": "前613年"
         }
       ],
       "background": {
@@ -19955,25 +20006,29 @@
           "year": -576,
           "title": "晋楚将战",
           "description": "楚共王欲争郑、宋，与晋军对峙于鄢陵",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前576年"
         },
         {
           "year": -575,
           "title": "对峙鄢陵",
           "description": "两军遇于鄢陵（今河南鄢陵北），相持不安",
-          "tag": "对垒"
+          "tag": "对垒",
+          "year_text": "前575年"
         },
         {
           "year": -575,
           "title": "晋军扬威",
           "description": "晋军射伤楚共王之目，楚军夜遁",
-          "tag": "决战"
+          "tag": "决战",
+          "year_text": "前575年"
         },
         {
           "year": -575,
           "title": "晋国复振",
           "description": "鄢陵之战晋胜，重振晋国霸业声威",
-          "tag": "称强"
+          "tag": "称强",
+          "year_text": "前575年后"
         }
       ],
       "background": {
@@ -20098,25 +20153,29 @@
           "year": -575,
           "title": "厉公集权",
           "description": "晋厉公鄢陵胜楚后，意欲除去诸卿、加强君权",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前575年"
         },
         {
           "year": -574,
           "title": "厉公诛卿",
           "description": "晋厉公诛杀三郤（郤至等），栾书中行偃人人自危",
-          "tag": "逼反"
+          "tag": "逼反",
+          "year_text": "前574年"
         },
         {
           "year": -573,
           "title": "栾书弑君",
           "description": "栾书、中行偃执晋厉公，弑之于匠丽氏",
-          "tag": "弑君"
+          "tag": "弑君",
+          "year_text": "前574年"
         },
         {
           "year": -573,
           "title": "迎立悼公",
           "description": "栾书等迎立公子周为君，是为晋悼公",
-          "tag": "改立"
+          "tag": "改立",
+          "year_text": "前573年"
         }
       ],
       "background": {
@@ -20261,25 +20320,29 @@
           "year": -573,
           "title": "亡国公子",
           "description": "晋悼公为晋襄公曾孙，流落洛邑，栾书迎而立之",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前573年前"
         },
         {
           "year": -573,
           "title": "即位明志",
           "description": "悼公即位即宣布\"以君临诸卿\"，重整纲纪",
-          "tag": "即位"
+          "tag": "即位",
+          "year_text": "前573年"
         },
         {
           "year": -572,
           "title": "任用贤能",
           "description": "任用魏绛、韩厥等贤臣，拨乱反正",
-          "tag": "图治"
+          "tag": "图治",
+          "year_text": "前572年"
         },
         {
           "year": -569,
           "title": "霸业中兴",
           "description": "悼公复霸，诸侯归附，史称\"晋国复兴\"",
-          "tag": "复兴"
+          "tag": "复兴",
+          "year_text": "前569年"
         }
       ],
       "background": {
@@ -20371,7 +20434,7 @@
       "id": 202319,
       "name": "魏绛和戎",
       "dynasty": "春秋",
-      "start_year": -562,
+      "start_year": -569,
       "end_year": -562,
       "summary": "晋悼公时期，戎狄不断侵扰晋国边境。大夫魏绛提出与其长期用兵，不如通过外交、利益交换和礼制逐步安抚戎狄。晋悼公采纳建议后，晋国与多个戎族改善关系，边境压力明显减轻。",
       "event_type": "外交",
@@ -20423,25 +20486,29 @@
           "year": -569,
           "title": "戎族来犯",
           "description": "山戎无终国遣使求与晋和好，众议不一",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前569年前"
         },
         {
           "year": -569,
           "title": "魏绛进言",
           "description": "魏绛上\"和戎五利\"，力主与戎讲和",
-          "tag": "定策"
+          "tag": "定策",
+          "year_text": "前569年"
         },
         {
           "year": -569,
           "title": "晋戎结盟",
           "description": "晋悼公采纳魏绛之策，与诸戎订立盟约",
-          "tag": "和盟"
+          "tag": "和盟",
+          "year_text": "前569年"
         },
         {
           "year": -562,
           "title": "辑睦相安",
           "description": "和戎后晋无西顾之忧，得以专心与楚争霸",
-          "tag": "成效"
+          "tag": "成效",
+          "year_text": "前562年"
         }
       ],
       "background": {
@@ -20519,7 +20586,7 @@
       "id": 202320,
       "name": "晋楚弭兵会盟",
       "dynasty": "春秋",
-      "start_year": -546,
+      "start_year": -579,
       "end_year": -546,
       "summary": "晋楚长期争霸使双方都付出巨大代价。前546年，在宋国大夫向戌推动下，晋、楚两国及多个诸侯国举行会盟，双方同意暂时停止战争，共同维持诸侯之间的和平关系。晋楚长期正面战争由此进入相对缓和阶段。",
       "event_type": "外交",
@@ -20571,25 +20638,29 @@
           "year": -579,
           "title": "第一次弭兵",
           "description": "在华元的调停下，晋楚于宋西门首次盟誓弭兵",
-          "tag": "首盟"
+          "tag": "首盟",
+          "year_text": "前579年"
         },
         {
           "year": -577,
           "title": "盟约破裂",
           "description": "因南方楚国进犯，第一次弭兵盟约迅速破裂",
-          "tag": "破裂"
+          "tag": "破裂",
+          "year_text": "前577年"
         },
         {
           "year": -546,
           "title": "宋国再倡",
           "description": "宋国大夫向戌奔走斡旋，晋楚等十国复会于宋",
-          "tag": "再倡"
+          "tag": "再倡",
+          "year_text": "前546年"
         },
         {
           "year": -546,
           "title": "四十载休兵",
           "description": "第二次弭兵会盟达成，晋楚不再大战，中原稍安",
-          "tag": "成盟"
+          "tag": "成盟",
+          "year_text": "前546年"
         }
       ],
       "background": {
@@ -20649,8 +20720,8 @@
       "id": 202321,
       "name": "晋国六卿崛起",
       "dynasty": "春秋",
-      "start_year": -600,
-      "end_year": -600,
+      "start_year": -588,
+      "end_year": -490,
       "summary": "晋国经过长期战争与政治整合，韩、赵、魏、智、范、中行六家逐渐成为晋国最重要的卿族。他们掌握军政大权，国君的实际控制力不断下降，六卿之间也开始展开激烈的权力竞争。后来范氏、中行氏先后衰落，智、赵、韩、魏成为最后的主要势力。",
       "event_type": "政治事件",
       "related_persons": [
@@ -20707,25 +20778,29 @@
           "year": -589,
           "title": "增设六卿",
           "description": "晋国设六卿之职，分掌军政，权柄渐向卿族集中",
-          "tag": "建制"
+          "tag": "建制",
+          "year_text": "前588年"
         },
         {
           "year": -588,
           "title": "郤氏崛起",
           "description": "郤氏、栾氏等卿族扩充封地、培植私兵",
-          "tag": "坐大"
+          "tag": "坐大",
+          "year_text": "前588年"
         },
         {
           "year": -514,
           "title": "灭祁氏",
           "description": "卿族合力灭祁氏、羊舌氏，六卿专晋政",
-          "tag": "兼并"
+          "tag": "兼并",
+          "year_text": "前514年"
         },
         {
           "year": -490,
           "title": "六卿制晋",
           "description": "晋君权力空悬，实权尽归六卿之手",
-          "tag": "专权"
+          "tag": "专权",
+          "year_text": "前490年"
         }
       ],
       "background": {
@@ -20850,19 +20925,22 @@
           "year": -526,
           "title": "公子世系",
           "description": "吴王僚在位，公子光（阖闾）心怀夺位之志",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前526年"
         },
         {
           "year": -515,
           "title": "专诸刺僚",
           "description": "阖闾用专诸刺杀吴王僚，自立为吴王",
-          "tag": "夺位"
+          "tag": "夺位",
+          "year_text": "前515年"
         },
         {
           "year": -515,
           "title": "任贤整军",
           "description": "阖闾任用伍子胥、孙武，整顿军政，吴国崛起",
-          "tag": "图强"
+          "tag": "图强",
+          "year_text": "前515年"
         }
       ],
       "background": {
@@ -20996,19 +21074,22 @@
           "year": -515,
           "title": "公子蓄志",
           "description": "公子光指使伍子胥寻刺客，结纳专诸",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前515年"
         },
         {
           "year": -515,
           "title": "鱼腹藏剑",
           "description": "专诸藏剑于鱼腹进献，刺死吴王僚",
-          "tag": "行刺"
+          "tag": "行刺",
+          "year_text": "前515年"
         },
         {
           "year": -515,
           "title": "阖闾立国",
           "description": "专诸殉难，公子光即位为吴王阖闾",
-          "tag": "成事"
+          "tag": "成事",
+          "year_text": "前515年"
         }
       ],
       "background": {
@@ -21158,25 +21239,29 @@
           "year": -506,
           "title": "吴师远征",
           "description": "吴王阖闾亲率伍子胥、孙武倾国伐楚",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前506年"
         },
         {
           "year": -506,
           "title": "五战五捷",
           "description": "吴军避开强军，先败汉水之楚师，柏举决战而胜",
-          "tag": "进兵"
+          "tag": "进兵",
+          "year_text": "前506年"
         },
         {
           "year": -506,
           "title": "攻破郢都",
           "description": "吴军乘胜攻破楚都郢，楚昭王出奔",
-          "tag": "破都"
+          "tag": "破都",
+          "year_text": "前506年"
         },
         {
           "year": -506,
           "title": "鞭尸雪恨",
           "description": "伍子胥掘楚平王墓鞭尸，以报父兄之仇",
-          "tag": "复仇"
+          "tag": "复仇",
+          "year_text": "前506年"
         }
       ],
       "background": {
@@ -21326,19 +21411,22 @@
           "year": -506,
           "title": "乘胜追逼",
           "description": "柏举之捷后，吴军穷追楚昭王于郊野",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前506年"
         },
         {
           "year": -506,
           "title": "郢都破城",
           "description": "吴军一举攻入楚国郢都，楚昭王仓皇出逃",
-          "tag": "破都"
+          "tag": "破都",
+          "year_text": "前506年"
         },
         {
           "year": -506,
           "title": "占有楚室",
           "description": "吴军入郢后纵兵占据楚宫室，楚国几亡",
-          "tag": "占据"
+          "tag": "占据",
+          "year_text": "前506年"
         }
       ],
       "background": {
@@ -21485,25 +21573,29 @@
           "year": -522,
           "title": "灭门之祸",
           "description": "楚平王听谗言杀伍奢、伍尚，伍子胥只身逃奔吴国",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前522年"
         },
         {
           "year": -515,
           "title": "助阖闾立",
           "description": "伍子胥助公子光（阖闾）夺位，得任行人",
-          "tag": "仕吴"
+          "tag": "仕吴",
+          "year_text": "前515年"
         },
         {
           "year": -506,
           "title": "率师入郢",
           "description": "伍子胥佐吴王伐楚，攻克郢都",
-          "tag": "破郢"
+          "tag": "破郢",
+          "year_text": "前506年"
         },
         {
           "year": -506,
           "title": "掘墓鞭尸",
           "description": "寻获楚平王墓，鞭尸三百以雪父兄之仇",
-          "tag": "雪恨"
+          "tag": "雪恨",
+          "year_text": "前506年"
         }
       ],
       "background": {
@@ -21574,7 +21666,7 @@
       "name": "申包胥哭秦庭",
       "dynasty": "春秋",
       "start_year": -506,
-      "end_year": -506,
+      "end_year": -505,
       "summary": "吴军攻破郢都后，楚国危在旦夕。楚国大夫申包胥逃往秦国，请求秦哀公出兵救楚。秦国最初没有立即答应，申包胥便在秦庭痛哭求援，连续多日不进食。秦哀公最终被他的忠诚打动，决定出兵援楚。",
       "event_type": "人物故事",
       "related_persons": [
@@ -21621,25 +21713,29 @@
           "year": -506,
           "title": "楚都陷落",
           "description": "吴军破郢，楚昭王东保避难，楚国濒亡",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前506年"
         },
         {
           "year": -506,
           "title": "徒步入秦",
           "description": "申包胥星夜奔秦都，哀求秦哀公发兵救楚",
-          "tag": "求救"
+          "tag": "求救",
+          "year_text": "前506年"
         },
         {
           "year": -505,
           "title": "哭秦庭七日",
           "description": "申包胥依墙而哭七昼夜，水浆不入于口",
-          "tag": "哀请"
+          "tag": "哀请",
+          "year_text": "前506年"
         },
         {
           "year": -505,
           "title": "秦师复楚",
           "description": "秦哀公为之感动发兵，秦师败吴，楚国复国",
-          "tag": "复国"
+          "tag": "复国",
+          "year_text": "前505年"
         }
       ],
       "background": {
@@ -21772,25 +21868,29 @@
           "year": -505,
           "title": "秦师入楚",
           "description": "秦哀公发兵救楚，与吴师交战",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前505年"
         },
         {
           "year": -505,
           "title": "吴溃退兵",
           "description": "吴王阖闾之弟夫概奔归自立，吴师乱溃败还",
-          "tag": "转折"
+          "tag": "转折",
+          "year_text": "前505年"
         },
         {
           "year": -505,
           "title": "昭王复郢",
           "description": "楚昭王返回郢都，楚国复国重整",
-          "tag": "复郢"
+          "tag": "复郢",
+          "year_text": "前505年"
         },
         {
           "year": -504,
           "title": "修政图强",
           "description": "楚国迁都若敖，整顿内政，逐渐重振",
-          "tag": "图治"
+          "tag": "图治",
+          "year_text": "前504年"
         }
       ],
       "background": {
@@ -21911,25 +22011,29 @@
           "year": -496,
           "title": "越王新立",
           "description": "越王允常卒，勾践新立，吴乘丧伐越",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前496年"
         },
         {
           "year": -496,
           "title": "檇李对阵",
           "description": "吴越战于檇李，越军先以敢死肉搏致吴军乱",
-          "tag": "对垒"
+          "tag": "对垒",
+          "year_text": "前496年"
         },
         {
           "year": -496,
           "title": "越大破吴",
           "description": "勾践亲督战阵，大败吴军，阖闾中箭而亡",
-          "tag": "大捷"
+          "tag": "大捷",
+          "year_text": "前496年"
         },
         {
           "year": -496,
           "title": "夫差立志",
           "description": "夫差继位，厉志复仇，使人常呼\"而忘越王之杀而父乎\"",
-          "tag": "遗恨"
+          "tag": "遗恨",
+          "year_text": "前496年"
         }
       ],
       "background": {
@@ -22053,25 +22157,29 @@
           "year": -494,
           "title": "夫差报怨",
           "description": "吴王夫差为报父仇大举伐越，越军不敌",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前494年"
         },
         {
           "year": -494,
           "title": "夫椒大败",
           "description": "越军大败于夫椒，溃退会稽山",
-          "tag": "溃败"
+          "tag": "溃败",
+          "year_text": "前494年"
         },
         {
           "year": -494,
           "title": "屈身请和",
           "description": "勾践遣文种卑辞厚礼请和，愿臣于吴",
-          "tag": "请和"
+          "tag": "请和",
+          "year_text": "前494年"
         },
         {
           "year": -494,
           "title": "入吴为质",
           "description": "勾践携范蠡入吴为奴，忍辱负重，受尽屈辱",
-          "tag": "为质"
+          "tag": "为质",
+          "year_text": "前494年"
         }
       ],
       "background": {
@@ -22180,7 +22288,7 @@
       "name": "勾践卧薪尝胆",
       "dynasty": "春秋",
       "start_year": -494,
-      "end_year": -494,
+      "end_year": -473,
       "summary": "会稽战败后，勾践没有忘记亡国之耻。他回国后与范蠡、文种等人共同治理越国，一方面发展生产、训练军队，另一方面时刻提醒自己不要忘记会稽之辱。后世以“卧薪尝胆”概括他忍辱负重、积蓄力量的经历。",
       "event_type": "人物故事",
       "related_persons": [
@@ -22243,25 +22351,29 @@
           "year": -494,
           "title": "质于吴宫",
           "description": "勾践为奴于吴，卧薪尝胆，恭谨事吴",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前494年"
         },
         {
           "year": -490,
           "title": "归国图治",
           "description": "得释归国后，与范蠡、文种共谋富国强兵",
-          "tag": "归国"
+          "tag": "归国",
+          "year_text": "前490年"
         },
         {
           "year": -486,
           "title": "十年生聚",
           "description": "励精图治、发展生产，暗中积蓄复国之力",
-          "tag": "图强"
+          "tag": "图强",
+          "year_text": "前486年"
         },
         {
           "year": -473,
           "title": "灭吴雪耻",
           "description": "乘吴国北上争霸之机，一举灭吴，报会稽之仇",
-          "tag": "雪耻"
+          "tag": "雪耻",
+          "year_text": "前473年"
         }
       ],
       "background": {
@@ -22414,25 +22526,29 @@
           "year": -482,
           "title": "夫差北上",
           "description": "吴王夫差为图霸中原，率师北上会诸侯",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前482年"
         },
         {
           "year": -482,
           "title": "会盟黄池",
           "description": "吴、晋二霸会于黄池，相争盟主之位",
-          "tag": "争盟"
+          "tag": "争盟",
+          "year_text": "前482年"
         },
         {
           "year": -482,
           "title": "吴强争长",
           "description": "吴国恃强与晋争长，终得主盟",
-          "tag": "争长"
+          "tag": "争长",
+          "year_text": "前482年"
         },
         {
           "year": -482,
           "title": "越袭吴都",
           "description": "吴国后方空虚，越王勾践乘虚袭吴，吴为之衰",
-          "tag": "转折"
+          "tag": "转折",
+          "year_text": "前482年"
         }
       ],
       "background": {
@@ -22580,25 +22696,29 @@
           "year": -478,
           "title": "越攻姑苏",
           "description": "越军大举攻吴，败吴军于笠泽",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前478年"
         },
         {
           "year": -473,
           "title": "吴都失守",
           "description": "越国攻打吴都姑苏，吴王夫差兵败被围",
-          "tag": "围吴"
+          "tag": "围吴",
+          "year_text": "前473年"
         },
         {
           "year": -473,
           "title": "夫差自刎",
           "description": "夫差乞降不得，自刎而死，吴国灭亡",
-          "tag": "灭亡"
+          "tag": "灭亡",
+          "year_text": "前473年"
         },
         {
           "year": -473,
           "title": "勾践称霸",
           "description": "越王勾践成春秋最后一位霸主，号令诸侯",
-          "tag": "称霸"
+          "tag": "称霸",
+          "year_text": "前473年"
         }
       ],
       "background": {
@@ -22701,7 +22821,7 @@
       "name": "晋阳之战",
       "dynasty": "春秋",
       "start_year": -455,
-      "end_year": -455,
+      "end_year": -453,
       "summary": "晋国后期，智氏成为六卿中最强大的家族。智伯瑶联合韩氏、魏氏围攻赵襄子所在的晋阳，试图彻底消灭赵氏。赵襄子秘密说服韩、魏倒戈，三家联手反攻智氏，最终攻破智氏营地，智伯瑶被杀。",
       "event_type": "战争军事",
       "related_persons": [],
@@ -22747,25 +22867,29 @@
           "year": -455,
           "title": "智伯索地",
           "description": "智伯瑶向赵、魏、韩索地，赵襄子不从",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前455年"
         },
         {
           "year": -454,
           "title": "围困晋阳",
           "description": "智伯率韩魏之师围攻赵氏晋阳，久攻不下",
-          "tag": "围城"
+          "tag": "围城",
+          "year_text": "前454年"
         },
         {
           "year": -453,
           "title": "水灌晋阳",
           "description": "智伯引晋水灌晋阳，城危在旦夕",
-          "tag": "灌城"
+          "tag": "灌城",
+          "year_text": "前453年"
         },
         {
           "year": -453,
           "title": "三家灭智",
           "description": "赵韩魏反戈，决水反攻智伯，智氏被灭",
-          "tag": "逆转"
+          "tag": "逆转",
+          "year_text": "前453年"
         }
       ],
       "background": {
@@ -22879,25 +23003,29 @@
           "year": -455,
           "title": "智伯逞强",
           "description": "智伯瑶贪图无厌，威逼韩魏赵割地",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前455年"
         },
         {
           "year": -453,
           "title": "三家结盟",
           "description": "赵韩魏三家密谋连手，共图智氏",
-          "tag": "结盟"
+          "tag": "结盟",
+          "year_text": "前453年"
         },
         {
           "year": -453,
           "title": "韩魏反水",
           "description": "智伯军水灌晋阳之际，韩魏反戈相向",
-          "tag": "反水"
+          "tag": "反水",
+          "year_text": "前453年"
         },
         {
           "year": -453,
           "title": "智族覆灭",
           "description": "赵襄子杀智伯，灭其族，尽分其地",
-          "tag": "覆灭"
+          "tag": "覆灭",
+          "year_text": "前453年"
         }
       ],
       "background": {
@@ -22964,7 +23092,7 @@
       "id": 202336,
       "name": "三家分晋",
       "dynasty": "春秋",
-      "start_year": -403,
+      "start_year": -453,
       "end_year": -403,
       "summary": "晋国长期由韩、赵、魏三家掌握实际权力。经过长期斗争，三家最终瓜分晋国土地，周威烈王正式承认韩、赵、魏为诸侯。晋国至此名存实亡，韩、赵、魏成为战国时期的重要国家。",
       "event_type": "政治事件",
@@ -23017,25 +23145,29 @@
           "year": -453,
           "title": "瓜分智地",
           "description": "赵魏韩三分智氏之田，晋君名存实亡",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前453年"
         },
         {
           "year": -452,
           "title": "三家专政",
           "description": "晋公室无尺土之封，实权尽归三家",
-          "tag": "专政"
+          "tag": "专政",
+          "year_text": "前452年"
         },
         {
           "year": -403,
           "title": "周王册封",
           "description": "周威烈王正式册命韩赵魏为诸侯",
-          "tag": "封建"
+          "tag": "封建",
+          "year_text": "前403年"
         },
         {
           "year": -403,
           "title": "战国开启",
           "description": "三家分晋标志着春秋结束，战国拉开序幕",
-          "tag": "变革"
+          "tag": "变革",
+          "year_text": "前403年后"
         }
       ],
       "background": {
@@ -23096,8 +23228,8 @@
       "id": 202337,
       "name": "鲁国三桓专政",
       "dynasty": "春秋",
-      "start_year": -600,
-      "end_year": -600,
+      "start_year": -590,
+      "end_year": -505,
       "summary": "鲁桓公的三个儿子庆父、叔牙、季友及其后裔形成孟孙、叔孙、季孙三家，后世称为“三桓”。随着鲁国国君权力逐渐削弱，三桓长期控制鲁国军政大权。鲁昭公时期，季孙氏等卿族势力已经远远超过鲁君，最终导致鲁昭公出奔。",
       "event_type": "政治事件",
       "related_persons": [
@@ -23165,25 +23297,29 @@
           "year": -590,
           "title": "三桓始盛",
           "description": "鲁国孟孙、叔孙、季孙三家卿族势力日益坐大",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前590年"
         },
         {
           "year": -562,
           "title": "三分公室",
           "description": "三桓瓜分鲁国公室军权、赋税",
-          "tag": "分权"
+          "tag": "分权",
+          "year_text": "前562年"
         },
         {
           "year": -517,
           "title": "逼走昭公",
           "description": "季氏等驱逐鲁昭公，公室名存实亡",
-          "tag": "逐君"
+          "tag": "逐君",
+          "year_text": "前517年"
         },
         {
           "year": -505,
           "title": "三桓专政",
           "description": "鲁国政由三桓把持，国君形同傀儡",
-          "tag": "专权"
+          "tag": "专权",
+          "year_text": "前505年"
         }
       ],
       "background": {
@@ -23264,7 +23400,7 @@
       "name": "孔子周游列国",
       "dynasty": "春秋",
       "start_year": -497,
-      "end_year": -497,
+      "end_year": -484,
       "summary": "孔子晚年离开鲁国，带领弟子周游卫、曹、宋、郑、陈、蔡、楚等国，希望寻找能够实行其政治理想的君主。一路上，他与弟子经历困顿、流离和政治上的失意，但始终坚持自己的学说。最终孔子返回鲁国，继续整理典籍、教授弟子。",
       "event_type": "人物故事",
       "related_persons": [
@@ -23327,25 +23463,29 @@
           "year": -497,
           "title": "去鲁出行",
           "description": "孔子因见信于君而不用于政，率弟子离开鲁国",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前497年"
         },
         {
           "year": -496,
           "title": "厄于陈蔡",
           "description": "在陈蔡之间被围绝粮，弦歌不辍，志节不改",
-          "tag": "困厄"
+          "tag": "困厄",
+          "year_text": "前489年"
         },
         {
           "year": -489,
           "title": "楚郊受讥",
           "description": "为楚所用之议终沮，孔子\"明知其不可为而为之\"",
-          "tag": "受挫"
+          "tag": "受挫",
+          "year_text": "前489年"
         },
         {
           "year": -484,
           "title": "归鲁修书",
           "description": "周游十四年终返鲁，专心著书立说、教授弟子",
-          "tag": "归来"
+          "tag": "归来",
+          "year_text": "前484年"
         }
       ],
       "background": {
@@ -23449,8 +23589,8 @@
       "id": 202339,
       "name": "季札让国",
       "dynasty": "春秋",
-      "start_year": -600,
-      "end_year": -600,
+      "start_year": -561,
+      "end_year": -527,
       "summary": "吴王寿梦有四个儿子，最器重季札。寿梦希望把王位传给季札，但季札认为兄长之间应当依次继承，因此拒绝即位。后来吴国王位按照兄弟相传的方式延续，季札始终没有争夺王位。他曾出使中原诸国，以深厚的礼乐修养受到诸侯和士大夫称赞。",
       "event_type": "人物故事",
       "related_persons": [
@@ -23512,25 +23652,29 @@
           "year": -561,
           "title": "季札让位",
           "description": "吴王寿梦欲传位于贤季札，季札坚决不受",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前561年"
         },
         {
           "year": -544,
           "title": "出使列国",
           "description": "季札历访鲁、齐、郑、卫、晋，观礼知政，声誉极高",
-          "tag": "出使"
+          "tag": "出使",
+          "year_text": "前544年"
         },
         {
           "year": -525,
           "title": "再让君位",
           "description": "哀公欲以国授季札，季札复辞，退居延陵",
-          "tag": "再让"
+          "tag": "再让",
+          "year_text": "前527年"
         },
         {
           "year": -500,
           "title": "岩盟让国",
           "description": "季札终生不争君位，为让德之典范",
-          "tag": "成德"
+          "tag": "成德",
+          "year_text": "前527年后"
         }
       ],
       "background": {
