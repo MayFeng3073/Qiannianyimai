@@ -7007,19 +7007,22 @@
           "year": -2055,
           "title": "太康继位",
           "description": "太康继承夏朝王位，但沉迷田猎，不理朝政",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "约前20世纪"
         },
         {
           "year": -2050,
           "title": "后羿夺权",
           "description": "后羿（有穷氏首领）趁太康田猎不归，占据夏都斟鄩",
-          "tag": "转折"
+          "tag": "转折",
+          "year_text": "约前20世纪"
         },
         {
           "year": -2045,
           "title": "太康流亡",
           "description": "太康被迫流亡至斟鄩，至死未能返回都城",
-          "tag": "结局"
+          "tag": "结局",
+          "year_text": "约前20世纪"
         }
       ],
       "background": {
@@ -7196,25 +7199,29 @@
           "year": -2020,
           "title": "少康生于危难",
           "description": "作为夏朝遗孤出生，自幼躲避寒浞追杀",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "约前20世纪"
         },
         {
           "year": -2010,
           "title": "寄居有虞氏",
           "description": "投奔有虞氏，担任庖正，积蓄力量",
-          "tag": "蛰伏"
+          "tag": "蛰伏",
+          "year_text": "约前20世纪"
         },
         {
           "year": -2000,
           "title": "起兵复国",
           "description": "联合有虞氏、有鬲氏等部落，击败寒浞",
-          "tag": "反攻"
+          "tag": "反攻",
+          "year_text": "约前19世纪"
         },
         {
           "year": -1995,
           "title": "光复夏朝",
           "description": "回到夏都，恢复夏朝统治，开创中兴",
-          "tag": "中兴"
+          "tag": "中兴",
+          "year_text": "约前19世纪"
         }
       ],
       "background": {
@@ -7427,7 +7434,8 @@
           "year": -1700,
           "title": "夏桀暴政",
           "description": "夏桀统治时期，传统文献将其描述为政治腐败、奢侈暴虐，王朝内部矛盾和统治危机不断加深。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "约前17世纪"
         }
       ],
       "background": {
@@ -7616,7 +7624,8 @@
           "year": -1600,
           "title": "商汤灭夏",
           "description": "商汤联合诸侯讨伐夏桀，在鸣条一带击败夏军，结束夏王朝统治并建立商朝。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "约前1600年"
         }
       ],
       "background": {
@@ -7813,25 +7822,29 @@
           "year": -1300,
           "title": "盘庚继位",
           "description": "商朝迁都频繁，政治腐败，民生困苦",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "约前1300年"
         },
         {
           "year": -1298,
           "title": "决意迁都",
           "description": "盘庚力排众议，决定迁都于殷",
-          "tag": "决策"
+          "tag": "决策",
+          "year_text": "约前1300年"
         },
         {
           "year": -1298,
           "title": "发表训诰",
           "description": "发布《盘庚》三篇，说服贵族与民众支持迁都",
-          "tag": "动员"
+          "tag": "动员",
+          "year_text": "约前1300年"
         },
         {
           "year": -1295,
           "title": "迁都完成",
           "description": "迁都殷地，奠定商朝后期稳定基础",
-          "tag": "实施"
+          "tag": "实施",
+          "year_text": "约前1300年"
         }
       ],
       "background": {
@@ -7938,8 +7951,8 @@
       "id": 204006,
       "name": "武丁中兴",
       "dynasty": "夏商西周",
-      "start_year": -1300,
-      "end_year": -1300,
+      "start_year": -1250,
+      "end_year": -1192,
       "summary": "武丁时期任用傅说、甘盘等重要臣僚，加强王权并积极开展对外军事行动，商王朝国力得到明显发展。",
       "event_type": "盛世发展",
       "related_persons": [
@@ -8007,31 +8020,36 @@
           "year": -1250,
           "title": "武丁继位",
           "description": "年少时生活于民间，继位后决心振兴商朝",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "约前1250年"
         },
         {
           "year": -1248,
           "title": "任用傅说",
           "description": "梦中得圣人，寻访傅说于傅岩版筑工地",
-          "tag": "求贤"
+          "tag": "求贤",
+          "year_text": "约前1250年"
         },
         {
           "year": -1240,
           "title": "整顿内政",
           "description": "在傅说辅佐下整顿吏治，政治清明",
-          "tag": "治政"
+          "tag": "治政",
+          "year_text": "约前1250年"
         },
         {
           "year": -1230,
           "title": "征伐四方",
           "description": "大规模征伐鬼方、羌方、土方等方国",
-          "tag": "武功"
+          "tag": "武功",
+          "year_text": "约前1250-约前1192年"
         },
         {
           "year": -1200,
           "title": "盛世鼎盛",
           "description": "商朝政治、经济、文化达到鼎盛",
-          "tag": "鼎盛"
+          "tag": "鼎盛",
+          "year_text": "约前1250-约前1192年"
         }
       ],
       "background": {
@@ -8174,8 +8192,8 @@
       "id": 204007,
       "name": "妇好征伐",
       "dynasty": "夏商西周",
-      "start_year": -1300,
-      "end_year": -1300,
+      "start_year": -1250,
+      "end_year": -1250,
       "summary": "妇好是武丁时期重要王后和军事人物，甲骨文记录了她参与多次对外战争和祭祀活动。",
       "event_type": "战争军事",
       "related_persons": [
@@ -8238,7 +8256,8 @@
           "year": -1300,
           "title": "妇好征伐",
           "description": "妇好是武丁时期重要王后和军事人物，甲骨文记录了她参与多次对外战争和祭祀活动。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "约前1250年"
         }
       ],
       "background": {
@@ -8358,8 +8377,8 @@
       "id": 204008,
       "name": "商王对外征伐",
       "dynasty": "夏商西周",
-      "start_year": -1300,
-      "end_year": -1300,
+      "start_year": -1250,
+      "end_year": -1192,
       "summary": "商王朝持续对周边方国和部族发动军事行动，以扩大和巩固王朝的政治影响。",
       "event_type": "战争军事",
       "related_persons": [
@@ -8422,7 +8441,8 @@
           "year": -1300,
           "title": "商王对外征伐",
           "description": "商王朝持续对周边方国和部族发动军事行动，以扩大和巩固王朝的政治影响。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "约前1250-约前1192年"
         }
       ],
       "background": {
@@ -8611,7 +8631,8 @@
           "year": -1100,
           "title": "商末政治危机",
           "description": "帝辛时期商王权威受到周边势力挑战，内部政治矛盾逐渐加深，商王朝统治基础不断削弱。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "约前11世纪"
         }
       ],
       "background": {
@@ -8825,31 +8846,36 @@
           "year": -1048,
           "title": "孟津观兵",
           "description": "周武王率八百诸侯会盟孟津，演练伐商",
-          "tag": "备战"
+          "tag": "备战",
+          "year_text": "前1046年前"
         },
         {
           "year": -1046,
           "title": "大军东进",
           "description": "率战车三百乘、精锐四万五千人东进伐商",
-          "tag": "出征"
+          "tag": "出征",
+          "year_text": "前1046年"
         },
         {
           "year": -1046,
           "title": "牧野誓师",
           "description": "在牧野发表《牧誓》，历数纣王四大罪状",
-          "tag": "誓师"
+          "tag": "誓师",
+          "year_text": "前1046年"
         },
         {
           "year": -1046,
           "title": "商军倒戈",
           "description": "商军奴隶阵前倒戈，周军势如破竹",
-          "tag": "决战"
+          "tag": "决战",
+          "year_text": "前1046年"
         },
         {
           "year": -1046,
           "title": "纣王自焚",
           "description": "纣王逃回朝歌登鹿台自焚，商朝灭亡",
-          "tag": "结局"
+          "tag": "结局",
+          "year_text": "前1046年"
         }
       ],
       "background": {
@@ -9030,7 +9056,7 @@
       "id": 204011,
       "name": "周公东征",
       "dynasty": "夏商西周",
-      "start_year": -1040,
+      "start_year": -1042,
       "end_year": -1040,
       "summary": "周武王去世后，周公旦辅佐周成王，平定武庚及管叔鲜、蔡叔度、霍叔处等势力的叛乱，巩固西周统治。",
       "event_type": "战争军事",
@@ -9109,7 +9135,8 @@
           "year": -1040,
           "title": "周公东征",
           "description": "周武王去世后，周公旦辅佐周成王，平定武庚及管叔鲜、蔡叔度、霍叔处等势力的叛乱，巩固西周统治。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "前1042-前1040年"
         }
       ],
       "background": {
@@ -9241,8 +9268,8 @@
       "id": 204012,
       "name": "成康之治",
       "dynasty": "夏商西周",
-      "start_year": -1100,
-      "end_year": -1100,
+      "start_year": -1042,
+      "end_year": -996,
       "summary": "周成王、周康王时期政治秩序逐渐稳定，周王朝统治得到进一步巩固，后世称为“成康之治”。",
       "event_type": "盛世发展",
       "related_persons": [
@@ -9304,25 +9331,29 @@
           "year": -1035,
           "title": "成王亲政",
           "description": "周公还政后，周成王开始亲政",
-          "tag": "开启"
+          "tag": "开启",
+          "year_text": "前1036年"
         },
         {
           "year": -1030,
           "title": "册封诸侯",
           "description": "大规模分封诸侯，\"封建亲戚，以藩屏周\"",
-          "tag": "建制"
+          "tag": "建制",
+          "year_text": "前1036-前1021年"
         },
         {
           "year": -1020,
           "title": "康王继位",
           "description": "周康王继位，延续成王之治",
-          "tag": "延续"
+          "tag": "延续",
+          "year_text": "前1021年"
         },
         {
           "year": -1000,
           "title": "天下太平",
           "description": "成康时期天下安定，史称\"成康之治\"",
-          "tag": "盛世"
+          "tag": "盛世",
+          "year_text": "前1042-前996年"
         }
       ],
       "background": {
@@ -9471,8 +9502,8 @@
       "id": 204013,
       "name": "制礼作乐",
       "dynasty": "夏商西周",
-      "start_year": -1100,
-      "end_year": -1100,
+      "start_year": -1040,
+      "end_year": -1036,
       "summary": "周公旦等人在周初政治建设过程中完善礼乐秩序，将宗法、等级与政治秩序结合起来。",
       "event_type": "制度文化",
       "related_persons": [
@@ -9529,7 +9560,8 @@
           "year": -1100,
           "title": "制礼作乐",
           "description": "周公旦等人在周初政治建设过程中完善礼乐秩序，将宗法、等级与政治秩序结合起来。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "前1040-前1036年"
         }
       ],
       "background": {
@@ -9631,8 +9663,8 @@
       "id": 204014,
       "name": "分封制",
       "dynasty": "夏商西周",
-      "start_year": -1100,
-      "end_year": -1100,
+      "start_year": -1046,
+      "end_year": -771,
       "summary": "西周建立后，周王室将宗室、功臣等分封到各地建立诸侯国，形成周王室与诸侯之间的政治秩序。",
       "event_type": "制度建设",
       "related_persons": [
@@ -9694,7 +9726,8 @@
           "year": -1100,
           "title": "分封制",
           "description": "西周建立后，周王室将宗室、功臣等分封到各地建立诸侯国，形成周王室与诸侯之间的政治秩序。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "前1046-前771年"
         }
       ],
       "background": {
@@ -9878,25 +9911,29 @@
           "year": -850,
           "title": "厉王专利",
           "description": "周厉王实行\"专利\"政策，垄断山林川泽之利",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前841年前"
         },
         {
           "year": -845,
           "title": "卫巫弭谤",
           "description": "用卫巫监视国人，\"防民之口，甚于防川\"",
-          "tag": "暴政"
+          "tag": "暴政",
+          "year_text": "前841年前"
         },
         {
           "year": -841,
           "title": "暴动爆发",
           "description": "镐京国人暴动，围攻王宫",
-          "tag": "爆发"
+          "tag": "爆发",
+          "year_text": "前841年"
         },
         {
           "year": -841,
           "title": "厉王出逃",
           "description": "厉王仓皇出逃彘地，共和行政开始",
-          "tag": "转折"
+          "tag": "转折",
+          "year_text": "前841年"
         }
       ],
       "background": {
@@ -10010,7 +10047,7 @@
       "name": "宣王中兴",
       "dynasty": "夏商西周",
       "start_year": -827,
-      "end_year": -827,
+      "end_year": -782,
       "summary": "周宣王即位后整顿政治与军事，任用尹吉甫、方叔、召虎等人物处理周边局势，使周王室一度恢复统治力量。",
       "event_type": "政治事件",
       "related_persons": [
@@ -10078,25 +10115,29 @@
           "year": -827,
           "title": "宣王继位",
           "description": "在共和行政后继位，决心中兴周朝",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前827年"
         },
         {
           "year": -820,
           "title": "任用贤才",
           "description": "任用仲山甫、尹吉甫、南仲等贤臣",
-          "tag": "治政"
+          "tag": "治政",
+          "year_text": "前827年"
         },
         {
           "year": -810,
           "title": "征伐戎狄",
           "description": "派尹吉甫伐猃狁，取得重大胜利",
-          "tag": "武功"
+          "tag": "武功",
+          "year_text": "前827-前782年"
         },
         {
           "year": -800,
           "title": "中兴之世",
           "description": "周朝国力恢复，史称\"宣王中兴\"",
-          "tag": "鼎盛"
+          "tag": "鼎盛",
+          "year_text": "前827-前782年"
         }
       ],
       "background": {
@@ -10331,7 +10372,8 @@
           "year": -771,
           "title": "犬戎攻周",
           "description": "西周末年，周幽王时期政治局势恶化，犬戎等势力攻入镐京，周幽王在骊山附近被杀。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "前771年"
         }
       ],
       "background": {
@@ -10525,7 +10567,8 @@
           "year": -771,
           "title": "西周灭亡",
           "description": "犬戎攻破镐京后，周王室失去西部政治中心，周平王随后迁都洛邑，西周结束。",
-          "tag": "事件"
+          "tag": "事件",
+          "year_text": "前771年"
         }
       ],
       "background": {
@@ -10704,25 +10747,29 @@
           "year": -2070,
           "title": "大禹去世",
           "description": "大禹治水有功，受舜禅让而立，去世后传位伯益",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "约前2070年"
         },
         {
           "year": -2070,
           "title": "启夺王位",
           "description": "启不服伯益继位，以武力夺取政权",
-          "tag": "转折"
+          "tag": "转折",
+          "year_text": "约前2070年"
         },
         {
           "year": -2070,
           "title": "建立夏朝",
           "description": "启建立夏朝，定都阳城，开启世袭制",
-          "tag": "建国"
+          "tag": "建国",
+          "year_text": "约前2070年"
         },
         {
           "year": -2069,
           "title": "甘之战",
           "description": "征伐有扈氏，作《甘誓》，确立世袭制合法性",
-          "tag": "巩固"
+          "tag": "巩固",
+          "year_text": "约前2070年"
         }
       ],
       "background": {
@@ -10894,31 +10941,36 @@
           "year": -850,
           "title": "专利政策",
           "description": "周厉王任用荣夷公，垄断山林川泽之利",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前841年前"
         },
         {
           "year": -845,
           "title": "卫巫弭谤",
           "description": "用卫巫监视国人，\"国人莫敢言，道路以目\"",
-          "tag": "暴政"
+          "tag": "暴政",
+          "year_text": "前841年前"
         },
         {
           "year": -841,
           "title": "国人暴动",
           "description": "镐京国人暴动，围攻王宫",
-          "tag": "爆发"
+          "tag": "爆发",
+          "year_text": "前841年"
         },
         {
           "year": -841,
           "title": "厉王出逃",
           "description": "厉王出逃彘地，共和行政开始",
-          "tag": "转折"
+          "tag": "转折",
+          "year_text": "前841年"
         },
         {
           "year": -827,
           "title": "宣王继位",
           "description": "共和行政十四年后周宣王继位",
-          "tag": "延续"
+          "tag": "延续",
+          "year_text": "前827年"
         }
       ],
       "background": {
@@ -11050,7 +11102,7 @@
       "id": 204022,
       "name": "烽火戏诸侯",
       "dynasty": "夏商西周",
-      "start_year": -775,
+      "start_year": -782,
       "end_year": -771,
       "event_type": "政治事件",
       "summary": "周幽王为博褒姒一笑，点燃烽火台戏弄诸侯，失信于天下，最终犬戎来犯时无人救援。",
@@ -11119,31 +11171,36 @@
           "year": -782,
           "title": "幽王继位",
           "description": "继位后不理朝政，重用虢石父等佞臣",
-          "tag": "背景"
+          "tag": "背景",
+          "year_text": "前782年"
         },
         {
           "year": -779,
           "title": "宠幸褒姒",
           "description": "得到褒姒后倍加宠幸，废掉申后",
-          "tag": "导火索"
+          "tag": "导火索",
+          "year_text": "前779年"
         },
         {
           "year": -775,
           "title": "烽火戏诸侯",
           "description": "为博褒姒一笑，点燃烽火台，多次失信",
-          "tag": "失信"
+          "tag": "失信",
+          "year_text": "前779-前771年"
         },
         {
           "year": -771,
           "title": "犬戎破京",
           "description": "犬戎联合申侯进攻镐京，再燃烽火无诸侯来救",
-          "tag": "兵祸"
+          "tag": "兵祸",
+          "year_text": "前771年"
         },
         {
           "year": -771,
           "title": "西周灭亡",
           "description": "幽王被杀，镐京陷落，西周灭亡",
-          "tag": "亡国"
+          "tag": "亡国",
+          "year_text": "前771年"
         }
       ],
       "background": {

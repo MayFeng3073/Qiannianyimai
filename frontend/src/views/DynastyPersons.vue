@@ -11,7 +11,8 @@ const filterCategory = ref('all')
 const jsonData = ref<DynastyData | null>(null)
 
 const dynastyId = Number(route.params.id) || 100
-const dynasty = computed(() => dynasties.find(d => d.id === dynastyId))
+// JSON 数据优先：朝代页使用真实朝代 ID（106/112…），mock 仅保留旧 ID 兜底
+const dynasty = computed(() => jsonData.value?.dynasty || dynasties.find(d => d.id === dynastyId))
 
 const dynastyPersons = computed(() => {
   if (jsonData.value) {

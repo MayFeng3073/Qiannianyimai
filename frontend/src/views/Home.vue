@@ -1,7 +1,32 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { hotPersons, persons, events, dynasties } from '@/mock/data'
+import { getStats } from '@/services/familyStore'
+
+interface SearchEntry {
+  t: 'd' | 'p' | 'e' | 'k'
+  i?: number
+  n: string
+  s: string
+  l?: number
+  a?: string[]
+  d?: number
+  o?: string
+}
+interface DynastyLite {
+  id: number
+  name: string
+  start: number
+  end: number
+  capital: string
+  duration: string
+  summary: string
+}
+interface SearchIndex {
+  stats: { persons: number; events: number; works: number; relations: number; keywords: number; dynasties: number }
+  dynasties: DynastyLite[]
+  entries: SearchEntry[]
+}
 
 const router = useRouter()
 const searchQuery = ref('')
@@ -10,18 +35,276 @@ const isScrolled = ref(false)
 const visibleSections = ref<Record<string, boolean>>({})
 const animatedNumbers = ref<Record<string, number>>({})
 
-const popularSearches = ['李白', '武则天', '大禹治水', '唐朝', '丝绸之路', '辛亥革命']
+const popularSearches = ['李白', '武则天', '安史之乱', '唐朝', '丝绸之路', '辛亥革命']
+
+/* ---------------- 全库索引（首次交互时加载一次） ---------------- */
+const indexData = ref<SearchIndex | null>(null)
+const indexLoading = ref(false)
+const indexError = ref('')
+let indexPromise: Promise<void> | null = null
+
+const ensureIndex = (): Promise<void> => {
+  if (indexData.value) return Promise.resolve()
+  if (indexPromise) return indexPromise
+  indexLoading.value = true
+  indexPromise = fetch('/data/search-index.json')
+    .then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status)
+      return r.json()
+    })
+    .then((data: SearchIndex) => {
+      indexData.value = data
+    })
+    .catch(() => {
+      indexError.value = '索引加载失败，请检查网络后刷新'
+      indexPromise = null
+    })
+    .finally(() => {
+      indexLoading.value = false
+    })
+  return indexPromise
+}
+
+/* ---------------- 搜索交互 ---------------- */
+const searchOpen = ref(false)
+const activeIndex = ref(0)
+const searchBoxRef = ref<HTMLElement | null>(null)
+
+const TYPE_LABEL: Record<SearchEntry['t'], string> = { d: '朝代', p: '人物', e: '事件', k: '词条' }
+const TYPE_LIMIT: Record<SearchEntry['t'], number> = { d: 3, p: 5, e: 4, k: 3 }
+const TYPE_ORDER: SearchEntry['t'][] = ['d', 'p', 'e', 'k']
+
+const rankOf = (e: SearchEntry, q: string) => {
+  if (e.n === q) return 0
+  if (e.n.startsWith(q)) return 1
+  if (e.n.includes(q)) return 2
+  if ((e.a || []).some(x => x === q || x.startsWith(q))) return 1
+  if (e.s.includes(q)) return 3
+  return -1
+}
+
+const scoredMatches = computed(() => {
+  const data = indexData.value
+  const q = searchQuery.value.trim()
+  if (!data || !q) return []
+  const scored = data.entries
+    .map(e => ({ e, r: rankOf(e, q) }))
+    .filter(x => x.r >= 0)
+    .sort((x, y) => x.r - y.r || x.e.n.length - y.e.n.length)
+  // 词条与人物同名时只保留人物：词条本身没有独立页面，跳过去只会落在朝代首页
+  const personNames = new Set(scored.filter(x => x.e.t === 'p').map(x => x.e.n))
+  return scored.filter(x => x.e.t !== 'k' || !personNames.has(x.e.n))
+})
+
+const hitCount = computed(() => scoredMatches.value.length)
+
+const flatResults = computed<SearchEntry[]>(() => {
+  const out: SearchEntry[] = []
+  for (const t of TYPE_ORDER) {
+    scoredMatches.value.filter(x => x.e.t === t).slice(0, TYPE_LIMIT[t]).forEach(x => out.push(x.e))
+  }
+  return out
+})
+
+const resultGroups = computed(() => {
+  const groups: Array<{ t: SearchEntry['t']; label: string; items: SearchEntry[] }> = []
+  for (const e of flatResults.value) {
+    let g = groups.find(x => x.t === e.t)
+    if (!g) {
+      g = { t: e.t, label: TYPE_LABEL[e.t], items: [] }
+      groups.push(g)
+    }
+    g.items.push(e)
+  }
+  return groups
+})
+
+const openEntry = (e: SearchEntry) => {
+  searchOpen.value = false
+  if (e.t === 'd' && e.i) router.push(`/dynasty/${e.i}`)
+  else if (e.t === 'p' && e.i) router.push(e.l === 2 ? `/person/${e.i}/story` : `/person/${e.i}`)
+  else if (e.t === 'e' && e.i) router.push(`/event/${e.i}`)
+  else if (e.t === 'k' && e.d) router.push(`/dynasty/${e.d}?kw=${encodeURIComponent(e.n)}`)
+}
+
+const runSearch = () => {
+  ensureIndex()
+  const list = flatResults.value
+  if (!list.length) {
+    if (searchQuery.value.trim()) searchOpen.value = true
+    return
+  }
+  openEntry(list[Math.min(activeIndex.value, list.length - 1)])
+}
+
+const openSearch = () => {
+  ensureIndex()
+  searchOpen.value = true
+  activeIndex.value = 0
+}
+
+const onQueryInput = () => {
+  ensureIndex()
+  searchOpen.value = true
+  activeIndex.value = 0
+}
+
+const onSearchKey = (e: KeyboardEvent) => {
+  if (e.key === 'ArrowDown') {
+    e.preventDefault()
+    if (!searchOpen.value) { openSearch(); return }
+    if (flatResults.value.length) activeIndex.value = (activeIndex.value + 1) % flatResults.value.length
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault()
+    if (flatResults.value.length) {
+      activeIndex.value = (activeIndex.value - 1 + flatResults.value.length) % flatResults.value.length
+    }
+  } else if (e.key === 'Enter') {
+    e.preventDefault()
+    runSearch()
+  } else if (e.key === 'Escape') {
+    searchOpen.value = false
+  }
+}
+
+const pickHot = (term: string) => {
+  searchQuery.value = term
+  openSearch()
+}
+
+const clearSearch = () => {
+  searchQuery.value = ''
+  activeIndex.value = 0
+  searchOpen.value = false
+}
+
+const onDocMouseDown = (ev: MouseEvent) => {
+  if (!searchOpen.value) return
+  const box = searchBoxRef.value
+  if (box && !box.contains(ev.target as Node)) searchOpen.value = false
+}
+
+/* ---------------- 配图（与人物/事件数据同一套生成规则） ---------------- */
+const imageFor = (name: string, kind: 'person' | 'event' | 'dynasty') => {
+  const size = kind === 'person' ? 'portrait_3_4' : 'landscape_16_9'
+  const phrase = kind === 'person'
+    ? `ancient chinese historical figure ${name} traditional ink painting style portrait`
+    : kind === 'dynasty'
+      ? `ancient chinese ${name} dynasty landscape traditional ink painting style`
+      : `ancient chinese historical event ${name} traditional ink painting style`
+  return `https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent(phrase)}&image_size=${size}`
+}
+
+/* ---------------- 继续探索：每日轮换内容 ---------------- */
+const HOT_PERSON_NAMES = ['李白', '杜甫', '武则天', '李世民']
+const dayNumber = Math.floor(Date.now() / 86400000)
+
+const dailyEvent = computed<SearchEntry | null>(() => {
+  const events = indexData.value ? indexData.value.entries.filter(e => e.t === 'e') : []
+  return events.length ? events[dayNumber % events.length] : null
+})
+
+const dailyDynasty = computed<DynastyLite | null>(() => {
+  const list = indexData.value ? indexData.value.dynasties : []
+  return list.length ? list[dayNumber % list.length] : null
+})
+
+const dailyDynastyDesc = computed(() => {
+  const s = dailyDynasty.value?.summary || ''
+  const first = s.split(/[。；]/)[0]
+  return first ? first + '。' : ''
+})
+
+const hotPersons = computed<SearchEntry[]>(() => {
+  const data = indexData.value
+  if (!data) return []
+  return HOT_PERSON_NAMES
+    .map(n => data.entries.find(e => e.t === 'p' && e.n === n))
+    .filter((e): e is SearchEntry => !!e)
+})
+
+/* ---------------- 统计数字 ---------------- */
+const stats = ref({ persons: 0, events: 0, works: 0, family: 0 })
+const statisticsVisible = ref(false)
+let countersStarted = false
+
+const fmtNum = (n?: number) => (n || 0).toLocaleString('en-US')
+
+const animateNumbers = () => {
+  if (countersStarted || !statisticsVisible.value) return
+  if (!stats.value.persons) return
+  countersStarted = true
+  const items = [
+    { id: 'person_count', target: stats.value.persons, duration: 2200 },
+    { id: 'event_count', target: stats.value.events, duration: 2000 },
+    { id: 'work_count', target: stats.value.works, duration: 2400 },
+    { id: 'family_count', target: stats.value.family, duration: 1600 }
+  ]
+  for (const { id, target, duration } of items) {
+    const from = animatedNumbers.value[id] || 0
+    const startTime = performance.now()
+    const update = (now: number) => {
+      const progress = Math.min((now - startTime) / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3)
+      animatedNumbers.value[id] = Math.floor(from + (target - from) * eased)
+      if (progress < 1) requestAnimationFrame(update)
+      else animatedNumbers.value[id] = target
+    }
+    requestAnimationFrame(update)
+  }
+}
+
+// 若统计卡片始终未进入视口（或观察器未触发），直接落定真实数值，避免长期显示 0
+const settleNumbers = () => {
+  if (countersStarted) return
+  countersStarted = true
+  animatedNumbers.value = {
+    person_count: stats.value.persons,
+    event_count: stats.value.events,
+    work_count: stats.value.works,
+    family_count: stats.value.family
+  }
+}
+
+const loadStats = async () => {
+  await ensureIndex()
+  const s = indexData.value?.stats
+  if (s) {
+    stats.value.persons = s.persons
+    stats.value.events = s.events
+    stats.value.works = s.works
+  }
+  animateNumbers()
+  setTimeout(() => {
+    if (!statisticsVisible.value) settleNumbers()
+  }, 2000)
+}
+
+const loadFamilyCount = async () => {
+  try {
+    const f = await getStats()
+    stats.value.family = f.members + f.lifeEvents + f.stories + f.photos + f.historyLinks
+  } catch {
+    stats.value.family = 0
+  }
+  if (countersStarted) animatedNumbers.value.family_count = stats.value.family
+  else animateNumbers()
+}
+
+/* ---------------- 滚动动画 ---------------- */
+let sectionObserver: IntersectionObserver | null = null
 
 const animateElements = () => {
-  const observer = new IntersectionObserver(
+  sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         const id = entry.target.getAttribute('data-animate')
         if (id && entry.isIntersecting) {
           visibleSections.value[id] = true
-          observer.unobserve(entry.target)
-          
+          sectionObserver?.unobserve(entry.target)
+
           if (id === 'statistics') {
+            statisticsVisible.value = true
             animateNumbers()
           }
         }
@@ -31,36 +314,7 @@ const animateElements = () => {
   )
 
   document.querySelectorAll('[data-animate]').forEach((el) => {
-    observer.observe(el)
-  })
-
-  return observer
-}
-
-const animateNumbers = () => {
-  const stats = [
-    { id: 'person_count', target: 12634, duration: 2500 },
-    { id: 'event_count', target: 2851, duration: 2200 },
-    { id: 'relation_count', target: 6932, duration: 2800 },
-    { id: 'family_count', target: 1024, duration: 2000 }
-  ]
-
-  stats.forEach(({ id, target, duration }) => {
-    const start = 0
-    const startTime = performance.now()
-    
-    const update = (currentTime: number) => {
-      const elapsed = currentTime - startTime
-      const progress = Math.min(elapsed / duration, 1)
-      const eased = 1 - Math.pow(1 - progress, 3)
-      animatedNumbers.value[id] = Math.floor(start + (target - start) * eased)
-      
-      if (progress < 1) {
-        requestAnimationFrame(update)
-      }
-    }
-    
-    requestAnimationFrame(update)
+    sectionObserver!.observe(el)
   })
 }
 
@@ -73,33 +327,23 @@ onMounted(() => {
     isLoaded.value = true
   }, 50)
 
-  const observer = animateElements()
-  onUnmounted(() => {
-    observer.disconnect()
-    window.removeEventListener('scroll', handleScroll)
-  })
-
+  animateElements()
   window.addEventListener('scroll', handleScroll)
+  document.addEventListener('mousedown', onDocMouseDown)
+
+  loadStats()
+  loadFamilyCount()
 })
 
-const handleSearch = () => {
-  if (searchQuery.value.trim()) {
-    const person = persons.find(p => p.name === searchQuery.value)
-    const event = events.find(e => e.name === searchQuery.value)
-    const dynasty = dynasties.find(d => d.name === searchQuery.value)
-    
-    if (person) {
-      router.push(`/person/${person.id}`)
-    } else if (event) {
-      router.push(`/event/${event.id}`)
-    } else if (dynasty) {
-      router.push(`/dynasty/${dynasty.id}`)
-    }
-  }
-}
+onUnmounted(() => {
+  sectionObserver?.disconnect()
+  window.removeEventListener('scroll', handleScroll)
+  document.removeEventListener('mousedown', onDocMouseDown)
+})
 
-const navigateToPerson = (id: number) => {
-  router.push(`/person/${id}`)
+const navigateToPerson = (id?: number, level?: number) => {
+  if (!id) return
+  router.push(level === 2 ? `/person/${id}/story` : `/person/${id}`)
 }
 
 const navigateToTimeline = () => {
@@ -108,6 +352,18 @@ const navigateToTimeline = () => {
 
 const navigateToFamily = () => {
   router.push('/family')
+}
+
+const navigateToTangPersons = () => {
+  router.push('/dynasty/112/persons')
+}
+
+const openDailyEvent = () => {
+  if (dailyEvent.value?.i) router.push(`/event/${dailyEvent.value.i}`)
+}
+
+const openDailyDynasty = () => {
+  if (dailyDynasty.value) router.push(`/dynasty/${dailyDynasty.value.id}`)
 }
 </script>
 
@@ -210,17 +466,66 @@ const navigateToFamily = () => {
           class="max-w-[800px] mx-auto mb-16"
           :class="isLoaded ? 'animate-fade-up fade-up-delay-4' : 'opacity-0'"
         >
-          <div class="bg-white/85 backdrop-blur-sm rounded-lg px-6 py-4 flex items-center gap-4 shadow-lg border border-white/60">
-            <svg class="w-5 h-5 text-[#4A4A3A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-            <input 
-              v-model="searchQuery"
-              @keyup.enter="handleSearch"
-              type="text" 
-              placeholder="搜索人物 / 事件 / 朝代..."
-              class="flex-1 bg-transparent outline-none text-[#2C2C2C] placeholder:text-[#4A4A3A]/50"
-            />
+          <div ref="searchBoxRef" class="relative">
+            <div class="bg-white/85 backdrop-blur-sm rounded-lg px-6 py-4 flex items-center gap-4 shadow-lg border border-white/60">
+              <svg class="w-5 h-5 text-[#4A4A3A] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+              <input 
+                v-model="searchQuery"
+                @focus="openSearch"
+                @input="onQueryInput"
+                @keydown="onSearchKey"
+                type="text" 
+                placeholder="搜索人物 / 事件 / 朝代 / 词条..."
+                class="flex-1 bg-transparent outline-none text-[#2C2C2C] placeholder:text-[#4A4A3A]/50"
+              />
+              <button 
+                v-if="searchQuery"
+                @click="clearSearch"
+                class="text-[#4A4A3A]/40 hover:text-[#4A4A3A] text-lg leading-none shrink-0"
+                aria-label="清空"
+              >×</button>
+            </div>
+
+            <div 
+              v-if="searchOpen"
+              class="absolute left-0 right-0 top-full mt-2 z-50 max-h-[440px] overflow-y-auto rounded-lg bg-white shadow-2xl border border-[#355C5A]/10 text-left"
+            >
+              <div v-if="indexLoading && !indexData" class="px-5 py-6 text-sm text-[#4A4A3A]/60">
+                正在加载全库索引…
+              </div>
+              <div v-else-if="indexError" class="px-5 py-6 text-sm text-[#C34739]">
+                {{ indexError }}
+              </div>
+              <div v-else-if="!searchQuery.trim()" class="px-5 py-6 text-sm text-[#4A4A3A]/60">
+                输入人物、事件、朝代或词条名称开始搜索
+              </div>
+              <div v-else-if="!flatResults.length" class="px-5 py-6 text-sm text-[#4A4A3A]/60">
+                未找到「{{ searchQuery }}」相关内容，试试朝代（唐）、人物（李白）或事件（安史之乱）
+              </div>
+              <template v-else>
+                <div v-for="group in resultGroups" :key="group.t">
+                  <div class="px-5 pt-3 pb-1 text-xs tracking-widest text-[#4A4A3A]/45">{{ group.label }}</div>
+                  <div 
+                    v-for="item in group.items" 
+                    :key="group.t + '-' + item.n + '-' + (item.i || item.d || '')"
+                    @click="openEntry(item)"
+                    @mouseenter="activeIndex = flatResults.indexOf(item)"
+                    class="px-5 py-2.5 cursor-pointer flex items-center gap-3 transition-colors"
+                    :class="activeIndex === flatResults.indexOf(item) ? 'bg-[#355C5A]/10' : 'hover:bg-[#355C5A]/5'"
+                  >
+                    <span class="text-sm text-[#2C2C2C] font-medium whitespace-nowrap">{{ item.n }}</span>
+                    <span class="text-xs text-[#4A4A3A]/55 truncate">{{ item.s }}</span>
+                    <span class="ml-auto text-[10px] px-1.5 py-0.5 rounded border border-[#D8B26A]/40 text-[#8B5A2B] shrink-0">{{ TYPE_LABEL[item.t] }}</span>
+                  </div>
+                </div>
+                <div class="px-5 py-2.5 border-t border-[#355C5A]/10 flex items-center justify-between text-[11px] text-[#4A4A3A]/45">
+                  <span>共 {{ hitCount }} 条，展示前 {{ flatResults.length }} 条</span>
+                  <span>↑↓ 选择 · 回车打开 · Esc 关闭</span>
+                </div>
+              </template>
+            </div>
           </div>
           
           <div class="flex flex-wrap items-center justify-center gap-2 mt-4">
@@ -228,7 +533,7 @@ const navigateToFamily = () => {
             <button 
               v-for="term in popularSearches" 
               :key="term"
-              @click="searchQuery = term; handleSearch()"
+              @click="pickHot(term)"
               class="px-3 py-1 text-xs bg-white/60 hover:bg-[#355C5A]/10 hover:text-[#355C5A] rounded-md transition-colors border border-[#355C5A]/10"
             >{{ term }}</button>
           </div>
@@ -312,20 +617,23 @@ const navigateToFamily = () => {
                 </svg>
                 <span class="text-sm font-medium text-[#2C2C2C]">今日历史</span>
               </div>
-              <button class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
+              <button @click="navigateToTimeline" class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="h-36 rounded-md overflow-hidden mb-3">
                 <img 
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=chinese%20revolution%20wuchang%20uprising%201911%20historical%20painting%20style&image_size=landscape_16_9"
-                  alt="今日历史"
+                  :src="dailyEvent ? imageFor(dailyEvent.n, 'event') : ''"
+                  :alt="dailyEvent ? dailyEvent.n : '今日历史'"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <div class="text-xs text-[#4A4A3A]/60 mb-1">1911年10月10日</div>
-              <h4 class="font-calligraphy text-lg text-[#2C2C2C] mb-1">武昌起义</h4>
-              <p class="text-sm text-[#4A4A3A]/80 line-clamp-2 mb-3 flex-1">辛亥革命的开端，打响了推翻清王朝统治的第一枪。</p>
-              <button class="w-full py-2 text-sm text-[#355C5A] hover:bg-[#355C5A]/5 rounded-md transition-colors">查看详情</button>
+              <template v-if="dailyEvent">
+                <div class="text-xs text-[#4A4A3A]/60 mb-1">{{ dailyEvent.s }}</div>
+                <h4 class="font-calligraphy text-lg text-[#2C2C2C] mb-1">{{ dailyEvent.n }}</h4>
+                <p class="text-sm text-[#4A4A3A]/80 line-clamp-2 mb-3 flex-1">{{ dailyEvent.o }}</p>
+                <button @click="openDailyEvent" class="w-full py-2 text-sm text-[#355C5A] hover:bg-[#355C5A]/5 rounded-md transition-colors">查看详情</button>
+              </template>
+              <div v-else class="flex-1 flex items-center justify-center text-sm text-[#4A4A3A]/50">内容加载中…</div>
             </div>
           </div>
 
@@ -340,26 +648,29 @@ const navigateToFamily = () => {
                 </svg>
                 <span class="text-sm font-medium text-[#2C2C2C]">热门人物</span>
               </div>
-              <button class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
+              <button @click="navigateToTangPersons" class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
                 <div 
-                  v-for="person in hotPersons.slice(0, 4)" 
-                  :key="person.id"
-                  @click="navigateToPerson(person.id)"
+                  v-for="person in hotPersons" 
+                  :key="person.i"
+                  @click="navigateToPerson(person.i, person.l)"
                   class="cursor-pointer"
                 >
                   <div class="aspect-[3/4] rounded-md overflow-hidden mb-2 bg-[#F5F2EC]">
-                    <img :src="person.image_url" :alt="person.name" class="w-full h-full object-cover" />
+                    <img :src="imageFor(person.n, 'person')" :alt="person.n" class="w-full h-full object-cover" />
                   </div>
                   <div class="text-center">
-                    <span class="text-xs text-[#2C2C2C] block font-medium">{{ person.name }}</span>
-                    <span class="text-xs text-[#4A4A3A]/60">{{ person.dynasty }}</span>
+                    <span class="text-xs text-[#2C2C2C] block font-medium">{{ person.n }}</span>
+                    <span class="text-xs text-[#4A4A3A]/60">{{ person.s.split(' · ')[0] }}</span>
                   </div>
                 </div>
+                <div v-if="!hotPersons.length" class="col-span-4 py-10 text-center text-sm text-[#4A4A3A]/50">
+                  人物数据加载中…
+                </div>
               </div>
-              <button class="w-full py-2 text-sm text-[#C34739] hover:bg-[#C34739]/5 rounded-md transition-colors mt-auto">全部人物</button>
+              <button @click="navigateToTangPersons" class="w-full py-2 text-sm text-[#C34739] hover:bg-[#C34739]/5 rounded-md transition-colors mt-auto">全部人物</button>
             </div>
           </div>
 
@@ -374,19 +685,22 @@ const navigateToFamily = () => {
                 </svg>
                 <span class="text-sm font-medium text-[#2C2C2C]">为你推荐</span>
               </div>
-              <button class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
+              <button @click="navigateToTimeline" class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="h-36 rounded-md overflow-hidden mb-3">
                 <img 
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=tang%20dynasty%20chinese%20city%20market%20ancient%20painting%20style%20bustling%20scene&image_size=landscape_16_9"
-                  alt="为你推荐"
+                  :src="dailyDynasty ? imageFor(dailyDynasty.name, 'dynasty') : ''"
+                  :alt="dailyDynasty ? dailyDynasty.name + '朝' : '为你推荐'"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <h4 class="font-calligraphy text-lg text-[#2C2C2C] mb-1">盛世大唐：开放与繁荣的时代</h4>
-              <p class="text-sm text-[#4A4A3A]/80 line-clamp-2 mb-3 flex-1">了解唐朝如何成为当时世界上最强盛的国家之一。</p>
-              <button class="w-full py-2 text-sm text-[#C34739] hover:bg-[#C34739]/5 rounded-md transition-colors">开始探索</button>
+              <template v-if="dailyDynasty">
+                <h4 class="font-calligraphy text-lg text-[#2C2C2C] mb-1">{{ dailyDynasty.name }}朝 · {{ dailyDynasty.duration }}</h4>
+                <p class="text-sm text-[#4A4A3A]/80 line-clamp-2 mb-3 flex-1">{{ dailyDynastyDesc }}</p>
+                <button @click="openDailyDynasty" class="w-full py-2 text-sm text-[#C34739] hover:bg-[#C34739]/5 rounded-md transition-colors">开始探索</button>
+              </template>
+              <div v-else class="flex-1 flex items-center justify-center text-sm text-[#4A4A3A]/50">内容加载中…</div>
             </div>
           </div>
         </div>
@@ -406,7 +720,7 @@ const navigateToFamily = () => {
               </svg>
             </div>
             <div class="font-calligraphy text-3xl md:text-4xl text-[#2C2C2C] mb-2">
-              {{ animatedNumbers['person_count'] || '12,634' }}
+              {{ fmtNum(animatedNumbers['person_count']) }}
             </div>
             <div class="text-base text-[#4A4A3A] font-medium">历史人物</div>
             <div class="text-xs text-[#4A4A3A]/50 mt-1">正在不断丰富中</div>
@@ -422,7 +736,7 @@ const navigateToFamily = () => {
               </svg>
             </div>
             <div class="font-calligraphy text-3xl md:text-4xl text-[#2C2C2C] mb-2">
-              {{ animatedNumbers['event_count'] || '2,851' }}
+              {{ fmtNum(animatedNumbers['event_count']) }}
             </div>
             <div class="text-base text-[#4A4A3A] font-medium">历史事件</div>
             <div class="text-xs text-[#4A4A3A]/50 mt-1">正在不断丰富中</div>
@@ -438,7 +752,7 @@ const navigateToFamily = () => {
               </svg>
             </div>
             <div class="font-calligraphy text-3xl md:text-4xl text-[#2C2C2C] mb-2">
-              {{ animatedNumbers['relation_count'] || '6,932' }}
+              {{ fmtNum(animatedNumbers['work_count']) }}
             </div>
             <div class="text-base text-[#4A4A3A] font-medium">历史作品</div>
             <div class="text-xs text-[#4A4A3A]/50 mt-1">正在不断丰富中</div>
@@ -454,7 +768,7 @@ const navigateToFamily = () => {
               </svg>
             </div>
             <div class="font-calligraphy text-3xl md:text-4xl text-[#2C2C2C] mb-2">
-              {{ animatedNumbers['family_count'] || '1,024+' }}
+              {{ fmtNum(animatedNumbers['family_count']) }}
             </div>
             <div class="text-base text-[#4A4A3A] font-medium">家族记忆</div>
             <div class="text-xs text-[#4A4A3A]/50 mt-1">等待你的记录</div>

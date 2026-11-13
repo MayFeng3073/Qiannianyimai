@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+/* 书法字体改为本地自托管：Google Fonts 的中文子集按 unicode-range 拆分，
+   网络不稳时只会加载部分子集，导致标题时好时坏。此文件为完整字库，离线可用。 */
+@font-face {
+  font-family: 'Ma Shan Zheng';
+  src: url('/fonts/MaShanZheng-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;

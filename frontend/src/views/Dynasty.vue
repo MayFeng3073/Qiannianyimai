@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { dynasties, persons, events, dynastyStatistics, occupationDistribution } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
 import ComingSoon from '@/components/ComingSoon.vue'
+import DynastyTerritoryMap from '@/components/DynastyTerritoryMap.vue'
 import * as echarts from 'echarts'
 
 const route = useRoute()
@@ -1423,9 +1424,28 @@ onMounted(async () => {
     initAllCharts()
   }
 
+  await focusKeywordFromQuery()
+
   // 保存 observer 以便卸载时断开
   wordCloudResizeObserver = cloudResizeObserver
 })
+
+// 首页搜索词条 → /dynasty/:id?kw=xxx：滚动到词云并固定该词释义
+const focusKeywordFromQuery = async () => {
+  const kwName = String(route.query.kw || '')
+  if (!kwName) return
+  await nextTick()
+  const target = keywordCloudData.value.find(k => k.name === kwName)
+  if (!target) return
+  pinnedKw.value = target
+  await nextTick()
+  wordCloudRef.value?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
+
+watch(
+  () => route.query.kw,
+  () => { focusKeywordFromQuery() }
+)
 
 onUnmounted(() => {
   window.removeEventListener('resize', handleResize)
@@ -1573,7 +1593,13 @@ onUnmounted(() => {
                 <span class="w-1 h-7 bg-[#C34739] rounded-full"></span>
                 疆域示意图
               </h2>
-              <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4">
+              <!-- 方案 A+D 试点：唐宋元改用「真实省界底图 + 控制等级着色」，其余朝代沿用旧示意图 -->
+              <DynastyTerritoryMap
+                v-if="[112, 113, 114].includes(dynastyId)"
+                :dynasty-id="dynastyId"
+                :dynasty-name="dynasty?.name || ''"
+              />
+              <div v-else class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4">
                 <!-- Two-layer China Territory Map: Gray = Modern China, Colored = Dynasty Territory -->
                 <svg viewBox="0 0 500 400" class="w-full" style="max-height: 420px;">
                   <!-- Ocean background -->
