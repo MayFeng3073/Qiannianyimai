@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, type NavigationGuard } from 'vue-router'
 import Home from '@/views/Home.vue'
 import Timeline from '@/views/Timeline.vue'
 import Dynasty from '@/views/Dynasty.vue'
@@ -13,6 +13,24 @@ import FamilyMemberProfile from '@/views/FamilyMemberProfile.vue'
 import MemberForm from '@/components/family/MemberForm.vue'
 import Profile from '@/views/Profile.vue'
 import { persons } from '@/mock/data'
+
+// 旧版遗留的占位朝代 id → 真实朝代 id，避免旧链接落到只有几个人物的假页面
+const LEGACY_DYNASTY_IDS: Record<string, string> = {
+  '1': '112',
+  '2': '107',
+  '3': '113',
+  '4': '115',
+  '5': '116'
+}
+
+const legacyDynastyRedirect: NavigationGuard = (to, _from, next) => {
+  const realId = LEGACY_DYNASTY_IDS[String(to.params.id)]
+  if (realId) {
+    next({ path: to.path.replace(/^\/dynasty\/[^/]+/, `/dynasty/${realId}`), replace: true })
+  } else {
+    next()
+  }
+}
 
 const router = createRouter({
   history: createWebHistory(),
@@ -30,17 +48,20 @@ const router = createRouter({
     {
       path: '/dynasty/:id',
       name: 'Dynasty',
-      component: Dynasty
+      component: Dynasty,
+      beforeEnter: legacyDynastyRedirect
     },
     {
       path: '/dynasty/:id/events',
       name: 'DynastyEvents',
-      component: DynastyEvents
+      component: DynastyEvents,
+      beforeEnter: legacyDynastyRedirect
     },
     {
       path: '/dynasty/:id/persons',
       name: 'DynastyPersons',
-      component: DynastyPersons
+      component: DynastyPersons,
+      beforeEnter: legacyDynastyRedirect
     },
     {
       path: '/person/:id',

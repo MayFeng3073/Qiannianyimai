@@ -139,13 +139,14 @@ const runSearch = () => {
 
 const openSearch = () => {
   ensureIndex()
-  searchOpen.value = true
+  // 空输入时不弹下拉，由输入框 placeholder 承担提示
+  searchOpen.value = !!searchQuery.value.trim()
   activeIndex.value = 0
 }
 
 const onQueryInput = () => {
   ensureIndex()
-  searchOpen.value = true
+  searchOpen.value = !!searchQuery.value.trim()
   activeIndex.value = 0
 }
 
@@ -167,9 +168,16 @@ const onSearchKey = (e: KeyboardEvent) => {
   }
 }
 
-const pickHot = (term: string) => {
+const pickHot = async (term: string) => {
   searchQuery.value = term
-  openSearch()
+  await ensureIndex()
+  const first = flatResults.value[0]
+  if (first) {
+    // 热门搜索一点直达对应详情页
+    openEntry(first)
+    return
+  }
+  searchOpen.value = true
 }
 
 const clearSearch = () => {
@@ -254,18 +262,6 @@ const animateNumbers = () => {
   }
 }
 
-// 若统计卡片始终未进入视口（或观察器未触发），直接落定真实数值，避免长期显示 0
-const settleNumbers = () => {
-  if (countersStarted) return
-  countersStarted = true
-  animatedNumbers.value = {
-    person_count: stats.value.persons,
-    event_count: stats.value.events,
-    work_count: stats.value.works,
-    family_count: stats.value.family
-  }
-}
-
 const loadStats = async () => {
   await ensureIndex()
   const s = indexData.value?.stats
@@ -275,9 +271,6 @@ const loadStats = async () => {
     stats.value.works = s.works
   }
   animateNumbers()
-  setTimeout(() => {
-    if (!statisticsVisible.value) settleNumbers()
-  }, 2000)
 }
 
 const loadFamilyCount = async () => {
@@ -331,6 +324,8 @@ onMounted(() => {
   window.addEventListener('scroll', handleScroll)
   document.addEventListener('mousedown', onDocMouseDown)
 
+  // 索引立即预加载，让继续探索卡片内容尽早与淡入动效同步
+  ensureIndex()
   loadStats()
   loadFamilyCount()
 })
@@ -497,9 +492,6 @@ const openDailyDynasty = () => {
               </div>
               <div v-else-if="indexError" class="px-5 py-6 text-sm text-[#C34739]">
                 {{ indexError }}
-              </div>
-              <div v-else-if="!searchQuery.trim()" class="px-5 py-6 text-sm text-[#4A4A3A]/60">
-                输入人物、事件、朝代或词条名称开始搜索
               </div>
               <div v-else-if="!flatResults.length" class="px-5 py-6 text-sm text-[#4A4A3A]/60">
                 未找到「{{ searchQuery }}」相关内容，试试朝代（唐）、人物（李白）或事件（安史之乱）

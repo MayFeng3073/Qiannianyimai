@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿export interface NarrativeRelationNode {
   id: string
   name: string
   type: 'person' | 'event' | 'story'
@@ -173,101 +173,6 @@ export const dynasties: Dynasty[] = [
     }
   },
   {
-    id: 1,
-    name: '唐朝',
-    english_name: 'Tang Dynasty',
-    start_year: 618,
-    end_year: 907,
-    summary: '中国古代文化最繁荣、国际交流最活跃的时期之一，也是制度、经济与文化高度发展的黄金时代。',
-    capital: '长安（今西安）',
-    population: '约8000万',
-    duration: '289年',
-    representative_buildings: ['大明宫', '大雁塔', '小雁塔'],
-    characteristics: {
-      politics: 95,
-      culture: 100,
-      military: 92,
-      technology: 86,
-      openness: 98
-    }
-  },
-  {
-    id: 2,
-    name: '汉朝',
-    english_name: 'Han Dynasty',
-    start_year: -202,
-    end_year: 220,
-    summary: '中国历史上最强大的朝代之一，奠定了汉民族的文化认同和政治制度基础。',
-    capital: '长安、洛阳',
-    population: '约5700万',
-    duration: '422年',
-    representative_buildings: ['未央宫', '建章宫', '长城'],
-    characteristics: {
-      politics: 90,
-      culture: 88,
-      military: 95,
-      technology: 82,
-      openness: 85
-    }
-  },
-  {
-    id: 3,
-    name: '宋朝',
-    english_name: 'Song Dynasty',
-    start_year: 960,
-    end_year: 1279,
-    summary: '中国历史上经济最发达、文化最昌盛的时期，四大发明中的三项在这一时期成熟。',
-    capital: '开封、临安',
-    population: '约1亿',
-    duration: '319年',
-    representative_buildings: ['清明上河园', '灵隐寺', '滕王阁'],
-    characteristics: {
-      politics: 85,
-      culture: 98,
-      military: 65,
-      technology: 95,
-      openness: 75
-    }
-  },
-  {
-    id: 4,
-    name: '明朝',
-    english_name: 'Ming Dynasty',
-    start_year: 1368,
-    end_year: 1644,
-    summary: '中国历史上最后一个由汉族建立的大一统王朝，手工业和商品经济繁荣，出现资本主义萌芽。',
-    capital: '南京、北京',
-    population: '约1.5亿',
-    duration: '276年',
-    representative_buildings: ['紫禁城', '明长城', '天坛'],
-    characteristics: {
-      politics: 88,
-      culture: 92,
-      military: 85,
-      technology: 90,
-      openness: 70
-    }
-  },
-  {
-    id: 5,
-    name: '清朝',
-    english_name: 'Qing Dynasty',
-    start_year: 1644,
-    end_year: 1912,
-    summary: '中国历史上最后一个封建王朝，疆域辽阔，统一多民族国家得到巩固和发展。',
-    capital: '北京',
-    population: '约4亿',
-    duration: '268年',
-    representative_buildings: ['圆明园', '颐和园', '承德避暑山庄'],
-    characteristics: {
-      politics: 82,
-      culture: 85,
-      military: 88,
-      technology: 75,
-      openness: 45
-    }
-  },
-{
     id: 201,
   name: '夏商西周',
   english_name: 'Xia-Shang-Western Zhou',

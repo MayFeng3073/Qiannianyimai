@@ -77,6 +77,103 @@ const characteristics = computed(() => {
   ]
 })
 
+/* ---------------- 相关朝代推荐：内容相关优先，时间相邻兜底 ---------------- */
+interface RelatedDynastyItem {
+  id: number
+  name: string
+  start_year: number
+  end_year: number
+  reason: string
+}
+
+const RELATED_DYNASTIES: Record<number, Array<{ id: number; reason: string }>> = {
+  100: [{ id: 201, reason: '三皇五帝 → 三代之治' }],
+  201: [
+    { id: 100, reason: '文明之源' },
+    { id: 202, reason: '礼崩乐坏' }
+  ],
+  202: [
+    { id: 203, reason: '诸子争鸣延续' },
+    { id: 201, reason: '礼乐之源' }
+  ],
+  203: [
+    { id: 202, reason: '思想争鸣' },
+    { id: 106, reason: '秦并六国' }
+  ],
+  106: [
+    { id: 203, reason: '承前' },
+    { id: 107, reason: '汉承秦制' },
+    { id: 111, reason: '同为短命而制度开创' }
+  ],
+  107: [
+    { id: 106, reason: '汉承秦制' },
+    { id: 109, reason: '汉末群雄' },
+    { id: 112, reason: '汉唐并称盛世' }
+  ],
+  109: [
+    { id: 107, reason: '承接' },
+    { id: 110, reason: '归晋' }
+  ],
+  110: [
+    { id: 109, reason: '承接' },
+    { id: 111, reason: '北朝 → 统一' },
+    { id: 114, reason: '北方民族政权' }
+  ],
+  111: [
+    { id: 110, reason: '承前' },
+    { id: 112, reason: '隋唐一体' },
+    { id: 106, reason: '二世而亡的制度王朝' }
+  ],
+  112: [
+    { id: 111, reason: '承前' },
+    { id: 107, reason: '汉唐盛世' },
+    { id: 113, reason: '唐宋文化高峰' }
+  ],
+  113: [
+    { id: 112, reason: '唐宋' },
+    { id: 114, reason: '宋元更替' },
+    { id: 115, reason: '市民经济与文人政治' }
+  ],
+  114: [
+    { id: 113, reason: '承前' },
+    { id: 115, reason: '后继' },
+    { id: 116, reason: '蒙元满清同为非汉民族政权' }
+  ],
+  115: [
+    { id: 114, reason: '承前' },
+    { id: 116, reason: '明清鼎革' },
+    { id: 113, reason: '市民文化' }
+  ],
+  116: [
+    { id: 115, reason: '明清' },
+    { id: 114, reason: '非汉民族政权' },
+    { id: 117, reason: '清末民初' }
+  ],
+  117: [{ id: 116, reason: '帝制终结' }]
+}
+
+const relatedDynasties = computed<RelatedDynastyItem[]>(() => {
+  const ordered = [...dynasties].sort((a, b) => a.start_year - b.start_year)
+  const build = (id: number, reason: string): RelatedDynastyItem | null => {
+    const d = ordered.find(x => x.id === id)
+    return d ? { id: d.id, name: d.name, start_year: d.start_year, end_year: d.end_year, reason } : null
+  }
+
+  const curated = RELATED_DYNASTIES[dynastyId.value]
+  if (curated && curated.length) {
+    return curated
+      .map(x => build(x.id, x.reason))
+      .filter((x): x is RelatedDynastyItem => !!x)
+  }
+
+  // 无策展关系时回退到时间相邻（前朝 + 后朝），不硬凑满 3 条
+  const i = ordered.findIndex(d => d.id === dynastyId.value)
+  if (i < 0) return []
+  return [ordered[i - 1], ordered[i + 1]]
+    .filter((d): d is (typeof ordered)[number] => !!d)
+    .map(d => ({ id: d.id, name: d.name, start_year: d.start_year, end_year: d.end_year, reason: '时间相邻' }))
+})
+
 const eventTypeStats = computed(() => {
   const typeCounts: Record<string, number> = {}
   dynastyEvents.value.forEach(e => {
@@ -2024,8 +2121,9 @@ onUnmounted(() => {
             <h4 class="text-sm text-[#4A4A3A]/60 mb-4 font-medium">相关朝代推荐</h4>
             <div class="flex gap-4">
               <div 
-                v-for="d in dynasties.filter(d => d.id !== dynastyId).slice(0, 3)" 
+                v-for="d in relatedDynasties" 
                 :key="d.id"
+                :title="d.reason"
                 @click="router.push('/dynasty/' + d.id)"
                 class="bg-white/60 border border-[#D8B26A]/20 rounded-md p-4 flex-1 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
               >
