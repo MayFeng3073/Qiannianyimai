@@ -3,6 +3,8 @@ import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { dynasties, persons, events, dynastyStatistics, occupationDistribution } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
+import { RELATED_DYNASTIES } from '@/services/dynastyRelations'
+import { recordRecentDynasty } from '@/services/recentDynasties'
 import ComingSoon from '@/components/ComingSoon.vue'
 import DynastyTerritoryMap from '@/components/DynastyTerritoryMap.vue'
 import * as echarts from 'echarts'
@@ -84,72 +86,6 @@ interface RelatedDynastyItem {
   start_year: number
   end_year: number
   reason: string
-}
-
-const RELATED_DYNASTIES: Record<number, Array<{ id: number; reason: string }>> = {
-  100: [{ id: 201, reason: '三皇五帝 → 三代之治' }],
-  201: [
-    { id: 100, reason: '文明之源' },
-    { id: 202, reason: '礼崩乐坏' }
-  ],
-  202: [
-    { id: 203, reason: '诸子争鸣延续' },
-    { id: 201, reason: '礼乐之源' }
-  ],
-  203: [
-    { id: 202, reason: '思想争鸣' },
-    { id: 106, reason: '秦并六国' }
-  ],
-  106: [
-    { id: 203, reason: '承前' },
-    { id: 107, reason: '汉承秦制' },
-    { id: 111, reason: '同为短命而制度开创' }
-  ],
-  107: [
-    { id: 106, reason: '汉承秦制' },
-    { id: 109, reason: '汉末群雄' },
-    { id: 112, reason: '汉唐并称盛世' }
-  ],
-  109: [
-    { id: 107, reason: '承接' },
-    { id: 110, reason: '归晋' }
-  ],
-  110: [
-    { id: 109, reason: '承接' },
-    { id: 111, reason: '北朝 → 统一' },
-    { id: 114, reason: '北方民族政权' }
-  ],
-  111: [
-    { id: 110, reason: '承前' },
-    { id: 112, reason: '隋唐一体' },
-    { id: 106, reason: '二世而亡的制度王朝' }
-  ],
-  112: [
-    { id: 111, reason: '承前' },
-    { id: 107, reason: '汉唐盛世' },
-    { id: 113, reason: '唐宋文化高峰' }
-  ],
-  113: [
-    { id: 112, reason: '唐宋' },
-    { id: 114, reason: '宋元更替' },
-    { id: 115, reason: '市民经济与文人政治' }
-  ],
-  114: [
-    { id: 113, reason: '承前' },
-    { id: 115, reason: '后继' },
-    { id: 116, reason: '蒙元满清同为非汉民族政权' }
-  ],
-  115: [
-    { id: 114, reason: '承前' },
-    { id: 116, reason: '明清鼎革' },
-    { id: 113, reason: '市民文化' }
-  ],
-  116: [
-    { id: 115, reason: '明清' },
-    { id: 114, reason: '非汉民族政权' },
-    { id: 117, reason: '清末民初' }
-  ],
-  117: [{ id: 116, reason: '帝制终结' }]
 }
 
 const relatedDynasties = computed<RelatedDynastyItem[]>(() => {
@@ -1488,6 +1424,9 @@ const initAllCharts = () => {
     }, 100)
   })
 }
+
+// 记录最近浏览的朝代，供首页「为你推荐」使用
+watch(dynastyId, (id) => recordRecentDynasty(id), { immediate: true })
 
 watch([dynastyId, dynasty], () => {
   if (hasData.value) {

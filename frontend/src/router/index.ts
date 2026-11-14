@@ -121,9 +121,10 @@ const router = createRouter({
   scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition
-    } else {
-      return { top: 0, behavior: 'smooth' }
     }
+    // 直接归位：smooth 会让页面在新页面挂载后继续滚动，
+    // 与入场动效叠加成"整页上浮/弹跳"的观感。
+    return { top: 0 }
   }
 })
 

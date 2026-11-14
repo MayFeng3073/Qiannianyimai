@@ -2,6 +2,8 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { getStats } from '@/services/familyStore'
+import { relatedDynastyRefs } from '@/services/dynastyRelations'
+import { readRecentDynasties } from '@/services/recentDynasties'
 
 interface SearchEntry {
   t: 'd' | 'p' | 'e' | 'k'
@@ -12,6 +14,7 @@ interface SearchEntry {
   a?: string[]
   d?: number
   o?: string
+  w?: number
 }
 interface DynastyLite {
   id: number
@@ -203,32 +206,208 @@ const imageFor = (name: string, kind: 'person' | 'event' | 'dynasty') => {
   return `https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent(phrase)}&image_size=${size}`
 }
 
-/* ---------------- 继续探索：每日轮换内容 ---------------- */
-const HOT_PERSON_NAMES = ['李白', '杜甫', '武则天', '李世民']
-const dayNumber = Math.floor(Date.now() / 86400000)
+/* ---------------- 继续探索：日期种子 + 内容关联的确定性推荐 ---------------- */
+const mulberry32 = (seed: number) => {
+  let a = seed >>> 0
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0
+    let t = a
+    t = Math.imul(t ^ (t >>> 15), t | 1)
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+/** 本地日期序号：同一天固定、跨天变化 */
+const dayIndex = () => {
+  const now = new Date()
+  return Math.floor(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) / 86400000)
+}
+
+const shuffled = <T,>(list: T[], seed: number): T[] => {
+  const rnd = mulberry32(seed)
+  const arr = [...list]
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1))
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  return arr
+}
+
+// 冷门朝代曝光补偿：让夏商西周、春秋战国、晋南北朝、隋、元、民国也轮得到
+const COLD_BOOST: Record<number, number> = { 201: 2, 202: 2, 203: 2, 110: 2, 111: 2, 114: 2, 117: 2 }
+
+/** 一周内不重复的朝代序列（冷门朝代权重更高、更靠前） */
+const weeklyDynastyOrder = (week: number): number[] => {
+  const ids = (indexData.value?.dynasties || []).map(d => d.id)
+  if (!ids.length) return []
+  const pool: number[] = []
+  for (const id of ids) {
+    for (let i = 0; i < (COLD_BOOST[id] || 1); i++) pool.push(id)
+  }
+  return Array.from(new Set(shuffled(pool, week * 1013 + 17)))
+}
+
+const dynastyNameOf = (id: number) =>
+  (indexData.value?.dynasties || []).find(d => d.id === id)?.name || ''
+
+/** 当天「今日历史」所属朝代：按周轮换，跨周时避开前一天 */
+const dailyDynastyId = (day: number): number => {
+  const week = Math.floor(day / 7)
+  const dow = day - week * 7
+  const order = weeklyDynastyOrder(week)
+  if (!order.length) return 0
+  let id = order[dow % order.length]
+  if (dow === 0) {
+    const prevOrder = weeklyDynastyOrder(week - 1)
+    if (prevOrder.length && prevOrder[6] === id) id = order[(dow + 1) % order.length]
+  }
+  return id
+}
+
+const eventsByDynasty = computed(() => {
+  const map = new Map<number, SearchEntry[]>()
+  if (!indexData.value) return map
+  for (const e of indexData.value.entries) {
+    if (e.t !== 'e' || !e.i) continue
+    const did = e.d || Math.floor(e.i / 1000)
+    const list = map.get(did)
+    if (list) list.push(e)
+    else map.set(did, [e])
+  }
+  return map
+})
+
+const personsByDynasty = computed(() => {
+  const map = new Map<number, SearchEntry[]>()
+  if (!indexData.value) return map
+  for (const p of indexData.value.entries) {
+    if (p.t !== 'p' || !p.i) continue
+    const did = p.d || Math.floor(p.i / 1000)
+    const list = map.get(did)
+    if (list) list.push(p)
+    else map.set(did, [p])
+  }
+  return map
+})
 
 const dailyEvent = computed<SearchEntry | null>(() => {
-  const events = indexData.value ? indexData.value.entries.filter(e => e.t === 'e') : []
-  return events.length ? events[dayNumber % events.length] : null
+  if (!indexData.value) return null
+  const day = dayIndex()
+  let did = dailyDynastyId(day)
+  let list = eventsByDynasty.value.get(did) || []
+  // 优先选用带影响句、叙事完整的事件
+  const rich = list.filter(e => (e.o || '').length >= 12)
+  if (rich.length) list = rich
+  if (list.length) {
+    const maxW = Math.max(...list.map(e => e.w || 1))
+    const core = list.filter(e => (e.w || 1) >= maxW * 0.6)
+    if (core.length) list = core
+  }
+
+  if (!list.length) {
+    for (const alt of weeklyDynastyOrder(Math.floor(day / 7))) {
+      const l = eventsByDynasty.value.get(alt) || []
+      if (l.length) { did = alt; list = l; break }
+    }
+  }
+  if (!list.length) return null
+  // 按知名度加权抽取：叙事/人物/影响越完整的事件越容易被选中
+  const rnd = mulberry32(day * 7919 + did)
+  const total = list.reduce((sum, e) => sum + Math.max(1, e.w || 1), 0)
+  let r = rnd() * total
+  for (const e of list) {
+    r -= Math.max(1, e.w || 1)
+    if (r <= 0) return e
+  }
+  return list[list.length - 1]
 })
 
-const dailyDynasty = computed<DynastyLite | null>(() => {
-  const list = indexData.value ? indexData.value.dynasties : []
-  return list.length ? list[dayNumber % list.length] : null
+/** 热门人物：每天 4 个不同朝代、每朝 1 位，优先有独立故事页的人物 */
+const hotPersons = computed<SearchEntry[]>(() => {
+  if (!indexData.value) return []
+  const day = dayIndex()
+  const week = Math.floor(day / 7)
+  const dow = day - week * 7
+  const ids = indexData.value.dynasties.map(d => d.id)
+  const order = shuffled(ids, week * 7919 + 101)
+  if (!order.length) return []
+
+  const prevDay = day - 1
+  const prevWeek = Math.floor(prevDay / 7)
+  const prevDow = prevDay - prevWeek * 7
+  const prevOrder = shuffled(ids, prevWeek * 7919 + 101)
+
+  const out: SearchEntry[] = []
+  for (let k = 0; k < 4 && k < order.length; k++) {
+    const did = order[(dow * 4 + k) % order.length]
+    const all = personsByDynasty.value.get(did) || []
+    if (!all.length) continue
+    // 先按影响力取前 6 位候选，再按日期种子轮换，避免每天都是同一人
+    const pool = all
+      .slice()
+      .sort((a, b) => (b.w || 0) - (a.w || 0) || (a.i || 0) - (b.i || 0))
+      .slice(0, 6)
+    const size = pool.length
+    let person = pool[Math.floor(mulberry32(day * 104729 + did)() * size)]
+
+    // 同一朝代、同一位置昨天已推送过同一人时顺延一位
+    const prevDid = prevOrder[(prevDow * 4 + k) % prevOrder.length]
+    if (prevDid === did && pool.length > 1) {
+      const prevPerson = pool[Math.floor(mulberry32((day - 1) * 104729 + did)() * size)]
+      if (prevPerson && prevPerson.i === person.i) {
+        person = pool[(pool.indexOf(person) + 1) % pool.length]
+      }
+    }
+    if (person) out.push(person)
+  }
+  return out
 })
+
+/** 为你推荐：优先接着最近浏览的朝代，推荐内容相关的朝代 */
+const recommendation = computed<{ dynasty: DynastyLite; reason: string } | null>(() => {
+  const list = indexData.value?.dynasties || []
+  if (!list.length) return null
+  const byId = (id: number) => list.find(d => d.id === id)
+
+  // 另外两张卡已占用的朝代，避免三卡撞车
+  const used = new Set<number>()
+  const ev = dailyEvent.value
+  if (ev?.d) used.add(ev.d)
+  for (const p of hotPersons.value) {
+    if (p.d) used.add(p.d)
+  }
+
+  const recent = readRecentDynasties().find(id => !!byId(id))
+  if (recent) {
+    for (const ref of relatedDynastyRefs(recent)) {
+      if (used.has(ref.id)) continue
+      const d = byId(ref.id)
+      if (d) return { dynasty: d, reason: `你刚看过${dynastyNameOf(recent)} · ${ref.reason}` }
+    }
+    // 关联朝代都被占用时，退到时间上最近的未占用朝代
+    const ordered = [...list].sort((a, b) => a.start - b.start)
+    const i = ordered.findIndex(d => d.id === recent)
+    for (const step of [1, -1, 2, -2]) {
+      const d = ordered[i + step]
+      if (d && !used.has(d.id)) return { dynasty: d, reason: `你刚看过${dynastyNameOf(recent)} · 时间相邻` }
+    }
+  }
+
+  const day = dayIndex()
+  const order = weeklyDynastyOrder(Math.floor(day / 7))
+  const fallbackId = order.find(id => !used.has(id)) || order[0]
+  const d = fallbackId ? byId(fallbackId) : undefined
+  return d ? { dynasty: d, reason: '本周精选 · 与今日内容互补' } : null
+})
+
+const dailyDynasty = computed<DynastyLite | null>(() => recommendation.value?.dynasty || null)
+const recommendReason = computed(() => recommendation.value?.reason || '')
 
 const dailyDynastyDesc = computed(() => {
   const s = dailyDynasty.value?.summary || ''
   const first = s.split(/[。；]/)[0]
   return first ? first + '。' : ''
-})
-
-const hotPersons = computed<SearchEntry[]>(() => {
-  const data = indexData.value
-  if (!data) return []
-  return HOT_PERSON_NAMES
-    .map(n => data.entries.find(e => e.t === 'p' && e.n === n))
-    .filter((e): e is SearchEntry => !!e)
 })
 
 /* ---------------- 统计数字 ---------------- */
@@ -347,10 +526,6 @@ const navigateToTimeline = () => {
 
 const navigateToFamily = () => {
   router.push('/family')
-}
-
-const navigateToTangPersons = () => {
-  router.push('/dynasty/112/persons')
 }
 
 const openDailyEvent = () => {
@@ -640,7 +815,7 @@ const openDailyDynasty = () => {
                 </svg>
                 <span class="text-sm font-medium text-[#2C2C2C]">热门人物</span>
               </div>
-              <button @click="navigateToTangPersons" class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
+              <button @click="navigateToTimeline" class="text-xs text-[#4A4A3A]/60 hover:text-[#355C5A]">更多</button>
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
@@ -662,7 +837,7 @@ const openDailyDynasty = () => {
                   人物数据加载中…
                 </div>
               </div>
-              <button @click="navigateToTangPersons" class="w-full py-2 text-sm text-[#C34739] hover:bg-[#C34739]/5 rounded-md transition-colors mt-auto">全部人物</button>
+              <button @click="navigateToTimeline" class="w-full py-2 text-sm text-[#C34739] hover:bg-[#C34739]/5 rounded-md transition-colors mt-auto">全部人物</button>
             </div>
           </div>
 
@@ -683,12 +858,13 @@ const openDailyDynasty = () => {
               <div class="h-36 rounded-md overflow-hidden mb-3">
                 <img 
                   :src="dailyDynasty ? imageFor(dailyDynasty.name, 'dynasty') : ''"
-                  :alt="dailyDynasty ? dailyDynasty.name + '朝' : '为你推荐'"
+                  :alt="dailyDynasty ? dailyDynasty.name : '为你推荐'"
                   class="w-full h-full object-cover"
                 />
               </div>
               <template v-if="dailyDynasty">
-                <h4 class="font-calligraphy text-lg text-[#2C2C2C] mb-1">{{ dailyDynasty.name }}朝 · {{ dailyDynasty.duration }}</h4>
+                <div class="text-[11px] text-[#D8B26A] mb-1 truncate">{{ recommendReason }}</div>
+                <h4 class="font-calligraphy text-lg text-[#2C2C2C] mb-1">{{ dailyDynasty.name }} · {{ dailyDynasty.duration }}</h4>
                 <p class="text-sm text-[#4A4A3A]/80 line-clamp-2 mb-3 flex-1">{{ dailyDynastyDesc }}</p>
                 <button @click="openDailyDynasty" class="w-full py-2 text-sm text-[#C34739] hover:bg-[#C34739]/5 rounded-md transition-colors">开始探索</button>
               </template>

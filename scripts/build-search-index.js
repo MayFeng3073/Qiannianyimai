@@ -17,6 +17,14 @@ function yearSpan(a, b) {
   return `${fmtYear(a)}—${fmtYear(b)}`;
 }
 
+/** 事件历史影响平均分（0-100），用于估算知名度 */
+function impactAvg(impacts) {
+  const list = Array.isArray(impacts) ? impacts : []
+  if (!list.length) return 0
+  const sum = list.reduce((s, i) => s + (Number(i && i.score) || 0), 0)
+  return sum / list.length
+}
+
 const entries = [];
 const stats = { persons: 0, events: 0, works: 0, relations: 0, keywords: 0, dynasties: 0 };
 const dynasties = [];
@@ -68,7 +76,10 @@ for (const f of files) {
       i: p.id,
       n: name,
       s: parts.join(' · '),
-      l: p.level === 2 ? 2 : 1
+      l: p.level === 2 ? 2 : 1,
+      d: dynId,
+      // 知名度权重：供首页「热门人物」按影响力挑选
+      w: Number(p.influence) || (p.dimension_scores && p.dimension_scores.historical_influence) || 60
     });
   }
 
@@ -81,7 +92,18 @@ for (const f of files) {
       i: e.id,
       n: name,
       s: `${yearSpan(e.start_year, e.end_year)} · ${e.dynasty || dynName}`,
-      o: String(e.one_sentence || e.summary || '').slice(0, 80)
+      o: String(e.one_sentence || e.summary || '').slice(0, 80),
+      // 所属朝代按文件归属，避免 201 等朝代的事件 id 前缀（204）与朝代 id 不一致
+      d: dynId,
+      // 知名度权重：相关人物、完整叙事、影响与背景越齐全，越适合作为「今日历史」
+      w: 1
+        + (e.related_persons || []).length
+        + (e.narratives || []).length * 2
+        + (e.impacts || []).length
+        + (e.chain || []).length
+        + (e.background ? 1 : 0)
+        + (e.significance ? 1 : 0)
+        + Math.round(impactAvg(e.impacts) / 20)
     });
   }
 
