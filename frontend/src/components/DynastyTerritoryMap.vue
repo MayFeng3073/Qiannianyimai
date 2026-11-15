@@ -13,35 +13,46 @@ interface GeoFeature {
 }
 
 const features = ref<GeoFeature[]>([])
+const countries = ref<GeoFeature[]>([])
 const loadFailed = ref(false)
 
+async function loadGeo(file: string): Promise<GeoFeature[]> {
+  const res = await fetch(`/data/${file}`)
+  if (!res.ok) throw new Error('HTTP ' + res.status)
+  const json = await res.json()
+  return (json.features || []).filter((f: GeoFeature) => f.geometry && f.properties?.name)
+}
+
 onMounted(async () => {
-  try {
-    const res = await fetch('/data/china-provinces.json')
-    if (!res.ok) throw new Error('HTTP ' + res.status)
-    const json = await res.json()
-    features.value = (json.features || []).filter((f: GeoFeature) => f.geometry && f.properties?.name)
-  } catch {
+  const [asia, china] = await Promise.allSettled([
+    loadGeo('asia-countries.json'),
+    loadGeo('china-provinces.json')
+  ])
+  if (asia.status === 'fulfilled') countries.value = asia.value
+  if (china.status === 'fulfilled') {
+    features.value = china.value
+  } else {
     loadFailed.value = true
   }
 })
 
-/* ---------------- 统一投影：墨卡托投影（避免高纬被压扁） ---------------- */
-const LON_MIN = 73.5
-const LON_MAX = 135.5
-const LAT_MAX = 53.8
+/* ---------------- 统一投影：经纬度 → SVG 像素 ----------------
+ * 保留上一版的比例（SY / SX = 1.3），只把范围扩展到亚洲，
+ * 让元朝等超出今日中国的疆域有地方可画。
+ */
+const LON_MIN = 58
+const LON_MAX = 147
+const LAT_MAX = 57
 const W = 560
+const H = 452
 const PAD_X = 12
 const PAD_Y = 12
 
-const mercLat = (lat: number) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360))
-const MERC_TOP = mercLat(LAT_MAX)
 const SX = (W - PAD_X * 2) / (LON_MAX - LON_MIN)
-// 墨卡托纵坐标以弧度计，换算成同一像素比例，保证经纬比例不失真
-const S_RAD = (SX * 180) / Math.PI
+const SY = SX * 1.3
 
 const projX = (lon: number) => PAD_X + (lon - LON_MIN) * SX
-const projY = (lat: number) => PAD_Y + (MERC_TOP - mercLat(lat)) * S_RAD
+const projY = (lat: number) => PAD_Y + (LAT_MAX - lat) * SY
 
 const ringPath = (ring: number[][]) => {
   let d = ''
@@ -55,6 +66,7 @@ const ringPath = (ring: number[][]) => {
 
 const featurePath = (f: GeoFeature) => {
   const g = f.geometry
+  if (g.type !== 'Polygon' && g.type !== 'MultiPolygon') return ''
   const polys = (g.type === 'Polygon' ? [g.coordinates] : g.coordinates) as number[][][][]
   return polys.map((poly) => poly.map(ringPath).join('')).join('')
 }
@@ -75,6 +87,7 @@ const LEVELS: Record<number, LevelTable> = {
     福建: 2, 湖北: 2, 湖南: 2, 广东: 2, 广西: 2, 海南: 2, 四川: 2, 重庆: 2, 贵州: 2,
     甘肃: 2, 宁夏: 2, 北京: 2, 天津: 2, 上海: 2,
     新疆: 1, 内蒙古: 1, 辽宁: 1, 吉林: 1, 青海: 1,
+    蒙古国: 1, 朝鲜民主主义人民共和国: 1, 大韩民国: 1, 越南: 1,
     西藏: 0, 云南: 0, 黑龙江: 0, 台湾: 0, 香港: 2, 澳门: 2
   },
   // 宋（北宋）：燕云未得、河西与西域未及，西南仅羁縻
@@ -91,20 +104,20 @@ const LEVELS: Record<number, LevelTable> = {
     陕西: 2, 甘肃: 2, 宁夏: 2, 安徽: 2, 江苏: 2, 浙江: 2, 江西: 2, 福建: 2,
     湖北: 2, 湖南: 2, 广东: 2, 广西: 2, 海南: 2, 四川: 2, 重庆: 2, 贵州: 2,
     云南: 2, 西藏: 2, 青海: 2, 北京: 2, 天津: 2, 上海: 2, 香港: 2, 澳门: 2,
-    新疆: 1, 台湾: 1
+    新疆: 1, 台湾: 1,
+    蒙古国: 2, 朝鲜民主主义人民共和国: 1, 大韩民国: 1
   }
 }
 
 const FILL: Record<Level, string> = {
-  2: '#DEBB76',
-  1: '#EFD9A8',
-  0: '#E7E3DA'
+  2: '#E3C181',
+  1: '#F4E6C8',
+  0: '#E9E6DF'
 }
-// 填色与描边同色：相邻同色省份拼缝自然消失，不再出现「一块块拼贴/重复描边」
 const STROKE: Record<Level, string> = {
-  2: '#DEBB76',
-  1: '#EFD9A8',
-  0: '#E7E3DA'
+  2: '#B08A3E',
+  1: '#C9AC74',
+  0: '#D3D0C8'
 }
 
 const levelOf = (name: string): Level => {
@@ -119,7 +132,20 @@ const shapes = computed(() => {
       const level = levelOf(name)
       return { name, level, d: featurePath(f) }
     })
+    .filter((s) => s.d)
     .sort((a, b) => a.level - b.level)
+})
+
+/** 亚洲邻国轮廓：0 为地理参照；>0 表示该朝对域外的控制程度 */
+const asiaShapes = computed(() => {
+  const table = LEVELS[props.dynastyId] || {}
+  return countries.value
+    .filter((f) => !/中华人民共和国|中华民国|中国/.test(f.properties.name || ''))
+    .map((f) => {
+      const name = f.properties.name || ''
+      return { name, level: table[name] ?? 0, d: featurePath(f) }
+    })
+    .filter((c) => c.d)
 })
 
 /* ---------------- 关键城市（经纬度） ---------------- */
@@ -172,18 +198,40 @@ const cities = computed(() =>
 )
 
 const legend = [
-  { label: '直接统治', fill: FILL[2], stroke: '#B08A3E' },
-  { label: '羁縻 / 都护府', fill: FILL[1], stroke: '#C9AC74' },
-  { label: '未及', fill: FILL[0], stroke: '#D3D0C8' }
+  { label: '直接统治', fill: FILL[2], stroke: STROKE[2] },
+  { label: '羁縻 / 都护府', fill: FILL[1], stroke: STROKE[1] },
+  { label: '未及', fill: FILL[0], stroke: STROKE[0] }
 ]
+
+// 图例放在地图下缘留白带，避免压住亚洲轮廓
+const LEGEND_Y = H - 26
 </script>
 
 <template>
   <div>
     <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4">
-      <svg viewBox="0 0 560 470" class="block w-full h-auto max-w-[600px] mx-auto">
-        <rect x="0" y="0" width="560" height="470" fill="#F7F4EE" />
+      <svg viewBox="0 0 560 452" class="block w-full h-auto max-w-[720px] mx-auto">
+        <rect x="0" y="0" width="560" height="452" fill="#F7F4EE" />
 
+        <!-- 亚洲邻国：未涉及的仅作地理参照，涉及的颜色与省界一致 -->
+        <g v-if="asiaShapes.length">
+          <path
+            v-for="c in asiaShapes"
+            :key="'asia-' + c.name"
+            :d="c.d"
+            :fill="c.level ? FILL[c.level] : '#F0ECE3'"
+            :stroke="c.level ? STROKE[c.level] : '#DBD5C7'"
+            :stroke-width="c.level === 2 ? 0.9 : 0.5"
+            :stroke-dasharray="c.level === 1 ? '3 2' : undefined"
+            stroke-linejoin="round"
+            fill-rule="evenodd"
+            vector-effect="non-scaling-stroke"
+          >
+            <title>{{ c.name }}</title>
+          </path>
+        </g>
+
+        <!-- 中国省界按控制等级着色 -->
         <g v-if="shapes.length">
           <path
             v-for="s in shapes"
@@ -191,8 +239,10 @@ const legend = [
             :d="s.d"
             :fill="FILL[s.level]"
             :stroke="STROKE[s.level]"
-            stroke-width="0.8"
+            :stroke-width="s.level === 2 ? 0.9 : 0.6"
+            :stroke-dasharray="s.level === 1 ? '3 2' : undefined"
             stroke-linejoin="round"
+            fill-rule="evenodd"
             vector-effect="non-scaling-stroke"
           >
             <title>{{ s.name }}</title>
@@ -224,14 +274,14 @@ const legend = [
         <text
           v-if="loadFailed"
           x="280"
-          y="235"
+          y="210"
           text-anchor="middle"
           font-size="12"
           fill="#C34739"
         >地图数据加载失败</text>
 
-        <g transform="translate(16, 436)">
-          <g v-for="(l, i) in legend" :key="l.label" :transform="`translate(${i * 116}, 0)`">
+        <g :transform="`translate(16, ${LEGEND_Y})`">
+          <g v-for="(l, i) in legend" :key="l.label" :transform="`translate(${i * 108}, 0)`">
             <rect
               x="0"
               y="0"
@@ -239,16 +289,18 @@ const legend = [
               height="9"
               :fill="l.fill"
               :stroke="l.stroke"
-              stroke-width="1"
+              stroke-width="1.2"
               rx="1"
+              :stroke-dasharray="i === 1 ? '3 2' : undefined"
             />
             <text x="17" y="8" font-size="8" fill="#4A4A3A" opacity="0.75">{{ l.label }}</text>
           </g>
         </g>
       </svg>
 
-      <div class="text-center mt-2">
-        <p class="text-xs text-[#4A4A3A]/50">{{ dynastyName }}疆域势力范围 · 现代省界底图 · 不代表精确边界</p>
+      <div class="text-center mt-2 space-y-0.5">
+        <p class="text-xs text-[#4A4A3A]/50">{{ dynastyName }}疆域势力范围 · 亚洲轮廓与中国省界底图</p>
+        <p class="text-[11px] text-[#4A4A3A]/40">配色表示控制程度，不代表精确边界；羁縻、都护、宗藩均计入浅色区</p>
       </div>
     </div>
   </div>
