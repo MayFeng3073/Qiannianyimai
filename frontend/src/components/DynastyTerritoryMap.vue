@@ -26,20 +26,22 @@ onMounted(async () => {
   }
 })
 
-/* ---------------- 统一投影：经纬度 → SVG 像素 ---------------- */
+/* ---------------- 统一投影：墨卡托投影（避免高纬被压扁） ---------------- */
 const LON_MIN = 73.5
 const LON_MAX = 135.5
-const LAT_MIN = 17
-const LAT_MAX = 54
-const W = 500
-const H = 400
-const PAD_X = 10
-const PAD_Y = 14
+const LAT_MAX = 53.8
+const W = 560
+const PAD_X = 12
+const PAD_Y = 12
+
+const mercLat = (lat: number) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360))
+const MERC_TOP = mercLat(LAT_MAX)
 const SX = (W - PAD_X * 2) / (LON_MAX - LON_MIN)
-const SY = (H - PAD_Y * 2) / (LAT_MAX - LAT_MIN)
+// 墨卡托纵坐标以弧度计，换算成同一像素比例，保证经纬比例不失真
+const S_RAD = (SX * 180) / Math.PI
 
 const projX = (lon: number) => PAD_X + (lon - LON_MIN) * SX
-const projY = (lat: number) => PAD_Y + (LAT_MAX - lat) * SY
+const projY = (lat: number) => PAD_Y + (MERC_TOP - mercLat(lat)) * S_RAD
 
 const ringPath = (ring: number[][]) => {
   let d = ''
@@ -73,36 +75,36 @@ const LEVELS: Record<number, LevelTable> = {
     福建: 2, 湖北: 2, 湖南: 2, 广东: 2, 广西: 2, 海南: 2, 四川: 2, 重庆: 2, 贵州: 2,
     甘肃: 2, 宁夏: 2, 北京: 2, 天津: 2, 上海: 2,
     新疆: 1, 内蒙古: 1, 辽宁: 1, 吉林: 1, 青海: 1,
-    西藏: 0, 云南: 0, 黑龙江: 0, 台湾: 0, 香港: 0, 澳门: 0
+    西藏: 0, 云南: 0, 黑龙江: 0, 台湾: 0, 香港: 2, 澳门: 2
   },
   // 宋（北宋）：燕云未得、河西与西域未及，西南仅羁縻
   113: {
     河南: 2, 山东: 2, 安徽: 2, 江苏: 2, 浙江: 2, 江西: 2, 福建: 2, 湖北: 2, 湖南: 2,
-    广东: 2, 广西: 2, 海南: 2, 四川: 2, 重庆: 2, 陕西: 2, 上海: 2,
-    河北: 1, 山西: 1, 贵州: 1,
+    广东: 2, 广西: 2, 海南: 2, 四川: 2, 重庆: 2, 陕西: 2, 上海: 2, 香港: 2, 澳门: 2,
+    河北: 1, 山西: 1, 贵州: 1, 北京: 1, 天津: 1,
     内蒙古: 0, 辽宁: 0, 吉林: 0, 黑龙江: 0, 新疆: 0, 西藏: 0, 青海: 0, 云南: 0,
-    宁夏: 0, 甘肃: 0, 台湾: 0, 北京: 0, 天津: 0, 香港: 0, 澳门: 0
+    宁夏: 0, 甘肃: 0, 台湾: 0
   },
   // 元（忽必烈时期）：漠北、东北、青藏并入，西域为宗藩，澎湖设巡检司
   114: {
     内蒙古: 2, 辽宁: 2, 吉林: 2, 黑龙江: 2, 河北: 2, 山西: 2, 山东: 2, 河南: 2,
     陕西: 2, 甘肃: 2, 宁夏: 2, 安徽: 2, 江苏: 2, 浙江: 2, 江西: 2, 福建: 2,
     湖北: 2, 湖南: 2, 广东: 2, 广西: 2, 海南: 2, 四川: 2, 重庆: 2, 贵州: 2,
-    云南: 2, 西藏: 2, 青海: 2, 北京: 2, 天津: 2, 上海: 2,
-    新疆: 1, 台湾: 1,
-    香港: 0, 澳门: 0
+    云南: 2, 西藏: 2, 青海: 2, 北京: 2, 天津: 2, 上海: 2, 香港: 2, 澳门: 2,
+    新疆: 1, 台湾: 1
   }
 }
 
 const FILL: Record<Level, string> = {
-  2: '#E3C181',
-  1: '#F4E6C8',
-  0: '#E9E6DF'
+  2: '#DEBB76',
+  1: '#EFD9A8',
+  0: '#E7E3DA'
 }
+// 填色与描边同色：相邻同色省份拼缝自然消失，不再出现「一块块拼贴/重复描边」
 const STROKE: Record<Level, string> = {
-  2: '#B08A3E',
-  1: '#C9AC74',
-  0: '#D3D0C8'
+  2: '#DEBB76',
+  1: '#EFD9A8',
+  0: '#E7E3DA'
 }
 
 const levelOf = (name: string): Level => {
@@ -170,17 +172,17 @@ const cities = computed(() =>
 )
 
 const legend = [
-  { label: '直接统治', fill: FILL[2], stroke: STROKE[2] },
-  { label: '羁縻 / 都护府', fill: FILL[1], stroke: STROKE[1] },
-  { label: '未及', fill: FILL[0], stroke: STROKE[0] }
+  { label: '直接统治', fill: FILL[2], stroke: '#B08A3E' },
+  { label: '羁縻 / 都护府', fill: FILL[1], stroke: '#C9AC74' },
+  { label: '未及', fill: FILL[0], stroke: '#D3D0C8' }
 ]
 </script>
 
 <template>
   <div>
     <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4">
-      <svg viewBox="0 0 500 400" class="w-full" style="max-height: 420px;">
-        <rect x="0" y="0" width="500" height="400" fill="#F0EDE6" opacity="0.5" />
+      <svg viewBox="0 0 560 470" class="block w-full h-auto max-w-[600px] mx-auto">
+        <rect x="0" y="0" width="560" height="470" fill="#F7F4EE" />
 
         <g v-if="shapes.length">
           <path
@@ -189,8 +191,8 @@ const legend = [
             :d="s.d"
             :fill="FILL[s.level]"
             :stroke="STROKE[s.level]"
-            :stroke-width="s.level === 2 ? 0.9 : 0.6"
-            :stroke-dasharray="s.level === 1 ? '3 2' : undefined"
+            stroke-width="0.8"
+            stroke-linejoin="round"
             vector-effect="non-scaling-stroke"
           >
             <title>{{ s.name }}</title>
@@ -221,15 +223,15 @@ const legend = [
 
         <text
           v-if="loadFailed"
-          x="250"
-          y="200"
+          x="280"
+          y="235"
           text-anchor="middle"
           font-size="12"
           fill="#C34739"
         >地图数据加载失败</text>
 
-        <g transform="translate(12, 366)">
-          <g v-for="(l, i) in legend" :key="l.label" :transform="`translate(${i * 108}, 0)`">
+        <g transform="translate(16, 436)">
+          <g v-for="(l, i) in legend" :key="l.label" :transform="`translate(${i * 116}, 0)`">
             <rect
               x="0"
               y="0"
@@ -237,18 +239,16 @@ const legend = [
               height="9"
               :fill="l.fill"
               :stroke="l.stroke"
-              stroke-width="1.2"
+              stroke-width="1"
               rx="1"
-              :stroke-dasharray="i === 1 ? '3 2' : undefined"
             />
             <text x="17" y="8" font-size="8" fill="#4A4A3A" opacity="0.75">{{ l.label }}</text>
           </g>
         </g>
       </svg>
 
-      <div class="text-center mt-2 space-y-0.5">
-        <p class="text-xs text-[#4A4A3A]/50">{{ dynastyName }}疆域势力范围 · 省界为现代底图</p>
-        <p class="text-[11px] text-[#4A4A3A]/40">配色表示控制程度，不代表精确边界；羁縻、都护、宗藩均计入浅色区</p>
+      <div class="text-center mt-2">
+        <p class="text-xs text-[#4A4A3A]/50">{{ dynastyName }}疆域势力范围 · 现代省界底图 · 不代表精确边界</p>
       </div>
     </div>
   </div>
