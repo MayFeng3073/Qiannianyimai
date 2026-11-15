@@ -3792,35 +3792,15 @@ export const events: Event[] = [
 ]
 
 export const eventTimelines: Record<string, TimelineEntry[]> = {
+  // 只保留真实存在的事件节点，保证每个“可点”的节点都能跳转。
+  // 原本单独占位的阶段（炎帝势力扩张 / 炎黄融合 / 华夏联盟形成 / 商周继承 / 秦统一六合）
+  // 已并入相邻节点的描述；科技文化与神话两组直接复用事件自身的 chain，不再重复维护。
   '上古政治演变': [
-    { title: '炎帝势力扩张', year: '约前2600年', desc: '部落壮大' },
-    { title: '阪泉之战', year: '约前2600年', desc: '炎黄激战', event_id: 1001 },
-    { title: '炎黄融合', year: '约前2600年', desc: '联盟雏形' },
-    { title: '涿鹿之战', year: '约前2598年', desc: '决战蚩尤', event_id: 1002 },
-    { title: '华夏联盟形成', year: '约前2598年', desc: '统一中原' },
-    { title: '尧舜禅让', year: '约前2259年', desc: '禅让大典', event_id: 1005 },
+    { title: '阪泉之战', year: '约前2600年', desc: '炎帝势力扩张，炎黄激战', event_id: 1001 },
+    { title: '涿鹿之战', year: '约前2598年', desc: '炎黄融合，决战蚩尤', event_id: 1002 },
+    { title: '尧舜禅让', year: '约前2259年', desc: '华夏联盟形成，禅让大典', event_id: 1005 },
     { title: '大禹治水', year: '约前2100年', desc: '疏导河道', event_id: 1006 },
-    { title: '建立夏朝', year: '约前2070年', desc: '世袭制开', event_id: 1007 },
-    { title: '商周继承', year: '前1600年', desc: '世袭王朝' },
-    { title: '秦统一六合', year: '前221年', desc: '中央集权' },
-  ],
-  '上古科技文化': [
-    { title: '先民生存需要', year: '约前2850年', desc: '辨识百草' },
-    { title: '神农尝百草', year: '约前2850年', desc: '辨识药性', event_id: 1003 },
-    { title: '中医药起源', year: '约前2830年', desc: '医药体系' },
-    { title: '农耕文明发展', year: '约前2800年', desc: '农业推广' },
-    { title: '结绳记事局限', year: '约前2600年', desc: '记录需求' },
-    { title: '创制文字', year: '约前2590年', desc: '创造汉字', event_id: 1004 },
-    { title: '文字记录体系', year: '约前2590年', desc: '文明载体' },
-    { title: '甲骨文金文', year: '殷商', desc: '文字演变' },
-    { title: '《神农本草经》', year: '东汉', desc: '医学典籍' },
-  ],
-  '上古神话': [
-    { title: '十日为灾', year: '神话时期', desc: '天下大旱' },
-    { title: '后羿射日', year: '约前2100年', desc: '英雄救世', event_id: 1008 },
-    { title: '苍生得救', year: '约前2100年', desc: '万物复苏' },
-    { title: '嫦娥奔月', year: '神话时期', desc: '月宫神话' },
-    { title: '中秋节起源', year: '后世', desc: '月圆人圆' },
+    { title: '建立夏朝', year: '约前2070年', desc: '世袭制开，商周继承，至秦统一六合', event_id: 1007 },
   ],
 }
 
