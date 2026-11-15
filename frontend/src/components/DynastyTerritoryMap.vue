@@ -37,14 +37,15 @@ onMounted(async () => {
 })
 
 /* ---------------- 统一投影：经纬度 → SVG 像素 ----------------
- * 保留上一版的比例（SY / SX = 1.3），只把范围扩展到亚洲，
- * 让元朝等超出今日中国的疆域有地方可画。
+ * 保留上一版的比例（SY / SX = 1.3）。
+ * 视野比上一版略微收窄：裁掉南侧群岛与北侧空旷地带，
+ * 让主体（中国及邻近区域）在画布中占比更高、整体尺寸更小。
  */
-const LON_MIN = 58
-const LON_MAX = 147
-const LAT_MAX = 57
+const LON_MIN = 60
+const LON_MAX = 145
+const LAT_MIN = 17
+const LAT_MAX = 55
 const W = 560
-const H = 452
 const PAD_X = 12
 const PAD_Y = 12
 
@@ -53,6 +54,11 @@ const SY = SX * 1.3
 
 const projX = (lon: number) => PAD_X + (lon - LON_MIN) * SX
 const projY = (lat: number) => PAD_Y + (LAT_MAX - lat) * SY
+
+// 地图区下边界 + 图例带，画布高度随视野自动收紧
+const MAP_BOTTOM = projY(LAT_MIN)
+const LEGEND_Y = MAP_BOTTOM + 10
+const H = Math.round(LEGEND_Y + 18)
 
 const ringPath = (ring: number[][]) => {
   let d = ''
@@ -203,78 +209,85 @@ const legend = [
   { label: '未及', fill: FILL[0], stroke: STROKE[0] }
 ]
 
-// 图例放在地图下缘留白带，避免压住亚洲轮廓
-const LEGEND_Y = H - 26
 </script>
 
 <template>
   <div>
     <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4">
-      <svg viewBox="0 0 560 452" class="block w-full h-auto max-w-[720px] mx-auto">
-        <rect x="0" y="0" width="560" height="452" fill="#F7F4EE" />
+      <svg :viewBox="`0 0 ${W} ${H}`" class="block w-full h-auto max-w-[520px] mx-auto">
+        <defs>
+          <!-- 超出视野范围的轮廓在边界处裁掉，不会伸进图例带 -->
+          <clipPath id="territory-clip">
+            <rect x="0" y="0" :width="W" :height="MAP_BOTTOM" />
+          </clipPath>
+        </defs>
 
-        <!-- 亚洲邻国：未涉及的仅作地理参照，涉及的颜色与省界一致 -->
-        <g v-if="asiaShapes.length">
-          <path
-            v-for="c in asiaShapes"
-            :key="'asia-' + c.name"
-            :d="c.d"
-            :fill="c.level ? FILL[c.level] : '#F0ECE3'"
-            :stroke="c.level ? STROKE[c.level] : '#DBD5C7'"
-            :stroke-width="c.level === 2 ? 0.9 : 0.5"
-            :stroke-dasharray="c.level === 1 ? '3 2' : undefined"
-            stroke-linejoin="round"
-            fill-rule="evenodd"
-            vector-effect="non-scaling-stroke"
-          >
-            <title>{{ c.name }}</title>
-          </path>
-        </g>
+        <rect x="0" y="0" :width="W" :height="H" fill="#F7F4EE" />
 
-        <!-- 中国省界按控制等级着色 -->
-        <g v-if="shapes.length">
-          <path
-            v-for="s in shapes"
-            :key="s.name"
-            :d="s.d"
-            :fill="FILL[s.level]"
-            :stroke="STROKE[s.level]"
-            :stroke-width="s.level === 2 ? 0.9 : 0.6"
-            :stroke-dasharray="s.level === 1 ? '3 2' : undefined"
-            stroke-linejoin="round"
-            fill-rule="evenodd"
-            vector-effect="non-scaling-stroke"
-          >
-            <title>{{ s.name }}</title>
-          </path>
-        </g>
+        <g clip-path="url(#territory-clip)">
+          <!-- 亚洲邻国：未涉及的仅作地理参照，涉及的颜色与省界一致 -->
+          <g v-if="asiaShapes.length">
+            <path
+              v-for="c in asiaShapes"
+              :key="'asia-' + c.name"
+              :d="c.d"
+              :fill="c.level ? FILL[c.level] : '#F0ECE3'"
+              :stroke="c.level ? STROKE[c.level] : '#DBD5C7'"
+              :stroke-width="c.level === 2 ? 0.9 : 0.5"
+              :stroke-dasharray="c.level === 1 ? '3 2' : undefined"
+              stroke-linejoin="round"
+              fill-rule="evenodd"
+              vector-effect="non-scaling-stroke"
+            >
+              <title>{{ c.name }}</title>
+            </path>
+          </g>
 
-        <g v-for="c in cities" :key="c.name">
-          <circle
-            :cx="c.x"
-            :cy="c.y"
-            :r="c.capital ? 4.5 : 3"
-            :fill="c.capital ? '#C34739' : '#355C5A'"
-            :stroke="c.capital ? '#C34739' : '#4A6F7A'"
-            stroke-width="1.2"
-            opacity="0.9"
-          />
-          <circle v-if="c.capital" :cx="c.x" :cy="c.y" r="9" fill="#C34739" opacity="0.15" />
-          <text
-            :x="c.x"
-            :y="c.y + (c.capital ? 15 : 12)"
-            text-anchor="middle"
-            :font-size="c.capital ? 11 : 9"
-            :fill="c.capital ? '#C34739' : '#4A4A3A'"
-            :font-weight="c.capital ? 'bold' : 'normal'"
-            font-family="serif"
-          >{{ c.name }}</text>
+          <!-- 中国省界按控制等级着色 -->
+          <g v-if="shapes.length">
+            <path
+              v-for="s in shapes"
+              :key="s.name"
+              :d="s.d"
+              :fill="FILL[s.level]"
+              :stroke="STROKE[s.level]"
+              :stroke-width="s.level === 2 ? 0.9 : 0.6"
+              :stroke-dasharray="s.level === 1 ? '3 2' : undefined"
+              stroke-linejoin="round"
+              fill-rule="evenodd"
+              vector-effect="non-scaling-stroke"
+            >
+              <title>{{ s.name }}</title>
+            </path>
+          </g>
+
+          <g v-for="c in cities" :key="c.name">
+            <circle
+              :cx="c.x"
+              :cy="c.y"
+              :r="c.capital ? 4.5 : 3"
+              :fill="c.capital ? '#C34739' : '#355C5A'"
+              :stroke="c.capital ? '#C34739' : '#4A6F7A'"
+              stroke-width="1.2"
+              opacity="0.9"
+            />
+            <circle v-if="c.capital" :cx="c.x" :cy="c.y" r="9" fill="#C34739" opacity="0.15" />
+            <text
+              :x="c.x"
+              :y="c.y + (c.capital ? 15 : 12)"
+              text-anchor="middle"
+              :font-size="c.capital ? 12 : 10"
+              :fill="c.capital ? '#C34739' : '#4A4A3A'"
+              :font-weight="c.capital ? 'bold' : 'normal'"
+              font-family="serif"
+            >{{ c.name }}</text>
+          </g>
         </g>
 
         <text
           v-if="loadFailed"
           x="280"
-          y="210"
+          y="170"
           text-anchor="middle"
           font-size="12"
           fill="#C34739"
@@ -286,14 +299,14 @@ const LEGEND_Y = H - 26
               x="0"
               y="0"
               width="13"
-              height="9"
+              height="10"
               :fill="l.fill"
               :stroke="l.stroke"
               stroke-width="1.2"
               rx="1"
               :stroke-dasharray="i === 1 ? '3 2' : undefined"
             />
-            <text x="17" y="8" font-size="8" fill="#4A4A3A" opacity="0.75">{{ l.label }}</text>
+            <text x="17" y="9" font-size="10" fill="#4A4A3A" opacity="0.75">{{ l.label }}</text>
           </g>
         </g>
       </svg>
