@@ -38,11 +38,11 @@ onMounted(async () => {
 
 /* ---------------- 统一投影：经纬度 → SVG 像素 ----------------
  * 保留上一版的比例（SY / SX = 1.3）。
- * 视野比上一版略微收窄：裁掉南侧群岛与北侧空旷地带，
- * 让主体（中国及邻近区域）在画布中占比更高、整体尺寸更小。
+ * 视野比上一版收窄：裁掉南侧群岛、北侧空旷地带与东西两侧无内容的区域，
+ * 让主体（中国及邻近区域）在画布中占比更高。
  */
-const LON_MIN = 60
-const LON_MAX = 145
+const LON_MIN = 68
+const LON_MAX = 143
 const LAT_MIN = 17
 const LAT_MAX = 55
 const W = 560
@@ -214,7 +214,7 @@ const legend = [
 <template>
   <div>
     <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4">
-      <svg :viewBox="`0 0 ${W} ${H}`" class="block w-full h-auto max-w-[520px] mx-auto">
+      <svg :viewBox="`0 0 ${W} ${H}`" class="block w-full h-auto max-w-[540px] mx-auto">
         <defs>
           <!-- 超出视野范围的轮廓在边界处裁掉，不会伸进图例带 -->
           <clipPath id="territory-clip">
