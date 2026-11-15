@@ -9,7 +9,7 @@ const route = useRoute()
 const router = useRouter()
 
 // 从人物ID推断朝代ID (201001 -> 201)
-const personId = Number(route.params.id) || 1022
+const personId = Number(route.params.id) || 0
 const jsonData = ref<DynastyData | null>(null)
 
 // 加载数据 - 尝试可能的朝代ID
@@ -702,7 +702,7 @@ onUnmounted(() => {
                 :alt="person!.name"
                 class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500"
                 onload="this.style.opacity='1'"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/person' + person!.id + '/400/500'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
             </div>
           </div>
@@ -994,8 +994,8 @@ onUnmounted(() => {
   <!-- Loading / Not Found -->
   <div v-else class="min-h-screen bg-[#F8F6F2] flex items-center justify-center">
     <div class="text-center">
-      <div class="font-calligraphy text-6xl text-[#2C2C2C]/20 mb-4">{{ personId }}</div>
-      <p class="text-[#4A4A3A]/50">人物数据加载中，或该人物暂无故事卡片数据。</p>
+      <div class="font-calligraphy text-5xl text-[#2C2C2C]/25 mb-4">未找到</div>
+      <p class="text-[#4A4A3A]/50">未找到这位人物，或该人物暂无故事卡片。</p>
       <button
         @click="goBack"
         class="mt-6 px-6 py-2 text-sm text-[#4A4A3A] border border-[#D8B26A]/30 rounded-md hover:border-[#D8B26A]/60 hover:text-[#C34739] transition-all"

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#F3F0E9" />
+  <circle cx="200" cy="200" r="118" fill="#355C5A" opacity="0.06" />
+  <path d="M56 336C120 286 176 306 220 272c42-32 96-24 124 26v202H56z" fill="#355C5A" opacity="0.08" />
+  <circle cx="200" cy="200" r="68" fill="none" stroke="#8A8578" stroke-width="1.5" opacity="0.45" />
+  <text x="200" y="208" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="22" fill="#8A8578">暂无图像</text>
+</svg>

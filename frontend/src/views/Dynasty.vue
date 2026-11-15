@@ -8,7 +8,8 @@ import { recordRecentDynasty } from '@/services/recentDynasties'
 import ComingSoon from '@/components/ComingSoon.vue'
 import BackButton from '@/components/BackButton.vue'
 import DynastyTerritoryMap from '@/components/DynastyTerritoryMap.vue'
-import * as echarts from 'echarts'
+import * as echarts from 'echarts/core'
+import type { ECharts } from 'echarts/core'
 
 const route = useRoute()
 const router = useRouter()
@@ -25,8 +26,8 @@ const cloudBoxW = ref(980)
 const cloudBoxH = ref(420)
 
 
-let occupationChart: echarts.ECharts | null = null
-let eventBarChart: echarts.ECharts | null = null
+let occupationChart: ECharts | null = null
+let eventBarChart: ECharts | null = null
 let wordCloudResizeObserver: ResizeObserver | null = null
 
 const dynastyId = computed(() => {
@@ -265,8 +266,9 @@ const getLayoutPos = (i: number): { x: number; y: number } => {
 }
 
 // =====================================================
-// 朝代关键词（6 朝，每朝 21 条，每条带 desc 一句话说明）
-// 第1、2条 = 用户指定的朝代核心印象词（L1层最大字号70）
+// 朝代关键词：实际内容来自 JSON（jsonData.keywords），
+// 这里只保留「上古」一套离线兜底词，其余朝代不再硬编码。
+// 第1、2条 = 核心印象词（L1层最大字号）
 // =====================================================
 const dynastyKeywords = computed<DynastyKw[]>(() => {
   if (!dynasty.value) return []
@@ -300,257 +302,6 @@ const dynastyKeywords = computed<DynastyKw[]>(() => {
       { name: '夏朝建立', value: 60, category: 'event', desc: '禹之子启建立夏朝，中国王朝世袭制时代的开端' }
     ],
 
-    // ============= 【唐朝】21条 — 用户核心词：盛世 + 开放 =============
-    '唐朝': [
-      { name: '盛世', value: 100, category: 'era', desc: '唐朝最鲜明的时代印象，国富民强，八方来朝' },
-      { name: '开放', value: 98, category: 'era', desc: '包容并蓄的社会气质，胡汉交融，万国文化荟萃长安' },
-      { name: '唐诗', value: 96, category: 'civilization', desc: '中国古典诗歌的巅峰体裁，《全唐诗》存诗近五万首' },
-      { name: '李白', value: 94, category: 'person', desc: '诗仙李白，浪漫主义诗歌之集大成者' },
-      { name: '杜甫', value: 92, category: 'person', desc: '诗圣杜甫，沉郁顿挫的现实主义诗歌巨匠' },
-      { name: '长安', value: 90, category: 'geo', desc: '唐都长安，百万人口的国际化大都会，丝绸之路起点' },
-      { name: '贞观之治', value: 88, category: 'event', desc: '唐太宗贞观年间，君臣合契，政清人和，千古治世典范' },
-      { name: '盛唐气象', value: 86, category: 'era', desc: '开元天宝年间，国力、文化、艺术全面鼎盛的时代风貌' },
-      { name: '武则天', value: 84, category: 'person', desc: '中国历史上唯一正统女皇帝，开殿试、创武举、重科举' },
-      { name: '开元盛世', value: 82, category: 'event', desc: '唐玄宗开元年间，人口、经济、文化臻于极盛' },
-      { name: '安史之乱', value: 80, category: 'event', desc: '安禄山史思明叛乱，大唐由盛转衰的关键转折点' },
-      { name: '丝绸之路', value: 78, category: 'event', desc: '陆上丝路全盛，驼队西出阳关，东西方商旅络绎不绝' },
-      { name: '李世民', value: 76, category: 'person', desc: '唐太宗李世民，贞观之治的缔造者，天可汗' },
-      { name: '杨贵妃', value: 74, category: 'person', desc: '四大美女之一，唐玄宗宠妃，马嵬坡之变中香消玉殒' },
-      { name: '白居易', value: 72, category: 'person', desc: '新乐府运动倡导者，《长恨歌》《琵琶行》千古传诵' },
-      { name: '唐玄奘', value: 70, category: 'person', desc: '西天取经的三藏法师，译经大师，著《大唐西域记》' },
-      { name: '唐三彩', value: 68, category: 'civilization', desc: '唐代铅釉彩陶，黄绿蓝三色交融，雕塑艺术瑰宝' },
-      { name: '科举制', value: 66, category: 'civilization', desc: '正式确立于唐的人才选拔制度，影响中国一千三百年' },
-      { name: '藩镇割据', value: 64, category: 'event', desc: '中晚唐节度使拥兵自立，中央权威瓦解的政治困局' },
-      { name: '玄武门之变', value: 62, category: 'event', desc: '李世民诛兄杀弟夺皇位，奠定贞观之治的政治前提' },
-      { name: '敦煌壁画', value: 60, category: 'geo', desc: '甘肃敦煌莫高窟壁画，唐代艺术巅峰，中西文明结晶' }
-    ],
-
-    // ============= 【汉朝】21条 — 用户核心词：大一统 + 丝绸之路 =============
-    '汉': [
-      { name: '大一统', value: 100, category: 'era', desc: '汉朝奠定了中国统一多民族国家的基本疆域与制度格局' },
-      { name: '丝绸之路', value: 98, category: 'event', desc: '张骞凿空西域，连接东西方文明的重要贸易与文化通道' },
-      { name: '汉武帝', value: 96, category: 'person', desc: '刘彻，汉武盛世缔造者，北击匈奴，独尊儒术' },
-      { name: '汉赋', value: 94, category: 'civilization', desc: '汉代代表性文体，铺张扬厉，司马相如、扬雄为大家' },
-      { name: '刘邦', value: 92, category: 'person', desc: '汉高祖刘邦，斩白蛇起义，四百年汉朝的开国皇帝' },
-      { name: '张骞出使西域', value: 90, category: 'event', desc: '张骞两次出使西域，"凿空"之行开通丝绸之路' },
-      { name: '文景之治', value: 88, category: 'event', desc: '汉文帝、景帝轻徭薄赋、与民休息，国库充盈之治世' },
-      { name: '儒家正统', value: 86, category: 'civilization', desc: '汉武帝采纳董仲舒"罢黜百家，独尊儒术"，儒学升为官学' },
-      { name: '汉武盛世', value: 84, category: 'era', desc: '汉武帝时期，疆域扩张、文化制度全面鼎盛的半个世纪' },
-      { name: '汉书', value: 82, category: 'civilization', desc: '班固编撰的中国第一部纪传体断代史，前四史之一' },
-      { name: '司马迁·史记', value: 80, category: 'civilization', desc: '太史公《史记》，史家之绝唱，无韵之离骚' },
-      { name: '昭君出塞', value: 78, category: 'event', desc: '王昭君远嫁匈奴呼韩邪单于，汉匈和平半个世纪' },
-      { name: '匈奴', value: 76, category: 'geo', desc: '秦汉时期北方草原游牧帝国，汉王朝长期的北方对手' },
-      { name: '光武中兴', value: 74, category: 'event', desc: '光武帝刘秀重建汉朝（东汉），拨乱反正，国力恢复' },
-      { name: '造纸术', value: 72, category: 'civilization', desc: '蔡伦改进造纸术，书写材料革命，推动人类文明传播' },
-      { name: '董仲舒', value: 70, category: 'person', desc: '西汉大儒，天人感应、大一统、独尊儒术的理论建构者' },
-      { name: '推恩令', value: 68, category: 'civilization', desc: '主父偃之策，肢解诸侯王国封地，解决汉初藩国问题' },
-      { name: '张衡·地动仪', value: 66, category: 'civilization', desc: '张衡发明候风地动仪，世界最早的地震探测仪器' },
-      { name: '华佗', value: 64, category: 'person', desc: '东汉神医，创麻沸散、五禽戏，外科医学先驱' },
-      { name: '三国鼎立', value: 62, category: 'era', desc: '汉末魏蜀吴三分天下，四百年汉祚最终走向终结' },
-      { name: '白马寺', value: 60, category: 'geo', desc: '洛阳白马寺，中国第一古刹，佛教传入中土的第一座寺院' }
-    ],
-
-    // ============= 【宋朝】21条 — 核心词：宋韵 + 文化巅峰 =============
-    '宋朝': [
-      { name: '宋韵', value: 100, category: 'era', desc: '宋代所特有的风雅美学，宋词、茶道、文人画的生活艺术' },
-      { name: '文化巅峰', value: 98, category: 'era', desc: '陈寅恪言："华夏民族之文化，历数千载之演进，造极于赵宋之世"' },
-      { name: '宋词', value: 96, category: 'civilization', desc: '宋代文学之冠，婉约与豪放并峙，词体艺术的黄金时代' },
-      { name: '苏轼', value: 94, category: 'person', desc: '苏东坡，诗词书画皆冠绝，宋代文人精神的化身' },
-      { name: '清明上河图', value: 92, category: 'civilization', desc: '张择端绘汴京盛景，宋代市井生活最生动的百科画卷' },
-      { name: '开封汴梁', value: 90, category: 'geo', desc: '北宋都城东京汴梁，百万居民，当时世界最繁华都市' },
-      { name: '宋太祖·赵匡胤', value: 88, category: 'person', desc: '陈桥兵变黄袍加身，建立宋朝，杯酒释兵权重文抑武' },
-      { name: '活字印刷', value: 86, category: 'civilization', desc: '毕昇发明泥活字印刷，信息复制技术的重大革命' },
-      { name: '指南针', value: 84, category: 'civilization', desc: '宋代成熟应用罗盘于航海，大航海时代的技术前提' },
-      { name: '火药', value: 82, category: 'civilization', desc: '宋代火药武器广泛实战应用，改变人类战争形态' },
-      { name: '交子·纸币', value: 80, category: 'civilization', desc: '四川交子，世界最早的纸币，宋代高度商业化的明证' },
-      { name: '王安石变法', value: 78, category: 'event', desc: '熙宁变法，青苗、免役诸法，宋代规模最大的改革运动' },
-      { name: '靖康之耻', value: 76, category: 'event', desc: '金军攻破汴梁，徽钦二帝被掳，北宋亡国的奇耻大辱' },
-      { name: '岳飞·精忠报国', value: 74, category: 'person', desc: '岳武穆，抗金名将，尽忠报国的民族精神象征' },
-      { name: '李清照', value: 72, category: 'person', desc: '易安居士，婉约词宗，两宋词坛最杰出的女性词人' },
-      { name: '辛弃疾', value: 70, category: 'person', desc: '稼轩居士，豪放词派代表，壮志未酬的爱国词人' },
-      { name: 'GDP世界第一', value: 68, category: 'era', desc: '宋代经济总量约占世界22-30%，商业与手工业高度繁荣' },
-      { name: '山水画', value: 66, category: 'civilization', desc: '宋代山水文人画高峰，范宽、郭熙、马远、夏圭大家辈出' },
-      { name: '杯酒释兵权', value: 64, category: 'event', desc: '宋太祖宴饮之间解除功臣兵权，确立重文轻武之国策' },
-      { name: '朱熹·理学', value: 62, category: 'civilization', desc: '朱子集宋代理学之大成，"存天理灭人欲"之学统形成' },
-      { name: '崖山海战', value: 60, category: 'event', desc: '南宋与元最后决战，陆秀夫负帝投海，宋室彻底覆亡' }
-    ],
-
-    // ============= 【元朝】20条 — 核心词：铁骑纵横 + 行省制度 + 中外交流 =============
-    '元': [
-      { name: '铁骑纵横', value: 100, category: 'era', desc: '蒙古铁骑横扫欧亚大陆，建立人类史上疆域最大的陆地帝国' },
-      { name: '行省制度', value: 98, category: 'civilization', desc: '元朝首创的中央集权行政区划制度，影响明清至今' },
-      { name: '疆域空前', value: 96, category: 'era', desc: '元朝鼎盛时期疆域约1300万平方公里，为中国历史之最' },
-      { name: '成吉思汗', value: 94, category: 'person', desc: '铁木真统一蒙古各部，建立大蒙古国，世界征服者' },
-      { name: '忽必烈', value: 92, category: 'person', desc: '元世祖，改国号为元、灭南宋、开创大元一统之局' },
-      { name: '马可·波罗', value: 90, category: 'person', desc: '威尼斯商人来华17年，著《东方见闻录》，东西文化交流使者' },
-      { name: '海上丝路', value: 88, category: 'event', desc: '元代泉州为世界最大港口，海上丝绸之路空前繁荣' },
-      { name: '郭守敬', value: 86, category: 'person', desc: '元代科学家，编制《授时历》精度领先世界数百年' },
-      { name: '元曲', value: 84, category: 'civilization', desc: '元曲（杂剧+散曲）为元代文学之代表，关汉卿、马致远等名家辈出' },
-      { name: '科举回存', value: 82, category: 'event', desc: '仁宗延祐年间恢复科举取士，为元朝中期文治之象征' },
-      { name: '红巾军起义', value: 80, category: 'event', desc: '1351年韩山童、刘福通起义，元朝由盛转衰的转折点' },
-      { name: '四等人制', value: 78, category: 'civilization', desc: '蒙古色目汉南四等人的民族歧视政策，元朝社会矛盾根源' },
-      { name: '大都', value: 76, category: 'geo', desc: '元大都（今北京）为元朝都城，世界最大城市之一' },
-      { name: '上都', value: 74, category: 'geo', desc: '元朝夏都开平（今内蒙古正蓝旗），皇帝每年巡幸之地' },
-      { name: '《马可波罗游记》', value: 72, category: 'civilization', desc: '东方见闻录，让欧洲人第一次系统了解中国，大航海时代思想先驱' },
-      { name: '关汉卿', value: 70, category: 'person', desc: '元曲四大家之首，《窦娥冤》作者，中国戏剧奠基人' },
-      { name: '黄道婆', value: 68, category: 'person', desc: '元代棉纺织家，改进纺织技术，江南棉纺织业奠基人' },
-      { name: '西藏归附', value: 66, category: 'event', desc: '元朝设宣政院管理西藏，西藏正式纳入中国版图' },
-      { name: '元青花瓷', value: 64, category: 'civilization', desc: '景德镇官窑青花瓷工艺成熟，为中国瓷器艺术巅峰之一' },
-      { name: '蒙古西征', value: 62, category: 'event', desc: '成吉思汗及子孙三次西征，打通欧亚大陆，促进东西文化交流' }
-    ],
-
-    // ============= 【明朝】21条 — 核心词：永乐治世 + 远航 =============
-    '明朝': [
-      { name: '永乐治世', value: 100, category: 'era', desc: '明成祖永乐年间，下西洋、修大典、迁都北京，盛极一时' },
-      { name: '远航', value: 98, category: 'event', desc: '郑和七下西洋，世界大航海时代之前规模最大的远洋航行' },
-      { name: '紫禁城', value: 96, category: 'geo', desc: '朱棣迁都营建的北京皇宫，明清两代二十四帝之居所' },
-      { name: '朱元璋', value: 94, category: 'person', desc: '明太祖洪武皇帝，乞丐出身推翻元朝，建立大明三百年基业' },
-      { name: '郑和下西洋', value: 92, category: 'event', desc: '三宝太监郑和率二百余艘宝船，七下西洋，遍访三十余国' },
-      { name: '永乐大典', value: 90, category: 'civilization', desc: '解缙主编的类书巨著，22937卷，古代中国最大百科全书' },
-      { name: '永乐盛世', value: 88, category: 'era', desc: '永乐年间疆域辽阔、四夷宾服，国力鼎盛的辉煌年代' },
-      { name: '明长城', value: 86, category: 'geo', desc: '今日所见万里长城主体，均为明代重修，东起鸭绿江西至嘉峪' },
-      { name: '仁宣之治', value: 84, category: 'event', desc: '仁宗、宣宗时期，宽仁治国，民生安定，堪比文景' },
-      { name: '海禁', value: 82, category: 'civilization', desc: '明朝锁国政策，禁止民间私自出海，对后世影响深远' },
-      { name: '王阳明·心学', value: 80, category: 'civilization', desc: '王守仁创"致良知"心学，知行合一，影响东亚儒学数百年' },
-      { name: '四大名著', value: 78, category: 'civilization', desc: '《三国》《水浒》《西游》三部成书于明代，通俗文学巅峰' },
-      { name: '景德镇瓷器', value: 76, category: 'civilization', desc: '景德镇官窑青花瓷独步天下，远销海外，明代手工业代表' },
-      { name: '内阁制', value: 74, category: 'civilization', desc: '明代废宰相后形成的票拟制度，内阁大学士渐成事实上的宰辅' },
-      { name: '锦衣卫', value: 72, category: 'civilization', desc: '皇帝直辖的亲军特务机构，有巡察缉捕之权，明代高压政治象征' },
-      { name: '万历三大征', value: 70, category: 'event', desc: '万历年间宁夏、朝鲜、播州三役皆胜，然国库耗费巨大' },
-      { name: '张居正改革', value: 68, category: 'event', desc: '万历首辅张居正推行考成法、一条鞭法，晚明国力短暂中兴' },
-      { name: '东厂西厂', value: 66, category: 'civilization', desc: '由宦官执掌的特务机构，与锦衣卫合称厂卫，明代宦权代表' },
-      { name: '资本主义萌芽', value: 64, category: 'era', desc: '晚明江南手工业工场雇佣制兴起，被视为资本主义萌芽' },
-      { name: '天工开物·宋应星', value: 62, category: 'civilization', desc: '宋应星著《天工开物》，17世纪中国工艺百科全书' },
-      { name: '本草纲目·李时珍', value: 60, category: 'civilization', desc: '李时珍历时27年著《本草纲目》，东方药物学集大成巨著' }
-    ],
-
-    // ============= 【清朝】21条 — 核心词：康乾盛世 + 百年转折 =============
-    '清朝': [
-      { name: '康乾盛世', value: 100, category: 'era', desc: '康熙、雍正、乾隆三代一百三十余年，清朝国力最鼎盛时期' },
-      { name: '百年转折', value: 98, category: 'era', desc: '鸦片战争后，中国被迫从古代王朝卷入近代世界的百年变局' },
-      { name: '四库全书', value: 96, category: 'civilization', desc: '乾隆朝纪昀主编，36000余册，中国古代最大规模丛书' },
-      { name: '鸦片战争', value: 94, category: 'event', desc: '1840中英鸦片战争，签订《南京条约》，中国近代史的开端' },
-      { name: '红楼梦·曹雪芹', value: 92, category: 'civilization', desc: '曹雪芹《石头记》，中国古典小说艺术的巅峰之作' },
-      { name: '圆明园', value: 90, category: 'geo', desc: '万园之园圆明园，集中西园林精华，1860年被英法联军焚毁' },
-      { name: '康熙', value: 88, category: 'person', desc: '清圣祖玄烨，平三藩、收台湾、征噶尔丹，康乾盛世奠基者' },
-      { name: '乾隆', value: 86, category: 'person', desc: '清高宗弘历，十全老人，文治武功极盛，亦为清由盛转衰之始' },
-      { name: '闭关锁国', value: 84, category: 'civilization', desc: '清廷限一口通商、隔绝世界，导致落后于西方工业革命' },
-      { name: '八旗制度', value: 82, category: 'civilization', desc: '满清核心制度，集军事、行政、生产于一体的旗人社会组织' },
-      { name: '京剧', value: 80, category: 'civilization', desc: '徽班进京后融合昆曲汉调，京剧成形，被视为国粹之代表' },
-      { name: '太平天国', value: 78, category: 'event', desc: '洪秀全领导的农民起义，历时十四年，动摇清朝统治根基' },
-      { name: '雍正', value: 76, category: 'person', desc: '清世宗胤禛，铁腕反腐、摊丁入亩、设立军机处，承康启乾' },
-      { name: '军机处', value: 74, category: 'civilization', desc: '雍正设军机处，跪受笔录，中国君主专制达到顶峰' },
-      { name: '收复台湾', value: 72, category: 'event', desc: '施琅率军攻台，郑克塽降清，台湾正式纳入清朝版图' },
-      { name: '文字狱', value: 70, category: 'civilization', desc: '康雍乾三朝严酷文网，士子因文获罪，思想界万马齐喑' },
-      { name: '统一多民族', value: 68, category: 'era', desc: '清朝疆域极盛1300余万平方公里，奠定现代中国版图基础' },
-      { name: '康熙字典', value: 66, category: 'civilization', desc: '张玉书等编撰的大型字书，收字47035个，清代小学巨著' },
-      { name: '甲午战争', value: 64, category: 'event', desc: '1894中日甲午海战，北洋水师覆没，签订《马关条约》' },
-      { name: '洋务运动', value: 62, category: 'event', desc: '李鸿章、张之洞等办厂造船建海军，中国近代工业化开端' },
-      { name: '辛亥革命', value: 60, category: 'event', desc: '1911武昌起义，推翻清朝，结束中国两千余年帝制' }
-    ],
-
-    // ============= 【夏商西周】20条 — 核心词：王朝更替 + 青铜文明 =============
-    '夏商西周': [
-      { name: '王朝更替', value: 100, category: 'era', desc: '夏商周三代相继更替，中国早期国家形态的形成与演变' },
-      { name: '青铜文明', value: 98, category: 'era', desc: '商周时期青铜冶炼技术鼎盛，司母戊鼎等国宝级器物代表' },
-      { name: '夏朝', value: 96, category: 'era', desc: '中国史书记载的第一个世袭制王朝，启家天下的开端' },
-      { name: '商朝', value: 94, category: 'era', desc: '盘庚迁殷后的商王朝，甲骨文、青铜器繁盛的时代' },
-      { name: '西周', value: 92, category: 'era', desc: '武王伐纣建立周朝，分封制、宗法制、礼乐制度奠基' },
-      { name: '分封制', value: 90, category: 'civilization', desc: '周王将土地和人民分封给诸侯，建立封建等级秩序' },
-      { name: '宗法制', value: 88, category: 'civilization', desc: '以血缘关系为基础的嫡长子继承制，维系周王朝统治' },
-      { name: '武王伐纣', value: 86, category: 'event', desc: '周武王姬发率诸侯联军于牧野击败商军，建立周朝' },
-      { name: '周公旦', value: 84, category: 'person', desc: '周武王之弟，辅政成王，制礼作乐，儒学元圣' },
-      { name: '甲骨文', value: 82, category: 'civilization', desc: '商代刻在龟甲和兽骨上的占卜文字，汉字早期形态' },
-      { name: '金文', value: 80, category: 'civilization', desc: '铸刻在青铜器上的铭文，西周文字的主要载体' },
-      { name: '礼乐制度', value: 78, category: 'civilization', desc: '周公制定的典章制度与音乐规范，维系西周社会秩序' },
-      { name: '井田制', value: 76, category: 'civilization', desc: '西周土地制度，以井为单位分配，公私田分明' },
-      { name: '商汤', value: 74, category: 'person', desc: '商族首领，鸣条之战灭夏建商，一代明君' },
-      { name: '盘庚迁殷', value: 72, category: 'event', desc: '商王盘庚迁都至殷，稳定商朝政治中心' },
-      { name: '武丁中兴', value: 70, category: 'event', desc: '商王武丁任用傅说、妇好等人才，开创盛世' },
-      { name: '烽火戏诸侯', value: 68, category: 'event', desc: '周幽王宠褒姒，烽火戏诸侯，最终犬戎破镐京' },
-      { name: '平王东迁', value: 66, category: 'event', desc: '周平王迁都洛邑，东周开始，西周结束' },
-      { name: '司母戊鼎', value: 64, category: 'civilization', desc: '商代晚期青铜礼器，中国现存最大最重的青铜器' },
-      { name: '封神演义', value: 62, category: 'civilization', desc: '明代小说，以武王伐纣为背景，演绎商周之际神魔故事' }
-    ],
-    // ============= 【春秋】20条 — 核心词：争霸会盟 + 礼崩乐坏 + 思想萌发 =============
-    '春秋': [
-      { name: '春秋争霸', value: 100, category: 'era', desc: '春秋五霸迭起，齐、晋、楚、秦、吴越相继争雄' },
-      { name: '礼崩乐坏', value: 98, category: 'era', desc: '周王室衰微，礼乐制度崩坏，诸侯僭越周礼' },
-      { name: '周王室衰微', value: 96, category: 'era', desc: '平王东迁后王权旁落，诸侯坐大，天下共主名存实亡' },
-      { name: '诸侯争霸', value: 94, category: 'event', desc: '齐桓、晋文、楚庄等霸主以尊王攘夷为旗号逐鹿中原' },
-      { name: '齐桓公', value: 92, category: 'person', desc: '姜小白，任用管仲为相，九合诸侯，春秋首霸' },
-      { name: '管仲改革', value: 90, category: 'civilization', desc: '管仲相齐，变革军政、通货积财，助齐桓公开创霸业' },
-      { name: '晋文公', value: 88, category: 'person', desc: '重耳，退避三舍，城濮之战大败楚军，成为中原霸主' },
-      { name: '城濮之战', value: 86, category: 'event', desc: '晋楚争霸关键一役，晋文公以少胜多确立晋国霸权' },
-      { name: '楚庄王', value: 84, category: 'person', desc: '一鸣惊人，问鼎中原，邲之战败晋成为南方霸主' },
-      { name: '问鼎中原', value: 82, category: 'event', desc: '楚庄王陈兵周疆，问九鼎之轻重，图谋天子的象征' },
-      { name: '晋楚争霸', value: 80, category: 'event', desc: '晋楚长期争雄，后晋国渐衰、六卿分权' },
-      { name: '吴越争霸', value: 78, category: 'event', desc: '吴王夫差与越王勾践争雄，勾践卧薪尝胆终灭吴' },
-      { name: '勾践卧薪尝胆', value: 76, category: 'person', desc: '越王勾践忍辱负重、励精图治，最终复国灭吴' },
-      { name: '孔子', value: 74, category: 'person', desc: '儒家创始人，开私学、存六经，影响中国两千余年' },
-      { name: '儒家思想', value: 72, category: 'civilization', desc: '仁礼为核心，孔子开创，成为中华文化正统' },
-      { name: '百家争鸣', value: 70, category: 'civilization', desc: '儒、道、法、墨等诸子思想并起，思想大解放' },
-      { name: '晋国六卿', value: 68, category: 'era', desc: '晋国被智、赵、韩、魏等六卿把持，公室衰微' },
-      { name: '三家分晋', value: 66, category: 'event', desc: '韩赵魏瓜分晋国，标志春秋之终、战国之始' },
-      { name: '尊王攘夷', value: 64, category: 'civilization', desc: '霸主尊奉周王、抵御外夷的旗号，名实相济' },
-      { name: '弭兵会盟', value: 62, category: 'civilization', desc: '晋楚争霸后期由宋国倡导的停战会盟，暂息干戈' }
-    ],
-    // ============= 【战国】21条 — 核心词：战国争雄 + 百家争鸣 =============
-    '战国': [
-      // L1 核心（70/68）
-      { name: '战国争雄', value: 100, category: 'era', desc: '七雄并立、合纵连横，兼并战争与变法图强贯穿始终的时代' },
-      { name: '百家争鸣', value: 98, category: 'civilization', desc: '儒道法墨名等诸子学说鼎盛交锋，中国思想史的黄金时代' },
-      // L2 ~5 词（56px）
-      { name: '商鞅变法', value: 96, category: 'civilization', desc: '秦孝公任商鞅变法，废井田、奖军功，使秦国由弱变强' },
-      { name: '合纵连横', value: 94, category: 'event', desc: '苏秦合纵抗秦、张仪连横破纵，纵横家主导七国外交格局' },
-      { name: '七雄并立', value: 92, category: 'era', desc: '秦、楚、齐、燕、赵、魏、韩七大国并峙，征伐不休' },
-      { name: '长平之战', value: 90, category: 'event', desc: '秦赵之间最大规模会战，白起坑杀赵卒，秦统一大势已定' },
-      { name: '都江堰', value: 88, category: 'civilization', desc: '李冰父子主持修建，使成都平原成为天府之国' },
-      // L3 ~7 词（46px）
-      { name: '秦始皇', value: 86, category: 'person', desc: '秦王政扫灭六国、统一天下，开创中国第一个大一统王朝' },
-      { name: '屈原', value: 84, category: 'person', desc: '楚国诗人，开创楚辞体，《离骚》千古传诵' },
-      { name: '李斯', value: 82, category: 'person', desc: '秦相李斯，辅佐秦始皇统一六国，主持郡县制与书同文' },
-      { name: '孙膑', value: 80, category: 'person', desc: '孙膑著《孙膑兵法》，桂陵、马陵两战大败魏军' },
-      { name: '信陵君', value: 78, category: 'person', desc: '战国四公子之一，窃符救赵，礼贤下士' },
-      { name: '赵武灵王', value: 76, category: 'person', desc: '推行胡服骑射，赵国军力大振，成为东方强国' },
-      { name: '荆轲刺秦', value: 74, category: 'event', desc: '荆轲图穷匕见刺秦王，慷慨悲歌，壮士一去不复还' },
-      // L4 ~7 词（36/28px）
-      { name: '郑国渠', value: 72, category: 'civilization', desc: '韩国水工郑国主持修建，灌溉关中沃野，秦因之益强' },
-      { name: '孙膑兵法', value: 70, category: 'civilization', desc: '孙膑所著兵书，讲究因势利导、奇正相生' },
-      { name: '曾侯乙编钟', value: 68, category: 'civilization', desc: '战国青铜礼乐重器，全套编钟一钟双音，代表先秦音乐巅峰' },
-      { name: '战国策', value: 66, category: 'civilization', desc: '记录纵横家言行的国别体史书，文学价值极高' },
-      { name: '铁器牛耕', value: 64, category: 'civilization', desc: '铁制农具与牛耕普及，生产力飞跃推动社会变革' },
-      { name: '函谷关', value: 62, category: 'geo', desc: '秦之东门，六国屡次叩关而不得入，军事要冲' },
-      { name: '胡服骑射', value: 60, category: 'event', desc: '赵武灵王改革军制，学习胡人骑射，赵国武备大兴' }
-    ],
-    // ============= 【秦】20条 — 核心词：秦并天下 + 皇帝制度 =============
-    '秦': [
-      // L1 核心（70/68）
-      { name: '秦并天下', value: 100, category: 'era', desc: '秦始皇扫灭六国，实现中国历史上第一次真正的大一统' },
-      { name: '皇帝制度', value: 98, category: 'civilization', desc: '首创皇帝尊号与三公九卿制，奠定两千余年中央集权政体' },
-      // L2 ~5 词（56px）
-      { name: '书同文', value: 96, category: 'civilization', desc: '统一文字为小篆，车同轨、书同文、行同伦' },
-      { name: '焚书坑儒', value: 94, category: 'event', desc: '禁绝私学、焚毁典籍，思想专制与文化的重大浩劫' },
-      { name: '万里长城', value: 92, category: 'geo', desc: '北筑长城以御匈奴，是世界古代最宏大的军事防御工程' },
-      { name: '郡县制', value: 90, category: 'civilization', desc: '废分封、行郡县，官僚政治取代贵族政治' },
-      { name: '沙丘政变', value: 88, category: 'event', desc: '秦始皇病逝沙丘，赵高矫诏拥立胡亥，秦政自此崩坏' },
-      // L3 ~7 词（46px）
-      { name: '秦始皇', value: 86, category: 'person', desc: '嬴政扫六合而定天下，功过并存的千古一帝' },
-      { name: '李斯', value: 84, category: 'person', desc: '秦相李斯，辅佐统一、主持郡县制与书同文，终为赵高所杀' },
-      { name: '蒙恬', value: 82, category: 'person', desc: '北逐匈奴、修长城、掌管重兵的秦朝名将' },
-      { name: '王翦', value: 80, category: 'person', desc: '灭赵灭楚的老将，为秦统一立下不世战功' },
-      { name: '统一度量衡', value: 78, category: 'civilization', desc: '统一衡石丈尺，便利赋税与商贸，强化政令整齐划一' },
-      { name: '阿房宫', value: 76, category: 'geo', desc: '大兴土木营建咸阳宫室，劳役苛重加剧民怨' },
-      { name: '灵渠', value: 74, category: 'geo', desc: '开凿灵渠联通湘漓，为征岭南开辟水运通道' },
-      // L4 ~7 词（36/28px）
-      { name: '赵高', value: 72, category: 'person', desc: '指鹿为马的秦朝权宦，篡改遗诏、弄权误国' },
-      { name: '章邯', value: 70, category: 'person', desc: '秦末名将，镇压起义军却终为项羽所败' },
-      { name: '巨鹿之战', value: 68, category: 'event', desc: '项羽破釜沉舟大败秦军主力，秦亡大势已定' },
-      { name: '大泽乡起义', value: 66, category: 'event', desc: '陈胜吴广首举义旗，点燃秦末农民战争燎原之火' },
-      { name: '指鹿为马', value: 64, category: 'event', desc: '赵高当廷指鹿为马试探群臣，尽显秦廷纲纪废弛' },
-      { name: '驰道', value: 62, category: 'geo', desc: '修建以咸阳为中心辐射全国的驰道，车同轨以通政令' },
-      { name: '陈胜吴广', value: 60, category: 'event', desc: '大泽乡揭竿而起，「王侯将相宁有种乎」' }
-    ]
   }
   // 优先使用 JSON 导入的朝代关键词，避免回退到上古占位数据
   if (jsonData.value?.keywords && jsonData.value.keywords.length > 0) {
@@ -1497,7 +1248,7 @@ onUnmounted(() => {
                     <div class="absolute inset-0 bg-gradient-to-br from-[#D8B26A]/20 to-[#355C5A]/15 flex items-center justify-center">
                       <span class="font-calligraphy text-2xl text-[#2C2C2C]/30">{{ person.name.charAt(0) }}</span>
                     </div>
-                    <img :src="person.image_url" :alt="person.name" class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'" @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/person' + person.id + '/200/200'; e.target.onerror = null }" />
+                    <img :src="person.image_url" :alt="person.name" class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'" @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }" />
                   </div>
                   <span class="font-medium text-[#2C2C2C] text-sm block group-hover:text-[#355C5A] transition-colors">{{ person.name }}</span>
                   <span class="text-xs text-[#4A4A3A]/50">{{ person.category }}</span>

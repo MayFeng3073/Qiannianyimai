@@ -6,13 +6,14 @@ import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService
 import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 import ComingSoon from '@/components/ComingSoon.vue'
 import BackButton from '@/components/BackButton.vue'
-import * as echarts from 'echarts'
+import * as echarts from 'echarts/core'
+import type { ECharts } from 'echarts/core'
 
 const route = useRoute()
 const router = useRouter()
 
 // 从人物ID推断朝代ID (201001 -> 201)
-const personId = Number(route.params.id) || 1001
+const personId = Number(route.params.id) || 0
 const jsonData = ref<DynastyData | null>(null)
 
 // 加载数据 - 尝试可能的朝代ID
@@ -49,8 +50,8 @@ const backFallback = computed(() => {
 
 const relationChartRef = ref<HTMLElement | null>(null)
 const radarChartRef = ref<HTMLElement | null>(null)
-let relationChart: echarts.ECharts | null = null
-let radarChart: echarts.ECharts | null = null
+let relationChart: ECharts | null = null
+let radarChart: ECharts | null = null
 const exploreTab = ref<'person' | 'event'>('person')
 
 const dimensionConfig: Record<string, { common: string[], professional: string[] }> = {
@@ -1003,7 +1004,7 @@ watch(isLevel2, (isL2) => {
               <div class="absolute inset-0 bg-gradient-to-br from-[#D8B26A]/25 to-[#355C5A]/20 flex items-center justify-center">
                 <span class="font-calligraphy text-8xl text-[#2C2C2C]/30">{{ person!.name.charAt(0) }}</span>
               </div>
-              <img :src="person!.image_url" :alt="person!.name" class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'" @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/person' + person!.id + '/400/500'; e.target.onerror = null }" />
+              <img :src="person!.image_url" :alt="person!.name" class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'" @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }" />
             </div>
           </div>
           
@@ -1143,7 +1144,7 @@ watch(isLevel2, (isL2) => {
                 :alt="ev.name"
                 class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 z-10 opacity-0"
                 onload="this.style.opacity='1'"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/event' + ev.id + '/400/300'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
               <div class="absolute top-3 left-3 px-2.5 py-0.5 bg-[#C34739] text-white text-xs rounded z-20">
                 {{ ev.role }}
@@ -1313,7 +1314,7 @@ watch(isLevel2, (isL2) => {
                 :src="rp.image_url"
                 :alt="rp.name"
                 class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-all duration-500"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/person' + rp.id + '/400/500'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
             </div>
             <div class="text-center">
@@ -1345,7 +1346,7 @@ watch(isLevel2, (isL2) => {
                 :src="ev.image_url"
                 :alt="ev.name"
                 class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-all duration-500"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/event' + ev.id + '/400/300'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
             </div>
             <div class="p-4 flex-1">
@@ -1369,7 +1370,7 @@ watch(isLevel2, (isL2) => {
     </footer>
   </div>
   
-  <ComingSoon v-else title="数据整理中" description="该人物数据正在整理中，敬请期待。" />
+  <ComingSoon v-else title="未找到该人物" description="未找到这位人物，或该人物暂无详情资料。" />
 </template>
 
 <style scoped>

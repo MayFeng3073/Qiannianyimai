@@ -7,7 +7,8 @@ import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 import { resolvePersonAlias } from '@/data/personAlias'
 import ComingSoon from '@/components/ComingSoon.vue'
 import BackButton from '@/components/BackButton.vue'
-import * as echarts from 'echarts'
+import * as echarts from 'echarts/core'
+import type { ECharts } from 'echarts/core'
 
 const route = useRoute()
 const router = useRouter()
@@ -15,14 +16,14 @@ const relationGraphRef = ref<HTMLElement | null>(null)
 const relationGraphWidth = ref(800)
 const relationGraphHeight = ref(420)
 const impactChartRef = ref<HTMLElement | null>(null)
-let impactChart: echarts.ECharts | null = null
+let impactChart: ECharts | null = null
 const isLoaded = ref(false)
 const exploreTab = ref<'person' | 'event'>('person')
 
 // 从事件ID推断朝代ID (204001 -> 尝试201)
 // 事件ID规则: dynasty_prefix = Math.floor(eventId / 1000) 但实际可能不对应
 // 因此采用尝试加载策略
-const eventId = Number(route.params.id) || 1002
+const eventId = Number(route.params.id) || 0
 const jsonData = ref<DynastyData | null>(null)
 
 // 尝试可能的朝代ID列表（基于事件ID前缀和知识库）
@@ -40,7 +41,7 @@ const onPersonImageError = (e: Event, name: string) => {
   const person = getPersonByName(name)
   const img = e.target as HTMLImageElement
   if (person) {
-    img.src = `https://picsum.photos/seed/person${person.id}/200/200`
+    img.src = '/images/placeholder-ink.svg'
   }
   img.onerror = null
 }
@@ -749,7 +750,7 @@ watch(impacts, () => {
                 :src="event!.image_url"
                 :alt="event!.name"
                 class="w-full h-[440px] object-cover object-top"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/event' + event!.id + '/600/440'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
               <div v-else class="w-full h-[440px] bg-gradient-to-br from-[#D8B26A]/25 to-[#355C5A]/20 flex items-center justify-center">
                 <span class="font-calligraphy text-6xl text-[#2C2C2C]/30">{{ event!.name.charAt(0) }}</span>
@@ -1259,7 +1260,7 @@ watch(impacts, () => {
                 :src="ev.image_url"
                 :alt="ev.name"
                 class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-all duration-500"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/event' + ev.id + '/400/300'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
             </div>
             <div class="p-4 flex-1">
