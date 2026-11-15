@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { events, persons, dynasties, eventTimelines } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
 import { resolvePersonIdByName } from '@/data/globalPersonIndex'
+import { resolvePersonAlias } from '@/data/personAlias'
 import ComingSoon from '@/components/ComingSoon.vue'
 import BackButton from '@/components/BackButton.vue'
 import * as echarts from 'echarts'
@@ -79,13 +80,21 @@ const currentDynastyId = computed<number | undefined>(() => {
 })
 
 const getPersonByName = (name: string) => {
+  // 先按原名查，查不到再按同人异名（字/号/尊称）查一次
+  const alias = resolvePersonAlias(name)
+  const candidates = alias === name ? [name] : [name, alias]
   if (jsonData.value) {
-    const found = jsonData.value.persons.find(p => p.name === name)
-    if (found) return found
+    for (const n of candidates) {
+      const found = jsonData.value.persons.find(p => p.name === n)
+      if (found) return found
+    }
   }
   // 限定在事件所属朝代内查找，避免 mock 全量回退命中其他朝代的同名人物
   const dynastyName = event.value?.dynasty
-  return persons.find(p => p.name === name && (!dynastyName || p.dynasty === dynastyName))
+  for (const n of candidates) {
+    const found = persons.find(p => p.name === n && (!dynastyName || p.dynasty === dynastyName))
+    if (found) return found
+  }
 }
 
 const validRelatedPersons = computed(() => {
@@ -220,6 +229,9 @@ const navigateToPerson = (name: string) => {
   const id = resolvePersonId(name)
   if (id !== undefined) router.push(`/person/${id}`)
 }
+
+/** 人物名是否能解析到真实人物；解析不到时页面降级为不可点标签 */
+const isClickablePerson = (name: string) => resolvePersonId(name) !== undefined
 
 const navigateToEvent = (id: number) => router.push(`/event/${id}`)
 const navigateToDynasty = () => {
@@ -860,8 +872,8 @@ watch(impacts, () => {
               <div
                 v-for="p in leaders"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#C34739]/10 border border-[#C34739]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#C34739]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#C34739]">{{ p.name.charAt(0) }}</span>
@@ -885,8 +897,8 @@ watch(impacts, () => {
               <div
                 v-for="p in participants"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#355C5A]/10 border border-[#355C5A]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#355C5A]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#355C5A]">{{ p.name.charAt(0) }}</span>
@@ -910,8 +922,8 @@ watch(impacts, () => {
               <div
                 v-for="p in opponents"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#8B5A2B]/10 border border-[#8B5A2B]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#8B5A2B]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#8B5A2B]">{{ p.name.charAt(0) }}</span>
@@ -935,8 +947,8 @@ watch(impacts, () => {
               <div
                 v-for="p in affected"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#5C7A5E]/10 border border-[#5C7A5E]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#5C7A5E]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#5C7A5E]">{{ p.name.charAt(0) }}</span>
@@ -1016,8 +1028,8 @@ watch(impacts, () => {
                 <g
                   v-for="node in eventGraphNodes"
                   :key="node.id"
-                  :class="node.type !== 'center' ? 'cursor-pointer' : ''"
-                  @click="node.type === 'person' ? navigateToPerson(node.name) : (node.type === 'event' && node.eventId ? navigateToEvent(node.eventId) : null)"
+                  :class="node.type === 'person' ? (isClickablePerson(node.name) ? 'cursor-pointer' : '') : (node.type === 'event' && node.eventId ? 'cursor-pointer' : '')"
+                  @click="node.type === 'person' ? (isClickablePerson(node.name) && navigateToPerson(node.name)) : (node.type === 'event' && node.eventId ? navigateToEvent(node.eventId) : null)"
                   filter="url(#eventNodeShadow)"
                 >
                   <rect
