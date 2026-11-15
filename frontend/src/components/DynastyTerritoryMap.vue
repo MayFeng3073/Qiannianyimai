@@ -206,14 +206,14 @@ const cities = computed(() =>
 const legend = [
   { label: '直接统治', fill: FILL[2], stroke: STROKE[2] },
   { label: '羁縻 / 都护府', fill: FILL[1], stroke: STROKE[1] },
-  { label: '非本朝疆域', fill: FILL[0], stroke: STROKE[0] }
+  { label: '现代中国版图', fill: FILL[0], stroke: STROKE[0] }
 ]
 
 </script>
 
 <template>
   <div>
-    <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4 w-[572px] max-w-full mx-auto">
+    <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4 w-[572px] max-w-full">
       <svg :viewBox="`0 0 ${W} ${H}`" class="block w-full h-auto">
         <defs>
           <!-- 超出视野范围的轮廓在边界处裁掉，不会伸进图例带 -->
