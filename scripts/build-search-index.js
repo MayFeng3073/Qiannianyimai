@@ -70,7 +70,8 @@ for (const f of files) {
     stats.persons++;
     stats.works += (p.works || []).length;
     stats.relations += ((p.narrative_relations && p.narrative_relations.edges) || []).length;
-    const parts = [p.dynasty || dynName, p.category || '', yearSpan(p.birth_year, p.death_year)].filter(Boolean);
+    const pYearText = yearSpan(p.birth_year, p.death_year) || '生卒不详';
+    const parts = [p.dynasty || dynName, p.category || '', pYearText].filter(Boolean);
     entries.push({
       t: 'p',
       i: p.id,
@@ -78,6 +79,9 @@ for (const f of files) {
       s: parts.join(' · '),
       l: p.level === 2 ? 2 : 1,
       d: dynId,
+      // 结构化年代：供家族模块做「人生年代重叠」推荐，避免解析展示文本
+      y: [p.birth_year ?? null, p.death_year ?? null],
+      yt: pYearText,
       // 知名度权重：供首页「热门人物」按影响力挑选
       w: Number(p.influence) || (p.dimension_scores && p.dimension_scores.historical_influence) || 60
     });
@@ -87,14 +91,18 @@ for (const f of files) {
     const name = String(e.name || '').trim();
     if (!name) continue;
     stats.events++;
+    const eYearText = yearSpan(e.start_year, e.end_year);
     entries.push({
       t: 'e',
       i: e.id,
       n: name,
-      s: `${yearSpan(e.start_year, e.end_year)} · ${e.dynasty || dynName}`,
+      s: `${eYearText} · ${e.dynasty || dynName}`,
       o: String(e.one_sentence || e.summary || '').slice(0, 80),
       // 所属朝代按文件归属，避免 201 等朝代的事件 id 前缀（204）与朝代 id 不一致
       d: dynId,
+      // 结构化年代：供家族模块做「人生年代重叠」推荐
+      y: [e.start_year ?? null, e.end_year ?? null],
+      yt: eYearText,
       // 知名度权重：相关人物、完整叙事、影响与背景越齐全，越适合作为「今日历史」
       w: 1
         + (e.related_persons || []).length

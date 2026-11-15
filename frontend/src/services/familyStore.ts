@@ -281,8 +281,8 @@ export async function clearFamilyData(): Promise<void> {
 /* ===================== 一键载入示例数据（便于测试） ===================== */
 /**
  * 清空并载入一套示例家庭数据，方便在刷新后直接看到家族树 / 详情页效果。
- * 历史关联指向大历史中真实存在的人物/事件 ID（如 明朝建立 id:10、朱元璋 id:12），
- * 用于演示历史标签与"他所处的时代"对照；大历史近现代内容待收录。
+ * 历史关联指向统一历史索引中真实存在的人物/事件 ID（如 明朝建立 115301、朱元璋 115001），
+ * 用于演示历史标签与"他所处的时代"对照。
  */
 export async function seedDemoFamily(): Promise<void> {
   await clearFamilyData()
@@ -318,10 +318,10 @@ export async function seedDemoFamily(): Promise<void> {
     photoIds: []
   })
 
-  // 历史关联：指向大历史中真实存在的条目，用于演示历史标签与时代对照
-  await addHistoryLink({ memberId: grandpa.id, targetType: 'event', targetId: 10, confirmed: true })   // 明朝建立
-  await addHistoryLink({ memberId: grandpa.id, targetType: 'person', targetId: 12, confirmed: true })  // 朱元璋
-  await addHistoryLink({ memberId: me.id, targetType: 'event', targetId: 1001, confirmed: true })      // 阪泉之战
+  // 历史关联：指向统一历史索引中真实存在的条目，用于演示历史标签与时代对照
+  await addHistoryLink({ memberId: grandpa.id, targetType: 'event', targetId: 115301, confirmed: true, targetName: '明朝建立', targetDynasty: '明', targetYear: '1368年' })
+  await addHistoryLink({ memberId: grandpa.id, targetType: 'person', targetId: 115001, confirmed: true, targetName: '朱元璋', targetDynasty: '明', targetYear: '1328年—1398年' })
+  await addHistoryLink({ memberId: me.id, targetType: 'event', targetId: 1001, confirmed: true, targetName: '阪泉之战', targetDynasty: '上古', targetYear: '前2600年' })
 }
 
 /* ===================== 导出 / 导入 ===================== */

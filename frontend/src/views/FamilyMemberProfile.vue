@@ -5,7 +5,7 @@ import {
   getMember, getAllMembers, getAllRelations,
   getLifeEventsByMember, getStoriesByMember, getHistoryLinksByMember, getPhotosByMember
 } from '@/services/familyStore'
-import { resolveHistoryTarget, recommendHistory, extractYear, type HistoryTargetInfo } from '@/services/historyResolver'
+import { resolveHistoryLink, recommendHistory, extractYear, type HistoryTargetInfo } from '@/services/historyResolver'
 import type { FamilyMember, FamilyRelation, LifeEvent, FamilyStory, HistoryLink } from '@/types/family'
 
 const route = useRoute()
@@ -86,7 +86,7 @@ interface EraRow {
   isLinked: boolean
 }
 const resolvedLinks = computed(() => links.value
-  .map(l => ({ link: l, info: resolveHistoryTarget(l.targetType, l.targetId) }))
+  .map(l => ({ link: l, info: resolveHistoryLink(l) }))
   .filter(x => x.info))
 
 const eraRows = computed<EraRow[]>(() => {

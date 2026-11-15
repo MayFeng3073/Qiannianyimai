@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import type { FamilyMember, FamilyRelation, HistoryLink } from '@/types/family'
-import { resolveHistoryTarget, type HistoryTargetInfo } from '@/services/historyResolver'
+import { resolveHistoryLink, type HistoryTargetInfo } from '@/services/historyResolver'
 
 const props = defineProps<{
   members: FamilyMember[]
@@ -229,7 +229,7 @@ const layout = computed<Layout>(() => {
   const tagLines: string[] = []
   const byMember = new Map<string, { link: HistoryLink; info: HistoryTargetInfo }[]>()
   for (const link of historyLinks) {
-    const info = resolveHistoryTarget(link.targetType, link.targetId)
+    const info = resolveHistoryLink(link)
     if (!info) continue
     const arr = byMember.get(link.memberId) || []
     arr.push({ link, info })

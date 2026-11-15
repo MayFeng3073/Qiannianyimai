@@ -1,9 +1,9 @@
 /**
  * 家族记忆模块 —— 数据结构类型
  * ================================================
- * 本模块完全独立于大历史（mock/data.ts、public/data/*.json）。
- * 家族数据仅通过 HistoryLink 的 targetId/targetType 引用大历史
- * 人物/事件的数字 ID，绝不复制大历史内容，也绝不写入大历史库。
+ * 本模块完全独立于历史数据（public/data/*.json）。
+ * 家族数据仅通过 HistoryLink 的 targetId/targetType 引用历史
+ * 人物/事件的数字 ID，绝不复制历史内容，也绝不写入历史库。
  */
 
 /** 家族基本信息（单条，key 固定为 'self'） */
@@ -117,15 +117,24 @@ export interface FamilyPhoto {
 export type HistoryTargetType = 'person' | 'event'
 
 /**
- * 历史关联：只保存对大历史资源的引用（targetId）。
- * targetId 对应大历史 mock/data.ts 中 persons/events 的数字 ID，
- * 或 dynasty_*.json 中 persons/events 的 id。由页面跳转 /person/:id、/event/:id 读取。
+ * 历史关联：只保存对历史库资源的引用（targetId）。
+ * targetId 对应统一历史索引（search-index.json / ancient-index.json）中
+ * persons/events 的 id。由页面跳转 /person/:id、/event/:id 读取。
+ *
+ * targetName / targetDynasty / targetYear 是建立关联时的展示快照，
+ * 仅在索引暂时不可用（如离线、数据未加载）时兜底展示，不替代真实索引。
  */
 export interface HistoryLink {
   id: string
   memberId: string
   targetType: HistoryTargetType
   targetId: number
+  /** 关联目标名称快照 */
+  targetName?: string
+  /** 关联目标所属朝代快照 */
+  targetDynasty?: string
+  /** 关联目标年代快照 */
+  targetYear?: string
   note?: string
   confirmed: boolean
   createdAt: number

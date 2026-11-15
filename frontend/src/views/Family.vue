@@ -8,7 +8,7 @@ import {
   getAllMembers, getAllRelations, getAllHistoryLinks,
   getLifeEventsByMember, getStoriesByMember
 } from '@/services/familyStore'
-import { resolveHistoryTarget } from '@/services/historyResolver'
+import { resolveHistoryLink, extractYear } from '@/services/historyResolver'
 
 const router = useRouter()
 const isLoaded = ref(false)
@@ -65,10 +65,10 @@ const footprint = computed<FootItem[]>(() => {
     const key = `${link.targetType}:${link.targetId}`
     if (seenTargets.has(key)) continue
     seenTargets.add(key)
-    const info = resolveHistoryTarget(link.targetType, link.targetId)
+    const info = resolveHistoryLink(link)
     if (!info) continue
-    const y = parseInt(info.year.split('—')[0], 10)
-    if (!isNaN(y)) items.push({ year: y, title: info.name, kind: 'history', path: info.path, note: info.dynasty })
+    const y = extractYear(info.year)
+    if (y !== null) items.push({ year: y, title: info.name, kind: 'history', path: info.path, note: info.dynasty })
   }
   items.sort((a, b) => a.year - b.year)
   return items.slice(0, 40).map((it, idx) => ({ ...it, _k: idx }))
@@ -111,7 +111,7 @@ function avatarBg(m: FamilyMember): string {
   return PALETTE[h]
 }
 function gotoHistory(link: HistoryLink) {
-  const info = resolveHistoryTarget(link.targetType, link.targetId)
+  const info = resolveHistoryLink(link)
   if (info) router.push(info.path)
 }
 </script>

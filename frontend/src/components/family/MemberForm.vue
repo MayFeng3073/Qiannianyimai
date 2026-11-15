@@ -7,7 +7,7 @@ import {
   getHistoryLinksByMember, getPhotosByMember, addMember, updateMember, clearMemberExtras,
   addRelation, addLifeEvent, addStory, addHistoryLink, addPhoto
 } from '@/services/familyStore'
-import { searchHistory, resolveHistoryTarget, recommendHistory, type HistorySearchItem, type HistoryRecommendation } from '@/services/historyResolver'
+import { searchHistory, resolveHistoryLink, recommendHistory, type HistorySearchItem, type HistoryRecommendation } from '@/services/historyResolver'
 
 const route = useRoute()
 const router = useRouter()
@@ -57,7 +57,15 @@ const SIBLING_SET = new Set(['兄弟', '姐妹', '哥哥', '姐姐', '弟弟', '
 
 const lifeEvents = ref<{ year: string; title: string; description: string }[]>([])
 const stories = ref<{ year: string; title: string; content: string }[]>([])
-const links = ref<{ targetType: HistoryTargetType; targetId: number }[]>([])
+/* 历史关联草稿：保存展示快照，索引不可用时仍能显示名称 */
+interface LinkDraft {
+  targetType: HistoryTargetType
+  targetId: number
+  targetName?: string
+  targetDynasty?: string
+  targetYear?: string
+}
+const links = ref<LinkDraft[]>([])
 
 /* ===== 家族照片（对应详情页「关于他的记忆」照片，可多选/删除） ===== */
 const photos = ref<{ blob: Blob; preview: string }[]>([])
@@ -136,7 +144,10 @@ onMounted(async () => {
       stories.value = (await getStoriesByMember(editId.value)).map(s => ({
         year: s.year || '', title: s.title, content: s.content
       }))
-      links.value = (await getHistoryLinksByMember(editId.value)).map(l => ({ targetType: l.targetType, targetId: l.targetId }))
+      links.value = (await getHistoryLinksByMember(editId.value)).map(l => ({
+        targetType: l.targetType, targetId: l.targetId,
+        targetName: l.targetName, targetDynasty: l.targetDynasty, targetYear: l.targetYear
+      }))
       photos.value = (await getPhotosByMember(editId.value)).map(p => ({ blob: p.blob, preview: URL.createObjectURL(p.blob) }))
     }
   } else {
@@ -154,7 +165,10 @@ const histQuery = ref('')
 const histResults = computed(() => searchHistory(histQuery.value, 10))
 function addLink(item: HistorySearchItem) {
   if (links.value.some(l => l.targetType === item.type && l.targetId === item.id)) return
-  links.value.push({ targetType: item.type, targetId: item.id })
+  links.value.push({
+    targetType: item.type, targetId: item.id,
+    targetName: item.name, targetDynasty: item.dynasty, targetYear: item.year
+  })
   histQuery.value = ''
 }
 function removeLink(i: number) { links.value.splice(i, 1) }
@@ -172,12 +186,15 @@ const recommendList = computed<HistoryRecommendation[]>(() => {
 })
 function confirmRecommend(r: HistoryRecommendation) {
   if (links.value.some(l => l.targetType === r.type && l.targetId === r.id)) return
-  links.value.push({ targetType: r.type, targetId: r.id })
+  links.value.push({
+    targetType: r.type, targetId: r.id,
+    targetName: r.name, targetDynasty: r.dynasty, targetYear: r.year
+  })
 }
 
-const linkLabel = (t: HistoryTargetType, id: number) => {
-  const info = resolveHistoryTarget(t, id)
-  return info ? info.name : `${t === 'person' ? '人物' : '事件'} #${id}`
+function linkLabel(l: LinkDraft) {
+  const info = resolveHistoryLink(l)
+  return info ? info.name : `${l.targetType === 'person' ? '人物' : '事件'} #${l.targetId}`
 }
 
 /* ===================== 头像上传 ===================== */
@@ -245,7 +262,11 @@ async function save() {
       await addStory({ memberId, year: s.year || undefined, title: s.title.trim(), content: s.content.trim(), photoIds: [] })
     }
     for (const l of links.value) {
-      await addHistoryLink({ memberId, targetType: l.targetType, targetId: l.targetId, confirmed: true })
+      await addHistoryLink({
+        memberId, targetType: l.targetType, targetId: l.targetId,
+        targetName: l.targetName, targetDynasty: l.targetDynasty, targetYear: l.targetYear,
+        confirmed: true
+      })
     }
     // 家族照片（编辑时 clearMemberExtras 已清空原照片，重新写入全部）
     for (const ph of photos.value) {
@@ -589,7 +610,7 @@ const labelCls = 'block text-xs text-ink-black/50 mb-1.5'
           <div v-if="links.length" class="space-y-2">
             <div v-for="(l, i) in links" :key="i" class="flex items-center gap-2 bg-white/70 rounded-xl px-4 py-2.5">
               <span class="w-2 h-2 rounded-full bg-vermillion shrink-0"></span>
-              <span class="text-sm text-ink-black/80">{{ linkLabel(l.targetType, l.targetId) }}</span>
+              <span class="text-sm text-ink-black/80">{{ linkLabel(l) }}</span>
               <span class="ml-auto text-[10px] px-1.5 py-0.5 rounded bg-ink-black/5 text-ink-black/40">{{ l.targetType === 'person' ? '人物' : '事件' }}</span>
               <button class="text-ink-black/35 hover:text-vermillion transition-colors" @click="removeLink(i)">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

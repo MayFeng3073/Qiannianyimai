@@ -1,15 +1,23 @@
 /**
- * 历史关联目标解析 —— 只读引用大历史数据
+ * 历史关联目标解析 —— 只读引用统一历史索引
  * ================================================
- * 家族数据仅保存 HistoryLink.targetType / targetId（大历史人物/事件 ID）。
+ * 家族数据仅保存 HistoryLink.targetType / targetId（历史人物/事件 ID）。
  * 本服务负责把 ID 解析成可展示的名称/年代/跳转路径，供家族页面展示与跳转。
- * 只 import 读取，绝不写入或修改大历史数据。
+ *
+ * 数据源：services/historyIndex（search-index.json + ancient-index.json）
+ * 不再直接读取 mock/data.ts，确保家族关联的是真实历史库而不是演示数据。
  */
-import { persons, events } from '@/mock/data'
 import type { HistoryTargetType } from '@/types/family'
+import {
+  ensureHistoryIndex,
+  getHistoryEntries,
+  resolveHistoryEntry,
+  searchHistoryEntries,
+  historyIndexVersion
+} from '@/services/historyIndex'
 
 export interface HistoryTargetInfo {
-  /** 大历史人物/事件名称 */
+  /** 历史人物/事件名称 */
   name: string
   /** 所属朝代 */
   dynasty: string
@@ -19,7 +27,7 @@ export interface HistoryTargetInfo {
   path: string
 }
 
-/** 大历史人物/事件 → 搜索索引 */
+/** 历史人物/事件 → 搜索索引 */
 export interface HistorySearchItem {
   type: HistoryTargetType
   id: number
@@ -28,54 +36,114 @@ export interface HistorySearchItem {
   year: string
 }
 
+/**
+ * 旧版占位数据 id → 真实历史条目 id。
+ * 旧版本曾用 1–12 作为演示人物/事件，历史家族数据里可能仍保存着这些 id，
+ * 这里做一次透明重定向，避免升级后旧关联变成「人物 #12」。
+ */
+const LEGACY_PERSON_IDS: Record<number, number> = {
+  1: 112042, // 李白
+  2: 112043, // 杜甫
+  3: 112019, // 武则天
+  4: 112002, // 李世民
+  5: 113016, // 苏轼
+  6: 202014, // 孔子
+  7: 107005, // 汉武帝
+  8: 109009, // 诸葛亮
+  9: 109001, // 赵云
+  10: 113014, // 王安石
+  11: 113023, // 岳飞
+  12: 115001 // 朱元璋
+}
+
+const LEGACY_EVENT_IDS: Record<number, number> = {
+  1: 112305, // 贞观之治
+  2: 112315, // 安史之乱
+  3: 112303, // 玄武门之变
+  4: 112312, // 开元盛世
+  6: 113310, // 王安石变法
+  7: 107311, // 张骞出使西域
+  9: 113319, // 靖康之变
+  10: 115301 // 明朝建立
+}
+
+/** 兼容旧 id 的条目查找 */
+function lookup(type: HistoryTargetType, id: number) {
+  const direct = resolveHistoryEntry(type, id)
+  if (direct) return direct
+  const legacy = type === 'person' ? LEGACY_PERSON_IDS[id] : LEGACY_EVENT_IDS[id]
+  return legacy ? resolveHistoryEntry(type, legacy) : null
+}
+
+function entryPath(type: HistoryTargetType, id: number): string {
+  return type === 'person' ? `/person/${id}` : `/event/${id}`
+}
+
 export function resolveHistoryTarget(type: HistoryTargetType, id: number): HistoryTargetInfo | null {
-  if (type === 'person') {
-    const p = persons.find(x => x.id === id)
-    if (!p) return null
-    const y = (p.birth_year || p.death_year)
-      ? `${p.birth_year ?? '?'}—${p.death_year ?? '今'}`
-      : '生卒不详'
-    return { name: p.name, dynasty: p.dynasty, year: y, path: `/person/${p.id}` }
+  const entry = lookup(type, id)
+  if (!entry) return null
+  return {
+    name: entry.name,
+    dynasty: entry.dynasty,
+    year: entry.year || (type === 'person' ? '生卒不详' : '年代不详'),
+    path: entryPath(type, entry.id)
   }
-  const e = events.find(x => x.id === id)
-  if (!e) return null
-  const y = `${e.start_year}—${e.end_year}`
-  return { name: e.name, dynasty: e.dynasty, year: y, path: `/event/${e.id}` }
 }
 
-/** 构建大历史人物/事件搜索索引（惰性，仅首次调用） */
-let _searchIndex: HistorySearchItem[] | null = null
+/**
+ * 解析家族历史关联：优先查真实索引，查不到时回退到链接保存的快照。
+ * 快照只用于展示，不会掩盖数据源的真实性。
+ */
+export function resolveHistoryLink(link: {
+  targetType: HistoryTargetType
+  targetId: number
+  targetName?: string
+  targetDynasty?: string
+  targetYear?: string
+}): HistoryTargetInfo | null {
+  const info = resolveHistoryTarget(link.targetType, link.targetId)
+  if (info) return info
+  if (!link.targetName) return null
+  return {
+    name: link.targetName,
+    dynasty: link.targetDynasty || '',
+    year: link.targetYear || '年代不详',
+    path: entryPath(link.targetType, link.targetId)
+  }
+}
+
+/** 构建历史人物/事件搜索索引（随统一索引版本缓存） */
+let _searchIndex: HistorySearchItem[] = []
+let _searchVersion = -1
 export function getHistorySearchIndex(): HistorySearchItem[] {
-  if (_searchIndex) return _searchIndex
-  const items: HistorySearchItem[] = []
-  for (const p of persons) {
-    items.push({
-      type: 'person', id: p.id, name: p.name, dynasty: p.dynasty,
-      year: (p.birth_year || p.death_year) ? `${p.birth_year ?? '?'}—${p.death_year ?? '今'}` : '生卒不详'
-    })
-  }
-  for (const e of events) {
-    items.push({ type: 'event', id: e.id, name: e.name, dynasty: e.dynasty, year: `${e.start_year}—${e.end_year}` })
-  }
-  _searchIndex = items
-  return items
+  const v = historyIndexVersion()
+  if (_searchVersion === v && _searchIndex.length) return _searchIndex
+  _searchIndex = getHistoryEntries().map(e => ({
+    type: e.type,
+    id: e.id,
+    name: e.name,
+    dynasty: e.dynasty,
+    year: e.year || (e.type === 'person' ? '生卒不详' : '年代不详')
+  }))
+  _searchVersion = v
+  return _searchIndex
 }
 
-/** 按关键词搜索大历史人物/事件（上限 limit 条） */
+/** 按关键词搜索历史人物/事件（上限 limit 条） */
 export function searchHistory(kw: string, limit = 20): HistorySearchItem[] {
-  const q = kw.trim()
-  if (!q) return []
-  const lower = q.toLowerCase()
-  return getHistorySearchIndex()
-    .filter(i => i.name.includes(q) || i.name.toLowerCase().includes(lower) || i.dynasty.includes(q))
-    .slice(0, limit)
+  return searchHistoryEntries(kw, limit).map(e => ({
+    type: e.type,
+    id: e.id,
+    name: e.name,
+    dynasty: e.dynasty,
+    year: e.year || (e.type === 'person' ? '生卒不详' : '年代不详')
+  }))
 }
 
 /* ================================================================
  * 历史关联 · 系统推荐
- * 依据家族成员的出生年 / 去世年 / 人生经历年份，自动检索大历史中
+ * 依据家族成员的出生年 / 去世年 / 人生经历年份，自动检索历史中
  * 年代重叠的人物与事件，生成推荐列表（"系统推荐 + 用户确认"机制）。
- * 大历史库当前仅收录上古至明清内容，近现代事件待补；无匹配时返回空。
  * ================================================================ */
 
 export interface HistoryRecommendation {
@@ -117,7 +185,7 @@ function overlapReason(ov: [number, number], span: [number, number]): string {
 }
 
 /**
- * 系统推荐：检索大历史中与该成员时代重叠的人物/事件。
+ * 系统推荐：检索历史中与该成员时代重叠的人物/事件。
  * @param opts.birthYear / deathYear / lifeYears  —— 成员人生信息
  * @param opts.exclude —— 已建立关联的目标（避免重复推荐）
  * @param opts.limit —— 最多返回条数
@@ -135,30 +203,33 @@ export function recommendHistory(opts: {
   const excludedKey = new Set(exclude.map(e => `${e.type}:${e.id}`))
   const results: HistoryRecommendation[] = []
 
-  // 事件：与成员人生阶段重叠
-  for (const e of events) {
-    if (excludedKey.has(`event:${e.id}`)) continue
-    const evStart = e.start_year
-    const evEnd = e.end_year ?? evStart
-    const ov = overlap(span, [evStart, evEnd])
-    if (!ov) continue
-    results.push({
-      type: 'event', id: e.id, name: e.name, dynasty: e.dynasty,
-      year: `${evStart}—${evEnd}`, reason: overlapReason(ov, span), overlap: ov
-    })
-  }
+  for (const entry of getHistoryEntries()) {
+    if (excludedKey.has(`${entry.type}:${entry.id}`)) continue
+    const [rawStart, rawEnd] = entry.years
 
-  // 人物：生平年代与成员人生重叠（去世年未知时按出生年 + 120 估算，避免古人与近现代误匹配）
-  for (const p of persons) {
-    if (excludedKey.has(`person:${p.id}`)) continue
-    if (p.birth_year == null && p.death_year == null) continue
-    const pStart = p.birth_year ?? (p.death_year ?? 0) - 120
-    const pEnd = p.death_year ?? (p.birth_year ?? 0) + 120
+    if (entry.type === 'event') {
+      if (rawStart == null) continue
+      const evStart = rawStart
+      const evEnd = rawEnd ?? evStart
+      const ov = overlap(span, [evStart, evEnd])
+      if (!ov) continue
+      results.push({
+        type: 'event', id: entry.id, name: entry.name, dynasty: entry.dynasty,
+        year: entry.year || `${evStart}—${evEnd}`,
+        reason: overlapReason(ov, span), overlap: ov
+      })
+      continue
+    }
+
+    // 人物：去世年未知时按出生年 + 120 估算，避免古人与近现代误匹配
+    if (rawStart == null && rawEnd == null) continue
+    const pStart = rawStart ?? (rawEnd ?? 0) - 120
+    const pEnd = rawEnd ?? (rawStart ?? 0) + 120
     const ov = overlap(span, [pStart, pEnd])
     if (!ov) continue
     results.push({
-      type: 'person', id: p.id, name: p.name, dynasty: p.dynasty,
-      year: p.birth_year && p.death_year ? `${p.birth_year}—${p.death_year}` : '生卒不详',
+      type: 'person', id: entry.id, name: entry.name, dynasty: entry.dynasty,
+      year: entry.year || '生卒不详',
       reason: overlapReason(ov, span), overlap: ov
     })
   }
@@ -173,8 +244,17 @@ export function recommendHistory(opts: {
   return results.slice(0, limit)
 }
 
-/** 解析展示年代字符串，提取起始年份（如 "1937—1945" → 1937）；无法解析返回 null */
+/**
+ * 解析展示年代字符串，提取起始年份。
+ * 支持「1937—1945」「前2717年—前2599年」（公元前返回负数）。
+ */
 export function extractYear(yearText: string): number | null {
+  if (!yearText) return null
+  const bce = yearText.match(/前\s*(\d+)/)
+  if (bce) return -parseInt(bce[1], 10)
   const m = yearText.match(/-?\d+/)
   return m ? parseInt(m[0], 10) : null
 }
+
+/** 供页面提前触发索引加载（路由守卫内部使用） */
+export { ensureHistoryIndex }
