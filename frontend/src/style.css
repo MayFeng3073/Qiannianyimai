@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
 
-/* 书法字体改为本地自托管：Google Fonts 的中文子集按 unicode-range 拆分，
-   网络不稳时只会加载部分子集，导致标题时好时坏。此文件为完整字库，离线可用。 */
+/* 书法字体改为本地自托管子集：只保留项目实际用到的字符，
+   体积从 5.8MB 降到约 1.2MB，首屏即可显示书法体。
+   源字体在 frontend/fonts-src/，改动文案后执行 npm run font:subset 重新生成。 */
 @font-face {
   font-family: 'Ma Shan Zheng';
-  src: url('/fonts/MaShanZheng-Regular.ttf') format('truetype');
+  src: url('/fonts/MaShanZheng-subset.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
