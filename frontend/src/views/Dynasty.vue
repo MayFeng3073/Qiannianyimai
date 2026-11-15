@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { dynasties, persons, events, dynastyStatistics, occupationDistribution } from '@/mock/data'
+import { dynasties, persons, events } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
 import { RELATED_DYNASTIES } from '@/services/dynastyRelations'
 import { recordRecentDynasty } from '@/services/recentDynasties'
@@ -67,6 +67,71 @@ const dynastyPersons = computed(() => {
   if (!dynasty.value) return []
   return persons.filter(p => p.dynasty === dynasty.value!.name)
 })
+
+/* ---------------- 当朝真实统计（不再使用全局写死值） ---------------- */
+// 代表作品：当朝人物 works 数量之和
+const dynastyWorkCount = computed(() =>
+  dynastyPersons.value.reduce((sum, p) => sum + (p.works?.length || 0), 0)
+)
+
+// 人物关系：当朝人物之间去重后的无向关系对数（A—B 与 B—A 视为同一条）
+const dynastyRelationCount = computed(() => {
+  const names = new Set(dynastyPersons.value.map(p => p.name).filter(Boolean))
+  const pairs = new Set<string>()
+  const addPair = (a: string, b: string) => {
+    const x = a.trim()
+    const y = b.trim()
+    if (!x || !y || x === y) return
+    pairs.add(x < y ? `${x}|${y}` : `${y}|${x}`)
+  }
+
+  for (const p of dynastyPersons.value) {
+    for (const e of p.narrative_relations?.edges || []) {
+      if (names.has(e.source) && names.has(e.target)) addPair(e.source, e.target)
+    }
+  }
+  if (pairs.size) return pairs.size
+
+  // 没有叙事关系网时退回 related_people，仍限定在当朝人物内
+  for (const p of dynastyPersons.value) {
+    for (const r of p.related_people || []) {
+      if (names.has(r.name)) addPair(p.name, r.name)
+    }
+  }
+  return pairs.size
+})
+
+// 职业字段只有部分朝代有；覆盖率不足一半时按人物类型（category）统计
+const occupationStatSource = computed<'occupation' | 'category'>(() => {
+  const list = dynastyPersons.value
+  if (!list.length) return 'category'
+  const covered = list.filter(p => (p.occupations || []).length > 0).length
+  return covered * 2 >= list.length ? 'occupation' : 'category'
+})
+
+const occupationStats = computed(() => {
+  const counts: Record<string, number> = {}
+  if (occupationStatSource.value === 'occupation') {
+    for (const p of dynastyPersons.value) {
+      for (const o of p.occupations || []) {
+        const name = String(o || '').trim()
+        if (name) counts[name] = (counts[name] || 0) + 1
+      }
+    }
+  } else {
+    for (const p of dynastyPersons.value) {
+      const name = String(p.category || '').trim() || '其他'
+      counts[name] = (counts[name] || 0) + 1
+    }
+  }
+  return Object.entries(counts)
+    .map(([name, value]) => ({ name, value }))
+    .sort((a, b) => b.value - a.value)
+})
+
+const occupationChartTitle = computed(() =>
+  occupationStatSource.value === 'occupation' ? '人物职业分布' : '人物类型分布'
+)
 
 const characteristics = computed(() => {
   if (!dynasty.value) return []
@@ -1120,7 +1185,9 @@ const initOccupationChart = () => {
   if (!occupationChartRef.value) return
   if (occupationChart) occupationChart.dispose()
   occupationChart = echarts.init(occupationChartRef.value)
-  
+
+  const stats = occupationStats.value
+  const sum = stats.reduce((s, d) => s + d.value, 0) || 1
   const colors = ['#C34739', '#355C5A', '#D8B26A', '#4A6F7A', '#5C7A5E', '#8B5A2B', '#D4756A']
   
   occupationChart.setOption({
@@ -1141,9 +1208,8 @@ const initOccupationChart = () => {
       itemHeight: 10,
       itemGap: 12,
       formatter: (name: string) => {
-        const item = occupationDistribution.find(d => d.name === name)
+        const item = stats.find(d => d.name === name)
         if (!item) return name
-        const sum = occupationDistribution.reduce((s, d) => s + d.value, 0) || 1
         return `${name}  ${Math.round((item.value / sum) * 100)}%`
       }
     },
@@ -1163,7 +1229,7 @@ const initOccupationChart = () => {
       emphasis: {
         scaleSize: 8
       },
-      data: occupationDistribution.map((item, i) => ({
+      data: stats.map((item, i) => ({
         value: item.value,
         name: item.name,
         itemStyle: { color: colors[i % colors.length] }
@@ -1639,7 +1705,7 @@ onUnmounted(() => {
             <div class="bg-white/60 border border-[#D8B26A]/20 rounded-md p-5">
               <h4 class="text-sm text-[#4A4A3A]/60 mb-3 font-medium flex items-center gap-2">
                 <svg class="w-4 h-4 text-[#C34739]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
-                人物职业分布
+                {{ occupationChartTitle }}
               </h4>
               <div ref="occupationChartRef" class="w-full" style="height: 300px;"></div>
             </div>
@@ -1742,12 +1808,12 @@ onUnmounted(() => {
             </div>
             <div class="bg-white/60 border border-[#D8B26A]/20 rounded-md p-5 text-center">
               <svg class="w-6 h-6 mx-auto mb-2 text-[#D8B26A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-              <div class="font-calligraphy text-3xl text-[#D8B26A] mb-1">{{ dynastyStatistics.work_count }}</div>
+              <div class="font-calligraphy text-3xl text-[#D8B26A] mb-1">{{ dynastyWorkCount }}</div>
               <span class="text-xs text-[#4A4A3A]/50">代表作品</span>
             </div>
             <div class="bg-white/60 border border-[#D8B26A]/20 rounded-md p-5 text-center">
               <svg class="w-6 h-6 mx-auto mb-2 text-[#4A6F7A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-              <div class="font-calligraphy text-3xl text-[#4A6F7A] mb-1">{{ dynastyStatistics.relation_count }}</div>
+              <div class="font-calligraphy text-3xl text-[#4A6F7A] mb-1">{{ dynastyRelationCount }}</div>
               <span class="text-xs text-[#4A4A3A]/50">人物关系</span>
             </div>
           </div>

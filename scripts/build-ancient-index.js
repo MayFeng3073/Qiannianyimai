@@ -88,20 +88,35 @@ const meta = dynasties.find(d => d.id === ANCIENT_DYN_ID) || { id: ANCIENT_DYN_I
 const entries = [];
 let personCount = 0;
 let eventCount = 0;
+let workCount = 0;
+
+// 朝代条目：让首页搜索「上古」也能直达朝代页（historyIndex 会忽略非人物/事件条目）
+entries.push({
+  t: 'd',
+  i: ANCIENT_DYN_ID,
+  n: meta.name,
+  s: `${yearSpan(meta.start_year, meta.end_year)}${meta.capital ? ' · 都 ' + meta.capital : ''}`
+});
 
 for (const p of persons) {
   const name = String(p.name || '').trim();
   if (!name || !ANCIENT_DYNASTIES.has(p.dynasty)) continue;
   personCount++;
+  const works = (p.works || []).length;
+  workCount += works;
   const yt = yearSpan(p.birth_year, p.death_year) || '生卒不详';
   entries.push({
     t: 'p',
     i: p.id,
     n: name,
     s: [p.dynasty, p.category || '', yt].filter(Boolean).join(' · '),
+    // 与 search-index 对齐：2 级人物跳转独立的「人物故事」页
+    l: p.level === 2 ? 2 : 1,
     d: ANCIENT_DYN_ID,
     y: [p.birth_year ?? null, p.death_year ?? null],
     yt,
+    // 作品数：首页统计「代表作品」时按条目精确累加
+    wc: works,
     w: Number(p.influence) || (p.dimension_scores && p.dimension_scores.historical_influence) || 60
   });
 }
@@ -134,8 +149,16 @@ for (const e of events) {
 const out = {
   generatedAt: new Date().toISOString().slice(0, 10),
   source: 'frontend/src/mock/data.ts（只读快照，上古模块与 mock 均未被修改）',
-  dynasty: { id: ANCIENT_DYN_ID, name: meta.name, start: meta.start_year ?? null, end: meta.end_year ?? null },
-  stats: { persons: personCount, events: eventCount },
+  dynasty: {
+    id: ANCIENT_DYN_ID,
+    name: meta.name,
+    start: meta.start_year ?? null,
+    end: meta.end_year ?? null,
+    capital: meta.capital || '',
+    duration: meta.duration || '',
+    summary: String(meta.summary || '')
+  },
+  stats: { persons: personCount, events: eventCount, works: workCount },
   entries
 };
 

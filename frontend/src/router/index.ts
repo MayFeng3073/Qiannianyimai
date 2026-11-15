@@ -11,7 +11,6 @@ import Family from '@/views/Family.vue'
 import FamilyManage from '@/views/FamilyManage.vue'
 import FamilyMemberProfile from '@/views/FamilyMemberProfile.vue'
 import MemberForm from '@/components/family/MemberForm.vue'
-import Profile from '@/views/Profile.vue'
 import { persons } from '@/mock/data'
 import { ensureHistoryIndex } from '@/services/historyIndex'
 
@@ -146,11 +145,6 @@ const router = createRouter({
       name: 'FamilyManage',
       component: FamilyManage,
       beforeEnter: preloadHistory
-    },
-    {
-      path: '/profile',
-      name: 'Profile',
-      component: Profile
     }
   ],
   scrollBehavior(_to, _from, savedPosition) {

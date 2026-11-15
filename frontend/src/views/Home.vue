@@ -15,6 +15,8 @@ interface SearchEntry {
   d?: number
   o?: string
   w?: number
+  /** 人物作品数（上古快照用于首页统计精确累加） */
+  wc?: number
 }
 interface DynastyLite {
   id: number
@@ -29,6 +31,11 @@ interface SearchIndex {
   stats: { persons: number; events: number; works: number; relations: number; keywords: number; dynasties: number }
   dynasties: DynastyLite[]
   entries: SearchEntry[]
+}
+interface AncientIndex {
+  dynasty?: DynastyLite
+  stats?: { persons?: number; events?: number; works?: number }
+  entries?: SearchEntry[]
 }
 
 const router = useRouter()
@@ -46,17 +53,63 @@ const indexLoading = ref(false)
 const indexError = ref('')
 let indexPromise: Promise<void> | null = null
 
+/**
+ * 合并上古只读快照（ancient-index.json）
+ * 规则与家族模块的 historyIndex 保持一致：按「类型:id」去重，大历史优先。
+ */
+const mergeAncientIndex = (big: SearchIndex, ancient: AncientIndex | null): SearchIndex => {
+  const rawEntries = ancient?.entries || []
+  if (!rawEntries.length) return big
+
+  const seen = new Set(big.entries.filter(e => e.i !== undefined).map(e => `${e.t}:${e.i}`))
+  const extra = rawEntries.filter(e => e.i === undefined || !seen.has(`${e.t}:${e.i}`))
+  if (!extra.length) return big
+
+  const dyn = ancient?.dynasty
+  const hasDynasty = !!dyn && big.dynasties.some(d => d.id === dyn.id)
+  const dynasties = !dyn || hasDynasty ? big.dynasties : [dyn, ...big.dynasties]
+
+  const persons = extra.filter(e => e.t === 'p').length
+  const events = extra.filter(e => e.t === 'e').length
+  const works = extra.reduce((sum, e) => sum + (e.t === 'p' ? e.wc || 0 : 0), 0)
+
+  return {
+    stats: {
+      persons: big.stats.persons + persons,
+      events: big.stats.events + events,
+      works: big.stats.works + works,
+      relations: big.stats.relations,
+      keywords: big.stats.keywords,
+      dynasties: big.stats.dynasties + (dyn && !hasDynasty ? 1 : 0)
+    },
+    dynasties,
+    entries: [...big.entries, ...extra]
+  }
+}
+
+const fetchJson = async <T,>(url: string): Promise<T | null> => {
+  try {
+    const r = await fetch(url)
+    if (!r.ok) return null
+    return (await r.json()) as T
+  } catch {
+    return null
+  }
+}
+
 const ensureIndex = (): Promise<void> => {
   if (indexData.value) return Promise.resolve()
   if (indexPromise) return indexPromise
   indexLoading.value = true
-  indexPromise = fetch('/data/search-index.json')
-    .then(r => {
+  indexPromise = Promise.all([
+    fetch('/data/search-index.json').then(r => {
       if (!r.ok) throw new Error('HTTP ' + r.status)
-      return r.json()
-    })
-    .then((data: SearchIndex) => {
-      indexData.value = data
+      return r.json() as Promise<SearchIndex>
+    }),
+    fetchJson<AncientIndex>('/data/ancient-index.json')
+  ])
+    .then(([big, ancient]) => {
+      indexData.value = mergeAncientIndex(big, ancient)
     })
     .catch(() => {
       indexError.value = '索引加载失败，请检查网络后刷新'
