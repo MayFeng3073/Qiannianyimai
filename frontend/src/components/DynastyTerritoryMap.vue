@@ -206,15 +206,15 @@ const cities = computed(() =>
 const legend = [
   { label: '直接统治', fill: FILL[2], stroke: STROKE[2] },
   { label: '羁縻 / 都护府', fill: FILL[1], stroke: STROKE[1] },
-  { label: '未及', fill: FILL[0], stroke: STROKE[0] }
+  { label: '非本朝疆域', fill: FILL[0], stroke: STROKE[0] }
 ]
 
 </script>
 
 <template>
   <div>
-    <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4">
-      <svg :viewBox="`0 0 ${W} ${H}`" class="block w-full h-auto max-w-[540px] mx-auto">
+    <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4 w-[572px] max-w-full mx-auto">
+      <svg :viewBox="`0 0 ${W} ${H}`" class="block w-full h-auto">
         <defs>
           <!-- 超出视野范围的轮廓在边界处裁掉，不会伸进图例带 -->
           <clipPath id="territory-clip">
@@ -311,10 +311,9 @@ const legend = [
         </g>
       </svg>
 
-      <div class="text-center mt-2 space-y-0.5">
-        <p class="text-xs text-[#4A4A3A]/50">{{ dynastyName }}疆域势力范围 · 亚洲轮廓与中国省界底图</p>
-        <p class="text-[11px] text-[#4A4A3A]/40">配色表示控制程度，不代表精确边界；羁縻、都护、宗藩均计入浅色区</p>
-      </div>
+      <p class="text-[11px] text-[#4A4A3A]/45 text-center mt-2">
+        {{ dynastyName }}疆域示意 · 色块表示控制程度，非精确边界
+      </p>
     </div>
   </div>
 </template>
