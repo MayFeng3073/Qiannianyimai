@@ -20559,56 +20559,57 @@
         "leaders": [
           {
             "name": "刘邦（汉高祖）",
-            "role": "领导"
-          },
-          {
-            "name": "项羽",
-            "role": "领导"
+            "role": "还定三秦"
           },
           {
             "name": "韩信",
-            "role": "领导"
+            "role": "北举燕赵"
           }
         ],
         "participants": [
           {
             "name": "张良",
-            "role": "参与"
-          },
-          {
-            "name": "陈平",
-            "role": "参与"
-          },
-          {
-            "name": "樊哙",
-            "role": "参与"
-          },
-          {
-            "name": "周勃",
-            "role": "参与"
-          },
-          {
-            "name": "夏侯婴",
-            "role": "参与"
-          },
-          {
-            "name": "灌婴",
-            "role": "参与"
+            "role": "运筹帷幄"
           },
           {
             "name": "萧何",
-            "role": "支持"
+            "role": "镇守关中"
+          },
+          {
+            "name": "陈平",
+            "role": "离间楚君臣"
+          },
+          {
+            "name": "樊哙",
+            "role": "鸿门护主"
           },
           {
             "name": "彭越",
-            "role": "支持"
+            "role": "游击断粮"
           },
           {
             "name": "英布",
-            "role": "支持"
+            "role": "叛楚归汉"
+          },
+          {
+            "name": "周勃",
+            "role": "坚守敖仓"
+          },
+          {
+            "name": "灌婴",
+            "role": "追击垓下"
+          },
+          {
+            "name": "夏侯婴",
+            "role": "护卫车驾"
           }
         ],
-        "opponents": [],
+        "opponents": [
+          {
+            "name": "项羽",
+            "role": "兵败垓下"
+          }
+        ],
         "affected": []
       },
       "narratives": [
@@ -20767,54 +20768,59 @@
         "leaders": [
           {
             "name": "刘邦（汉高祖）",
-            "role": "完成"
+            "role": "汜水称帝"
           }
         ],
         "participants": [
           {
-            "name": "韩信",
-            "role": "参与"
-          },
-          {
-            "name": "陈平",
-            "role": "参与"
-          },
-          {
-            "name": "曹参",
-            "role": "参与"
-          },
-          {
-            "name": "樊哙",
-            "role": "参与"
-          },
-          {
-            "name": "周勃",
-            "role": "参与"
-          },
-          {
-            "name": "卢绾",
-            "role": "参与"
-          },
-          {
-            "name": "夏侯婴",
-            "role": "参与"
+            "name": "萧何",
+            "role": "厘定律令"
           },
           {
             "name": "张良",
-            "role": "支持"
+            "role": "定都关中"
           },
           {
-            "name": "萧何",
-            "role": "支持"
+            "name": "韩信",
+            "role": "受封楚王"
+          },
+          {
+            "name": "曹参",
+            "role": "受封平阳侯"
+          },
+          {
+            "name": "卢绾",
+            "role": "受封燕王"
+          },
+          {
+            "name": "陈平",
+            "role": "受封户牖侯"
+          },
+          {
+            "name": "樊哙",
+            "role": "受封舞阳侯"
+          },
+          {
+            "name": "周勃",
+            "role": "受封绛侯"
+          },
+          {
+            "name": "夏侯婴",
+            "role": "受封汝阴侯"
           }
         ],
         "opponents": [
           {
             "name": "项羽",
-            "role": "失败方"
+            "role": "乌江自刎"
           }
         ],
-        "affected": []
+        "affected": [
+          {
+            "name": "刘交",
+            "role": "受封楚元王"
+          }
+        ]
       },
       "narratives": [
         {
@@ -20958,24 +20964,24 @@
         "leaders": [
           {
             "name": "刘邦（汉高祖）",
-            "role": "推动"
+            "role": "分封同姓王"
           }
         ],
         "participants": [
           {
             "name": "萧何",
-            "role": "支持"
+            "role": "参定郡国制度"
           }
         ],
         "opponents": [],
         "affected": [
           {
             "name": "刘贾",
-            "role": "受影响"
+            "role": "受封荆王"
           },
           {
             "name": "刘交",
-            "role": "受影响"
+            "role": "受封楚王"
           }
         ]
       },
@@ -21122,33 +21128,34 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "冒顿单于",
-            "role": "领导"
+            "name": "刘邦（汉高祖）",
+            "role": "轻敌被围"
           }
         ],
         "participants": [
           {
-            "name": "刘邦（汉高祖）",
-            "role": "参与"
+            "name": "陈平",
+            "role": "献秘计解围"
           },
           {
             "name": "周勃",
-            "role": "参与"
+            "role": "收兵断后"
           },
           {
             "name": "樊哙",
-            "role": "参与"
+            "role": "扈从护驾"
           },
           {
             "name": "刘敬",
-            "role": "参与"
-          },
-          {
-            "name": "张良",
-            "role": "参与"
+            "role": "出使匈奴"
           }
         ],
-        "opponents": [],
+        "opponents": [
+          {
+            "name": "冒顿单于",
+            "role": "纵精兵围白登"
+          }
+        ],
         "affected": []
       },
       "narratives": [
@@ -21296,33 +21303,29 @@
         "leaders": [
           {
             "name": "刘邦（汉高祖）",
-            "role": "推动"
+            "role": "首倡和亲"
           },
           {
             "name": "刘敬",
-            "role": "推动"
+            "role": "献和亲之策"
           },
           {
             "name": "汉文帝（刘恒）",
-            "role": "推动"
+            "role": "续行和亲"
           },
           {
             "name": "汉景帝（刘启）",
-            "role": "推动"
+            "role": "遣女和亲"
           }
         ],
         "participants": [
           {
-            "name": "王昭君",
-            "role": "参与"
-          },
-          {
             "name": "吕雉（吕后）",
-            "role": "支持"
+            "role": "主持遣嫁"
           },
           {
             "name": "冒顿单于",
-            "role": "支持"
+            "role": "受纳汉女"
           }
         ],
         "opponents": [],
@@ -21471,23 +21474,23 @@
         "leaders": [
           {
             "name": "刘邦（汉高祖）",
-            "role": "推动"
-          },
-          {
-            "name": "汉文帝（刘恒）",
-            "role": "推动"
-          },
-          {
-            "name": "汉景帝（刘启）",
-            "role": "推动"
-          },
-          {
-            "name": "曹参",
-            "role": "推动"
+            "role": "轻徭薄赋"
           },
           {
             "name": "萧何",
-            "role": "推动"
+            "role": "定律令宽赋"
+          },
+          {
+            "name": "曹参",
+            "role": "萧规曹随"
+          },
+          {
+            "name": "汉文帝（刘恒）",
+            "role": "三十税一"
+          },
+          {
+            "name": "汉景帝（刘启）",
+            "role": "继续宽减"
           }
         ],
         "participants": [],
@@ -21632,33 +21635,33 @@
         "leaders": [
           {
             "name": "汉文帝（刘恒）",
-            "role": "领导"
+            "role": "躬行节俭"
           },
           {
             "name": "汉景帝（刘启）",
-            "role": "领导"
-          },
-          {
-            "name": "贾谊",
-            "role": "推动"
+            "role": "轻徭薄赋"
           }
         ],
         "participants": [
           {
+            "name": "贾谊",
+            "role": "上《治安策》"
+          },
+          {
             "name": "袁盎",
-            "role": "参与"
+            "role": "屡进直言"
           },
           {
             "name": "周亚夫",
-            "role": "参与"
+            "role": "治军备边"
           },
           {
             "name": "冯唐",
-            "role": "参与"
+            "role": "论将谏上"
           },
           {
             "name": "申屠嘉",
-            "role": "参与"
+            "role": "秉公执法"
           }
         ],
         "opponents": [],
@@ -21800,32 +21803,29 @@
         "leaders": [
           {
             "name": "汉景帝（刘启）",
-            "role": "领导"
+            "role": "下诏削藩"
           },
           {
             "name": "周亚夫",
-            "role": "领导"
-          },
-          {
-            "name": "晁错",
-            "role": "推动"
-          },
-          {
-            "name": "刘濞",
-            "role": "领导"
+            "role": "率军平叛"
           }
         ],
         "participants": [
           {
             "name": "袁盎",
-            "role": "支持"
+            "role": "献策斩晁错"
           }
         ],
-        "opponents": [],
+        "opponents": [
+          {
+            "name": "刘濞",
+            "role": "举兵反叛"
+          }
+        ],
         "affected": [
           {
-            "name": "周勃",
-            "role": "受影响"
+            "name": "晁错",
+            "role": "被斩以谢诸侯"
           }
         ]
       },
@@ -21977,21 +21977,16 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "推动"
+            "role": "颁行推恩令"
           },
           {
             "name": "主父偃",
-            "role": "推动"
+            "role": "献策推恩"
           }
         ],
         "participants": [],
         "opponents": [],
-        "affected": [
-          {
-            "name": "刘贾",
-            "role": "受影响"
-          }
-        ]
+        "affected": []
       },
       "narratives": [
         {
@@ -22094,24 +22089,25 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "领导"
+            "role": "决策设伏"
           },
           {
             "name": "王恢",
-            "role": "推动"
+            "role": "献马邑之谋"
           }
         ],
         "participants": [
           {
             "name": "韩安国",
-            "role": "参与"
-          },
-          {
-            "name": "匈奴单于",
-            "role": "参与"
+            "role": "统军伏击"
           }
         ],
-        "opponents": [],
+        "opponents": [
+          {
+            "name": "匈奴单于",
+            "role": "察觉引退"
+          }
+        ],
         "affected": []
       },
       "narratives": [
@@ -22223,11 +22219,11 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "推动"
+            "role": "遣使通西域"
           },
           {
             "name": "张骞",
-            "role": "完成"
+            "role": "凿空西域"
           }
         ],
         "participants": [],
@@ -22235,7 +22231,7 @@
         "affected": [
           {
             "name": "李广利",
-            "role": "受影响"
+            "role": "循道伐大宛"
           }
         ]
       },
@@ -22359,29 +22355,29 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "领导"
+            "role": "决策北伐"
           },
           {
             "name": "卫青",
-            "role": "领导"
+            "role": "统兵出塞"
           }
         ],
         "participants": [
           {
             "name": "李广",
-            "role": "参与"
+            "role": "出雁门牵制"
           },
           {
             "name": "公孙贺",
-            "role": "参与"
+            "role": "出云中"
           },
           {
             "name": "公孙敖",
-            "role": "参与"
+            "role": "出代郡"
           },
           {
             "name": "李息",
-            "role": "参与"
+            "role": "出代郡"
           }
         ],
         "opponents": [],
@@ -22536,21 +22532,21 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "领导"
+            "role": "决策河西"
           },
           {
             "name": "霍去病",
-            "role": "领导"
+            "role": "转战祁连"
           }
         ],
         "participants": [
           {
             "name": "赵破奴",
-            "role": "参与"
+            "role": "随军冲锋"
           },
           {
             "name": "公孙敖",
-            "role": "参与"
+            "role": "失道后期"
           }
         ],
         "opponents": [],
@@ -22689,17 +22685,17 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "推动"
+            "role": "置郡设官"
           },
           {
             "name": "霍去病",
-            "role": "推动"
+            "role": "驱逐匈奴"
           }
         ],
         "participants": [
           {
             "name": "张骞",
-            "role": "支持"
+            "role": "勘定道路"
           }
         ],
         "opponents": [],
@@ -22823,17 +22819,17 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "推动"
+            "role": "采纳儒术"
           },
           {
             "name": "董仲舒",
-            "role": "推动"
+            "role": "天人三策"
           }
         ],
         "participants": [
           {
             "name": "公孙弘",
-            "role": "支持"
+            "role": "以儒术缘饰吏事"
           }
         ],
         "opponents": [],
@@ -22973,21 +22969,21 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "推动"
+            "role": "诏立太学"
           },
           {
             "name": "董仲舒",
-            "role": "推动"
+            "role": "建议兴学"
           }
         ],
         "participants": [
           {
-            "name": "儿宽",
-            "role": "参与"
+            "name": "公孙弘",
+            "role": "奏定学官"
           },
           {
-            "name": "公孙弘",
-            "role": "支持"
+            "name": "儿宽",
+            "role": "教授弟子"
           }
         ],
         "opponents": [],
@@ -23135,22 +23131,22 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "推动"
+            "role": "推行盐铁官营"
           },
           {
             "name": "桑弘羊",
-            "role": "推动"
+            "role": "主持盐铁"
           }
         ],
         "participants": [],
         "opponents": [
           {
             "name": "卜式",
-            "role": "反对"
+            "role": "上书谏止"
           },
           {
             "name": "汲黯",
-            "role": "反对"
+            "role": "廷争力谏"
           }
         ],
         "affected": []
@@ -23288,17 +23284,17 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "推动"
+            "role": "统一铸币"
+          },
+          {
+            "name": "桑弘羊",
+            "role": "管领钱法"
           }
         ],
         "participants": [
           {
-            "name": "桑弘羊",
-            "role": "参与"
-          },
-          {
             "name": "卜式",
-            "role": "支持"
+            "role": "输财助官"
           }
         ],
         "opponents": [],
@@ -23429,17 +23425,17 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "领导"
+            "role": "决策征南越"
           },
           {
             "name": "唐蒙",
-            "role": "推动"
+            "role": "开通夜郎道"
           }
         ],
         "participants": [
           {
             "name": "司马相如",
-            "role": "支持"
+            "role": "作檄宣谕"
           }
         ],
         "opponents": [],
@@ -23578,21 +23574,21 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "领导"
+            "role": "决策伐宛"
           },
           {
             "name": "李广利",
-            "role": "领导"
+            "role": "率军远征"
           }
         ],
         "participants": [
           {
             "name": "李陵",
-            "role": "参与"
+            "role": "率轻骑策应"
           },
           {
             "name": "公孙贺",
-            "role": "参与"
+            "role": "出敦煌接应"
           }
         ],
         "opponents": [],
@@ -23732,37 +23728,33 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "领导"
+            "role": "晚年惑于巫蛊"
           },
           {
             "name": "江充",
-            "role": "推动"
-          },
-          {
-            "name": "田千秋",
-            "role": "推动"
+            "role": "主持查巫蛊"
           }
         ],
         "participants": [
           {
             "name": "苏文",
-            "role": "参与"
+            "role": "构陷太子"
+          },
+          {
+            "name": "田千秋",
+            "role": "讼太子之冤"
           }
         ],
         "opponents": [
           {
             "name": "刘据",
-            "role": "反对"
+            "role": "起兵抗命"
           }
         ],
         "affected": [
           {
             "name": "卫子夫",
-            "role": "受影响"
-          },
-          {
-            "name": "刘据",
-            "role": "受影响"
+            "role": "自尽身亡"
           }
         ]
       },
@@ -23905,17 +23897,17 @@
         "leaders": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "完成"
+            "role": "下诏悔过"
           }
         ],
         "participants": [
           {
             "name": "田千秋",
-            "role": "支持"
+            "role": "奏罢轮台戍"
           },
           {
             "name": "霍光",
-            "role": "支持"
+            "role": "受诏辅政"
           }
         ],
         "opponents": [],
@@ -24040,28 +24032,28 @@
         "leaders": [
           {
             "name": "霍光",
-            "role": "领导"
+            "role": "受遗诏辅政"
           }
         ],
         "participants": [
           {
             "name": "金日磾",
-            "role": "支持"
+            "role": "同受遗诏"
           },
           {
             "name": "上官桀",
-            "role": "支持"
+            "role": "同受遗诏"
           }
         ],
         "opponents": [],
         "affected": [
           {
-            "name": "汉昭帝",
-            "role": "受影响"
+            "name": "汉宣帝（刘询）",
+            "role": "迎立为帝"
           },
           {
             "name": "上官皇后",
-            "role": "受影响"
+            "role": "年少居宫中"
           }
         ]
       },
@@ -24205,17 +24197,17 @@
         "leaders": [
           {
             "name": "汉宣帝（刘询）",
-            "role": "推动"
+            "role": "诏设都护"
           },
           {
             "name": "郑吉",
-            "role": "完成"
+            "role": "首任都护"
           }
         ],
         "participants": [
           {
             "name": "傅介子",
-            "role": "支持"
+            "role": "刺杀楼兰王"
           }
         ],
         "opponents": [],
@@ -24338,17 +24330,17 @@
         "leaders": [
           {
             "name": "汉宣帝（刘询）",
-            "role": "推动"
+            "role": "受其归附"
           }
         ],
         "participants": [
           {
             "name": "呼韩邪单于",
-            "role": "参与"
+            "role": "率部归汉"
           },
           {
             "name": "郑吉",
-            "role": "参与"
+            "role": "迎护其众"
           }
         ],
         "opponents": [],
@@ -24455,25 +24447,21 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "汉宣帝（刘询）",
-            "role": "领导"
-          },
-          {
             "name": "甘延寿",
-            "role": "领导"
+            "role": "发兵远征"
           },
           {
             "name": "陈汤",
-            "role": "领导"
+            "role": "矫诏调兵"
           }
         ],
-        "participants": [
+        "participants": [],
+        "opponents": [
           {
-            "name": "郑吉",
-            "role": "支持"
+            "name": "郅支单于",
+            "role": "城破被杀"
           }
         ],
-        "opponents": [],
         "affected": []
       },
       "narratives": [
@@ -24626,25 +24614,25 @@
         "leaders": [
           {
             "name": "王政君",
-            "role": "推动"
+            "role": "临朝称制"
           },
           {
             "name": "王凤",
-            "role": "领导"
-          },
-          {
-            "name": "王莽",
-            "role": "推动"
+            "role": "把持朝政"
           }
         ],
         "participants": [
           {
             "name": "王音",
-            "role": "参与"
+            "role": "位列三公"
           },
           {
             "name": "王根",
-            "role": "参与"
+            "role": "继掌大权"
+          },
+          {
+            "name": "王莽",
+            "role": "入仕结交"
           }
         ],
         "opponents": [],
@@ -24798,21 +24786,20 @@
         "leaders": [
           {
             "name": "王莽",
-            "role": "完成"
+            "role": "代汉称帝"
           }
         ],
         "participants": [
           {
             "name": "王政君",
-            "role": "支持"
-          }
-        ],
-        "opponents": [
+            "role": "被迫交玺"
+          },
           {
             "name": "刘向",
-            "role": "反对"
+            "role": "上书言王氏之危"
           }
         ],
+        "opponents": [],
         "affected": []
       },
       "narratives": [
@@ -24950,22 +24937,21 @@
         "leaders": [
           {
             "name": "王莽",
-            "role": "领导"
+            "role": "推行改制"
           }
         ],
         "participants": [
           {
             "name": "刘歆",
-            "role": "支持"
+            "role": "奏定古文经"
+          },
+          {
+            "name": "王政君",
+            "role": "被尊太皇太后"
           }
         ],
         "opponents": [],
-        "affected": [
-          {
-            "name": "王政君",
-            "role": "受影响"
-          }
-        ]
+        "affected": []
       },
       "narratives": [
         {
@@ -25096,23 +25082,23 @@
         "leaders": [
           {
             "name": "刘玄",
-            "role": "领导"
+            "role": "被推为更始帝"
           }
         ],
         "participants": [
           {
-            "name": "邓禹",
-            "role": "参与"
+            "name": "光武帝（刘秀）",
+            "role": "起兵舂陵"
           },
           {
-            "name": "光武帝（刘秀）",
-            "role": "参与"
+            "name": "邓禹",
+            "role": "杖策相随"
           }
         ],
         "opponents": [
           {
             "name": "王莽",
-            "role": "反对"
+            "role": "遣军镇压"
           }
         ],
         "affected": []
@@ -25275,18 +25261,23 @@
         "leaders": [
           {
             "name": "刘盆子",
-            "role": "领导"
+            "role": "被立为帝"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "樊崇",
+            "role": "统率赤眉"
+          }
+        ],
         "opponents": [
           {
             "name": "王莽",
-            "role": "反对"
+            "role": "新莽覆亡"
           },
           {
             "name": "刘玄",
-            "role": "反对"
+            "role": "降于赤眉"
           }
         ],
         "affected": []
@@ -25436,32 +25427,21 @@
         "leaders": [
           {
             "name": "光武帝（刘秀）",
-            "role": "领导"
-          },
-          {
-            "name": "王莽",
-            "role": "领导"
+            "role": "率十三骑突围"
           }
         ],
         "participants": [
           {
-            "name": "邓禹",
-            "role": "参与"
-          },
-          {
-            "name": "冯异",
-            "role": "参与"
-          },
-          {
             "name": "王凤",
-            "role": "参与"
-          },
-          {
-            "name": "吴汉",
-            "role": "参与"
+            "role": "坚守昆阳"
           }
         ],
-        "opponents": [],
+        "opponents": [
+          {
+            "name": "王莽",
+            "role": "发大军围城"
+          }
+        ],
         "affected": []
       },
       "narratives": [
@@ -25615,22 +25595,19 @@
         "leaders": [
           {
             "name": "刘玄",
-            "role": "胜利方"
-          },
-          {
-            "name": "光武帝（刘秀）",
-            "role": "胜利方"
-          },
-          {
-            "name": "樊崇",
-            "role": "胜利方"
+            "role": "遣军西进"
           }
         ],
-        "participants": [],
+        "participants": [
+          {
+            "name": "光武帝（刘秀）",
+            "role": "北渡河北"
+          }
+        ],
         "opponents": [
           {
             "name": "王莽",
-            "role": "失败方"
+            "role": "死于渐台"
           }
         ],
         "affected": []
@@ -25781,37 +25758,37 @@
         "leaders": [
           {
             "name": "光武帝（刘秀）",
-            "role": "完成"
+            "role": "鄗城称帝"
           }
         ],
         "participants": [
           {
             "name": "邓禹",
-            "role": "支持"
-          },
-          {
-            "name": "吴汉",
-            "role": "支持"
+            "role": "劝进称帝"
           },
           {
             "name": "冯异",
-            "role": "支持"
+            "role": "定河北"
           },
           {
             "name": "耿弇",
-            "role": "支持"
+            "role": "从平河北"
           },
           {
             "name": "寇恂",
-            "role": "支持"
+            "role": "镇守河内"
+          },
+          {
+            "name": "吴汉",
+            "role": "率军从征"
           },
           {
             "name": "贾复",
-            "role": "支持"
+            "role": "冲锋陷阵"
           },
           {
             "name": "岑彭",
-            "role": "支持"
+            "role": "招抚诸郡"
           }
         ],
         "opponents": [],
@@ -25974,43 +25951,43 @@
         "leaders": [
           {
             "name": "光武帝（刘秀）",
-            "role": "领导"
+            "role": "统筹征伐"
           }
         ],
         "participants": [
           {
             "name": "邓禹",
-            "role": "参与"
-          },
-          {
-            "name": "吴汉",
-            "role": "参与"
+            "role": "西征关中"
           },
           {
             "name": "冯异",
-            "role": "参与"
+            "role": "平定关中"
           },
           {
             "name": "耿弇",
-            "role": "参与"
+            "role": "北定齐地"
+          },
+          {
+            "name": "吴汉",
+            "role": "南击梁楚"
           },
           {
             "name": "岑彭",
-            "role": "参与"
+            "role": "率军伐蜀"
           },
           {
             "name": "贾复",
-            "role": "参与"
+            "role": "随军破敌"
           }
         ],
         "opponents": [
           {
             "name": "隗嚣",
-            "role": "反对"
+            "role": "割据陇右"
           },
           {
             "name": "公孙述",
-            "role": "反对"
+            "role": "据蜀称帝"
           }
         ],
         "affected": []
@@ -26175,25 +26152,25 @@
         "leaders": [
           {
             "name": "光武帝（刘秀）",
-            "role": "领导"
+            "role": "偃武修文"
           }
         ],
         "participants": [
           {
             "name": "邓禹",
-            "role": "支持"
+            "role": "位列云台"
           },
           {
             "name": "冯异",
-            "role": "支持"
+            "role": "镇抚关中"
           },
           {
             "name": "寇恂",
-            "role": "支持"
+            "role": "守御河内"
           },
           {
             "name": "马援",
-            "role": "支持"
+            "role": "拜伏波将军"
           }
         ],
         "opponents": [],
@@ -26342,13 +26319,13 @@
         "leaders": [
           {
             "name": "光武帝（刘秀）",
-            "role": "推动"
+            "role": "下诏度田"
           }
         ],
         "participants": [
           {
-            "name": "邓禹",
-            "role": "支持"
+            "name": "李通",
+            "role": "主持核田"
           }
         ],
         "opponents": [],
@@ -26475,21 +26452,17 @@
         "leaders": [
           {
             "name": "班超",
-            "role": "领导"
+            "role": "经营西域"
           }
         ],
         "participants": [
           {
-            "name": "甘英",
-            "role": "参与"
-          },
-          {
             "name": "汉明帝（刘庄）",
-            "role": "支持"
+            "role": "遣使西域"
           },
           {
-            "name": "邓骘",
-            "role": "支持"
+            "name": "甘英",
+            "role": "西使条支"
           }
         ],
         "opponents": [],
@@ -26615,22 +26588,22 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "汉和帝（刘肇）",
-            "role": "领导"
+            "name": "窦宪",
+            "role": "统军北伐"
           },
           {
-            "name": "窦宪",
-            "role": "领导"
+            "name": "汉和帝（刘肇）",
+            "role": "下诏出征"
           }
         ],
         "participants": [],
-        "opponents": [],
-        "affected": [
+        "opponents": [
           {
-            "name": "邓禹",
-            "role": "受影响"
+            "name": "北匈奴单于",
+            "role": "兵败远遁"
           }
-        ]
+        ],
+        "affected": []
       },
       "narratives": [
         {
@@ -26757,11 +26730,11 @@
         "leaders": [
           {
             "name": "窦宪",
-            "role": "完成"
+            "role": "勒石纪功"
           },
           {
             "name": "班固",
-            "role": "完成"
+            "role": "撰《封燕然山铭》"
           }
         ],
         "participants": [],
@@ -26873,17 +26846,17 @@
         "leaders": [
           {
             "name": "班超",
-            "role": "推动"
-          },
-          {
-            "name": "甘英",
-            "role": "完成"
+            "role": "遣使大秦"
           }
         ],
         "participants": [
           {
+            "name": "甘英",
+            "role": "奉命西使"
+          },
+          {
             "name": "汉和帝（刘肇）",
-            "role": "支持"
+            "role": "诏许出使"
           }
         ],
         "opponents": [],
@@ -27007,14 +26980,14 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "楚王刘英",
-            "role": "推动"
+            "name": "汉明帝（刘庄）",
+            "role": "遣使求法"
           }
         ],
         "participants": [
           {
-            "name": "汉明帝（刘庄）",
-            "role": "支持"
+            "name": "楚王刘英",
+            "role": "奉佛祈福"
           }
         ],
         "opponents": [],
@@ -27116,7 +27089,7 @@
         "leaders": [
           {
             "name": "司马迁",
-            "role": "完成"
+            "role": "忍辱著书"
           }
         ],
         "participants": [],
@@ -27124,7 +27097,7 @@
         "affected": [
           {
             "name": "汉武帝（刘彻）",
-            "role": "受影响"
+            "role": "处以宫刑"
           }
         ]
       },
@@ -27237,21 +27210,16 @@
         "leaders": [
           {
             "name": "班固",
-            "role": "完成"
+            "role": "主撰帝纪"
           },
           {
             "name": "班昭",
-            "role": "完成"
+            "role": "续成八表"
           }
         ],
         "participants": [],
         "opponents": [],
-        "affected": [
-          {
-            "name": "班超",
-            "role": "受影响"
-          }
-        ]
+        "affected": []
       },
       "narratives": [
         {
@@ -27387,13 +27355,13 @@
         "leaders": [
           {
             "name": "蔡伦",
-            "role": "完成"
+            "role": "改进造纸"
           }
         ],
         "participants": [
           {
             "name": "汉和帝（刘肇）",
-            "role": "支持"
+            "role": "诏令推广"
           }
         ],
         "opponents": [],
@@ -27503,15 +27471,10 @@
         "leaders": [
           {
             "name": "张衡",
-            "role": "完成"
+            "role": "创制地动仪"
           }
         ],
-        "participants": [
-          {
-            "name": "汉顺帝",
-            "role": "支持"
-          }
-        ],
+        "participants": [],
         "opponents": [],
         "affected": []
       },
@@ -27608,7 +27571,7 @@
         "leaders": [
           {
             "name": "许慎",
-            "role": "完成"
+            "role": "撰《说文解字》"
           }
         ],
         "participants": [],
@@ -27713,36 +27676,31 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "汉桓帝",
-            "role": "领导"
-          },
-          {
             "name": "汉灵帝（刘宏）",
-            "role": "领导"
+            "role": "再兴党锢"
           }
         ],
         "participants": [
           {
             "name": "窦武",
-            "role": "支持"
+            "role": "营救党人"
+          },
+          {
+            "name": "汉桓帝",
+            "role": "初兴党锢"
           }
         ],
         "opponents": [
           {
             "name": "李膺",
-            "role": "反对"
+            "role": "被诬下狱"
           },
           {
             "name": "陈蕃",
-            "role": "反对"
+            "role": "力争被免"
           }
         ],
-        "affected": [
-          {
-            "name": "李固",
-            "role": "受影响"
-          }
-        ]
+        "affected": []
       },
       "narratives": [
         {
@@ -27888,31 +27846,27 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "汉灵帝（刘宏）",
-            "role": "领导"
-          },
-          {
             "name": "张角",
-            "role": "领导"
+            "role": "率众起事"
           }
         ],
         "participants": [
           {
             "name": "张梁",
-            "role": "参与"
+            "role": "统率黄巾"
           },
           {
             "name": "张宝",
-            "role": "参与"
+            "role": "统率黄巾"
           }
         ],
-        "opponents": [],
-        "affected": [
+        "opponents": [
           {
-            "name": "李膺",
-            "role": "受影响"
+            "name": "汉灵帝（刘宏）",
+            "role": "发兵镇压"
           }
-        ]
+        ],
+        "affected": []
       },
       "narratives": [
         {
@@ -28051,7 +28005,7 @@
         "leaders": [
           {
             "name": "董卓",
-            "role": "领导"
+            "role": "率兵入洛"
           }
         ],
         "participants": [],
@@ -28059,15 +28013,7 @@
         "affected": [
           {
             "name": "汉献帝（刘协）",
-            "role": "受影响"
-          },
-          {
-            "name": "曹丕",
-            "role": "受影响"
-          },
-          {
-            "name": "陈蕃",
-            "role": "受影响"
+            "role": "被拥立为帝"
           }
         ]
       },
@@ -28200,18 +28146,14 @@
       "person_groups": {
         "leaders": [
           {
-            "name": "汉献帝（刘协）",
-            "role": "完成"
-          },
-          {
             "name": "曹丕",
-            "role": "推动"
+            "role": "受禅称帝"
           }
         ],
         "participants": [
           {
-            "name": "王莽",
-            "role": "影响"
+            "name": "汉献帝（刘协）",
+            "role": "禅位山阳"
           }
         ],
         "opponents": [],
