@@ -213,7 +213,7 @@ const legend = [
 
 <template>
   <div>
-    <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4 w-[572px] max-w-full">
+    <div class="bg-white/40 rounded-md border border-[#D8B26A]/20 p-4 w-[600px] max-w-full">
       <svg :viewBox="`0 0 ${W} ${H}`" class="block w-full h-auto">
         <defs>
           <!-- 超出视野范围的轮廓在边界处裁掉，不会伸进图例带 -->
