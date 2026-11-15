@@ -2809,7 +2809,7 @@ export const persons: Person[] = [
 export const events: Event[] = [
   {
     id: 1001,
-    timeline_id: '上古政治演变',
+    timeline_id: '上古历史脉络',
     name: '阪泉之战',
     dynasty: '上古',
     start_year: -2600,
@@ -2877,7 +2877,7 @@ export const events: Event[] = [
   },
   {
     id: 1002,
-    timeline_id: '上古政治演变',
+    timeline_id: '上古历史脉络',
     name: '涿鹿之战',
     dynasty: '上古',
     start_year: -2598,
@@ -2947,7 +2947,7 @@ export const events: Event[] = [
   },
   {
     id: 1003,
-    timeline_id: '上古科技文化',
+    timeline_id: '上古历史脉络',
     name: '神农尝百草',
     dynasty: '上古',
     start_year: -2850,
@@ -3001,7 +3001,7 @@ export const events: Event[] = [
   },
   {
     id: 1004,
-    timeline_id: '上古科技文化',
+    timeline_id: '上古历史脉络',
     name: '创制文字',
     dynasty: '上古',
     start_year: -2590,
@@ -3057,7 +3057,7 @@ export const events: Event[] = [
   },
   {
     id: 1005,
-    timeline_id: '上古政治演变',
+    timeline_id: '上古历史脉络',
     name: '尧舜禅让',
     dynasty: '上古',
     start_year: -2280,
@@ -3123,7 +3123,7 @@ export const events: Event[] = [
   },
   {
     id: 1006,
-    timeline_id: '上古政治演变',
+    timeline_id: '上古历史脉络',
     name: '大禹治水',
     dynasty: '上古',
     start_year: -2100,
@@ -3189,7 +3189,7 @@ export const events: Event[] = [
   },
   {
     id: 1007,
-    timeline_id: '上古政治演变',
+    timeline_id: '上古历史脉络',
     name: '建立夏朝',
     dynasty: '上古',
     start_year: -2070,
@@ -3252,7 +3252,7 @@ export const events: Event[] = [
   },
   {
     id: 1008,
-    timeline_id: '上古神话',
+    timeline_id: '上古历史脉络',
     name: '后羿射日',
     dynasty: '上古',
     start_year: -2100,
@@ -3792,14 +3792,17 @@ export const events: Event[] = [
 ]
 
 export const eventTimelines: Record<string, TimelineEntry[]> = {
-  // 只保留真实存在的事件节点，保证每个“可点”的节点都能跳转。
-  // 原本单独占位的阶段（炎帝势力扩张 / 炎黄融合 / 华夏联盟形成 / 商周继承 / 秦统一六合）
-  // 已并入相邻节点的描述；科技文化与神话两组直接复用事件自身的 chain，不再重复维护。
-  '上古政治演变': [
+  // 上古 8 个真实事件共用同一条时间轴，全部带 event_id，保证每个节点都能跳转。
+  // 只收录真实事件：神话阶段的占位节点（炎帝势力扩张 / 炎黄融合 / 华夏联盟形成等）
+  // 已并入相邻事件描述，不再单独占用节点。
+  '上古历史脉络': [
+    { title: '神农尝百草', year: '约前2850年', desc: '辨药性，中医药起源', event_id: 1003 },
     { title: '阪泉之战', year: '约前2600年', desc: '炎帝势力扩张，炎黄激战', event_id: 1001 },
     { title: '涿鹿之战', year: '约前2598年', desc: '炎黄融合，决战蚩尤', event_id: 1002 },
+    { title: '创制文字', year: '约前2590年', desc: '仓颉造字，文明有载', event_id: 1004 },
     { title: '尧舜禅让', year: '约前2259年', desc: '华夏联盟形成，禅让大典', event_id: 1005 },
-    { title: '大禹治水', year: '约前2100年', desc: '疏导河道', event_id: 1006 },
-    { title: '建立夏朝', year: '约前2070年', desc: '世袭制开，商周继承，至秦统一六合', event_id: 1007 },
+    { title: '大禹治水', year: '约前2100年', desc: '疏导河道，三过家门', event_id: 1006 },
+    { title: '后羿射日', year: '约前2100年', desc: '射落九日，为民除害', event_id: 1008 },
+    { title: '建立夏朝', year: '约前2070年', desc: '世袭制开，商周继承', event_id: 1007 },
   ],
 }
