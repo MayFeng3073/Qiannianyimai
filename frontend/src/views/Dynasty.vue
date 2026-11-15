@@ -6,6 +6,7 @@ import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService
 import { RELATED_DYNASTIES } from '@/services/dynastyRelations'
 import { recordRecentDynasty } from '@/services/recentDynasties'
 import ComingSoon from '@/components/ComingSoon.vue'
+import BackButton from '@/components/BackButton.vue'
 import DynastyTerritoryMap from '@/components/DynastyTerritoryMap.vue'
 import * as echarts from 'echarts'
 
@@ -101,37 +102,35 @@ const dynastyRelationCount = computed(() => {
   return pairs.size
 })
 
-// 职业字段只有部分朝代有；覆盖率不足一半时按人物类型（category）统计
-const occupationStatSource = computed<'occupation' | 'category'>(() => {
-  const list = dynastyPersons.value
-  if (!list.length) return 'category'
-  const covered = list.filter(p => (p.occupations || []).length > 0).length
-  return covered * 2 >= list.length ? 'occupation' : 'category'
-})
+// 人物构成：固定按六类人物类型统计，顺序与配色稳定，便于跨朝代对比
+const PERSON_TYPE_ORDER = ['统治者', '政治人物', '军事人物', '文化人物', '思想人物', '科技人物']
+const PERSON_TYPE_COLORS: Record<string, string> = {
+  统治者: '#C34739',
+  政治人物: '#355C5A',
+  军事人物: '#D8B26A',
+  文化人物: '#4A6F7A',
+  思想人物: '#5C7A5E',
+  科技人物: '#8B5A2B',
+  其他: '#D4756A'
+}
 
-const occupationStats = computed(() => {
+const personTypeStats = computed(() => {
   const counts: Record<string, number> = {}
-  if (occupationStatSource.value === 'occupation') {
-    for (const p of dynastyPersons.value) {
-      for (const o of p.occupations || []) {
-        const name = String(o || '').trim()
-        if (name) counts[name] = (counts[name] || 0) + 1
-      }
-    }
-  } else {
-    for (const p of dynastyPersons.value) {
-      const name = String(p.category || '').trim() || '其他'
-      counts[name] = (counts[name] || 0) + 1
-    }
+  for (const p of dynastyPersons.value) {
+    const raw = String(p.category || '').trim()
+    // 部分导入数据用「思想家」，统一归到六类中的「思想人物」
+    const name = (raw === '思想家' ? '思想人物' : raw) || '其他'
+    counts[name] = (counts[name] || 0) + 1
   }
-  return Object.entries(counts)
+  const ordered = PERSON_TYPE_ORDER
+    .filter(name => counts[name])
+    .map(name => ({ name, value: counts[name] }))
+  const rest = Object.entries(counts)
+    .filter(([name]) => !PERSON_TYPE_ORDER.includes(name))
+    .sort((a, b) => b[1] - a[1])
     .map(([name, value]) => ({ name, value }))
-    .sort((a, b) => b.value - a.value)
+  return [...ordered, ...rest]
 })
-
-const occupationChartTitle = computed(() =>
-  occupationStatSource.value === 'occupation' ? '人物职业分布' : '人物类型分布'
-)
 
 const characteristics = computed(() => {
   if (!dynasty.value) return []
@@ -1186,9 +1185,9 @@ const initOccupationChart = () => {
   if (occupationChart) occupationChart.dispose()
   occupationChart = echarts.init(occupationChartRef.value)
 
-  const stats = occupationStats.value
+  const stats = personTypeStats.value
   const sum = stats.reduce((s, d) => s + d.value, 0) || 1
-  const colors = ['#C34739', '#355C5A', '#D8B26A', '#4A6F7A', '#5C7A5E', '#8B5A2B', '#D4756A']
+  const fallbackColors = ['#C34739', '#355C5A', '#D8B26A', '#4A6F7A', '#5C7A5E', '#8B5A2B', '#D4756A']
   
   occupationChart.setOption({
     tooltip: {
@@ -1232,7 +1231,7 @@ const initOccupationChart = () => {
       data: stats.map((item, i) => ({
         value: item.value,
         name: item.name,
-        itemStyle: { color: colors[i % colors.length] }
+        itemStyle: { color: PERSON_TYPE_COLORS[item.name] || fallbackColors[i % fallbackColors.length] }
       }))
     }]
   })
@@ -1405,7 +1404,8 @@ onUnmounted(() => {
           </div>
           </div>
       </nav>
-    
+
+      <BackButton fallback="/timeline" />
 
     <!-- Hero -->
       <section class="relative py-16 px-8 overflow-hidden">
@@ -1705,7 +1705,7 @@ onUnmounted(() => {
             <div class="bg-white/60 border border-[#D8B26A]/20 rounded-md p-5">
               <h4 class="text-sm text-[#4A4A3A]/60 mb-3 font-medium flex items-center gap-2">
                 <svg class="w-4 h-4 text-[#C34739]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
-                {{ occupationChartTitle }}
+                人物构成
               </h4>
               <div ref="occupationChartRef" class="w-full" style="height: 300px;"></div>
             </div>

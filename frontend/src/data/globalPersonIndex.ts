@@ -60,7 +60,19 @@ export const GLOBAL_PERSON_INDEX: Record<string, number> = {
   "高颎": 110206,
 }
 
-/** 根据跨朝代引用名解析出的 person id */
-export function resolvePersonIdByName(name: string): number | undefined {
-  return GLOBAL_PERSON_INDEX[name]
+/** 人物 id 所属朝代：id 前 3 位即朝代 id（如 112001 → 112、201035 → 201） */
+export function dynastyIdOfPerson(id: number): number {
+  return Math.floor(id / 1000)
+}
+
+/**
+ * 根据跨朝代引用名解析 person id。
+ * - 传入 dynastyId：只接受属于该朝代的映射（用于同名人物消歧）
+ * - 不传 dynastyId：返回全局映射，作为跨朝代跳转兜底
+ */
+export function resolvePersonIdByName(name: string, dynastyId?: number): number | undefined {
+  const id = GLOBAL_PERSON_INDEX[name]
+  if (id === undefined) return undefined
+  if (dynastyId === undefined) return id
+  return dynastyIdOfPerson(id) === dynastyId ? id : undefined
 }

@@ -5,6 +5,7 @@ import { events, persons, dynasties, eventTimelines } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
 import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 import ComingSoon from '@/components/ComingSoon.vue'
+import BackButton from '@/components/BackButton.vue'
 import * as echarts from 'echarts'
 
 const route = useRoute()
@@ -72,12 +73,19 @@ const duration = computed(() => {
   return `${formattedYear(s)} — ${formattedYear(e)}`
 })
 
+const currentDynastyId = computed<number | undefined>(() => {
+  if (jsonData.value?.dynasty?.id) return Number(jsonData.value.dynasty.id)
+  return dynasties.find(d => d.name === event.value?.dynasty)?.id
+})
+
 const getPersonByName = (name: string) => {
   if (jsonData.value) {
     const found = jsonData.value.persons.find(p => p.name === name)
     if (found) return found
   }
-  return persons.find(p => p.name === name)
+  // 限定在事件所属朝代内查找，避免 mock 全量回退命中其他朝代的同名人物
+  const dynastyName = event.value?.dynasty
+  return persons.find(p => p.name === name && (!dynastyName || p.dynasty === dynastyName))
 }
 
 const validRelatedPersons = computed(() => {
@@ -196,12 +204,21 @@ const relatedDynasty = computed(() => {
   return dynasties.find(d => d.name === event.value!.dynasty) || null
 })
 
+const backFallback = computed(() =>
+  relatedDynasty.value ? `/dynasty/${relatedDynasty.value.id}/events` : '/timeline'
+)
+
+/** 方案 C：只解析一次。本朝人物 → 全局索引同朝匹配 → 全局索引跨朝兜底 */
+const resolvePersonId = (name: string): number | undefined => {
+  const local = getPersonByName(name)
+  if (local) return local.id
+  const sameDynasty = resolvePersonIdByName(name, currentDynastyId.value)
+  return sameDynasty ?? resolvePersonIdByName(name)
+}
+
 const navigateToPerson = (name: string) => {
-  const p = getPersonByName(name)
-  if (p) router.push(`/person/${p.id}`)
-  // 跨朝代打通：本朝无此人物时，尝试通过全局索引跳转到其实际所属朝代详情页
-  const crossId = resolvePersonIdByName(name)
-  if (crossId) router.push(`/person/${crossId}`)
+  const id = resolvePersonId(name)
+  if (id !== undefined) router.push(`/person/${id}`)
 }
 
 const navigateToEvent = (id: number) => router.push(`/event/${id}`)
@@ -679,6 +696,8 @@ watch(impacts, () => {
         </div>
       </div>
     </nav>
+
+    <BackButton :fallback="backFallback" />
 
     <section class="relative px-8 py-12 overflow-hidden">
       <div class="max-w-7xl mx-auto">

@@ -5,6 +5,7 @@ import { persons, dynasties, events } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
 import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 import ComingSoon from '@/components/ComingSoon.vue'
+import BackButton from '@/components/BackButton.vue'
 import * as echarts from 'echarts'
 
 const route = useRoute()
@@ -39,6 +40,12 @@ const person = computed(() => {
 })
 const hasData = computed(() => person.value !== undefined)
 const isLevel2 = computed(() => person.value?.level === 2)
+
+// 直接打开页面时回退到本朝人物列表；从家族页等站内来源进入时返回上一页
+const backFallback = computed(() => {
+  const d = person.value ? dynasties.find(x => x.name === person.value!.dynasty) : undefined
+  return d ? `/dynasty/${d.id}/persons` : '/timeline'
+})
 
 const relationChartRef = ref<HTMLElement | null>(null)
 const radarChartRef = ref<HTMLElement | null>(null)
@@ -979,6 +986,8 @@ watch(isLevel2, (isL2) => {
         </div>
         </div>
     </nav>
+
+    <BackButton :fallback="backFallback" />
 
     
 
