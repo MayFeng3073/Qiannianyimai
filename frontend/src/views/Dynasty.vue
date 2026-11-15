@@ -876,6 +876,20 @@ const dynStagesMap: Record<string, { name: string; year: number; value: number; 
     { name: '大禹治水', year: -2100, value: 9, tag: '水患平息' },
     { name: '夏朝建立', year: -2070, value: 8, tag: '家天下始' }
   ],
+  '秦': [
+    { name: '商鞅变法', year: -356, value: 8.5, tag: '富国强兵' },
+    { name: '长平之战', year: -260, value: 9, tag: '重创赵国' },
+    { name: '嬴政即位', year: -246, value: 8.5, tag: '秦王临朝' },
+    { name: '灭韩赵', year: -230, value: 9, tag: '统一战争' },
+    { name: '灭楚', year: -223, value: 9.5, tag: '南方平定' },
+    { name: '统一六国', year: -221, value: 10, tag: '天下一统' },
+    { name: '修长城', year: -215, value: 8, tag: '北御匈奴' },
+    { name: '焚书坑儒', year: -213, value: 5.5, tag: '思想禁锢' },
+    { name: '始皇驾崩', year: -210, value: 4.5, tag: '沙丘之变' },
+    { name: '陈胜起义', year: -209, value: 3, tag: '天下大乱' },
+    { name: '巨鹿之战', year: -207, value: 2, tag: '秦军覆灭' },
+    { name: '秦亡', year: -206, value: 1, tag: '秦室终结' }
+  ],
   '唐朝': [
     { name: '李渊开国', year: 618, value: 6, tag: '大唐建元' },
     { name: '玄武门变', year: 626, value: 5.5, tag: '宫闱之变' },
@@ -1105,13 +1119,21 @@ const dynStages = computed(() => {
       { name: '衰亡', year: e, value: 3 }
     ]
   }
-  const n = Math.min(4, evs.length)
-  const step = Math.max(1, Math.floor(evs.length / n))
+  // 没有预设就从事件中均匀抽取最多 10 个节点，按「先升后降」生成曲线
+  const n = Math.min(10, evs.length)
   const result: { name: string; year: number; value: number; tag?: string }[] = []
   for (let i = 0; i < n; i++) {
-    const ev = evs[i * step] || evs[evs.length - 1]
-    const v = i === 0 ? 6 : i === n - 1 ? 3 : (i === 1 ? 10 : 6)
-    result.push({ name: ev.name.slice(0, 4), year: ev.start_year, value: v, tag: ev.event_type })
+    const idx = n === 1 ? 0 : Math.round((i * (evs.length - 1)) / (n - 1))
+    const ev = evs[idx]
+    const t = n === 1 ? 0 : i / (n - 1)
+    // 约 60% 处达到峰值
+    const raw = t <= 0.6 ? 6 + 4 * (t / 0.6) : 10 - 7 * ((t - 0.6) / 0.4)
+    result.push({
+      name: ev.name.slice(0, 4),
+      year: ev.start_year,
+      value: Math.round(raw * 2) / 2,
+      tag: ev.event_type
+    })
   }
   return result
 })
