@@ -5,8 +5,11 @@ const props = withDefaults(defineProps<{
   /** 没有站内来源时（直接打开链接）回退到的页面 */
   fallback: string
   label?: string
+  /** 与当前页面正文容器保持一致的宽度，保证左边缘对齐 */
+  maxWidth?: string
 }>(), {
-  label: '返回'
+  label: '返回',
+  maxWidth: 'max-w-7xl'
 })
 
 const router = useRouter()
@@ -20,7 +23,7 @@ const goBack = () => {
 
 <template>
   <div class="px-8 pt-4">
-    <div>
+    <div class="mx-auto" :class="maxWidth">
       <button
         type="button"
         @click="goBack"

@@ -1158,7 +1158,7 @@ onUnmounted(() => {
     <template v-if="hasData">
       <!-- Navigation -->
       <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-        <div class="px-8 py-3 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
           <div class="flex items-center gap-6">
             <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
               <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
