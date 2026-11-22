@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+/* 书法字体改为本地自托管子集：只保留项目实际用到的字符，
+   体积从 5.8MB 降到约 1.2MB，首屏即可显示书法体。
+   源字体在 frontend/fonts-src/，改动文案后执行 npm run font:subset 重新生成。 */
+@font-face {
+  font-family: 'Ma Shan Zheng';
+  src: url('/fonts/MaShanZheng-subset.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -135,13 +146,11 @@ body {
   transform: translateY(-4px) scale(0.99);
 }
 
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-}
-
-.fade-up.animated {
-  animation: fadeUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+/* 入场动画：延迟期间必须保持起始状态。
+   否则 opacity-0 一移除、动画尚未开始，元素会先整块闪现在终点位置，
+   delay 结束后又跳回起点重播，看起来就像"第一遍动效被打断了"。 */
+.animate-fade-up {
+  animation-fill-mode: both;
 }
 
 .fade-up-delay-1 { animation-delay: 0.1s; }
@@ -149,17 +158,6 @@ body {
 .fade-up-delay-3 { animation-delay: 0.3s; }
 .fade-up-delay-4 { animation-delay: 0.4s; }
 .fade-up-delay-5 { animation-delay: 0.5s; }
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 @keyframes float {
   0%, 100% {

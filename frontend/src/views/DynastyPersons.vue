@@ -3,6 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { dynasties, persons } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
+import BackButton from '@/components/BackButton.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -11,7 +12,8 @@ const filterCategory = ref('all')
 const jsonData = ref<DynastyData | null>(null)
 
 const dynastyId = Number(route.params.id) || 100
-const dynasty = computed(() => dynasties.find(d => d.id === dynastyId))
+// JSON 数据优先：朝代页使用真实朝代 ID（106/112…），mock 仅保留旧 ID 兜底
+const dynasty = computed(() => jsonData.value?.dynasty || dynasties.find(d => d.id === dynastyId))
 
 const dynastyPersons = computed(() => {
   if (jsonData.value) {
@@ -44,12 +46,10 @@ const getLifeSpan = (person: typeof persons[0]) => {
 }
 
 onMounted(async () => {
-  // 尝试加载 JSON 数据
-  if (dynastyId !== 100 && dynastyId >= 200) {
-    const data = await loadDynastyData(dynastyId)
-    if (data) {
-      jsonData.value = data
-    }
+  // 尝试加载 JSON 数据（覆盖全部有 JSON 的朝代，含 106 秦；mock 朝代 404 时自动回退）
+  const data = await loadDynastyData(dynastyId)
+  if (data) {
+    jsonData.value = data
   }
 
   setTimeout(() => {
@@ -92,14 +92,15 @@ const navigateToPerson = (id: number) => {
             <span class="text-[#2C2C2C] font-medium">代表人物</span>
           </div>
         </div>
-        
       </div>
     </nav>
 
+    <BackButton :fallback="`/dynasty/${dynastyId}`" />
+
     
 
-    <section class="pt-20 pb-12 px-8">
-      <div class="max-w-6xl mx-auto">
+    <section class="pt-8 pb-12 px-8">
+      <div class="max-w-7xl mx-auto">
         <div 
           class="mb-12"
           :class="isLoaded ? 'animate-fade-up' : 'opacity-0'"
@@ -134,7 +135,7 @@ const navigateToPerson = (id: number) => {
             @click="navigateToPerson(person.id)"
             class="glass-card rounded-2xl overflow-hidden hover-card cursor-pointer group"
             :class="isLoaded ? 'animate-fade-up' : 'opacity-0'"
-            :style="{ animationDelay: `${index * 0.08}s` }"
+            :style="{ animationDelay: `${Math.min(index, 8) * 0.04}s` }"
           >
             <div class="relative h-48 bg-gradient-to-br from-dai-blue/10 to-light-gold/10 overflow-hidden">
               <div class="absolute inset-0 flex items-center justify-center">
@@ -143,6 +144,8 @@ const navigateToPerson = (id: number) => {
                     :src="person.image_url" 
                     :alt="person.name" 
                     class="w-full h-full object-cover absolute inset-0"
+                    loading="lazy"
+                    decoding="async"
                     @error="(e: any) => { e.target.style.display = 'none'; const s = e.target.nextElementSibling; if (s) s.style.display = 'flex'; }"
                   />
                   <span class="font-serif text-4xl text-dai-blue" style="display:none;">{{ person.name.charAt(0) }}</span>

@@ -3,8 +3,12 @@ import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { events, persons, dynasties, eventTimelines } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
+import { resolvePersonIdByName } from '@/data/globalPersonIndex'
+import { resolvePersonAlias } from '@/data/personAlias'
 import ComingSoon from '@/components/ComingSoon.vue'
-import * as echarts from 'echarts'
+import BackButton from '@/components/BackButton.vue'
+import * as echarts from 'echarts/core'
+import type { ECharts } from 'echarts/core'
 
 const route = useRoute()
 const router = useRouter()
@@ -12,14 +16,14 @@ const relationGraphRef = ref<HTMLElement | null>(null)
 const relationGraphWidth = ref(800)
 const relationGraphHeight = ref(420)
 const impactChartRef = ref<HTMLElement | null>(null)
-let impactChart: echarts.ECharts | null = null
+let impactChart: ECharts | null = null
 const isLoaded = ref(false)
 const exploreTab = ref<'person' | 'event'>('person')
 
 // 从事件ID推断朝代ID (204001 -> 尝试201)
 // 事件ID规则: dynasty_prefix = Math.floor(eventId / 1000) 但实际可能不对应
 // 因此采用尝试加载策略
-const eventId = Number(route.params.id) || 1002
+const eventId = Number(route.params.id) || 0
 const jsonData = ref<DynastyData | null>(null)
 
 // 尝试可能的朝代ID列表（基于事件ID前缀和知识库）
@@ -37,7 +41,7 @@ const onPersonImageError = (e: Event, name: string) => {
   const person = getPersonByName(name)
   const img = e.target as HTMLImageElement
   if (person) {
-    img.src = `https://picsum.photos/seed/person${person.id}/200/200`
+    img.src = '/images/placeholder-ink.svg'
   }
   img.onerror = null
 }
@@ -71,12 +75,27 @@ const duration = computed(() => {
   return `${formattedYear(s)} — ${formattedYear(e)}`
 })
 
+const currentDynastyId = computed<number | undefined>(() => {
+  if (jsonData.value?.dynasty?.id) return Number(jsonData.value.dynasty.id)
+  return dynasties.find(d => d.name === event.value?.dynasty)?.id
+})
+
 const getPersonByName = (name: string) => {
+  // 先按原名查，查不到再按同人异名（字/号/尊称）查一次
+  const alias = resolvePersonAlias(name)
+  const candidates = alias === name ? [name] : [name, alias]
   if (jsonData.value) {
-    const found = jsonData.value.persons.find(p => p.name === name)
+    for (const n of candidates) {
+      const found = jsonData.value.persons.find(p => p.name === n)
+      if (found) return found
+    }
+  }
+  // 限定在事件所属朝代内查找，避免 mock 全量回退命中其他朝代的同名人物
+  const dynastyName = event.value?.dynasty
+  for (const n of candidates) {
+    const found = persons.find(p => p.name === n && (!dynastyName || p.dynasty === dynastyName))
     if (found) return found
   }
-  return persons.find(p => p.name === name)
 }
 
 const validRelatedPersons = computed(() => {
@@ -96,30 +115,66 @@ const background = computed(() => event.value?.background || {})
 const impacts = computed(() => event.value?.impacts || [])
 const chain = computed(() => event.value?.chain || [])
 
+// 节点年份：优先用人工编年的 year_text（支持「1937-1945年」这类区间），
+// 没有则回退到导入时的年份。若节点年份缺失或全部相同，说明时间段无区分度，整组不显示
+const narrativeYearLabel = (n: any) => {
+  if (n.year_text) return String(n.year_text)
+  if (n.year === null || n.year === undefined) return ''
+  return formattedYear(n.year)
+}
+// 已人工编年（存在 year_text）的事件：每个节点都显示年份，同年事件也逐条显示；
+// 尚未编年的旧数据：只有节点年份确实不同才显示，避免把导入时统一填的起始年在每个节点重复
+const hasManualYear = computed(() => narratives.value.some(n => n.year_text))
+const showNarrativeYear = computed(() => {
+  const labels = narratives.value.map(narrativeYearLabel)
+  if (!labels.length) return false
+  if (hasManualYear.value) return labels.every(l => !!l)
+  if (labels.some(l => !l)) return false
+  return new Set(labels).size > 1
+})
+
+// 一句话导读：与简介去重，避免黑色简介与黄棕色引言重复
+const oneSentence = computed(() => {
+  const g = event.value
+  if (!g) return ''
+  const os = g.one_sentence || ''
+  if (!os || os === g.summary) return ''
+  if (g.summary && os.length < g.summary.length && g.summary.includes(os)) return ''
+  return os
+})
+
 const timeline = computed(() => {
   const g = event.value
   if (!g) return null
+
+  // 最多显示 10 个历史事件节点，并以当前事件为中心取窗口
+  const capWindow = <T extends { isCurrent: boolean }>(arr: T[]): T[] => {
+    if (arr.length <= 10) return arr
+    const idx = arr.findIndex(a => a.isCurrent)
+    const start = Math.max(0, Math.min(idx === -1 ? 0 : idx - 4, arr.length - 10))
+    return arr.slice(start, start + 10)
+  }
 
   // First try dynasty-level timeline from JSON data
   if (jsonData.value?.timelines && g.timeline_id) {
     const dynTls = jsonData.value.timelines
     if (dynTls[g.timeline_id]) {
-      return dynTls[g.timeline_id].map((entry, idx) => ({
+      return capWindow(dynTls[g.timeline_id].map((entry, idx) => ({
         ...entry,
         index: idx,
         isCurrent: entry.event_id === g.id
-      }))
+      })))
     }
   }
 
   // Then try mock data timeline
   if (g.timeline_id && eventTimelines[g.timeline_id]) {
     const tl = eventTimelines[g.timeline_id]
-    return tl.map((entry, idx) => ({
+    return capWindow(tl.map((entry, idx) => ({
       ...entry,
       index: idx,
       isCurrent: entry.event_id === g.id
-    }))
+    })))
   }
 
   // Fallback: use chain data
@@ -151,7 +206,7 @@ const relatedEventsData = computed(() => {
   return event.value.related_events
     .map(name => allEvents.find(e => e.name === name))
     .filter((e): e is NonNullable<typeof e> => e !== undefined && e.id !== event.value!.id)
-    .slice(0, 6)
+    .slice(0, 4)
 })
 
 const relatedDynasty = computed(() => {
@@ -159,10 +214,25 @@ const relatedDynasty = computed(() => {
   return dynasties.find(d => d.name === event.value!.dynasty) || null
 })
 
-const navigateToPerson = (name: string) => {
-  const p = getPersonByName(name)
-  if (p) router.push(`/person/${p.id}`)
+const backFallback = computed(() =>
+  relatedDynasty.value ? `/dynasty/${relatedDynasty.value.id}/events` : '/timeline'
+)
+
+/** 方案 C：只解析一次。本朝人物 → 全局索引同朝匹配 → 全局索引跨朝兜底 */
+const resolvePersonId = (name: string): number | undefined => {
+  const local = getPersonByName(name)
+  if (local) return local.id
+  const sameDynasty = resolvePersonIdByName(name, currentDynastyId.value)
+  return sameDynasty ?? resolvePersonIdByName(name)
 }
+
+const navigateToPerson = (name: string) => {
+  const id = resolvePersonId(name)
+  if (id !== undefined) router.push(`/person/${id}`)
+}
+
+/** 人物名是否能解析到真实人物；解析不到时页面降级为不可点标签 */
+const isClickablePerson = (name: string) => resolvePersonId(name) !== undefined
 
 const navigateToEvent = (id: number) => router.push(`/event/${id}`)
 const navigateToDynasty = () => {
@@ -342,9 +412,17 @@ const eventGraphEdges = computed<GraphEdge[]>(() => {
     alliance: '#5C7A5E', hostile: '#C34739', lord_vassal: '#D8B26A',
     kinship: '#D4756A', teacher_student: '#4A6F7A', friend: '#4A4A3A', support: '#355C5A'
   }
-  const rels = (event.value!.person_relations || []).filter(rel =>
-    personNodes.some(n => n.name === rel.source) && personNodes.some(n => n.name === rel.target)
-  ).slice(0, 4)
+  // 同一对人物 + 同一关系类型仅保留一条连线，避免 A→B 与 B→A 两条重复线占位
+  const seenPair = new Set<string>()
+  const rels = (event.value!.person_relations || [])
+    .filter(rel => personNodes.some(n => n.name === rel.source) && personNodes.some(n => n.name === rel.target))
+    .filter(rel => {
+      const key = [rel.source, rel.target].sort().join('|') + '|' + (rel.type || '')
+      if (seenPair.has(key)) return false
+      seenPair.add(key)
+      return true
+    })
+    .slice(0, 4)
   rels.forEach(rel => {
     const src = personNodes.find(n => n.name === rel.source)!
     const tgt = personNodes.find(n => n.name === rel.target)!
@@ -378,17 +456,71 @@ function getEdgePath(src: GraphNode, tgt: GraphNode): string {
   return `M ${sx} ${sy} C ${sx} ${midY}, ${tx} ${midY}, ${tx} ${ty}`
 }
 
+/* 关系图谱悬停：
+ * - 悬停某条连线：突出该线及其两端节点，其余淡出
+ * - 悬停某个节点：突出该节点的全部关系连线与相邻节点（参考「因缘际会」的联动效果）
+ */
+const hoveredEdgeIndex = ref<number | null>(null)
+const hoveredNodeId = ref<string | null>(null)
+
+// 需要高亮的连线集合：优先取悬停的单条线，其次取悬停节点关联的全部线
+const activeEdgeIndices = computed<Set<number> | null>(() => {
+  if (hoveredEdgeIndex.value !== null) return new Set([hoveredEdgeIndex.value])
+  const id = hoveredNodeId.value
+  if (id === null) return null
+  const set = new Set<number>()
+  eventGraphEdges.value.forEach((e, i) => {
+    if (e.source.id === id || e.target.id === id) set.add(i)
+  })
+  return set
+})
+
+// 需要保持不透明的节点集合：连线悬停取两端点，节点悬停取自身 + 直接相邻节点
+const activeNodeIds = computed<Set<string> | null>(() => {
+  if (hoveredEdgeIndex.value !== null) {
+    const edge = eventGraphEdges.value[hoveredEdgeIndex.value]
+    return edge ? new Set([edge.source.id, edge.target.id]) : null
+  }
+  const id = hoveredNodeId.value
+  if (id === null) return null
+  const set = new Set([id])
+  eventGraphEdges.value.forEach(e => {
+    if (e.source.id === id) set.add(e.target.id)
+    else if (e.target.id === id) set.add(e.source.id)
+  })
+  return set
+})
+
+const isNodeDimmed = (id: string) =>
+  activeNodeIds.value !== null && !activeNodeIds.value.has(id)
+
+const edgeOpacity = (ei: number, edge: GraphEdge) => {
+  const active = activeEdgeIndices.value
+  if (active === null) return edge.isPersonRelation ? 0.65 : 0.5
+  return active.has(ei) ? 1 : 0.08
+}
+const edgeWidth = (ei: number, edge: GraphEdge) => {
+  const active = activeEdgeIndices.value
+  if (active !== null && active.has(ei)) return edge.isPersonRelation ? 2.8 : 2.2
+  return edge.isPersonRelation ? 2 : 1.4
+}
+const edgeLabelOpacity = (ei: number) => {
+  const active = activeEdgeIndices.value
+  return active === null || active.has(ei) ? 1 : 0.15
+}
+
 /**
  * 计算标签位置，带碰撞检测
  * 1. 沿连线 55% 位置作为初始点（无偏移，紧贴连线）
- * 2. 检测是否与任意人物节点矩形重叠
+ * 2. 检测是否与任意人物节点/中心事件方块矩形重叠
  * 3. 若重叠，选择推离距离最小的方向（上/下/左/右）推离
  * 4. 最多迭代 3 轮，收敛到无碰撞位置
  */
 function computeEdgeLabelPos(
   src: GraphNode,
   tgt: GraphNode,
-  allNodes: GraphNode[]
+  allNodes: GraphNode[],
+  placedLabels: Array<{ x: number; y: number }> = []
 ): { x: number; y: number } {
   const sx = src.x + src.w / 2; const sy = src.y + src.h / 2
   const tx = tgt.x + tgt.w / 2; const ty = tgt.y + tgt.h / 2
@@ -396,45 +528,49 @@ function computeEdgeLabelPos(
   let x = sx + (tx - sx) * t
   let y = sy + (ty - sy) * t
 
-  // Collision detection: check against all person nodes
+  // Collision detection: person nodes AND center event square
+  // 中心红色事件方块也必须参与避让，否则穿过中心连线的标签会压住它
   const labelW = 48, labelH = 18
   const margin = 3
-  const personNodes = allNodes.filter(n => n.type === 'person')
+  const obstacles = allNodes.filter(n => n.type === 'person' || n.type === 'center')
 
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < 4; attempt++) {
     let collided = false
     let pushX = 0, pushY = 0
     let minPush = Infinity
 
-    for (const node of personNodes) {
-      // Label AABB
-      const lx = x - labelW / 2 - margin
-      const ly = y - labelH / 2 - margin
-      const lx2 = x + labelW / 2 + margin
-      const ly2 = y + labelH / 2 + margin
-      // Node AABB
-      const nx = node.x, ny = node.y
-      const nx2 = node.x + node.w, ny2 = node.y + node.h
-
-      // Check AABB overlap
-      if (lx < nx2 && lx2 > nx && ly < ny2 && ly2 > ny) {
-        collided = true
-        // Evaluate 4 push directions, pick the smallest
-        const pushes = [
-          { dx: nx2 - lx, dy: 0 },
-          { dx: nx - lx2, dy: 0 },
-          { dx: 0, dy: ny2 - ly },
-          { dx: 0, dy: ny - ly2 }
-        ]
-        for (const p of pushes) {
-          const dist = Math.abs(p.dx) + Math.abs(p.dy)
-          if (dist < minPush) {
-            minPush = dist
-            pushX = p.dx
-            pushY = p.dy
-          }
-        }
+    const consider = (node: { x: number; y: number; w: number; h: number; type: string }) => {
+      const { lx, ly, lx2, ly2 } = {
+        lx: x - labelW / 2 - margin, ly: y - labelH / 2 - margin,
+        lx2: x + labelW / 2 + margin, ly2: y + labelH / 2 + margin
       }
+      const nx = node.x, ny = node.y, nx2 = node.x + node.w, ny2 = node.y + node.h
+      if (!(lx < nx2 && lx2 > nx && ly < ny2 && ly2 > ny)) return false
+      // 中心方块只允许左右横向推离：其上下紧贴人物行，竖向推离必撞相邻行导致振荡
+      const pushes = node.type === 'center'
+        ? [
+            { dx: nx - lx2, dy: 0 },  // 推到方块左侧
+            { dx: nx2 - lx, dy: 0 }   // 推到方块右侧
+          ]
+        : [
+            { dx: nx2 - lx, dy: 0 },
+            { dx: nx - lx2, dy: 0 },
+            { dx: 0, dy: ny2 - ly },
+            { dx: 0, dy: ny - ly2 }
+          ]
+      for (const p of pushes) {
+        const dist = Math.abs(p.dx) + Math.abs(p.dy)
+        if (dist < minPush) { minPush = dist; pushX = p.dx; pushY = p.dy }
+      }
+      return true
+    }
+
+    for (const node of obstacles) if (consider(node)) collided = true
+
+    // 标签互避：与已放置标签不重叠
+    for (const pl of placedLabels) {
+      const plNode = { x: pl.x - labelW / 2, y: pl.y - labelH / 2, w: labelW, h: labelH, type: 'label' as const }
+      if (consider(plNode)) collided = true
     }
 
     if (!collided) break
@@ -450,10 +586,13 @@ const edgeLabelPositions = computed(() => {
   const positions = new Map<string, { x: number; y: number }>()
   const allNodes = eventGraphNodes.value
   const edges = eventGraphEdges.value
+  const placedLabels: Array<{ x: number; y: number }> = []
   for (let i = 0; i < edges.length; i++) {
     const edge = edges[i]
     if (!edge.label) continue
-    positions.set(`el${i}`, computeEdgeLabelPos(edge.source, edge.target, allNodes))
+    const pos = computeEdgeLabelPos(edge.source, edge.target, allNodes, placedLabels)
+    positions.set(`el${i}`, pos)
+    placedLabels.push(pos)
   }
   return positions
 })
@@ -475,16 +614,11 @@ const impactIcons: Record<string, string> = {
 
 const getImpactSummary = () => {
   if (!event.value) return ''
-  const g = event.value
   const imps = impacts.value
-  const topImp = imps.length > 0 ? [...imps].sort((a, b) => b.score - a.score)[0] : null
-  const dynasty = g.dynasty
-  const name = g.name
 
-  if (topImp) {
-    return `${name}作为${dynasty}时期的标志性事件，在${topImp.name}方面影响最为深远（${topImp.score}分），其历史余韵贯穿后世，成为理解${dynasty}兴衰脉络的重要切入点。`
-  }
-  return `${name}是${dynasty}时期的重要历史事件，其影响波及政治、社会与文化等多个层面，在中国历史进程中留下了深刻印记。`
+  // 只展示 Excel 导入的真实历史影响文字；无则留空，避免套用统一模板句
+  const hist = imps.find(i => i.name.includes('历史'))
+  return (hist && hist.description) ? hist.description : ''
 }
 
 const initImpactChart = () => {
@@ -553,15 +687,13 @@ const handleResize = () => {
 }
 
 onMounted(async () => {
-  // 尝试加载 JSON 数据 - 遍历候选朝代ID
-  if (eventId >= 200000) {
-    const candidates = getCandidateDynastyIds(eventId)
-    for (const dId of candidates) {
-      const data = await loadDynastyData(dId)
-      if (data && data.events.some(e => e.id === eventId)) {
-        jsonData.value = data
-        break
-      }
+  // 尝试加载 JSON 数据 - 遍历候选朝代ID（覆盖全部有 JSON 的朝代，含 106 秦）
+  const candidates = getCandidateDynastyIds(eventId)
+  for (const dId of candidates) {
+    const data = await loadDynastyData(dId)
+    if (data && data.events.some(e => e.id === eventId)) {
+      jsonData.value = data
+      break
     }
   }
 
@@ -631,6 +763,8 @@ watch(impacts, () => {
       </div>
     </nav>
 
+    <BackButton :fallback="backFallback" />
+
     <section class="relative px-8 py-12 overflow-hidden">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-12 gap-8 items-center" style="min-height: 440px;">
@@ -653,10 +787,10 @@ watch(impacts, () => {
             </div>
 
             <p class="text-lg text-[#2C2C2C]/90 leading-relaxed max-w-2xl mb-4 font-serif">{{ event!.summary }}</p>
-            <p v-if="event!.one_sentence" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
-              {{ event!.one_sentence }}
+            <p v-if="oneSentence" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
+              {{ oneSentence }}
             </p>
-            <p v-else-if="event!.significance" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
+            <p v-else-if="event!.significance && event!.significance !== event!.summary" class="text-base text-[#8B5A2B] leading-relaxed max-w-2xl font-serif italic border-l-4 border-[#D8B26A] pl-4">
               {{ event!.significance }}
             </p>
           </div>
@@ -669,7 +803,7 @@ watch(impacts, () => {
                 :src="event!.image_url"
                 :alt="event!.name"
                 class="w-full h-[440px] object-cover object-top"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/event' + event!.id + '/600/440'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
               <div v-else class="w-full h-[440px] bg-gradient-to-br from-[#D8B26A]/25 to-[#355C5A]/20 flex items-center justify-center">
                 <span class="font-calligraphy text-6xl text-[#2C2C2C]/30">{{ event!.name.charAt(0) }}</span>
@@ -702,7 +836,7 @@ watch(impacts, () => {
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center gap-3 mb-1">
-                    <span class="text-sm text-[#C34739] font-medium">{{ formattedYear(n.year!) }}</span>
+                    <span v-if="showNarrativeYear" class="text-sm text-[#C34739] font-medium">{{ narrativeYearLabel(n) }}</span>
                     <span v-if="n.tag" class="px-2 py-0.5 text-xs bg-[#355C5A]/10 text-[#355C5A] rounded">{{ n.tag }}</span>
                   </div>
                   <div class="text-base text-[#2C2C2C] font-medium group-hover:text-[#C34739] transition-colors mb-1">{{ n.title }}</div>
@@ -782,7 +916,7 @@ watch(impacts, () => {
         </div>
 
         <div class="grid grid-cols-4 gap-6">
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="leaders.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#C34739]"></span>
               <h3 class="text-sm text-[#C34739] font-medium">领导者</h3>
@@ -792,8 +926,8 @@ watch(impacts, () => {
               <div
                 v-for="p in leaders"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#C34739]/10 border border-[#C34739]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#C34739]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#C34739]">{{ p.name.charAt(0) }}</span>
@@ -807,7 +941,7 @@ watch(impacts, () => {
             </div>
           </div>
 
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="participants.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#355C5A]"></span>
               <h3 class="text-sm text-[#355C5A] font-medium">参与者</h3>
@@ -817,8 +951,8 @@ watch(impacts, () => {
               <div
                 v-for="p in participants"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#355C5A]/10 border border-[#355C5A]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#355C5A]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#355C5A]">{{ p.name.charAt(0) }}</span>
@@ -832,7 +966,7 @@ watch(impacts, () => {
             </div>
           </div>
 
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="opponents.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#8B5A2B]"></span>
               <h3 class="text-sm text-[#8B5A2B] font-medium">对手 / 对抗方</h3>
@@ -842,8 +976,8 @@ watch(impacts, () => {
               <div
                 v-for="p in opponents"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#8B5A2B]/10 border border-[#8B5A2B]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#8B5A2B]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#8B5A2B]">{{ p.name.charAt(0) }}</span>
@@ -857,7 +991,7 @@ watch(impacts, () => {
             </div>
           </div>
 
-          <div class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
+          <div v-if="affected.length" class="bg-white/60 border border-[#D8B26A]/15 rounded-lg p-5">
             <div class="flex items-center gap-2 mb-4">
               <span class="w-1.5 h-1.5 rounded-full bg-[#5C7A5E]"></span>
               <h3 class="text-sm text-[#5C7A5E] font-medium">受影响人物</h3>
@@ -867,8 +1001,8 @@ watch(impacts, () => {
               <div
                 v-for="p in affected"
                 :key="p.name"
-                class="flex items-center gap-3 cursor-pointer group"
-                @click="navigateToPerson(p.name)"
+                :class="['flex items-center gap-3', isClickablePerson(p.name) ? 'cursor-pointer group' : 'cursor-default opacity-70']"
+                @click="isClickablePerson(p.name) && navigateToPerson(p.name)"
               >
                 <div class="w-12 h-12 rounded-full bg-[#5C7A5E]/10 border border-[#5C7A5E]/20 overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-[#5C7A5E]/40 transition-all relative">
                   <span class="absolute inset-0 flex items-center justify-center font-calligraphy text-xl text-[#5C7A5E]">{{ p.name.charAt(0) }}</span>
@@ -932,15 +1066,29 @@ watch(impacts, () => {
                 </defs>
 
                 <!-- Edges (lines only) -->
-                <g v-for="(edge, ei) in eventGraphEdges" :key="'e' + ei">
+                <g
+                  v-for="(edge, ei) in eventGraphEdges"
+                  :key="'e' + ei"
+                  @mouseenter="hoveredEdgeIndex = ei"
+                  @mouseleave="hoveredEdgeIndex = null"
+                >
+                  <!-- 透明加宽热区：细线也能稳定触发 hover -->
+                  <path
+                    :d="getEdgePath(edge.source, edge.target)"
+                    fill="none"
+                    stroke="transparent"
+                    stroke-width="16"
+                    style="pointer-events: stroke;"
+                  />
                   <path
                     :d="getEdgePath(edge.source, edge.target)"
                     fill="none"
                     :stroke="edge.color"
-                    :stroke-opacity="edge.isPersonRelation ? 0.65 : 0.5"
-                    :stroke-width="edge.isPersonRelation ? 2 : 1.4"
+                    :stroke-opacity="edgeOpacity(ei, edge)"
+                    :stroke-width="edgeWidth(ei, edge)"
                     :stroke-dasharray="edge.isPersonRelation ? '5,3' : 'none'"
                     marker-end="url(#eventArrow)"
+                    style="transition: stroke-opacity 0.2s ease, stroke-width 0.2s ease;"
                   />
                 </g>
 
@@ -948,9 +1096,13 @@ watch(impacts, () => {
                 <g
                   v-for="node in eventGraphNodes"
                   :key="node.id"
-                  :class="node.type !== 'center' ? 'cursor-pointer' : ''"
-                  @click="node.type === 'person' ? navigateToPerson(node.name) : (node.type === 'event' && node.eventId ? navigateToEvent(node.eventId) : null)"
+                  :class="node.type === 'person' ? (isClickablePerson(node.name) ? 'cursor-pointer' : '') : (node.type === 'event' && node.eventId ? 'cursor-pointer' : '')"
+                  @click="node.type === 'person' ? (isClickablePerson(node.name) && navigateToPerson(node.name)) : (node.type === 'event' && node.eventId ? navigateToEvent(node.eventId) : null)"
+                  @mouseenter="hoveredNodeId = node.id"
+                  @mouseleave="hoveredNodeId = null"
                   filter="url(#eventNodeShadow)"
+                  :opacity="isNodeDimmed(node.id) ? 0.25 : 1"
+                  style="transition: opacity 0.2s ease;"
                 >
                   <rect
                     :x="node.x" :y="node.y"
@@ -983,7 +1135,13 @@ watch(impacts, () => {
 
                 <!-- Edge Labels -->
                 <g v-for="(edge, ei) in eventGraphEdges" :key="'el' + ei">
-                  <g v-if="edge.label">
+                  <g
+                    v-if="edge.label"
+                    @mouseenter="hoveredEdgeIndex = ei"
+                    @mouseleave="hoveredEdgeIndex = null"
+                    :opacity="edgeLabelOpacity(ei)"
+                    style="transition: opacity 0.2s ease;"
+                  >
                     <rect
                       :x="(edgeLabelPositions.get('el'+ei) || {x:0,y:0}).x - 24"
                       :y="(edgeLabelPositions.get('el'+ei) || {x:0,y:0}).y - 9"
@@ -1040,7 +1198,7 @@ watch(impacts, () => {
             </h2>
             <div class="bg-white/50 border border-[#D8B26A]/15 rounded-lg p-6 flex flex-col" :style="{ height: relationGraphHeight + 'px' }">
               <div ref="impactChartRef" class="w-full flex-1" style="min-height: 220px;"></div>
-              <p class="text-sm text-[#4A4A3A]/70 leading-relaxed mt-4 pt-3 border-t border-[#D8B26A]/15 font-serif">
+              <p v-if="getImpactSummary()" class="text-sm text-[#4A4A3A]/70 leading-relaxed mt-4 pt-3 border-t border-[#D8B26A]/15 font-serif">
                 {{ getImpactSummary() }}
               </p>
             </div>
@@ -1074,7 +1232,7 @@ watch(impacts, () => {
                 <div
                   class="evolution-node-inner"
                   :class="{ 'clickable': entry.event_id }"
-                  @click="entry.event_id && navigateToChainEvent(entry.title)"
+                  @click="entry.event_id && navigateToEvent(entry.event_id)"
                 >
                   <div class="evolution-node-icon">{{ entry.title.charAt(0) }}</div>
                   <div v-if="entry.event_id" class="evolution-node-tooltip">点击跳转 →</div>
@@ -1179,7 +1337,7 @@ watch(impacts, () => {
                 :src="ev.image_url"
                 :alt="ev.name"
                 class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-all duration-500"
-                @error="(e: any) => { e.target.src = 'https://picsum.photos/seed/event' + ev.id + '/400/300'; e.target.onerror = null }"
+                @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
             </div>
             <div class="p-4 flex-1">
