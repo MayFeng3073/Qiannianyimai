@@ -456,17 +456,58 @@ function getEdgePath(src: GraphNode, tgt: GraphNode): string {
   return `M ${sx} ${sy} C ${sx} ${midY}, ${tx} ${midY}, ${tx} ${ty}`
 }
 
-/* 关系图谱悬停：只突出当前连线及其两端节点，其余淡出 */
+/* 关系图谱悬停：
+ * - 悬停某条连线：突出该线及其两端节点，其余淡出
+ * - 悬停某个节点：突出该节点的全部关系连线与相邻节点（参考「因缘际会」的联动效果）
+ */
 const hoveredEdgeIndex = ref<number | null>(null)
-const hoveredEdgeNodeIds = computed<Set<string> | null>(() => {
-  const i = hoveredEdgeIndex.value
-  if (i === null) return null
-  const edge = eventGraphEdges.value[i]
-  if (!edge) return null
-  return new Set([edge.source.id, edge.target.id])
+const hoveredNodeId = ref<string | null>(null)
+
+// 需要高亮的连线集合：优先取悬停的单条线，其次取悬停节点关联的全部线
+const activeEdgeIndices = computed<Set<number> | null>(() => {
+  if (hoveredEdgeIndex.value !== null) return new Set([hoveredEdgeIndex.value])
+  const id = hoveredNodeId.value
+  if (id === null) return null
+  const set = new Set<number>()
+  eventGraphEdges.value.forEach((e, i) => {
+    if (e.source.id === id || e.target.id === id) set.add(i)
+  })
+  return set
 })
+
+// 需要保持不透明的节点集合：连线悬停取两端点，节点悬停取自身 + 直接相邻节点
+const activeNodeIds = computed<Set<string> | null>(() => {
+  if (hoveredEdgeIndex.value !== null) {
+    const edge = eventGraphEdges.value[hoveredEdgeIndex.value]
+    return edge ? new Set([edge.source.id, edge.target.id]) : null
+  }
+  const id = hoveredNodeId.value
+  if (id === null) return null
+  const set = new Set([id])
+  eventGraphEdges.value.forEach(e => {
+    if (e.source.id === id) set.add(e.target.id)
+    else if (e.target.id === id) set.add(e.source.id)
+  })
+  return set
+})
+
 const isNodeDimmed = (id: string) =>
-  hoveredEdgeNodeIds.value !== null && !hoveredEdgeNodeIds.value.has(id)
+  activeNodeIds.value !== null && !activeNodeIds.value.has(id)
+
+const edgeOpacity = (ei: number, edge: GraphEdge) => {
+  const active = activeEdgeIndices.value
+  if (active === null) return edge.isPersonRelation ? 0.65 : 0.5
+  return active.has(ei) ? 1 : 0.08
+}
+const edgeWidth = (ei: number, edge: GraphEdge) => {
+  const active = activeEdgeIndices.value
+  if (active !== null && active.has(ei)) return edge.isPersonRelation ? 2.8 : 2.2
+  return edge.isPersonRelation ? 2 : 1.4
+}
+const edgeLabelOpacity = (ei: number) => {
+  const active = activeEdgeIndices.value
+  return active === null || active.has(ei) ? 1 : 0.15
+}
 
 /**
  * 计算标签位置，带碰撞检测
@@ -698,26 +739,25 @@ watch(impacts, () => {
 <template>
   <div class="min-h-screen bg-[#F8F6F2] relative" v-if="hasData">
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-      <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-6">
+      <div class="max-w-7xl mx-auto px-8 pt-3 pb-2">
+        <div class="flex items-center justify-between">
           <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
             <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
               <span class="font-calligraphy text-white text-lg">千</span>
             </div>
             <span class="font-calligraphy text-xl text-[#2C2C2C]">千年一脉</span>
           </div>
-          <div class="h-5 w-px bg-[#D8B26A]/30"></div>
-          <div class="text-sm text-[#4A4A3A]/60">
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/timeline')">中国历史</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynasty">{{ event!.dynasty }}</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynastyEvents">重大历史事件</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="text-[#2C2C2C] font-medium">{{ event!.name }}</span>
-          </div>
+        </div>
+        <div class="mt-1.5 text-sm text-[#4A4A3A]/60">
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/timeline')">中国历史</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynasty">{{ event!.dynasty }}</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynastyEvents">重大历史事件</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="text-[#2C2C2C] font-medium">{{ event!.name }}</span>
         </div>
       </div>
     </nav>
@@ -1043,12 +1083,8 @@ watch(impacts, () => {
                     :d="getEdgePath(edge.source, edge.target)"
                     fill="none"
                     :stroke="edge.color"
-                    :stroke-opacity="hoveredEdgeIndex === null
-                      ? (edge.isPersonRelation ? 0.65 : 0.5)
-                      : (hoveredEdgeIndex === ei ? 1 : 0.08)"
-                    :stroke-width="hoveredEdgeIndex === ei
-                      ? (edge.isPersonRelation ? 2.8 : 2.2)
-                      : (edge.isPersonRelation ? 2 : 1.4)"
+                    :stroke-opacity="edgeOpacity(ei, edge)"
+                    :stroke-width="edgeWidth(ei, edge)"
                     :stroke-dasharray="edge.isPersonRelation ? '5,3' : 'none'"
                     marker-end="url(#eventArrow)"
                     style="transition: stroke-opacity 0.2s ease, stroke-width 0.2s ease;"
@@ -1061,6 +1097,8 @@ watch(impacts, () => {
                   :key="node.id"
                   :class="node.type === 'person' ? (isClickablePerson(node.name) ? 'cursor-pointer' : '') : (node.type === 'event' && node.eventId ? 'cursor-pointer' : '')"
                   @click="node.type === 'person' ? (isClickablePerson(node.name) && navigateToPerson(node.name)) : (node.type === 'event' && node.eventId ? navigateToEvent(node.eventId) : null)"
+                  @mouseenter="hoveredNodeId = node.id"
+                  @mouseleave="hoveredNodeId = null"
                   filter="url(#eventNodeShadow)"
                   :opacity="isNodeDimmed(node.id) ? 0.25 : 1"
                   style="transition: opacity 0.2s ease;"
@@ -1100,7 +1138,7 @@ watch(impacts, () => {
                     v-if="edge.label"
                     @mouseenter="hoveredEdgeIndex = ei"
                     @mouseleave="hoveredEdgeIndex = null"
-                    :opacity="hoveredEdgeIndex === null || hoveredEdgeIndex === ei ? 1 : 0.15"
+                    :opacity="edgeLabelOpacity(ei)"
                     style="transition: opacity 0.2s ease;"
                   >
                     <rect

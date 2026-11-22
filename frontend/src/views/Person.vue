@@ -964,28 +964,27 @@ watch(isLevel2, (isL2) => {
     <div class="fixed inset-0 pointer-events-none opacity-40" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Cfill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M0 0h100v100H0z%22 fill=%22%23F8F6F2%22/%3E%3Cpath d=%22M20 30c5-5 10-5 15 0s10 5 15 0 10-5 15 0 10 5 15 0 10-5 15 0%22 fill=%22none%22 stroke=%22%23D8B26A%22 stroke-width=%220.3%22 opacity=%220.3%22/%3E%3C/svg%3E');"></div>
 
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-      <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-6">
+      <div class="max-w-7xl mx-auto px-8 pt-3 pb-2">
+        <div class="flex items-center justify-between">
           <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
             <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
               <span class="font-calligraphy text-white text-lg">千</span>
             </div>
             <span class="font-calligraphy text-xl text-[#2C2C2C]">千年一脉</span>
           </div>
-          <div class="h-5 w-px bg-[#D8B26A]/30"></div>
-          <div class="text-sm text-[#4A4A3A]/60">
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/timeline')">中国历史</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynasty">{{ person!.dynasty }}</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynastyPersons">代表人物</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="text-[#2C2C2C] font-medium">{{ person!.name }}</span>
-          </div>
         </div>
+        <div class="mt-1.5 text-sm text-[#4A4A3A]/60">
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/timeline')">中国历史</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynasty">{{ person!.dynasty }}</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynastyPersons">代表人物</span>
+          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+          <span class="text-[#2C2C2C] font-medium">{{ person!.name }}</span>
         </div>
+      </div>
     </nav>
 
     <BackButton :fallback="backFallback" />
