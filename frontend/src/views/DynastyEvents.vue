@@ -99,7 +99,7 @@ const navigateToEvent = (id: number) => {
 
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-      <div class="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between">
+      <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
             <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
@@ -121,13 +121,13 @@ const navigateToEvent = (id: number) => {
       </div>
     </nav>
 
-    <BackButton :fallback="`/dynasty/${dynastyId}`" max-width="max-w-6xl" />
+    <BackButton :fallback="`/dynasty/${dynastyId}`" />
 
     
 
     <!-- Header -->
     <section class="pt-8 pb-8 px-8">
-      <div class="max-w-5xl mx-auto">
+      <div class="max-w-7xl mx-auto">
         <div 
           class="mb-6"
           :class="isLoaded ? 'animate-fade-up' : 'opacity-0'"
@@ -144,7 +144,7 @@ const navigateToEvent = (id: number) => {
 
     <!-- Wave Timeline -->
     <section class="px-8 pb-20">
-      <div class="max-w-6xl mx-auto relative">
+      <div class="max-w-7xl mx-auto relative">
         <!-- Central Wavy Line (SVG) -->
         <div class="absolute left-1/2 top-0 bottom-0" :style="{ width: (WAVE_AMPLITUDE * 2 + 40) + 'px', transform: 'translateX(-50%)' }">
           <svg

@@ -73,7 +73,7 @@ const navigateToPerson = (id: number) => {
     <div class="fixed inset-0 pointer-events-none opacity-40" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Cfill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M0 0h100v100H0z%22 fill=%22%23F8F6F2%22/%3E%3Cpath d=%22M20 30c5-5 10-5 15 0s10 5 15 0 10-5 15 0 10 5 15 0 10-5 15 0%22 fill=%22none%22 stroke=%22%23D8B26A%22 stroke-width=%220.3%22 opacity=%220.3%22/%3E%3C/svg%3E');"></div>
 
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-      <div class="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between">
+      <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
             <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
@@ -95,12 +95,12 @@ const navigateToPerson = (id: number) => {
       </div>
     </nav>
 
-    <BackButton :fallback="`/dynasty/${dynastyId}`" max-width="max-w-6xl" />
+    <BackButton :fallback="`/dynasty/${dynastyId}`" />
 
     
 
     <section class="pt-8 pb-12 px-8">
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-7xl mx-auto">
         <div 
           class="mb-12"
           :class="isLoaded ? 'animate-fade-up' : 'opacity-0'"
@@ -135,7 +135,7 @@ const navigateToPerson = (id: number) => {
             @click="navigateToPerson(person.id)"
             class="glass-card rounded-2xl overflow-hidden hover-card cursor-pointer group"
             :class="isLoaded ? 'animate-fade-up' : 'opacity-0'"
-            :style="{ animationDelay: `${index * 0.08}s` }"
+            :style="{ animationDelay: `${Math.min(index, 8) * 0.04}s` }"
           >
             <div class="relative h-48 bg-gradient-to-br from-dai-blue/10 to-light-gold/10 overflow-hidden">
               <div class="absolute inset-0 flex items-center justify-center">
@@ -144,6 +144,8 @@ const navigateToPerson = (id: number) => {
                     :src="person.image_url" 
                     :alt="person.name" 
                     class="w-full h-full object-cover absolute inset-0"
+                    loading="lazy"
+                    decoding="async"
                     @error="(e: any) => { e.target.style.display = 'none'; const s = e.target.nextElementSibling; if (s) s.style.display = 'flex'; }"
                   />
                   <span class="font-serif text-4xl text-dai-blue" style="display:none;">{{ person.name.charAt(0) }}</span>

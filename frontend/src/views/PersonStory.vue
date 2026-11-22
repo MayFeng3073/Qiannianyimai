@@ -649,7 +649,7 @@ onUnmounted(() => {
 
     <!-- ====== Navigation Bar (same as Person.vue) ====== -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-      <div class="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between">
+      <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
             <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
@@ -674,7 +674,7 @@ onUnmounted(() => {
     </nav>
 
     <!-- 返回按钮 -->
-    <div class="max-w-6xl mx-auto px-8 pt-2 bg-transparent">
+    <div class="max-w-7xl mx-auto px-8 pt-2 bg-transparent">
       <button
         @click="goBack"
         class="flex items-center gap-2 text-base text-white/90 hover:text-white transition-colors group drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]"
@@ -692,7 +692,7 @@ onUnmounted(() => {
       <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#355C5A]/5 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute bottom-10 left-10 w-56 h-56 bg-[#C34739]/5 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div class="max-w-6xl mx-auto relative z-10">
+      <div class="max-w-7xl mx-auto relative z-10">
         <div class="grid grid-cols-12 gap-10 items-center">
           <!-- Person Image -->
           <div class="col-span-5">
@@ -770,7 +770,7 @@ onUnmounted(() => {
       <div class="absolute top-0 right-0 w-80 h-80 bg-[#D8B26A]/4 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#355C5A]/3 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div class="max-w-6xl mx-auto relative z-10">
+      <div class="max-w-7xl mx-auto relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Left: Relationship Diagram -->
           <div>
