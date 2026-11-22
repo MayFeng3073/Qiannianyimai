@@ -1248,7 +1248,7 @@ onUnmounted(() => {
                     <div class="absolute inset-0 bg-gradient-to-br from-[#D8B26A]/20 to-[#355C5A]/15 flex items-center justify-center">
                       <span class="font-calligraphy text-2xl text-[#2C2C2C]/30">{{ person.name.charAt(0) }}</span>
                     </div>
-                    <img :src="person.image_url" :alt="person.name" class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'" @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }" />
+                    <img :src="person.image_url" :alt="person.name" class="w-full h-full object-cover absolute inset-0 z-10 transition-opacity duration-500" @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }" />
                   </div>
                   <span class="font-medium text-[#2C2C2C] text-sm block group-hover:text-[#355C5A] transition-colors">{{ person.name }}</span>
                   <span class="text-xs text-[#4A4A3A]/50">{{ person.category }}</span>

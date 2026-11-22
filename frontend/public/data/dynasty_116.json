@@ -5539,7 +5539,7 @@
       "story": {
         "title": "两朝拥立",
         "content": "代善是努尔哈赤次子，早年作战勇猛，获“古英巴图鲁”称号，位列四大贝勒。努尔哈赤死后，他握有实力却主动退让，与诸贝勒共推皇太极即位，避免后金内部分裂。皇太极去世后，宗室再起继统之争，代善以年老为由拒绝登位，转而支持福临，使顺治朝平稳开局。他历经三朝，虽一度因绯闻失去继承资格，却始终以宗室元老身份在关键时刻发挥稳定作用。其选择并非软弱，而是对政治现实的清醒判断：以退让换取宗室整体的存续与团结。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%BB%A3%E5%96%84%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%A4%E6%9C%9D%E6%8B%A5%E7%AB%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5706,7 +5706,7 @@
       "story": {
         "title": "让权善终",
         "content": "济尔哈朗是努尔哈赤之侄，幼年由努尔哈赤抚养宫中，封和硕郑亲王。皇太极去世后，他与多尔衮共同拥立福临，同为摄政王。多尔衮权势日盛，济尔哈朗一度被排挤出权力核心，但他隐忍待时。多尔衮暴毙后，他果断逮捕其兄阿济格，稳定顺治亲政局面，此后进封叔和硕郑亲王，得以善终。清初宗室倾轧之中，他没有代善的开国军功，也无多尔衮的强势锋芒，却凭审时度势与克制忍耐保全自身，并在关键节点扭转朝局。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B5%8E%E5%B0%94%E5%93%88%E6%9C%97%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%AE%A9%E6%9D%83%E5%96%84%E7%BB%88%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5864,7 +5864,7 @@
       "story": {
         "title": "佐定入关",
         "content": "范文程是宋代名臣范仲淹之后，清军入关前在沈阳被掳入满洲贵族家中为奴。努尔哈赤时他未受重用，至皇太极始参与军国机密。崇祯自缢、清军准备入关之际，范文程提出录用明朝官员、废除三饷加派、开科取士等建议，为多尔衮采纳，使清廷在入关之初迅速建立统治秩序。此后官至大学士，历努尔哈赤、皇太极、顺治、康熙四朝。一个被掳为奴的汉人书生进入最高决策圈并影响开国制度设计，本身便是明清易代政治流动性的缩影。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8C%83%E6%96%87%E7%A8%8B%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BD%90%E5%AE%9A%E5%85%A5%E5%85%B3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6018,7 +6018,7 @@
       "story": {
         "title": "党附太子",
         "content": "索额图是康熙朝辅政大臣索尼之子，满洲正黄旗人。初授侍卫，在康熙擒拿鳌拜中参与谋划，由此获信任，官至保和殿大学士、议政大臣。此后与明珠形成朝中两大集团，倾轧多年。索额图更深地卷入皇子之争，依附太子胤礽，引起康熙警觉与厌恶。康熙四十二年，他以“结党妄行”等罪被拘禁，死于禁所，后被斥为“本朝第一罪人”。其生涯起于侍卫，盛于权相，败于党争，显示皇权对权臣结党的零容忍。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%B4%A2%E9%A2%9D%E5%9B%BE%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%85%9A%E9%99%84%E5%A4%AA%E5%AD%90%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6176,7 +6176,7 @@
       "story": {
         "title": "权盛而衰",
         "content": "明珠出身叶赫那拉氏，满洲正黄旗人，由内务府郎中升至武英殿大学士，在康熙朝中前期权倾一时。他在撤三藩、统一台湾等重大决策中发挥关键作用，官居内阁十三年，被称为“相国”。权势日盛后，明珠广结党羽、收受贿赂，与索额图集团的争斗使朝局日益紧张。康熙二十七年，御史郭琇上疏弹劾，明珠被革大学士，改任内大臣，远离中枢。康熙并未赶尽杀绝，晚年仍加顾问。其一生呈现康熙朝权臣的典型轨迹：以才干获拔擢，以权势致倾覆。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%98%8E%E7%8F%A0%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%9D%83%E7%9B%9B%E8%80%8C%E8%A1%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6321,7 +6321,7 @@
       "story": {
         "title": "五秩历四部",
         "content": "陈廷敬是山西泽州人，顺治年间进士，因同科有两人名“陈敬”，由顺治帝赐名“廷敬”。康熙即位后他担任经筵讲官，为皇帝讲经说史，此后历任工、户、刑、吏四部尚书，官至文渊阁大学士。在朝五十三年间，他经历二十八次升迁，参与钱币改革、整顿吏治，并主持编纂《康熙字典》。康熙评价他“宽大老成，几近完人”。其仕途之长、涉部之多，在康熙朝汉臣中少见，以稳健谨慎在多次朝局波动中始终立于不败。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E5%BB%B7%E6%95%AC%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%94%E7%A7%A9%E5%8E%86%E5%9B%9B%E9%83%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6460,7 +6460,7 @@
       "story": {
         "title": "荐朱子",
         "content": "李光地是福建安溪人，康熙九年进士，官至文渊阁大学士兼吏部尚书，是清初理学复兴的中坚人物。他竭力向朝廷推荐朱子学，奉旨编纂《朱子全书》《性理精义》等，康熙称其“谨慎清勤”。但他一生也伴随争议：三藩之乱时身在福建，曾向清廷密报敌情，却因未能及时奔丧等事受时人讥议。李光地为官近五十年，治学不立门户，兼通历数、兵法、音韵。其形象并非“理学名臣”四字可概括：既有学术整合之功，也有政治自保之术。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%85%89%E5%9C%B0%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%8D%90%E6%9C%B1%E5%AD%90%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6600,7 +6600,7 @@
       "story": {
         "title": "廉吏第一",
         "content": "于成龙是山西永宁人，四十五岁才以副榜贡生出任广西罗城知县，此后历任知州、知府、按察使、布政使、巡抚，直至两江总督。他为官二十余年，生活简朴，所到之处皆有政声，三次被举为“卓异”。康熙帝誉其为“天下廉吏第一”，谥“清端”。于成龙仕途起步极晚，罗城当时偏远荒残，他却不以为苦，以实心任事逐步获擢升。在考核高度依赖举荐的体制中，他凭借的是最朴素也最难得的品质：清廉与实干。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%BA%8E%E6%88%90%E9%BE%99%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%BB%89%E5%90%8F%E7%AC%AC%E4%B8%80%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6723,7 +6723,7 @@
       "story": {
         "title": "三河总制",
         "content": "靳辅是汉军镶黄旗人，康熙十六年由安徽巡抚升任河道总督，主持治河十余年。他面对黄河、淮河、运河三河交错的复杂局面，没有就河论河，而是构建统筹三河的治水体系，以“束水攻沙”为核心方略，塞决口、筑堤坝，使黄淮各归故道，漕运畅通。治河并非一帆风顺，他屡遭攻讦，一度被革职，但康熙后来仍命其复任。其幕僚陈潢在规划和实施中发挥关键作用。靳辅治河的意义超出工程本身：河务与漕运、国计民生紧密捆绑。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9D%B3%E8%BE%85%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%89%E6%B2%B3%E6%80%BB%E5%88%B6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6852,7 +6852,7 @@
       "story": {
         "title": "布衣河臣",
         "content": "陈潢是浙江钱塘人，博学多才，尤擅水利，却终身没有正式官职。靳辅任安徽巡抚时偶遇陈潢，深为赏识，聘为幕僚。靳辅出任河道总督后，治河的主要规划和措施多出自陈潢筹划。他继承并发展明代潘季驯“束水攻沙”理论，对黄河特性有深刻认识，协助靳辅堵塞决口、疏通漕运，治河十年成效显著。后因屯田之事触犯地方豪绅，遭御史参劾，在靳辅去职后含恨而死。一个无官无职的布衣能够主导国家治河大业，本身便是清代官僚体系中罕见的例外。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E6%BD%A2%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B8%83%E8%A1%A3%E6%B2%B3%E8%87%A3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6975,7 +6975,7 @@
       "story": {
         "title": "廉督继河",
         "content": "张鹏翮是四川遂宁人，康熙九年进士，历任江南学政、河道总督、吏部尚书兼文华殿大学士。康熙三十九年，他接替靳辅之后出任河道总督，主持治河近十年，坚持长远规划，总结治河经验撰成《治河全书》。康熙称其为“天下廉吏”，与于成龙同以清廉闻名。其仕途几乎覆盖康熙朝内政外交多个领域，但最被后世记住的，一是在河督任上的务实治绩，二是贯穿一生的廉名。在易生贪腐虚报的治河领域，他同时保住了工程实效与个人操守。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E9%B9%8F%E7%BF%AE%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%BB%89%E7%9D%A3%E7%BB%A7%E6%B2%B3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7124,7 +7124,7 @@
       "story": {
         "title": "宣诏终锢",
         "content": "隆科多是佟佳氏，满洲镶黄旗人，一等公佟国维之子，孝懿仁皇后之弟。康熙末年他任步军统领，掌握京城卫戍兵权。康熙帝临终时，隆科多是唯一侍疾并宣读遗诏的大臣，在皇位交接的关键时刻扮演不可替代的角色。雍正即位后，他被命为总理事务四大臣之一，袭一等公，与年羹尧同加太保，一时权倾朝野。但数年后雍正对其生出猜忌，雍正五年被处永远禁锢，次年死于禁所。拥立之功既是荣宠，也是新君警惕的源头。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9A%86%E7%A7%91%E5%A4%9A%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%A3%E8%AF%8F%E7%BB%88%E9%94%A2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7279,7 +7279,7 @@
       "story": {
         "title": "功骄赐死",
         "content": "年羹尧是汉军镶黄旗人，康熙三十九年进士，由文臣转为武将，官至四川总督、川陕总督、抚远大将军。雍正初年，他平定青海罗卜藏丹津叛乱，雍正令王公大臣郊迎，赏赐双眼花翎、四团龙补服，位极人臣。然而仅一年之后，弹劾奏折连篇累牍，列大罪九十二条，年羹尧被削官夺爵，赐自尽。其军事才能毋庸置疑，平定青海对雍正初年政局稳定至关重要；但骄纵同样真实，入京令督抚跪迎、军中用人自专，都触碰皇权边界。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%B9%B4%E7%BE%B9%E5%B0%A7%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8A%9F%E9%AA%84%E8%B5%90%E6%AD%BB%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7429,7 +7429,7 @@
       "story": {
         "title": "模范之瑕",
         "content": "田文镜是汉军正蓝旗人，以监生入仕，康熙朝四十余年默默无闻，最高只做到从四品官。雍正即位后，他迅速获重用，历任山西布政使、河南巡抚、河南总督、河东总督，成为雍正亲口褒扬的“模范督抚”。他在河南清查亏空、推行耗羡归公和养廉银制度、整顿吏治，使地方财政与行政为之一变。但晚年匿灾不报、苛征田赋，成为其五十年为官生涯中无法抹去的污点，屡遭李绂等人参劾。雍正用其雷厉风行，失误也源于同一种性格：效率压过了对民瘼的体察。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%94%B0%E6%96%87%E9%95%9C%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%A8%A1%E8%8C%83%E4%B9%8B%E7%91%95%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7579,7 +7579,7 @@
       "story": {
         "title": "捐纳总督",
         "content": "李卫是江南铜山人，通过捐纳入仕，康熙末年才迁至户部郎中。雍正即位后，他在不到十年间升至浙江巡抚、总督，成为雍正朝最被信任的封疆大吏之一。李卫在云南盐驿道任上，仅用八个月便使盐政由亏空转为盈余；调任浙江后，又着力整顿盐务、缉捕私盐。他没有科举功名，行事不循常规，却以实打实的行政能力获得重用。李卫与田文镜、鄂尔泰并称“模范督抚”，但路径各异：田文镜以苛刻著称，鄂尔泰以边功显名，李卫则以干练直率见长。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%8D%AB%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8D%90%E7%BA%B3%E6%80%BB%E7%9D%A3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7733,7 +7733,7 @@
       "story": {
         "title": "改土归流",
         "content": "鄂尔泰是满洲镶蓝旗人，康熙三十八年举人，雍正四年调任云贵总督，兼辖广西。他在西南地区主持大规模改土归流，废除世袭土司，改设州县流官，将中央直接统治推进到此前长期由土司控制的区域。这一过程并非和平展开，云南东北部土司曾复起叛乱，鄂尔泰迅速平乱，但不肯将复叛归咎于他人，而是自认其责。雍正评价其“功迹实非寻常可比”。乾隆初年，官至保和殿大学士、军机大臣。改土归流在清代边疆治理史上影响深远。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%84%82%E5%B0%94%E6%B3%B0%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%94%B9%E5%9C%9F%E5%BD%92%E6%B5%81%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7883,7 +7883,7 @@
       "story": {
         "title": "枢廷廿载",
         "content": "傅恒是富察氏，满洲镶黄旗人，孝贤皇后之弟。他二十出头即入军机处，此后在军机大臣任上二十余年，官至保和殿大学士，是乾隆前期最受倚重的大臣之一。乾隆十三年，他督师指挥大金川之战，降服莎罗奔父子；乾隆十九年，又力主清军攻伊犁，参与筹划平定准噶尔。傅恒以外戚身份辅政，却未止于外戚：金川、准噶尔两役都是乾隆“十全武功”中的重要环节，而傅恒承担的是统筹与决断之责。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%82%85%E6%81%92%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%9E%A2%E5%BB%B7%E5%BB%BF%E8%BD%BD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8038,7 +8038,7 @@
       "story": {
         "title": "出将入相",
         "content": "阿桂是章佳氏，满洲正白旗人，乾隆三年举人，由军机处章京逐步升至武英殿大学士兼军机大臣，是乾隆朝后期的首席阁臣与首席军机。他一生多次统兵靖边：参与平定准噶尔与霍集占叛乱，率军平定金川，又赴缅甸、甘肃等地作战，画像悬于紫光阁。“出将入相”四字在他身上不是虚誉：既能在前线统率大军，也能在枢廷主持日常政务。乾隆朝武功极盛，能同时在军事与中枢两端站到最高位置的人并不多。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%98%BF%E6%A1%82%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%87%BA%E5%B0%86%E5%85%A5%E7%9B%B8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8183,7 +8183,7 @@
       "story": {
         "title": "承父统军",
         "content": "福康安是傅恒之子，富察氏，满洲镶黄旗人。十四岁承袭云骑尉，授三等侍卫，乾隆三十八年赴金川军中，佐阿桂作战。此后历任陕甘总督、伊犁将军，并在乾隆后期率军镇压甘肃回民起事、平台湾林爽文，又入藏击退廓尔喀。其一生几乎与乾隆朝后期重大军事行动同步展开。他承袭父亲傅恒的军事角色，但战场更为分散：金川、甘肃、台湾、西藏，跨度极大。持续获得统帅之任，既源于富察氏与皇室的密切关系，也因他确被当作可托付大军的人选。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%A6%8F%E5%BA%B7%E5%AE%89%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%89%BF%E7%88%B6%E7%BB%9F%E5%86%9B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8317,7 +8317,7 @@
       "story": {
         "title": "黑水定疆",
         "content": "兆惠是乌雅氏，满洲正黄旗人，起初是文官，乾隆十三年赴金川督运粮饷，后转任统兵之职。乾隆二十三年，他以定边将军率军平定天山南路大小和卓叛乱，在叶尔羌城外黑水营被数万叛军围困，仍坚守待援，最终里应外合破敌，连克南疆诸城，叛乱得以平定。兆惠以功晋封一等武毅谋勇公，谥文襄。一个文官出身的人成为平定回疆的主帅，在清代军事史中并不常见。黑水营之围是其一生最险时刻，也最能说明一个统帅的分量。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%85%86%E6%83%A0%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%BB%91%E6%B0%B4%E5%AE%9A%E7%96%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8456,7 +8456,7 @@
       "story": {
         "title": "索伦骁将",
         "content": "海兰察是多拉尔氏，世居黑龙江，以索伦马甲从征准噶尔起家。乾隆二十二年，他力追逃入塔尔巴哈台山中的辉特台吉巴雅尔，生擒以归，获“额尔克巴图鲁”称号，擢头等侍卫。此后历征缅甸、大小金川、台湾、西藏，每战多在前线，以勇悍著称。海兰察长期担任福康安的参赞大臣，二人配合贯穿乾隆后期多次重大战役。他出身黑龙江索伦部，并非满洲核心旗分，却凭战场表现升至领侍卫内大臣、封一等超勇公。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B5%B7%E5%85%B0%E5%AF%9F%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%B4%A2%E4%BC%A6%E9%AA%81%E5%B0%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8624,7 +8624,7 @@
       "story": {
         "title": "总纂四库",
         "content": "纪昀是直隶献县人，乾隆十九年进士，官至礼部尚书、协办大学士。他一生中最重要的事业是乾隆三十八年受命担任《四库全书》总纂官，前后主持此事十余年，并纂定《四库全书总目提要》二百卷。四库全书的编纂既是空前的文献整理工程，也是一次规模巨大的书籍审查与删改，纪昀身处其间，既要统筹数以千计的学者，也要面对来自皇权的直接压力。他另有《阅微草堂笔记》传世，文风简淡而多寄寓。四库总纂这一职务本身，足以说明他在乾隆朝学术与政治交界处的位置。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%BA%AA%E6%98%80%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%80%BB%E7%BA%82%E5%9B%9B%E5%BA%93%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8785,7 +8785,7 @@
       "story": {
         "title": "刚正书名",
         "content": "刘墉是山东诸城人，乾隆十六年进士，官至体仁阁大学士，是乾隆、嘉庆两朝重臣。他以奉公守法、清正廉洁闻名，民间称之为“刘罗锅”，《刘公案》一类故事更将他塑造成断案如神的“白面包公”。历史上真实的刘墉，更多以书法名世，其书味厚神藏，与翁方纲、梁同书、王文治并称。嘉庆初年，他参与审理和珅一案，在乾隆朝向嘉庆朝的政治过渡中站在清算和珅的一面。民间记住其刚正机智，史传记住其书法与谨慎。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E5%A2%89%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%88%9A%E6%AD%A3%E4%B9%A6%E5%90%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8935,7 +8935,7 @@
       "story": {
         "title": "考史一代儒宗",
         "content": "钱大昕是江苏嘉定人，乾隆十九年进士，乾嘉学派代表人物，被时人公推为一代儒宗。他治学广博，经史、音韵、金石、历算无不涉及，尤以史学考据最为精深。所著《廿二史考异》与赵翼《廿二史札记》、王鸣盛《十七史商榷》并称清代三大考史著作，而钱书以缜密精审见长，于正史文字、典制、地理、氏族诸端逐条订正，不务议论而重实证。他晚年主讲书院，门下多知名学者。钱大昕的意义在于把考据从零散札记推进为系统方法：以音韵通训诂，以金石证史文，以历算定年代，使史学建立在可检验的证据之上。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%92%B1%E5%A4%A7%E6%98%95%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%80%83%E5%8F%B2%E4%B8%80%E4%BB%A3%E5%84%92%E5%AE%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9080,7 +9080,7 @@
       "story": {
         "title": "札记论兴衰",
         "content": "赵翼是江苏阳湖人，乾隆二十六年进士，殿试第三，官至贵西兵备道，中年后辞官归里，专意著述。他既是诗人，与袁枚、蒋士铨并称江右三大家，又是史学家，所著《廿二史札记》与钱大昕、王鸣盛之作并称清代三大考史名著。与钱书重在订正字句典制不同，赵翼更留心历代治乱兴衰之故，常从一部正史中提炼出制度沿革、风气变迁与政治得失的大判断，读来有纵览全局之感。他另有《陔余丛考》《瓯北诗话》等。赵翼的史学不以繁琐见长，而以通识和归纳取胜，把考据与史论结合得相当自然。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B5%B5%E7%BF%BC%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%9C%AD%E8%AE%B0%E8%AE%BA%E5%85%B4%E8%A1%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9228,7 +9228,7 @@
       "story": {
         "title": "由考据入义理",
         "content": "戴震是安徽休宁人，出身寒微，年轻时做过塾师和商贩，后以学问名世，乾隆年间入四库馆任纂修，晚年赐同进士出身。他是乾嘉皖派朴学的领袖，在音韵、文字、训诂、历算、水地诸领域皆有精深造诣，主张由字通词、由词通道，把考据作为理解经典的方法而非终点。晚年所著《孟子字义疏证》从训诂入手，对程朱理欲之说展开系统批评，认为理存于欲中，不能以理杀人。此书在清代思想史上极为特殊：它出自一位考据大师之手，却越出考据边界，成为清代最富批判性的哲学文本之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%88%B4%E9%9C%87%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%94%B1%E8%80%83%E6%8D%AE%E5%85%A5%E4%B9%89%E7%90%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9368,7 +9368,7 @@
       "story": {
         "title": "开浙西词派",
         "content": "朱彝尊是浙江秀水人，早年历经明清易代，长期游幕四方，康熙十八年举博学鸿词科，授翰林院检讨，参与修《明史》。他博通经史，精于金石，著有《经义考》《日下旧闻》《曝书亭集》，又编选《词综》《明诗综》。在清初词坛，朱彝尊开创浙西词派，推尊姜夔、张炎，标举清空醇雅，一洗明词纤佻之习，使词体重新获得士大夫的重视。他本人作词亦功力深厚，晚年词风转为苍凉。朱彝尊的意义在于把词从边缘文体提升为具有学术品格和审美标准的创作领域，浙西词派由此主导清前期词坛百余年。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9C%B1%E5%BD%9D%E5%B0%8A%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%BC%80%E6%B5%99%E8%A5%BF%E8%AF%8D%E6%B4%BE%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9497,7 +9497,7 @@
       "story": {
         "title": "阳羡词巨擘",
         "content": "陈维崧是江苏宜兴人，明末四公子之一陈贞慧之子，少有文名，康熙十八年举博学鸿词，授检讨，参与修《明史》。他一生落拓，却以词名动天下，是阳羡词派的领袖。其《迦陵词》存词一千八百余首，数量为清代词人之冠，风格沉雄俊爽，气魄宏大，长调尤其纵横排奡，把苏轼、辛弃疾一路的豪放词推到新的高度。陈维崧作词不避俚俗，也不拘一格，身世之感与家国之思常常交织在历史兴亡的咏叹之中。清初词坛有浙西、阳羡两派并峙，朱彝尊主醇雅，陈维崧主雄放，各自开出不同的路径。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E7%BB%B4%E5%B4%A7%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%98%B3%E7%BE%A1%E8%AF%8D%E5%B7%A8%E6%93%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9615,7 +9615,7 @@
       "story": {
         "title": "长生殿传奇",
         "content": "洪昇是浙江钱塘人，出身官宦之家，后家道中落，在国子监做了二十余年太学生，始终未获一官半职。他用十年时间、三易其稿写成传奇《长生殿》，以唐明皇与杨贵妃的爱情为线索，寄托明清易代之际的国家兴亡之感，一时传抄搬演，轰动南北。然而康熙二十八年，因在孝懿仁皇后丧期内演出此剧，洪昇被革除国子监籍，株连近五十人，功名之路由此断绝。晚年他应曹寅之邀赴江宁观演全本《长生殿》，归途醉后堕水而卒。一部杰作成就了他的声名，也断送了他的仕途，这在清代文人中极具象征意味。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B4%AA%E6%98%87%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%95%BF%E7%94%9F%E6%AE%BF%E4%BC%A0%E5%A5%87%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9728,7 +9728,7 @@
       "story": {
         "title": "桃花扇写兴亡",
         "content": "孔尚任是山东曲阜人，孔子第六十四代孙，自幼饱读诗书。康熙二十三年，皇帝南巡至曲阜祭孔，孔尚任御前讲经受到赏识，破格授国子监博士，后赴淮扬参与治水，其间结识明末遗老，搜集南明史料。康熙三十八年，他完成传奇《桃花扇》，以侯方域与李香君的爱情离合为线索，串起南明弘光朝的兴亡，借儿女之情写政治教训。此剧上演后名动京师，王公贵族竞相借抄，但不久孔尚任即因疑案被罢官。他的仕途起于康熙的赏识，也终结于《桃花扇》带来的政治敏感，后半生归乡终老。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%AD%94%E5%B0%9A%E4%BB%BB%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%A1%83%E8%8A%B1%E6%89%87%E5%86%99%E5%85%B4%E4%BA%A1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9846,7 +9846,7 @@
       "story": {
         "title": "娄东山水宗",
         "content": "王原祁是江苏太仓人，王时敏之孙，康熙九年进士，官至户部侍郎，人称王司农。他以画供奉内廷，是清初四王中最年轻的一位，与王时敏、王鉴、王翚并称，又与吴历、恽寿平合称清六家。王原祁承董其昌与王时敏之学，追摹元四家，尤以黄公望为宗，作品格局浑厚，笔墨层层积染，自述分幅命题、自抒己见，并不拘泥于仿某家全似某家。他长期在宫廷和士大夫圈中活动，弟子众多，形成娄东派，对清代山水画的正统趣味影响极为深远。四王画风在后世屡受争议，但王原祁在笔墨自律上的深度，仍是清初画坛难以绕开的高峰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E5%8E%9F%E7%A5%81%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A8%84%E4%B8%9C%E5%B1%B1%E6%B0%B4%E5%AE%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9975,7 +9975,7 @@
       "story": {
         "title": "瘿瓢人物笔",
         "content": "黄慎是福建宁化人，号瘿瓢山人，扬州八怪之一。他家境贫寒，十八岁起寄居僧寺习画，三十三岁后以卖画为生，三十八岁初抵扬州，此后先后寓居扬州十八年。黄慎以人物画负盛名，兼擅山水、花鸟，早年工细，晚年转为简逸狂放，以草书笔意入画，笔墨疏宕而能传人物之神。他曾说画之不工，因不读书之故，因此发愤读书，把文人修养与市井题材结合起来。扬州八怪以创新和个性著称，黄慎在其中以人物画独树一帜，把传统人物画从成法推向更具表现力的写意方向，对晚清人物画有先导之功。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%BB%84%E6%85%8E%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%98%BF%E7%93%A2%E4%BA%BA%E7%89%A9%E7%AC%94%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10104,7 +10104,7 @@
       "story": {
         "title": "复堂写意花",
         "content": "李鱓是江苏兴化人，号复堂、懊道人，康熙五十年举人，扬州八怪之一。他曾以画供奉内廷，是扬州八怪中唯一长期供职康熙身边的画家，但宫廷趣味未能容纳他的个性，数载后即离去。此后他做过山东滕县知县，因忤逆大吏罢归，转而卖画扬州。李鱓的花鸟画早年师从蒋廷锡，又受高其佩指画影响，中年以后从工细转向粗笔写意，笔墨大胆泼辣，挥洒自如，在当时被批评为有霸悍之气，却正是扬州八怪突破正统画风的方向所在。他的写意花鸟对晚清海派画家影响明显，是清代花鸟画从宫廷趣味走向个性表达的关键人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E9%B1%93%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%8D%E5%A0%82%E5%86%99%E6%84%8F%E8%8A%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10222,7 +10222,7 @@
       "story": {
         "title": "鬼趣图惊世",
         "content": "罗聘是安徽歙县人，先辈迁居扬州，扬州八怪中最年轻的一位。他幼年丧父，家贫，二十四岁拜金农为师，学诗习画，三十岁在扬州画界崭露头角。乾隆三十六年，罗聘携画入京，所作八幅《鬼趣图》轰动京师，图中形形色色的鬼态，实为对世态人情的讽刺，近于以画作漫画。他自称能白日见鬼，蓝眼识鬼之说流传一时。罗聘题材广泛，人物、肖像、山水、花卉皆能，画梅尤精，与妻子方婉仪共擅诗画。鬼趣图使他在生前即享大名，也使他常被后世简化为画鬼者，实际上他的墨梅和人物肖像同样功力深厚。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%BD%97%E8%81%98%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%AC%BC%E8%B6%A3%E5%9B%BE%E6%83%8A%E4%B8%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10351,7 +10351,7 @@
       "story": {
         "title": "西画入内廷",
         "content": "郎世宁是意大利米兰人，原名朱塞佩·伽斯底里奥内，年轻时加入耶稣会并接受系统绘画训练，康熙五十三年以传教士身份东来，次年抵达中国，取汉名郎世宁，随即进入宫廷供职，历康熙、雍正、乾隆三朝。他在内廷创作了大量历史画、人物肖像、走兽花鸟，把欧洲焦点透视和明暗画法带入中国，并协助年希尧完成介绍透视法的《视学》。郎世宁的独特之处在于，他并非单纯输入西画，而是在中国宫廷的题材与审美约束下调整画法，形成一种中西折中的新体。他在华五十余年，是清前期东西方艺术交流中最具体的个案。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%83%8E%E4%B8%96%E5%AE%81%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%A5%BF%E7%94%BB%E5%85%A5%E5%86%85%E5%BB%B7%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10469,7 +10469,7 @@
       "story": {
         "title": "历算开山祖",
         "content": "梅文鼎是安徽宣城人，出身书香门第，早年随隐士倪正学习历法，从此毕生从事天文与数学研究，著述达八九十种。他生当西方科学传入中国的时代，既深入研习西学要旨，又力图表彰中学精华，会通中西历算，在三角、几何、天文观测诸领域皆有创获。康熙帝曾三次召见他，向他请教天文数学；钱大昕誉之为国朝算学第一。梅文鼎终身未入仕途，以民间学者身份成为清初历算第一名家和开山之祖。他的意义不在于某一项具体发现，而在于为清代历算之学建立了系统的方法与传承，使中西数学的会通成为一门可讲授的学问。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A2%85%E6%96%87%E9%BC%8E%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8E%86%E7%AE%97%E5%BC%80%E5%B1%B1%E7%A5%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10587,7 +10587,7 @@
       "story": {
         "title": "治平论人口",
         "content": "洪亮吉是江苏阳湖人，乾隆五十五年榜眼，授编修，曾任贵州学政。他治经史、舆地、诗文皆有成就，与黄景仁等并称毗陵七子。但他在后世最受注意的是乾隆五十八年所写《治平篇》，其中讨论人口增长与生计资源之间的矛盾，指出治平之久、天地不能不生人，而天地之所以养人者有限，若不加以调剂，虽太平之世亦难免贫困。这一论述比马尔萨斯的人口论早五年，洪亮吉因此被称为中国的马尔萨斯。他并非单纯算人口账，而是在乾嘉盛世表面之下看到了资源分配的结构性压力，其眼光在同时代士大夫中极为少见。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B4%AA%E4%BA%AE%E5%90%89%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B2%BB%E5%B9%B3%E8%AE%BA%E4%BA%BA%E5%8F%A3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10699,7 +10699,7 @@
       "story": {
         "title": "艺舟双楫碑学",
         "content": "包世臣是安徽泾县人，北宋名臣包拯二十九世孙，因泾县古称安吴，世称包安吴。他长期任幕僚，仅做过一年江西新喻知县，却是嘉道时期经世思潮的重要代表，对农政、漕运、盐政、货币、鸦片等问题均有论述。在书法上，包世臣师承邓石如，著《艺舟双楫》，继阮元之后大力提倡北碑，一反清代书坛对赵孟頫、董其昌的偏爱，系统构建碑派书学理论。他的书法实践与理论并不完全吻合，但尊碑主张经其鼓吹，深刻改变了清代中后期书法的取法方向。包世臣把书法从帖学趣味中拉向金石气和民间碑刻，是清代碑学兴起的关键推手。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8C%85%E4%B8%96%E8%87%A3%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%89%BA%E8%88%9F%E5%8F%8C%E6%A5%AB%E7%A2%91%E5%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10831,7 +10831,7 @@
       "story": {
         "title": "共矢禁烟",
         "content": "邓廷桢是江苏江宁人，嘉庆六年进士，官至两广总督、闽浙总督。鸦片战争前，他在广东一度倾向弛禁鸦片，但在认清鸦片危害后禁烟决心极为强烈，查获烟土数量巨大。林则徐以钦差大臣赴粤后，邓廷桢与之同心协力，共矢血诚，收缴鸦片、整顿海防，成为林则徐最亲密的同僚。虎门销烟后，他调任闽浙总督，加强福建沿海守备，击退英舰挑衅。鸦片战争爆发后，他因投降派诬陷被革职，与林则徐同被发往伊犁。邓廷桢的一生以禁烟和抗英为后世所记，他的转变也说明，面对外来冲击，清朝官员的认识并非一成不变。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%82%93%E5%BB%B7%E6%A1%A2%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%85%B1%E7%9F%A2%E7%A6%81%E7%83%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10976,7 +10976,7 @@
       "story": {
         "title": "虎门血战",
         "content": "关天培是江苏山阳人，行伍出身，道光十四年调任广东水师提督。他到任后整顿海防，修筑炮台，训练水师，道光十九年协助林则徐查缴鸦片，积极备战，多次击退英舰侵犯。道光二十一年二月，英军大举进攻虎门，关天培坐镇靖远炮台，昼夜督战，身被数十创，鲜血染红战袍，仍亲自燃放巨炮，终因孤军无援，与四百余名将士壮烈战死。他是鸦片战争中牺牲的第一位清军高级将领，谥忠节。关天培的殉国带有明显的悲剧性：炮台的火力与英舰存在代差，援军迟迟不至，而他选择以死践守将之责，使虎门成为近代中国海防史上最沉重的地名之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%85%B3%E5%A4%A9%E5%9F%B9%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%99%8E%E9%97%A8%E8%A1%80%E6%88%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11105,7 +11105,7 @@
       "story": {
         "title": "吴淞老将",
         "content": "陈化成是福建同安人，行伍出身，积功升至福建水师提督，道光二十年调任江南提督，驻守吴淞口。他年已六十五岁，到防后铸炮筑垒、训练士卒，在两江总督裕谦支持下改善吴淞防务，曾率部多次击退英舰在福建沿海的侵扰。道光二十二年六月，英军进攻吴淞，陈化成亲守西炮台，指挥击伤敌舰数艘，使英军不敢正面登陆。但东炮台守军溃退，英军从侧后包抄，他孤立无援，仍持刀搏战，身负重伤，倒卧血泊中殉国，时年六十六岁。吴淞百姓感其忠烈，立祠祭祀。陈化成的战死说明，在装备与制度全面落后的局面下，个人的勇毅并不能改变战局，却为后世留下了抵抗的样本。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E5%8C%96%E6%88%90%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%90%B4%E6%B7%9E%E8%80%81%E5%B0%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11218,7 +11218,7 @@
       "story": {
         "title": "定海三总兵",
         "content": "葛云飞是浙江山阴人，道光三年武进士，官至定海镇总兵。道光二十年英军第一次攻陷定海时，他正在家乡丁忧，闻讯后穿上母亲染黑的孝衣返回军营，以示墨绖从戎。次年英军再犯定海，葛云飞与寿春镇总兵王锡朋、处州镇总兵郑国鸿合力守御，三总兵分守要隘，浴血苦战。道光二十一年十月，英军集中兵力猛攻，葛云飞身先士卒，持刀冲阵，身中四十余创，壮烈牺牲。定海三总兵同日殉国，是鸦片战争中清军高级将领集体战死的最惨烈一幕。葛云飞的抵抗未能守住城池，但三总兵的死节在当时即被广为传颂，成为近代海防记忆中的重要符号。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%91%9B%E4%BA%91%E9%A3%9E%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%9A%E6%B5%B7%E4%B8%89%E6%80%BB%E5%85%B5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11336,7 +11336,7 @@
       "story": {
         "title": "镇海殉节",
         "content": "裕谦是蒙古镶黄旗人，博尔济吉特氏，嘉庆二十二年进士，官至两江总督。鸦片战争爆发后，他署理两江总督，力主禁烟，在江苏破获烟案数百起，并与陈化成共同部署吴淞防务。道光二十一年，他受命为钦差大臣，赴浙江镇海督战，表示不收失地誓不生还。然而镇海守军溃败，英军攻入城中，裕谦见败局已定，将钦差大臣关防送交浙江巡抚，自己向西北叩头谢罪，投入泮池殉国，时年四十八岁。裕谦是鸦片战争中殉国的最高级别封疆大吏，他的死带有传统士大夫的节义色彩：在军事上无力回天之际，选择以死承担守土之责，而非委过他人。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%A3%95%E8%B0%A6%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%95%87%E6%B5%B7%E6%AE%89%E8%8A%82%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11464,7 +11464,7 @@
       "story": {
         "title": "海国图志",
         "content": "魏源是湖南邵阳人，字默深，道光进士，晚清思想家、史学家、文学家，近代中国睁眼看世界的首批知识分子之一。鸦片战争失败后，他受林则徐嘱托，以《四洲志》为基础，广泛搜集中外资料，编成《海国图志》五十卷，后扩充至一百卷。书中系统介绍世界各国地理、历史与制度，明确提出师夷长技以制夷的主张，倡导学习西方制造轮船、火器与练兵之法，并批判清廷昧于世界大势、闭关自守的积习。魏源的思想在当时的清朝并未立即成为主流，却深刻影响了后来洋务运动与维新思潮的方向，是中国近代化命题最早的系统表述者之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%AD%8F%E6%BA%90%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B5%B7%E5%9B%BD%E5%9B%BE%E5%BF%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11588,7 +11588,7 @@
       "story": {
         "title": "己亥杂诗",
         "content": "龚自珍是浙江仁和人，字璱人，号定盦，道光九年进士，官至礼部主事。他身处嘉庆、道光之际，清王朝外表承平而内里衰象已现，他屡屡上书言事，主张革除弊政、抵制外国侵略，并全力支持林则徐禁烟，却因不谙官场、处处受排挤，长期沉沦下僚。道光十九年，四十八岁的龚自珍辞官南归，又北上迎眷，在南来北往途中写下三百一十五首《己亥杂诗》，其中我劝天公重抖擞、不拘一格降人才等句，成为近代思想启蒙的先声。他的诗文以剑气箫心著称，既有改革的激愤，也有身世的苍凉，两年后即猝然去世。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%BE%9A%E8%87%AA%E7%8F%8D%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B7%B1%E4%BA%A5%E6%9D%82%E8%AF%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11717,7 +11717,7 @@
       "story": {
         "title": "瀛寰志略",
         "content": "徐继畬是山西五台人，道光六年进士，道光二十二年任福建布政使，奉命办理厦门、福州通商事宜。在与西方人士的接触中，他借摹世界地图，遍阅西人著述，钩摹考订，历时五年，于道光二十八年写成《瀛寰志略》。此书系统介绍世界各国地理、沿革与政治制度，突破传统华夷观念，对欧美制度亦有正面记述，是近代东方第一部系统的世界地理著作。徐继畬因此被后世称为中国近代开眼看世界的重要人物。然而此书在当时的清朝并未受到应有重视，反而给他带来麻烦，其见识的超前与处境的孤立，恰是那个时代先觉者的共同命运。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BE%90%E7%BB%A7%E7%95%AC%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%80%9B%E5%AF%B0%E5%BF%97%E7%95%A5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11835,7 +11835,7 @@
       "story": {
         "title": "台湾五战五胜",
         "content": "姚莹是安徽桐城人，姚鼐之侄孙，嘉庆十三年进士，道光年间任台湾兵备道。鸦片战争爆发后，他与台湾总兵达洪阿协力设防，组织台湾军民多次击退英军进攻，五战五胜，未失一寸土地，是鸦片战争中东南沿海少有的不败之地。战后他却遭诬陷被革职下狱，后获起复，晚年致力于边疆史地研究。姚莹的意义不在某一场胜仗，而在于证明：在沿海普遍溃败的局势下，地方官如果有准备、有判断，仍然可以依托本土力量组织有效防御，使台湾在战火中保全。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%A7%9A%E8%8E%B9%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8F%B0%E6%B9%BE%E4%BA%94%E6%88%98%E4%BA%94%E8%83%9C%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11953,7 +11953,7 @@
       "story": {
         "title": "三代帝师",
         "content": "祁寯藻是山西寿阳人，二十二岁中进士，历乾隆、嘉庆、道光、咸丰、同治五朝，官至体仁阁大学士、首席军机大臣，当过道光、咸丰、同治三帝的老师，世称三代帝师。道光十九年他赴福建筹办海防、查禁鸦片，旋升兵部尚书，后授军机大臣。咸丰即位后，他取代穆彰阿成为枢廷重臣，两度为首席军机。祁寯藻为官五十余年，以清谨著称，是晋人在清代居官最高最久者。他的政治角色更多是稳健的枢臣而非锐意的改革者。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%A5%81%E5%AF%AF%E8%97%BB%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%89%E4%BB%A3%E5%B8%9D%E5%B8%88%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12097,7 +12097,7 @@
       "story": {
         "title": "天父传言与东王专权",
         "content": "杨秀清是广西桂平人，出身贫苦，在拜上帝会中取得代天父传言的宗教权力。金田起义后任中军主将，永安封东王、九千岁，明确规定各王俱受东王节制。定都天京后，太平天国的军政大权实际掌握在他手中，他调度北伐西征，击溃清军江北、江南大营，是太平天国前期运转的核心。但他居功专擅，挟制洪秀全，逼封万岁，终于引发领导集团分裂。1856年天京事变中被韦昌辉所杀。杨秀清是太平天国不可替代的政军主事者，也是其内讧悲剧的起点。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%A8%E7%A7%80%E6%B8%85%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%A9%E7%88%B6%E4%BC%A0%E8%A8%80%E4%B8%8E%E4%B8%9C%E7%8E%8B%E4%B8%93%E6%9D%83%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12237,7 +12237,7 @@
       "story": {
         "title": "天兄西王",
         "content": "萧朝贵是广西武宣人，早年种山烧炭，加入拜上帝会后，在冯云山被捕、洪秀全赴粤营救的危机中，假托天兄下凡附体传言，安定众心，由此取得代天兄传言的权力。金田起义时他是核心领导人之一，永安封西王、八千岁，位列洪、杨之下。萧朝贵作战勇猛，常为前锋，1852年攻长沙时被清军炮火击中，重伤阵亡。他在太平天国前期的作用兼具宗教与军事两重：天兄传言与杨秀清的天父传言并行，构成起义初期的权力结构，而他的早逝也使这一结构过早失衡。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%90%A7%E6%9C%9D%E8%B4%B5%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%A9%E5%85%84%E8%A5%BF%E7%8E%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12355,7 +12355,7 @@
       "story": {
         "title": "紫荆山开基",
         "content": "冯云山是广东花县人，屡试不第，1843年与洪秀全创立拜上帝会。此后他只身深入广西紫荆山传教，三年间发展教众两千余人，为起义奠定了组织基础。金田起义后，永安封南王、七千岁，位在洪、杨、萧之下。太平天国初期的官制、礼制、军制和历法多由他制定，被后世视为谋立创国的第一人。1852年太平军北上途中，在蓑衣渡遭清军江忠源部伏击，冯云山中炮身亡。他的死使太平天国失去了一位真正懂得建制与组织的核心人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%86%AF%E4%BA%91%E5%B1%B1%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%B4%AB%E8%8D%86%E5%B1%B1%E5%BC%80%E5%9F%BA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12478,7 +12478,7 @@
       "story": {
         "title": "天京事变的执行者",
         "content": "韦昌辉是广西桂平人，出身地主家庭，屡受乡绅欺凌，道光年间在冯云山劝说下加入拜上帝会，献出家产。金田起义后封北王、六千岁，是太平天国核心领导人之一。他对杨秀清长期积怨，表面恭顺而内心深恨。1856年奉洪秀全密诏率三千兵回天京，突袭东王府，杀杨秀清及其家人，继而滥杀将士万余人，又屠石达开家眷，围攻天王府，终被洪秀全下诏捕杀，肢解处死，贬为北奸。天京事变由他执行，也由他承担了最血腥的恶名。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9F%A6%E6%98%8C%E8%BE%89%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%A9%E4%BA%AC%E4%BA%8B%E5%8F%98%E7%9A%84%E6%89%A7%E8%A1%8C%E8%80%85%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12617,7 +12617,7 @@
       "story": {
         "title": "大渡河畔的末路",
         "content": "石达开是广西贵县人，客家出身，金田起义后封翼王、五千岁，是太平天国最具政治军事才干的领导人之一。天京事变后，他因遭洪秀全猜忌，率部出走远征，转战九省，独立支撑七年。1863年率军由滇入川，抵达大渡河畔紫打地，因山洪暴发、河水暴涨，四万人马被阻四十七天，粮尽援绝，全军覆没。石达开被俘后在成都就义，年仅三十二岁。他的远征是太平天国后期最悲壮的一条线索：既有不肯内讧自保的决绝，也有孤军无援、终困于天险的无奈。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%9F%B3%E8%BE%BE%E5%BC%80%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%A7%E6%B8%A1%E6%B2%B3%E7%95%94%E7%9A%84%E6%9C%AB%E8%B7%AF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12762,7 +12762,7 @@
       "story": {
         "title": "三河大捷与自述",
         "content": "李秀成是广西藤县人，太平天国后期最重要的军事统帅之一。天京事变后，他与陈玉成等力撑危局，1858年与陈玉成合兵取得三河大捷，歼灭湘军李续宾部六千余人，后又二破江北、江南大营，建立苏福省，一度使太平天国出现中兴气象。1864年天京陷落，李秀成被俘，在狱中写下数万言自述，记述太平天国始末，后被曾国藩处死。李秀成是后期太平天国最能协调各路力量的人，但他的稳健也常被批评为保存实力，其自述的真伪与动机至今仍有争议。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E7%A7%80%E6%88%90%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%89%E6%B2%B3%E5%A4%A7%E6%8D%B7%E4%B8%8E%E8%87%AA%E8%BF%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12896,7 +12896,7 @@
       "story": {
         "title": "三河歼灭战",
         "content": "陈玉成是广西藤县人，十四岁参加金田起义，太平天国后期与李秀成并称双子星。他作战勇猛而机敏，1858年与李秀成合兵取得三河大捷，全歼湘军李续宾部，是湘军受到的最大一次挫折。此后他转战皖北，屡破清军，封英王。但陈玉成越打越弱，兵力损耗严重，1862年在寿州被叛将苗沛霖诱捕，押送清营后就义，年仅二十六岁。陈玉成的军事才能在于集中兵力打歼灭战，而他的失败也在于长期孤军苦战、缺乏稳固的后方与持续补充。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E7%8E%89%E6%88%90%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%89%E6%B2%B3%E6%AD%BC%E7%81%AD%E6%88%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13035,7 +13035,7 @@
       "story": {
         "title": "经营湖北饷源",
         "content": "胡林翼是湖南益阳人，道光十六年进士，湘军重要首领，晚清中兴名臣之一。咸丰六年实授湖北巡抚，坐镇武昌。他通过改漕章、通蜀盐、整榷务、办厘金，将天下第一破烂之鄂经营成湘军最稳固的饷源与后方，使湖北成为攻灭太平天国的大本营。他又极力笼络湖广总督官文，以妥协换取事权统一，使湘军在前线无后顾之忧。时人评价其治行才望在曾国藩、左宗棠之上。胡林翼不以前线统帅闻名，却以经营后方和协调关系见长，是湘军体系中不可替代的枢纽人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%83%A1%E6%9E%97%E7%BF%BC%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%BB%8F%E8%90%A5%E6%B9%96%E5%8C%97%E9%A5%B7%E6%BA%90%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13180,7 +13180,7 @@
       "story": {
         "title": "围困天京两年",
         "content": "曾国荃是湖南湘乡人，曾国藩之弟，湘军吉字营统帅。1860年起围安庆，次年陷城；1862年进围天京，苦战两年，至1864年7月攻破天京城。城破后纵兵焚掠，滥杀无数，与其兄并称曾剃头曾屠户。以功封一等伯爵，后历任浙江巡抚、两广总督、两江总督，卒谥忠襄。曾国荃的军事风格以结硬寨、打呆仗著称，围城持久而残酷。攻破天京是平定太平天国的终点，但屠城之举也使这场胜利始终带着难以洗去的血腥气。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9B%BE%E5%9B%BD%E8%8D%83%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%9B%B4%E5%9B%B0%E5%A4%A9%E4%BA%AC%E4%B8%A4%E5%B9%B4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13309,7 +13309,7 @@
       "story": {
         "title": "湘军水师",
         "content": "彭玉麟是湖南衡阳人，湘军水师创建者，中国近代海军奠基人之一。咸丰年间与杨载福分统水师，转战长江，参与湘潭、武汉、田家镇、湖口、九江、安庆诸役，几乎贯穿湘军水师对太平军作战的全过程。太平天国平定后，他主持定长江水师营制，每年巡阅长江。中法战争时抱病以钦差大臣赴广东筹防，启用冯子材，促成镇南关大捷。彭玉麟一生六次辞官，居功不自傲，以不要官、不要钱、不要命自守，在晚清官场中是一个近乎孤例的存在。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BD%AD%E7%8E%89%E9%BA%9F%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B9%98%E5%86%9B%E6%B0%B4%E5%B8%88%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13427,7 +13427,7 @@
       "story": {
         "title": "霆军",
         "content": "鲍超是四川奉节人，行伍出身，目不识丁，初随向荣赴广西，后入湘军水师，咸丰六年奉胡林翼之命赴长沙募勇三千，创立霆字五营，改领陆军，是为霆军。霆军是湘军主力之一，东征西讨，多次击败陈玉成、李秀成等太平军名将，收降太平军十余万人。鲍超作战以悍勇著称，身先士卒，但军纪时有起伏。他从乞丐收容所中的落魄者升至提督，是湘军系统中以战功起家的底层武将代表。霆军的战斗力依赖鲍超个人的勇猛与临阵决断，也因之带有强烈的私人色彩。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%B2%8D%E8%B6%85%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%9C%86%E5%86%9B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13555,7 +13555,7 @@
       "story": {
         "title": "船政与赴台",
         "content": "沈葆桢是福建侯官人，林则徐之婿，道光二十七年进士。他由曾国藩举荐出任江西巡抚，后总理福建船政，主持福州船政局，是近代中国海军建设的关键人物。1874年日本出兵侵台，沈葆桢以钦差办理台湾等处海防兼理各国事务大臣，率福建船政轮船水师赴台，迫使日军撤退。随后他在台湾推行开禁、开府、开路、开矿，结束清廷近两百年的消极治台政策，为台湾近代化与后来建省奠定基础。沈葆桢兼具船政、海防与边疆治理三重角色，是洋务运动中少有的实干型疆吏。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B2%88%E8%91%86%E6%A1%A2%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%88%B9%E6%94%BF%E4%B8%8E%E8%B5%B4%E5%8F%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13710,7 +13710,7 @@
       "story": {
         "title": "江南制造局",
         "content": "丁日昌是广东丰顺人，二十岁中秀才，入李鸿章幕府帮办洋务，历任苏松太道、两淮盐运使、江苏布政使、江苏巡抚、福建巡抚。他参与创办江南机器制造总局，为其拟订经营大纲，主张留外国技术人员为教习、培训华人技艺，力争自主。任江苏巡抚时整顿绿营，编练练军，装备洋枪洋操。后又会办南洋海防，节度水师。丁日昌是洋务运动前期最活跃的实务官员之一，其贡献不在某一项大工程，而在把制造、海防、练兵、外交诸端串联为可操作的行政实践。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%81%E6%97%A5%E6%98%8C%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B1%9F%E5%8D%97%E5%88%B6%E9%80%A0%E5%B1%80%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13850,7 +13850,7 @@
       "story": {
         "title": "首任台湾巡抚",
         "content": "刘铭传是安徽合肥人，淮军将领，中法战争期间临危受命赴台，率台湾军民取得基隆、沪尾大捷，挫败法军占领台湾的图谋。1885年台湾建省，刘铭传出任首任巡抚，在任内修铁路、开煤矿、架电线、造商轮、办企业、设新学堂，全面推行自强新政，使台湾一跃成为晚清最进步的省份之一，被誉为台湾近代化之父。刘铭传的意义在于，他把台湾从一个海防前哨经营成一个具有近代基础设施与产业体系的省份，其规划在日据之前已初具规模。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E9%93%AD%E4%BC%A0%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A6%96%E4%BB%BB%E5%8F%B0%E6%B9%BE%E5%B7%A1%E6%8A%9A%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13968,7 +13968,7 @@
       "story": {
         "title": "圣彼得堡改约",
         "content": "曾纪泽是湖南湘乡人，曾国藩长子，近代著名外交家。1878年出使英、法，1880年兼任驻俄公使。当时崇厚擅自与俄国签订里瓦几亚条约，丧失伊犁周边大片领土，举国哗然。曾纪泽临危受命赴俄京圣彼得堡改约，经半年多折冲樽俎，反复交涉，于1881年重新签订中俄伊犁条约，收回伊犁南部及特克斯河一带，修改了部分有损国利的商约。在弱国无外交的处境下，曾纪泽以对国际法的熟悉和谈判韧性争回若干权益，是晚清外交史上少有的可称成功的一次交涉。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9B%BE%E7%BA%AA%E6%B3%BD%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%A1%E6%94%B9%E7%BA%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14101,7 +14101,7 @@
       "story": {
         "title": "首任驻英公使",
         "content": "郭嵩焘是湖南湘阴人，道光二十七年进士，近代洋务思想家，中国首任驻外公使。1875年他上条陈海防事宜，指出把西方强盛仅归结于船坚炮利是错误，发展工商业才是自强的根本。1876年出使英国，成为清廷第一位驻外公使，积极开展外交活动，并将沿途与在英考察心得写成使西纪程，介绍西方富强之道与政治制度，主张中国研究学习。此书寄回国内后遭到朝野围攻，被斥为不知父母之邦。郭嵩焘的见识远超同时代人，其孤立也正说明洋务时期认知转型的艰难。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%83%AD%E5%B5%A9%E7%84%98%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A6%96%E4%BB%BB%E9%A9%BB%E8%8B%B1%E5%85%AC%E4%BD%BF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14257,7 +14257,7 @@
       "story": {
         "title": "使欧与保商",
         "content": "薛福成是江苏无锡人，早年入曾国藩、李鸿章幕府，办理洋务，后筹防浙东。1890年以出使英、法、义、比四国大臣赴欧，沿途目睹华工在海外受低人一等对待，上书朝廷，提出在华人聚集地开设领事馆，废除康熙年间出洋华人为叛逆的旧禁。他考察西方社会，认为西方富强已百倍于中国，主张求新法以致富强、造机器以便制造，并具体提出设工厂、开矿山、行轮船、筑铁路等计划。出使期间又与英国谈判滇缅界务、商务，争回部分主权。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%96%9B%E7%A6%8F%E6%88%90%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BD%BF%E6%AC%A7%E4%B8%8E%E4%BF%9D%E5%95%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14386,7 +14386,7 @@
       "story": {
         "title": "马氏文通",
         "content": "马建忠是江苏丹徒人，年轻时在上海接受西方教育，1877年赴法国留学，1879年获博士学位后回国，入李鸿章幕府帮办洋务，曾赴印度、朝鲜处理外交事务。他精通多国语言，长期从事洋务外交，主张不仅学习西方船坚炮利与声光化电，还要设工厂、开矿山、行轮船、筑铁路。1898年出版马氏文通，以拉丁文法研究汉文经籍的语言结构，是中国第一部较系统的语法著作，开中国语法研究之先河。马建忠的独特之处在于，他把语言研究也纳入洋务救国的整体视野：通西学须先通西语，通西语须先明语法。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%A9%AC%E5%BB%BA%E5%BF%A0%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A9%AC%E6%B0%8F%E6%96%87%E9%80%9A%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14504,7 +14504,7 @@
       "story": {
         "title": "循环日报",
         "content": "王韬是江苏新阳人，早年游历欧洲两年多，回国后与友人集资买下英国印刷设备，1874年在香港创办循环日报，这是第一张完全由中国人独立编辑出版的大型中文报纸。他在报上写下近千篇政论，宣传变法图强，介绍英国火车、电报、自来水、煤气等公用设施，主张借报纸通外情于内，开创了中国报人文人论政的传统。王韬的政治变革思想既有洋务派中体西用的影子，又超越洋务派而提出中西融合的变革构想，是近代中国从洋务转向维新的一位先行者。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E9%9F%AC%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%BE%AA%E7%8E%AF%E6%97%A5%E6%8A%A5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14622,7 +14622,7 @@
       "story": {
         "title": "黄鹄与格致",
         "content": "徐寿是江苏无锡人，早年在安庆内军械所参与制造中国第一台蒸汽机和第一艘国产蒸汽轮船“黄鹄”号。此后转入江南制造局，翻译《化学鉴原》等西方科技书籍，创制化学元素汉译原则，许多元素名称沿用至今。晚年他在上海与傅兰雅等创办格致书院，演示化学实验，又创办《格致汇编》，是中国近代科学传播的开创性人物。徐寿没有科举功名，却凭借对器物的钻研进入洋务技术核心，其路径本身说明晚清知识转型中“格致”一途已渐成气候。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BE%90%E5%AF%BF%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%BB%84%E9%B9%84%E4%B8%8E%E6%A0%BC%E8%87%B4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14740,7 +14740,7 @@
       "story": {
         "title": "算学与黄鹄",
         "content": "华蘅芳是江苏金匮人，自幼不喜四书五经而酷爱数学，后入安庆军械所和江南制造局，与徐寿合作设计制造“黄鹄”号轮船。他在江南制造局翻译馆主持译述数学、地质学书籍，将西方代数学、微积分系统引入中文世界，译著影响了几代学人。此后他先后主讲上海格致书院、天津武备学堂等校，以数学教育培养人才。华蘅芳的贡献兼具研究与传播两重：他本人是清末传统算学的集大成者，也是西方数学进入中国课堂的重要桥梁。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8D%8E%E8%98%85%E8%8A%B3%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%AE%97%E5%AD%A6%E4%B8%8E%E9%BB%84%E9%B9%84%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14858,7 +14858,7 @@
       "story": {
         "title": "续几何译代数",
         "content": "李善兰是浙江海宁人，早年科举不顺，却在数学上显出过人天赋。1852年赴上海参加西方科学著作翻译，与伟烈亚力等合作译出《几何原本》后九卷，完成明末徐光启未竟之业，又译《代数学》《代微积拾级》《谈天》等书，系统引入西方符号代数、微积分与近代天文学。他自著的《则古昔斋算学》十三种，在垛积术、尖锥术等方面有独立创获。李善兰一生未入仕途显达，却以翻译与著述把中西数学的会通推进到新的层次，被誉为“西学东渐之集大成者”。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%96%84%E5%85%B0%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%BB%AD%E5%87%A0%E4%BD%95%E8%AF%91%E4%BB%A3%E6%95%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14981,7 +14981,7 @@
       "story": {
         "title": "买办办洋务",
         "content": "唐廷枢是广东香山人，早年毕业于香港教会学堂，在英商怡和洋行做了十年买办，积累了资产与经营近代企业的经验。1873年经李鸿章委派出任轮船招商局总办，此后又主持筹办开平矿务局，修唐山至胥各庄铁路，是洋务运动中两个规模最大的民用企业的实际经营者。一个买办出身的人被委以洋务重任，在当时的官僚体系中并不寻常。唐廷枢的价值恰在于此：他把买办生涯中习得的近代商业经验，转化为洋务企业可操作的经营方法，使“官督商办”不止停留在纸面。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%94%90%E5%BB%B7%E6%9E%A2%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B9%B0%E5%8A%9E%E5%8A%9E%E6%B4%8B%E5%8A%A1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15120,7 +15120,7 @@
       "story": {
         "title": "轮船电报铁路银行",
         "content": "盛宣怀是江苏常州人，秀才出身，入李鸿章幕府后成为洋务运动中最活跃的实务官员。他创办或主持轮船招商局、中国电报局、通商银行，督办卢汉铁路，又创办北洋大学堂，一生创造了多项“中国第一”。盛宣怀的特点是把实业办成体系：轮船、电报、铁路、银行四者互相支撑，而非零散兴办。他也因此被后世称为“中国实业之父”。不过其官商兼具的身份始终伴随争议，四川保路风潮中他成为众矢之的，清亡之际更被斥为误国之臣。实业之功与政争之累，在盛宣怀身上难以截然分开。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%9B%9B%E5%AE%A3%E6%80%80%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%BD%AE%E8%88%B9%E7%94%B5%E6%8A%A5%E9%93%81%E8%B7%AF%E9%93%B6%E8%A1%8C%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15238,7 +15238,7 @@
       "story": {
         "title": "状元办厂",
         "content": "张謇是江苏南通人，1894年恩科状元，却未循常规入翰林院做官。甲午战败后，他受张之洞委派在南通筹办纱厂，1899年大生纱厂正式出纱，此后逐步形成以棉纺织为核心、向运输金融等延伸的产业链。张謇的事业不止于工厂：他办通州师范、南通博物苑，修水利、兴市政，把南通经营成近代中国少有的由实业驱动的城市样本。状元办厂在当时被视为异途，张謇却以这一选择把士大夫的经世关怀落实到地方建设之中，“南通模式”因此成为近代实业救国最具实体感的一个注脚。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E8%AC%87%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%8A%B6%E5%85%83%E5%8A%9E%E5%8E%82%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15366,7 +15366,7 @@
       "story": {
         "title": "帝师开缺",
         "content": "翁同龢是江苏常熟人，咸丰六年状元，同治、光绪两朝帝师，历任户部尚书、军机大臣兼总理衙门大臣。中法战争与甲午战争中他力主抗战，甲午后又支持光绪帝变法，代为起草《定国是诏》，是帝党中坚。然而变法刚刚启动，慈禧便以“渐露揽权狂悖”为由将其开缺回籍，戊戌政变后更被革职永不叙用。翁同龢的处境折射出晚清帝后两党之间的逼仄空间：他既是光绪最亲近的师傅，也是慈禧可以随时移除的棋子。支持变法而未及参与变法全过程，他的去职本身就是戊戌政局转向的一个信号。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%BF%81%E5%90%8C%E9%BE%A2%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B8%9D%E5%B8%88%E5%BC%80%E7%BC%BA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15516,7 +15516,7 @@
       "story": {
         "title": "知外事者",
         "content": "张荫桓是广东南海人，捐官出身而跻身总理衙门，长期办理涉外事务，先后出使美国、西班牙、秘鲁三国，又历访英法德俄诸国，是晚清官员中少有的熟悉国际事务者。戊戌变法期间，他支持新政，密荐康有为，代为传递奏章，成为维新派与中枢之间的幕后通道。政变后他被革职贬戍新疆，1900年被杀。张荫桓没有康梁那样的声名，却在外交与变法两条线上都处在关键位置。他的结局说明，在晚清，懂外事既是稀缺才能，也是容易被指为“通夷”的政治负担。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E8%8D%AB%E6%A1%93%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%9F%A5%E5%A4%96%E4%BA%8B%E8%80%85%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15661,7 +15661,7 @@
       "story": {
         "title": "军机四卿",
         "content": "杨锐是四川绵竹人，以举人授内阁中书，入张之洞幕府，参加强学会、保国会，戊戌变法期间经陈宝箴举荐，与谭嗣同、刘光第、林旭同授四品卿衔，充军机章京，参预新政，时称“军机四卿”。他在四卿中行事较为稳健，与张之洞关系密切。政变发生后，杨锐在寓所被捕，与谭嗣同等同日遇害，为戊戌六君子之一。杨锐身上体现的是戊戌变法中“体制内改革者”的困境：他们进入权力中枢靠的是地方大吏举荐与皇帝破格，而一旦后党反扑，这层关系便不足以提供任何保护。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%A8%E9%94%90%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%86%9B%E6%9C%BA%E5%9B%9B%E5%8D%BF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15790,7 +15790,7 @@
       "story": {
         "title": "刑部章京",
         "content": "刘光第是四川富顺人，光绪九年进士，授刑部主事，在京为官十余年，闭户读书，不事交游。甲午后入保国会，戊戌变法期间由陈宝箴举荐，授四品卿衔，充军机章京，参与新政。他与杨锐同属四卿中较稳健的一路，对康有为的激进做法有所保留。政变后被捕遇害，为戊戌六君子之一。刘光第的轨迹在六君子中颇具代表性：他并非康梁圈子的核心人物，而是被变法大势推入中枢的谨慎官僚。他的死说明戊戌政变的打击面远不止于维新派的激进一翼。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E5%85%89%E7%AC%AC%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%88%91%E9%83%A8%E7%AB%A0%E4%BA%AC%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15908,7 +15908,7 @@
       "story": {
         "title": "年二十三",
         "content": "林旭是福建侯官人，十九岁中举，入赀为内阁中书，是康有为的弟子。1898年倡立闽学会，推动维新，戊戌变法期间授四品卿衔，充军机章京，为军机四卿中最年轻的一位。政变后被捕，与谭嗣同等同日遇害，年仅二十三岁。林旭在四卿中与康有为关系最近，也最直接地承载了维新派的激进色彩。他的早逝使后世对他的政治分量多有惋惜之词。梁启超称其诗词“瑰丽”，遗著《晚翠轩集》传世。一个二十三岁的青年被卷入帝国最高层的政争并付出生命，本身便是戊戌变法酷烈程度最直观的尺度。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9E%97%E6%97%AD%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B9%B4%E4%BA%8C%E5%8D%81%E4%B8%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16026,7 +16026,7 @@
       "story": {
         "title": "康氏幼弟",
         "content": "康广仁是广东南海人，康有为幼弟，名有溥，以字行。他自少鄙弃八股，曾为浙江小吏岁余，耻于官场腐败而弃官，此后专助其兄办理维新事业。1897年在澳门创办《知新报》，又设大同译书局，发起不缠足会，创办女学堂，是维新运动中从事社会改良与舆论宣传的实干者。戊戌政变时他因随梁启超赴京而被捕，与谭嗣同等同日遇害。康广仁没有杨锐、林旭那样的军机章京身份，他的死更多源于“康有为弟弟”这一层关系。这恰恰说明政变之后清算的逻辑：凡与康梁相关者，皆在网罗之中。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BA%B7%E5%B9%BF%E4%BB%81%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%BA%B7%E6%B0%8F%E5%B9%BC%E5%BC%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16149,7 +16149,7 @@
       "story": {
         "title": "荐康梁谭",
         "content": "徐致靖是江苏宜兴人，光绪进士，官至翰林院侍读学士、礼部右侍郎。戊戌变法期间，他上疏请定国是，又以《密保人才折》向光绪帝举荐康有为、梁启超、谭嗣同、黄遵宪、张元济等人，是维新派进入中枢的重要引荐者。政变后他被革职监禁，原拟处斩，因李鸿章等人缓颊得免一死，时人称之为“戊戌第七君子”。徐致靖的角色在变法中十分特殊：他自己并非变法方案的制定者，却为变法提供了最关键的人事通道。他的获罪与幸存，都系于“荐人”一事。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BE%90%E8%87%B4%E9%9D%96%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%8D%90%E5%BA%B7%E6%A2%81%E8%B0%AD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16278,7 +16278,7 @@
       "story": {
         "title": "自立军",
         "content": "唐才常是湖南浏阳人，与谭嗣同齐名，戊戌维新期间在湖南参与新政，办报兴学，是维新派中的激进一翼。政变后他流亡日本，转而走向武装起事。1900年在上海成立自立会，赴汉口组织自立军，拟以“勤王”为名发动起义，拥光绪帝复权。因事泄，机关被清廷破获，唐才常被捕就义，年仅三十三岁。自立军起事是戊戌变法失败后维新派向革命方向过渡的关键一环：唐才常仍然打着勤王的旗号，但其组织方式与武装手段已越出维新改良的边界，成为后来革命运动的先声。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%94%90%E6%89%8D%E5%B8%B8%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%87%AA%E7%AB%8B%E5%86%9B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16406,7 +16406,7 @@
       "story": {
         "title": "端王与拳乱",
         "content": "载漪是道光帝之孙，惇亲王奕誴之子，过继瑞郡王奕誌，袭封端郡王，其福晋为慈禧侄女。1899年慈禧册立载漪之子溥儁为“大阿哥”，谋废光绪帝，因外国公使不认而中止。义和团运动兴起后，载漪掌管神机营，一度接管总理衙门，是清廷内主张招抚义和团、利用拳民排外的最主要宗室力量。八国联军入京后，载漪随慈禧西逃，后被列强指为祸首，革爵流放。载漪的轨迹说明，庚子之乱并非单纯的民间排外运动，其背后有清廷最高层废立之争的驱动：端王利用义和团，首先是为了扳倒光绪。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%BD%BD%E6%BC%AA%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E7%AB%AF%E7%8E%8B%E4%B8%8E%E6%8B%B3%E4%B9%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16545,7 +16545,7 @@
       "story": {
         "title": "招抚拳民",
         "content": "刚毅是满洲镶蓝旗人，笔帖式出身，因平反杨乃武案获朝廷嘉奖，逐步升至刑部尚书、兵部尚书、协办大学士。他思想极端顽固，戊戌维新时期竭力反对变法，力主废黜光绪帝，得到慈禧宠信。义和团进入京畿后，刚毅与载漪等人力主招抚，亲自赴良乡、涿州察看虚实，回朝后胁迫赵舒翘报告“其术可用”，遂被任命为统率义和团大臣，率拳民同八国联军开战。八国联军入京后，刚毅随慈禧西逃，途中病卒于山西。他是庚子祸乱在廷臣层面最直接的推动者之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%9A%E6%AF%85%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8B%9B%E6%8A%9A%E6%8B%B3%E6%B0%91%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16698,7 +16698,7 @@
       "story": {
         "title": "出洋考宪",
         "content": "端方是满洲正白旗人，举人出身，在满族亲贵中以开明干练著称，历任湖北巡抚、江苏巡抚、两江总督等职。1905年清廷派五大臣出洋考察宪政，端方为其中之一，归国后上《欧美政治要义》，力倡君主立宪。此后他在两江总督任上推行新式教育、兴办实业，是预备立宪时期地方督抚中较为活跃的改革者。1911年四川保路运动起，端方奉命入川查办，在途中被新军士兵杀于资州。一个主张立宪的满洲能臣死于革命前夜的兵变，其结局本身便预示了清廷自我改革窗口的关闭。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%AB%AF%E6%96%B9%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%87%BA%E6%B4%8B%E8%80%83%E5%AE%AA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16838,7 +16838,7 @@
       "story": {
         "title": "陆军争权",
         "content": "铁良是满洲镶白旗人，家境贫寒，早年入荣禄幕府，后受袁世凯举荐出任兵部侍郎，却转而成为袁在北洋新军中最主要的制衡者。1906年清廷设陆军部，铁良出任尚书，着手将北洋六镇中的四镇收归陆军部直辖，又以户部尚书身份“钩稽精核”北洋粮饷，使袁世凯的军权与财权同时受到挤压。他力主满族亲贵收回地方督抚的军政财政大权，是清末少壮亲贵集团的核心人物。慈禧死后铁良失势，辛亥时组织宗社党反对清帝退位。铁良的争权常被简化为满汉之争，实则关乎清廷在最后十年能否重建中央权威。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%93%81%E8%89%AF%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%99%86%E5%86%9B%E4%BA%89%E6%9D%83%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16971,7 +16971,7 @@
       "story": {
         "title": "立宪督抚",
         "content": "岑春煊是广西西林人，壮族，云贵总督岑毓英之子，光绪举人。戊戌时期列名强学会，被光绪帝破格提拔，此后历任陕西巡抚、四川总督、两广总督。他在任上办理近代警政、推广新式教育、整顿财政，是清末新政中较有实绩的地方督抚。1904年上书请求立宪，又支持张謇等组织预备立宪公会，一时成为立宪运动的领袖人物。1907年丁未政潮中与奕劻、袁世凯争斗失败，被免去邮传部尚书。岑春煊的政治生涯横跨维新、新政、立宪三个阶段，是清末体制内改革派督抚的一个完整样本。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%B2%91%E6%98%A5%E7%85%8A%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%AB%8B%E5%AE%AA%E7%9D%A3%E6%8A%9A%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17088,7 +17088,7 @@
       "story": {
         "title": "鉴湖女侠",
         "content": "秋瑾是浙江山阴人，自号“鉴湖女侠”，1904年留学日本，创办《白话报》，加入光复会，次年又入同盟会。1906年回国后在绍兴主持大通学堂，联络会党，与徐锡麟组织光复军，拟在浙江、安徽同时起事。1907年安庆起义失败，清兵包围大通学堂，秋瑾被捕，七月十五日从容就义于绍兴轩亭口，年仅三十三岁。秋瑾的意义不止于革命烈士：她以女性身份投身武装反清，办报、演说、穿男装、习射击，其行为本身即是对传统性别秩序的挑战。她的死使“鉴湖女侠”成为晚清革命记忆中最具符号性的形象之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%A7%8B%E7%91%BE%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%89%B4%E6%B9%96%E5%A5%B3%E4%BE%A0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17206,7 +17206,7 @@
       "story": {
         "title": "安庆刺恩铭",
         "content": "徐锡麟是浙江绍兴人，1904年在上海加入光复会，次年与陶成章等创办绍兴大通学堂，联络浙东会党，积蓄革命力量。1907年光复军成立，徐锡麟任首领，秋瑾任协领，计划在浙江、安徽同时起义。他时任安徽巡警处会办兼巡警学堂监督，利用身份之便决定提前发动：七月六日在安庆巡警学堂毕业典礼上刺杀安徽巡抚恩铭，率学生军攻占军械所，激战四小时后失败被捕，慷慨就义。徐锡麟的起义规模不大，却以刺杀封疆大吏的方式震动朝野，其“蓄志排满”的供词在当时被广为传抄，成为革命宣传的素材。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BE%90%E9%94%A1%E9%BA%9F%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%89%E5%BA%86%E5%88%BA%E6%81%A9%E9%93%AD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17318,7 +17318,7 @@
       "story": {
         "title": "革命军马前卒",
         "content": "邹容是四川巴县人，1902年留学日本，受革命思潮影响，写成《革命军》一书，以“革命军中马前卒”署名，系统阐述推翻清朝、建立“中华共和国”的主张。1903年此书在上海出版，迅速风行，被清廷列为逆书。同年因《苏报》刊文推荐《革命军》，清政府与租界当局制造“苏报案”，邹容投案，被判监禁两年，1905年病死狱中，年仅二十岁。邹容没有参加过武装起义，其力量全在一本小册子。《革命军》以浅近激烈的文字把反清革命从少数人的密谋推向公开的舆论动员，苏报案又反过来放大了它的传播，邹容因此成为清末革命宣传中最具象征性的青年。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%82%B9%E5%AE%B9%EF%BC%8C%E6%B8%85%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%9D%A9%E5%91%BD%E5%86%9B%E9%A9%AC%E5%89%8D%E5%8D%92%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [

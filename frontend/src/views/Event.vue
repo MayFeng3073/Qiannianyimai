@@ -456,6 +456,18 @@ function getEdgePath(src: GraphNode, tgt: GraphNode): string {
   return `M ${sx} ${sy} C ${sx} ${midY}, ${tx} ${midY}, ${tx} ${ty}`
 }
 
+/* 关系图谱悬停：只突出当前连线及其两端节点，其余淡出 */
+const hoveredEdgeIndex = ref<number | null>(null)
+const hoveredEdgeNodeIds = computed<Set<string> | null>(() => {
+  const i = hoveredEdgeIndex.value
+  if (i === null) return null
+  const edge = eventGraphEdges.value[i]
+  if (!edge) return null
+  return new Set([edge.source.id, edge.target.id])
+})
+const isNodeDimmed = (id: string) =>
+  hoveredEdgeNodeIds.value !== null && !hoveredEdgeNodeIds.value.has(id)
+
 /**
  * 计算标签位置，带碰撞检测
  * 1. 沿连线 55% 位置作为初始点（无偏移，紧贴连线）
@@ -1013,15 +1025,33 @@ watch(impacts, () => {
                 </defs>
 
                 <!-- Edges (lines only) -->
-                <g v-for="(edge, ei) in eventGraphEdges" :key="'e' + ei">
+                <g
+                  v-for="(edge, ei) in eventGraphEdges"
+                  :key="'e' + ei"
+                  @mouseenter="hoveredEdgeIndex = ei"
+                  @mouseleave="hoveredEdgeIndex = null"
+                >
+                  <!-- 透明加宽热区：细线也能稳定触发 hover -->
+                  <path
+                    :d="getEdgePath(edge.source, edge.target)"
+                    fill="none"
+                    stroke="transparent"
+                    stroke-width="16"
+                    style="pointer-events: stroke;"
+                  />
                   <path
                     :d="getEdgePath(edge.source, edge.target)"
                     fill="none"
                     :stroke="edge.color"
-                    :stroke-opacity="edge.isPersonRelation ? 0.65 : 0.5"
-                    :stroke-width="edge.isPersonRelation ? 2 : 1.4"
+                    :stroke-opacity="hoveredEdgeIndex === null
+                      ? (edge.isPersonRelation ? 0.65 : 0.5)
+                      : (hoveredEdgeIndex === ei ? 1 : 0.08)"
+                    :stroke-width="hoveredEdgeIndex === ei
+                      ? (edge.isPersonRelation ? 2.8 : 2.2)
+                      : (edge.isPersonRelation ? 2 : 1.4)"
                     :stroke-dasharray="edge.isPersonRelation ? '5,3' : 'none'"
                     marker-end="url(#eventArrow)"
+                    style="transition: stroke-opacity 0.2s ease, stroke-width 0.2s ease;"
                   />
                 </g>
 
@@ -1032,6 +1062,8 @@ watch(impacts, () => {
                   :class="node.type === 'person' ? (isClickablePerson(node.name) ? 'cursor-pointer' : '') : (node.type === 'event' && node.eventId ? 'cursor-pointer' : '')"
                   @click="node.type === 'person' ? (isClickablePerson(node.name) && navigateToPerson(node.name)) : (node.type === 'event' && node.eventId ? navigateToEvent(node.eventId) : null)"
                   filter="url(#eventNodeShadow)"
+                  :opacity="isNodeDimmed(node.id) ? 0.25 : 1"
+                  style="transition: opacity 0.2s ease;"
                 >
                   <rect
                     :x="node.x" :y="node.y"
@@ -1064,7 +1096,13 @@ watch(impacts, () => {
 
                 <!-- Edge Labels -->
                 <g v-for="(edge, ei) in eventGraphEdges" :key="'el' + ei">
-                  <g v-if="edge.label">
+                  <g
+                    v-if="edge.label"
+                    @mouseenter="hoveredEdgeIndex = ei"
+                    @mouseleave="hoveredEdgeIndex = null"
+                    :opacity="hoveredEdgeIndex === null || hoveredEdgeIndex === ei ? 1 : 0.15"
+                    style="transition: opacity 0.2s ease;"
+                  >
                     <rect
                       :x="(edgeLabelPositions.get('el'+ei) || {x:0,y:0}).x - 24"
                       :y="(edgeLabelPositions.get('el'+ei) || {x:0,y:0}).y - 9"

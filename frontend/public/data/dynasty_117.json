@@ -4478,7 +4478,7 @@
       "story": {
         "title": "两弹一星元勋",
         "content": "聂荣臻是中国人民解放军创建者之一，1955年被授予元帅军衔。早年赴法勤工俭学，1923年加入中国共产党，参加南昌起义、广州起义。抗战时期任八路军一一五师副师长、晋察冀军区司令员，开辟晋察冀根据地。新中国成立后，他受命主管国防科技，兼任国家科委主任、国防科委主任，在极其困难的条件下主持“两弹一星”研制，为导弹、原子弹和航天事业奠定基础。聂荣臻早年留洋本为科技强国，后来虽投笔从戎，却从未放弃这一理想，最终在国防科技领域完成了早年的夙愿。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%81%82%E8%8D%A3%E8%87%BB%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%A4%E5%BC%B9%E4%B8%80%E6%98%9F%E5%85%83%E5%8B%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4644,7 +4644,7 @@
       "story": {
         "title": "铁军与新四军",
         "content": "叶挺是北伐名将，曾任国民革命军第四军独立团团长，率部先遣入湘，在汀泗桥、贺胜桥、武昌城等战役中所向披靡，为第四军赢得“铁军”称号。1927年参与领导南昌起义、广州起义。抗战爆发后出任新四军首任军长，指挥部队在华中开展游击战，一年内对敌作战五百余次。1941年皖南事变中被扣，囚禁五年，出狱后不久因飞机失事遇难。叶挺一生历经北伐、抗战、囚牢与空难，其命运与二十世纪中国军队的转型紧密交织。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8F%B6%E6%8C%BA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%93%81%E5%86%9B%E4%B8%8E%E6%96%B0%E5%9B%9B%E5%86%9B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4805,7 +4805,7 @@
       "story": {
         "title": "女神与甲骨",
         "content": "郭沫若是中国新诗的奠基人之一。早年留学日本，弃医从文，1921年出版诗集《女神》，并与郁达夫等创立创造社。1926年参加北伐，1927年参加南昌起义，后流亡日本十年，转向中国古代史和甲骨文、金文研究，著有《中国古代社会研究》《甲骨文字研究》，是甲骨学“四堂”之一。抗战爆发后回国，任军事委员会政治部第三厅厅长，从事抗日宣传。郭沫若的独特之处在于，他在新诗、古文字学、古代史三个领域都留下了开创性成果，其学术与创作之间的跨度在同时代学人中极为少见。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%83%AD%E6%B2%AB%E8%8B%A5%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A5%B3%E7%A5%9E%E4%B8%8E%E7%94%B2%E9%AA%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4955,7 +4955,7 @@
       "story": {
         "title": "子夜写都市",
         "content": "茅盾是中国现代文学的重要开拓者，1921年与郑振铎、叶圣陶等发起文学研究会，提倡“为人生”的现实主义文学，接编并革新《小说月报》，使之成为新文学运动的重要阵地。他是中国共产党最早的党员之一。1933年出版长篇小说《子夜》，以民族资本家吴荪甫为中心，整体展示旧上海金融与实业的混乱，塑造了中国文学史上从未有过的民族资本家典型。茅盾的写作以社会剖析见长，善于从经济关系和阶级结构中提取人物命运，《子夜》因此被视为左翼文学的丰碑，也标志着三十年代长篇小说的艺术高峰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8C%85%E7%9B%BE%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AD%90%E5%A4%9C%E5%86%99%E9%83%BD%E5%B8%82%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5100,7 +5100,7 @@
       "story": {
         "title": "激流三部曲",
         "content": "巴金是中国现代文学的重要作家，五四运动中接受民主主义和无政府主义思潮，1927年赴法国留学，回国后以小说《灭亡》步入文坛。1931年起，《家》以《激流》为题在《时报》连载，此后与《春》《秋》合称“激流三部曲”。这部百万字的长篇以高家三代人的命运为线索，写出旧式大家庭在五四浪潮冲击下的崩解，以及青年一代对爱情自由和思想觉醒的追求与抗争。巴金早期的无政府主义信仰使其作品带有强烈的理想色彩，而四十年代的《寒夜》则转向普通人在战乱中的日常悲欢。激流三部曲影响数代青年，是现代文学中传播最广的长篇之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%B7%B4%E9%87%91%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%BF%80%E6%B5%81%E4%B8%89%E9%83%A8%E6%9B%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5239,7 +5239,7 @@
       "story": {
         "title": "骆驼祥子与茶馆",
         "content": "老舍是中国现代文学中最具代表性的京味作家，满族，早年赴英国任教，回国后以《骆驼祥子》《四世同堂》等长篇小说确立文坛地位。《骆驼祥子》写一个拉洋车的车夫在旧北平的挣扎与沉沦，笔法写实而克制；《四世同堂》以祁家为中心，展开沦陷区北平市民的众生相。老舍的作品以“京味儿”著称，俗白而雅致，贴着百姓的心写作，塑造了众多鲜明的人物。他一生创作了四十余部戏剧，《茶馆》以三幕戏串联清末、民初与战后三个时代，成为话剧史上常演不衰的经典。老舍的文学世界几乎就是一部二十世纪上半叶北京市民生活的百科全书。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%80%81%E8%88%8D%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%AA%86%E9%A9%BC%E7%A5%A5%E5%AD%90%E4%B8%8E%E8%8C%B6%E9%A6%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5379,7 +5379,7 @@
       "story": {
         "title": "雷雨日出",
         "content": "曹禺是中国话剧的奠基人之一，1933年在清华大学读书时写成处女作《雷雨》，以两个家庭前后三十年的纠葛集中于一天之内，揭示旧制度的罪恶，被视为中国话剧现实主义的基石。1936年又写成《日出》，以大都市社会生活为背景，展现三十年代社会的腐败与变革的将至。此后《原野》《北京人》相继问世，四部戏都创作于他三十九岁之前。曹禺是中国第一个成熟的话剧作家，其剧作以尖锐的戏剧冲突和清晰的人物性格著称，使话剧从文明戏的粗糙形态走向成熟的现代戏剧，奠定了中国话剧的文学品格。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9B%B9%E7%A6%BA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%9B%B7%E9%9B%A8%E6%97%A5%E5%87%BA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5502,7 +5502,7 @@
       "story": {
         "title": "边城与服饰",
         "content": "沈从文是中国现代文学中风格独特的作家，湘西的山水与人事构成他文学世界的基本底色。1934年发表中篇小说《边城》，以茶峒渡口少女翠翠的爱情悲剧为线索，写出湘西边地的淳朴人情与命运的无常，笔触清淡而意境深远。他的散文集《湘西》同样以故乡风物为对象。1949年以后，沈从文被迫离开文坛，转入历史博物馆从事文物研究，深耕中国古代服饰、丝绸、染织、瓷器等物质文化史领域，晚年出版《中国古代服饰研究》，成为该领域的奠基之作。从边城到服饰，沈从文的后半生以另一种方式延续了对“物”与“人”的细致观察。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B2%88%E4%BB%8E%E6%96%87%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%BE%B9%E5%9F%8E%E4%B8%8E%E6%9C%8D%E9%A5%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5631,7 +5631,7 @@
       "story": {
         "title": "倾城之恋",
         "content": "张爱玲是上海沦陷时期最负盛名的女作家，出身官宦世家，童年却深感压抑，1939年赴香港大学求学，太平洋战争爆发后返回上海，开始文学创作。1943年前后连续发表《沉香屑·第一炉香》《倾城之恋》《金锁记》等中短篇，以细腻而冷峻的笔触写都市男女的情爱与算计，一时轰动上海文坛。她的作品不写宏大历史，而专注于日常生活中的欲望与苍凉，语言精致，意象繁复。1950年代后移居美国，晚年离群索居。张爱玲的文学世界以“苍凉”为底色，在现代文学中开辟了一条与左翼叙事截然不同的都市书写路径。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E7%88%B1%E7%8E%B2%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%80%BE%E5%9F%8E%E4%B9%8B%E6%81%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5749,7 +5749,7 @@
       "story": {
         "title": "围城与管锥编",
         "content": "钱钟书是中国现代文学与学术史上罕见的两栖人物，1929年入清华大学外文系，后赴欧洲留学。抗战期间羁居上海，写成长篇小说《围城》和短篇小说集《人·兽·鬼》。《围城》以方鸿渐的辗转为主线，写抗战期间知识分子的精神困境，比喻精辟，讽刺机智，被誉为“中国近代文学中最有趣”的小说之一。学术方面，著有《谈艺录》《管锥编》《宋诗选注》等，立足中国传统文献，广泛汲取西方文论，融会贯通。钱钟书的独特之处在于文学创作与学术研究两副笔墨都达到极高水准，其渊博与机智在二十世纪中国学人中几乎无人能及。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%92%B1%E9%92%9F%E4%B9%A6%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%9B%B4%E5%9F%8E%E4%B8%8E%E7%AE%A1%E9%94%A5%E7%BC%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5872,7 +5872,7 @@
       "story": {
         "title": "苦雨斋与附逆",
         "content": "周作人是新文化运动的重要代表人物，鲁迅之弟，早年留学日本，回国后任北京大学教授，参与发起文学研究会，主编《语丝》周刊。他的散文以平和冲淡著称，小品文恬静闲适，在现代散文史上独树一帜，书斋“苦雨斋”也因此闻名。然而抗战期间，他未随北大南迁，留在北平，最终出任伪职，附逆失节，从此身背“汉奸”之名。战后以叛国罪被判刑，晚年居于八道湾，以翻译和写作度日。周作人的一生以五四战士始，以苦雨斋主人终，其文学成就与政治失节之间的巨大裂痕，成为中国现代知识分子命运中最令人唏嘘的个案之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%91%A8%E4%BD%9C%E4%BA%BA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%8B%A6%E9%9B%A8%E6%96%8B%E4%B8%8E%E9%99%84%E9%80%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6011,7 +6011,7 @@
       "story": {
         "title": "幽默大师",
         "content": "林语堂是中国现代文学中提倡幽默的代表人物，早年留学美国、德国，回国后任北京大学教授。1932年起先后创办《论语》《人间世》《宇宙风》三本杂志，提倡幽默文学，以“两脚踏东西文化，一心评宇宙文章”为宗旨，因翻译“humour”为“幽默”而获“幽默大师”之称。1935年后旅居美国，用英文写作《吾国与吾民》《生活的艺术》《京华烟云》等，向西方介绍中国文化和中国人的生活哲学。《京华烟云》以北平曾、姚、牛三大家族的悲欢离合为线索，展现从义和团到抗战三十余年的历史变迁，曾获诺贝尔文学奖提名。林语堂的写作始终在东西文化之间穿行。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9E%97%E8%AF%AD%E5%A0%82%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B9%BD%E9%BB%98%E5%A4%A7%E5%B8%88%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6161,7 +6161,7 @@
       "story": {
         "title": "人间词话与自沉",
         "content": "王国维是近代学术史上承前启后的巨擘，号观堂，早年留学日本，后执教于南通师范、北京大学研究所国学门，清华国学研究院“四大导师”之一。他在甲骨文、金文、宋元戏曲、历史地理诸领域皆有开创性贡献，所著《宋元戏曲考》为戏曲史学的奠基之作，《人间词话》以“境界”说为核心，成为近代词学最有影响力的理论文本。1927年，在北伐军逼近北京之际，王国维自沉于颐和园昆明湖。他的死因至今众说纷纭，或谓殉清，或谓忧时，或谓学术与时代的断裂所致。一个在甲骨与词学之间往返的学者，最终以最决绝的方式结束了自己的生命。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E5%9B%BD%E7%BB%B4%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%BA%E9%97%B4%E8%AF%8D%E8%AF%9D%E4%B8%8E%E8%87%AA%E6%B2%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6311,7 +6311,7 @@
       "story": {
         "title": "独立自由",
         "content": "陈寅恪是二十世纪中国史学中最具人格感召力的学者，清华国学研究院“四大导师”之一，后任教于清华大学、西南联大、中山大学。他通晓多种语言，治史范围涵盖魏晋南北朝史、隋唐史、佛教史、西域史，代表作有《隋唐制度渊源略论稿》《唐代政治史述论稿》《元白诗笺证稿》《柳如是别传》。陈寅恪治史不满足于排比史料，而是在精密考证的基础上探求历史发展的脉络，主张“独立之精神，自由之思想”。晚年双目失明，在岭南完成《柳如是别传》，以明清之际的妓女与文人为对象，寄寓对人格独立与自由选择的深沉关切。其学术与人格在二十世纪中国史学中具有不可替代的位置。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E5%AF%85%E6%81%AA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%8B%AC%E7%AB%8B%E8%87%AA%E7%94%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6465,7 +6465,7 @@
       "story": {
         "title": "古史辨",
         "content": "顾颉刚是中国现代史学中疑古派的领袖，1923年在《读书杂志》上发表《与钱玄同先生论古史书》，提出“层累地造成的中国古史”说，认为古史传说时代愈后、中心人物愈放愈大，由此引发持续数十年的古史大论战，论战文章后汇编为《古史辨》七册。他同时是中国现代民俗学的重要开创者，以歌谣、传说、孟姜女故事等民间材料印证和破解古史疑团，开辟史学与民俗学双向互证的路径。顾颉刚的疑古并非为疑而疑，其目标在于以批判的态度重建可信的古史，这一取向深刻塑造了现代中国史学的面貌。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%A1%BE%E9%A2%89%E5%88%9A%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8F%A4%E5%8F%B2%E8%BE%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6610,7 +6610,7 @@
       "story": {
         "title": "国史大纲",
         "content": "钱穆是二十世纪中国史学中自成一格的通儒，字宾四，自学成才，1930年经顾颉刚推荐任教于燕京大学，后任北京大学史学系教授。抗战期间写成《国史大纲》，以通史体例梳理中国历史的演进，字里行间贯穿着对本国历史文化的“温情与敬意”，旨在建立国人对中国历史的自信。1949年赴香港，白手起家创办新亚书院，在“手空空，无一物”的条件下坚持办学，寄托其文化理想。钱穆一生著述宏富，兼通经史子集，被推为“一代通儒”。他的史学不趋新潮，而以通识和人文关怀见长，在二十世纪中国史学中自成一格。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%92%B1%E7%A9%86%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%9B%BD%E5%8F%B2%E5%A4%A7%E7%BA%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6739,7 +6739,7 @@
       "story": {
         "title": "励耘史学",
         "content": "陈垣是二十世纪中国史学的考据大师，书斋号“励耘”，人称“励耘主人”。他没有受过正规的现代大学教育，却以自学成为史学大家。其治学范围涵盖元史、宗教史、历史文献学，代表作《元西域人华化考》《校勘学释例》《史讳举例》《通鉴胡注表微》等，皆以论证缜密、建树体例见长。陈垣在宗教史领域的开拓尤为突出，对元也里可温教、佛教、道教及明清之际天主教的研究均有奠基之功。他又是故宫博物院的早期创办者之一。在传统考据向现代史学转型的过程中，陈垣以“励耘”精神为历史文献学建立了一套可操作的方法。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E5%9E%A3%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8A%B1%E8%80%98%E5%8F%B2%E5%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6862,7 +6862,7 @@
       "story": {
         "title": "教我如何不想他",
         "content": "赵元任是中国现代语言学的奠基人，与王国维、梁启超、陈寅恪并称清华国学研究院“四大导师”。他对汉语方言、语法、音韵学、音位学理论均有精深研究，被誉为“中国现代语言学之父”。同时他又是作曲家，1926年为刘半农诗作《教我如何不想她》谱曲，改“她”为“他”，写成《教我如何不想他》，传唱近一个世纪。赵元任的独特之处在于，他把科学的语言学与艺术的音乐性结合得浑然无成，其学术与创作都贯穿着对声音的敏感和对中西文化比较的自觉。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B5%B5%E5%85%83%E4%BB%BB%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%95%99%E6%88%91%E5%A6%82%E4%BD%95%E4%B8%8D%E6%83%B3%E4%BB%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7005,7 +7005,7 @@
       "story": {
         "title": "殷墟发掘",
         "content": "李济是中国现代考古学的奠基人，早年留学美国，接受现代考古学与人类学训练。1926年主持山西夏县西阴村遗址发掘，这是中国人自己主持的第一次田野考古发掘，标志着中国现代考古学的建立。1928年以后，他长期主持中央研究院历史语言研究所对安阳殷墟的发掘，使殷商从传说变为信史，YH127甲骨坑的出土尤为学界所重。李济因此被誉为“中国考古学之父”。他的贡献不仅在于具体遗址的发掘，更在于把西方科学的田野方法、地层学和类型学引入中国，为中国考古学奠定了方法论基础。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E6%B5%8E%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%AE%B7%E5%A2%9F%E5%8F%91%E6%8E%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7145,7 +7145,7 @@
       "story": {
         "title": "中国建筑史",
         "content": "梁思成是中国建筑史学的奠基人，梁启超之子，早年留学美国，学习建筑与美术。回国后加入中国营造学社，任法式部主任，引入现代田野考察与古建筑测绘体系，与学社同人足迹遍及十五省二百余县，调查古建筑两千余处。他从实例入手，科学阐释宋《营造法式》与清工部《工程做法》，建构起中国建筑史的基本框架。1946年负责组建清华大学营建系。梁思成的工作使中国建筑从匠作传统进入现代学术视野，其《中国建筑史》和古建筑调查报告至今仍是该领域不可绕过的奠基之作。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A2%81%E6%80%9D%E6%88%90%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%BB%BA%E7%AD%91%E5%8F%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7262,7 +7262,7 @@
       "story": {
         "title": "衰年变法",
         "content": "齐白石是中国现代画坛从民间走出的巨匠，早年做木匠，后以卖画为生，五十七岁左右在陈师曾劝说下改变画风，自出新意，时称“衰年变法”。他画虾数十年，从略似到毕真，从十只桡足减到五只，在淡墨头胸部位加上浓破墨，反复调整，至六十八岁自认为画虾才算成功。齐白石的艺术以写意花鸟、草虫、山水、人物皆能，笔墨简练而生机盎然，把民间趣味与文人画传统熔于一炉。他从木匠到画坛巨匠的路径，在二十世纪中国画史上几乎是一个孤例，其“衰年变法”也成为艺术家晚年突破自我的经典范例。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%BD%90%E7%99%BD%E7%9F%B3%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%A1%B0%E5%B9%B4%E5%8F%98%E6%B3%95%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7396,7 +7396,7 @@
       "story": {
         "title": "奔马与美术教育",
         "content": "徐悲鸿是中国现代美术教育的奠基人之一，早年留学法国学习西画，归国后长期从事美术教育，历任中央大学艺术系教授、北平大学艺术学院院长、北平艺专校长，1949年后任中央美术学院首任院长。他主张现实主义，强调国画改革融入西画技法，讲求解剖结构与光影造型，把西方学院派的写实训练引入中国画教学。他笔下的奔马几乎定义了中国人心目中马的形象，深沉浑厚，四蹄生风。徐悲鸿的意义不止于个人创作：他通过美术教育建立了一套可传授的写实体系，使中国画的现代转型获得制度性的支点。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BE%90%E6%82%B2%E9%B8%BF%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A5%94%E9%A9%AC%E4%B8%8E%E7%BE%8E%E6%9C%AF%E6%95%99%E8%82%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7530,7 +7530,7 @@
       "story": {
         "title": "蓄须明志",
         "content": "梅兰芳是京剧旦角表演艺术的集大成者，在唱腔、舞蹈、音乐、服装、念白、化妆等方面均有创新，形成独特的艺术风貌，世称“梅派”。他曾先后赴日本、美国、苏联演出，把京剧带入世界舞台。抗战期间，梅兰芳蓄须明志，罢歌歇舞，拒绝为敌伪演出，以大义凛然的民族气节为人景仰。1949年后任中国戏曲研究院院长、中国京剧院院长。梅派的表演处处是规范，却又易学难精，其艺术与人格在二十世纪中国戏曲史上具有标杆意义。蓄须一事尤为后世所记：一个以旦角为业的演员，用最直观的方式拒绝了舞台。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A2%85%E5%85%B0%E8%8A%B3%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%93%84%E9%A1%BB%E6%98%8E%E5%BF%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7659,7 +7659,7 @@
       "story": {
         "title": "五笔七墨",
         "content": "黄宾虹是近代山水画中笔墨体系的集大成者，在继承传统绘画和金石学的基础上，总结提炼出“五笔七墨”之说。五笔为平、留、圆、重、变，七墨为浓、淡、破、积、泼、焦、宿，以此构建起一套完整的笔墨体系。他的山水画以“黑密厚重”为面貌，追求“浑厚华滋”的美学境界，把笔墨从造型手段提升为具有独立价值的艺术语言。黄宾虹在世时画名并不显赫，晚年作品尤其浓黑难解，但其笔墨体系在身后影响日深，被推为传统山水画笔墨之道的集大成者。其价值在于对笔墨本身的深度自觉。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%BB%84%E5%AE%BE%E8%99%B9%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%94%E7%AC%94%E4%B8%83%E5%A2%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7777,7 +7777,7 @@
       "story": {
         "title": "指墨与国画教学",
         "content": "潘天寿是现代中国画教学中体系建构的关键人物，擅画花鸟、山水，兼善指画，亦能书法、诗词、篆刻。他早年受教于经亨颐、李叔同，写意花鸟初学吴昌硕，后自成面目，指画沉雄奇崛、大气磅礴，为现代指墨艺术的杰出代表。潘天寿长期从事美术教育，历任国立艺专校长、浙江美术学院院长，建立了一套完整的国画教学体系，被称为现代国画教学的奠基人。他的艺术以力量感和结构意识著称，画面结构险中求平衡，形能精简而意远，在传统派画家中独树一帜。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%BD%98%E5%A4%A9%E5%AF%BF%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8C%87%E5%A2%A8%E4%B8%8E%E5%9B%BD%E7%94%BB%E6%95%99%E5%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7917,7 +7917,7 @@
       "story": {
         "title": "播火者",
         "content": "李大钊是中国最早系统传播马克思主义的先驱，早年留学日本，回国后任北京大学教授兼图书馆主任。1918年发表《庶民的胜利》《布尔什维主义的胜利》，是中国最早系统传播马克思主义的知识分子之一。1920年发起北京大学马克思学说研究会，并建立北京共产党早期组织，是中国共产党的主要创始人之一。他积极领导五四运动，把一批青年陶冶成具有初步共产主义思想的知识分子。1927年4月被奉系军阀逮捕，同月28日从容走向绞刑架，牺牲时年仅三十八岁。李大钊以“铁肩担道义，妙手著文章”自勉，其播火者的形象在中国革命史上具有源头性的意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%A4%A7%E9%92%8A%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%92%AD%E7%81%AB%E8%80%85%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8077,7 +8077,7 @@
       "story": {
         "title": "新唯识论",
         "content": "熊十力是现代新儒家的重要开创者。他早年参加辛亥革命，后弃政从学，入南京支那内学院研习佛学，转而自创体系。其代表作《新唯识论》继承又改造佛教唯识宗，在本体论上提出“体用不二”，认为“识”或“本心”是宇宙的本体与万化的根源，并由此建构“翕辟成变”的宇宙论。此书在当时即引起佛学界激烈争论，但也确立了熊十力作为哲学家而非经学家的地位。他的学问以雄浑奇崛、不拘成法著称，讲课纵横捭阖，门下多知名学者。新唯识论的价值在于以传统资源回应现代哲学的根本问题。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%86%8A%E5%8D%81%E5%8A%9B%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%96%B0%E5%94%AF%E8%AF%86%E8%AE%BA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8216,7 +8216,7 @@
       "story": {
         "title": "贞元六书",
         "content": "冯友兰是二十世纪中国最重要的哲学史家与哲学家之一，哥伦比亚大学哲学博士，长期任教于清华大学、西南联大。他自述一生著述为“三史释今古，六书纪贞元”。“三史”指《中国哲学史》《中国哲学简史》《中国哲学史新编》，“六书”即抗战期间写成的《新理学》《新事论》《新世训》《新原人》《新原道》《新知言》，合称“贞元六书”，取“贞下起元”之意，寄托对民族复兴的期待。冯友兰以现代哲学的方法重写中国哲学史，又以“新理学”建构自己的体系，在哲学史与哲学创造两个层面都留下了不可忽视的成果。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%86%AF%E5%8F%8B%E5%85%B0%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%B4%9E%E5%85%83%E5%85%AD%E4%B9%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8372,7 +8372,7 @@
       "story": {
         "title": "从志士到汉奸",
         "content": "汪精卫是民国政治人物中转变最剧烈者之一。早年追随孙中山，1910年谋刺摄政王载沣被捕，狱中写下“引刀成一快，不负少年头”，以革命志士形象名动一时。孙中山逝世后，他曾任国民政府主席，声望极高，却在权力格局中屡屡失势。1938年底他逃离重庆，发表“艳电”响应日本诱降，1940年在南京成立伪国民政府，充当日本侵华工具。1944年病死于名古屋。汪精卫以最耀眼的方式开场，以最不堪的方式收场，其转变是个人野心与民族大义彻底错位的极端样本。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B1%AA%E7%B2%BE%E5%8D%AB%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%8E%E5%BF%97%E5%A3%AB%E5%88%B0%E6%B1%89%E5%A5%B8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8555,7 +8555,7 @@
       "story": {
         "title": "宪政未竟",
         "content": "宋教仁是民国初年最具宪政理想的政治家，同盟会核心人物。他主持将同盟会改组为国民党，1913年第一届国会选举中大获全胜，准备以党首身份赴京组阁，推动责任内阁制以限制袁世凯权力。就在北上前夕，他在上海火车站遇刺，两日后不治身亡，年仅三十一岁。宋教仁至死仍不疑袁世凯，临终前还上书总统作最后谏诤。他的死使民初宪政尝试失去最关键的执行者，也直接引发“二次革命”。一个相信议会政治可以解决中国问题的人死于政治暗杀，宣告了民初宪政实验的破产。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%AE%8B%E6%95%99%E4%BB%81%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%AA%E6%94%BF%E6%9C%AA%E7%AB%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8715,7 +8715,7 @@
       "story": {
         "title": "黄埔慈母",
         "content": "廖仲恺是国民党左派领袖，孙中山最忠实的助手之一。他坚决执行联俄、联共、扶助农工三大政策，在国民党改组和黄埔军校创建中承担最关键的实际工作，兼任军校党代表，被师生称为“黄埔慈母”。1925年孙中山逝世后，他成为党内左右两派争夺的焦点。同年8月20日，他在广州国民党中央党部门前遇刺身亡。调查指向右派势力，但真相始终未完全厘清。廖仲恺之死使国民党左派失去核心，党内权力平衡迅速向蒋介石倾斜。他的遇刺说明，在民国政治中，暗杀是解决路线分歧的常用手段。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BB%96%E4%BB%B2%E6%81%BA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%BB%84%E5%9F%94%E6%85%88%E6%AF%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8878,7 +8878,7 @@
       "story": {
         "title": "财政与四家",
         "content": "孔祥熙是国民政府财政的主持者，孔子第七十五代孙，早年留学美国，后与宋霭龄结婚，成为蒋介石的姻亲。他长期主管财政，历任财政部长、中央银行总裁、行政院长，在币制改革、战时财政筹措等方面有所举措。但他纵容家族利用政治特权垄断金融、包办公债、侵吞利润，与蒋介石、宋子文、陈果夫陈立夫并称“四大家族”，是官僚资本的典型代表。抗战后期其贪腐引发广泛不满，1944年被迫去职。孔祥熙的生涯说明，在缺乏有效监督的体制中，技术性的理财能力与结构性的家族腐败可以并存。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%AD%94%E7%A5%A5%E7%86%99%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%B4%A2%E6%94%BF%E4%B8%8E%E5%9B%9B%E5%AE%B6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9032,7 +9032,7 @@
       "story": {
         "title": "土木系与台湾",
         "content": "陈诚是国民党军“土木系”首领，保定军校出身，黄埔时期获蒋介石信任，逐步成为蒋最倚重的军事与政治副手之一。他参与北伐、围剿和抗战，历任军长、集团军总司令、战区司令长官、军政部长、参谋总长。1947年东北战事失利使其声望受挫，1948年出任台湾省主席，解决粮食问题，为国民党退台铺路。此后任行政院长、副总统，在台湾推行“三七五减租”“耕者有其田”等土地改革。陈诚的角色使其成为国民党政权从大陆到台湾过渡中的关键衔接人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E8%AF%9A%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%9C%9F%E6%9C%A8%E7%B3%BB%E4%B8%8E%E5%8F%B0%E6%B9%BE%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9232,7 +9232,7 @@
       "story": {
         "title": "政坛不倒翁",
         "content": "谭延闿是民国政坛以“让”与“稳”立身的人物，清末最后一科会元，三次出任湖南督军兼省长，后历任国民政府主席、首任行政院长。他在军阀纷争与派系倾轧中始终立于高位，被称为“政坛不倒翁”。北伐胜利后，他主动让出国民政府主席职位给蒋介石，自己退居行政院长，这一让位使其在蒋心中始终保有分量。谭延闿工书法，宗颜真卿，被推为民国四大书法家之首，又精于饮馔，组庵湘菜即出自其家厨。一个在政治上以退让立身的人，同时在书法和饮食上留下鲜明印记，在民国政坛中极为少见。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B0%AD%E5%BB%B6%E9%97%BF%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%94%BF%E5%9D%9B%E4%B8%8D%E5%80%92%E7%BF%81%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9361,7 +9361,7 @@
       "story": {
         "title": "布衣元首",
         "content": "林森是辛亥革命元老，中华民国参议院首任议长。1931年底蒋介石下野后，林森被推为国民政府主席，此后连任十二年，直至1943年逝世。他奉行“不争权揽利、不作威作福、不结党营私”的三不原则，在国民党高层中独树一帜，被称为“布衣元首”。抗战期间他坚持抗战立场，以国家元首名义签署对日、德、意宣战令。林森的主席之位更多是象征性的，实权始终不在他手中，但他以低调和洁身自好维持了这一职位的尊严。在一个权力高度集中的体制里，一个不争权的人反而成了各方都能接受的国家元首。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9E%97%E6%A3%AE%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B8%83%E8%A1%A3%E5%85%83%E9%A6%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9484,7 +9484,7 @@
       "story": {
         "title": "首任总理",
         "content": "唐绍仪是中华民国首任内阁总理，第三批留美幼童之一，毕业于哥伦比亚大学。清末历任外务部侍郎、邮传部尚书，是袁世凯最重要的外交与政治助手之一。1912年民国成立，他出任首任内阁总理，加入同盟会，试图在袁世凯与革命党之间维持平衡，但很快因袁独权而辞职。此后他参加过护法军政府，1931年退居家乡中山县，竟出任县长，一时传为奇谈。1938年在上海寓所被军统刺杀。唐绍仪从总理到县长的落差，折射出民国初年政治秩序的反复无常。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%94%90%E7%BB%8D%E4%BB%AA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A6%96%E4%BB%BB%E6%80%BB%E7%90%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9647,7 +9647,7 @@
       "story": {
         "title": "民国第一法学家",
         "content": "王宠惠是民国时期任期最长的司法首长，被誉为“民国第一法学家”。他是北洋大学法科首届毕业生，获中国近代第一张大学毕业文凭，后赴耶鲁大学获法学博士。他历任南京临时政府外交总长、北京政府司法总长与国务总理、南京国民政府司法院长与外交部长。1945年代表中国出席联合国创立会议，参与制订联合国宪章，并承担宪章中文版的润色与审定工作。王宠惠在民国政坛多次更迭中始终以法律专业立身，既服务于不同政权，又保持法学家的专业底色。在一个人治往往压倒法治的时代，他的存在本身就是一种制度性的稀缺。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E5%AE%A0%E6%83%A0%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B0%91%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%B3%95%E5%AD%A6%E5%AE%B6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9792,7 +9792,7 @@
       "story": {
         "title": "国民党理论家",
         "content": "戴季陶是国民党理论体系的主要构建者，早年留学日本，加入同盟会，曾是中国最早介绍马克思主义的知识分子之一。但后来他转向国民党右派，成为蒋介石最重要的理论代言人，所著《孙文主义之哲学的基础》等文，为国民党反共提供了理论框架。他历任黄埔军校政治部主任、国民党中央宣传部长、考试院长，长期充当蒋介石的谋士和文胆。1949年2月，因国民党统治崩溃而对前途绝望，在广州服安眠药自杀。戴季陶以左翼思想起步，以右翼理论收场，其转变在民国知识分子中具有代表性。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%88%B4%E5%AD%A3%E9%99%B6%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%9B%BD%E6%B0%91%E5%85%9A%E7%90%86%E8%AE%BA%E5%AE%B6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9936,7 +9936,7 @@
       "story": {
         "title": "政学系元老",
         "content": "张群是国民党政学系核心人物，日本士官学校毕业，与蒋介石是结拜兄弟。他长期担任国民党中央党部秘书长，历任上海市长、湖北省主席、外交部长、行政院长等要职。张群最突出的角色是对日外交，他与日本各界关系深厚，1930年代和抗战期间多次承担对日交涉任务。1949年赴台后任“总统府”秘书长、资政，活到一百零一岁。张群一生横跨大陆与台湾两个时代，其政治生命力来自对蒋的绝对忠诚和务实的外交手腕。在国民党派系政治中，政学系不以意识形态见长，而以行政能力和关系网络立足。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E7%BE%A4%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%94%BF%E5%AD%A6%E7%B3%BB%E5%85%83%E8%80%81%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10095,7 +10095,7 @@
       "story": {
         "title": "法学家与外交",
         "content": "王世杰是兼具学术声望与行政能力的法学家，巴黎大学法学博士，武汉大学首任校长。1927年弃文从政，历任南京国民政府首任法制局长、教育部长、宣传部长、外交部长。抗战后期至战后，他主持外交部，参与中苏谈判和联合国创建工作，并在重庆谈判中代表国民党签署《双十协定》。1949年赴台后任“总统府”秘书长、中央研究院院长。王世杰的轨迹说明，在民国体制中，法学家可以进入外交与教育中枢，但其所学的宪政与法治理想，能够落实的空间始终有限。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E4%B8%96%E6%9D%B0%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B3%95%E5%AD%A6%E5%AE%B6%E4%B8%8E%E5%A4%96%E4%BA%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10235,7 +10235,7 @@
       "story": {
         "title": "学者入外交",
         "content": "蒋廷黻是民国学者从政的典型，哥伦比亚大学历史学博士，南开、清华历史系教授，中国近代史学科的重要奠基人，所著《中国近代史》至今仍是经典。1935年他以非国民党员身份进入政府，任行政院政务处长，此后出任驻苏联大使、驻联合国常任代表、驻美大使。蒋廷黻带着近代史研究的“现代化”视角进入外交领域，试图以外交推动国家转型，但最终发现外交桌上的筹码并不取决于学者的判断。他的学术与外交双重生涯，折射出那个时代知识分子在书斋与权力之间的艰难选择。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%92%8B%E5%BB%B7%E9%BB%BB%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AD%A6%E8%80%85%E5%85%A5%E5%A4%96%E4%BA%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10358,7 +10358,7 @@
       "story": {
         "title": "西安事变",
         "content": "杨虎城是西安事变的主要发动者之一，出身贫寒，参加过辛亥革命和护国战争，1930年任第十七路军总指挥、陕西省政府主席。他长期与红军保持秘密联系。1936年12月12日，他与张学良一起发动西安事变，扣押蒋介石，提出停止内战、一致抗日的主张。事变和平解决后，他被迫出国考察，回国后即被蒋介石长期囚禁，1949年9月6日在重庆被秘密杀害。杨虎城在西安事变中承担的风险远大于张学良，张有东北军和蒋的旧谊作缓冲，杨则几乎没有退路。兵谏者的命运往往不由事变成败决定。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%A8%E8%99%8E%E5%9F%8E%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%A5%BF%E5%AE%89%E4%BA%8B%E5%8F%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10511,7 +10511,7 @@
       "story": {
         "title": "湖南起义",
         "content": "程潜是国民党军中资历极深的湘籍将领，老同盟会员，北伐时期任国民革命军第六军军长，抗战时期任第一战区司令长官。1948年任长沙绥靖公署主任兼湖南省政府主席。1949年8月4日，他与陈明仁在长沙率部通电起义，宣布湖南正式脱离国民党政府，使湖南全省和平解放。程潜在国民党阵营中并非蒋的嫡系，长期处于边缘位置，但他在关键时刻的选择使其政治生命得以延续。起义后他历任湖南省长、全国人大常委会副委员长等职，是地方实力派以起义换取乡土免于战火的典型。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%A8%8B%E6%BD%9C%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B9%96%E5%8D%97%E8%B5%B7%E4%B9%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10667,7 +10667,7 @@
       "story": {
         "title": "南京卫戍司令",
         "content": "唐生智是南京保卫战的守城指挥官，保定军校出身，北伐时期任前敌总指挥兼第八军军长，是湘军系统中极具实力的人物。1937年11月，蒋介石任命他为南京卫戍司令长官。他下令封锁江面、销毁渡船，以示“与南京共存亡”的决心，但在日军攻破城垣后，撤退组织混乱，大量军民陷于绝境。南京保卫战的惨败使唐生智的历史评价长期存在争议：死守姿态与实际的指挥失误之间的落差，成为这场悲剧中最受诟病的部分。此后他基本脱离军界，1949年在湖南参与和平运动。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%94%90%E7%94%9F%E6%99%BA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8D%97%E4%BA%AC%E5%8D%AB%E6%88%8D%E5%8F%B8%E4%BB%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10801,7 +10801,7 @@
       "story": {
         "title": "南天王主粤",
         "content": "陈济棠是粤系军阀代表，1929年至1936年主政广东，集党政军大权于一身，人称“南天王”。他在广东兴建电厂、公路、粤汉铁路和天河机场，发展工厂、港口和学校，使广州城市面貌迅速接近上海，这段时期被一些粤人称为广东的“黄金时代”。但他政治上与南京中央分庭抗礼，1936年联合李宗仁发动“两广事变”，失败后下野。陈济棠的治粤说明，在民国地方割据的格局中，军阀统治并不必然意味着建设停滞：当一个地方实力派有足够长的稳定统治期，它也可能转化为地方现代化的推动力量。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E6%B5%8E%E6%A3%A0%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8D%97%E5%A4%A9%E7%8E%8B%E4%B8%BB%E7%B2%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10930,7 +10930,7 @@
       "story": {
         "title": "海军部长",
         "content": "陈绍宽是民国海军史上任职最久的负责人，清末海军出身，曾赴欧洲考察海军。1928年任海军署署长，1932年出任海军部部长，此后长期主持民国海军建设。抗战期间，他指挥江阴海空战和长江布雷战，在力量悬殊的条件下以水雷战迟滞日军溯江进攻。1945年代表中国海军参加南京受降。陈绍宽的建设计划始终受制于经费匮乏和陆权优先的战略取向。1949年他坚决拒绝赴台，声言如强迫即从飞机上跳下，留在福建迎接解放。一个海军部长在陆权国家中的困境，在陈绍宽身上体现得相当清楚。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E7%BB%8D%E5%AE%BD%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B5%B7%E5%86%9B%E9%83%A8%E9%95%BF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11048,7 +11048,7 @@
       "story": {
         "title": "参谋总长",
         "content": "朱培德是国民党军中枢的军事行政管理者，云南讲武堂出身，与朱德并称“模范二朱”。他历经护国战争、护法战争，后任国民革命军第三军军长，参加北伐。1929年起任国民政府参谋本部参谋总长，成为国民党军最高幕僚长，1935年授陆军一级上将。他长期负责军委会日常工作，是蒋介石在军事行政上的重要助手。1937年2月因注射引起血液中毒病逝，蒋介石为之痛哭。在派系林立的国民党军中，一个云南籍将领能够长期坐稳参谋总长的位置，靠的是不结派系、不争兵权，以及对蒋的绝对配合。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9C%B1%E5%9F%B9%E5%BE%B7%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8F%82%E8%B0%8B%E6%80%BB%E9%95%BF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11166,7 +11166,7 @@
       "story": {
         "title": "出川抗日",
         "content": "刘湘是民国时期川军统帅，长期主政四川，被称为“四川王”。他与蒋介石中央政权若即若离，但在民族危机面前表现出明确立场。七七事变次日，他即电呈蒋介石并通电全国呼吁一致抗日。国防会议上他慷慨陈词，主张全国总动员，随后亲率十多万川军出川，任第七战区司令长官。部下劝他多病不必亲征，他说“过去打了多年内战，脸面上不甚光彩，今天为国效命，如何可以在后方苟安”。1938年1月20日在汉口前线病逝，遗嘱仍以“敌军一日不退出国境，川军则一日誓不还乡”相勉。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E6%B9%98%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%87%BA%E5%B7%9D%E6%8A%97%E6%97%A5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11289,7 +11289,7 @@
       "story": {
         "title": "二十九军与七七",
         "content": "宋哲元是第二十九军的统率者，西北军五虎之一，1930年中原大战后率余部退据晋南，所部改编为第二十九军。1933年长城抗战中，他率部在喜峰口、罗文峪抗击日军，二十九军大刀队名震一时，《大刀进行曲》即以此为背景。1935年后他任冀察政务委员会委员长，在日军压力与南京中央之间艰难周旋。1937年七七事变爆发，二十九军奋起抵抗，但宋哲元一度对日方缓兵之计抱有幻想，平津迅速失守。此后他任第一集团军总司令继续抗战，1940年病逝于四川绵阳。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%AE%8B%E5%93%B2%E5%85%83%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%86%9B%E4%B8%8E%E4%B8%83%E4%B8%83%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11428,7 +11428,7 @@
       "story": {
         "title": "长沙会战",
         "content": "薛岳是抗战中歼灭日军最多的中国将领之一，保定军校出身，原名薛仰岳，因崇仰岳飞而改名。抗战爆发后，他主动请缨，率部参加淞沪会战、徐州会战、武汉会战。1939年起代理第九战区司令长官，指挥三次长沙会战，以“天炉战法”诱敌深入、逐次消耗，三战全胜，歼灭日军甚众，日军称之为“长沙之虎”。薛岳的军事才能在于把防御作战组织成有纵深的消耗战，而非单纯死守城池。但他在国民党军中的非嫡系身份，使其在抗战后的内战中并未获得相应的指挥权，晚年退居台湾。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%96%9B%E5%B2%B3%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%95%BF%E6%B2%99%E4%BC%9A%E6%88%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11573,7 +11573,7 @@
       "story": {
         "title": "远征军司令",
         "content": "卫立煌是国民党军“五虎上将”之一，行伍出身。抗战爆发后任第二战区副司令长官兼前敌总指挥，指挥忻口战役，与八路军建立合作关系，因“国共合作抗战”一度被撤职。1943年出任中国远征军司令长官，率部强渡怒江，攻克松山、龙陵，与驻印军会师，打通中印公路。卫立煌在国民党将领中以善于大兵团作战著称，但政治处境始终微妙：既被蒋倚重，又因与中共的接触而屡受猜忌。1955年他从香港返回大陆，任国防委员会副主席。他的选择在国民党高级将领中并非孤例。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8D%AB%E7%AB%8B%E7%85%8C%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%BF%9C%E5%BE%81%E5%86%9B%E5%8F%B8%E4%BB%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11712,7 +11712,7 @@
       "story": {
         "title": "北平和平",
         "content": "傅作义是北平和平解放的关键人物，晋绥军出身，1936年指挥绥远抗战，取得百灵庙大捷，是全面抗战前中国军队少有的主动出击并获胜的战役。抗战期间任第八战区副司令长官、第十二战区司令长官，在绥远坚持长期抗战。1949年1月，在平津战役的关键时刻，他接受中共和平条件，率部起义，使北平这座古都免于战火，并促成绥远和平解放。此后任新中国首任水利部长，任职二十三年。傅作义的选择在国民党高级将领中具有标志性：他不是在军事失败后才被迫起义，而是在仍有谈判空间时主动选择了和平。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%82%85%E4%BD%9C%E4%B9%89%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8C%97%E5%B9%B3%E5%92%8C%E5%B9%B3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11866,7 +11866,7 @@
       "story": {
         "title": "集团军总司令殉国",
         "content": "张自忠是抗战中牺牲在战场上的最高级别中国将领，西北军出身，抗战爆发后任第五十九军军长，后升任第三十三集团军总司令。他曾因留守北平期间与日方周旋而背负误解，此后在临沂、徐州、随枣等战役中力战不已，以战功洗刷污名。1940年5月枣宜会战中，他亲率部队渡襄河作战，被日军包围于南瓜店，身负重伤仍不肯撤退，最终壮烈殉国，时年四十九岁。张自忠的死带有强烈的自我救赎色彩：一个曾被舆论怀疑的人，用最彻底的方式证明了自己的清白。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E8%87%AA%E5%BF%A0%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%9B%86%E5%9B%A2%E5%86%9B%E6%80%BB%E5%8F%B8%E4%BB%A4%E6%AE%89%E5%9B%BD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12011,7 +12011,7 @@
       "story": {
         "title": "昆仑关与野人山",
         "content": "杜聿明是国民党军机械化部队的重要将领，黄埔一期毕业。1939年昆仑关战役中，他率第五军重创日军第五师团，击毙旅团长中村正雄，取得抗战正面战场上少有的攻坚胜利。1942年他率部参加中国远征军入缅作战，战败后奉命翻越野人山撤退，部队在原始丛林中损失惨重。此后他在东北战场与解放军作战，1949年1月在淮海战役中被俘。杜聿明的一生集中了国民党军从抗战到内战的完整轨迹：昆仑关展现了战术层面的出色，野人山和淮海则暴露了战略与体制层面的结构性失败。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%9C%E8%81%BF%E6%98%8E%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%98%86%E4%BB%91%E5%85%B3%E4%B8%8E%E9%87%8E%E4%BA%BA%E5%B1%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12140,7 +12140,7 @@
       "story": {
         "title": "仁安羌与软禁",
         "content": "孙立人是国民党将领中少有的西方军事教育背景者，清华大学毕业，后赴美弗吉尼亚军校深造。1942年远征军入缅，他率新三十八师在仁安羌以一团兵力击退数倍日军，解救七千余英军及西方记者、传教士，获英王授予“帝国司令”勋章，被誉为“东方隆美尔”。此后他在印度兰姆伽整训新一军，在缅北反攻中屡建战功。1955年他在台湾因“兵变”案被撤职软禁，长达三十三年。孙立人的遭遇说明，非黄埔出身、非嫡系背景的将领，即使战功卓著，也难以在政治风波中自保。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%AD%99%E7%AB%8B%E4%BA%BA%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%81%E5%AE%89%E7%BE%8C%E4%B8%8E%E8%BD%AF%E7%A6%81%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12263,7 +12263,7 @@
       "story": {
         "title": "两把菜刀与南昌",
         "content": "贺龙是中国人民解放军创建者之一，早年以“两把菜刀闹革命”闻名，在旧军队中官至军长。1927年大革命失败之际，他放弃已有地位，参与领导南昌起义并任起义军总指挥，同年加入中国共产党。此后历任红四军军长、红二方面军总指挥，在湘鄂川黔根据地坚持斗争。抗战时期任八路军一二〇师师长，解放战争时期负责西北和西南的军事行动。1955年被授予元帅军衔。贺龙的意义在于，他是一个从旧军队中主动选择革命道路的将领，这种选择不是被形势裹挟，而是在白色恐怖最严重的时刻做出的。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B4%BA%E9%BE%99%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%A4%E6%8A%8A%E8%8F%9C%E5%88%80%E4%B8%8E%E5%8D%97%E6%98%8C%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12412,7 +12412,7 @@
       "story": {
         "title": "川中名将与军校",
         "content": "刘伯承是兼具实战与理论素养的军事家，早年参加辛亥革命和护国战争，以“川中名将”著称。1926年加入中国共产党，参与策划南昌起义，任起义军参谋长。此后历任红军总参谋长、八路军一二九师师长、第二野战军司令员，在太行山、大别山和淮海战役中承担重要指挥职责。他军事理论素养深厚，被誉为“党内孙武”。1955年被授予元帅军衔，此后创办中国人民解放军军事学院并任院长。刘伯承的特点是理论与实践并重：既能指挥大兵团作战，又能把战争经验转化为可讲授的军事科学。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E4%BC%AF%E6%89%BF%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B7%9D%E4%B8%AD%E5%90%8D%E5%B0%86%E4%B8%8E%E5%86%9B%E6%A0%A1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12584,7 +12584,7 @@
       "story": {
         "title": "新四军与上海",
         "content": "陈毅是兼具军事指挥与政治工作能力的元帅，早年赴法勤工俭学，1923年加入中国共产党，1927年参加南昌起义，1928年参与领导湘南起义。南方三年游击战争期间，他在赣粤边坚持斗争，是红军主力长征后留在南方的最重要领导人之一。抗战时期任新四军第一支队司令员、代军长，在苏北打开局面。解放战争时期任第三野战军司令员兼政委，参与指挥淮海、渡江和上海战役。1955年被授予元帅军衔，后任外交部长。陈毅的新四军经历和在上海接管中的角色，使他成为将帅中政治与军事衔接得最为自然者之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E6%AF%85%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%96%B0%E5%9B%9B%E5%86%9B%E4%B8%8E%E4%B8%8A%E6%B5%B7%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12734,7 +12734,7 @@
       "story": {
         "title": "淮海第一功",
         "content": "粟裕是解放军十大大将之首，侗族，1927年参加南昌起义，此后在井冈山和南方坚持斗争，先后六次负伤。抗战时期他在苏中、苏北开辟根据地。解放战争时期，他指挥苏中七战七捷，1948年力主在徐州地区与国民党军决战，对淮海战役的形成起到关键作用。淮海战役中，他指挥华东野战军歼灭国民党军大量主力，毛泽东称其“最会带兵打仗”。1955年被授予大将军衔，位列十大大将之首。粟裕的军事才华集中体现在对战机的判断和敢于对上级提出不同意见上，这在大兵团决战中尤为难得。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%B2%9F%E8%A3%95%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B7%AE%E6%B5%B7%E7%AC%AC%E4%B8%80%E5%8A%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12874,7 +12874,7 @@
       "story": {
         "title": "红四方面军总指挥",
         "content": "徐向前是红四方面军的主要创建者和指挥者，黄埔一期毕业，1927年加入中国共产党。1931年任红四方面军总指挥，在鄂豫皖根据地以三百多人的农民武装起家，两年内发展成四万人的主力红军。抗战时期任八路军一二九师副师长，解放战争时期带病指挥解放山西全境。1955年被授予元帅军衔。徐向前以善于打硬仗、恶仗著称，其军事生涯最突出的成就是在红四方面军时期：在极其困难的条件下把一支地方武装带成主力红军，并在川陕根据地反复与优势敌军周旋。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BE%90%E5%90%91%E5%89%8D%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%BA%A2%E5%9B%9B%E6%96%B9%E9%9D%A2%E5%86%9B%E6%80%BB%E6%8C%87%E6%8C%A5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12971,7 +12971,7 @@
       "story": {
         "title": "建筑与诗",
         "content": "林徽因是中国第一位女建筑学家，也是新月派诗人。她与梁思成共同创建东北大学建筑系，此后加入中国营造学社，足迹遍及十五省二百余县，调查测绘古建筑两千余处，为建构中国建筑史的基本框架提供了最关键的一手资料。她参与设计国徽和人民英雄纪念碑，在病中仍坚持工作。文学方面，她的诗与散文清丽含蓄，《你是人间的四月天》流传极广。林徽因的独特之处在于，她把建筑学的严谨与文学的敏感融为一体，在两个领域都留下了不可替代的印记。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9E%97%E5%BE%BD%E5%9B%A0%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%BB%BA%E7%AD%91%E4%B8%8E%E8%AF%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13056,7 +13056,7 @@
       "story": {
         "title": "女权与词",
         "content": "吕碧城是近代女权运动的先驱，也是中国新闻史上第一位女编辑。她二十出头即主笔《大公报》，以诗文名动京津，随后创办北洋女子公学，开中国女子教育的先河。她终身未婚，经商有成，游历欧美，晚年皈依佛门。词学方面，她被推为“近三百年来最后一位女词人”，作品清丽中有沉郁，写个人身世也写时代苍茫。吕碧城的一生几乎把近代女性可能走的路都走了一遍：以笔立身，以教育启蒙，以实业自立，以词章传世。她的存在本身就是对“女子无才”最直接的反驳。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%90%95%E7%A2%A7%E5%9F%8E%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A5%B3%E6%9D%83%E4%B8%8E%E8%AF%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13141,7 +13141,7 @@
       "story": {
         "title": "生死场与呼兰河",
         "content": "萧红是中国现代文学中最具才情也最为坎坷的女作家。1935年，她在鲁迅的帮助下发表成名作《生死场》，以东北农村为背景，写普通农民在生死线上的挣扎与觉醒，鲁迅称其所写“力透纸背”。1940年，她在香港完成《呼兰河传》，以童年回忆为线索，写呼兰小城的风物与人情，笔调愈淡而悲悯愈深。萧红一生颠沛，从哈尔滨到上海，从武汉到香港，三十一岁病逝于战乱之中。她的写作不依附任何潮流，以近乎天真的感受力写出了乡土中国最沉痛的一面。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%90%A7%E7%BA%A2%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%94%9F%E6%AD%BB%E5%9C%BA%E4%B8%8E%E5%91%BC%E5%85%B0%E6%B2%B3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13226,7 +13226,7 @@
       "story": {
         "title": "莎菲与桑干河",
         "content": "丁玲是中国现代文学中跨越几个时代的作家。1928年，她以《莎菲女士的日记》成名，写一个青年女性在情爱与苦闷中的叛逆心理，大胆而坦率。1930年加入左联，1936年奔赴陕北，成为第一个到达延安的知名作家。此后她的写作从个人转向社会，1948年完成长篇小说《太阳照在桑干河上》，以土改运动为背景，写农村阶级关系的剧烈变动，1951年获斯大林文艺奖金。丁玲的文学道路呈现出一种完整的转向：从五四式的个性解放，到革命洪流中的集体叙事，她的每一阶段都留下了一部足以代表那个阶段的作品。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%81%E7%8E%B2%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%8E%8E%E8%8F%B2%E4%B8%8E%E6%A1%91%E5%B9%B2%E6%B2%B3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13322,7 +13322,7 @@
       "story": {
         "title": "八月的乡村",
         "content": "萧军是东北作家群的代表人物。九一八事变后，他辗转于东北与上海之间，在鲁迅的指导下从事左翼文学活动。1935年，他出版长篇小说《八月的乡村》，以东北人民革命军的抗日斗争为题材，写一支游击队在血与火中的成长。鲁迅为之作序，称这部小说“严肃，紧张”，是“斗争的文学”。萧军的文字粗犷有力，带着东北旷野的气息，与萧红的细腻形成鲜明对照。他的写作不事雕琢，把战争中的残酷与人的坚韧直接推到读者面前。《八月的乡村》因此成为抗战文学中最早也最有力的作品之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%90%A7%E5%86%9B%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%85%AB%E6%9C%88%E7%9A%84%E4%B9%A1%E6%9D%91%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13407,7 +13407,7 @@
       "story": {
         "title": "大堰河与土地",
         "content": "艾青是中国现代诗最具代表性的诗人之一。他早年学画，在巴黎接触欧洲现代派诗歌，回国后因参加左翼活动被捕，在狱中写成《大堰河——我的保姆》，以乳母的一生写中国农民的苦难，感情深沉而语言朴素。抗战爆发后，他写下《雪落在中国的土地上》《我爱这土地》，以“为什么我的眼里常含泪水”的追问，把个人情感与民族命运融为一体。艾青的诗不追求格律的整饬，而以自由体的节奏和意象的厚重取胜，其写作把中国新诗从书斋推向旷野。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%89%BE%E9%9D%92%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%A7%E5%A0%B0%E6%B2%B3%E4%B8%8E%E5%9C%9F%E5%9C%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13492,7 +13492,7 @@
       "story": {
         "title": "淘金记与茶馆",
         "content": "沙汀是中国现代文学中以讽刺见长的小说家。他早年参加左翼文学运动，抗战爆发后赴延安，又随贺龙部队辗转晋中，写下报告文学《随军散记》。1941年皖南事变后，他避居四川故乡，先后写出《淘金记》《困兽记》《还乡记》三部长篇。《淘金记》写大后方地主劣绅为发国难财争夺金矿而内讧，笔触冷峻，把后方社会的腐朽与荒诞揭示得淋漓尽致。短篇《在其香居茶馆里》同样以一场茶馆里的争吵，写尽基层官僚的勾心斗角。沙汀的讽刺不靠夸张，而靠对世态人情的精确描摹，其笔下的川西北乡镇几乎是一部社会病理的标本。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B2%99%E6%B1%80%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B7%98%E9%87%91%E8%AE%B0%E4%B8%8E%E8%8C%B6%E9%A6%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13577,7 +13577,7 @@
       "story": {
         "title": "倪焕之与教育",
         "content": "叶圣陶是中国现代文学中最早以教育为题材的作家，也是开明书店和《中学生》杂志的核心人物。他早年任小学教员，在甪直进行教育改革实验，这些经历成为他小说的基本素材。1928年，长篇小说《倪焕之》在《教育杂志》连载，写一个青年知识分子把救国的希望寄托于教育，最终在现实面前碰壁的过程，被茅盾誉为“新文学中的扛鼎之作”。叶圣陶的文字朴素干净，不事铺陈，善于从日常细节中写出人物的处境与心理。他一生编教材、办刊物，其文学写作与教育事业始终交织在一起。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8F%B6%E5%9C%A3%E9%99%B6%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%80%AA%E7%84%95%E4%B9%8B%E4%B8%8E%E6%95%99%E8%82%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13662,7 +13662,7 @@
       "story": {
         "title": "背影与荷塘",
         "content": "朱自清是中国现代散文的奠基者之一。1927年，他写下《背影》和《荷塘月色》两篇后来被反复选入课本的名作。《背影》写父亲在车站送别时攀爬月台买橘子的场景，以最朴素的白描写最深的父子之情；《荷塘月色》则在清华园的夜色中展开个人的苦闷与片刻的超脱。朱自清的散文讲究文字的节奏与意境的营造，既有古典诗文的修养，又有现代白话的流畅。他长期在清华大学任教，治古典文学，晚年贫病交加，仍拒绝接受美援面粉。其散文与人格共同构成了中国现代知识分子的一种典型形象。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9C%B1%E8%87%AA%E6%B8%85%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%83%8C%E5%BD%B1%E4%B8%8E%E8%8D%B7%E5%A1%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13747,7 +13747,7 @@
       "story": {
         "title": "最后一次讲演",
         "content": "闻一多是新月派诗人，也是中国现代学术史上重要的唐诗研究者。他早年留学美国，回国后出版诗集《红烛》《死水》，以格律谨严、意象浓烈著称。此后转向学术，在清华和西南联大讲授楚辞、唐诗，治学精密而有创见。抗战后期，他走出书斋，投身民主运动。1946年7月15日，在李公朴追悼会上，他拍案而起，发表“最后一次讲演”，痛斥特务暴行，当天下午即被暗杀。闻一多的死使“诗人”与“烈士”两个身份在他身上合而为一，其讲演词至今仍是现代中国最沉痛也最有力的政治文本之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%97%BB%E4%B8%80%E5%A4%9A%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%AE%B2%E6%BC%94%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13843,7 +13843,7 @@
       "story": {
         "title": "诗与翻译",
         "content": "穆旦是中国现代诗歌中极具现代主义气质的诗人。他早年就读于清华与西南联大外文系，受燕卜逊、闻一多等人影响，写出《防空洞里的抒情诗》《合唱》等作品，以密集的意象和冷峻的思辨写战争中的个体经验。1942年，他加入中国远征军赴缅甸作战，亲历野人山的惨烈。1950年代后，他转向翻译，以查良铮之名译出普希金、拜伦、雪莱的大量诗作，译笔精确而富有诗性。穆旦的诗歌创作与翻译互为表里：他的译诗为汉语新诗引入了异质的语言资源，而他的诗则把现代中国人的经验推到了哲学的高度。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%A9%86%E6%97%A6%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%AF%97%E4%B8%8E%E7%BF%BB%E8%AF%91%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13928,7 +13928,7 @@
       "story": {
         "title": "金粉与啼笑",
         "content": "张恨水是民国时期最畅销的小说家，一生创作中长篇小说一百二十余部，总字数逾三千万，被称为“民国第一写手”。1924年，《春明外史》以九十万言的篇幅一举成名；1929年的《啼笑因缘》将言情与武侠熔于一炉，再版二十余次，多次被搬上银幕；《金粉世家》则以总理之子金燕西与平民女子冷清秋的婚姻悲剧为线索，写豪门望族的盛衰。张恨水以章回体写现代生活，把通俗小说的可读性与社会批判的锋芒结合起来，其作品在市民读者中的影响远非新文学作家所能及。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E6%81%A8%E6%B0%B4%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%87%91%E7%B2%89%E4%B8%8E%E5%95%BC%E7%AC%91%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14013,7 +14013,7 @@
       "story": {
         "title": "章黄之学",
         "content": "黄侃是章太炎的大弟子，与老师并称“章黄之学”。他在文字、音韵、训诂方面成就空前，治学主张“为学务精”，每读一书必圈点批注，不肯轻易下笔。他不到三十岁即被聘为北京大学教授，此后辗转武昌高师、中央大学、金陵大学等校，弟子遍及南北。黄侃性情狂放，骂过清廷，也骂过北洋军阀，在校园里留下许多“疯子”教授的轶事。但他狂狷的背后是极度的严谨：其治学以愚自处，一字未安，不肯示人。1935年病逝，年仅四十九岁，留下的著述虽不多，却篇篇堪为典范。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%BB%84%E4%BE%83%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%AB%A0%E9%BB%84%E4%B9%8B%E5%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14098,7 +14098,7 @@
       "story": {
         "title": "经学与歧路",
         "content": "刘师培是近代学术史上罕见的天才，出身仪征刘氏经学世家，二十岁出头即与章太炎齐名，被称为扬州学派的“殿军”。他治经学、小学、汉魏诗文，著述之盛，并世罕见。1903年赴上海，结识章太炎、蔡元培等人，投身革命宣传。但此后他的政治选择屡屡摇摆，先投清廷，后又参与袁世凯称帝的筹安会，为“洪宪六君子”之一。1917年任北京大学教授，1919年病逝，年仅三十五岁。刘师培的学术成就与政治歧路之间的巨大落差，使其成为近代知识分子命运中最令人扼腕的个案之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E5%B8%88%E5%9F%B9%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%BB%8F%E5%AD%A6%E4%B8%8E%E6%AD%A7%E8%B7%AF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14183,7 +14183,7 @@
       "story": {
         "title": "学衡主编",
         "content": "吴宓是“学衡派”的灵魂人物，也是中国比较文学研究的奠基人之一。1921年从哈佛大学归国后，他出任《学衡》杂志总编辑，以“昌明国粹，融化新知”为宗旨，与新文化运动的主流形成对峙。他长期任教于清华大学、西南联大，参与创办清华国学研究院，延聘王国维、陈寅恪、赵元任等导师。吴宓学贯中西，在西洋文学、比较诗学、红学等领域皆有精深造诣，其《文学与人生》讲义影响深远。他的文化立场常被简化为“保守”，但学衡派所主张的中西融合，实则包含了对现代性更复杂的反省。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%90%B4%E5%AE%93%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AD%A6%E8%A1%A1%E4%B8%BB%E7%BC%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14268,7 +14268,7 @@
       "story": {
         "title": "五四命名者",
         "content": "罗家伦是五四运动的学生领袖，也是“五四运动”这一名词的提出者。1919年5月4日，他在短时间内起草《北京学界全体宣言》，提出“外争国权，内除国贼”的口号；5月26日，又以“毅”为笔名发表《五四运动的精神》，首次使用“五四运动”一词。此后他游学欧美七年，回国后历任清华大学首任校长、中央大学校长，在教育行政上多有建树。罗家伦的一生与五四紧密绑定：他参与了那个事件的爆发，也为它命名，并在此后的岁月里不断阐释它的意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%BD%97%E5%AE%B6%E4%BC%A6%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%94%E5%9B%9B%E5%91%BD%E5%90%8D%E8%80%85%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14364,7 +14364,7 @@
       "story": {
         "title": "清华终身校长",
         "content": "梅贻琦是清华大学校史上任期最长的校长，自1931年至1948年执掌清华，实际服务清华近半个世纪，被誉为“终身校长”。他出身第一批庚款留美学生，学物理，却以教育行政见长。在任内，他延聘国内国际著名学者来校执教，奠定了清华黄金时代的基础。抗战期间，他主持西南联大校务，在极端艰苦的条件下维持三校的教学与研究。梅贻琦的治校风格以寡言务实著称，其“所谓大学者，非谓有大楼之谓也，有大师之谓也”一语，至今仍是中国大学理念中最常被引用的表述之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A2%85%E8%B4%BB%E7%90%A6%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B8%85%E5%8D%8E%E7%BB%88%E8%BA%AB%E6%A0%A1%E9%95%BF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14460,7 +14460,7 @@
       "story": {
         "title": "南开之父",
         "content": "张伯苓是中国现代私立教育的奠基者，南开教育体系的创办人。他从北洋水师学堂出身，亲历甲午战败，转而认定“自强之道，端在教育”。1904年，他创办南开中学，1919年创办南开大学，此后又陆续开办南开女中、南开小学和重庆南开中学，形成完整的南开教育体系。张伯苓提倡“允公允能”的校训，注重理工科与体育，是將奥运概念引入中国的先驱者。他一生办学半个世纪，培养了包括周恩来在内的大批人才。南开的历史几乎就是张伯苓个人的办学史。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E4%BC%AF%E8%8B%93%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8D%97%E5%BC%80%E4%B9%8B%E7%88%B6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14582,7 +14582,7 @@
       "story": {
         "title": "晓庄与生活教育",
         "content": "陶行知是中国现代乡村教育最重要的开拓者。他早年留学美国，师从杜威，回国后任南京高等师范学校教务主任，本可走学院派教育家的道路，却选择走向农村。1927年，他在南京郊外创办晓庄试验乡村师范，倡导“生活即教育”“社会即学校”“教学做合一”，带领师生自己动手盖校舍，把课堂搬到田间。1930年晓庄被封闭，他流亡海外，此后又创办山海工学团和育才学校。陶行知的教育理念不是书斋里的理论，而是在中国最贫瘠的土地上长出来的实践。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%B6%E8%A1%8C%E7%9F%A5%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%99%93%E5%BA%84%E4%B8%8E%E7%94%9F%E6%B4%BB%E6%95%99%E8%82%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14705,7 +14705,7 @@
       "story": {
         "title": "定县平民教育",
         "content": "晏阳初是中国平民教育运动的奠基者。他早年赴法为华工服务，目睹劳工不识字的困境，回国后主持中华平民教育促进会，编《平民千字课》，在全国推动扫盲。1926年，他选择河北定县作为实验区，推行文艺、生计、卫生、公民四大教育，开办农民学校，改良农业技术，建立乡村卫生体系。定县实验持续十年，成为中国乡村建设运动中最具系统性的实践。晏阳初后赴东南亚、拉美、非洲推广平民教育，被国际社会誉为“世界平民教育运动之父”。他的路径说明，教育救国的起点可以低到一册千字课本。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%99%8F%E9%98%B3%E5%88%9D%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%9A%E5%8E%BF%E5%B9%B3%E6%B0%91%E6%95%99%E8%82%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14838,7 +14838,7 @@
       "story": {
         "title": "邹平乡建",
         "content": "梁漱溟是中国现代思想家中最具实践品格的一位。他早年究心佛学，后转向儒学，1921年出版《东西文化及其哲学》，以文化路向的比较解释中西印思想的差异，一时震动学界。但他不满足于书斋思辨，1920年代末放弃北大教职，南下从事乡村建设。1931年至1937年，他在山东邹平主持山东乡村建设研究院，以县为实验区，推行政治、经济、教育三方面的全面改革，试图以儒家文化重建乡村社会。梁漱溟的乡建最终因战争而中断，但其“伦理本位、职业分途”的社会判断和从农村入手改造中国的思路，在二十世纪中国思想史上留下了深刻的印记。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A2%81%E6%BC%B1%E6%BA%9F%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%82%B9%E5%B9%B3%E4%B9%A1%E5%BB%BA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14946,7 +14946,7 @@
       "story": {
         "title": "民生公司与宜昌",
         "content": "卢作孚是中国近代最杰出的实业家之一，民生公司的创办人。1925年，他以八千元起家，在合川创办民生实业股份有限公司，从一条小客船开始，在外国轮船公司垄断的长江航线上逐步扩张，至抗战前夕已合并二十余家轮船公司，成为当时中国最大的民营航运企业。1938年宜昌大撤退中，他指挥民生公司船队，在四十天内将大量工业设备和人员抢运入川，被称为“中国的敦刻尔克”。卢作孚的生活极其简朴，其“服务社会、便利人群、开发产业、富强国家”的宗旨，使民生公司不仅是一家企业，更是一场社会实验。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8D%A2%E4%BD%9C%E5%AD%9A%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B0%91%E7%94%9F%E5%85%AC%E5%8F%B8%E4%B8%8E%E5%AE%9C%E6%98%8C%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15042,7 +15042,7 @@
       "story": {
         "title": "面粉与纺织",
         "content": "荣宗敬是近代中国最大的民族资本企业集团之一的创建者。他与弟弟荣德生从钱庄学徒起步，1900年创办面粉厂，1905年投资纱厂，此后数十年间不断扩张，形成包括茂新、福新面粉公司和申新纺织公司在内的庞大企业群，被誉为“面粉大王”和“纺织大王”。荣氏企业的扩张依靠的是举债发展的策略和严格的管理，在外国资本挤压下仍能站稳脚跟。荣宗敬性格果决，善于经营，1938年因抗战中企业被毁，郁积成疾而逝。荣氏兄弟的实业之路，代表了近代民族工业在夹缝中生长所能达到的高度。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8D%A3%E5%AE%97%E6%95%AC%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%9D%A2%E7%B2%89%E4%B8%8E%E7%BA%BA%E7%BB%87%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15138,7 +15138,7 @@
       "story": {
         "title": "实业与公益",
         "content": "荣德生是荣氏企业集团的核心人物，与其兄荣宗敬共同创办了近代中国规模最大的民族资本企业。与兄长的果决不同，荣德生更重稳健与长远，在面粉与纺织之外，他长期关注地方建设与公益事业。他创办无锡公益工商中学、大公图书馆，修桥铺路，兴修水利，把企业利润的一部分持续投入地方教育和基础设施。荣德生曾说，中国要富强，非急速变成一个工业化国家不可。他的实业活动与公益实践互为表里，体现了一种把工业利润回馈乡土的企业家伦理。1952年病逝前，他仍关心着工厂的运转。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8D%A3%E5%BE%B7%E7%94%9F%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%9E%E4%B8%9A%E4%B8%8E%E5%85%AC%E7%9B%8A%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15239,7 +15239,7 @@
       "story": {
         "title": "永利制碱",
         "content": "范旭东是中国重化学工业的奠基人。1914年，他创办久大精盐公司，生产出中国第一批本国制造的精盐；1918年，创办永利制碱公司，在塘沽建厂，历经多年技术攻关，于1926年生产出纯净洁白的合格纯碱，永利成为亚洲第一座纯碱工厂。此后他又创办永利硫酸铵厂，其“红三角”牌化肥打破了英德垄断中国市场的局面。范旭东以“我们在原则上绝对的相信科学”为信条，把技术自主视为工业独立的根本。1945年病逝于重庆，其一生所开创的“永久黄”事业，是中国化工史上第一个完整的工业体系。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8C%83%E6%97%AD%E4%B8%9C%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B0%B8%E5%88%A9%E5%88%B6%E7%A2%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15361,7 +15361,7 @@
       "story": {
         "title": "侯氏制碱法",
         "content": "侯德榜是中国近代化学工业的奠基人之一，“侯氏制碱法”的创立者。1921年，他应范旭东之邀回国，出任永利碱厂总技师，主持技术攻关，使永利在1926年生产出合格纯碱。此后他经过反复试验，将苏尔维制碱法与合成氨法结合，创造出一种新的联合制碱工艺，使盐的利用率大幅提高，废液转化为化肥。1943年，这一方法被命名为“侯氏联合制碱法”，使中国制碱技术进入世界先进行列。侯德榜的贡献不仅在于一项发明，更在于他把技术自主的意识植入了中国化工的基因。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%BE%AF%E5%BE%B7%E6%A6%9C%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BE%AF%E6%B0%8F%E5%88%B6%E7%A2%B1%E6%B3%95%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15457,7 +15457,7 @@
       "story": {
         "title": "京张铁路",
         "content": "詹天佑是中国近代铁路工程的先驱，被誉为“中国铁路之父”。他十二岁赴美留学，入耶鲁大学学习铁路工程，回国后参与多条铁路的修建。1905年，他出任京张铁路总工程师，主持修建这条由中国人自主设计、自主施工的干线铁路。面对外国工程师的质疑和八达岭一带的险峻地形，他创造性地采用“人”字形线路和竖井开凿法，使工程提前两年于1909年全线通车。京张铁路的意义远超一条铁路本身：它证明了中国人在没有外国技术主导的情况下，同样可以完成现代工程。詹天佑的“未差秒黍”的严谨，成为近代中国工程精神的一个标杆。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%A9%B9%E5%A4%A9%E4%BD%91%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%AC%E5%BC%A0%E9%93%81%E8%B7%AF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15579,7 +15579,7 @@
       "story": {
         "title": "钱塘江桥",
         "content": "茅以升是中国现代桥梁工程的奠基人。1933年，他主持修建钱塘江大桥，这是中国第一座公路铁路两用现代化大桥。钱塘江水文复杂，江底流沙深厚，外国工程师曾断言在此建桥不可能。茅以升采用“射水法”“沉箱法”和“浮运法”，逐一解决技术难题，大桥于1937年9月通车。但通车仅八十九天，为阻止日军南下，他亲手炸毁了自己设计的大桥。抗战胜利后，他又主持修复。茅以升的一生与钱塘江大桥紧紧绑定：建桥、炸桥、复桥，三件事写尽了一个工程师在战争年代的全部无奈与担当。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8C%85%E4%BB%A5%E5%8D%87%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%92%B1%E5%A1%98%E6%B1%9F%E6%A1%A5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15675,7 +15675,7 @@
       "story": {
         "title": "实验胚胎学",
         "content": "童第周是中国实验胚胎学的主要奠基人。他出身贫寒，十七岁才入学读书，后赴比利时留学，在布鲁塞尔大学完成高难度的剥除青蛙卵膜手术，赢得同行赞许。1934年回国后，他系统研究文昌鱼卵子发育规律，精确绘制器官预定形成物质的分布图，为确定文昌鱼在分类学上的地位提供了关键证据。此后他又在两栖类、鱼类胚胎发育和核质关系方面取得开创性成果，推动了中国海洋生物学的发展。童第周的实验以精巧和耐心著称，其“思想要奔放，工作要严密”的格言，恰是其实验室风格的最好概括。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%AB%A5%E7%AC%AC%E5%91%A8%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%9E%E9%AA%8C%E8%83%9A%E8%83%8E%E5%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15760,7 +15760,7 @@
       "story": {
         "title": "万婴之母",
         "content": "林巧稚是中国现代妇产科学的主要开拓者。1921年，她考入北京协和医学院，八年后毕业留院，成为协和妇产科第一位中国籍女主任。她终身未婚，把全部精力投入妇产科临床与教学，一生接生了五万多个婴儿，被尊称为“万婴之母”。她在新生儿溶血症的治疗上创造了脐静脉换血法，降低了新生儿死亡率。林巧稚的医学风格以细致和果断并重：她看病不问贫富，出诊不避风雨，在产房里度过了大部分人生。1955年，她成为中国科学院首批学部委员中唯一的女院士。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9E%97%E5%B7%A7%E7%A8%9A%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%87%E5%A9%B4%E4%B9%8B%E6%AF%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15876,7 +15876,7 @@
       "story": {
         "title": "X射线与物理教育",
         "content": "吴有训是中国近代物理学的重要奠基人之一。1921年赴美留学，入芝加哥大学物理系，师从康普顿教授，从事X射线散射研究。他的实验验证并发展了康普顿效应，其研究成果在国际物理学界产生了重要影响。1926年回国后，他在清华大学物理系任教，开设近代物理课程，建设实验室，培养了一批后来成为中国物理学中坚的人才。吴有训的贡献兼具研究与教育两面：他在X射线领域的工作使中国物理学进入了国际前沿，而他在清华的教学则为中国物理学建立了一个可延续的学术传统。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%90%B4%E6%9C%89%E8%AE%AD%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8CX%E5%B0%84%E7%BA%BF%E4%B8%8E%E7%89%A9%E7%90%86%E6%95%99%E8%82%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15999,7 +15999,7 @@
       "story": {
         "title": "光学与抗战仪器",
         "content": "严济慈是中国现代光学研究的奠基人之一。他1927年获法国国家科学博士学位，在压电晶体学、光谱学和应用光学方面均有重要成果，精确测定了居里压电效应的“反现象”。抗战期间，他放弃基础研究，在昆明领导北平研究院物理研究所研制应用光学仪器，生产了石英振荡器、五角测距镜、望远镜和显微镜等一千余件，供前线与后方使用。这是中国自己制造的第一批光学仪器。严济慈的转向并非放弃科学，而是在民族危亡之际把科学转化为可以直接支撑战争的东西。其“慕光”之字，恰似其一生追光而行的写照。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%A5%E6%B5%8E%E6%85%88%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%85%89%E5%AD%A6%E4%B8%8E%E6%8A%97%E6%88%98%E4%BB%AA%E5%99%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16132,7 +16132,7 @@
       "story": {
         "title": "物理学泰斗",
         "content": "吴大猷是国际知名的物理学家和教育家，被誉为“中国物理学之父”。他1929年毕业于南开大学物理系，1933年获美国密歇根大学博士学位，1934年回国任教于北京大学和西南联大。他在原子物理、分子光谱、核物理等领域均有精深研究，其《理论物理》系列教材影响了数代中国物理学生。吴大猷在西南联大时期的学生中，包括杨振宁和李政道。他的教学以逻辑清晰和视野开阔著称，把学生直接带到学科的前沿。吴大猷后半生辗转于美国、加拿大和台湾，始终关注着中国物理学的发展。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%90%B4%E5%A4%A7%E7%8C%B7%EF%BC%8C%E6%B0%91%E5%9B%BD%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%A7%91%E6%8A%80%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%89%A9%E7%90%86%E5%AD%A6%E6%B3%B0%E6%96%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/technology.jpg"
       },
       "narrative_relations": {
         "nodes": [

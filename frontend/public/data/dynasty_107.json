@@ -5340,7 +5340,7 @@
       "story": {
         "title": "鸿门宴护刘邦",
         "content": "樊哙是刘邦麾下的重要将领，也是刘邦起兵时期最亲近的武将之一。鸿门宴上，项庄舞剑，局势危急，樊哙得知刘邦可能遭遇不测后闯入宴席。他手持盾牌，怒视项羽，斥责项羽纵容部下袭击功臣，并以壮烈气势震慑全场。项羽见其勇猛，反而赐酒赐肉。樊哙借机为刘邦争取时间，使刘邦最终得以脱身。这一幕成为楚汉战争中最著名的历史故事之一，也展现了樊哙勇猛果断、忠于刘邦的性格。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A8%8A%E5%93%99%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%B8%BF%E9%97%A8%E5%AE%B4%E6%8A%A4%E5%88%98%E9%82%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5500,7 +5500,7 @@
       "story": {
         "title": "亲自救护刘邦",
         "content": "夏侯婴原本是沛县的车夫，后来追随刘邦起兵，凭借勇敢和忠诚成为汉军重要将领。楚汉战争中，刘邦曾在战场上陷入危险，夏侯婴冒险驾车救护，使刘邦得以逃脱。后来刘邦建立汉朝，夏侯婴长期担任太仆，负责皇帝车马，并因功受封。刘邦去世后，他又辅佐惠帝、吕后等人。夏侯婴并非以显赫谋略著称，却因长期伴随刘邦、屡次在危急时刻保护刘邦而留下名声。他的一生体现了汉初功臣中“以忠勇立身”的典型形象。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%A4%8F%E4%BE%AF%E5%A9%B4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%B2%E8%87%AA%E6%95%91%E6%8A%A4%E5%88%98%E9%82%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5640,7 +5640,7 @@
       "story": {
         "title": "一席说降陈留",
         "content": "郦食其出身普通，却以善于游说闻名。刘邦攻取陈留时，郦食其主动前往游说县令，使陈留最终归降，为刘邦获得粮食和兵员提供了帮助。后来楚汉战争中，他又向刘邦提出联合齐国的策略，亲自出使齐国，说服齐王田广背离项羽。可是韩信随后攻齐，齐王认为郦食其欺骗了自己，最终将他烹杀。郦食其一生最突出之处并不是战场杀敌，而是凭借口才改变政治局势。他的结局也体现了楚汉战争中谋略与军事行动之间的复杂冲突。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%83%A6%E9%A3%9F%E5%85%B6%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%80%E5%B8%AD%E8%AF%B4%E9%99%8D%E9%99%88%E7%95%99%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5764,7 +5764,7 @@
       "story": {
         "title": "兄弟共事汉室",
         "content": "郦商是郦食其的弟弟，也是汉初重要将领。他早年跟随刘邦起兵，在楚汉战争中率军作战，多次立下战功。汉朝建立后，郦商继续参与平定异姓诸侯和地方叛乱，并长期担任重要军事职务。与哥哥郦食其主要依靠游说不同，郦商更以军事才能和作战经历著称。汉初政局复杂，刘邦不断削弱异姓诸侯势力，郦商也参与其中。后来他与周勃等人关系密切，在汉初政治中继续发挥作用，是连接楚汉战争与西汉早期政局的一位重要功臣。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%83%A6%E5%95%86%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%85%84%E5%BC%9F%E5%85%B1%E4%BA%8B%E6%B1%89%E5%AE%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5896,7 +5896,7 @@
       "story": {
         "title": "布贩成为大将",
         "content": "灌婴早年曾以贩卖丝织品为生，后来跟随刘邦起兵，从基层军士逐渐成长为汉军名将。楚汉战争中，他多次率骑兵作战，尤其在垓下之战后追击项羽残部，对楚军的覆灭发挥了作用。汉朝建立后，灌婴继续参与平定地方叛乱，并逐渐进入西汉最高权力层。吕后去世后，汉初政治发生重大变化，灌婴支持周勃等人诛灭诸吕、迎立代王刘恒。后来他担任丞相，却在任内去世。灌婴的人生经历体现了汉初功臣由军功进入政治核心的典型道路。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%81%8C%E5%A9%B4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B8%83%E8%B4%A9%E6%88%90%E4%B8%BA%E5%A4%A7%E5%B0%86%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6083,7 +6083,7 @@
       "story": {
         "title": "平定诸吕之乱",
         "content": "周勃早年以编织养蚕器具和吹箫为生，后来追随刘邦起兵，凭借军功成为汉初重要将领。刘邦建立汉朝后，他参与平定各地叛乱，逐渐成为刘氏政权的重要军事支柱。吕后去世后，吕氏家族掌握朝廷军政大权，刘氏宗室面临危险。周勃与陈平等人联合行动，控制北军，诛灭诸吕，并拥立代王刘恒为帝。汉文帝即位后，周勃一度担任丞相，但后来受到猜疑而被免职。这场政变改变了西汉政治格局，也使周勃成为维护刘氏皇权的重要人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%91%A8%E5%8B%83%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B9%B3%E5%AE%9A%E8%AF%B8%E5%90%95%E4%B9%8B%E4%B9%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6261,7 +6261,7 @@
       "story": {
         "title": "游击牵制楚军",
         "content": "彭越原本活动于梁地，早年曾聚众起兵，后来归附刘邦。他不像韩信那样直接进行大规模决战，而是善于利用梁地复杂地形袭击楚军后方，切断楚军粮道，对项羽形成持续牵制。楚汉战争最关键时期，刘邦与项羽在荥阳、成皋一带长期对峙，彭越不断袭击楚军粮道，使项羽不得不分兵应对。后来韩信、彭越等人共同参与垓下合围，最终击败项羽。汉朝建立后，彭越被封为梁王，但后来因谋反嫌疑被刘邦处死。他的悲剧也成为汉初异姓诸侯命运的代表。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BD%AD%E8%B6%8A%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B8%B8%E5%87%BB%E7%89%B5%E5%88%B6%E6%A5%9A%E5%86%9B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6405,7 +6405,7 @@
       "story": {
         "title": "从项羽到刘邦",
         "content": "英布早年因犯罪被处以黥刑，因此后来被称为“黥布”。秦末天下大乱，他率众起兵，最初成为项羽麾下重要将领，并在巨鹿之战中作战有功。楚汉战争开始后，英布逐渐与项羽产生矛盾，最终转而投向刘邦。刘邦利用英布牵制项羽，使楚军进一步陷入被动。汉朝建立后，英布被封为淮南王，成为异姓诸侯之一。后来刘邦不断削弱异姓王势力，英布担心自己成为下一个目标，于是起兵反汉。最终叛乱失败，英布逃亡途中被杀。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8B%B1%E5%B8%83%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%8E%E9%A1%B9%E7%BE%BD%E5%88%B0%E5%88%98%E9%82%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6540,7 +6540,7 @@
       "story": {
         "title": "百越首领归汉",
         "content": "吴芮是秦末南方地区的重要地方首领，曾担任番阳令。秦末天下大乱时，他凭借在当地的威望组织力量，被称为“番君”。吴芮没有像项羽、刘邦那样争夺天下，而是选择与反秦力量合作，并将女儿嫁给英布，加强政治联系。楚汉战争结束后，他接受刘邦册封，成为长沙王。与彭越、英布等后来遭到诛杀的异姓诸侯相比，吴芮一系长期受到汉朝信任，其封国也延续较久。吴芮的经历体现了秦末地方豪强如何通过审慎选择政治阵营，在新王朝建立后获得稳定地位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%90%B4%E8%8A%AE%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%99%BE%E8%B6%8A%E9%A6%96%E9%A2%86%E5%BD%92%E6%B1%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6663,7 +6663,7 @@
       "story": {
         "title": "从赵王到汉臣",
         "content": "张耳早年曾在魏国活动，秦末天下大乱后与陈馀共同拥立赵王，成为反秦势力中的重要人物。巨鹿之战期间，赵国成为项羽与秦军争夺的关键地区，张耳与陈馀之间却逐渐产生矛盾。两人后来彻底决裂，张耳转而支持刘邦。楚汉战争中，他率军参与对赵地的争夺，并最终成为刘邦阵营的重要诸侯。汉朝建立后，张耳被封为赵王。张耳的一生经历了秦末群雄并起、赵国兴亡以及楚汉战争，他与陈馀从结盟到决裂的故事，也成为这一时期政治关系剧烈变化的缩影。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E8%80%B3%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%8E%E8%B5%B5%E7%8E%8B%E5%88%B0%E6%B1%89%E8%87%A3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6781,7 +6781,7 @@
       "story": {
         "title": "井陉决裂张耳",
         "content": "陈馀与张耳早年关系密切，共同参与反秦活动。秦末赵国局势危急时，两人共同对抗秦军，但后来因政治立场和权力关系产生矛盾。巨鹿之战后，陈馀与张耳彻底决裂。韩信攻赵时，陈馀率军在井陉迎战，却没有采纳李左车的建议，最终被韩信以背水一战击败。陈馀本人也在战败后被杀。陈馀的故事不仅涉及赵国兴亡，也体现了楚汉战争中“知将而不能用”的问题。他与张耳从生死之交变成政治对手，更成为这一时期著名的历史悲剧。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E9%A6%80%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%95%E9%99%89%E5%86%B3%E8%A3%82%E5%BC%A0%E8%80%B3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6889,7 +6889,7 @@
       "story": {
         "title": "寒信降汉守边",
         "content": "韩王信是战国韩国王室后裔，秦末天下大乱时成为恢复韩国的重要人物。刘邦进入关中后，韩王信逐渐归附汉军，后来被封为韩王。楚汉战争期间，他负责镇守韩国故地，对刘邦控制北方发挥了作用。汉朝建立后，韩王信的封地处于汉朝与匈奴接触的前线。面对匈奴压力，他曾向刘邦求援，但后来因局势恶化而投降匈奴。刘邦亲自率军征讨，却在白登山被围。韩王信最终成为汉朝早期北方边患的重要人物，其经历也体现了异姓诸侯与中央政权之间的矛盾。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9F%A9%E7%8E%8B%E4%BF%A1%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AF%92%E4%BF%A1%E9%99%8D%E6%B1%89%E5%AE%88%E8%BE%B9%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7012,7 +7012,7 @@
       "story": {
         "title": "与刘邦同日出生",
         "content": "卢绾是刘邦少年时期的亲密伙伴，据说两人同年同月同日出生，自幼关系非常亲近。刘邦起兵后，卢绾一直跟随左右，深受刘邦信任。楚汉战争期间，他参与军事行动，后来被封为燕王。由于卢绾与刘邦关系特殊，他是刘邦晚年少数仍然受到高度信任的异姓诸侯之一。然而刘邦晚年不断削弱异姓王势力，卢绾也逐渐感到不安。陈豨叛乱后，卢绾与其产生联系，最终被刘邦视为谋反。刘邦准备讨伐卢绾时去世，卢绾逃往匈奴，最终客死异乡。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8D%A2%E7%BB%BE%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%8E%E5%88%98%E9%82%A6%E5%90%8C%E6%97%A5%E5%87%BA%E7%94%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7135,7 +7135,7 @@
       "story": {
         "title": "不肯阿附吕后",
         "content": "王陵是汉初功臣，早年与刘邦同在沛县一带活动。刘邦起兵后，他逐渐加入汉军，并在楚汉战争中立下战功。汉朝建立后，王陵被封为安国侯，并进入朝廷中枢。吕后掌权后，希望通过安排王陵担任相国等方式加强对朝廷的控制，但王陵坚持维护刘氏皇权，不愿支持吕氏家族扩大权力。一次朝廷讨论封吕氏为王时，王陵明确反对，最终因此被排挤出朝廷。王陵的故事虽然没有惊天动地的战场场面，却体现了汉初功臣在皇权、外戚与政治原则之间的选择。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E9%99%B5%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%8D%E8%82%AF%E9%98%BF%E9%99%84%E5%90%95%E5%90%8E%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7257,7 +7257,7 @@
       "story": {
         "title": "淮南征战立功",
         "content": "刘贾是刘邦的宗室成员，也是汉初重要将领。楚汉战争时期，他率军参与对楚地的军事行动，与英布等力量形成配合，对削弱项羽势力起到了作用。汉朝建立后，刘贾被封为荆王，成为刘氏宗室诸侯的重要成员。后来英布起兵反汉，刘贾率军抵抗，但最终在战争中被英布击败并杀死。刘贾的经历与刘邦众多功臣不同，他既拥有刘氏宗室身份，又承担军事任务。其最终死于异姓诸侯之手，也反映了汉初诸侯势力之间复杂而激烈的政治军事斗争。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E8%B4%BE%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B7%AE%E5%8D%97%E5%BE%81%E6%88%98%E7%AB%8B%E5%8A%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7391,7 +7391,7 @@
       "story": {
         "title": "楚元王崇尚经学",
         "content": "刘交是刘邦的同父异母弟，汉朝建立后被封为楚王。与刘邦主要依靠军事和政治建立王朝不同，刘交尤其重视文化和经学。他礼遇知识分子，招纳申公、穆生、白生等儒者，并与当时的学术传统保持密切联系。刘交本人也有较好的文化修养，是汉初宗室中较有文化影响力的人物。楚元王一系后来成为汉代经学传播的重要支撑。刘交的故事说明，汉初宗室并不只有军事和政治角色，也有人主动推动儒学发展，对后来汉代文化格局产生了影响。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E4%BA%A4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%A5%9A%E5%85%83%E7%8E%8B%E5%B4%87%E5%B0%9A%E7%BB%8F%E5%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7498,7 +7498,7 @@
       "story": {
         "title": "荥阳坚守不降",
         "content": "周苛是刘邦麾下的重要将领。楚汉战争期间，汉军与项羽长期争夺荥阳、成皋地区，周苛负责守卫荥阳。楚军最终攻破荥阳，周苛被项羽俘获。项羽曾试图招降周苛，但周苛拒绝投降，并以激烈言辞回应。最终项羽将周苛处死。周苛没有留下像韩信、彭越那样显赫的战绩，却因坚守荥阳、拒绝向项羽屈服而被后世记住。他的故事集中体现了楚汉战争中将领的忠诚与气节，也成为汉初功臣故事中“守城不降”的代表。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%91%A8%E8%8B%9B%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%8D%A5%E9%98%B3%E5%9D%9A%E5%AE%88%E4%B8%8D%E9%99%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7594,7 +7594,7 @@
       "story": {
         "title": "荥阳假扮刘邦",
         "content": "楚汉战争中，刘邦被项羽围困于荥阳，形势十分危急。为了帮助刘邦脱身，纪信提出假扮刘邦出城，向楚军宣称汉王已经投降。项羽信以为真，放松了对荥阳的戒备，而真正的刘邦则趁机带领少数人逃离。项羽发现被骗后大怒，将纪信处死。纪信以自己的生命换取刘邦脱险，因此成为汉军将领忠诚与牺牲精神的代表。虽然他的个人事迹并不多，但“代汉王赴死”的故事在楚汉战争史中极具戏剧性，也成为汉初人物故事中非常鲜明的一幕。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%BA%AA%E4%BF%A1%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%8D%A5%E9%98%B3%E5%81%87%E6%89%AE%E5%88%98%E9%82%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7700,7 +7700,7 @@
       "story": {
         "title": "定汉廷朝仪",
         "content": "叔孙通原为秦朝儒生，秦末天下大乱后先后在不同政治势力之间活动，最终归附刘邦。汉朝建立初期，刘邦认为群臣行为散漫、朝廷缺乏礼制，于是命叔孙通制定朝廷礼仪。叔孙通根据古代礼制并结合现实需要，组织儒生制定朝仪，使群臣在朝会上按照等级行礼，建立了新的政治秩序。刘邦看到朝廷由混乱变得庄严有序，对此十分满意。叔孙通的贡献不在战场，而在制度与礼仪建设。他帮助早期汉王朝建立了一套能够体现皇权秩序的政治仪式。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8F%94%E5%AD%99%E9%80%9A%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%9A%E6%B1%89%E5%BB%B7%E6%9C%9D%E4%BB%AA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7812,7 +7812,7 @@
       "story": {
         "title": "劝刘邦重视文化",
         "content": "陆贾是汉初著名文臣，善于以言辞和政治见识辅佐刘邦。刘邦建立汉朝后，曾认为天下已经靠武力取得，不必过多重视文化。陆贾却提醒刘邦，天下可以通过武力夺取，却不能只依靠武力治理，并向他讲述历史兴亡的道理。刘邦因此让陆贾总结秦亡汉兴的原因，陆贾撰成《新语》。后来南越王赵佗建立政权，陆贾又奉命出使南越，以外交方式稳定汉与南越关系。陆贾的经历体现了汉初从战争向治理转型过程中，文化与外交的重要作用。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%86%E8%B4%BE%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8A%9D%E5%88%98%E9%82%A6%E9%87%8D%E8%A7%86%E6%96%87%E5%8C%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -7934,7 +7934,7 @@
       "story": {
         "title": "劝迁长安定都",
         "content": "刘敬原本是齐地人，曾在汉军中担任基层职务。刘邦准备定都洛阳时，刘敬提出反对意见，认为洛阳虽然地理位置重要，却不如关中拥有险要地势和充足资源。他建议刘邦迁都长安，以关中作为统治天下的根基。刘邦采纳了这一建议，并最终将都城迁往长安。刘敬后来还提出与匈奴采取和亲政策等建议，对西汉早期的国家战略产生影响。虽然刘敬并非汉初最显赫的人物，但他关于都城与边疆政策的判断，对西汉政治格局产生了深远影响。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E6%95%AC%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8A%9D%E8%BF%81%E9%95%BF%E5%AE%89%E5%AE%9A%E9%83%BD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8047,7 +8047,7 @@
       "story": {
         "title": "推荐陈平入汉",
         "content": "魏无知是刘邦集团早期的重要谋臣之一。楚汉战争时期，陈平来到汉军阵营后，因为过去曾在魏王和项羽阵营中任职，受到一些人的质疑。魏无知却向刘邦推荐陈平，认为用人应看重其才能，而不应因为过去的经历轻易否定。刘邦因此继续重用陈平。后来陈平成为西汉初年最重要的谋臣之一，多次帮助刘邦解决政治和军事危机。魏无知本人虽然没有留下特别显赫的功绩，却因为识人和荐才而被记入史册。他的故事体现了汉初政治集团重视人才实际能力的一面。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%AD%8F%E6%97%A0%E7%9F%A5%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8E%A8%E8%8D%90%E9%99%88%E5%B9%B3%E5%85%A5%E6%B1%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8154,7 +8154,7 @@
       "story": {
         "title": "游说英布归汉",
         "content": "随何是刘邦阵营中的谋士，最著名的事迹是出使淮南游说英布。楚汉战争中，英布原本是项羽的重要部将，如果继续支持项羽，汉军将面临更大压力。随何奉刘邦之命前往淮南，通过分析形势和利益关系，说服英布脱离项羽、转而支持刘邦。英布最终起兵反楚，对项羽形成牵制。随何没有率领大军作战，却通过外交和游说改变了楚汉双方的力量关系。他的故事体现了楚汉战争并非只有战场决胜，政治说服、阵营争取同样能够影响战争走向。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9A%8F%E4%BD%95%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B8%B8%E8%AF%B4%E8%8B%B1%E5%B8%83%E5%BD%92%E6%B1%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8287,7 +8287,7 @@
       "story": {
         "title": "推崇黄老之治",
         "content": "窦太后是汉文帝皇后、汉景帝母亲，也是西汉早期极具影响力的政治人物。汉文帝、汉景帝时期，朝廷总体采取休养生息政策，黄老思想受到重视。窦太后本人尤其推崇黄老之学，对朝廷政治和皇室成员产生了影响。她还曾反对过分强调儒家经典的政治主张，主张维持汉初较为宽松的治理方式。到了汉景帝时期，窦太后仍然具有很强的政治影响力。她的经历体现了西汉前期从战争恢复到稳定发展的时代特点，也反映了皇太后在汉代政治中的重要地位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%AA%A6%E5%A4%AA%E5%90%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E6%8E%A8%E5%B4%87%E9%BB%84%E8%80%81%E4%B9%8B%E6%B2%BB%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8414,7 +8414,7 @@
       "story": {
         "title": "平定七国之乱",
         "content": "窦婴是汉景帝时期的重要将领和外戚人物。七国之乱爆发后，汉景帝任命窦婴为大将军，负责统筹平叛军事行动。窦婴推荐周亚夫担任主将，最终汉军击败吴楚联军，七国之乱被平定。战争结束后，窦婴进入朝廷核心，后来成为汉武帝初期的重要政治人物。他与田蚡等人存在政治矛盾，最终卷入复杂的宫廷斗争。窦婴一生既有军事功劳，也深度参与汉代政治，其经历连接了汉景帝时期的中央集权强化与汉武帝初期的政治变化。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%AA%A6%E5%A9%B4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B9%B3%E5%AE%9A%E4%B8%83%E5%9B%BD%E4%B9%8B%E4%B9%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8551,7 +8551,7 @@
       "story": {
         "title": "直谏吴王谋反",
         "content": "袁盎是汉文帝、汉景帝时期著名的直臣，以敢于进谏闻名。七国之乱前，吴王刘濞势力日益强大，朝廷内部对如何处理诸侯问题意见不一。袁盎曾提出限制诸侯势力的建议，也曾因政治冲突受到牵连。后来吴王起兵反叛，袁盎参与朝廷处理叛乱后的政局。袁盎性格直率，经常直接指出皇帝和权臣的问题，因此既受到重视，也容易得罪权贵。他的故事展现了文景时期政治环境中“直谏”与权力斗争之间的张力，是汉初士大夫政治的重要人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%A2%81%E7%9B%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%9B%B4%E8%B0%8F%E5%90%B4%E7%8E%8B%E8%B0%8B%E5%8F%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8691,7 +8691,7 @@
       "story": {
         "title": "严惩邓通失礼",
         "content": "申屠嘉是汉文帝、汉景帝时期的重要大臣，曾担任丞相，以严守礼法著称。汉文帝宠臣邓通曾在朝廷中受到特殊待遇，行为有时不合臣下礼仪。申屠嘉对此非常不满，曾准备依法惩治邓通，以维护朝廷礼制。汉文帝虽然最终保护了邓通，但申屠嘉坚持维护丞相权威和朝廷制度的态度给人留下深刻印象。申屠嘉没有显赫的军事功绩，却代表了文景时期官僚制度逐渐成熟的一面。他的故事也体现了皇帝宠臣与传统官僚权力之间的矛盾。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%94%B3%E5%B1%A0%E5%98%89%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%A5%E6%83%A9%E9%82%93%E9%80%9A%E5%A4%B1%E7%A4%BC%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8818,7 +8818,7 @@
       "story": {
         "title": "细柳营严守军令",
         "content": "周亚夫是周勃之子，也是西汉著名将领。汉文帝后期，匈奴入侵，周亚夫负责驻守细柳。文帝前往军营慰问军队时，其他营地很快放行，而细柳营却严格执行军令，即使皇帝到来，也必须按照军中规定行事。文帝因此认为周亚夫是真正能够带兵打仗的将领。后来七国之乱爆发，周亚夫被任命为太尉，采取坚守战略，最终击败吴楚联军。晚年他因政治问题受到猜疑，最终绝食而死。周亚夫的一生体现了“治军严整”与政治悲剧并存的特点。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%91%A8%E4%BA%9A%E5%A4%AB%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%BB%86%E6%9F%B3%E8%90%A5%E4%B8%A5%E5%AE%88%E5%86%9B%E4%BB%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -8937,7 +8937,7 @@
       "story": {
         "title": "宠臣铸钱失势",
         "content": "邓通是汉文帝宠信的近臣，以善于划船和侍奉皇帝受到宠爱。汉文帝曾给予他极高待遇，甚至允许他在蜀郡开采铜矿并铸造钱币。由于邓通获得特殊权力，民间一度流通带有“邓通”相关称呼的钱币。汉文帝去世后，邓通失去靠山，汉景帝对他并不亲近。后来邓通因债务和政治处境迅速衰落，最终贫困而死。邓通的经历形成鲜明反差：他曾是皇帝身边最受宠信的人，却在皇帝去世后迅速失去一切，成为汉代宫廷宠臣命运无常的代表。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%82%93%E9%80%9A%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%A0%E8%87%A3%E9%93%B8%E9%92%B1%E5%A4%B1%E5%8A%BF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9055,7 +9055,7 @@
       "story": {
         "title": "外戚登上丞相位",
         "content": "田蚡是汉景帝皇后王娡的弟弟，汉武帝即位后成为重要外戚。汉武帝年轻时，田蚡逐渐掌握朝廷权力，并最终担任丞相。他善于利用皇帝对儒学和中央集权的支持，推动相关政治力量进入朝廷。田蚡与窦婴之间存在明显的政治竞争，两人的矛盾最终成为汉武帝初期朝廷斗争的重要组成部分。田蚡死后，其政治影响迅速下降。田蚡的经历体现了汉武帝初期外戚、功臣和新兴政治力量之间的权力重新分配，也反映了汉代外戚政治逐渐发展的趋势。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%94%B0%E8%9A%A1%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%96%E6%88%9A%E7%99%BB%E4%B8%8A%E4%B8%9E%E7%9B%B8%E4%BD%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9146,7 +9146,7 @@
       "story": {
         "title": "上书直陈秦弊",
         "content": "贾山是汉文帝时期的文臣，以敢于批评政治而知名。他曾上书讨论秦朝灭亡的原因，认为秦朝统治过于严苛，法律和赋役给百姓带来沉重负担，因此最终导致国家迅速崩溃。贾山的言论并非单纯讨论历史，而是借秦亡警示汉朝统治者。他主张吸取秦朝覆亡的教训，实行较为宽缓的政治。汉文帝时期本就重视休养生息，因此贾山的观点与当时政治环境相契合。虽然贾山并非汉代最显赫的大臣，但他的文章体现了早期汉代政治对“秦亡教训”的持续反思。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B4%BE%E5%B1%B1%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%8A%E4%B9%A6%E7%9B%B4%E9%99%88%E7%A7%A6%E5%BC%8A%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9257,7 +9257,7 @@
       "story": {
         "title": "白首难逢明主",
         "content": "冯唐是汉文帝时期的官员，以直言和识才闻名。他曾向汉文帝谈论赵国名将李齐的故事，并指出文帝在用将方面存在问题。汉文帝后来询问边防军事，冯唐直言皇帝对将领的约束过多，可能影响他们发挥才能。文帝接受意见后，任命魏尚重新担任边将。冯唐后来长期未得到重用，到了汉武帝时期仍未能真正施展才能。后世因此以“冯唐易老”比喻有才华却生不逢时的人。冯唐的故事之所以流传至今，正是因为它浓缩了古代士人对机遇与才能的感慨。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%86%AF%E5%94%90%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%99%BD%E9%A6%96%E9%9A%BE%E9%80%A2%E6%98%8E%E4%B8%BB%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9386,7 +9386,7 @@
       "story": {
         "title": "梁王墓中求生",
         "content": "韩安国是汉景帝、汉武帝时期的重要政治人物，早年曾在梁国任职，以辩才和政治才能受到重视。后来他因受到诬陷而被关押，甚至一度面临生命危险。相传狱吏田甲羞辱他时，他曾表示自己不会永远处于困境之中。后来韩安国重新获得机会，最终进入中央朝廷并担任重要官职。汉武帝时期，他还参与处理对匈奴的政策。韩安国的经历体现了汉代官场中个人命运的巨大变化，也展现了他善于忍耐、把握机会的政治性格。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9F%A9%E5%AE%89%E5%9B%BD%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%A2%81%E7%8E%8B%E5%A2%93%E4%B8%AD%E6%B1%82%E7%94%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9529,7 +9529,7 @@
       "story": {
         "title": "飞将军守边",
         "content": "李广是西汉著名边将，长期负责抵御匈奴。由于他熟悉边塞环境、作战勇敢，匈奴人称他为“飞将军”，对其颇为忌惮。李广曾多次率军与匈奴作战，留下许多传奇故事，其中包括射杀猛虎、以少量兵力震慑敌军等。可是李广虽然勇名远播，却始终没有获得与功劳相称的封侯机会。晚年参加漠北之战时，他因军队迷路而未能及时参战，最终自杀。李广的故事兼具英雄色彩与悲剧意味，成为中国历史上“名将难封”的经典形象。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%B9%BF%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A3%9E%E5%B0%86%E5%86%9B%E5%AE%88%E8%BE%B9%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9670,7 +9670,7 @@
       "story": {
         "title": "治军严整守边",
         "content": "程不识是汉武帝时期的重要边将，与李广齐名。与李广强调灵活机动不同，程不识治军非常严格，军队行军、驻营、巡逻都有明确规定，夜间尤其加强戒备，因此很少遭到匈奴突然袭击。虽然这种作风不如李广的传奇战法那样引人注目，却具有很强的稳定性和纪律性。汉代边防环境复杂，程不识长期承担防御匈奴的任务。他与李广的不同，也常被后人用来比较两种截然不同的军事风格：李广重勇略，程不识重纪律。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%A8%8B%E4%B8%8D%E8%AF%86%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B2%BB%E5%86%9B%E4%B8%A5%E6%95%B4%E5%AE%88%E8%BE%B9%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9787,7 +9787,7 @@
       "story": {
         "title": "直言不阿汲黯",
         "content": "汲黯是汉武帝时期著名的直臣，以性格刚正、敢于直谏闻名。他担任主爵都尉等职务时，经常直接批评皇帝和权臣，从不因为对方地位高而改变自己的态度。汉武帝曾感叹汲黯性格过于耿直，甚至认为他像一个“社稷之臣”，却又难以完全重用。汲黯还曾批评张汤等人的严刑峻法，认为治理国家不应只依靠法律威慑。他的一生多次升降，却始终坚持自己的政治原则。汲黯因此成为汉代“直臣”形象的重要代表。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B1%B2%E9%BB%AF%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%9B%B4%E8%A8%80%E4%B8%8D%E9%98%BF%E6%B1%B2%E9%BB%AF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -9909,7 +9909,7 @@
       "story": {
         "title": "捐羊助国",
         "content": "卜式原本是经营畜牧业的普通人，以放羊积累财富。汉武帝时期，国家长期进行对匈奴战争，财政压力巨大。卜式主动向朝廷捐出大量财产，表示愿意帮助国家解决军费问题。朝廷起初并不相信他的动机，后来才逐渐认识到他的诚意。卜式还曾建议重视农业生产、减少商业投机，对汉武帝时期的经济政策提出自己的看法。由于他的财富来自长期经营畜牧业，他的经历也成为汉代社会中普通人通过生产积累财富、再参与国家事务的特殊案例。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8D%9C%E5%BC%8F%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8D%90%E7%BE%8A%E5%8A%A9%E5%9B%BD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10035,7 +10035,7 @@
       "story": {
         "title": "白衣拜相",
         "content": "公孙弘出身并不显赫，年轻时曾担任小吏，后来开始学习《春秋公羊传》。汉武帝推行新的政治政策后，公孙弘凭借儒学才能受到重用，逐渐进入朝廷核心。后来他担任御史大夫，又成为汉武帝时期重要的丞相。公孙弘主张尊崇儒术、加强中央集权，同时也善于根据现实政治调整自己的立场。他在位时参与建立太学等文化制度，对儒学进入国家政治体系发挥了作用。公孙弘的经历体现了汉武帝时期选拔人才方式的变化，也代表了儒生从地方走向帝国政治核心的道路。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%85%AC%E5%AD%99%E5%BC%98%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%99%BD%E8%A1%A3%E6%8B%9C%E7%9B%B8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10170,7 +10170,7 @@
       "story": {
         "title": "从狱吏到廷尉",
         "content": "张汤出身并不显赫，早年曾参与司法事务，后来凭借处理案件的能力逐渐得到汉武帝重用。他担任廷尉后，参与制定和执行大量法律，成为汉武帝加强中央权力的重要司法官员。张汤善于揣摩皇帝意图，也与桑弘羊等人共同参与国家政策。由于他执法严厉、政治手腕强硬，在朝廷中树敌很多。后来有人揭发他的罪行，张汤受到调查，最终自杀。张汤的一生体现了汉武帝时期国家机器不断强化的一面，也反映了酷吏政治中“权力越大、政治风险越高”的特点。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E6%B1%A4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%8E%E7%8B%B1%E5%90%8F%E5%88%B0%E5%BB%B7%E5%B0%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10280,7 +10280,7 @@
       "story": {
         "title": "推行盐铁官营",
         "content": "桑弘羊是汉武帝时期著名的经济官员，长期参与国家财政政策。他主张通过盐铁官营、均输和平准等制度增加国家财政收入，以支持对匈奴战争以及庞大的国家开支。桑弘羊并不是单纯的财政执行者，而是汉武帝经济政策的重要参与者。汉昭帝时期，围绕盐铁官营是否应该继续，朝廷展开著名的“盐铁之议”，桑弘羊坚持国家控制重要经济资源。后来霍光等人掌权，桑弘羊因政治斗争被杀。其一生体现了汉代国家财政体系从传统税收向国家经济干预发展的过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A1%91%E5%BC%98%E7%BE%8A%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8E%A8%E8%A1%8C%E7%9B%90%E9%93%81%E5%AE%98%E8%90%A5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10403,7 +10403,7 @@
       "story": {
         "title": "推行推恩令",
         "content": "主父偃是汉武帝时期的重要谋臣，以善于提出政治策略闻名。他最著名的建议是“推恩令”，通过允许诸侯王将封地分封给自己的子弟，使原本庞大的诸侯国逐渐分散，从而削弱地方诸侯对中央的威胁。这一政策没有直接废除诸侯，却有效改变了诸侯国的政治结构。主父偃因此受到汉武帝重用，一度权势很大。但他的政治风格强硬，也因此得罪许多权贵。后来有人控告他受贿等罪行，汉武帝下令将其处死。主父偃的一生体现了汉武帝加强中央集权的政治过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%BB%E7%88%B6%E5%81%83%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8E%A8%E8%A1%8C%E6%8E%A8%E6%81%A9%E4%BB%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10505,7 +10505,7 @@
       "story": {
         "title": "与张汤定律",
         "content": "赵禹是汉武帝时期的重要司法官员，与张汤共同参与法律制度建设。他长期负责处理刑狱案件，并参与制定新的法律规范。汉武帝时期，随着中央集权加强，国家对法律和官僚体系的控制也越来越严密，赵禹正是在这一背景下受到重用。与张汤相比，赵禹在史书中的个人故事较少，但他的主要贡献集中在司法制度建设方面。他参与制定法律，使汉代法律体系更加细密，同时也推动了汉武帝时期酷吏政治的发展。赵禹因此成为理解西汉中期司法制度和政治治理方式的重要人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B5%B5%E7%A6%B9%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%8E%E5%BC%A0%E6%B1%A4%E5%AE%9A%E5%BE%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10606,7 +10606,7 @@
       "story": {
         "title": "从贫寒到御史大夫",
         "content": "儿宽出身贫寒，早年曾以耕作等方式谋生，后来进入学术领域学习儒家经典。他受到儒生孔安国等人的赏识，逐渐进入汉代官僚体系。汉武帝时期，儿宽参与《左传》等经典的学术讨论，并在地方和中央担任官职。他后来担任御史大夫，参与国家财政与礼制事务。儿宽为人宽厚，重视农业和百姓生活，在汉武帝时期较为严厉的政治环境中显得格外不同。他的经历体现了汉代察举、经学与官僚制度结合后，普通士人通过学术进入国家权力体系的过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%84%BF%E5%AE%BD%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%8E%E8%B4%AB%E5%AF%92%E5%88%B0%E5%BE%A1%E5%8F%B2%E5%A4%A7%E5%A4%AB%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10733,7 +10733,7 @@
       "story": {
         "title": "将门拜相终被杀",
         "content": "公孙贺出身军事世家，早年长期担任汉武帝身边的将领，曾参与对匈奴作战。他的妻子卫君孺是卫皇后的姐姐，因此公孙贺也成为外戚集团的重要人物。随着卫氏家族势力上升，他从军事将领逐渐进入中央政坛，后来担任丞相。然而汉武帝晚年政治环境日益紧张，巫蛊之祸爆发后，公孙贺父子受到牵连。公孙贺最终被捕入狱并死于狱中。这个结局显示，即使身居丞相、拥有皇亲关系，在汉武帝晚年的政治高压环境下也难以自保。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%85%AC%E5%AD%99%E8%B4%BA%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B0%86%E9%97%A8%E6%8B%9C%E7%9B%B8%E7%BB%88%E8%A2%AB%E6%9D%80%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10871,7 +10871,7 @@
       "story": {
         "title": "一言救太子",
         "content": "田千秋原本只是一个地位并不显赫的官员。汉武帝晚年发生巫蛊之祸，太子刘据起兵失败并自杀，朝廷上下陷入巨大震动。田千秋上书，认为太子当时的行为可能是因为受到奸臣逼迫，并请求皇帝重新调查。汉武帝看到奏书后开始反思此前的决定，最终对巫蛊之祸进行了重新处理，并任命田千秋为大鸿胪，后来又让他担任丞相。田千秋因此成为汉武帝晚年政治转折中的重要人物。他的故事体现了一名普通官员因一次直言而改变政治局势的历史偶然性。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%94%B0%E5%8D%83%E7%A7%8B%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%80%E8%A8%80%E6%95%91%E5%A4%AA%E5%AD%90%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -10994,7 +10994,7 @@
       "story": {
         "title": "匈奴王子入汉",
         "content": "金日磾原本是匈奴休屠王的太子，因故进入汉朝，后来受到汉武帝重用。他并没有因为出身匈奴而被排斥，反而凭借谨慎、忠诚和能力成为皇帝近臣。金日磾长期负责侍从皇帝，对宫廷礼仪和安全非常谨慎。汉武帝晚年，他与霍光、上官桀等共同接受托孤，成为辅佐昭帝的重要大臣。金日磾去世后获得极高荣誉。他的经历尤其具有象征意义：一位来自匈奴贵族的人最终成为汉帝国核心官僚，体现了汉代多民族政治与帝国整合的一面。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%87%91%E6%97%A5%E7%A3%BE%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8C%88%E5%A5%B4%E7%8E%8B%E5%AD%90%E5%85%A5%E6%B1%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11102,7 +11102,7 @@
       "story": {
         "title": "巫蛊之祸元凶",
         "content": "江充原本与赵王刘彭祖关系密切，后来因得罪赵王而转投汉朝，并受到汉武帝重用。汉武帝晚年十分猜忌巫蛊之术，江充负责调查宫廷中的巫蛊案件。他借机扩大调查范围，并与太子刘据产生严重冲突。太子担心遭到陷害，最终起兵反抗，导致著名的巫蛊之祸。江充随后被太子一方杀死，但政治危机并未停止，刘据最终兵败自杀，大量官员和百姓受到牵连。江充的故事成为汉武帝晚年政治高压与宫廷猜忌的代表，也直接改变了西汉皇位继承格局。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%B1%9F%E5%85%85%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B7%AB%E8%9B%8A%E4%B9%8B%E7%A5%B8%E5%85%83%E5%87%B6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11209,7 +11209,7 @@
       "story": {
         "title": "负薪读书入仕",
         "content": "朱买臣早年生活贫困，以砍柴为生，却坚持读书。他的妻子认为他没有出息，最终离开了他。后来朱买臣通过学习《春秋》等经学获得机会，被推荐进入朝廷，并逐渐得到汉武帝重用。回到故乡时，他已经成为官员，早年离弃他的妻子看到他的变化后试图复合，但朱买臣拒绝了她。这个故事后来成为中国传统文化中“贫寒读书、最终显达”的经典形象。虽然后世文学不断加工这一故事，但朱买臣本人确有其人，其经历体现了汉代经学人才通过学习进入仕途的社会可能性。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9C%B1%E4%B9%B0%E8%87%A3%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%B4%9F%E8%96%AA%E8%AF%BB%E4%B9%A6%E5%85%A5%E4%BB%95%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11305,7 +11305,7 @@
       "story": {
         "title": "出使南越定交",
         "content": "严助是汉武帝时期重要的文臣，以辞赋和政治才能受到重视。汉武帝希望加强对南方地区的控制时，严助奉命前往会稽等地处理军事与地方事务。他还参与处理汉朝与南越之间的政治关系，在南方事务中发挥作用。严助受到汉武帝宠信，一度成为朝廷中较为活跃的年轻官员。但后来因淮南王刘安事件受到牵连，最终被处死。严助的经历连接了汉武帝时期中央集权、南方治理与宫廷政治，也体现了当时文臣不仅参与文学和礼仪事务，也开始承担复杂的地方与外交任务。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%A5%E5%8A%A9%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%87%BA%E4%BD%BF%E5%8D%97%E8%B6%8A%E5%AE%9A%E4%BA%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11401,7 +11401,7 @@
       "story": {
         "title": "一曲荐入宫廷",
         "content": "李延年是汉武帝时期著名乐人，以音乐才能受到皇帝赏识。他擅长歌舞和创作，尤其受到汉武帝喜爱。李延年曾为汉武帝歌咏自己的妹妹，称其“北方有佳人”，使汉武帝产生兴趣，后来他的妹妹被纳入宫中，成为后来著名的李夫人。李延年本人也因此得到显贵地位。音乐让他从普通乐人进入宫廷权力中心，但这种地位高度依赖皇帝宠信。后来李夫人去世，李氏家族失去宠爱，李延年及其家族最终因政治牵连而覆灭。他的故事展现了汉武帝宫廷中音乐、宠幸与政治之间的特殊联系。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%BB%B6%E5%B9%B4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%80%E6%9B%B2%E8%8D%90%E5%85%A5%E5%AE%AB%E5%BB%B7%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11517,7 +11517,7 @@
       "story": {
         "title": "浚稽山兵败降匈",
         "content": "李陵是西汉名将李广的孙子，年轻时担任将领。汉武帝时期，他率领五千步兵深入匈奴腹地，途中遭遇单于主力。李陵军队人数远少于敌军，却依靠严密阵形和强弩连续击退匈奴。最终因援军未至、箭矢耗尽，李陵被迫投降。汉武帝最初认为他已经战死，后来得知降敌后大怒，将其家族处置。司马迁曾为李陵辩护，因此遭受宫刑。李陵后来长期留在匈奴，未能返回汉朝。他的故事既有名将困境，也反映了战争、忠诚与个人命运之间的复杂冲突。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E9%99%B5%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B5%9A%E7%A8%BD%E5%B1%B1%E5%85%B5%E8%B4%A5%E9%99%8D%E5%8C%88%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11643,7 +11643,7 @@
       "story": {
         "title": "远征大宛取汗血",
         "content": "李广利是汉武帝时期的重要将领，也是李夫人的兄长。汉武帝为了获得大宛的汗血马，曾两次派兵远征。第一次远征因准备不足而失败，李广利返回敦煌重新整军。第二次远征时，汉军准备充分，最终攻破大宛，迫使其交出良马。李广利因此获得巨大声望，并继续参与对匈奴的战争。但汉武帝晚年发生巫蛊之祸，李广利担心家族受到牵连，选择投降匈奴。后来他又被匈奴单于杀死。李广利的一生展现了汉武帝扩张政策以及宫廷政治对将领命运的影响。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%B9%BF%E5%88%A9%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%BF%9C%E5%BE%81%E5%A4%A7%E5%AE%9B%E5%8F%96%E6%B1%97%E8%A1%80%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11787,7 +11787,7 @@
       "story": {
         "title": "两度兵败受牵连",
         "content": "公孙敖是汉武帝时期的将领，早年因参与救援卫青而受到重用。他长期活跃于抗击匈奴的战争中，曾多次率军出征。公孙敖与卫青、李广等名将处于同一时代，但军事生涯并不顺利，曾因战败、延误等原因受到处罚。后来他又卷入巫蛊之祸相关案件，最终被处死。公孙敖的经历没有留下特别传奇的单场战役，却反映了汉武帝时期军功政治的另一面：将领可以因为一次战功迅速受到重用，也可能因为一次失败或政治牵连而失去一切。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%85%AC%E5%AD%99%E6%95%96%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%A4%E5%BA%A6%E5%85%B5%E8%B4%A5%E5%8F%97%E7%89%B5%E8%BF%9E%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -11927,7 +11927,7 @@
       "story": {
         "title": "平定南越有功",
         "content": "李息是汉武帝时期的重要将领，长期参与边疆军事行动。汉武帝积极扩张帝国版图时，李息曾参与对匈奴、南越等方向的军事事务。南越发生政治变故后，汉军准备进行军事干预，李息等将领承担了重要任务。虽然李息不像卫青、霍去病那样成为家喻户晓的名将，但他长期参与汉帝国的军事行动，是汉武帝时期扩张政策的重要执行者之一。他的经历体现了西汉中期军事体系逐渐扩大，帝国从北方边境向南方和西南地区持续扩展的历史过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E6%81%AF%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B9%B3%E5%AE%9A%E5%8D%97%E8%B6%8A%E6%9C%89%E5%8A%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12056,7 +12056,7 @@
       "story": {
         "title": "浑邪王战中败俘",
         "content": "赵破奴是汉武帝时期的著名将领，曾跟随卫青、霍去病参加对匈奴的战争。他后来独立领兵，曾率军深入匈奴地区并取得战果。一次北伐中，他率军深入敌境，却遭遇匈奴主力，最终兵败被俘。多年后赵破奴逃回汉朝，再次得到任用。此后他继续参加军事行动。赵破奴的一生经历了从成名、深入敌境到兵败被俘，再到重新归汉的巨大起伏。他的故事说明汉武帝时代的边疆战争充满风险，即使名将也可能在一次远征中遭遇失败。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B5%B5%E7%A0%B4%E5%A5%B4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B5%91%E9%82%AA%E7%8E%8B%E6%88%98%E4%B8%AD%E8%B4%A5%E4%BF%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12158,7 +12158,7 @@
       "story": {
         "title": "与李陵同军出征",
         "content": "苏建是汉武帝时期的将领，曾担任边郡太守并参与对匈奴战争。他曾与赵信等人共同领兵出塞，但军队遭遇匈奴主力后损失惨重。后来苏建又与李陵的家族有军事联系，成为汉武帝时期北方战争中的重要人物。苏建的军事生涯不像卫青、霍去病那样辉煌，却经历了汉军在草原战争中的真实困难。他的故事能够帮助人们理解：汉武帝时期汉军虽然不断取得胜利，但深入草原作战仍然需要面对补给、地形和兵力等巨大风险。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8B%8F%E5%BB%BA%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%8E%E6%9D%8E%E9%99%B5%E5%90%8C%E5%86%9B%E5%87%BA%E5%BE%81%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12269,7 +12269,7 @@
       "story": {
         "title": "北海牧羊十九年",
         "content": "苏武是汉武帝时期出使匈奴的使者。出使期间，匈奴内部发生政变，苏武被扣留。匈奴单于多次试图迫使他投降，但苏武始终拒绝，并表示自己作为汉朝使者不能背叛国家。后来他被流放到北海牧羊，长期与汉朝隔绝。多年以后，汉匈关系发生变化，苏武终于获准返回汉朝。据传统记载，他被扣留长达十九年。回国时，他仍然坚持汉使身份。苏武的故事成为中国传统文化中忠贞不屈的经典形象，也使“苏武牧羊”成为流传千年的历史故事。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%8B%8F%E6%AD%A6%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8C%97%E6%B5%B7%E7%89%A7%E7%BE%8A%E5%8D%81%E4%B9%9D%E5%B9%B4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12392,7 +12392,7 @@
       "story": {
         "title": "出使匈奴辅苏武",
         "content": "常惠是西汉重要外交人物，曾作为苏武出使匈奴的副使，一同被扣留。苏武被困匈奴多年期间，常惠也长期滞留异域。后来汉匈关系变化，常惠终于返回汉朝，并因熟悉匈奴情况而受到重用。汉宣帝时期，他多次参与对匈奴的外交和军事事务，对汉朝经营西域也发挥了作用。常惠不像苏武那样因为“牧羊”故事而闻名，但他的经历同样体现了汉代使者长期承担外交风险的现实。他后来参与处理西域事务，成为连接汉朝、匈奴与西域的重要人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%B8%B8%E6%83%A0%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%87%BA%E4%BD%BF%E5%8C%88%E5%A5%B4%E8%BE%85%E8%8B%8F%E6%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12521,7 +12521,7 @@
       "story": {
         "title": "计杀楼兰王",
         "content": "傅介子是汉昭帝、汉宣帝时期著名的外交使者。西域楼兰曾因受匈奴影响而对汉朝使者不够友好，傅介子奉命前往处理。为了维护汉朝在西域的威望，他以赠送黄金为名接近楼兰王，随后发动突然袭击，将其刺杀。傅介子完成任务后迅速返回，并向汉廷报告。汉朝随后重新扶立亲汉势力，巩固了对西域的影响。傅介子的故事极具传奇色彩，却有明确史书记载。他以外交使节身份采取非常手段，成为汉代经营西域过程中极具代表性的人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%82%85%E4%BB%8B%E5%AD%90%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%AE%A1%E6%9D%80%E6%A5%BC%E5%85%B0%E7%8E%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12632,7 +12632,7 @@
       "story": {
         "title": "郅支城下定西域",
         "content": "甘延寿是汉宣帝时期的西域将领，曾任西域都护府相关职务。郅支单于在中亚地区建立势力，并不断威胁汉朝西域秩序。甘延寿与副校尉陈汤决定出兵讨伐郅支单于。两人克服朝廷最初意见不统一等问题，率军远征，最终攻破郅支城并杀死郅支单于。此战扩大了汉朝在西域的威望，也成为中国古代远距离军事行动的著名案例。甘延寿的故事与陈汤密不可分，两人共同完成了汉宣帝时期对西域的重要军事行动。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%94%98%E5%BB%B6%E5%AF%BF%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%83%85%E6%94%AF%E5%9F%8E%E4%B8%8B%E5%AE%9A%E8%A5%BF%E5%9F%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12750,7 +12750,7 @@
       "story": {
         "title": "矫制出兵斩郅支",
         "content": "陈汤是汉宣帝时期的重要将领，最著名的事迹是与甘延寿共同远征郅支单于。郅支单于在西域建立政权，对汉朝控制的西域地区形成威胁。陈汤认为不能继续坐视其发展，于是与甘延寿率军出击。两人最终攻破郅支城，杀死郅支单于，并向朝廷报告战果。陈汤后来以一句著名的话强调汉朝军队讨伐敌人的意义。虽然这次行动带有先行动后请示的特点，但其军事成果得到肯定。陈汤因此成为汉代西域战争中极具代表性的将领。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E6%B1%A4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%9F%AB%E5%88%B6%E5%87%BA%E5%85%B5%E6%96%A9%E9%83%85%E6%94%AF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12864,7 +12864,7 @@
       "story": {
         "title": "首任西域都护",
         "content": "郑吉是汉宣帝时期经营西域的重要官员。汉朝长期经营西域后，需要建立更稳定的行政和军事管理体系。郑吉曾担任西域都护等职，负责统筹西域诸国事务，并参与对匈奴势力的军事行动。汉宣帝时期，匈奴内部发生分裂，郑吉抓住机会加强汉朝在西域的影响。后来汉朝正式设置西域都护，郑吉成为首任都护。西域都护的建立标志着汉朝对西域的治理进一步制度化。郑吉因此成为汉朝经营西域历史上的关键人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%83%91%E5%90%89%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A6%96%E4%BB%BB%E8%A5%BF%E5%9F%9F%E9%83%BD%E6%8A%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -12987,7 +12987,7 @@
       "story": {
         "title": "开通西南夷道路",
         "content": "唐蒙是汉武帝时期负责西南地区事务的重要官员。汉朝希望加强对夜郎等西南地区的控制时，唐蒙奉命前往考察当地情况。他了解到当地与巴蜀之间存在贸易联系，于是向朝廷提出开发西南夷、修筑道路的建议。汉武帝采纳后，汉朝开始投入大量人力物力经营西南地区。唐蒙还参与道路建设和地方治理。虽然这一行动耗费巨大，引发了一定争议，但它推动了汉朝与西南地区之间的联系。唐蒙的故事体现了汉武帝时期帝国向西南扩张和区域整合的过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%94%90%E8%92%99%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%BC%80%E9%80%9A%E8%A5%BF%E5%8D%97%E5%A4%B7%E9%81%93%E8%B7%AF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13099,7 +13099,7 @@
       "story": {
         "title": "马邑诱击匈奴",
         "content": "王恢是汉武帝初期的重要将领和谋臣。汉朝希望改变长期被匈奴压制的局面，于是谋划马邑之谋，准备诱使匈奴单于进入汉军埋伏圈。王恢负责率军截击匈奴退路，但由于匈奴提前察觉，整个计划最终失败。王恢没有完成任务，后来受到严厉追究。马邑之谋虽然没有取得军事成果，却具有重要历史意义：它标志着汉武帝时期汉朝对匈奴政策开始从被动防御转向主动进攻。王恢也因此成为汉匈战争战略转折中的关键人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E6%81%A2%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A9%AC%E9%82%91%E8%AF%B1%E5%87%BB%E5%8C%88%E5%A5%B4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13206,7 +13206,7 @@
       "story": {
         "title": "六岁入主椒房",
         "content": "上官皇后是汉昭帝刘弗陵的皇后，也是中国历史上年龄极小的皇后之一。她出生于政治势力显赫的上官家族，年幼时便因为家族政治联姻进入宫廷。据记载，她六岁左右便被立为皇后，因此实际承担皇后职责的时间与普通成年皇后不同。汉昭帝去世后，上官皇后仍然保有尊贵地位。她的一生与霍光、上官桀等政治集团的斗争紧密相连。由于她长期处在复杂的宫廷政治之中，她的故事更多体现了西汉外戚与权臣政治，而不是个人主动参与政治决策。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%8A%E5%AE%98%E7%9A%87%E5%90%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E5%85%AD%E5%B2%81%E5%85%A5%E4%B8%BB%E6%A4%92%E6%88%BF%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13317,7 +13317,7 @@
       "story": {
         "title": "谋反霍光失败",
         "content": "上官桀是汉昭帝时期的重要权臣，也是上官皇后的祖父。霍光辅政后，上官桀原本与霍光共同掌握朝廷权力，但后来双方逐渐产生矛盾。上官桀联合桑弘羊等人，试图借助燕王刘旦的力量削弱霍光。最终事情败露，上官桀及其党羽被处死。此次政治斗争巩固了霍光在汉昭帝朝的权力，也使上官家族遭受重大打击。上官桀的故事反映了汉昭帝年幼时期，外戚、权臣与宗室围绕最高权力展开的激烈竞争。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%8A%E5%AE%98%E6%A1%80%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%B0%8B%E5%8F%8D%E9%9C%8D%E5%85%89%E5%A4%B1%E8%B4%A5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13440,7 +13440,7 @@
       "story": {
         "title": "霍氏败亡之祸",
         "content": "霍禹是霍光之子，汉昭帝时期霍氏家族权势达到顶峰。霍光去世后，霍氏仍然拥有巨大政治影响力，但随着汉宣帝逐渐加强皇权，霍氏与皇帝之间的矛盾越来越明显。霍禹继承父亲的爵位，却没有维持霍光时期的政治地位。霍显等人后来策划废立皇后，并进一步谋划政变。事情败露后，霍氏家族受到清算，霍禹也被迫自杀。霍禹的结局象征着霍氏外戚集团的彻底衰落，也体现汉宣帝时期皇权重新压倒权臣集团的过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9C%8D%E7%A6%B9%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%9C%8D%E6%B0%8F%E8%B4%A5%E4%BA%A1%E4%B9%8B%E7%A5%B8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13541,7 +13541,7 @@
       "story": {
         "title": "毒害许皇后疑案",
         "content": "霍显是霍光的妻子，也是霍氏家族后期权力斗争的重要人物。汉宣帝即位后，霍氏家族仍然希望通过皇后婚姻维持政治影响力。霍显的女儿霍成君后来成为皇后，而霍显被认为参与了与许平君之死有关的阴谋。许皇后在生产期间去世，后世史书记载将其死亡与霍显联系起来。霍显还积极参与霍氏家族的政治活动，并在霍氏谋反事件中受到牵连。她的故事集中体现了西汉后期外戚干政的危险，也反映了宫廷婚姻与政治权力之间的密切关系。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9C%8D%E6%98%BE%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%AF%92%E5%AE%B3%E8%AE%B8%E7%9A%87%E5%90%8E%E7%96%91%E6%A1%88%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13658,7 +13658,7 @@
       "story": {
         "title": "巧救皇曾孙",
         "content": "丙吉是汉宣帝刘询少年时期的重要保护者。巫蛊之祸后，刘询作为皇曾孙被关押在长安狱中。当时丙吉负责相关事务，他认为这个孩子身份特殊，于是安排可靠的人照顾刘询，并尽力保护他的生命安全。后来汉武帝下令释放宗室，刘询得以离开牢狱。多年以后，刘询登基成为汉宣帝，丙吉因此受到重用。丙吉并没有在刘询幼年时预知未来，但他在关键时刻保护了这个皇室血脉。后世因此把他的行为视为汉宣帝能够登上皇位的重要原因之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%99%E5%90%89%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B7%A7%E6%95%91%E7%9A%87%E6%9B%BE%E5%AD%99%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13766,7 +13766,7 @@
       "story": {
         "title": "辅佐宣帝中兴",
         "content": "魏相是汉宣帝时期的重要丞相，以谨慎稳健和善于治理闻名。汉宣帝即位后，经历霍氏专权、匈奴问题和国内治理等多重挑战，魏相积极协助皇帝整顿朝政。他重视农业生产、官吏治理和边疆政策，并与丙吉等大臣共同维护中央政权稳定。汉宣帝时期被后世称为“孝宣中兴”，魏相是这一时期的重要政治参与者之一。他不像霍光那样拥有压倒皇权的权势，而是以辅政和治理见长。魏相的故事体现了汉宣帝时期中央官僚体系逐渐恢复秩序的过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%AD%8F%E7%9B%B8%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%BE%85%E4%BD%90%E5%AE%A3%E5%B8%9D%E4%B8%AD%E5%85%B4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13868,7 +13868,7 @@
       "story": {
         "title": "以宽政治理颍川",
         "content": "黄霸是汉宣帝时期著名的地方官员，以治理颍川郡而闻名。他重视教化和农业生产，不仅依靠刑法维持秩序，也通过教育和道德规范改善地方社会。黄霸在任期间，颍川社会秩序逐渐稳定，百姓生活有所改善，因此受到汉宣帝重视。后来他进入中央并担任丞相。黄霸的治理方式与汉武帝时期严厉的政治风格形成对比，更体现汉宣帝时期“休养民力、重视教化”的特点。他因此成为中国古代地方治理史上“循吏”的代表人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%BB%84%E9%9C%B8%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%A5%E5%AE%BD%E6%94%BF%E6%B2%BB%E7%90%86%E9%A2%8D%E5%B7%9D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -13975,7 +13975,7 @@
       "story": {
         "title": "屯田平定羌乱",
         "content": "赵充国是汉宣帝时期著名边将，长期负责西北边疆事务。羌族地区发生叛乱后，朝廷准备大规模军事镇压。赵充国认为与其单纯依靠武力，不如先稳定局势、分化敌对力量，同时利用屯田解决军队长期驻防的粮食问题。他向汉宣帝提出“屯田”与军事并用的策略，最终逐渐平定羌乱。赵充国的军事思想不仅强调作战，也重视后勤、经济和地方治理。他因此成为中国古代边疆治理中“军事与屯田结合”的重要代表。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B5%B5%E5%85%85%E5%9B%BD%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B1%AF%E7%94%B0%E5%B9%B3%E5%AE%9A%E7%BE%8C%E4%B9%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14093,7 +14093,7 @@
       "story": {
         "title": "以儒学辅佐宣帝",
         "content": "萧望之是汉宣帝时期的重要儒臣，深受宣帝重视。他主张通过儒学和礼制改善政治，同时又能够结合现实处理国家事务。宣帝晚年，萧望之进入朝廷核心，成为太子刘奭的重要老师和政治支持者。宣帝去世后，萧望之辅佐汉元帝，但由于与宦官和其他权臣产生矛盾，逐渐失去政治优势。最终他受到排挤并自杀。萧望之的经历体现了西汉后期儒臣与宦官、外戚之间的权力冲突，也预示了汉元帝时期政治格局的变化。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%90%A7%E6%9C%9B%E4%B9%8B%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BB%A5%E5%84%92%E5%AD%A6%E8%BE%85%E4%BD%90%E5%AE%A3%E5%B8%9D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14206,7 +14206,7 @@
       "story": {
         "title": "宦官专权汉元帝",
         "content": "石显是汉元帝时期最有权势的宦官之一。汉元帝性格宽厚，对政务处理较多依赖近臣，石显因此逐渐掌握尚书机构的重要权力。他善于揣摩皇帝意图，并利用职务影响朝廷人事，使许多大臣受到排挤。萧望之等人便曾因与石显矛盾而遭到打击。石显的势力直到汉元帝去世后才迅速下降。汉成帝即位后，石显失去皇帝支持，最终被贬斥。石显的经历成为西汉后期宦官掌握中枢权力的典型案例。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%9F%B3%E6%98%BE%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%AE%A6%E5%AE%98%E4%B8%93%E6%9D%83%E6%B1%89%E5%85%83%E5%B8%9D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14347,7 +14347,7 @@
       "story": {
         "title": "从皇后到太皇太后",
         "content": "王政君是汉元帝皇后、汉成帝生母，也是西汉后期政治史上的重要人物。她最初出身并不显赫，却因偶然机会进入宫廷，后来成为皇后。汉成帝即位后，王氏家族迅速崛起，她的兄弟和亲族陆续进入朝廷核心。王政君本人长期处于最高后宫地位，却并不直接处理所有政务，但她的家族在其庇护下不断扩大影响。王莽正是王氏家族成员之一。王政君的一生连接了西汉皇权与王氏外戚势力的兴衰，也为后来王莽篡汉埋下了重要政治背景。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E6%94%BF%E5%90%9B%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E4%BB%8E%E7%9A%87%E5%90%8E%E5%88%B0%E5%A4%AA%E7%9A%87%E5%A4%AA%E5%90%8E%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14490,7 +14490,7 @@
       "story": {
         "title": "王氏外戚掌朝",
         "content": "王凤是王政君的弟弟，也是西汉后期最重要的外戚之一。汉成帝即位后，王氏家族迅速进入政治核心，王凤担任大司马大将军，长期掌握军政大权。他通过推荐和安排王氏成员进入重要职位，使王氏势力不断扩大。王凤在世时，王莽尚未成为最显赫的王氏成员，但已经开始进入政治舞台。王凤去世后，王氏权力由其他兄弟继续继承。王凤的政治生涯标志着西汉后期外戚势力高度膨胀，也为王莽最终掌权创造了条件。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E5%87%A4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%8E%8B%E6%B0%8F%E5%A4%96%E6%88%9A%E6%8E%8C%E6%9C%9D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14618,7 +14618,7 @@
       "story": {
         "title": "继承王氏权力",
         "content": "王音是王政君的弟弟、王凤之后王氏家族的重要成员。王凤去世后，王音继任大司马等重要职位，继续维持王氏外戚在朝廷中的影响力。他与其他王氏成员共同控制中央政治资源，使王家成为汉成帝时期最显赫的外戚集团之一。王音在政治上较为谨慎，没有像后来王莽那样主动塑造个人声望，但他所维持的权力结构使王氏家族能够继续发展。王音去世后，王氏权力又由王根等人承接。其经历是理解王莽崛起之前王氏外戚积累过程的重要一环。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E9%9F%B3%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%BB%A7%E6%89%BF%E7%8E%8B%E6%B0%8F%E6%9D%83%E5%8A%9B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14730,7 +14730,7 @@
       "story": {
         "title": "王氏五侯显贵",
         "content": "王根是王政君的弟弟，西汉后期王氏外戚的重要成员。王氏家族在汉成帝时期不断壮大，王根先后担任大司马等职位，成为朝廷权力核心。他曾经推荐王莽进入政治舞台，对王莽早期的发展产生了影响。王根在位期间，王氏家族已经形成庞大的政治网络，多个成员同时担任重要职位。虽然王根本人没有完成篡汉这样的历史转折，但他所处的时期正是王氏从外戚家族走向政治垄断的重要阶段。他的政治活动为后来王莽进一步掌权提供了基础。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E6%A0%B9%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%8E%8B%E6%B0%8F%E4%BA%94%E4%BE%AF%E6%98%BE%E8%B4%B5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14857,7 +14857,7 @@
       "story": {
         "title": "整理皇家典籍",
         "content": "刘向是西汉后期著名学者、目录学家和政治人物，出身汉室宗室。汉成帝时期，他受命整理皇家藏书，负责校勘大量先秦和汉代典籍，并撰写目录，为后来的《别录》奠定基础。他还写有《说苑》《新序》等作品，以历史故事劝诫统治者。刘向曾多次批评外戚势力和政治弊端，但由于王氏势力强大，他的政治主张没有得到充分施展。刘向的学术工作却对后世影响深远，他参与整理的大量典籍得以保存，对中国古代文献学发展具有重要意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E5%90%91%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%95%B4%E7%90%86%E7%9A%87%E5%AE%B6%E5%85%B8%E7%B1%8D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -14980,7 +14980,7 @@
       "story": {
         "title": "六艺校书成三统",
         "content": "刘歆是刘向之子，也是西汉末年重要的学者、目录学家和政治人物。他继承父亲整理典籍的事业，参与皇家藏书整理，并进一步发展目录学和经学研究。刘歆曾主持整理大量经典，对《七略》的形成具有重要作用，后世目录学深受其影响。他还提出“三统历”等历法思想，在天文学和经学领域都有活动。西汉末年政治动荡后，刘歆逐渐接近王莽集团，并最终支持王莽改制。刘歆的一生兼具学术与政治两面，是理解西汉末年知识阶层与政治变革关系的重要人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E6%AD%86%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%85%AD%E8%89%BA%E6%A0%A1%E4%B9%A6%E6%88%90%E4%B8%89%E7%BB%9F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15082,7 +15082,7 @@
       "story": {
         "title": "刚直执法守汉制",
         "content": "何武是西汉末年的重要官员，以刚直敢言著称。他曾担任刺史、御史大夫等职，处理地方和中央政务时强调依法办事。在王莽势力逐渐扩大之前，何武曾参与朝廷政治，并对一些外戚和权臣的行为提出批评。王莽篡汉后，何武没有积极附和新政权，最终受到排挤并被杀。何武的经历体现了西汉末年官僚集团内部对于王莽政治野心的不同态度。他虽然没有改变历史走向，却成为坚持汉室政治秩序的一位代表人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%BD%95%E6%AD%A6%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%88%9A%E7%9B%B4%E6%89%A7%E6%B3%95%E5%AE%88%E6%B1%89%E5%88%B6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15173,7 +15173,7 @@
       "story": {
         "title": "起兵讨伐王莽",
         "content": "翟义是西汉末年反对王莽的重要人物。王莽篡夺汉室政权、建立新朝后，各地反抗力量开始出现。翟义联合地方势力起兵，打出恢复汉朝的旗号，并拥立刘信为天子，试图推翻王莽政权。王莽迅速调集军队镇压，翟义最终战败被杀。这场起义虽然持续时间不长，却具有重要象征意义：它说明王莽建立的新朝并没有获得所有汉朝臣民的认可。翟义成为新朝建立初期最早公开举兵恢复汉室的代表人物之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%BF%9F%E4%B9%89%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%B5%B7%E5%85%B5%E8%AE%A8%E4%BC%90%E7%8E%8B%E8%8E%BD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15264,7 +15264,7 @@
       "story": {
         "title": "赤眉起义席卷山东",
         "content": "樊崇是新莽末年赤眉军的主要首领之一。王莽末年，山东地区发生严重灾荒，社会矛盾迅速激化，樊崇等人组织百姓起兵反抗。为了在战场上区分敌我，赤眉军以涂红眉毛作为标志，因此被称为“赤眉”。起义军不断壮大，后来进入长安，击败并杀死了更始帝刘玄，拥立刘盆子。赤眉军最终因内部管理、粮食和军事等问题走向失败，但其规模十分庞大，成为推翻新莽政权的重要力量。樊崇的故事体现了新莽末年社会危机的严重程度。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B5%A4%E7%9C%89%E5%86%9B%E6%A8%8A%E5%B4%87%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%B5%A4%E7%9C%89%E8%B5%B7%E4%B9%89%E5%B8%AD%E5%8D%B7%E5%B1%B1%E4%B8%9C%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15389,7 +15389,7 @@
       "story": {
         "title": "更始帝入主长安",
         "content": "刘玄是刘氏宗室，新莽末年绿林军起义后，被拥立为皇帝，史称更始帝。绿林军击败王莽军队后，刘玄进入政治中心，并逐渐取得对汉军的领导权。王莽政权灭亡后，刘玄进入长安，恢复汉朝名义上的统治。然而更始政权内部派系众多，刘玄缺乏有效的政治整合能力，关中局势迅速失控。赤眉军进入长安后，刘玄被迫投降，最终被杀。刘玄的经历体现了新莽覆灭后汉室复兴过程中内部权力混乱的局面，也为刘秀最终建立东汉创造了条件。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E7%8E%84%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E6%9B%B4%E5%A7%8B%E5%B8%9D%E5%85%A5%E4%B8%BB%E9%95%BF%E5%AE%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15507,7 +15507,7 @@
       "story": {
         "title": "赤眉拥立牧童帝",
         "content": "刘盆子是汉室宗亲，年幼时参加赤眉军。赤眉军进入关中后，为了建立名义上的汉室政权，从刘氏宗室中选择了年幼的刘盆子作为皇帝。刘盆子即位时年纪很小，实际权力掌握在樊崇等赤眉军首领手中。由于赤眉军缺乏稳定的政治治理能力，关中局势越来越混乱。后来赤眉军被刘秀的东汉军队击败，刘盆子投降。刘盆子没有真正掌握过国家权力，却成为新莽末年群雄争夺汉室正统的一个象征性人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%88%98%E7%9B%86%E5%AD%90%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E8%B5%A4%E7%9C%89%E6%8B%A5%E7%AB%8B%E7%89%A7%E7%AB%A5%E5%B8%9D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15624,7 +15624,7 @@
       "story": {
         "title": "据陇与汉争锋",
         "content": "隗嚣是新莽末年陇右地区的重要割据势力首领。天下大乱后，他在陇右建立自己的政治和军事力量，并在刘秀与其他割据势力之间反复权衡。起初隗嚣接受汉室名义，与刘秀保持联系，但随着双方利益冲突加剧，他逐渐采取独立立场。刘秀多次派军进攻陇右，隗嚣依靠当地地形顽强抵抗。后来隗嚣病死，其势力最终被东汉消灭。隗嚣的故事体现了东汉建立过程中地方割据势力与中央政权之间的长期博弈。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%9A%97%E5%9A%A3%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8D%AE%E9%99%87%E4%B8%8E%E6%B1%89%E4%BA%89%E9%94%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15736,7 +15736,7 @@
       "story": {
         "title": "据蜀称帝",
         "content": "公孙述是新莽末年割据蜀地的重要人物。他原本担任地方官，天下大乱后依靠蜀地险要地形建立自己的势力。后来公孙述在成都称帝，建立成家政权，与刘秀建立的东汉对抗。蜀地地形险要，公孙述凭借当地资源长期抵抗东汉。刘秀派遣大军进攻后，公孙述仍坚持抵抗，最终在成都城破时战死。公孙述政权虽然存在时间不长，却是东汉统一过程中最重要的地方割据势力之一。他的失败标志着刘秀基本完成全国统一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%85%AC%E5%AD%99%E8%BF%B0%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8D%AE%E8%9C%80%E7%A7%B0%E5%B8%9D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -15901,7 +15901,7 @@
       "story": {
         "title": "劝刘秀定关中",
         "content": "邓禹是刘秀建立东汉过程中最重要的功臣之一，年轻时便与刘秀相识。更始政权时期，邓禹判断刘秀具有建立长期政治事业的潜力，因此追随他北渡黄河。刘秀称帝后，邓禹率军进入关中，并提出先安定关中、逐步建立统治的战略。虽然后来关中战事经历波折，但邓禹始终是刘秀最信任的将领之一。东汉建立后，他位列云台二十八将之首。邓禹不仅有军事功绩，也参与东汉早期政治建设，是刘秀集团中文武兼备的重要人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%82%93%E7%A6%B9%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8A%9D%E5%88%98%E7%A7%80%E5%AE%9A%E5%85%B3%E4%B8%AD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16102,7 +16102,7 @@
       "story": {
         "title": "率军平定蜀地",
         "content": "吴汉是东汉开国名将，也是云台二十八将之一。刘秀建立东汉后，全国仍有大量割据势力没有被消灭。吴汉长期率军参与统一战争，尤其在讨伐公孙述的蜀地战争中担任重要指挥。蜀地地形复杂，战争十分艰苦，最终吴汉率军攻破成都，公孙述战死，蜀地归入东汉。吴汉作战果断，但史书也记载他有时处理军政事务较为严厉。作为刘秀的重要军事支柱，他为东汉完成全国统一发挥了关键作用。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%90%B4%E6%B1%89%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%8E%87%E5%86%9B%E5%B9%B3%E5%AE%9A%E8%9C%80%E5%9C%B0%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16275,7 +16275,7 @@
       "story": {
         "title": "大树将军安关中",
         "content": "冯异是刘秀麾下的重要将领，以谦让和善于治理闻名。昆阳之战后，他长期跟随刘秀作战，在河北、关中等地参与平定割据势力。冯异尤其擅长安抚地方百姓、整顿军队，因此刘秀派他镇守关中。每次将领们讨论功劳时，冯异常常独自坐在大树下，因此被称为“大树将军”。他不仅能够打仗，也重视地方治理，因此深得刘秀信任。冯异后来在东汉建立过程中持续发挥作用，是云台二十八将中兼具军事和政治才能的代表人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%86%AF%E5%BC%82%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%A7%E6%A0%91%E5%B0%86%E5%86%9B%E5%AE%89%E5%85%B3%E4%B8%AD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16434,7 +16434,7 @@
       "story": {
         "title": "少年将军定河北",
         "content": "耿弇年轻时便追随刘秀，是东汉开国名将中年纪较轻的一位。刘秀在河北发展势力时，耿弇提出先夺取地方郡县、建立稳定根据地的建议，并亲自率军作战。他在平定齐地等战争中表现出很强的军事才能，连续攻取多个城池，最终使东方大片地区归附刘秀。耿弇善于判断战场形势，刘秀曾高度评价他的军事才能。东汉建立后，他成为镇守北方的重要将领。耿弇的故事展现了东汉开国战争中年轻将领迅速成长的过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%80%BF%E5%BC%87%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B0%91%E5%B9%B4%E5%B0%86%E5%86%9B%E5%AE%9A%E6%B2%B3%E5%8C%97%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16578,7 +16578,7 @@
       "story": {
         "title": "河内固守保刘秀",
         "content": "寇恂是刘秀建立东汉过程中重要的地方官和军事人物。刘秀进入河北时，寇恂负责治理河内地区。他不仅迅速恢复地方秩序，还筹集粮草、组织军队，为刘秀提供了稳定的后方。刘秀在前线作战时，寇恂保证河内不失，使其成为刘秀的重要战略基地。后来寇恂进入中央任职，继续参与国家治理。寇恂的贡献不像前线将领那样显眼，却解决了战争中最关键的后勤和地方治理问题。他的故事说明一个政权的建立不仅依靠战场胜利，也依赖稳定的后方。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%AF%87%E6%81%82%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%B2%B3%E5%86%85%E5%9B%BA%E5%AE%88%E4%BF%9D%E5%88%98%E7%A7%80%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16711,7 +16711,7 @@
       "story": {
         "title": "率军攻克荆门",
         "content": "岑彭是东汉开国名将，早年曾效力于更始政权，后来归附刘秀。他长期参与南方统一战争，是刘秀平定荆州、巴蜀的重要军事指挥者。岑彭率军渡江、攻取战略要地，多次击败地方割据势力。后来他率军继续向蜀地推进，却遭到公孙述派出的刺客袭击，最终战死。岑彭的死对东汉统一战争造成重大损失，但他的军事行动为后来吴汉攻灭公孙述奠定了基础。岑彭的一生体现了东汉开国战争中将领长期深入前线、承担巨大风险的现实。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%B2%91%E5%BD%AD%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%8E%87%E5%86%9B%E6%94%BB%E5%85%8B%E8%8D%86%E9%97%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16849,7 +16849,7 @@
       "story": {
         "title": "重伤仍奋勇作战",
         "content": "贾复是刘秀麾下著名将领，也是云台二十八将之一。他早年跟随刘秀征战河北，在多次战斗中表现勇猛。一次战斗中，贾复受伤严重，但仍坚持作战，因此受到刘秀高度重视。后来他继续参加统一战争，逐渐成为刘秀集团的重要军事力量。东汉建立后，贾复逐渐减少直接领兵作战，转而参与朝廷政务。与许多开国将领不同，他最终能够平稳退出军事前线。贾复的故事突出表现了东汉开国将领的勇武形象，也体现了刘秀对功臣政治安排的谨慎。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%B4%BE%E5%A4%8D%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%87%8D%E4%BC%A4%E4%BB%8D%E5%A5%8B%E5%8B%87%E4%BD%9C%E6%88%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -16984,7 +16984,7 @@
       "story": {
         "title": "祭遵执法不避权贵",
         "content": "祭遵是刘秀麾下的重要将领，以严明军纪著称。早年作战时，他曾依法处理违反军令的人员，即使涉及刘秀亲近的人也不徇私情。刘秀因此更加信任他，认为他能够维护军队秩序。祭遵后来长期镇守北方边境，负责抵御匈奴和地方势力。东汉建立后，他继续担任重要军事职务，并最终战死军中。祭遵并不是依靠传奇战术闻名，而是以严守法度、军纪严明著称。他的故事体现了刘秀集团重视纪律和制度的一面。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%A5%AD%E9%81%B5%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%A5%AD%E9%81%B5%E6%89%A7%E6%B3%95%E4%B8%8D%E9%81%BF%E6%9D%83%E8%B4%B5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17102,7 +17102,7 @@
       "story": {
         "title": "联合刘秀起兵",
         "content": "李通是刘秀早期的重要支持者，也是刘秀的姐夫。新莽末年，李通积极谋划起兵反莽，并与刘秀取得联系。昆阳之战前后，刘秀集团逐渐形成，李通成为重要的政治和军事支持者。后来刘秀建立东汉，李通被封为大将军、固始侯等，进入开国功臣行列。与邓禹、吴汉等长期征战的将领不同，李通更多承担早期政治联络和军事组织工作。他与刘秀的亲属关系也使他成为东汉初年外戚功臣集团的重要人物。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E9%80%9A%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%81%94%E5%90%88%E5%88%98%E7%A7%80%E8%B5%B7%E5%85%B5%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17198,7 +17198,7 @@
       "story": {
         "title": "北征匈奴镇边",
         "content": "马成是东汉开国时期的重要将领，长期参与刘秀统一天下的战争。东汉建立后，北方边境仍然受到匈奴和其他势力威胁，马成承担镇守边疆的任务。他曾率军北上，与匈奴作战，并参与修筑和维护边防设施。马成不像邓禹、吴汉那样在开国战争中拥有极高知名度，但长期承担边疆军事任务，对东汉北部防线稳定具有实际意义。他的经历说明东汉建立后，战争并没有立即结束，如何守住广阔边疆仍然是新王朝的重要问题。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%A9%AC%E6%88%90%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8C%97%E5%BE%81%E5%8C%88%E5%A5%B4%E9%95%87%E8%BE%B9%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17311,7 +17311,7 @@
       "story": {
         "title": "云台名将死战沙场",
         "content": "铫期是刘秀早期的重要将领，曾跟随刘秀征战河北、洛阳等地。刘秀建立东汉过程中，他多次率军参与统一战争，并在攻城和野战中表现勇猛。铫期后来继续参与平定各地割据势力，成为刘秀信任的将领之一。东汉建立后，他因长期征战积劳成疾，最终去世。铫期后来被列入云台二十八将，成为东汉开国功臣的代表人物。他的故事虽然不像吴汉、邓禹那样广为人知，却能够体现东汉统一战争中众多中坚将领的作用。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%93%AB%E6%9C%9F%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BA%91%E5%8F%B0%E5%90%8D%E5%B0%86%E6%AD%BB%E6%88%98%E6%B2%99%E5%9C%BA%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17424,7 +17424,7 @@
       "story": {
         "title": "儒臣治理山东",
         "content": "伏湛是东汉初年重要的儒臣和地方官。刘秀建立政权后，伏湛曾担任地方官，负责山东地区的治理。他重视儒学教育，也注重恢复地方秩序和农业生产。东汉初年经历多年战争，社会经济受到严重破坏，地方官员的主要任务之一就是恢复生产、安定百姓。伏湛在这一过程中发挥了作用，后来进入中央担任尚书等职。与云台武将相比，伏湛代表了东汉建立过程中儒臣和地方治理力量的重要作用。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%BC%8F%E6%B9%9B%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%84%92%E8%87%A3%E6%B2%BB%E7%90%86%E5%B1%B1%E4%B8%9C%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17542,7 +17542,7 @@
       "story": {
         "title": "姐夫追随刘秀",
         "content": "邓晨是刘秀的姐夫，也是刘秀早期起兵的重要支持者。新莽末年天下大乱时，邓晨与刘秀共同参与反莽活动，曾帮助刘秀在南阳建立力量。昆阳之战前后，他继续追随刘秀，并在战争中承担军事任务。东汉建立后，邓晨成为开国功臣，虽然没有像吴汉、邓禹那样长期统领大军，却始终受到刘秀信任。邓晨的故事体现了刘秀早期政治集团中亲属、乡里关系所发挥的作用，也展现了刘秀从地方起兵逐渐走向建立帝国的过程。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%82%93%E6%99%A8%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A7%90%E5%A4%AB%E8%BF%BD%E9%9A%8F%E5%88%98%E7%A7%80%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17653,7 +17653,7 @@
       "story": {
         "title": "阴后辅佐光武",
         "content": "阴丽华是刘秀的皇后，也是东汉建立后最重要的后妃之一。刘秀年轻时便对阴丽华十分倾慕，后来在乱世中与她成婚。刘秀称帝后，阴丽华并未直接干预朝政，却以谦谨和宽厚著称，长期陪伴刘秀处理复杂的宫廷关系。郭圣通曾被立为皇后，后来刘秀将其废黜，阴丽华最终成为皇后。她的地位与阴氏家族的兴起，对东汉皇室产生了长期影响。阴丽华的故事不仅是一段帝后婚姻，也体现了东汉早期皇室内部的政治与家庭关系。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%98%B4%E4%B8%BD%E5%8D%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E9%98%B4%E5%90%8E%E8%BE%85%E4%BD%90%E5%85%89%E6%AD%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17755,7 +17755,7 @@
       "story": {
         "title": "废后风波定东宫",
         "content": "郭圣通是刘秀早期的皇后，也是东汉建立过程中具有重要政治背景的女性。刘秀在河北发展势力时，为获得真定王刘杨等地方力量支持，与郭圣通建立婚姻关系。刘秀称帝后，郭圣通被立为皇后，并生下多个皇子。但随着政治形势变化，阴丽华的地位不断上升，郭圣通与刘秀之间的关系逐渐发生变化。建武十七年，刘秀废黜郭圣通皇后之位，改立阴丽华。郭圣通的经历体现了东汉开国时期政治联盟、婚姻与皇位继承之间的复杂关系。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%83%AD%E5%9C%A3%E9%80%9A%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E5%BA%9F%E5%90%8E%E9%A3%8E%E6%B3%A2%E5%AE%9A%E4%B8%9C%E5%AE%AB%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -17871,7 +17871,7 @@
       "story": {
         "title": "马革裹尸",
         "content": "马援是东汉著名将领，早年经历新莽末年的政治动荡，后来归附刘秀。东汉建立后，他长期负责平定交趾、陇右等地区的叛乱，是东汉重要的边疆将领。马援曾表达自己希望战死沙场、以马革裹尸归葬的志向，这句话后来成为中国传统文化中忠勇报国的经典表达。他不仅善于作战，也重视农业和地方治理。晚年征讨武陵蛮时病死军中。马援的一生横跨东汉建立与边疆治理两个阶段，是东汉早期最具代表性的军事人物之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%A9%AC%E6%8F%B4%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%A9%AC%E9%9D%A9%E8%A3%B9%E5%B0%B8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18004,7 +18004,7 @@
       "story": {
         "title": "临朝听政安东汉",
         "content": "邓太后是汉和帝皇后、汉殇帝和汉安帝时期的重要政治人物。汉和帝去世后，年幼的殇帝即位，邓太后临朝处理政务，成为东汉后期少数具有长期政治影响力的女性。她在执政期间重视节约、减少宫廷开支，并通过选拔官员维持朝廷秩序。殇帝早夭后，她继续辅佐安帝，处理复杂的宫廷事务。邓太后去世后，安帝才真正亲政。她的临朝时期通常被认为是东汉后期较为稳定的阶段之一，也体现了东汉外戚女性掌握最高政治权力的现象。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%82%93%E5%A4%AA%E5%90%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E4%B8%B4%E6%9C%9D%E5%90%AC%E6%94%BF%E5%AE%89%E4%B8%9C%E6%B1%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18115,7 +18115,7 @@
       "story": {
         "title": "外戚名将不争权",
         "content": "邓骘是邓太后的兄长，东汉和帝、安帝时期的重要外戚和将领。汉和帝去世后，邓太后临朝，邓骘成为朝廷核心人物，并参与处理北方边疆和政治事务。他曾率军出征西域，对北方和西域局势进行军事干预。邓骘虽然身居高位，却曾主动提出减少邓氏家族的权势，并表现出一定的谦退态度。后来邓太后去世，安帝亲政，邓氏家族失势，邓骘最终被迫自杀。他的经历体现了东汉外戚“盛极而衰”的政治规律。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%82%93%E9%AA%98%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%96%E6%88%9A%E5%90%8D%E5%B0%86%E4%B8%8D%E4%BA%89%E6%9D%83%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18232,7 +18232,7 @@
       "story": {
         "title": "一门三皇后专权",
         "content": "梁冀是东汉中期最具权势的外戚之一，其妹妹梁皇后是汉顺帝皇后。顺帝去世后，梁冀拥立年幼的汉冲帝、质帝和桓帝，长期控制朝廷。梁冀拥有庞大的政治和经济势力，甚至敢于干涉皇帝。汉质帝曾当面称其为“跋扈将军”，梁冀因此怀恨，后来将其毒死。汉桓帝成年后，联合宦官发动政变，梁冀及其家族被诛杀。梁冀的覆灭标志着东汉中期外戚势力达到顶峰后迅速崩塌，也加剧了宦官集团在朝廷中的崛起。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A2%81%E5%86%80%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%80%E9%97%A8%E4%B8%89%E7%9A%87%E5%90%8E%E4%B8%93%E6%9D%83%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18334,7 +18334,7 @@
       "story": {
         "title": "临朝辅政抗外戚",
         "content": "梁太后是汉顺帝皇后、汉冲帝和汉质帝时期的临朝太后，也是梁冀的妹妹。汉顺帝去世后，幼帝即位，梁太后临朝处理政务，梁冀则逐渐掌握军政大权。梁太后本人也曾参与朝政，但其政治权力与兄长梁冀密切相关。汉质帝时期，梁冀权势越来越大，最终毒死皇帝。梁太后去世后，梁氏集团失去重要的政治保护，汉桓帝随后联合宦官诛灭梁冀。梁太后的经历体现了东汉外戚政治中皇太后与家族权力之间复杂而危险的关系。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%A2%81%E5%A4%AA%E5%90%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E4%B8%B4%E6%9C%9D%E8%BE%85%E6%94%BF%E6%8A%97%E5%A4%96%E6%88%9A%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18459,7 +18459,7 @@
       "story": {
         "title": "燕然勒石逐匈奴",
         "content": "窦宪是东汉章帝、和帝时期的重要外戚和将领。因妹妹成为皇后，窦宪逐渐进入政治核心。汉和帝即位后，他率军北击匈奴，并取得重大胜利。公元89年，窦宪率军深入北方草原，在燕然山一带击败北匈奴，班固随军刻石记功，这就是著名的“燕然勒石”。这场战争扩大了东汉在北方的影响力，也成为古代中国北征匈奴的重要战役。后来窦宪因权力过大受到和帝猜忌，最终被迫自杀。其一生呈现出军事功勋与外戚专权并存的复杂特点。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%AA%A6%E5%AE%AA%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%87%95%E7%84%B6%E5%8B%92%E7%9F%B3%E9%80%90%E5%8C%88%E5%A5%B4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18609,7 +18609,7 @@
       "story": {
         "title": "党锢之争死于宫门",
         "content": "窦武是东汉桓帝、灵帝时期的重要外戚和政治人物，也是窦太后的父亲。汉桓帝去世后，窦武辅佐年幼的汉灵帝，并担任大将军。他与陈蕃等士大夫希望削弱宦官势力，推动朝廷改革。双方矛盾最终发展成激烈冲突。宦官集团察觉到窦武等人准备采取行动后，先发制人控制宫门，窦武兵败逃亡，最终自杀。窦武的失败标志着东汉士大夫与外戚联合限制宦官的努力再次受挫，也成为第二次党锢之祸的重要背景。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%AA%A6%E6%AD%A6%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%85%9A%E9%94%A2%E4%B9%8B%E4%BA%89%E6%AD%BB%E4%BA%8E%E5%AE%AB%E9%97%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18747,7 +18747,7 @@
       "story": {
         "title": "不畏宦官名震京师",
         "content": "李膺是东汉后期著名士大夫，以清正敢言和反对宦官专权闻名。他担任司隶校尉时执法严厉，对违法的宦官及其亲属也敢于追查，因此在士人中声望极高。许多年轻士人以能够拜访李膺为荣，甚至形成所谓“登龙门”的说法。党锢之祸爆发后，李膺被视为党人代表而遭到禁锢。后来局势变化，他一度重新起用，但最终仍在政治斗争中被杀。李膺的故事体现了东汉后期士大夫与宦官之间尖锐的政治冲突。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E8%86%BA%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%B8%8D%E7%95%8F%E5%AE%A6%E5%AE%98%E5%90%8D%E9%9C%87%E4%BA%AC%E5%B8%88%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -18901,7 +18901,7 @@
       "story": {
         "title": "联手窦武诛宦官",
         "content": "陈蕃是东汉后期著名士大夫，以敢于直谏和反对宦官专权闻名。他曾担任太尉、太傅等重要职务，多次向皇帝提出整顿朝政的建议。汉灵帝时期，陈蕃与大将军窦武联合，希望清除宦官势力、恢复朝廷秩序。由于行动泄密，宦官集团抢先发动政变，控制皇宫。陈蕃率领部下抵抗，最终兵败被杀。陈蕃的失败体现了东汉末年中央政治已经陷入严重的权力斗争，也说明士大夫集团在面对掌握宫廷资源的宦官集团时处于明显劣势。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%99%88%E8%95%83%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E8%81%94%E6%89%8B%E7%AA%A6%E6%AD%A6%E8%AF%9B%E5%AE%A6%E5%AE%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19036,7 +19036,7 @@
       "story": {
         "title": "四知拒金传千古",
         "content": "杨震是东汉著名士大夫，以清廉正直闻名。他在担任地方官和中央官员期间，坚持不接受私人馈赠。最著名的故事发生在夜间，有人带黄金来请托，并认为夜深无人知晓。杨震回答说“天知、神知、我知、子知”，拒绝接受金钱，因此留下“四知”的典故。后来杨震进入朝廷，曾担任太尉等重要职务，并多次直言批评政治问题。由于得罪权贵，他最终受到排挤并自杀。杨震的故事成为中国传统廉政文化中极具代表性的历史典故。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%A8%E9%9C%87%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%9B%9B%E7%9F%A5%E6%8B%92%E9%87%91%E4%BC%A0%E5%8D%83%E5%8F%A4%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19154,7 +19154,7 @@
       "story": {
         "title": "直谏三朝被害",
         "content": "李固是东汉中期著名士大夫，曾在汉顺帝、冲帝、质帝时期参与朝政。他主张整顿政治、限制外戚和宦官势力，并多次直言批评朝廷。汉质帝去世后，围绕皇位继承产生激烈斗争，李固支持立刘蒜等人，与梁冀产生严重矛盾。梁冀最终排挤并杀害李固。李固的死体现了东汉中期士大夫试图干预皇位继承和限制外戚权力时所面临的政治风险。他后来成为东汉士大夫坚持政治原则的代表人物之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9D%8E%E5%9B%BA%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%9B%B4%E8%B0%8F%E4%B8%89%E6%9C%9D%E8%A2%AB%E5%AE%B3%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19272,7 +19272,7 @@
       "story": {
         "title": "黄巾起义席卷天下",
         "content": "张角是东汉末年黄巾起义的领导者，也是太平道的重要传播者。东汉末年，政治腐败、土地兼并和灾荒不断，社会矛盾日益严重。张角以宗教活动聚集信众，并提出“苍天已死，黄天当立”等口号，形成庞大的组织力量。184年，他发动黄巾起义，各地迅速响应，东汉朝廷陷入巨大危机。虽然起义最终被镇压，张角本人也在战争中病死，但黄巾起义严重削弱了东汉中央政权，地方军阀由此获得更大军事权力，最终推动东汉走向分裂。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%BC%A0%E8%A7%92%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%80%9D%E6%83%B3%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%BB%84%E5%B7%BE%E8%B5%B7%E4%B9%89%E5%B8%AD%E5%8D%B7%E5%A4%A9%E4%B8%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19417,7 +19417,7 @@
       "story": {
         "title": "鸿沟决战",
         "content": "项羽出身楚国贵族，秦末天下大乱时起兵反秦，逐渐成为反秦诸侯中的重要力量。巨鹿之战中，他率楚军破釜沉舟，以少胜多击败秦军，威震天下。秦朝灭亡后，项羽与刘邦展开长期争夺。鸿门宴上，他曾有机会除掉刘邦，却最终没有下定决心。此后楚汉战争持续数年，项羽虽然屡次获胜，却逐渐陷入孤立。垓下之战中，他被汉军重重包围，突围至乌江后拒绝渡江，最终自刎而死。项羽的一生充满传奇色彩，也成为中国历史上最具悲剧色彩的英雄人物之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E9%A1%B9%E7%BE%BD%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E9%B8%BF%E6%B2%9F%E5%86%B3%E6%88%98%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19610,7 +19610,7 @@
       "story": {
         "title": "白登围困汉高祖",
         "content": "冒顿单于是匈奴历史上最重要的统治者之一。他少年时期经历政治斗争，最终夺取单于之位，并通过改革和征战迅速壮大匈奴。汉高祖刘邦建立汉朝后，曾率军亲征匈奴，却在白登山遭到冒顿单于大军包围。汉军被困多日，形势十分危急，最终刘邦采取谋略才得以脱身。此后汉朝改变对匈奴的政策，通过和亲与贸易维持边境关系。冒顿单于在位期间不断扩张，使匈奴成为汉初北方最强大的力量，也深刻影响了西汉前期的边疆政策。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%86%92%E9%A1%BF%E5%8D%95%E4%BA%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E7%99%BD%E7%99%BB%E5%9B%B4%E5%9B%B0%E6%B1%89%E9%AB%98%E7%A5%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19743,7 +19743,7 @@
       "story": {
         "title": "受禅建立魏国",
         "content": "曹丕是曹操之子，也是东汉末年至三国时期的重要政治人物。曹操去世后，曹丕继承魏王之位，并逐渐完成权力集中。东汉末年，汉献帝刘协已经失去实际政治权力，曹丕最终接受汉献帝禅让，于公元220年建立魏国，东汉正式结束。曹丕不仅是一位政治家，也是一位文学家，与其父曹操、弟曹植并称“建安三曹”。他推动建安文学发展，并留下《燕歌行》等作品。曹丕的即位标志着中国历史进入三国时代，也成为汉魏政权更替的重要节点。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%9B%B9%E4%B8%95%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E5%8F%97%E7%A6%85%E5%BB%BA%E7%AB%8B%E9%AD%8F%E5%9B%BD%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19866,7 +19866,7 @@
       "story": {
         "title": "挟天子入长安",
         "content": "董卓是东汉末年的重要军阀。汉灵帝去世后，朝廷内部发生激烈权力斗争，大将军何进被杀，董卓率军进入洛阳。此后他控制朝廷，废少帝刘辩，拥立刘协为帝，并逐渐掌握东汉中央政权。董卓专权引起关东诸侯联合讨伐，洛阳局势进一步恶化。为了控制局势，他迁都长安，并大肆扩张个人势力。最终，司徒王允联合吕布发动政变，董卓被杀。董卓掌权虽然时间不长，却加速了东汉中央权力的崩溃，使天下进一步走向军阀割据。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E8%91%A3%E5%8D%93%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%8C%9F%E5%A4%A9%E5%AD%90%E5%85%A5%E9%95%BF%E5%AE%89%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -19989,7 +19989,7 @@
       "story": {
         "title": "续成《汉书》",
         "content": "班昭出身于著名的班氏家族，父亲班彪、兄长班固和班超都是东汉重要人物。班固负责撰写《汉书》，但尚未完成便因事去世。班昭奉诏进入宫廷，继续整理和修订《汉书》，最终使这部重要史书得以完成。她不仅精通史学，也擅长文学和经学，并曾担任宫廷教师，为皇后和宫人讲授经典。班昭后来还写下《女诫》，成为中国古代具有代表性的女性作家之一。她以女性身份参与史书编纂，在中国古代史学与文化史上留下了独特的一笔。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8F%AD%E6%98%AD%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%BB%AD%E6%88%90%E3%80%8A%E6%B1%89%E4%B9%A6%E3%80%8B%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -20090,7 +20090,7 @@
       "story": {
         "title": "巧谏汉武帝",
         "content": "东方朔是汉武帝时期著名的文学家和政治人物，以机智幽默、敢于进谏而闻名。他长期担任宫廷侍从，常常利用诙谐的语言向汉武帝表达自己的意见。一次，汉武帝身边的宫人受到宠信，东方朔便借机进言，希望皇帝能够关注宫廷之外的百姓生活。他善于把严肃的政治问题转化为生动有趣的言辞，因此深受后世文学作品和民间故事影响。东方朔虽然没有成为掌握实权的大臣，却凭借机敏的才思成为汉武帝时代最具传奇色彩的文人之一，也体现了汉代宫廷文学和政治文化的独特风貌。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%9C%E6%96%B9%E6%9C%94%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%96%87%E5%8C%96%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%B7%A7%E8%B0%8F%E6%B1%89%E6%AD%A6%E5%B8%9D%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -20203,7 +20203,7 @@
       "story": {
         "title": "出塞和亲",
         "content": "王昭君是西汉时期著名的宫廷女子。汉元帝时期，匈奴呼韩邪单于主动归附汉朝，希望通过和亲进一步巩固双方关系。王昭君被选中远嫁匈奴，成为连接汉朝与匈奴的重要人物。她来到草原后，与呼韩邪单于共同生活，并在两地之间发挥了特殊的文化纽带作用。昭君出塞后来成为中国历史上最著名的和亲故事之一。后世文学、绘画和戏曲不断描写她的经历，使“昭君出塞”成为中国文化中关于和平、远行与女性命运的经典意象。她的故事也反映了汉匈关系中战争与和平交织的历史现实。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%8E%8B%E6%98%AD%E5%90%9B%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E5%87%BA%E5%A1%9E%E5%92%8C%E4%BA%B2%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -20353,7 +20353,7 @@
       "story": {
         "title": "从歌女到皇后",
         "content": "卫子夫原本是平阳公主府中的歌女，后来因机缘进入汉武帝身边，并逐渐受到宠爱。她后来被立为皇后，成为汉武帝统治时期重要的宫廷人物。卫子夫的家族也因此得到发展，她的弟弟卫青后来成为汉朝著名将领，外甥霍去病则成为抗击匈奴的名将。卫子夫与汉武帝之子刘据的关系，也使她与巫蛊之祸联系在一起。晚年政治环境发生变化，卫子夫和太子刘据最终卷入巫蛊之祸。她的一生从普通歌女走向皇后，又在宫廷政治剧烈变化中结束，体现了汉代后宫与政治之间复杂的联系。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8D%AB%E5%AD%90%E5%A4%AB%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E4%BB%8E%E6%AD%8C%E5%A5%B3%E5%88%B0%E7%9A%87%E5%90%8E%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -20459,7 +20459,7 @@
       "story": {
         "title": "不为外戚请封",
         "content": "明德马皇后是东汉明帝刘庄的皇后，也是汉章帝刘炟的生母。她出身于马援家族，但成为皇后后并没有利用身份为家族谋取过多权力。东汉时期外戚势力经常参与朝政，马皇后却多次劝诫皇帝不要过度封赏自己的亲族，并要求家人保持谨慎。她还亲自学习经典，关心宫廷教育和国家政务。汉明帝去世后，她继续辅佐年轻的汉章帝。马皇后的形象与后来东汉历史上不断扩张的外戚集团形成鲜明对比，因此成为东汉女性政治人物中较有代表性的一位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%98%8E%E5%BE%B7%E9%A9%AC%E7%9A%87%E5%90%8E%EF%BC%8C%E6%B1%89%E6%97%B6%E6%9C%9F%EF%BC%8C%E7%BB%9F%E6%B2%BB%E8%80%85%EF%BC%8C%E4%B8%8D%E4%B8%BA%E5%A4%96%E6%88%9A%E8%AF%B7%E5%B0%81%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [

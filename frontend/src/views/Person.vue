@@ -1004,7 +1004,7 @@ watch(isLevel2, (isL2) => {
               <div class="absolute inset-0 bg-gradient-to-br from-[#D8B26A]/25 to-[#355C5A]/20 flex items-center justify-center">
                 <span class="font-calligraphy text-8xl text-[#2C2C2C]/30">{{ person!.name.charAt(0) }}</span>
               </div>
-              <img :src="person!.image_url" :alt="person!.name" class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'" @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }" />
+              <img :src="person!.image_url" :alt="person!.name" class="w-full h-full object-cover absolute inset-0 z-10 transition-opacity duration-500" @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }" />
             </div>
           </div>
           
@@ -1142,8 +1142,7 @@ watch(isLevel2, (isL2) => {
                 v-if="ev.image_url"
                 :src="ev.image_url" 
                 :alt="ev.name"
-                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 z-10 opacity-0"
-                onload="this.style.opacity='1'"
+                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 z-10"
                 @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
               <div class="absolute top-3 left-3 px-2.5 py-0.5 bg-[#C34739] text-white text-xs rounded z-20">

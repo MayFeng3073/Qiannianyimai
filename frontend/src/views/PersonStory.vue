@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { persons, dynasties, events } from '@/mock/data'
 import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService'
@@ -49,8 +49,12 @@ const hasStorySection = computed(() => {
 })
 
 const storyImageUrl = computed(() => {
-  return person.value?.story?.image_url || person.value?.image_url || ''
+  return person.value?.story?.image_url || person.value?.image_url || '/images/placeholder-ink.svg'
 })
+
+// 配图加载失败时退回本地水墨占位图（不再回退到人物头像，避免和头像重复）
+const storyImgFailed = ref(false)
+watch(() => personId, () => { storyImgFailed.value = false })
 
 const formattedYear = (year: number | null | undefined) => {
   if (!year && year !== 0) return '不详'
@@ -700,8 +704,7 @@ onUnmounted(() => {
               <img
                 :src="person!.image_url"
                 :alt="person!.name"
-                class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-500"
-                onload="this.style.opacity='1'"
+                class="w-full h-full object-cover absolute inset-0 z-10 transition-opacity duration-500"
                 @error="(e: any) => { e.target.src = '/images/placeholder-ink.svg'; e.target.onerror = null }"
               />
             </div>
@@ -952,11 +955,10 @@ onUnmounted(() => {
                 <span class="font-calligraphy text-4xl text-[#2C2C2C]/15">{{ storyTitle }}</span>
               </div>
               <img
-                :src="storyImageUrl"
+                :src="storyImgFailed ? '/images/placeholder-ink.svg' : storyImageUrl"
                 :alt="storyTitle"
-                class="w-full h-full object-cover absolute inset-0 z-10 opacity-0 transition-all duration-700 group-hover:scale-105"
-                onload="this.style.opacity='1'"
-                @error="(e: any) => { e.target.src = person!.image_url; e.target.onerror = null }"
+                class="w-full h-full object-cover absolute inset-0 z-10 transition-transform duration-700 group-hover:scale-105"
+                @error="storyImgFailed = true"
               />
               <!-- Image overlay gradient -->
               <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>

@@ -2979,7 +2979,7 @@
       "story": {
         "title": "代夏而兴",
         "content": "后羿，有穷氏首领，以善射著称，其名号与上古射日神话中的\"羿\"相融合，兼具神话与历史色彩。趁太康沉迷田猎、不理朝政之机，率军攻占夏都斟鄩，阻断太康归路，一举掌握夏朝政权，史称\"太康失国\"。但后羿执政后同样荒废政事，自恃武力，不修德政，沉迷于田猎享乐，重用寒浞却反被其弑，霸占其妻室与权力。后羿的故事成为夏初政治动荡的缩影，与太康的覆辙如出一辙，为后世治国者提供了深刻警示，其传奇经历在历史与神话之间交织，成为权力更迭的经典案例。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%90%8E%E7%BE%BF%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3083,7 +3083,7 @@
       "story": {
         "title": "寒浞篡夏",
         "content": "寒浞，寒国出身，后羿亲信。为人狡诈多谋，深谙权术之道，投后羿所好，怂恿其放纵享乐不理政事，暗中培植自己的势力，最终弑杀后羿夺取政权，霸占其妻室。寒浞执政后骄奢淫逸，不修德政，民心尽失，统治基础薄弱。后被少康联合伯靡、女艾等势力击败，夏朝王权得以恢复，寒浞身死国灭。寒浞的一生是权力场上得势与失势的典型写照，他的崛起与覆灭充分说明了以阴谋夺取权力者终将被更大的阴谋所吞噬，其兴亡过程令人深思，为后世留下了深刻的历史教训和警示。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%AF%92%E6%B5%9E%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3193,7 +3193,7 @@
       "story": {
         "title": "女艾行间",
         "content": "女艾，少康谋臣，中国早期历史传说中罕见的女性政治人物，其事迹在先秦典籍中多有记载。受少康派遣潜入寒浞势力内部，以女性身份为掩护刺探情报，为少康复国创造了关键条件，立下汗马功劳。女艾以智慧与胆识深入敌后，凭借过人的机智成功完成了使命，在中国早期历史中留下了独特的一笔。她的故事证明早在夏代，女性就已经在政治舞台上扮演着不可忽视的重要角色，展现了古代女性的非凡智慧与过人胆识，令人敬佩不已，其事迹弥足珍贵。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A5%B3%E8%89%BE%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3292,7 +3292,7 @@
       "story": {
         "title": "助少康复国",
         "content": "伯靡，夏朝遗臣，夏后氏贵族，在夏朝政治中具有重要地位，深受夏王室信任。在太康失国、寒浞篡政后逃亡至有鬲氏，暗中联络夏朝遗民势力，积蓄力量等待时机，历经数年艰辛，始终没有放弃复国的信念，最终协助少康击败寒浞，恢复夏朝王权。伯靡是少康中兴的重要功臣，其坚韧不拔的复国精神值得称道，在夏朝最黑暗的时期始终坚守信念，忠心耿耿，为夏王室的复兴做出了不可磨灭的贡献，堪称忠臣典范，名垂青史，为后世所敬仰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%9D%A1%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3391,7 +3391,7 @@
       "story": {
         "title": "直谏夏桀",
         "content": "关龙逢，夏朝末年贤臣，以忠直敢谏著称，德高望重，深受朝野敬重。面对夏桀暴政，多次直言进谏，劝诫夏桀修德爱民，勿耽于酒色，勿滥用民力，言辞恳切，痛陈利害。夏桀不纳忠言，反将其处死。关龙逢以死殉节，血溅朝堂，成为中国古代直谏精神的早期典范，其事迹在后世被反复传颂。关龙逢与比干、屈原等并列为中国历史上忠臣直谏的代表人物，其不畏强暴、以死明志的精神对后世直谏文化产生了深远影响，千古流芳，为历代所敬仰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%85%B3%E9%BE%99%E9%80%A2%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3479,7 +3479,7 @@
       "story": {
         "title": "夏亡宠妃",
         "content": "妺喜，有施氏之女，夏桀宠妃。夏桀伐有施氏，有施氏献妺喜以求和。妺喜入宫后深得夏桀宠爱，后世文献将其与夏桀暴政相联系，将夏朝灭亡归咎于她，称其\"美色误国\"。但商汤灭夏实为夏朝统治崩溃的必然结果，夏桀暴政失德才是根本原因，妺喜不过是历史叙事中的一个符号。她的事迹反映了古代女性在王朝更替中常被赋予的祸水角色，这种\"女祸论\"的历史叙事传统值得后人深思与反思，具有重要的文化批判意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%BA%E5%96%9C%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3556,7 +3556,7 @@
       "story": {
         "title": "弃夏归商",
         "content": "费昌，夏朝末年商族重要人物，商汤的得力助手，在商族崛起过程中发挥了关键作用。在夏桀暴政、商汤崛起的时代背景下，费昌协助商汤筹划灭夏大业，招揽人才，联络各方势力，为商朝的建立作出了重要贡献，是商族兴起过程中的关键人物之一。费昌的事迹体现了商族从夏朝诸侯到独立建国的转变历程，是商朝开国功臣中的代表人物，功不可没，其历史地位不容忽视，在商族早期历史上具有重要地位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%B4%B9%E6%98%8C%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3633,7 +3633,7 @@
       "story": {
         "title": "夏末方伯",
         "content": "昆吾，夏朝末年重要诸侯，为己姓部落首领，长期与夏朝王室保持密切关系，世代为夏朝重臣，势力强大，在东方诸侯中举足轻重。在夏朝末期的政治格局中扮演重要角色，是夏桀的重要盟友和最后屏障。商汤灭夏过程中，昆吾被视为必须铲除的对象，商汤先灭昆吾以削弱夏桀势力，昆吾的灭亡标志着夏朝统治的彻底崩溃，为商汤灭夏扫清了最后的障碍，是夏商更替中的关键转折点，具有重要历史意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%98%86%E5%90%BE%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3716,7 +3716,7 @@
       "story": {
         "title": "司法之祖",
         "content": "皋陶，东夷部落首领，与尧舜禹并称的\"上古四圣\"之一，以贤德和智慧闻名于世，深得舜禹信任。担任司法官，创制了中国最早的刑法体系，以公正严明著称，断案如神，执法如山，被奉为司法之神。其\"明刑弼教\"的法治思想强调以刑罚辅助教化，德刑并用，注重教化而非单纯的惩罚，对后世影响深远，被尊为中国司法制度的奠基人。其事迹在《尚书·皋陶谟》等典籍中多有记载，体现了上古时期法治思想的萌芽，对中国法治传统影响深远。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E7%9A%8B%E9%99%B6%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8F%B8%E6%B3%95%E4%B9%8B%E7%A5%96%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3799,7 +3799,7 @@
       "story": {
         "title": "佐禹开秦",
         "content": "伯益，东夷部落首领，舜禹时期重要人物，才智出众，深得人心，在部落中威望甚高。佐禹治水有功，曾受舜命掌管山泽、驯养鸟兽，功绩卓著，深得大禹信任。大禹曾欲禅让于伯益，但在禹死后启通过武力夺取了政权，伯益成为禅让制的最后一位继承人，最终退隐山林。伯益的命运标志着\"公天下\"向\"家天下\"的历史性转变，是中国古代政治制度变革的重要见证者，开启了夏朝世袭王权的先河，在中国政治史上具有里程碑意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%BC%AF%E7%9B%8A%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E4%BD%90%E7%A6%B9%E5%BC%80%E7%A7%A6%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -3944,7 +3944,7 @@
       "story": {
         "title": "千古贤相",
         "content": "伊尹，商初重臣，辅佐商汤灭夏建商，功勋卓著，被誉为\"元圣\"，名垂青史。本为有莘氏陪嫁之臣，以烹饪之道喻治国之理，被商汤擢用，委以重任，官至宰相。辅佐商汤、太甲、沃丁三朝，曾因太甲失德而将其放逐，待其悔过后迎回复位，以天下为己任，不计个人得失。伊尹是中国历史上著名的贤相，其功业与品德为后世所景仰，被视为辅弼之臣的典范，其事迹影响深远，为历代儒家所推崇，备受后人敬仰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%BC%8A%E5%B0%B9%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%8D%83%E5%8F%A4%E8%B4%A4%E7%9B%B8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4054,7 +4054,7 @@
       "story": {
         "title": "商初诰命",
         "content": "仲虺，商汤重臣，奚仲之后，出身名门，学识渊博，才德兼备。与伊尹并列为商汤左右手，共同辅佐商汤完成灭夏大业，功劳卓著，被商汤倚为股肱，信任有加。商汤灭夏后作《仲虺之诰》，阐述伐桀的正义性，为商朝统治提供了理论依据，安抚民心，稳定局势，意义重大。仲虺是商初重要的政治家和思想家，其诰文成为后世论证政权更迭合法性的重要文献，对后世政治思想影响深远，具有重要的历史地位和学术价值。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BB%B2%E8%99%BA%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4142,7 +4142,7 @@
       "story": {
         "title": "汤征葛伯",
         "content": "葛伯，夏朝末年葛国君主，葛国为夏朝东方的重要诸侯国，地理位置关键，是夏朝东部门户。葛伯不祭祀鬼神，怠慢神灵，商汤以助祭为名征伐葛伯，开启了商汤灭夏的序幕。\"葛伯仇饷\"的故事成为商汤\"以德征伐\"的经典案例，被后世史家反复引用。这一事件标志着商汤灭夏战争的开始，也体现了商汤\"以仁伐暴\"的政治策略，是夏商更替的重要开端，具有标志性意义，在夏商之际的政治史上具有重要地位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%91%9B%E4%BC%AF%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4219,7 +4219,7 @@
       "story": {
         "title": "商代大巫",
         "content": "巫咸，商朝太戊时期重臣，精通天文历法与巫术，学识渊博，多才多艺，在商代文化史上占有重要地位。在太戊时期辅佐朝政，通过祭祀占卜等方式维护商朝统治秩序，深得太戊信任，官至卿士，位高权重。巫咸是商代\"巫史合一\"文化传统的代表人物，其事迹反映了商代神权政治的特点，即王权与神权紧密结合。在天文历法和占卜方面对商代文化产生了重要影响，是商代文化的重要代表人物，其学术贡献不容忽视。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B7%AB%E5%92%B8%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4296,7 +4296,7 @@
       "story": {
         "title": "武丁之师",
         "content": "甘盘，商朝武丁时期重臣，武丁少年时的老师，对武丁的成长影响深远，师生情谊深厚，备受尊敬。武丁即位后，甘盘成为商朝重臣，协助武丁处理朝政，以稳健老成著称，深得武丁敬重，言听计从。在武丁中兴的初期阶段，甘盘发挥了重要的辅佐作用，为武丁时期的繁荣和商朝的复兴奠定了坚实的基础，是武丁中兴的幕后功臣，功不可没，其师德与政绩为后世所传颂，堪称一代良师贤臣，备受尊敬。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%98%E7%9B%98%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4389,7 +4389,7 @@
       "story": {
         "title": "版筑贤相",
         "content": "傅说，商朝武丁时期贤相，出身微贱却才能卓越，胸怀大志，自视甚高。本为从事版筑的奴隶，在傅岩之地筑墙劳作，生活艰辛，郁郁不得志。武丁梦得贤臣，令人按梦中形象寻访，得傅说于傅岩之野。武丁不拘一格举以为相，傅说辅佐武丁修德行政、振兴商朝，改革弊政，励精图治，创造了\"武丁中兴\"盛世。傅说的故事是\"不拘一格降人才\"的典范，在中国人才史上具有重要地位，传为千古佳话，激励了无数后世有志之士奋发向上。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%82%85%E8%AF%B4%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%89%88%E7%AD%91%E8%B4%A4%E7%9B%B8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4483,7 +4483,7 @@
       "story": {
         "title": "训王正事",
         "content": "祖己，商朝武丁之子，祖庚之兄，以孝行著称，德才兼备，在商王族中声望颇高。曾劝谏武丁改革祭祀制度，减少频繁的祭祀活动以减轻民众负担。他认为过度祭祀无益于治国，应当以德政为先，以民为本，关注民生疾苦，体恤百姓。他的劝谏反映了商代后期理性思维的萌芽，在商代思想史上具有重要地位，体现了早期人文主义思想的兴起，是商代思想发展的重要里程碑，预示着商代文化从神权向人本的转型。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%A5%96%E5%B7%B1%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4571,7 +4571,7 @@
       "story": {
         "title": "宋国始封",
         "content": "微子启，商纣王庶兄，子姓，商末重要政治人物，地位尊崇，在商王族中德高望重。见商纣王暴虐无道，多次劝谏不从，遂离开商都，隐居避祸，以保全宗族。周武王灭商后，微子启持祭器归顺周朝以示臣服。周公平定三监之乱后，封微子启于宋国，成为宋国始祖，延续了商族的祭祀。微子启是商周更替之际保持民族传承的关键人物，为中华文明的延续做出了重要贡献，其历史地位值得肯定，备受后世尊崇。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BE%AE%E5%AD%90%E5%90%AF%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4697,7 +4697,7 @@
       "story": {
         "title": "剖心直谏",
         "content": "比干，商纣王叔父，子姓，以忠直敢谏闻名，德高望重，在朝中威望极高。见纣王暴虐荒淫，犯颜直谏三日不去，言辞恳切，痛陈利害，以死相谏，忠义之心天地可鉴。纣王怒曰：\"吾闻圣人心有七窍！\"遂剖比干观其心。比干以死殉国，血溅朝堂，成为中国古代忠臣直谏的象征，其精神被后世历代传颂。比干与关龙逢、屈原等并列为中国历史上最著名的忠臣典范，千古流芳，其事迹激励了无数后世谏臣，影响深远，为历代所敬仰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%AF%94%E5%B9%B2%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%89%96%E5%BF%83%E7%9B%B4%E8%B0%8F%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4801,7 +4801,7 @@
       "story": {
         "title": "佯狂存祀",
         "content": "箕子，商纣王叔父，子姓，博学多才，见识卓越，精于治国之道，在商末政治中具有重要地位。见纣王暴虐，装疯为奴以避祸，忍辱负重，保全性命。周武王灭商后，访箕子询问治国之道，箕子陈《洪范》九畴，系统阐述了治国的九大原则，成为中国古代政治哲学的重要文献，影响深远。后箕子不愿臣服于周，东走朝鲜，建立箕氏朝鲜，成为中朝文化交流的早期使者，在朝鲜半岛备受尊崇，其影响跨越国界，具有重要的历史地位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%95%E5%AD%90%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/thought.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4900,7 +4900,7 @@
       "story": {
         "title": "商亡宠妃",
         "content": "妲己，有苏氏之女，商纣王宠妃。纣王伐有苏氏，有苏氏献妲己以求和。后世文献将纣王暴政归咎于妲己，称其助纣为虐，祸乱朝纲，炮烙之刑等酷刑皆归因于她。但妲己的形象更多是后世文学塑造的结果，商朝灭亡实为统治集团内部矛盾激化的必然，纣王暴政失德才是根本原因，妲己不过是历史叙事中的替罪羊。她的故事反映了古代\"女祸论\"的历史叙事传统，值得后人反思与批判，具有重要的文化研究意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A6%B2%E5%B7%B1%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -4977,7 +4977,7 @@
       "story": {
         "title": "商末勇将",
         "content": "飞廉，商纣王将领，嬴姓，秦赵祖先，在商末地位重要，深受纣王信任。以善跑著称，身轻如燕，武艺高强，奉纣王命出使北方。闻商朝灭亡后，在霍太山设坛祭祀纣王，尽忠尽义，后归顺周朝。飞廉是商周更替之际的重要见证者，其子孙后来建立了秦国和赵国，在战国时期开创了辉煌的基业，最终由秦国一统天下，对中国历史产生了深远影响，是秦赵两国的共同祖先，地位尊崇，在秦赵族源史上具有重要地位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%A3%9E%E5%BB%89%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5054,7 +5054,7 @@
       "story": {
         "title": "文王贤后",
         "content": "太姒，周文王正妃，周武王之母，姒姓，以贤德著称于世，母仪天下，德被四方。辅佐周文王治理周邦，教导诸子成人，培养出周武王、周公旦等杰出人物，为周朝建立奠定了坚实的人才基础。被后世视为贤妻良母的典范，与周文王、周武王、周公旦共同奠定了周朝基业，在西周建立过程中发挥了重要作用，是周朝王室女性的杰出代表，其形象在历代典籍中备受赞誉，为后世所景仰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%A4%AA%E5%A7%92%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5142,7 +5142,7 @@
       "story": {
         "title": "早逝世子",
         "content": "伯邑考，周文王长子，周武王之兄，为人仁厚孝顺，品德高尚，深得文王喜爱。文王被商纣王囚禁于羑里时，伯邑考曾入朝歌为质，以换取父亲的自由，舍身尽孝，义薄云天。传说伯邑考被纣王杀害并做成肉羹赐予文王，以此考验文王是否真的有圣人之能。武王灭商后追封伯邑考。其悲剧命运成为商周更替中的一段悲壮插曲，体现了商周之际残酷的政治斗争，令人唏嘘不已，其孝行令人感动，为后世所传颂。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E9%82%91%E8%80%83%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5287,7 +5287,7 @@
       "story": {
         "title": "太公辅周",
         "content": "姜子牙，姜姓吕氏，名尚，号太公望，中国历史上著名的军事家和政治家，兵家祖师，道法高深。垂钓渭水遇周文王，被尊为\"太公\"，委以军国大任。辅佐文王、武王两代，在牧野之战中指挥周军大败商军，运筹帷幄，决胜千里，为灭商兴周的第一功臣。被分封于齐国，为齐国的开国始祖，后世尊为兵家鼻祖，其兵法思想影响深远，其事迹在《封神演义》中被神化，成为家喻户晓的传奇人物，深受百姓爱戴。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%A7%9C%E5%AD%90%E7%89%99%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E5%86%9B%E4%BA%8B%E4%BA%BA%E7%89%A9%EF%BC%8C%E5%A4%AA%E5%85%AC%E8%BE%85%E5%91%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5397,7 +5397,7 @@
       "story": {
         "title": "甘棠遗爱",
         "content": "召公奭，姬姓，周初重臣，以廉洁公正著称，深受百姓爱戴，政绩斐然。与周公旦共同辅佐周成王，分陕而治：自陕以东周公主之，自陕以西召公主之。召公巡行乡邑，听讼断案，深受百姓爱戴，其廉洁公正的形象深入人心，其政绩为后世所称道，被誉为\"甘棠遗爱\"，千古传颂。其子孙受封于燕国，为周初分封制度的重要践行者，为周朝的稳定和统一作出了重要贡献，是周初政治的重要支柱之一。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E5%8F%AC%E5%85%AC%E5%A5%AD%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E7%94%98%E6%A3%A0%E9%81%97%E7%88%B1%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5496,7 +5496,7 @@
       "story": {
         "title": "毕公辅周",
         "content": "毕公高，姬姓，周初重臣，周文王之子，贤德有才，深受朝野敬重，威望极高。与周公旦、召公奭共同辅佐周成王、康王，是\"成康之治\"的重要推动者，为西周初年的繁荣稳定做出了重要贡献。成王临终时，毕公高与召公奭共同受命辅佐太子钊即位，受命托孤，为周朝的稳定和延续立下了汗马功劳。毕公高是西周初年重要的政治人物，德高望重，深受朝野敬重，其功绩载于史册，为后世所铭记。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E6%AF%95%E5%85%AC%E9%AB%98%EF%BC%8C%E5%A4%8F%E5%95%86%E8%A5%BF%E5%91%A8%E6%97%B6%E6%9C%9F%EF%BC%8C%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9%EF%BC%8C%E6%AF%95%E5%85%AC%E8%BE%85%E5%91%A8%EF%BC%8C%E5%8E%86%E5%8F%B2%E5%9C%BA%E6%99%AF%E6%8F%92%E7%94%BB%EF%BC%8C%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB%E8%BF%9C%E6%99%AF%EF%BC%8C%E4%B8%AD%E5%9B%BD%E6%B0%B4%E5%A2%A8%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E6%A8%AA%E5%B9%85%E6%9E%84%E5%9B%BE%EF%BC%8C%E6%97%A0%E6%96%87%E5%AD%97&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5605,7 +5605,7 @@
       "story": {
         "title": "三监之首",
         "content": "管叔鲜，姬姓，周文王之子、武王之弟，身为王室贵胄，地位尊崇。周武王灭商后封于管地，以监视殷商遗民，责任重大。武王去世，成王年幼，周公旦摄政。管叔鲜与蔡叔度、霍叔处不满周公专权，联合武庚发动叛乱，史称\"三监之乱\"。管叔鲜最终兵败被杀，成为周初政治斗争的牺牲品，其叛乱对周初政局产生了深远影响，也促使周公进一步巩固了周朝的统治，是周初历史的重要事件。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%AE%A1%E5%8F%94%E9%B2%9C%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5731,7 +5731,7 @@
       "story": {
         "title": "蔡国始封",
         "content": "蔡叔度，姬姓，周文王之子、武王之弟，身为王室贵胄。周武王灭商后封于蔡地，以监视殷商遗民。在\"三监之乱\"中与管叔鲜、武庚联合反叛周公，兵败被俘。叛乱被平定后被流放，其子蔡仲后来被周公封为蔡国国君，延续了蔡国的祭祀。蔡叔度的命运体现了周公\"亲亲尊尊\"的治国理念和宽严相济的政治智慧，是周初政治的重要案例，对后世政治制度影响深远，具有重要的历史意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%94%A1%E5%8F%94%E5%BA%A6%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5846,7 +5846,7 @@
       "story": {
         "title": "霍叔监殷",
         "content": "霍叔处，姬姓，周文王之子、武王之弟，身为王室贵胄。周武王灭商后封于霍地，以监视殷商遗民。在\"三监之乱\"中参与管叔鲜、蔡叔度的反叛行动，兵败被俘。叛乱被平定后，被周公降为庶人，是\"三监之乱\"的重要参与者之一。其命运反映了周初对叛乱贵族的处理方式，体现了周公的宽严相济和以德服人的政治理念，对后世处理类似问题具有借鉴意义，值得深入研究。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E9%9C%8D%E5%8F%94%E5%A4%84%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -5956,7 +5956,7 @@
       "story": {
         "title": "殷遗起事",
         "content": "武庚，商纣王之子，子姓，商朝末代王族成员，延续商族祭祀的希望所在，肩负复国重任。周武王灭商后，为安抚商族遗民，封武庚于殷商故地，由管叔、蔡叔、霍叔监督。管叔、蔡叔不满周公辅政，联合武庚发动\"三监之乱\"，反叛周朝。武庚被周公东征所平定，死于战乱之中，商族的复国梦想最终彻底破灭，为商周之争画上了最后的句号，标志着商族复兴的最后希望彻底破灭，令人感慨不已。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%AD%A6%E5%BA%9A%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6088,7 +6088,7 @@
       "story": {
         "title": "卫国之祖",
         "content": "康叔封，姬姓，周武王之弟，周初重臣，以贤能著称，深得周公信任，委以重任。周公东征平定三监之乱后，封康叔于殷商故地，建立卫国。康叔治国有方，秉持周公教诲，以殷商遗民为治，推行德政，宽严相济，使卫国成为周初东方的重要封国，延续了数百年的统治。康叔封是周初分封制度成功实施的典范，为周朝的稳定和国家统一做出了重要贡献，其治国方略值得称道，为后世所借鉴。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%BA%B7%E5%8F%94%E5%B0%81%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6192,7 +6192,7 @@
       "story": {
         "title": "鲁国始封",
         "content": "伯禽，姬姓，周公旦长子，鲁国实际上的开国君主，肩负重任，克绍箕裘。周公分封于鲁国，因留在镐京辅佐成王，命伯禽代为就封。伯禽治理鲁国，推行周礼，以礼乐教化百姓，移风易俗，使鲁国成为周礼文化在东方的重要传承地，奠定了鲁国深厚的文化传统，为后来孔子在鲁国创立儒家学派提供了文化土壤，对中国文化的发展影响极为深远，其功绩彪炳史册，万古流芳。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E4%BC%AF%E7%A6%BD%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6291,7 +6291,7 @@
       "story": {
         "title": "采诗佐周",
         "content": "尹吉甫，西周宣王时期重臣，兮氏，名甲，文武兼备，才华横溢，堪称栋梁之才。辅佐周宣王征伐猃狁、徐方等周边部族，战功卓著，为\"宣王中兴\"立下了汗马功劳。相传为《诗经》中《崧高》《烝民》等篇的作者，是西周晚期文武兼备的重要人物，在军事和文学方面都有卓越成就，堪称文武全才，为后世所景仰，是西周晚期最重要的历史人物之一，其诗歌成就弥足珍贵，在中国文学史上具有重要地位。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%B0%B9%E5%90%89%E7%94%AB%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6390,7 +6390,7 @@
       "story": {
         "title": "南征荆蛮",
         "content": "方叔，西周宣王时期重臣，以军事才能著称，英勇善战，勇冠三军。曾率军征伐荆蛮、猃狁等周边部族，战功赫赫，威名远扬，令敌人闻风丧胆，不敢来犯，边境安宁。在周宣王的\"宣王中兴\"时期，方叔与尹吉甫、召虎等并列为宣王复兴周朝的重要将领，为西周晚期的军事复兴作出了重要贡献，其军事才能为后世所称道，是宣王中兴的重要功臣之一，功勋卓著，名垂青史，备受后世敬仰。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E6%96%B9%E5%8F%94%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6489,7 +6489,7 @@
       "story": {
         "title": "江汉之师",
         "content": "召虎，即召穆公，西周宣王时期重臣，以忠义著称，品德高尚，堪称社稷之臣。周厉王暴虐引发\"国人暴动\"时，召虎将太子静藏匿家中，以自己的儿子代替太子赴死，忠义之举令人动容，感人至深，千古传颂。厉王流亡后，召虎与周公共同辅政，史称\"共和行政\"，是中国历史的重要篇章，开创了贵族共和的先例，其忠义之举为后世所传颂，名垂青史，为历代所敬仰，被视为忠臣的典范。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E8%99%8E%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/military.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6583,7 +6583,7 @@
       "story": {
         "title": "专利媚王",
         "content": "荣夷公，西周厉王时期宠臣，以善于逢迎著称，专投厉王所好，阿谀奉承。厉王好利，荣夷公投其所好，建议厉王实行\"专利\"政策，将山川林泽之利收归王室，引起国人的强烈不满，民怨沸腾，人心思变。这一政策最终激化了厉王与国人之间的矛盾，直接导致了\"国人暴动\"的爆发，厉王被迫流亡，客死他乡。荣夷公是西周衰落的重要推手，加速了西周由盛转衰的进程，其政策失误留下了深刻的历史教训，为后世治国者所戒。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%8D%A3%E5%A4%B7%E5%85%AC%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6671,7 +6671,7 @@
       "story": {
         "title": "共和行政",
         "content": "召穆公，即召虎，西周宣王时期重臣，以忠义和智慧著称，堪称栋梁之臣，德才兼备。在国人暴动中以子代太子，保护了未来的宣王，忠义之举为后世所传颂，感人至深。共和行政期间与周公共同辅政，稳定了周朝政局，展现了卓越的政治智慧，使周朝免于崩溃。宣王即位后又辅佐宣王复兴周室，是西周晚期最重要的政治人物之一，在西周晚期政治中发挥了关键作用，为西周中兴做出了重要贡献，功勋卓著。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E5%8F%AC%E7%A9%86%E5%85%AC%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/politics.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6770,7 +6770,7 @@
       "story": {
         "title": "幽王宠后",
         "content": "褒姒，褒国进献周幽王的美女，周幽王宠妃，以冷艳绝伦著称，美貌倾国倾城。生性不爱笑，幽王为博其一笑多次点燃烽火台戏弄诸侯，导致诸侯失信，失信于天下。\"烽火戏诸侯\"最终酿成大祸，犬戎入侵时无人救援，西周灭亡，幽王被杀于骊山之下，西周数百年基业毁于一旦。褒姒成为西周倾覆的悲剧象征，她的故事与妺喜、妲己并列为中国古代\"红颜祸水\"的经典叙事，流传千古，引人深思，具有重要的文化意义。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E8%A4%92%E5%A7%92%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/culture.jpg"
       },
       "narrative_relations": {
         "nodes": [
@@ -6873,7 +6873,7 @@
       "story": {
         "title": "引戎破周",
         "content": "申侯，西周末年申国君主，姜姓，周幽王原配申后的父亲，地位显赫，权势重大。周幽王废申后及太子宜臼，立褒姒为后、伯服为太子，申侯之女与外孙被废，使其震怒，遂起兵报复。申侯联合缯国、犬戎攻打周幽王，在骊山下杀死幽王，立宜臼为周平王，开启了东周时代。申侯此举改变了中国历史进程，是西周灭亡、东周开始的关键人物，其影响极为深远，在春秋战国历史中具有重要地位，是西周历史转折的重要推手。",
-        "image_url": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ancient%20chinese%20historical%20figure%20%E7%94%B3%E4%BE%AF%20story%20scene%20traditional%20chinese%20painting&image_size=landscape_16_9"
+        "image_url": "/images/story/ruler.jpg"
       },
       "narrative_relations": {
         "nodes": [
