@@ -6,6 +6,7 @@ import { loadDynastyData, type DynastyData } from '@/services/dynastyDataService
 import { resolvePersonIdByName } from '@/data/globalPersonIndex'
 import ComingSoon from '@/components/ComingSoon.vue'
 import BackButton from '@/components/BackButton.vue'
+import '@/services/echartsSetup'
 import * as echarts from 'echarts/core'
 import type { ECharts } from 'echarts/core'
 

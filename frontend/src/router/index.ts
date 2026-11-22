@@ -1,16 +1,17 @@
 import { createRouter, createWebHistory, type NavigationGuard } from 'vue-router'
 import Home from '@/views/Home.vue'
-import Timeline from '@/views/Timeline.vue'
-import Dynasty from '@/views/Dynasty.vue'
-import DynastyEvents from '@/views/DynastyEvents.vue'
-import DynastyPersons from '@/views/DynastyPersons.vue'
-import Person from '@/views/Person.vue'
-import PersonStory from '@/views/PersonStory.vue'
-import Event from '@/views/Event.vue'
-import Family from '@/views/Family.vue'
-import FamilyManage from '@/views/FamilyManage.vue'
-import FamilyMemberProfile from '@/views/FamilyMemberProfile.vue'
-import MemberForm from '@/components/family/MemberForm.vue'
+// 非首屏页面改为按需加载，避免首屏一次性下载全部页面与 echarts
+const Timeline = () => import('@/views/Timeline.vue')
+const Dynasty = () => import('@/views/Dynasty.vue')
+const DynastyEvents = () => import('@/views/DynastyEvents.vue')
+const DynastyPersons = () => import('@/views/DynastyPersons.vue')
+const Person = () => import('@/views/Person.vue')
+const PersonStory = () => import('@/views/PersonStory.vue')
+const Event = () => import('@/views/Event.vue')
+const Family = () => import('@/views/Family.vue')
+const FamilyManage = () => import('@/views/FamilyManage.vue')
+const FamilyMemberProfile = () => import('@/views/FamilyMemberProfile.vue')
+const MemberForm = () => import('@/components/family/MemberForm.vue')
 import { persons } from '@/mock/data'
 import { ensureHistoryIndex } from '@/services/historyIndex'
 

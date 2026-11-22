@@ -8,6 +8,7 @@ import { recordRecentDynasty } from '@/services/recentDynasties'
 import ComingSoon from '@/components/ComingSoon.vue'
 import BackButton from '@/components/BackButton.vue'
 import DynastyTerritoryMap from '@/components/DynastyTerritoryMap.vue'
+import '@/services/echartsSetup'
 import * as echarts from 'echarts/core'
 import type { ECharts } from 'echarts/core'
 
