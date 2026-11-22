@@ -20,7 +20,7 @@ const goBack = () => {
 
 <template>
   <div class="px-8 pt-4">
-    <div class="max-w-7xl mx-auto">
+    <div>
       <button
         type="button"
         @click="goBack"

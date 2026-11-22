@@ -649,31 +649,32 @@ onUnmounted(() => {
 
     <!-- ====== Navigation Bar (same as Person.vue) ====== -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-      <div class="max-w-7xl mx-auto px-8 pt-3 pb-2">
-        <div class="flex items-center justify-between">
+      <div class="px-8 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-6">
           <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
             <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
               <span class="font-calligraphy text-white text-lg">千</span>
             </div>
             <span class="font-calligraphy text-xl text-[#2C2C2C]">千年一脉</span>
           </div>
-        </div>
-        <div class="mt-1.5 text-sm text-[#4A4A3A]/60">
-          <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
-          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-          <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/timeline')">中国历史</span>
-          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-          <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynasty">{{ person!.dynasty }}</span>
-          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-          <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynastyPersons">代表人物</span>
-          <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-          <span class="text-[#2C2C2C] font-medium">{{ person!.name }}</span>
+          <div class="h-5 w-px bg-[#D8B26A]/30"></div>
+          <div class="text-sm text-[#4A4A3A]/60">
+            <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
+            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+            <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/timeline')">中国历史</span>
+            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+            <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynasty">{{ person!.dynasty }}</span>
+            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+            <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToDynastyPersons">代表人物</span>
+            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+            <span class="text-[#2C2C2C] font-medium">{{ person!.name }}</span>
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- 返回按钮 -->
-    <div class="max-w-7xl mx-auto px-8 pt-2 bg-transparent">
+    <div class="px-8 pt-2 bg-transparent">
       <button
         @click="goBack"
         class="flex items-center gap-2 text-base text-white/90 hover:text-white transition-colors group drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]"

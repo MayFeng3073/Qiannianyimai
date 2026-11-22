@@ -1158,21 +1158,22 @@ onUnmounted(() => {
     <template v-if="hasData">
       <!-- Navigation -->
       <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#F8F6F2]/85 border-b border-[#D8B26A]/20">
-        <div class="max-w-7xl mx-auto px-8 pt-3 pb-2">
-          <div class="flex items-center justify-between">
+        <div class="px-8 py-3 flex items-center justify-between">
+          <div class="flex items-center gap-6">
             <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
               <div class="w-8 h-8 rounded-full bg-[#C34739] flex items-center justify-center">
                 <span class="font-calligraphy text-white text-lg">千</span>
               </div>
               <span class="font-calligraphy text-xl text-[#2C2C2C]">千年一脉</span>
             </div>
-          </div>
-          <div class="mt-1.5 text-sm text-[#4A4A3A]/60">
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToTimeline">中国历史</span>
-            <span class="mx-1.5 text-[#D8B26A]/40">›</span>
-            <span class="text-[#2C2C2C] font-medium">{{ dynasty!.name }}</span>
+            <div class="h-5 w-px bg-[#D8B26A]/30"></div>
+            <div class="text-sm text-[#4A4A3A]/60">
+              <span class="hover:text-[#355C5A] cursor-pointer" @click="router.push('/')">首页</span>
+              <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+              <span class="hover:text-[#355C5A] cursor-pointer" @click="navigateToTimeline">中国历史</span>
+              <span class="mx-1.5 text-[#D8B26A]/40">›</span>
+              <span class="text-[#2C2C2C] font-medium">{{ dynasty!.name }}</span>
+            </div>
           </div>
         </div>
       </nav>
